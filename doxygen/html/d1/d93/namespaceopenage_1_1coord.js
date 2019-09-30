@@ -1,0 +1,26 @@
+var namespaceopenage_1_1coord =
+[
+    [ "camgame", "d6/d80/structopenage_1_1coord_1_1camgame.xhtml", "d6/d80/structopenage_1_1coord_1_1camgame" ],
+    [ "camgame_delta", "d5/d40/structopenage_1_1coord_1_1camgame__delta.xhtml", "d5/d40/structopenage_1_1coord_1_1camgame__delta" ],
+    [ "camhud", "d2/d89/structopenage_1_1coord_1_1camhud.xhtml", "d2/d89/structopenage_1_1coord_1_1camhud" ],
+    [ "camhud_delta", "d3/d35/structopenage_1_1coord_1_1camhud__delta.xhtml", "d3/d35/structopenage_1_1coord_1_1camhud__delta" ],
+    [ "chunk", "db/dac/structopenage_1_1coord_1_1chunk.xhtml", null ],
+    [ "chunk3", "d1/d0e/structopenage_1_1coord_1_1chunk3.xhtml", null ],
+    [ "chunk3_delta", "d3/d6b/structopenage_1_1coord_1_1chunk3__delta.xhtml", null ],
+    [ "chunk_delta", "d7/d40/structopenage_1_1coord_1_1chunk__delta.xhtml", null ],
+    [ "CoordManager", "de/db5/classopenage_1_1coord_1_1_coord_manager.xhtml", "de/db5/classopenage_1_1coord_1_1_coord_manager" ],
+    [ "input", "d8/d34/structopenage_1_1coord_1_1input.xhtml", "d8/d34/structopenage_1_1coord_1_1input" ],
+    [ "input_delta", "d8/db7/structopenage_1_1coord_1_1input__delta.xhtml", "d8/db7/structopenage_1_1coord_1_1input__delta" ],
+    [ "phys2", "dd/d57/structopenage_1_1coord_1_1phys2.xhtml", "dd/d57/structopenage_1_1coord_1_1phys2" ],
+    [ "phys2_delta", "dd/d68/structopenage_1_1coord_1_1phys2__delta.xhtml", "dd/d68/structopenage_1_1coord_1_1phys2__delta" ],
+    [ "phys3", "d2/da4/structopenage_1_1coord_1_1phys3.xhtml", "d2/da4/structopenage_1_1coord_1_1phys3" ],
+    [ "phys3_delta", "d4/d49/structopenage_1_1coord_1_1phys3__delta.xhtml", "d4/d49/structopenage_1_1coord_1_1phys3__delta" ],
+    [ "term", "df/dc5/structopenage_1_1coord_1_1term.xhtml", null ],
+    [ "term_delta", "d1/d75/structopenage_1_1coord_1_1term__delta.xhtml", null ],
+    [ "tile", "d5/d10/structopenage_1_1coord_1_1tile.xhtml", "d5/d10/structopenage_1_1coord_1_1tile" ],
+    [ "tile3", "db/dd1/structopenage_1_1coord_1_1tile3.xhtml", "db/dd1/structopenage_1_1coord_1_1tile3" ],
+    [ "tile3_delta", "d4/d93/structopenage_1_1coord_1_1tile3__delta.xhtml", "d4/d93/structopenage_1_1coord_1_1tile3__delta" ],
+    [ "tile_delta", "db/db5/structopenage_1_1coord_1_1tile__delta.xhtml", null ],
+    [ "viewport", "d2/dcd/structopenage_1_1coord_1_1viewport.xhtml", "d2/dcd/structopenage_1_1coord_1_1viewport" ],
+    [ "viewport_delta", "d5/d5e/structopenage_1_1coord_1_1viewport__delta.xhtml", "d5/d5e/structopenage_1_1coord_1_1viewport__delta" ]
+];

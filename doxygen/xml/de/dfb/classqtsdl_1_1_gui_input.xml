@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="de/dfb/classqtsdl_1_1_gui_input" kind="class" language="C++" prot="public">
+    <compoundname>qtsdl::GuiInput</compoundname>
+    <includes refid="dc/dfe/gui__input_8h" local="no">gui_input.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="de/dfb/classqtsdl_1_1_gui_input_1aa9d1d34acb30b85086713798e1a93394" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class GuiInputImpl</definition>
+        <argsstring></argsstring>
+        <name>GuiInputImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_input.h" line="29" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_input.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/dfb/classqtsdl_1_1_gui_input_1a9d9dffc99f3fe645ceaf0c62c5527da3" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="d3/dac/classqtsdl_1_1_gui_input_impl" kindref="compound">GuiInputImpl</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;GuiInputImpl&gt; qtsdl::GuiInput::impl</definition>
+        <argsstring></argsstring>
+        <name>impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_input.h" line="30" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_input.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="de/dfb/classqtsdl_1_1_gui_input_1ae7fdec19c83d1cd4dd0bb2d06fa1a8ae" compoundref="d9/db2/gui__input_8cpp" startline="17" endline="19">process</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/dfb/classqtsdl_1_1_gui_input_1a41491a3956d49de96946dadf5d5b55e1" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>qtsdl::GuiInput::GuiInput</definition>
+        <argsstring>(GuiRenderer *renderer, GuiEventQueue *game_logic_updater)</argsstring>
+        <name>GuiInput</name>
+        <param>
+          <type><ref refid="d0/d58/classqtsdl_1_1_gui_renderer" kindref="compound">GuiRenderer</ref> *</type>
+          <declname>renderer</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/dc9/classqtsdl_1_1_gui_event_queue" kindref="compound">GuiEventQueue</ref> *</type>
+          <declname>game_logic_updater</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_input.h" line="20" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_input.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dfb/classqtsdl_1_1_gui_input_1aa170b7bbb3f930640f1e163100817c47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>qtsdl::GuiInput::~GuiInput</definition>
+        <argsstring>()</argsstring>
+        <name>~GuiInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_input.h" line="21" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_input.cpp" bodystart="14" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="de/dfb/classqtsdl_1_1_gui_input_1ae7fdec19c83d1cd4dd0bb2d06fa1a8ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool qtsdl::GuiInput::process</definition>
+        <argsstring>(SDL_Event *event)</argsstring>
+        <name>process</name>
+        <param>
+          <type>SDL_Event *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Returns true if the event was accepted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_input.h" line="26" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_input.cpp" bodystart="17" bodyend="19"/>
+        <references refid="de/dfb/classqtsdl_1_1_gui_input_1a9d9dffc99f3fe645ceaf0c62c5527da3" compoundref="dc/dfe/gui__input_8h" startline="30">impl</references>
+        <referencedby refid="df/dfe/classopenage_1_1gui_1_1_g_u_i_1a957c6b92e9d51577da3e414f0307e455" compoundref="d6/d86/gui_2gui_8cpp" startline="120" endline="122">openage::gui::GUI::on_input</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Converts SDL input events into Qt events. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6356">
+        <label>qtsdl::GuiInput</label>
+        <link refid="de/dfb/classqtsdl_1_1_gui_input"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_input.h" line="18" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_input.h" bodystart="18" bodyend="31"/>
+    <listofallmembers>
+      <member refid="de/dfb/classqtsdl_1_1_gui_input_1a41491a3956d49de96946dadf5d5b55e1" prot="public" virt="non-virtual"><scope>qtsdl::GuiInput</scope><name>GuiInput</name></member>
+      <member refid="de/dfb/classqtsdl_1_1_gui_input_1aa9d1d34acb30b85086713798e1a93394" prot="private" virt="non-virtual"><scope>qtsdl::GuiInput</scope><name>GuiInputImpl</name></member>
+      <member refid="de/dfb/classqtsdl_1_1_gui_input_1a9d9dffc99f3fe645ceaf0c62c5527da3" prot="private" virt="non-virtual"><scope>qtsdl::GuiInput</scope><name>impl</name></member>
+      <member refid="de/dfb/classqtsdl_1_1_gui_input_1ae7fdec19c83d1cd4dd0bb2d06fa1a8ae" prot="public" virt="non-virtual"><scope>qtsdl::GuiInput</scope><name>process</name></member>
+      <member refid="de/dfb/classqtsdl_1_1_gui_input_1aa170b7bbb3f930640f1e163100817c47" prot="public" virt="non-virtual"><scope>qtsdl::GuiInput</scope><name>~GuiInput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d8/de3/classopenage_1_1_player_score" kind="class" language="C++" prot="public">
+    <compoundname>openage::PlayerScore</compoundname>
+    <basecompoundref refid="d8/dd7/classopenage_1_1_score" prot="public" virt="non-virtual">openage::Score</basecompoundref>
+    <includes refid="dd/df8/score_8h" local="no">score.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d8/de3/classopenage_1_1_player_score_1a1af42313b91c4bb428b1c98864f7401f" prot="private" static="no" mutable="no">
+        <type><ref refid="d8/d47/classopenage_1_1_player" kindref="compound">Player</ref> *</type>
+        <definition>Player* openage::PlayerScore::player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/score.h" line="99" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/score.h" bodystart="99" bodyend="-1"/>
+        <referencedby refid="d8/de3/classopenage_1_1_player_score_1a335bfe5e296ab4563b6689a8cacca562" compoundref="db/d3d/score_8cpp" startline="63" endline="69">update_score</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/de3/classopenage_1_1_player_score_1a6fa8471a97c4835b863dbef852b7d6c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::PlayerScore::PlayerScore</definition>
+        <argsstring>(Player *player)</argsstring>
+        <name>PlayerScore</name>
+        <param>
+          <type><ref refid="d8/d47/classopenage_1_1_player" kindref="compound">Player</ref> *</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/score.h" line="91" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/score.cpp" bodystart="57" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/de3/classopenage_1_1_player_score_1a335bfe5e296ab4563b6689a8cacca562" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void openage::PlayerScore::update_score</definition>
+        <argsstring>() override</argsstring>
+        <name>update_score</name>
+        <reimplements refid="d8/dd7/classopenage_1_1_score_1ad71b795068636d35bd174acde2e080fd">update_score</reimplements>
+        <briefdescription>
+<para>Calculates the total score from the sub-scores. </para>        </briefdescription>
+        <detaileddescription>
+<para>TODO update gui here </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/score.h" line="93" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/score.cpp" bodystart="63" bodyend="69"/>
+        <references refid="d8/de3/classopenage_1_1_player_score_1a1af42313b91c4bb428b1c98864f7401f" compoundref="dd/df8/score_8h" startline="99">player</references>
+        <references refid="de/dfb/classopenage_1_1_team_1ac579ae1a33f33dfe6e53b738a9cfe160" compoundref="de/deb/team_8h" startline="67">openage::Team::score</references>
+        <references refid="d8/d47/classopenage_1_1_player_1a49e6eb4d6794785417435205a53ae5cb" compoundref="d3/d62/player_8h" startline="48">openage::Player::team</references>
+        <references refid="d8/dd7/classopenage_1_1_score_1ad71b795068636d35bd174acde2e080fd" compoundref="db/d3d/score_8cpp" startline="50" endline="55">openage::Score::update_score</references>
+        <references refid="d4/db7/classopenage_1_1_team_score_1ad1af15c7921ffc8ffc57c04b3c8084ff" compoundref="db/d3d/score_8cpp" startline="77" endline="88">openage::TeamScore::update_score</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The score of a player. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4613">
+        <label>openage::PlayerScore</label>
+        <link refid="d8/de3/classopenage_1_1_player_score"/>
+        <childnode refid="4614" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4614">
+        <label>openage::Score</label>
+        <link refid="d8/dd7/classopenage_1_1_score"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4619">
+        <label>openage::TeamScore</label>
+        <link refid="d4/db7/classopenage_1_1_team_score"/>
+        <childnode refid="4616" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4618" relation="usage">
+          <edgelabel>-team</edgelabel>
+        </childnode>
+      </node>
+      <node id="4615">
+        <label>openage::PlayerScore</label>
+        <link refid="d8/de3/classopenage_1_1_player_score"/>
+        <childnode refid="4616" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4617" relation="usage">
+          <edgelabel>-player</edgelabel>
+        </childnode>
+      </node>
+      <node id="4616">
+        <label>openage::Score</label>
+        <link refid="d8/dd7/classopenage_1_1_score"/>
+      </node>
+      <node id="4618">
+        <label>openage::Team</label>
+        <link refid="de/dfb/classopenage_1_1_team"/>
+        <childnode refid="4619" relation="usage">
+          <edgelabel>+score</edgelabel>
+        </childnode>
+      </node>
+      <node id="4622">
+        <label>openage::Civilisation</label>
+        <link refid="de/d7a/classopenage_1_1_civilisation"/>
+      </node>
+      <node id="4617">
+        <label>openage::Player</label>
+        <link refid="d8/d47/classopenage_1_1_player"/>
+        <childnode refid="4615" relation="usage">
+          <edgelabel>+score</edgelabel>
+        </childnode>
+        <childnode refid="4618" relation="usage">
+          <edgelabel>+team</edgelabel>
+        </childnode>
+        <childnode refid="4620" relation="usage">
+          <edgelabel>-resources_capacity</edgelabel>
+          <edgelabel>-resources</edgelabel>
+        </childnode>
+        <childnode refid="4621" relation="usage">
+          <edgelabel>+population</edgelabel>
+        </childnode>
+        <childnode refid="4622" relation="usage">
+          <edgelabel>+civ</edgelabel>
+        </childnode>
+      </node>
+      <node id="4620">
+        <label>openage::ResourceBundle</label>
+        <link refid="d2/de9/classopenage_1_1_resource_bundle"/>
+      </node>
+      <node id="4621">
+        <label>openage::PopulationTracker</label>
+        <link refid="dd/d70/classopenage_1_1_population_tracker"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/score.h" line="88" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/score.h" bodystart="88" bodyend="100"/>
+    <listofallmembers>
+      <member refid="d8/dd7/classopenage_1_1_score_1ab03c4138b0129edb062c498f4393b8ba" prot="public" virt="non-virtual"><scope>openage::PlayerScore</scope><name>add_score</name></member>
+      <member refid="d8/dd7/classopenage_1_1_score_1aeac024481d04808435d7a31fa3eb2d0e" prot="public" virt="non-virtual"><scope>openage::PlayerScore</scope><name>add_score</name></member>
+      <member refid="d8/dd7/classopenage_1_1_score_1a544fc32ebabe81bb0122dcd4ea9c7931" prot="public" virt="non-virtual"><scope>openage::PlayerScore</scope><name>get_score</name></member>
+      <member refid="d8/dd7/classopenage_1_1_score_1af89e51c1d6fa79f4c919ab3149ecabd4" prot="public" virt="non-virtual"><scope>openage::PlayerScore</scope><name>get_score</name></member>
+      <member refid="d8/dd7/classopenage_1_1_score_1aaae75d0638c4c4f1dbd9905d39855821" prot="public" virt="non-virtual"><scope>openage::PlayerScore</scope><name>get_score_total</name></member>
+      <member refid="d8/de3/classopenage_1_1_player_score_1a1af42313b91c4bb428b1c98864f7401f" prot="private" virt="non-virtual"><scope>openage::PlayerScore</scope><name>player</name></member>
+      <member refid="d8/de3/classopenage_1_1_player_score_1a6fa8471a97c4835b863dbef852b7d6c8" prot="public" virt="non-virtual"><scope>openage::PlayerScore</scope><name>PlayerScore</name></member>
+      <member refid="d8/dd7/classopenage_1_1_score_1a7867975c457c1de476f8d5ecd1ae452f" prot="public" virt="non-virtual"><scope>openage::PlayerScore</scope><name>remove_score</name></member>
+      <member refid="d8/dd7/classopenage_1_1_score_1aa5c379cb015205d10950f61b40a51f10" prot="public" virt="non-virtual"><scope>openage::PlayerScore</scope><name>remove_score</name></member>
+      <member refid="d8/dd7/classopenage_1_1_score_1a016dd90c78d38ec3009b61b49a937960" prot="public" virt="non-virtual"><scope>openage::PlayerScore</scope><name>Score</name></member>
+      <member refid="d8/dd7/classopenage_1_1_score_1a34656b36845ee87f8678156079551a7f" prot="protected" virt="non-virtual"><scope>openage::PlayerScore</scope><name>score</name></member>
+      <member refid="d8/dd7/classopenage_1_1_score_1a88422345732818ee036e2f25898c08ef" prot="protected" virt="non-virtual"><scope>openage::PlayerScore</scope><name>score_total</name></member>
+      <member refid="d8/dd7/classopenage_1_1_score_1a6a66aa42a2fc87950c5b26ed4a4ce6fb" prot="public" virt="non-virtual"><scope>openage::PlayerScore</scope><name>update_map_explored</name></member>
+      <member refid="d8/dd7/classopenage_1_1_score_1a692b0ccf6ec945e3cb5e8540b6b9abc6" prot="public" virt="non-virtual"><scope>openage::PlayerScore</scope><name>update_resources</name></member>
+      <member refid="d8/de3/classopenage_1_1_player_score_1a335bfe5e296ab4563b6689a8cacca562" prot="public" virt="virtual"><scope>openage::PlayerScore</scope><name>update_score</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

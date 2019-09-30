@@ -1,0 +1,381 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="da/dd8/classopenage_1_1_idle_action" kind="class" language="C++" prot="public">
+    <compoundname>openage::IdleAction</compoundname>
+    <basecompoundref refid="dc/d74/classopenage_1_1_unit_action" prot="public" virt="non-virtual">openage::UnitAction</basecompoundref>
+    <includes refid="d8/d1f/unit_2action_8h" local="no">action.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="da/dd8/classopenage_1_1_idle_action_1a0bffa20bbade5d23ee9769bab68e0487" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="d0/dee/classopenage_1_1_terrain_search" kindref="compound">TerrainSearch</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;TerrainSearch&gt; openage::IdleAction::search</definition>
+        <argsstring></argsstring>
+        <name>search</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="350" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" bodystart="350" bodyend="-1"/>
+        <referencedby refid="da/dd8/classopenage_1_1_idle_action_1abcf912f0414876c23214ee699b2f1763" compoundref="de/d96/unit_2action_8cpp" startline="453" endline="462">IdleAction</referencedby>
+        <referencedby refid="da/dd8/classopenage_1_1_idle_action_1a90d182b9575459830744488f776a2f4e" compoundref="de/d96/unit_2action_8cpp" startline="464" endline="532">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="da/dd8/classopenage_1_1_idle_action_1ac20b323a66cb5a327a56bee631acb49d" prot="private" static="no" mutable="no">
+        <type><ref refid="da/d23/namespaceopenage_1ae960c566d0da147b055f619d8cca9300" kindref="member">ability_set</ref></type>
+        <definition>ability_set openage::IdleAction::auto_abilities</definition>
+        <argsstring></argsstring>
+        <name>auto_abilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="351" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" bodystart="351" bodyend="-1"/>
+        <referencedby refid="da/dd8/classopenage_1_1_idle_action_1abcf912f0414876c23214ee699b2f1763" compoundref="de/d96/unit_2action_8cpp" startline="453" endline="462">IdleAction</referencedby>
+        <referencedby refid="da/dd8/classopenage_1_1_idle_action_1a90d182b9575459830744488f776a2f4e" compoundref="de/d96/unit_2action_8cpp" startline="464" endline="532">update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/dd8/classopenage_1_1_idle_action_1abcf912f0414876c23214ee699b2f1763" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::IdleAction::IdleAction</definition>
+        <argsstring>(Unit *e)</argsstring>
+        <name>IdleAction</name>
+        <param>
+          <type><ref refid="df/dea/classopenage_1_1_unit" kindref="compound">Unit</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="338" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.cpp" bodystart="453" bodyend="462"/>
+        <references refid="da/d23/namespaceopenage_1a7278b1c0b8d94d06da155b0b693b2828afc7e987f23de5bd6562b7c0063cad659">openage::attack</references>
+        <references refid="da/dd8/classopenage_1_1_idle_action_1ac20b323a66cb5a327a56bee631acb49d" compoundref="d8/d1f/unit_2action_8h" startline="351">auto_abilities</references>
+        <references refid="dc/d74/classopenage_1_1_unit_action_1a5d47af0412db504ab95c58b12418d55c" compoundref="d8/d1f/unit_2action_8h" startline="197">openage::UnitAction::entity</references>
+        <references refid="da/d23/namespaceopenage_1a7278b1c0b8d94d06da155b0b693b2828a214d940b5313897d9e25b3a2b3533770">openage::heal</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a12811894b98383b4c3cfe6769bc3ff80" compoundref="d1/da2/unit_8h" startline="68">openage::Unit::location</references>
+        <references refid="da/dd8/classopenage_1_1_idle_action_1a0bffa20bbade5d23ee9769bab68e0487" compoundref="d8/d1f/unit_2action_8h" startline="350">search</references>
+        <references refid="d3/d44/classopenage_1_1_unit_ability_1a282f5d02a2a6912670b27aedb7f4f337" compoundref="de/dde/ability_8cpp" startline="403" endline="409">openage::UnitAbility::set_from_list</references>
+      </memberdef>
+      <memberdef kind="function" id="da/dd8/classopenage_1_1_idle_action_1a86e8510aa739142343e06d5f267f8c32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual openage::IdleAction::~IdleAction</definition>
+        <argsstring>()</argsstring>
+        <name>~IdleAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="339" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" bodystart="339" bodyend="339"/>
+        <references refid="de/d24/classopenage_1_1_interval_timer_1acb51f379d7d73ad7fff1197f9fa2335b" compoundref="de/d96/unit_2action_8cpp" startline="36" endline="47">openage::IntervalTimer::update</references>
+      </memberdef>
+      <memberdef kind="function" id="da/dd8/classopenage_1_1_idle_action_1a90d182b9575459830744488f776a2f4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void openage::IdleAction::update</definition>
+        <argsstring>(unsigned int time) override</argsstring>
+        <name>update</name>
+        <reimplements refid="dc/d74/classopenage_1_1_unit_action_1a0196263da38bfa208d50c2241809cd62">update</reimplements>
+        <param>
+          <type>unsigned int</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>each action has its own update functionality which gets called when this is the active action </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="341" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.cpp" bodystart="464" bodyend="532"/>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36afc7e987f23de5bd6562b7c0063cad659">openage::attack</references>
+        <references refid="da/dd8/classopenage_1_1_idle_action_1ac20b323a66cb5a327a56bee631acb49d" compoundref="d8/d1f/unit_2action_8h" startline="351">auto_abilities</references>
+        <references refid="da/d23/namespaceopenage_1a5e6378e44a27518a589cc11f2ee36a3baa771e1fd1a582e9cf05f5213586f1965">openage::carrying</references>
+        <references refid="d2/de9/classopenage_1_1_resource_bundle_1aec4c3c3cae1b78ff42a0bc533929e51c" compoundref="d8/d4f/gamestate_2resource_8cpp" startline="37" endline="39">openage::ResourceBundle::clone</references>
+        <references refid="da/d23/namespaceopenage_1a54fa9238a7f977d8d12d4b8422f3c6eda8cb06461d4398cb0457b5f4cf50c06fc">openage::do_nothing</references>
+        <references refid="dc/d74/classopenage_1_1_unit_action_1a5d47af0412db504ab95c58b12418d55c" compoundref="d8/d1f/unit_2action_8h" startline="197">openage::UnitAction::entity</references>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36af1a41f239896dc63a6eaeba863f0e7ce">openage::formation</references>
+        <references refid="dc/d74/classopenage_1_1_unit_action_1a8f995b745da73c4e95ec83d8b14c38c6" compoundref="d8/d1f/unit_2action_8h" startline="203">openage::UnitAction::frame</references>
+        <references refid="dc/d74/classopenage_1_1_unit_action_1a5d0154b413ca914966b9796bc37193b8" compoundref="d8/d1f/unit_2action_8h" startline="204">openage::UnitAction::frame_rate</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a3e12324401051119f44e212dae1a87ce" compoundref="d1/da2/unit_8h" startline="199" endline="203">openage::Unit::get_attribute</references>
+        <references refid="dc/d74/classopenage_1_1_unit_action_1afe08a940aa0b7040c3a59d816de00fed" compoundref="d8/d1f/unit_2action_8h" startline="202">openage::UnitAction::graphic</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a6c56a8b7e9856a8e0535cacbe831bae7" compoundref="d7/d49/unit_8cpp" startline="258" endline="260">openage::Unit::has_attribute</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a12811894b98383b4c3cfe6769bc3ff80" compoundref="d1/da2/unit_8h" startline="68">openage::Unit::location</references>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a72122ce96bfec66e2396d2e25225d70a">openage::owner</references>
+        <references refid="df/dea/classopenage_1_1_unit_1ac5dcdf3180dcd4bdce67b765d8ef2134" compoundref="d7/d49/unit_8cpp" startline="262" endline="276">openage::Unit::queue_cmd</references>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a96ab4e163f4ee03aaa4d1051aa51d204">openage::resource</references>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a07c8a39fbe04116af6aa6e9dfc13f488">openage::resource_generator</references>
+        <references refid="da/dd8/classopenage_1_1_idle_action_1a0bffa20bbade5d23ee9769bab68e0487" compoundref="d8/d1f/unit_2action_8h" startline="350">search</references>
+        <references refid="d8/dda/classopenage_1_1_command_1a2590ec72e751bbc9d901d30b86a9be04" compoundref="d1/d81/command_8cpp" startline="87" endline="89">openage::Command::set_ability_set</references>
+        <references refid="da/d23/namespaceopenage_1a5e6378e44a27518a589cc11f2ee36a3baeeeaea9366c4a3ee8ae10bffc661799e">openage::standing</references>
+        <references refid="d3/df4/namespaceopenage_1_1path_1a047e97b9a81a866f064ad6d6f8dddfd6" compoundref="df/d8f/a__star_8cpp" startline="44" endline="55">openage::path::to_object</references>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36ab61822e8357dcaff77eaaccf348d9134">openage::worker</references>
+      </memberdef>
+      <memberdef kind="function" id="da/dd8/classopenage_1_1_idle_action_1a63b599599c1e5b1e0249b4ce11722dbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void openage::IdleAction::on_completion</definition>
+        <argsstring>() override</argsstring>
+        <name>on_completion</name>
+        <reimplements refid="dc/d74/classopenage_1_1_unit_action_1ac84d3cbfa3c489b3975952af157929cb">on_completion</reimplements>
+        <briefdescription>
+<para>action to perform when popped from a units action stack </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="342" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.cpp" bodystart="534" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dd8/classopenage_1_1_idle_action_1af276ff712d523244b3094e091ba576e5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::IdleAction::completed</definition>
+        <argsstring>() const override</argsstring>
+        <name>completed</name>
+        <reimplements refid="dc/d74/classopenage_1_1_unit_action_1a7814554a94e930595ed5dad9b0f03255">completed</reimplements>
+        <briefdescription>
+<para>gets called for all actions on stack each update cycle </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true when action is completed so it and everything above it can be popped </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="343" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.cpp" bodystart="536" bodyend="546"/>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a46cc0df55d22d6eb6c37cabbc09f5193">openage::damaged</references>
+        <references refid="dc/d74/classopenage_1_1_unit_action_1a5d47af0412db504ab95c58b12418d55c" compoundref="d8/d1f/unit_2action_8h" startline="197">openage::UnitAction::entity</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a3e12324401051119f44e212dae1a87ce" compoundref="d1/da2/unit_8h" startline="199" endline="203">openage::Unit::get_attribute</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a6c56a8b7e9856a8e0535cacbe831bae7" compoundref="d7/d49/unit_8cpp" startline="258" endline="260">openage::Unit::has_attribute</references>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a96ab4e163f4ee03aaa4d1051aa51d204">openage::resource</references>
+      </memberdef>
+      <memberdef kind="function" id="da/dd8/classopenage_1_1_idle_action_1a10d24ead7b0eebd9c3968809f03364b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::IdleAction::allow_interrupt</definition>
+        <argsstring>() const override</argsstring>
+        <name>allow_interrupt</name>
+        <reimplements refid="dc/d74/classopenage_1_1_unit_action_1aa34a9ecdb9ee12fb2fe0e298025e8185">allow_interrupt</reimplements>
+        <briefdescription>
+<para>checks if the action can be interrupted, allowing it to be popped if the user specifies a new action, if false the action must reach a completed state before removal eg dead action must be completed and cannot be discarded </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="344" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" bodystart="344" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dd8/classopenage_1_1_idle_action_1a3d6f828699e633026637829a451e9924" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::IdleAction::allow_control</definition>
+        <argsstring>() const override</argsstring>
+        <name>allow_control</name>
+        <reimplements refid="dc/d74/classopenage_1_1_unit_action_1a3e222303072f926fa7c925163b8ac10c">allow_control</reimplements>
+        <briefdescription>
+<para>control whether stack can discard the action automatically and should the stack be modifiable when this action is on top </para>        </briefdescription>
+        <detaileddescription>
+<para>if true this action must complete and will not allow new actions to be pushed while it is active and also does not update the secondary actions </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="345" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" bodystart="345" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dd8/classopenage_1_1_idle_action_1ac692f25e1c232cb6ad9afd7dbbd1b49f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string openage::IdleAction::name</definition>
+        <argsstring>() const override</argsstring>
+        <name>name</name>
+        <reimplements refid="dc/d74/classopenage_1_1_unit_action_1a67647c63a20cec9714a6463b1c823a70">name</reimplements>
+        <briefdescription>
+<para>debug string to identify action types </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="346" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" bodystart="346" bodyend="346"/>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1aab5ade46752aa652e414b1c3bac704c1" compoundref="d0/d7a/path_8py" startline="289" endline="296">openage.util.fslike.path.Path.stem</referencedby>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1a7b11153f6ef9787c4c583bcf0126ba6a" compoundref="d0/d7a/path_8py" startline="272" endline="278">openage.util.fslike.path.Path.suffix</referencedby>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1a912043b2fbd330e3493588f6c6af92b8" compoundref="d0/d7a/path_8py" startline="281" endline="286">openage.util.fslike.path.Path.suffixes</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>keeps an entity in a fixed position </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3905">
+        <label>openage::IdleAction</label>
+        <link refid="da/dd8/classopenage_1_1_idle_action"/>
+        <childnode refid="3906" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3906">
+        <label>openage::UnitAction</label>
+        <link refid="dc/d74/classopenage_1_1_unit_action"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3907">
+        <label>openage::IdleAction</label>
+        <link refid="da/dd8/classopenage_1_1_idle_action"/>
+        <childnode refid="3908" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3921">
+        <label>openage::TeamScore</label>
+        <link refid="d4/db7/classopenage_1_1_team_score"/>
+        <childnode refid="3919" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3920" relation="usage">
+          <edgelabel>-team</edgelabel>
+        </childnode>
+      </node>
+      <node id="3908">
+        <label>openage::UnitAction</label>
+        <link refid="dc/d74/classopenage_1_1_unit_action"/>
+        <childnode refid="3909" relation="usage">
+          <edgelabel>#entity</edgelabel>
+        </childnode>
+      </node>
+      <node id="3918">
+        <label>openage::PlayerScore</label>
+        <link refid="d8/de3/classopenage_1_1_player_score"/>
+        <childnode refid="3919" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3917" relation="usage">
+          <edgelabel>-player</edgelabel>
+        </childnode>
+      </node>
+      <node id="3919">
+        <label>openage::Score</label>
+        <link refid="d8/dd7/classopenage_1_1_score"/>
+      </node>
+      <node id="3911">
+        <label>openage::UnitType</label>
+        <link refid="dd/d39/classopenage_1_1_unit_type"/>
+        <childnode refid="3912" relation="usage">
+          <edgelabel>+foundation_size</edgelabel>
+        </childnode>
+        <childnode refid="3914" relation="usage">
+          <edgelabel>+default_attributes</edgelabel>
+        </childnode>
+        <childnode refid="3915" relation="usage">
+          <edgelabel>+cost</edgelabel>
+        </childnode>
+        <childnode refid="3917" relation="usage">
+          <edgelabel>+owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="3920">
+        <label>openage::Team</label>
+        <link refid="de/dfb/classopenage_1_1_team"/>
+        <childnode refid="3921" relation="usage">
+          <edgelabel>+score</edgelabel>
+        </childnode>
+      </node>
+      <node id="3909">
+        <label>openage::Unit</label>
+        <link refid="df/dea/classopenage_1_1_unit"/>
+        <childnode refid="3910" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3911" relation="usage">
+          <edgelabel>+unit_type</edgelabel>
+        </childnode>
+        <childnode refid="3924" relation="usage">
+          <edgelabel>-container</edgelabel>
+        </childnode>
+        <childnode refid="3914" relation="usage">
+          <edgelabel>+attributes</edgelabel>
+        </childnode>
+      </node>
+      <node id="3923">
+        <label>openage::Civilisation</label>
+        <link refid="de/d7a/classopenage_1_1_civilisation"/>
+      </node>
+      <node id="3914">
+        <label>openage::Attributes</label>
+        <link refid="de/d8a/classopenage_1_1_attributes"/>
+      </node>
+      <node id="3917">
+        <label>openage::Player</label>
+        <link refid="d8/d47/classopenage_1_1_player"/>
+        <childnode refid="3918" relation="usage">
+          <edgelabel>+score</edgelabel>
+        </childnode>
+        <childnode refid="3920" relation="usage">
+          <edgelabel>+team</edgelabel>
+        </childnode>
+        <childnode refid="3916" relation="usage">
+          <edgelabel>-resources_capacity</edgelabel>
+          <edgelabel>-resources</edgelabel>
+        </childnode>
+        <childnode refid="3922" relation="usage">
+          <edgelabel>+population</edgelabel>
+        </childnode>
+        <childnode refid="3923" relation="usage">
+          <edgelabel>+civ</edgelabel>
+        </childnode>
+      </node>
+      <node id="3910">
+        <label>openage::log::LogSource</label>
+        <link refid="de/de3/classopenage_1_1log_1_1_log_source"/>
+      </node>
+      <node id="3912">
+        <label>openage::coord::tile_delta</label>
+        <link refid="db/db5/structopenage_1_1coord_1_1tile__delta"/>
+        <childnode refid="3913" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3916">
+        <label>openage::ResourceBundle</label>
+        <link refid="d2/de9/classopenage_1_1_resource_bundle"/>
+      </node>
+      <node id="3922">
+        <label>openage::PopulationTracker</label>
+        <link refid="dd/d70/classopenage_1_1_population_tracker"/>
+      </node>
+      <node id="3915">
+        <label>openage::ResourceCost</label>
+        <link refid="d8/d5b/classopenage_1_1_resource_cost"/>
+        <childnode refid="3916" relation="usage">
+          <edgelabel>-resources</edgelabel>
+        </childnode>
+      </node>
+      <node id="3924">
+        <label>openage::UnitContainer</label>
+        <link refid="d2/d82/classopenage_1_1_unit_container"/>
+      </node>
+      <node id="3913">
+        <label>CoordNeSeRelative&lt; tile_t, tile, tile_delta &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="336" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" bodystart="336" bodyend="353"/>
+    <listofallmembers>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a6a13e1e645b744982544ae65ef1addf3" prot="public" virt="non-virtual"><scope>openage::IdleAction</scope><name>adjacent_range</name></member>
+      <member refid="da/dd8/classopenage_1_1_idle_action_1a3d6f828699e633026637829a451e9924" prot="public" virt="virtual"><scope>openage::IdleAction</scope><name>allow_control</name></member>
+      <member refid="da/dd8/classopenage_1_1_idle_action_1a10d24ead7b0eebd9c3968809f03364b9" prot="public" virt="virtual"><scope>openage::IdleAction</scope><name>allow_interrupt</name></member>
+      <member refid="da/dd8/classopenage_1_1_idle_action_1ac20b323a66cb5a327a56bee631acb49d" prot="private" virt="non-virtual"><scope>openage::IdleAction</scope><name>auto_abilities</name></member>
+      <member refid="da/dd8/classopenage_1_1_idle_action_1af276ff712d523244b3094e091ba576e5" prot="public" virt="virtual"><scope>openage::IdleAction</scope><name>completed</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1abfdd7e2764fd795c02ce0a5471563508" prot="public" virt="non-virtual"><scope>openage::IdleAction</scope><name>current_frame</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a6cd7405af72dd0cf3994cee74608cf8b" prot="public" virt="virtual"><scope>openage::IdleAction</scope><name>current_graphics</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a7beffb7ad454cf467d7a6b843df939c7" prot="public" virt="non-virtual"><scope>openage::IdleAction</scope><name>damage_unit</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a0bbcb9637ce725b95cbe818204921e4f" prot="protected" virt="non-virtual"><scope>openage::IdleAction</scope><name>debug_draw_action</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1aef5ad04daa194a06790b4f36ed8a3e83" prot="public" virt="non-virtual"><scope>openage::IdleAction</scope><name>draw_debug</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a5d47af0412db504ab95c58b12418d55c" prot="protected" virt="non-virtual"><scope>openage::IdleAction</scope><name>entity</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a3ab11130480adc3cfe156af7cfb7a58d" prot="public" virt="non-virtual"><scope>openage::IdleAction</scope><name>face_towards</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a8f995b745da73c4e95ec83d8b14c38c6" prot="protected" virt="non-virtual"><scope>openage::IdleAction</scope><name>frame</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a5d0154b413ca914966b9796bc37193b8" prot="protected" virt="non-virtual"><scope>openage::IdleAction</scope><name>frame_rate</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a6e508baa62ec19cd81bea7fce1721e17" prot="public" virt="non-virtual"><scope>openage::IdleAction</scope><name>get_attack_range</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a40320d4e1be2a48373f5b9b0f6bef2ef" prot="public" virt="non-virtual"><scope>openage::IdleAction</scope><name>get_heal_range</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1afe08a940aa0b7040c3a59d816de00fed" prot="protected" virt="non-virtual"><scope>openage::IdleAction</scope><name>graphic</name></member>
+      <member refid="da/dd8/classopenage_1_1_idle_action_1abcf912f0414876c23214ee699b2f1763" prot="public" virt="non-virtual"><scope>openage::IdleAction</scope><name>IdleAction</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a16660bd780984c6f11ba30e0c7f634ad" prot="public" virt="non-virtual"><scope>openage::IdleAction</scope><name>move_to</name></member>
+      <member refid="da/dd8/classopenage_1_1_idle_action_1ac692f25e1c232cb6ad9afd7dbbd1b49f" prot="public" virt="virtual"><scope>openage::IdleAction</scope><name>name</name></member>
+      <member refid="da/dd8/classopenage_1_1_idle_action_1a63b599599c1e5b1e0249b4ce11722dbc" prot="public" virt="virtual"><scope>openage::IdleAction</scope><name>on_completion</name></member>
+      <member refid="da/dd8/classopenage_1_1_idle_action_1a0bffa20bbade5d23ee9769bab68e0487" prot="private" virt="non-virtual"><scope>openage::IdleAction</scope><name>search</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a0a84fac6b39ee42340f67905dd631956" prot="public" virt="non-virtual"><scope>openage::IdleAction</scope><name>show_debug</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1acbadd90ff8cee12d01aa9fd490501c1a" prot="public" virt="non-virtual"><scope>openage::IdleAction</scope><name>type</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a3fd3dd936ea6a850726bcfce9664909a" prot="public" virt="non-virtual"><scope>openage::IdleAction</scope><name>UnitAction</name></member>
+      <member refid="da/dd8/classopenage_1_1_idle_action_1a90d182b9575459830744488f776a2f4e" prot="public" virt="virtual"><scope>openage::IdleAction</scope><name>update</name></member>
+      <member refid="da/dd8/classopenage_1_1_idle_action_1a86e8510aa739142343e06d5f267f8c32" prot="public" virt="virtual"><scope>openage::IdleAction</scope><name>~IdleAction</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a6e4ff108bc1f10e40777ae36710e7a65" prot="public" virt="virtual"><scope>openage::IdleAction</scope><name>~UnitAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

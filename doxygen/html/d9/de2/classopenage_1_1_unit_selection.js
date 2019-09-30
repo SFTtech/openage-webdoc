@@ -1,0 +1,28 @@
+var classopenage_1_1_unit_selection =
+[
+    [ "UnitSelection", "d9/de2/classopenage_1_1_unit_selection.xhtml#a8a9f8a205468f01d0f13a8858722e30b", null ],
+    [ "add_unit", "d9/de2/classopenage_1_1_unit_selection.xhtml#ac7668d88460dbf57f79a75cbe55e34f3", null ],
+    [ "all_invoke", "d9/de2/classopenage_1_1_unit_selection.xhtml#a0ad857ab54207bdaa9719fc01410f101", null ],
+    [ "clear", "d9/de2/classopenage_1_1_unit_selection.xhtml#aa97b9724248f01b525488bbba21d6b59", null ],
+    [ "contains_builders", "d9/de2/classopenage_1_1_unit_selection.xhtml#a641ba956ba51e5ec47130cec3ffe9085", null ],
+    [ "contains_military", "d9/de2/classopenage_1_1_unit_selection.xhtml#a07df9837a02027bf139d1cecfb541b4d", null ],
+    [ "drag_begin", "d9/de2/classopenage_1_1_unit_selection.xhtml#a100fae0b7f4993a90a984c57024ecfe2", null ],
+    [ "drag_release", "d9/de2/classopenage_1_1_unit_selection.xhtml#a6b4a0b9275c8ebf623d50a7509487623", null ],
+    [ "drag_update", "d9/de2/classopenage_1_1_unit_selection.xhtml#a35322bea7ad954fe4fefd8e2dfbac60f", null ],
+    [ "get_first_unit", "d9/de2/classopenage_1_1_unit_selection.xhtml#adebc67ac2ae80d7bbb777d2f6b080334", null ],
+    [ "get_selection_type", "d9/de2/classopenage_1_1_unit_selection.xhtml#ab7bbbd3ae208b61e3fae02eca886e134", null ],
+    [ "get_unit_selection_type", "d9/de2/classopenage_1_1_unit_selection.xhtml#a9ec8fd5cfcfa451cce1123ff87894719", null ],
+    [ "get_units_count", "d9/de2/classopenage_1_1_unit_selection.xhtml#ac2e376479c41e349e5bc05d1db739107", null ],
+    [ "kill_unit", "d9/de2/classopenage_1_1_unit_selection.xhtml#a2cc48ccbea18ec579f9ad27a89b1d96a", null ],
+    [ "on_drawhud", "d9/de2/classopenage_1_1_unit_selection.xhtml#a0a21b9382975a037b94a1331628b320c", null ],
+    [ "remove_unit", "d9/de2/classopenage_1_1_unit_selection.xhtml#a55faa863da0461730ad3deed70b726c2", null ],
+    [ "select_point", "d9/de2/classopenage_1_1_unit_selection.xhtml#ae351437c3a9fafc071961486f7eef075", null ],
+    [ "select_space", "d9/de2/classopenage_1_1_unit_selection.xhtml#a1c3efeb8415c50094d66844e69402342", null ],
+    [ "toggle_unit", "d9/de2/classopenage_1_1_unit_selection.xhtml#ae76387eeee60f994b678d79ca4a198e8", null ],
+    [ "drag_active", "d9/de2/classopenage_1_1_unit_selection.xhtml#ab3a8ab0e359201269d72098c0c145d87", null ],
+    [ "end", "d9/de2/classopenage_1_1_unit_selection.xhtml#a9e6b650380d7ef95ba29850854ce5321", null ],
+    [ "engine", "d9/de2/classopenage_1_1_unit_selection.xhtml#ab6d8f001c538379db6c2f56cb44859f0", null ],
+    [ "selection_type", "d9/de2/classopenage_1_1_unit_selection.xhtml#aa2054e5dfae57e3f3ca0636a2f317fbd", null ],
+    [ "start", "d9/de2/classopenage_1_1_unit_selection.xhtml#a3605e8a7e9e8c75b869556cd4b8174ac", null ],
+    [ "units", "d9/de2/classopenage_1_1_unit_selection.xhtml#abafc015ba5af4732d6b00ddec9517c31", null ]
+];

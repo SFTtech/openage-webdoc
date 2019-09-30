@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dd/d02/gui__dedicated__thread_8h" kind="file" language="C++">
+    <compoundname>gui_dedicated_thread.h</compoundname>
+    <includes local="no">thread</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">condition_variable</includes>
+    <includedby refid="da/d0a/gui__dedicated__thread_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_dedicated_thread.cpp</includedby>
+    <incdepgraph>
+      <node id="13166">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_dedicated_thread.h</label>
+        <link refid="dd/d02/gui__dedicated__thread_8h"/>
+        <childnode refid="13167" relation="include">
+        </childnode>
+        <childnode refid="13168" relation="include">
+        </childnode>
+        <childnode refid="13169" relation="include">
+        </childnode>
+        <childnode refid="13170" relation="include">
+        </childnode>
+      </node>
+      <node id="13170">
+        <label>condition_variable</label>
+      </node>
+      <node id="13168">
+        <label>mutex</label>
+      </node>
+      <node id="13167">
+        <label>thread</label>
+      </node>
+      <node id="13169">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="13171">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_dedicated_thread.h</label>
+        <link refid="dd/d02/gui__dedicated__thread_8h"/>
+        <childnode refid="13172" relation="include">
+        </childnode>
+      </node>
+      <node id="13172">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_dedicated_thread.cpp</label>
+        <link refid="da/d0a/gui__dedicated__thread_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="df/d66/classqtsdl_1_1_gui_dedicated_thread" prot="public">qtsdl::GuiDedicatedThread</innerclass>
+    <innernamespace refid="d6/dda/namespaceqtsdl">qtsdl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2015-2016<sp/>the<sp/>openage<sp/>authors.<sp/>See<sp/>copying.md<sp/>for<sp/>legal<sp/>info.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;condition_variable&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/dda/namespaceqtsdl" kindref="compound">qtsdl</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="df/d66/classqtsdl_1_1_gui_dedicated_thread" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="df/d66/classqtsdl_1_1_gui_dedicated_thread" kindref="compound">GuiDedicatedThread</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;GuiDedicatedThread&gt;<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d66/classqtsdl_1_1_gui_dedicated_thread_1a19a6835538cf7d7ccad33ad97969f2fe" kindref="member">~GuiDedicatedThread</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d66/classqtsdl_1_1_gui_dedicated_thread_1a7df4d5c05f49eac41404768088ed38ee" kindref="member">GuiDedicatedThread</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="df/d66/classqtsdl_1_1_gui_dedicated_thread_1adb99230c55459bafd54f09ee67b35b28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::thread<sp/><ref refid="df/d66/classqtsdl_1_1_gui_dedicated_thread_1adb99230c55459bafd54f09ee67b35b28" kindref="member">worker</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="df/d66/classqtsdl_1_1_gui_dedicated_thread_1a569418caf8eb1698b0563f6382aedf5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::weak_ptr&lt;GuiDedicatedThread&gt;<sp/><ref refid="df/d66/classqtsdl_1_1_gui_dedicated_thread_1a569418caf8eb1698b0563f6382aedf5e" kindref="member">instance</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="df/d66/classqtsdl_1_1_gui_dedicated_thread_1acb18aaa9962e0f94f007e81c792d071f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="df/d66/classqtsdl_1_1_gui_dedicated_thread_1acb18aaa9962e0f94f007e81c792d071f" kindref="member">exists</ref>;</highlight></codeline>
+<codeline lineno="31" refid="df/d66/classqtsdl_1_1_gui_dedicated_thread_1a23c98485b115500bc1f4cef767c15ec4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::mutex<sp/><ref refid="df/d66/classqtsdl_1_1_gui_dedicated_thread_1a23c98485b115500bc1f4cef767c15ec4" kindref="member">existence_guard</ref>;</highlight></codeline>
+<codeline lineno="32" refid="df/d66/classqtsdl_1_1_gui_dedicated_thread_1a64948a610eb428e9a9ba9603a9466d15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::condition_variable<sp/><ref refid="df/d66/classqtsdl_1_1_gui_dedicated_thread_1a64948a610eb428e9a9ba9603a9466d15" kindref="member">destroyed</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>qtsdl</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_dedicated_thread.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection" kind="class" language="Python" prot="public">
+    <compoundname>openage::util::fslike::filecollection::FileCollection</compoundname>
+    <basecompoundref refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object" prot="public" virt="non-virtual">openage.util.fslike.abstract.FSLikeObject</basecompoundref>
+    <derivedcompoundref refid="d8/d5d/classopenage_1_1cabextract_1_1cab_1_1_c_a_b_file" prot="public" virt="non-virtual">openage.cabextract.cab.CABFile</derivedcompoundref>
+    <derivedcompoundref refid="d0/dc2/classopenage_1_1convert_1_1drs_1_1_d_r_s" prot="public" virt="non-virtual">openage.convert.drs.DRS</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a75e62e8168ceeb224b2461f651dd61a1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>openage::util::fslike.filecollection.FileCollection::rootentries</definition>
+        <argsstring></argsstring>
+        <name>rootentries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="26" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="26" bodyend="-1"/>
+        <referencedby refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a236b83a25d5f87c98604b37597c2baf9" compoundref="d0/d8b/filecollection_8py" startline="40" endline="59">openage.util.fslike.filecollection.FileCollection.get_direntries</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a7ba8bd6b8a645bdd6e4c6287e9b4b0f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="21" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="21" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a809932b9f25e26fd521c04a42c6cf484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.root</definition>
+        <argsstring>(self)</argsstring>
+        <name>root</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="29" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a236b83a25d5f87c98604b37597c2baf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.get_direntries</definition>
+        <argsstring>(self, parts=None, create=False)</argsstring>
+        <name>get_direntries</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>create</type>
+          <defname>create</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>Fetches the fileentries, subdirentries tuple for the given dir. </para>        </briefdescription>
+        <detaileddescription>
+<para>If create == False, raises FileNotFoundError if the directory doesn&apos;t exist.</para><para>Helper method for internal use. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="40" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="40" bodyend="59"/>
+        <references refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a75e62e8168ceeb224b2461f651dd61a1" compoundref="d0/d8b/filecollection_8py" startline="26">openage.util.fslike.filecollection.FileCollection.rootentries</references>
+        <referencedby refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a28fd0619554d60027e2e2bf0568e2d4c" compoundref="d0/d8b/filecollection_8py" startline="68" endline="79">openage.util.fslike.filecollection.FileCollection.add_fileentry</referencedby>
+        <referencedby refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1ab46de614c539e3beed2affa49fd09779" compoundref="d0/d8b/filecollection_8py" startline="85" endline="101">openage.util.fslike.filecollection.FileCollection.get_fileentry</referencedby>
+        <referencedby refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1aa840106df09c378f09ce7fcc83ef9192" compoundref="d0/d8b/filecollection_8py" startline="194" endline="200">openage.util.fslike.filecollection.FileCollection.is_dir</referencedby>
+        <referencedby refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a72c5cfc08a9a21cfdea7170e575b67c9" compoundref="d0/d8b/filecollection_8py" startline="120" endline="125">openage.util.fslike.filecollection.FileCollection.list</referencedby>
+        <referencedby refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a52f309a6859078d8e0abe44327476e31" compoundref="d0/d8b/filecollection_8py" startline="142" endline="144">openage.util.fslike.filecollection.FileCollection.mkdirs</referencedby>
+        <referencedby refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1afd7d5108b06dfc0b5f52d50fc58b9671" compoundref="d0/d8b/filecollection_8py" startline="145" endline="165">openage.util.fslike.filecollection.FileCollection.rmdir</referencedby>
+        <referencedby refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a289137f3b7c3813e05d87e89bad9e893" compoundref="d0/d8b/filecollection_8py" startline="166" endline="180">openage.util.fslike.filecollection.FileCollection.unlink</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a28fd0619554d60027e2e2bf0568e2d4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.add_fileentry</definition>
+        <argsstring>(self, parts, fileentry)</argsstring>
+        <name>add_fileentry</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <param>
+          <type>fileentry</type>
+          <defname>fileentry</defname>
+        </param>
+        <briefdescription>
+<para>Adds a file entry (and parent directory entries, if needed). </para>        </briefdescription>
+        <detaileddescription>
+<para>This method should not be called directly; instead, use the add_file method of <ref refid="dd/dc1/classopenage_1_1util_1_1_path" kindref="compound">Path</ref> objects that were obtained from this.</para><para>fileentry must be open_r, open_w, size, mtime. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="68" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="68" bodyend="79"/>
+        <references refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a236b83a25d5f87c98604b37597c2baf9" compoundref="d0/d8b/filecollection_8py" startline="40" endline="59">openage.util.fslike.filecollection.FileCollection.get_direntries</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1ab46de614c539e3beed2affa49fd09779" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.get_fileentry</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>get_fileentry</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+<para>Gets a file entry. </para>        </briefdescription>
+        <detaileddescription>
+<para>Helper method for internal use. <verbatim>   Returns open_r, open_w, size, mtime</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="85" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="85" bodyend="101"/>
+        <references refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a236b83a25d5f87c98604b37597c2baf9" compoundref="d0/d8b/filecollection_8py" startline="40" endline="59">openage.util.fslike.filecollection.FileCollection.get_direntries</references>
+        <referencedby refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1abb7acc5e29787c2826c467ce0111eaca" compoundref="d0/d8b/filecollection_8py" startline="126" endline="133">openage.util.fslike.filecollection.FileCollection.filesize</referencedby>
+        <referencedby refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1aa67dc8d355a1c053942b3a375fc1985c" compoundref="d0/d8b/filecollection_8py" startline="187" endline="193">openage.util.fslike.filecollection.FileCollection.is_file</referencedby>
+        <referencedby refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a732ece4991737e5dd9ea2a4961a899ca" compoundref="d0/d8b/filecollection_8py" startline="134" endline="141">openage.util.fslike.filecollection.FileCollection.mtime</referencedby>
+        <referencedby refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1aa7aa810fd31b2ab2290b57b3c8c3c123" compoundref="d0/d8b/filecollection_8py" startline="102" endline="111">openage.util.fslike.filecollection.FileCollection.open_r</referencedby>
+        <referencedby refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a4e32318feb8203a576433ef955b3883d" compoundref="d0/d8b/filecollection_8py" startline="112" endline="119">openage.util.fslike.filecollection.FileCollection.open_w</referencedby>
+        <referencedby refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1ab6065913c8c25261d0f71cc222483fb1" compoundref="d0/d8b/filecollection_8py" startline="201" endline="209">openage.util.fslike.filecollection.FileCollection.writable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1aa7aa810fd31b2ab2290b57b3c8c3c123" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.open_r</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>open_r</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="102" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="102" bodyend="111"/>
+        <references refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1ab46de614c539e3beed2affa49fd09779" compoundref="d0/d8b/filecollection_8py" startline="85" endline="101">openage.util.fslike.filecollection.FileCollection.get_fileentry</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a4e32318feb8203a576433ef955b3883d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.open_w</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>open_w</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="112" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="112" bodyend="119"/>
+        <references refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1ab46de614c539e3beed2affa49fd09779" compoundref="d0/d8b/filecollection_8py" startline="85" endline="101">openage.util.fslike.filecollection.FileCollection.get_fileentry</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a72c5cfc08a9a21cfdea7170e575b67c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.list</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>list</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="120" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="120" bodyend="125"/>
+        <references refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a236b83a25d5f87c98604b37597c2baf9" compoundref="d0/d8b/filecollection_8py" startline="40" endline="59">openage.util.fslike.filecollection.FileCollection.get_direntries</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1abb7acc5e29787c2826c467ce0111eaca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.filesize</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>filesize</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="126" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="126" bodyend="133"/>
+        <references refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1ab46de614c539e3beed2affa49fd09779" compoundref="d0/d8b/filecollection_8py" startline="85" endline="101">openage.util.fslike.filecollection.FileCollection.get_fileentry</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a732ece4991737e5dd9ea2a4961a899ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.mtime</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>mtime</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="134" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="134" bodyend="141"/>
+        <references refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1ab46de614c539e3beed2affa49fd09779" compoundref="d0/d8b/filecollection_8py" startline="85" endline="101">openage.util.fslike.filecollection.FileCollection.get_fileentry</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a52f309a6859078d8e0abe44327476e31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.mkdirs</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>mkdirs</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="142" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="142" bodyend="144"/>
+        <references refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a236b83a25d5f87c98604b37597c2baf9" compoundref="d0/d8b/filecollection_8py" startline="40" endline="59">openage.util.fslike.filecollection.FileCollection.get_direntries</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1afd7d5108b06dfc0b5f52d50fc58b9671" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.rmdir</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>rmdir</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="145" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="145" bodyend="165"/>
+        <references refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a236b83a25d5f87c98604b37597c2baf9" compoundref="d0/d8b/filecollection_8py" startline="40" endline="59">openage.util.fslike.filecollection.FileCollection.get_direntries</references>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1a54ddfaca7c17c046c0a7472bb6af3d76" compoundref="d0/d7a/path_8py" startline="227" endline="234">openage.util.fslike.path.Path.removerecursive</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a289137f3b7c3813e05d87e89bad9e893" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.unlink</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>unlink</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="166" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="166" bodyend="180"/>
+        <references refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a236b83a25d5f87c98604b37597c2baf9" compoundref="d0/d8b/filecollection_8py" startline="40" endline="59">openage.util.fslike.filecollection.FileCollection.get_direntries</references>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1a54ddfaca7c17c046c0a7472bb6af3d76" compoundref="d0/d7a/path_8py" startline="227" endline="234">openage.util.fslike.path.Path.removerecursive</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a76a84ca7fe498a12a5cb8c2dd5caadb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.touch</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>touch</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="181" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="181" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a717813dafeb60e3ba8c92c70c36b6985" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.rename</definition>
+        <argsstring>(self, srcparts, tgtparts)</argsstring>
+        <name>rename</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>srcparts</type>
+          <defname>srcparts</defname>
+        </param>
+        <param>
+          <type>tgtparts</type>
+          <defname>tgtparts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="184" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="184" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1aa67dc8d355a1c053942b3a375fc1985c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.is_file</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>is_file</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="187" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="187" bodyend="193"/>
+        <references refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1ab46de614c539e3beed2affa49fd09779" compoundref="d0/d8b/filecollection_8py" startline="85" endline="101">openage.util.fslike.filecollection.FileCollection.get_fileentry</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1aa840106df09c378f09ce7fcc83ef9192" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.is_dir</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>is_dir</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="194" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="194" bodyend="200"/>
+        <references refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a236b83a25d5f87c98604b37597c2baf9" compoundref="d0/d8b/filecollection_8py" startline="40" endline="59">openage.util.fslike.filecollection.FileCollection.get_direntries</references>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1a54ddfaca7c17c046c0a7472bb6af3d76" compoundref="d0/d7a/path_8py" startline="227" endline="234">openage.util.fslike.path.Path.removerecursive</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1ab6065913c8c25261d0f71cc222483fb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.writable</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>writable</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="201" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="201" bodyend="209"/>
+        <references refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1ab46de614c539e3beed2affa49fd09779" compoundref="d0/d8b/filecollection_8py" startline="85" endline="101">openage.util.fslike.filecollection.FileCollection.get_fileentry</references>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a2aabad3c9f6648ff2494ce83d30f24dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.watch</definition>
+        <argsstring>(self, parts, callback)</argsstring>
+        <name>watch</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <param>
+          <type>callback</type>
+          <defname>callback</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="210" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="210" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1add6a1fab1021d80479844a34a79fe1f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.filecollection.FileCollection.poll_watches</definition>
+        <argsstring>(self)</argsstring>
+        <name>poll_watches</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="214" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="214" bodyend="217"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>FSLikeObject that holds several individual files. </para>    </briefdescription>
+    <detaileddescription>
+<para>Uses lambdas to access files somewhere else on the fly. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5991">
+        <label>openage.cabextract.cab.CABFile</label>
+        <link refid="d8/d5d/classopenage_1_1cabextract_1_1cab_1_1_c_a_b_file"/>
+        <childnode refid="5988" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5989">
+        <label>openage.util.fslike.abstract.FSLikeObject</label>
+        <link refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object"/>
+        <childnode refid="5990" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5988">
+        <label>openage.util.fslike.filecollection.FileCollection</label>
+        <link refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection"/>
+        <childnode refid="5989" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5992">
+        <label>openage.convert.drs.DRS</label>
+        <link refid="d0/dc2/classopenage_1_1convert_1_1drs_1_1_d_r_s"/>
+        <childnode refid="5988" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5990">
+        <label>ABC</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5994">
+        <label>openage.util.fslike.abstract.FSLikeObject</label>
+        <link refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object"/>
+        <childnode refid="5995" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5993">
+        <label>openage.util.fslike.filecollection.FileCollection</label>
+        <link refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection"/>
+        <childnode refid="5994" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5995">
+        <label>ABC</label>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" line="20" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/filecollection.py" bodystart="20" bodyend="218"/>
+    <listofallmembers>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a7ba8bd6b8a645bdd6e4c6287e9b4b0f5" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>__init__</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a28fd0619554d60027e2e2bf0568e2d4c" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>add_fileentry</name></member>
+      <member refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object_1abc5969fa041b778d0906a452d45f9d0c" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>exists</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1abb7acc5e29787c2826c467ce0111eaca" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>filesize</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a236b83a25d5f87c98604b37597c2baf9" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>get_direntries</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1ab46de614c539e3beed2affa49fd09779" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>get_fileentry</name></member>
+      <member refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object_1a7f9d7aa25e089cfea369bdd7d9683a57" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>get_native_path</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1aa840106df09c378f09ce7fcc83ef9192" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>is_dir</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1aa67dc8d355a1c053942b3a375fc1985c" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>is_file</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a72c5cfc08a9a21cfdea7170e575b67c9" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>list</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a52f309a6859078d8e0abe44327476e31" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>mkdirs</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a732ece4991737e5dd9ea2a4961a899ca" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>mtime</name></member>
+      <member refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object_1a3a9fb9c9e3f96a98cc679de8e55fc937" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>open_a</name></member>
+      <member refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object_1a023d59f227466dafe020f394d5049456" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>open_ar</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1aa7aa810fd31b2ab2290b57b3c8c3c123" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>open_r</name></member>
+      <member refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object_1a9e6e9458b1150816521cc68bda348c09" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>open_rw</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a4e32318feb8203a576433ef955b3883d" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>open_w</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1add6a1fab1021d80479844a34a79fe1f8" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>poll_watches</name></member>
+      <member refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object_1a53ae3dc0d5327095637653e4d17b638d" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>pretty</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a717813dafeb60e3ba8c92c70c36b6985" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>rename</name></member>
+      <member refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object_1af30b34d88a17e5d1d7e99046da0490f5" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>resolve_r</name></member>
+      <member refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object_1a255427aef3f55eea705114af7d7c107f" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>resolve_w</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1afd7d5108b06dfc0b5f52d50fc58b9671" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>rmdir</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a809932b9f25e26fd521c04a42c6cf484" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>root</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a75e62e8168ceeb224b2461f651dd61a1" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>rootentries</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a76a84ca7fe498a12a5cb8c2dd5caadb4" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>touch</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a289137f3b7c3813e05d87e89bad9e893" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>unlink</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1a2aabad3c9f6648ff2494ce83d30f24dc" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>watch</name></member>
+      <member refid="dc/d11/classopenage_1_1util_1_1fslike_1_1filecollection_1_1_file_collection_1ab6065913c8c25261d0f71cc222483fb1" prot="public" virt="non-virtual"><scope>openage::util::fslike::filecollection::FileCollection</scope><name>writable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d6/d3f/classopenage_1_1event_1_1_event_filter" kind="class" language="C++" prot="public">
+    <compoundname>openage::event::EventFilter</compoundname>
+    <includes refid="de/d09/eventfilter_8h" local="no">eventfilter.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d6/d3f/classopenage_1_1event_1_1_event_filter_1a43b7c69a09a2feec04b4983315603c84" prot="private" static="no" mutable="no">
+        <type>std::function&lt; bool(const std::shared_ptr&lt; <ref refid="d6/d15/classopenage_1_1event_1_1_event_target" kindref="compound">EventTarget</ref> &gt; &amp;)&gt;</type>
+        <definition>std::function&lt;bool(const std::shared_ptr&lt;EventTarget&gt;&amp;)&gt; openage::event::EventFilter::filter</definition>
+        <argsstring></argsstring>
+        <name>filter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventfilter.h" line="23" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventfilter.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="d6/d3f/classopenage_1_1event_1_1_event_filter_1a12ede2316c998de4e24cbcec2fccec3f" compoundref="db/dbe/eventfilter_8cpp" startline="13" endline="15">apply</referencedby>
+        <referencedby refid="d6/d3f/classopenage_1_1event_1_1_event_filter_1a9667cfa1b42a5395547c82cbf9bb0581" compoundref="db/dbe/eventfilter_8cpp" startline="8" endline="10">EventFilter</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/d3f/classopenage_1_1event_1_1_event_filter_1a9667cfa1b42a5395547c82cbf9bb0581" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::event::EventFilter::EventFilter</definition>
+        <argsstring>(const std::function&lt; bool(const std::shared_ptr&lt; EventTarget &gt; &amp;)&gt; &amp;filter)</argsstring>
+        <name>EventFilter</name>
+        <param>
+          <type>const std::function&lt; bool(const std::shared_ptr&lt; <ref refid="d6/d15/classopenage_1_1event_1_1_event_target" kindref="compound">EventTarget</ref> &gt; &amp;)&gt; &amp;</type>
+          <declname>filter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventfilter.h" line="18" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventfilter.cpp" bodystart="8" bodyend="10"/>
+        <references refid="d6/d3f/classopenage_1_1event_1_1_event_filter_1a43b7c69a09a2feec04b4983315603c84" compoundref="de/d09/eventfilter_8h" startline="23">filter</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/d3f/classopenage_1_1event_1_1_event_filter_1a12ede2316c998de4e24cbcec2fccec3f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::event::EventFilter::apply</definition>
+        <argsstring>(const std::shared_ptr&lt; EventTarget &gt; &amp;target) const</argsstring>
+        <name>apply</name>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d6/d15/classopenage_1_1event_1_1_event_target" kindref="compound">EventTarget</ref> &gt; &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventfilter.h" line="20" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventfilter.cpp" bodystart="13" bodyend="15"/>
+        <references refid="d6/d3f/classopenage_1_1event_1_1_event_filter_1a43b7c69a09a2feec04b4983315603c84" compoundref="de/d09/eventfilter_8h" startline="23">filter</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Store a filter function that can then be applied on an event target. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2236">
+        <label>openage::event::EventFilter</label>
+        <link refid="d6/d3f/classopenage_1_1event_1_1_event_filter"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventfilter.h" line="16" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventfilter.h" bodystart="16" bodyend="24"/>
+    <listofallmembers>
+      <member refid="d6/d3f/classopenage_1_1event_1_1_event_filter_1a12ede2316c998de4e24cbcec2fccec3f" prot="public" virt="non-virtual"><scope>openage::event::EventFilter</scope><name>apply</name></member>
+      <member refid="d6/d3f/classopenage_1_1event_1_1_event_filter_1a9667cfa1b42a5395547c82cbf9bb0581" prot="public" virt="non-virtual"><scope>openage::event::EventFilter</scope><name>EventFilter</name></member>
+      <member refid="d6/d3f/classopenage_1_1event_1_1_event_filter_1a43b7c69a09a2feec04b4983315603c84" prot="private" virt="non-virtual"><scope>openage::event::EventFilter</scope><name>filter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

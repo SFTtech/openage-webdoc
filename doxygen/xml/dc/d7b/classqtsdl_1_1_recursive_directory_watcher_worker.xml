@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker" kind="class" language="C++" prot="public">
+    <compoundname>qtsdl::RecursiveDirectoryWatcherWorker</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="d4/da8/recursive__directory__watcher__worker_8h" local="no">recursive_directory_watcher_worker.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1ad028fc13782a990293a2a6c8c7308e09" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; QFileSystemWatcher &gt;</type>
+        <definition>std::unique_ptr&lt;QFileSystemWatcher&gt; qtsdl::RecursiveDirectoryWatcherWorker::watcher</definition>
+        <argsstring></argsstring>
+        <name>watcher</name>
+        <briefdescription>
+<para>Actual watcher. </para>        </briefdescription>
+        <detaileddescription>
+<para>Its event processing and destruction has to be in the same separate thread. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.h" line="39" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1ad06a00847d0e68ab3932169e674fde0b" compoundref="d5/de4/recursive__directory__watcher__worker_8cpp" startline="56" endline="66">restart_watching</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1ad62f2b17f41712be42adc687c12d470e" prot="private" static="no" mutable="no">
+        <type>QTimer</type>
+        <definition>QTimer qtsdl::RecursiveDirectoryWatcherWorker::batching_timer</definition>
+        <argsstring></argsstring>
+        <name>batching_timer</name>
+        <briefdescription>
+<para>Waits to glue multiple changes into one event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.h" line="44" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1ae6212c6d19cb887015d3da8a59bd4576" compoundref="d5/de4/recursive__directory__watcher__worker_8cpp" startline="68" endline="71">onEntryChanged</referencedby>
+        <referencedby refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a7f4f7905175d63ff609dfa5a0d17480e" compoundref="d5/de4/recursive__directory__watcher__worker_8cpp" startline="16" endline="24">RecursiveDirectoryWatcherWorker</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a53a27917cd08812e5b041277e58014fe" prot="private" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList qtsdl::RecursiveDirectoryWatcherWorker::root_dirs_paths</definition>
+        <argsstring></argsstring>
+        <name>root_dirs_paths</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.h" line="46" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a9722ee9e0a60a9f437b86c7902641767" compoundref="d5/de4/recursive__directory__watcher__worker_8cpp" startline="26" endline="31">onRootDirsPathsChanged</referencedby>
+        <referencedby refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a91bfaa86b49409e691361ef093d77211" compoundref="d5/de4/recursive__directory__watcher__worker_8cpp" startline="52" endline="54">restartWatching</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a7f4f7905175d63ff609dfa5a0d17480e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>qtsdl::RecursiveDirectoryWatcherWorker::RecursiveDirectoryWatcherWorker</definition>
+        <argsstring>()</argsstring>
+        <name>RecursiveDirectoryWatcherWorker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.h" line="20" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.cpp" bodystart="16" bodyend="24"/>
+        <references refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1ad62f2b17f41712be42adc687c12d470e" compoundref="d4/da8/recursive__directory__watcher__worker_8h" startline="44">batching_timer</references>
+        <references refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a1ce2429e0e42eac07a876e55fa26461d">changeDetected</references>
+        <references refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a91bfaa86b49409e691361ef093d77211" compoundref="d5/de4/recursive__directory__watcher__worker_8cpp" startline="52" endline="54">restartWatching</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a1ce2429e0e42eac07a876e55fa26461d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void qtsdl::RecursiveDirectoryWatcherWorker::changeDetected</definition>
+        <argsstring>()</argsstring>
+        <name>changeDetected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.h" line="23" column="1"/>
+        <referencedby refid="d3/dea/classqtsdl_1_1_recursive_directory_watcher_1a783cc986da8f9ed63ac735b00f119404" compoundref="d7/d9a/recursive__directory__watcher_8cpp" startline="12" endline="32">qtsdl::RecursiveDirectoryWatcher::RecursiveDirectoryWatcher</referencedby>
+        <referencedby refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a7f4f7905175d63ff609dfa5a0d17480e" compoundref="d5/de4/recursive__directory__watcher__worker_8cpp" startline="16" endline="24">RecursiveDirectoryWatcherWorker</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a9722ee9e0a60a9f437b86c7902641767" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void qtsdl::RecursiveDirectoryWatcherWorker::onRootDirsPathsChanged</definition>
+        <argsstring>(const QStringList &amp;root_dirs_paths)</argsstring>
+        <name>onRootDirsPathsChanged</name>
+        <param>
+          <type>const QStringList &amp;</type>
+          <declname>root_dirs_paths</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.h" line="26" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.cpp" bodystart="26" bodyend="31"/>
+        <references refid="de/d60/namespaceopenage_1_1util_1ac6f34c002692bc844cd70de03e10bc5d" compoundref="df/dd9/algorithm_8h" startline="17" endline="22">openage::util::for_each</references>
+        <references refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a91bfaa86b49409e691361ef093d77211" compoundref="d5/de4/recursive__directory__watcher__worker_8cpp" startline="52" endline="54">restartWatching</references>
+        <references refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a53a27917cd08812e5b041277e58014fe" compoundref="d4/da8/recursive__directory__watcher__worker_8h" startline="46">root_dirs_paths</references>
+        <referencedby refid="d3/dea/classqtsdl_1_1_recursive_directory_watcher_1a783cc986da8f9ed63ac735b00f119404" compoundref="d7/d9a/recursive__directory__watcher_8cpp" startline="12" endline="32">qtsdl::RecursiveDirectoryWatcher::RecursiveDirectoryWatcher</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a91bfaa86b49409e691361ef093d77211" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void qtsdl::RecursiveDirectoryWatcherWorker::restartWatching</definition>
+        <argsstring>()</argsstring>
+        <name>restartWatching</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.h" line="27" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.cpp" bodystart="52" bodyend="54"/>
+        <references refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1ad06a00847d0e68ab3932169e674fde0b" compoundref="d5/de4/recursive__directory__watcher__worker_8cpp" startline="56" endline="66">restart_watching</references>
+        <references refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a53a27917cd08812e5b041277e58014fe" compoundref="d4/da8/recursive__directory__watcher__worker_8h" startline="46">root_dirs_paths</references>
+        <referencedby refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a9722ee9e0a60a9f437b86c7902641767" compoundref="d5/de4/recursive__directory__watcher__worker_8cpp" startline="26" endline="31">onRootDirsPathsChanged</referencedby>
+        <referencedby refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a7f4f7905175d63ff609dfa5a0d17480e" compoundref="d5/de4/recursive__directory__watcher__worker_8cpp" startline="16" endline="24">RecursiveDirectoryWatcherWorker</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1ae6212c6d19cb887015d3da8a59bd4576" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void qtsdl::RecursiveDirectoryWatcherWorker::onEntryChanged</definition>
+        <argsstring>()</argsstring>
+        <name>onEntryChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.h" line="30" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.cpp" bodystart="68" bodyend="71"/>
+        <references refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1ad62f2b17f41712be42adc687c12d470e" compoundref="d4/da8/recursive__directory__watcher__worker_8h" startline="44">batching_timer</references>
+        <referencedby refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1ad06a00847d0e68ab3932169e674fde0b" compoundref="d5/de4/recursive__directory__watcher__worker_8cpp" startline="56" endline="66">restart_watching</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1ad06a00847d0e68ab3932169e674fde0b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void qtsdl::RecursiveDirectoryWatcherWorker::restart_watching</definition>
+        <argsstring>(const QStringList &amp;entries_to_watch)</argsstring>
+        <name>restart_watching</name>
+        <param>
+          <type>const QStringList &amp;</type>
+          <declname>entries_to_watch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.h" line="33" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.cpp" bodystart="56" bodyend="66"/>
+        <references refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1ae6212c6d19cb887015d3da8a59bd4576" compoundref="d5/de4/recursive__directory__watcher__worker_8cpp" startline="68" endline="71">onEntryChanged</references>
+        <references refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1ad028fc13782a990293a2a6c8c7308e09" compoundref="d4/da8/recursive__directory__watcher__worker_8h" startline="39">watcher</references>
+        <referencedby refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a91bfaa86b49409e691361ef093d77211" compoundref="d5/de4/recursive__directory__watcher__worker_8cpp" startline="52" endline="54">restartWatching</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Emits a signal when anything changes in the directories. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6685">
+        <label>QObject</label>
+      </node>
+      <node id="6684">
+        <label>qtsdl::RecursiveDirectoryWatcherWorker</label>
+        <link refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker"/>
+        <childnode refid="6685" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6687">
+        <label>QObject</label>
+      </node>
+      <node id="6686">
+        <label>qtsdl::RecursiveDirectoryWatcherWorker</label>
+        <link refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker"/>
+        <childnode refid="6687" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.h" line="16" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/livereload/recursive_directory_watcher_worker.h" bodystart="16" bodyend="47"/>
+    <listofallmembers>
+      <member refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1ad62f2b17f41712be42adc687c12d470e" prot="private" virt="non-virtual"><scope>qtsdl::RecursiveDirectoryWatcherWorker</scope><name>batching_timer</name></member>
+      <member refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a1ce2429e0e42eac07a876e55fa26461d" prot="public" virt="non-virtual"><scope>qtsdl::RecursiveDirectoryWatcherWorker</scope><name>changeDetected</name></member>
+      <member refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1ae6212c6d19cb887015d3da8a59bd4576" prot="private" virt="non-virtual"><scope>qtsdl::RecursiveDirectoryWatcherWorker</scope><name>onEntryChanged</name></member>
+      <member refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a9722ee9e0a60a9f437b86c7902641767" prot="public" virt="non-virtual"><scope>qtsdl::RecursiveDirectoryWatcherWorker</scope><name>onRootDirsPathsChanged</name></member>
+      <member refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a7f4f7905175d63ff609dfa5a0d17480e" prot="public" virt="non-virtual"><scope>qtsdl::RecursiveDirectoryWatcherWorker</scope><name>RecursiveDirectoryWatcherWorker</name></member>
+      <member refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1ad06a00847d0e68ab3932169e674fde0b" prot="private" virt="non-virtual"><scope>qtsdl::RecursiveDirectoryWatcherWorker</scope><name>restart_watching</name></member>
+      <member refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a91bfaa86b49409e691361ef093d77211" prot="public" virt="non-virtual"><scope>qtsdl::RecursiveDirectoryWatcherWorker</scope><name>restartWatching</name></member>
+      <member refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1a53a27917cd08812e5b041277e58014fe" prot="private" virt="non-virtual"><scope>qtsdl::RecursiveDirectoryWatcherWorker</scope><name>root_dirs_paths</name></member>
+      <member refid="dc/d7b/classqtsdl_1_1_recursive_directory_watcher_worker_1ad028fc13782a990293a2a6c8c7308e09" prot="private" virt="non-virtual"><scope>qtsdl::RecursiveDirectoryWatcherWorker</scope><name>watcher</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,513 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d3/de8/renderer_2opengl_2texture_8h" kind="file" language="C++">
+    <compoundname>texture.h</compoundname>
+    <includes refid="d0/dbf/texture__data_8h" local="yes">../resources/texture_data.h</includes>
+    <includes refid="d3/d8c/renderer_2texture_8h" local="yes">../texture.h</includes>
+    <includes refid="d4/df8/simple__object_8h" local="yes">simple_object.h</includes>
+    <includedby refid="d4/dd2/framebuffer_8h" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/framebuffer.h</includedby>
+    <includedby refid="d5/df6/opengl_2render__target_8h" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/render_target.h</includedby>
+    <includedby refid="dd/d3d/opengl_2renderer_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/renderer.cpp</includedby>
+    <includedby refid="de/d88/shader__program_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/shader_program.cpp</includedby>
+    <includedby refid="dd/dca/renderer_2opengl_2texture_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/texture.cpp</includedby>
+    <incdepgraph>
+      <node id="22443">
+        <label>list</label>
+      </node>
+      <node id="22458">
+        <label>../util/language.h</label>
+        <link refid="d8/dce/language_8h"/>
+      </node>
+      <node id="22435">
+        <label>atomic</label>
+      </node>
+      <node id="22440">
+        <label>iomanip</label>
+      </node>
+      <node id="22439">
+        <label>functional</label>
+      </node>
+      <node id="22453">
+        <label>fslike/native.h</label>
+        <link refid="d3/d0f/fslike_2native_8h"/>
+      </node>
+      <node id="22416">
+        <label>cstdint</label>
+      </node>
+      <node id="22436">
+        <label>externalsstream.h</label>
+        <link refid="dc/dcf/externalsstream_8h"/>
+        <childnode refid="22424" relation="include">
+        </childnode>
+        <childnode refid="22417" relation="include">
+        </childnode>
+      </node>
+      <node id="22429">
+        <label>signal.h</label>
+        <link refid="d8/d39/signal_8h"/>
+        <childnode refid="22429" relation="include">
+        </childnode>
+      </node>
+      <node id="22457">
+        <label>functional.h</label>
+        <link refid="d8/dea/functional_8h"/>
+        <childnode refid="22439" relation="include">
+        </childnode>
+        <childnode refid="22444" relation="include">
+        </childnode>
+        <childnode refid="22427" relation="include">
+        </childnode>
+        <childnode refid="22458" relation="include">
+        </childnode>
+        <childnode refid="22459" relation="include">
+        </childnode>
+        <childnode refid="22460" relation="include">
+        </childnode>
+      </node>
+      <node id="22426">
+        <label>stdexcept</label>
+      </node>
+      <node id="22459">
+        <label>exctranslate.h</label>
+        <link refid="dd/d5f/exctranslate_8h"/>
+        <childnode refid="22423" relation="include">
+        </childnode>
+      </node>
+      <node id="22438">
+        <label>cstdarg</label>
+      </node>
+      <node id="22417">
+        <label>string</label>
+      </node>
+      <node id="22442">
+        <label>logsink.h</label>
+        <link refid="d3/d4e/logsink_8h"/>
+        <childnode refid="22443" relation="include">
+        </childnode>
+        <childnode refid="22444" relation="include">
+        </childnode>
+        <childnode refid="22445" relation="include">
+        </childnode>
+      </node>
+      <node id="22448">
+        <label>texture_subinfo.h</label>
+        <link refid="dc/dfc/texture__subinfo_8h"/>
+        <childnode refid="22416" relation="include">
+        </childnode>
+        <childnode refid="22449" relation="include">
+        </childnode>
+      </node>
+      <node id="22451">
+        <label>fstream</label>
+      </node>
+      <node id="22430">
+        <label>../log/message.h</label>
+        <link refid="d2/d0d/message_8h"/>
+        <childnode refid="22416" relation="include">
+        </childnode>
+        <childnode refid="22417" relation="include">
+        </childnode>
+        <childnode refid="22431" relation="include">
+        </childnode>
+        <childnode refid="22432" relation="include">
+        </childnode>
+        <childnode refid="22434" relation="include">
+        </childnode>
+        <childnode refid="22442" relation="include">
+        </childnode>
+        <childnode refid="22445" relation="include">
+        </childnode>
+      </node>
+      <node id="22446">
+        <label>../util/enum.h</label>
+        <link refid="d0/d9b/enum_8h"/>
+        <childnode refid="22424" relation="include">
+        </childnode>
+        <childnode refid="22447" relation="include">
+        </childnode>
+        <childnode refid="22427" relation="include">
+        </childnode>
+      </node>
+      <node id="22419">
+        <label>../../datastructure/constexpr_map.h</label>
+        <link refid="d3/dd6/constexpr__map_8h"/>
+        <childnode refid="22420" relation="include">
+        </childnode>
+        <childnode refid="22421" relation="include">
+        </childnode>
+        <childnode refid="22422" relation="include">
+        </childnode>
+        <childnode refid="22423" relation="include">
+        </childnode>
+      </node>
+      <node id="22461">
+        <label>file.h</label>
+        <link refid="d2/d4d/file_8h"/>
+        <childnode refid="22425" relation="include">
+        </childnode>
+        <childnode refid="22417" relation="include">
+        </childnode>
+        <childnode refid="22415" relation="include">
+        </childnode>
+        <childnode refid="22462" relation="include">
+        </childnode>
+        <childnode refid="22455" relation="include">
+        </childnode>
+      </node>
+      <node id="22462">
+        <label>filelike/filelike.h</label>
+        <link refid="d7/db5/filelike_8h"/>
+        <childnode refid="22424" relation="include">
+        </childnode>
+        <childnode refid="22417" relation="include">
+        </childnode>
+        <childnode refid="22427" relation="include">
+        </childnode>
+      </node>
+      <node id="22447">
+        <label>typeinfo</label>
+      </node>
+      <node id="22464">
+        <label>simple_object.h</label>
+        <link refid="d4/df8/simple__object_8h"/>
+        <childnode refid="22465" relation="include">
+        </childnode>
+        <childnode refid="22439" relation="include">
+        </childnode>
+        <childnode refid="22466" relation="include">
+        </childnode>
+      </node>
+      <node id="22465">
+        <label>optional</label>
+      </node>
+      <node id="22415">
+        <label>vector</label>
+      </node>
+      <node id="22428">
+        <label>ciso646</label>
+      </node>
+      <node id="22456">
+        <label>defs.h</label>
+        <link refid="d5/d64/defs_8h"/>
+      </node>
+      <node id="22423">
+        <label>../error/error.h</label>
+        <link refid="d7/dce/error_2error_8h"/>
+        <childnode refid="22424" relation="include">
+        </childnode>
+        <childnode refid="22425" relation="include">
+        </childnode>
+        <childnode refid="22426" relation="include">
+        </childnode>
+        <childnode refid="22417" relation="include">
+        </childnode>
+        <childnode refid="22427" relation="include">
+        </childnode>
+        <childnode refid="22430" relation="include">
+        </childnode>
+      </node>
+      <node id="22422">
+        <label>utility</label>
+      </node>
+      <node id="22420">
+        <label>array</label>
+      </node>
+      <node id="22418">
+        <label>texture_info.h</label>
+        <link refid="db/dab/texture__info_8h"/>
+        <childnode refid="22416" relation="include">
+        </childnode>
+        <childnode refid="22415" relation="include">
+        </childnode>
+        <childnode refid="22419" relation="include">
+        </childnode>
+        <childnode refid="22448" relation="include">
+        </childnode>
+      </node>
+      <node id="22441">
+        <label>sstream</label>
+      </node>
+      <node id="22449">
+        <label>../../util/csv.h</label>
+        <link refid="d3/d8e/csv_8h"/>
+        <childnode refid="22433" relation="include">
+        </childnode>
+        <childnode refid="22450" relation="include">
+        </childnode>
+        <childnode refid="22451" relation="include">
+        </childnode>
+        <childnode refid="22417" relation="include">
+        </childnode>
+        <childnode refid="22452" relation="include">
+        </childnode>
+        <childnode refid="22415" relation="include">
+        </childnode>
+        <childnode refid="22423" relation="include">
+        </childnode>
+        <childnode refid="22427" relation="include">
+        </childnode>
+        <childnode refid="22453" relation="include">
+        </childnode>
+        <childnode refid="22454" relation="include">
+        </childnode>
+      </node>
+      <node id="22466">
+        <label>epoxy/gl.h</label>
+      </node>
+      <node id="22460">
+        <label>setup.h</label>
+        <link refid="d7/df7/setup_8h"/>
+        <childnode refid="22439" relation="include">
+        </childnode>
+        <childnode refid="22427" relation="include">
+        </childnode>
+      </node>
+      <node id="22427">
+        <label>../util/compiler.h</label>
+        <link refid="d4/dd1/compiler_8h"/>
+        <childnode refid="22428" relation="include">
+        </childnode>
+        <childnode refid="22417" relation="include">
+        </childnode>
+        <childnode refid="22429" relation="include">
+        </childnode>
+      </node>
+      <node id="22433">
+        <label>cstdlib</label>
+      </node>
+      <node id="22414">
+        <label>../resources/texture_data.h</label>
+        <link refid="d0/dbf/texture__data_8h"/>
+        <childnode refid="22415" relation="include">
+        </childnode>
+        <childnode refid="22416" relation="include">
+        </childnode>
+        <childnode refid="22417" relation="include">
+        </childnode>
+        <childnode refid="22418" relation="include">
+        </childnode>
+        <childnode refid="22454" relation="include">
+        </childnode>
+      </node>
+      <node id="22445">
+        <label>level.h</label>
+        <link refid="de/d09/level_8h"/>
+        <childnode refid="22446" relation="include">
+        </childnode>
+      </node>
+      <node id="22424">
+        <label>iostream</label>
+      </node>
+      <node id="22432">
+        <label>../util/constexpr.h</label>
+        <link refid="d1/d06/constexpr_8h"/>
+        <childnode refid="22433" relation="include">
+        </childnode>
+      </node>
+      <node id="22455">
+        <label>../pyinterface/pyobject.h</label>
+        <link refid="d2/d4b/pyobject_8h"/>
+        <childnode refid="22416" relation="include">
+        </childnode>
+        <childnode refid="22417" relation="include">
+        </childnode>
+        <childnode refid="22415" relation="include">
+        </childnode>
+        <childnode refid="22456" relation="include">
+        </childnode>
+        <childnode refid="22457" relation="include">
+        </childnode>
+      </node>
+      <node id="22437">
+        <label>strings.h</label>
+        <link refid="d6/d90/strings_8h"/>
+        <childnode refid="22438" relation="include">
+        </childnode>
+        <childnode refid="22439" relation="include">
+        </childnode>
+        <childnode refid="22440" relation="include">
+        </childnode>
+        <childnode refid="22425" relation="include">
+        </childnode>
+        <childnode refid="22441" relation="include">
+        </childnode>
+        <childnode refid="22417" relation="include">
+        </childnode>
+        <childnode refid="22415" relation="include">
+        </childnode>
+      </node>
+      <node id="22452">
+        <label>unordered_map</label>
+      </node>
+      <node id="22444">
+        <label>mutex</label>
+      </node>
+      <node id="22463">
+        <label>../texture.h</label>
+        <link refid="d3/d8c/renderer_2texture_8h"/>
+        <childnode refid="22414" relation="include">
+        </childnode>
+      </node>
+      <node id="22434">
+        <label>../util/stringformatter.h</label>
+        <link refid="de/d65/stringformatter_8h"/>
+        <childnode refid="22435" relation="include">
+        </childnode>
+        <childnode refid="22425" relation="include">
+        </childnode>
+        <childnode refid="22421" relation="include">
+        </childnode>
+        <childnode refid="22427" relation="include">
+        </childnode>
+        <childnode refid="22436" relation="include">
+        </childnode>
+        <childnode refid="22437" relation="include">
+        </childnode>
+      </node>
+      <node id="22421">
+        <label>type_traits</label>
+      </node>
+      <node id="22431">
+        <label>config.h</label>
+      </node>
+      <node id="22454">
+        <label>path.h</label>
+        <link refid="d1/d11/util_2path_8h"/>
+        <childnode refid="22417" relation="include">
+        </childnode>
+        <childnode refid="22415" relation="include">
+        </childnode>
+        <childnode refid="22455" relation="include">
+        </childnode>
+        <childnode refid="22461" relation="include">
+        </childnode>
+        <childnode refid="22453" relation="include">
+        </childnode>
+      </node>
+      <node id="22413">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/texture.h</label>
+        <link refid="d3/de8/renderer_2opengl_2texture_8h"/>
+        <childnode refid="22414" relation="include">
+        </childnode>
+        <childnode refid="22463" relation="include">
+        </childnode>
+        <childnode refid="22464" relation="include">
+        </childnode>
+      </node>
+      <node id="22450">
+        <label>cstring</label>
+      </node>
+      <node id="22425">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="22477">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/shader_program.cpp</label>
+        <link refid="de/d88/shader__program_8cpp"/>
+      </node>
+      <node id="22468">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/framebuffer.h</label>
+        <link refid="d4/dd2/framebuffer_8h"/>
+        <childnode refid="22469" relation="include">
+        </childnode>
+        <childnode refid="22470" relation="include">
+        </childnode>
+      </node>
+      <node id="22476">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/texture_array.cpp</label>
+        <link refid="df/d6b/opengl_2texture__array_8cpp"/>
+      </node>
+      <node id="22470">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/render_target.h</label>
+        <link refid="d5/df6/opengl_2render__target_8h"/>
+        <childnode refid="22471" relation="include">
+        </childnode>
+        <childnode refid="22472" relation="include">
+        </childnode>
+        <childnode refid="22475" relation="include">
+        </childnode>
+        <childnode refid="22476" relation="include">
+        </childnode>
+      </node>
+      <node id="22475">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/texture.cpp</label>
+        <link refid="dd/dca/renderer_2opengl_2texture_8cpp"/>
+      </node>
+      <node id="22473">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/renderer.cpp</label>
+        <link refid="dd/d3d/opengl_2renderer_8cpp"/>
+      </node>
+      <node id="22474">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/window.cpp</label>
+        <link refid="da/d22/opengl_2window_8cpp"/>
+      </node>
+      <node id="22471">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/render_target.cpp</label>
+        <link refid="dc/dc3/render__target_8cpp"/>
+      </node>
+      <node id="22469">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/framebuffer.cpp</label>
+        <link refid="d3/dd6/framebuffer_8cpp"/>
+      </node>
+      <node id="22472">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/renderer.h</label>
+        <link refid="d5/d49/opengl_2renderer_8h"/>
+        <childnode refid="22473" relation="include">
+        </childnode>
+        <childnode refid="22474" relation="include">
+        </childnode>
+      </node>
+      <node id="22467">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/texture.h</label>
+        <link refid="d3/de8/renderer_2opengl_2texture_8h"/>
+        <childnode refid="22468" relation="include">
+        </childnode>
+        <childnode refid="22470" relation="include">
+        </childnode>
+        <childnode refid="22473" relation="include">
+        </childnode>
+        <childnode refid="22477" relation="include">
+        </childnode>
+        <childnode refid="22475" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d6/dae/classopenage_1_1renderer_1_1opengl_1_1_gl_texture2d" prot="public">openage::renderer::opengl::GlTexture2d</innerclass>
+    <innernamespace refid="da/d23/namespaceopenage">openage</innernamespace>
+    <innernamespace refid="d3/db5/namespaceopenage_1_1renderer">openage::renderer</innernamespace>
+    <innernamespace refid="d0/dc7/namespaceopenage_1_1renderer_1_1opengl">openage::renderer::opengl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2015-2018<sp/>the<sp/>openage<sp/>authors.<sp/>See<sp/>copying.md<sp/>for<sp/>legal<sp/>info.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../resources/texture_data.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../texture.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/df8/simple__object_8h" kindref="compound">simple_object.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="da/d23/namespaceopenage" kindref="compound">openage</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">renderer<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">opengl<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d6/dae/classopenage_1_1renderer_1_1opengl_1_1_gl_texture2d" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d6/dae/classopenage_1_1renderer_1_1opengl_1_1_gl_texture2d" kindref="compound">GlTexture2d</ref><sp/>final<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="de/dcc/classopenage_1_1renderer_1_1_texture2d" kindref="compound">Texture2d</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="da/ded/classopenage_1_1renderer_1_1opengl_1_1_gl_simple_object" kindref="compound">GlSimpleObject</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="d6/dae/classopenage_1_1renderer_1_1opengl_1_1_gl_texture2d_1a3286e15ce8350323b9e4b537e9d1f451" kindref="member">GlTexture2d</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/db0/classopenage_1_1renderer_1_1resources_1_1_texture2d_data" kindref="compound">resources::Texture2dData</ref>&amp;);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/dae/classopenage_1_1renderer_1_1opengl_1_1_gl_texture2d_1a3286e15ce8350323b9e4b537e9d1f451" kindref="member">GlTexture2d</ref>(<ref refid="d0/dd8/classopenage_1_1renderer_1_1resources_1_1_texture2d_info" kindref="compound">resources::Texture2dInfo</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/db0/classopenage_1_1renderer_1_1resources_1_1_texture2d_data" kindref="compound">resources::Texture2dData</ref><sp/><ref refid="d6/dae/classopenage_1_1renderer_1_1opengl_1_1_gl_texture2d_1ab2038754e208bb1929a244dbf29f2b6b" kindref="member">into_data</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/dae/classopenage_1_1renderer_1_1opengl_1_1_gl_texture2d_1aa521e75b491d72b51afade86d6c18ad4" kindref="member">upload</ref>(<ref refid="d8/db0/classopenage_1_1renderer_1_1resources_1_1_texture2d_data" kindref="compound">resources::Texture2dData</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//<sp/>openage::renderer::opengl</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/opengl/texture.h"/>
+  </compounddef>
+</doxygen>

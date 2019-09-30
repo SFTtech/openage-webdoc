@@ -1,0 +1,612 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="da/d7a/pathfinding_2path_8h" kind="file" language="C++">
+    <compoundname>path.h</compoundname>
+    <includes local="no">functional</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">vector</includes>
+    <includes refid="d0/d8a/phys_8h" local="yes">../coord/phys.h</includes>
+    <includes refid="da/dce/tile_8h" local="yes">../coord/tile.h</includes>
+    <includes refid="d8/da2/pairing__heap_8h" local="yes">../datastructure/pairing_heap.h</includes>
+    <includes refid="d4/d08/misc_8h" local="yes">../util/misc.h</includes>
+    <includes refid="db/dfb/hash_8h" local="yes">../util/hash.h</includes>
+    <includedby refid="d8/d1f/unit_2action_8h" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h</includedby>
+    <includedby refid="df/d8d/heuristics_8h" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/heuristics.h</includedby>
+    <includedby refid="d3/dce/a__star_8h" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/a_star.h</includedby>
+    <includedby refid="df/d8f/a__star_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/a_star.cpp</includedby>
+    <includedby refid="dd/ddb/pathfinding_2path_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.cpp</includedby>
+    <includedby refid="d6/dae/pathfinding_2tests_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/tests.cpp</includedby>
+    <incdepgraph>
+      <node id="18985">
+        <label>list</label>
+      </node>
+      <node id="18977">
+        <label>atomic</label>
+      </node>
+      <node id="18953">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h</label>
+        <link refid="da/d7a/pathfinding_2path_8h"/>
+        <childnode refid="18954" relation="include">
+        </childnode>
+        <childnode refid="18955" relation="include">
+        </childnode>
+        <childnode refid="18956" relation="include">
+        </childnode>
+        <childnode refid="18957" relation="include">
+        </childnode>
+        <childnode refid="18958" relation="include">
+        </childnode>
+        <childnode refid="19000" relation="include">
+        </childnode>
+        <childnode refid="19001" relation="include">
+        </childnode>
+        <childnode refid="18959" relation="include">
+        </childnode>
+        <childnode refid="18990" relation="include">
+        </childnode>
+      </node>
+      <node id="18982">
+        <label>iomanip</label>
+      </node>
+      <node id="18954">
+        <label>functional</label>
+      </node>
+      <node id="18996">
+        <label>limits</label>
+      </node>
+      <node id="18972">
+        <label>cstdint</label>
+      </node>
+      <node id="18979">
+        <label>externalsstream.h</label>
+        <link refid="dc/dcf/externalsstream_8h"/>
+        <childnode refid="18966" relation="include">
+        </childnode>
+        <childnode refid="18964" relation="include">
+        </childnode>
+      </node>
+      <node id="18970">
+        <label>signal.h</label>
+        <link refid="d8/d39/signal_8h"/>
+        <childnode refid="18970" relation="include">
+        </childnode>
+      </node>
+      <node id="18959">
+        <label>../util/misc.h</label>
+        <link refid="d4/d08/misc_8h"/>
+        <childnode refid="18960" relation="include">
+        </childnode>
+        <childnode refid="18961" relation="include">
+        </childnode>
+        <childnode refid="18962" relation="include">
+        </childnode>
+        <childnode refid="18963" relation="include">
+        </childnode>
+        <childnode refid="18964" relation="include">
+        </childnode>
+        <childnode refid="18957" relation="include">
+        </childnode>
+        <childnode refid="18955" relation="include">
+        </childnode>
+        <childnode refid="18965" relation="include">
+        </childnode>
+        <childnode refid="18968" relation="include">
+        </childnode>
+      </node>
+      <node id="18998">
+        <label>coord_nese.gen.h</label>
+      </node>
+      <node id="18962">
+        <label>cmath</label>
+      </node>
+      <node id="18958">
+        <label>../coord/phys.h</label>
+        <link refid="d0/d8a/phys_8h"/>
+        <childnode refid="18959" relation="include">
+        </childnode>
+        <childnode refid="18990" relation="include">
+        </childnode>
+        <childnode refid="18993" relation="include">
+        </childnode>
+        <childnode refid="18998" relation="include">
+        </childnode>
+        <childnode refid="18999" relation="include">
+        </childnode>
+      </node>
+      <node id="18967">
+        <label>stdexcept</label>
+      </node>
+      <node id="18981">
+        <label>cstdarg</label>
+      </node>
+      <node id="18964">
+        <label>string</label>
+      </node>
+      <node id="18984">
+        <label>logsink.h</label>
+        <link refid="d3/d4e/logsink_8h"/>
+        <childnode refid="18985" relation="include">
+        </childnode>
+        <childnode refid="18986" relation="include">
+        </childnode>
+        <childnode refid="18987" relation="include">
+        </childnode>
+      </node>
+      <node id="19002">
+        <label>unordered_set</label>
+      </node>
+      <node id="18997">
+        <label>ostream</label>
+      </node>
+      <node id="18971">
+        <label>../log/message.h</label>
+        <link refid="d2/d0d/message_8h"/>
+        <childnode refid="18972" relation="include">
+        </childnode>
+        <childnode refid="18964" relation="include">
+        </childnode>
+        <childnode refid="18973" relation="include">
+        </childnode>
+        <childnode refid="18974" relation="include">
+        </childnode>
+        <childnode refid="18976" relation="include">
+        </childnode>
+        <childnode refid="18984" relation="include">
+        </childnode>
+        <childnode refid="18987" relation="include">
+        </childnode>
+      </node>
+      <node id="18961">
+        <label>limits.h</label>
+      </node>
+      <node id="18988">
+        <label>../util/enum.h</label>
+        <link refid="d0/d9b/enum_8h"/>
+        <childnode refid="18966" relation="include">
+        </childnode>
+        <childnode refid="18989" relation="include">
+        </childnode>
+        <childnode refid="18968" relation="include">
+        </childnode>
+      </node>
+      <node id="18999">
+        <label>coord_neseup.gen.h</label>
+      </node>
+      <node id="18989">
+        <label>typeinfo</label>
+      </node>
+      <node id="18957">
+        <label>vector</label>
+      </node>
+      <node id="18969">
+        <label>ciso646</label>
+      </node>
+      <node id="18994">
+        <label>../util/fixed_point.h</label>
+        <link refid="de/d62/fixed__point_8h"/>
+        <childnode refid="18960" relation="include">
+        </childnode>
+        <childnode refid="18995" relation="include">
+        </childnode>
+        <childnode refid="18962" relation="include">
+        </childnode>
+        <childnode refid="18982" relation="include">
+        </childnode>
+        <childnode refid="18996" relation="include">
+        </childnode>
+        <childnode refid="18997" relation="include">
+        </childnode>
+        <childnode refid="18978" relation="include">
+        </childnode>
+        <childnode refid="18959" relation="include">
+        </childnode>
+      </node>
+      <node id="18990">
+        <label>../util/hash.h</label>
+        <link refid="db/dfb/hash_8h"/>
+        <childnode refid="18975" relation="include">
+        </childnode>
+        <childnode refid="18991" relation="include">
+        </childnode>
+        <childnode refid="18992" relation="include">
+        </childnode>
+      </node>
+      <node id="18965">
+        <label>../error/error.h</label>
+        <link refid="d7/dce/error_2error_8h"/>
+        <childnode refid="18966" relation="include">
+        </childnode>
+        <childnode refid="18955" relation="include">
+        </childnode>
+        <childnode refid="18967" relation="include">
+        </childnode>
+        <childnode refid="18964" relation="include">
+        </childnode>
+        <childnode refid="18968" relation="include">
+        </childnode>
+        <childnode refid="18971" relation="include">
+        </childnode>
+      </node>
+      <node id="18991">
+        <label>array</label>
+      </node>
+      <node id="18983">
+        <label>sstream</label>
+      </node>
+      <node id="18968">
+        <label>../util/compiler.h</label>
+        <link refid="d4/dd1/compiler_8h"/>
+        <childnode refid="18969" relation="include">
+        </childnode>
+        <childnode refid="18964" relation="include">
+        </childnode>
+        <childnode refid="18970" relation="include">
+        </childnode>
+      </node>
+      <node id="18975">
+        <label>cstdlib</label>
+      </node>
+      <node id="19000">
+        <label>../coord/tile.h</label>
+        <link refid="da/dce/tile_8h"/>
+        <childnode refid="18993" relation="include">
+        </childnode>
+        <childnode refid="18998" relation="include">
+        </childnode>
+        <childnode refid="18999" relation="include">
+        </childnode>
+        <childnode refid="18959" relation="include">
+        </childnode>
+        <childnode refid="18990" relation="include">
+        </childnode>
+      </node>
+      <node id="18987">
+        <label>level.h</label>
+        <link refid="de/d09/level_8h"/>
+        <childnode refid="18988" relation="include">
+        </childnode>
+      </node>
+      <node id="18966">
+        <label>iostream</label>
+      </node>
+      <node id="18974">
+        <label>../util/constexpr.h</label>
+        <link refid="d1/d06/constexpr_8h"/>
+        <childnode refid="18975" relation="include">
+        </childnode>
+      </node>
+      <node id="18980">
+        <label>strings.h</label>
+        <link refid="d6/d90/strings_8h"/>
+        <childnode refid="18981" relation="include">
+        </childnode>
+        <childnode refid="18954" relation="include">
+        </childnode>
+        <childnode refid="18982" relation="include">
+        </childnode>
+        <childnode refid="18955" relation="include">
+        </childnode>
+        <childnode refid="18983" relation="include">
+        </childnode>
+        <childnode refid="18964" relation="include">
+        </childnode>
+        <childnode refid="18957" relation="include">
+        </childnode>
+      </node>
+      <node id="18956">
+        <label>unordered_map</label>
+      </node>
+      <node id="18995">
+        <label>climits</label>
+      </node>
+      <node id="18986">
+        <label>mutex</label>
+      </node>
+      <node id="18993">
+        <label>declarations.h</label>
+        <link refid="db/d40/declarations_8h"/>
+        <childnode refid="18972" relation="include">
+        </childnode>
+        <childnode refid="18994" relation="include">
+        </childnode>
+      </node>
+      <node id="18976">
+        <label>../util/stringformatter.h</label>
+        <link refid="de/d65/stringformatter_8h"/>
+        <childnode refid="18977" relation="include">
+        </childnode>
+        <childnode refid="18955" relation="include">
+        </childnode>
+        <childnode refid="18978" relation="include">
+        </childnode>
+        <childnode refid="18968" relation="include">
+        </childnode>
+        <childnode refid="18979" relation="include">
+        </childnode>
+        <childnode refid="18980" relation="include">
+        </childnode>
+      </node>
+      <node id="18978">
+        <label>type_traits</label>
+      </node>
+      <node id="18973">
+        <label>config.h</label>
+      </node>
+      <node id="19001">
+        <label>../datastructure/pairing_heap.h</label>
+        <link refid="d8/da2/pairing__heap_8h"/>
+        <childnode refid="18955" relation="include">
+        </childnode>
+        <childnode refid="18954" relation="include">
+        </childnode>
+        <childnode refid="18978" relation="include">
+        </childnode>
+        <childnode refid="19002" relation="include">
+        </childnode>
+        <childnode refid="18968" relation="include">
+        </childnode>
+        <childnode refid="18965" relation="include">
+        </childnode>
+      </node>
+      <node id="18960">
+        <label>algorithm</label>
+      </node>
+      <node id="18963">
+        <label>cstring</label>
+      </node>
+      <node id="18955">
+        <label>memory</label>
+      </node>
+      <node id="18992">
+        <label>typeindex</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="19006">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/game_control_link.cpp</label>
+        <link refid="d1/de8/game__control__link_8cpp"/>
+      </node>
+      <node id="19003">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h</label>
+        <link refid="da/d7a/pathfinding_2path_8h"/>
+        <childnode refid="19004" relation="include">
+        </childnode>
+        <childnode refid="19013" relation="include">
+        </childnode>
+        <childnode refid="19014" relation="include">
+        </childnode>
+        <childnode refid="19015" relation="include">
+        </childnode>
+        <childnode refid="19018" relation="include">
+        </childnode>
+        <childnode refid="19017" relation="include">
+        </childnode>
+      </node>
+      <node id="19004">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h</label>
+        <link refid="d8/d1f/unit_2action_8h"/>
+        <childnode refid="19005" relation="include">
+        </childnode>
+        <childnode refid="19006" relation="include">
+        </childnode>
+        <childnode refid="19007" relation="include">
+        </childnode>
+        <childnode refid="19008" relation="include">
+        </childnode>
+        <childnode refid="19009" relation="include">
+        </childnode>
+        <childnode refid="19010" relation="include">
+        </childnode>
+        <childnode refid="19011" relation="include">
+        </childnode>
+        <childnode refid="19012" relation="include">
+        </childnode>
+      </node>
+      <node id="19015">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/a_star.cpp</label>
+        <link refid="df/d8f/a__star_8cpp"/>
+      </node>
+      <node id="19009">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/producer.cpp</label>
+        <link refid="db/d66/producer_8cpp"/>
+      </node>
+      <node id="19018">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.cpp</label>
+        <link refid="dd/ddb/pathfinding_2path_8cpp"/>
+      </node>
+      <node id="19012">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.cpp</label>
+        <link refid="dc/d8d/unit__type_8cpp"/>
+      </node>
+      <node id="19017">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/tests.cpp</label>
+        <link refid="d6/dae/pathfinding_2tests_8cpp"/>
+      </node>
+      <node id="19016">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/heuristics.cpp</label>
+        <link refid="d2/d61/heuristics_8cpp"/>
+      </node>
+      <node id="19010">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp</label>
+        <link refid="df/dbb/selection_8cpp"/>
+      </node>
+      <node id="19013">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/heuristics.h</label>
+        <link refid="df/d8d/heuristics_8h"/>
+        <childnode refid="19014" relation="include">
+        </childnode>
+        <childnode refid="19015" relation="include">
+        </childnode>
+        <childnode refid="19016" relation="include">
+        </childnode>
+        <childnode refid="19017" relation="include">
+        </childnode>
+        <childnode refid="19008" relation="include">
+        </childnode>
+      </node>
+      <node id="19008">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.cpp</label>
+        <link refid="de/d96/unit_2action_8cpp"/>
+      </node>
+      <node id="19014">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/a_star.h</label>
+        <link refid="d3/dce/a__star_8h"/>
+        <childnode refid="19015" relation="include">
+        </childnode>
+        <childnode refid="19008" relation="include">
+        </childnode>
+      </node>
+      <node id="19007">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/ability.cpp</label>
+        <link refid="de/dde/ability_8cpp"/>
+      </node>
+      <node id="19005">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.cpp</label>
+        <link refid="d3/da1/game__renderer_8cpp"/>
+      </node>
+      <node id="19011">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit.cpp</label>
+        <link refid="d7/d49/unit_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d9/d1d/structopenage_1_1path_1_1compare__node__cost" prot="public">openage::path::compare_node_cost</innerclass>
+    <innerclass refid="de/d95/classopenage_1_1path_1_1_node" prot="public">openage::path::Node</innerclass>
+    <innerclass refid="d0/d8e/classopenage_1_1path_1_1_path" prot="public">openage::path::Path</innerclass>
+    <innerclass refid="dd/d63/structstd_1_1hash_3_01openage_1_1path_1_1_node_01_6_01_4" prot="public">std::hash&lt; openage::path::Node &amp; &gt;</innerclass>
+    <innernamespace refid="da/d23/namespaceopenage">openage</innernamespace>
+    <innernamespace refid="d1/d93/namespaceopenage_1_1coord">openage::coord</innernamespace>
+    <innernamespace refid="d3/df4/namespaceopenage_1_1path">openage::path</innernamespace>
+    <innernamespace refid="d8/dcc/namespacestd">std</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2014-2019<sp/>the<sp/>openage<sp/>authors.<sp/>See<sp/>copying.md<sp/>for<sp/>legal<sp/>info.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../coord/phys.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../coord/tile.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../datastructure/pairing_heap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../util/misc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../util/hash.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="da/d23/namespaceopenage" kindref="compound">openage</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d0/d3c/namespaceopenage_1_1coord_1_1tests_1ab5f6aa805a24bd58eb365e5af294d807" kindref="member">coord</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CoordManager;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">path<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Node;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Path;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="d3/df4/namespaceopenage_1_1path_1aeb0eaee59cf635000d9a737312cd4215" refkind="member"><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="d3/df4/namespaceopenage_1_1path_1aeb0eaee59cf635000d9a737312cd4215" kindref="member">cost_t</ref><sp/>=<sp/>float;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="d3/df4/namespaceopenage_1_1path_1adf2b15337cb3eec1712f18c17c75c325" refkind="member"><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="d3/df4/namespaceopenage_1_1path_1adf2b15337cb3eec1712f18c17c75c325" kindref="member">node_pt</ref><sp/>=<sp/>std::shared_ptr&lt;Node&gt;;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="d3/df4/namespaceopenage_1_1path_1a2889597504b5f2d6987d132f1e5682f6" refkind="member"><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="d3/df4/namespaceopenage_1_1path_1a2889597504b5f2d6987d132f1e5682f6" kindref="member">nodemap_t</ref><sp/>=<sp/>std::unordered_map&lt;coord::phys3,<sp/>node_pt&gt;;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="d9/d1d/structopenage_1_1path_1_1compare__node__cost" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d9/d1d/structopenage_1_1path_1_1compare__node__cost" kindref="compound">compare_node_cost</ref><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator<sp/>()(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/df4/namespaceopenage_1_1path_1adf2b15337cb3eec1712f18c17c75c325" kindref="member">node_pt</ref><sp/>&amp;lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/df4/namespaceopenage_1_1path_1adf2b15337cb3eec1712f18c17c75c325" kindref="member">node_pt</ref><sp/>&amp;rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="d3/df4/namespaceopenage_1_1path_1a9eb90c4259c8bbf5764d94d9e1710991" refkind="member"><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="dc/dfd/classopenage_1_1datastructure_1_1_pairing_heap" kindref="compound">heap_t</ref><sp/>=<sp/><ref refid="dc/dfd/classopenage_1_1datastructure_1_1_pairing_heap" kindref="compound">datastructure::PairingHeap&lt;node_pt, compare_node_cost&gt;</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" refkind="member"><highlight class="normal">constexpr<sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref><sp/><ref refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" kindref="member">path_grid_size</ref>{1.f/8};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="d3/df4/namespaceopenage_1_1path_1aec9efa004e47a51d7525a0959ebdfb83" refkind="member"><highlight class="normal">constexpr<sp/><ref refid="d4/d49/structopenage_1_1coord_1_1phys3__delta" kindref="compound">coord::phys3_delta</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/df4/namespaceopenage_1_1path_1aec9efa004e47a51d7525a0959ebdfb83" kindref="member">neigh_phys</ref>[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" kindref="member">path_grid_size</ref><sp/>*<sp/><sp/>1,<sp/><ref refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" kindref="member">path_grid_size</ref><sp/>*<sp/>-1,<sp/>0},</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" kindref="member">path_grid_size</ref><sp/>*<sp/><sp/>1,<sp/><ref refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" kindref="member">path_grid_size</ref><sp/>*<sp/><sp/>0,<sp/>0},</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" kindref="member">path_grid_size</ref><sp/>*<sp/><sp/>1,<sp/><ref refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" kindref="member">path_grid_size</ref><sp/>*<sp/><sp/>1,<sp/>0},</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" kindref="member">path_grid_size</ref><sp/>*<sp/><sp/>0,<sp/><ref refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" kindref="member">path_grid_size</ref><sp/>*<sp/><sp/>1,<sp/>0},</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" kindref="member">path_grid_size</ref><sp/>*<sp/>-1,<sp/><ref refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" kindref="member">path_grid_size</ref><sp/>*<sp/><sp/>1,<sp/>0},</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" kindref="member">path_grid_size</ref><sp/>*<sp/>-1,<sp/><ref refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" kindref="member">path_grid_size</ref><sp/>*<sp/><sp/>0,<sp/>0},</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" kindref="member">path_grid_size</ref><sp/>*<sp/>-1,<sp/><ref refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" kindref="member">path_grid_size</ref><sp/>*<sp/>-1,<sp/>0},</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>{<ref refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" kindref="member">path_grid_size</ref><sp/>*<sp/><sp/>0,<sp/><ref refid="d3/df4/namespaceopenage_1_1path_1a7e49ca629b6fed008584d7752dc98e9a" kindref="member">path_grid_size</ref><sp/>*<sp/>-1,<sp/>0}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d3/df4/namespaceopenage_1_1path_1a4fb2450790038eed534dfe29ad57d350" kindref="member">passable_line</ref>(<ref refid="d3/df4/namespaceopenage_1_1path_1adf2b15337cb3eec1712f18c17c75c325" kindref="member">node_pt</ref><sp/>start,<sp/><ref refid="d3/df4/namespaceopenage_1_1path_1adf2b15337cb3eec1712f18c17c75c325" kindref="member">node_pt</ref><sp/>end,<sp/>std::function&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>&amp;)&gt;passable,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>samples=5.0f);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="de/d95/classopenage_1_1path_1_1_node" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="de/d95/classopenage_1_1path_1_1_node" kindref="compound">Node</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::enable_shared_from_this&lt;Node&gt;<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d95/classopenage_1_1path_1_1_node" kindref="compound">Node</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>&amp;pos,<sp/><ref refid="d3/df4/namespaceopenage_1_1path_1adf2b15337cb3eec1712f18c17c75c325" kindref="member">node_pt</ref><sp/>prev);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d95/classopenage_1_1path_1_1_node" kindref="compound">Node</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>&amp;pos,<sp/><ref refid="d3/df4/namespaceopenage_1_1path_1adf2b15337cb3eec1712f18c17c75c325" kindref="member">node_pt</ref><sp/>prev,<sp/><ref refid="d3/df4/namespaceopenage_1_1path_1aeb0eaee59cf635000d9a737312cd4215" kindref="member">cost_t</ref><sp/>past,<sp/><ref refid="d3/df4/namespaceopenage_1_1path_1aeb0eaee59cf635000d9a737312cd4215" kindref="member">cost_t</ref><sp/>heuristic);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator<sp/>&lt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d95/classopenage_1_1path_1_1_node" kindref="compound">Node</ref><sp/>&amp;other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d5/dc6/namespaceopenage_1_1input_1a1d09cb9758cee29027f1ddfea81cf1ac" kindref="member">operator ==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d95/classopenage_1_1path_1_1_node" kindref="compound">Node</ref><sp/>&amp;other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/df4/namespaceopenage_1_1path_1aeb0eaee59cf635000d9a737312cd4215" kindref="member">cost_t</ref><sp/>cost_to(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d95/classopenage_1_1path_1_1_node" kindref="compound">Node</ref><sp/>&amp;other)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d8e/classopenage_1_1path_1_1_path" kindref="compound">Path</ref><sp/>generate_backtrace();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;node_pt&gt;<sp/>get_neighbors(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/df4/namespaceopenage_1_1path_1a2889597504b5f2d6987d132f1e5682f6" kindref="member">nodemap_t</ref><sp/>&amp;,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale=1.0f);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="de/d95/classopenage_1_1path_1_1_node_1ab2a7dc59c9efb7f5baef572bbbb00228" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/><ref refid="de/d95/classopenage_1_1path_1_1_node_1ab2a7dc59c9efb7f5baef572bbbb00228" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="122" refid="de/d95/classopenage_1_1path_1_1_node_1af71eefaa0601bbfbb76bcaed643c18f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d10/structopenage_1_1coord_1_1tile" kindref="compound">coord::tile</ref><sp/><ref refid="de/d95/classopenage_1_1path_1_1_node_1af71eefaa0601bbfbb76bcaed643c18f6" kindref="member">tile_position</ref>;</highlight></codeline>
+<codeline lineno="123" refid="de/d95/classopenage_1_1path_1_1_node_1aad8137f68110f1e82ff358e795092675" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d49/structopenage_1_1coord_1_1phys3__delta" kindref="compound">coord::phys3_delta</ref><sp/><ref refid="de/d95/classopenage_1_1path_1_1_node_1aad8137f68110f1e82ff358e795092675" kindref="member">direction</ref>;<sp/></highlight><highlight class="comment">//<sp/>for<sp/>path<sp/>smoothing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="de/d95/classopenage_1_1path_1_1_node_1ad37572f2d995a0978c8f860ad5edaa30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/df4/namespaceopenage_1_1path_1aeb0eaee59cf635000d9a737312cd4215" kindref="member">cost_t</ref><sp/><ref refid="de/d95/classopenage_1_1path_1_1_node_1ad37572f2d995a0978c8f860ad5edaa30" kindref="member">future_cost</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="de/d95/classopenage_1_1path_1_1_node_1a665c106823920c92839d263642e22f6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/df4/namespaceopenage_1_1path_1aeb0eaee59cf635000d9a737312cd4215" kindref="member">cost_t</ref><sp/><ref refid="de/d95/classopenage_1_1path_1_1_node_1a665c106823920c92839d263642e22f6b" kindref="member">past_cost</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="de/d95/classopenage_1_1path_1_1_node_1af2d2958545a3dd1f6bef291342498d49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/df4/namespaceopenage_1_1path_1aeb0eaee59cf635000d9a737312cd4215" kindref="member">cost_t</ref><sp/><ref refid="de/d95/classopenage_1_1path_1_1_node_1af2d2958545a3dd1f6bef291342498d49" kindref="member">heuristic_cost</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="de/d95/classopenage_1_1path_1_1_node_1ad9dd309dc7c4fc593d90c45babe3dcfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>accessible<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="de/d95/classopenage_1_1path_1_1_node_1a4aaa468b9936616ff99a232b6f1b601e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>visited<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="de/d95/classopenage_1_1path_1_1_node_1aed96d0edb4b44cbdcaf958c8cdc98fc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>was_best<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="de/d95/classopenage_1_1path_1_1_node_1af30ebda81f962a25f97559049c988d24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/df4/namespaceopenage_1_1path_1aeb0eaee59cf635000d9a737312cd4215" kindref="member">cost_t</ref><sp/><ref refid="de/d95/classopenage_1_1path_1_1_node_1af30ebda81f962a25f97559049c988d24" kindref="member">factor</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="de/d95/classopenage_1_1path_1_1_node_1a795f800f11ccbf7177b3eb65ccaeaff2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/df4/namespaceopenage_1_1path_1adf2b15337cb3eec1712f18c17c75c325" kindref="member">node_pt</ref><sp/><ref refid="de/d95/classopenage_1_1path_1_1_node_1a795f800f11ccbf7177b3eb65ccaeaff2" kindref="member">path_predecessor</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="de/d95/classopenage_1_1path_1_1_node_1af1c5b7a80d572db9fdfdc220beb0aed8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dfd/classopenage_1_1datastructure_1_1_pairing_heap_1af89a07b90150d0d4606787f0ac202242" kindref="member">heap_t::element_t</ref><sp/><ref refid="de/d95/classopenage_1_1path_1_1_node_1af1c5b7a80d572db9fdfdc220beb0aed8" kindref="member">heap_node</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="d0/d8e/classopenage_1_1path_1_1_path" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d0/d8e/classopenage_1_1path_1_1_path" kindref="compound">Path</ref><sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d8e/classopenage_1_1path_1_1_path" kindref="compound">Path</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d8e/classopenage_1_1path_1_1_path" kindref="compound">Path</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Node&gt;<sp/>&amp;nodes);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>draw_path(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/db5/classopenage_1_1coord_1_1_coord_manager" kindref="compound">coord::CoordManager</ref><sp/>&amp;mgr);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="d0/d8e/classopenage_1_1path_1_1_path_1a6f052fbfe0743c8204c2f37842176976" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Node&gt;<sp/><ref refid="d0/d8e/classopenage_1_1path_1_1_path_1a6f052fbfe0743c8204c2f37842176976" kindref="member">waypoints</ref>;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>path</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>openage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d8/dcc/namespacestd" kindref="compound">std</ref><sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;</highlight></codeline>
+<codeline lineno="207" refid="dd/d63/structstd_1_1hash_3_01openage_1_1path_1_1_node_01_6_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="de/d60/namespaceopenage_1_1util_1a3cb605abe74b26763ac7340c3785656a" kindref="member">hash</ref>&lt;<ref refid="da/d23/namespaceopenage" kindref="compound">openage</ref>::path::Node<sp/>&amp;&gt;<sp/>{</highlight></codeline>
+<codeline lineno="208" refid="dd/d63/structstd_1_1hash_3_01openage_1_1path_1_1_node_01_6_01_4_1a82c375ba3d6cda6123b93c89890b5af1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>operator<sp/>()(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/d95/classopenage_1_1path_1_1_node" kindref="compound">openage::path::Node</ref><sp/>&amp;x)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">openage::coord::phys3</ref><sp/>node_pos<sp/>=<sp/>x.<ref refid="de/d95/classopenage_1_1path_1_1_node_1ab2a7dc59c9efb7f5baef572bbbb00228" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="de/d60/namespaceopenage_1_1util_1a3cb605abe74b26763ac7340c3785656a" kindref="member">hash</ref><sp/>=<sp/>openage::util::type_hash&lt;openage::path::Node&gt;();</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hash<sp/>=<sp/><ref refid="de/d60/namespaceopenage_1_1util_1a5cfc0e84830b5945b5731d2148eea3b4" kindref="member">openage::util::hash_combine</ref>(hash,<sp/>std::hash&lt;openage::coord::phys_t&gt;{}(node_pos.ne));</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hash<sp/>=<sp/><ref refid="de/d60/namespaceopenage_1_1util_1a5cfc0e84830b5945b5731d2148eea3b4" kindref="member">openage::util::hash_combine</ref>(hash,<sp/>std::hash&lt;openage::coord::phys_t&gt;{}(node_pos.se));</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/d60/namespaceopenage_1_1util_1a3cb605abe74b26763ac7340c3785656a" kindref="member">hash</ref>;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>std</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h"/>
+  </compounddef>
+</doxygen>

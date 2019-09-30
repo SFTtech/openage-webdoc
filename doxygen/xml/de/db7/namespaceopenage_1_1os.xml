@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="de/db7/namespaceopenage_1_1os" kind="namespace" language="C++">
+    <compoundname>openage::os</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="de/db7/namespaceopenage_1_1os_1a2ff2ec43cb1353b31db1f7cae31b13be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string openage::os::read_symlink</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>read_symlink</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>reads a symlink </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/os.cpp" line="28" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/os.cpp" bodystart="28" bodyend="55"/>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" compoundref="d7/d66/log_2____init_____8py" startline="122" endline="125">openage::log.err</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <referencedby refid="de/db7/namespaceopenage_1_1os_1aaa0a892b4d5cf0b41684c5f31c6cf86b" compoundref="d8/dcd/os_8cpp" startline="57" endline="100">self_exec_filename</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/namespaceopenage_1_1os_1aaa0a892b4d5cf0b41684c5f31c6cf86b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string openage::os::self_exec_filename</definition>
+        <argsstring>()</argsstring>
+        <name>self_exec_filename</name>
+        <briefdescription>
+<para>returns openage&apos;s executable name </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/os.cpp" line="57" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/os.cpp" bodystart="57" bodyend="100"/>
+        <references refid="de/db7/namespaceopenage_1_1os_1a2ff2ec43cb1353b31db1f7cae31b13be" compoundref="d8/dcd/os_8cpp" startline="28" endline="55">read_symlink</references>
+        <referencedby refid="dd/d6f/classopenage_1_1util_1_1_external_profiler_1add3055482caaf197842cc1661b463ac8" compoundref="d8/d58/externalprofiler_8cpp" startline="72" endline="121">openage::util::ExternalProfiler::show_results</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/db7/namespaceopenage_1_1os_1a0c239b26dbfdae2443aa511e31619917" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int openage::os::execute_file</definition>
+        <argsstring>(const char *path, bool background=true)</argsstring>
+        <name>execute_file</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>background</declname>
+        </param>
+        <briefdescription>
+<para>tries to xdg-open the file </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/os.cpp" line="102" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/os.cpp" bodystart="102" bodyend="124"/>
+        <references refid="dc/d1d/namespaceopenage_1_1subprocess_1a9433d1215dbd3b40cd1c0981b84a8541" compoundref="dc/dc9/subprocess_8cpp" startline="72" endline="240">openage::subprocess::call</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" compoundref="d7/d66/log_2____init_____8py" startline="122" endline="125">openage::log.err</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <references refid="dc/d1d/namespaceopenage_1_1subprocess_1aea6af6d7d8e5290e58dfafd50a96a069" compoundref="dc/dc9/subprocess_8cpp" startline="37" endline="70">openage::subprocess::which</references>
+        <referencedby refid="dd/d6f/classopenage_1_1util_1_1_external_profiler_1add3055482caaf197842cc1661b463ac8" compoundref="d8/d58/externalprofiler_8cpp" startline="72" endline="121">openage::util::ExternalProfiler::show_results</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>similar in its goals to Python&apos;s os module </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/os.cpp" line="26" column="1"/>
+  </compounddef>
+</doxygen>

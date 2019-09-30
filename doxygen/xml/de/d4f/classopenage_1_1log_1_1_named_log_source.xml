@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="de/d4f/classopenage_1_1log_1_1_named_log_source" kind="class" language="C++" prot="public">
+    <compoundname>openage::log::NamedLogSource</compoundname>
+    <basecompoundref refid="de/de3/classopenage_1_1log_1_1_log_source" prot="public" virt="non-virtual">openage::log::LogSource</basecompoundref>
+    <includes refid="db/dc0/named__logsource_8h" local="no">named_logsource.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/d4f/classopenage_1_1log_1_1_named_log_source_1a50c3fde3cfd67f27da6e72bf19d040c0" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string openage::log::NamedLogSource::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/named_logsource.h" line="30" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/named_logsource.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="db/d32/classopenage_1_1convert_1_1dataformat_1_1header__snippet_1_1_header_snippet_1ace808fcd0b7da59a100ce5328622d707" compoundref="d3/d9c/header__snippet_8py" startline="30" endline="36">openage.convert.dataformat.header_snippet.HeaderSnippet.__eq__</referencedby>
+        <referencedby refid="db/d32/classopenage_1_1convert_1_1dataformat_1_1header__snippet_1_1_header_snippet_1a3eb4f0dc98dbea6b9b2bbbcf3b2ac03c" compoundref="d3/d9c/header__snippet_8py" startline="27" endline="29">openage.convert.dataformat.header_snippet.HeaderSnippet.__hash__</referencedby>
+        <referencedby refid="db/d32/classopenage_1_1convert_1_1dataformat_1_1header__snippet_1_1_header_snippet_1a30c5bf023e0ba05e40312c371db72912" compoundref="d3/d9c/header__snippet_8py" startline="37" endline="41">openage.convert.dataformat.header_snippet.HeaderSnippet.__repr__</referencedby>
+        <referencedby refid="db/d32/classopenage_1_1convert_1_1dataformat_1_1header__snippet_1_1_header_snippet_1a11a457d1540ec1a98bd4ffd69e8e288e" compoundref="d3/d9c/header__snippet_8py" startline="24" endline="26">openage.convert.dataformat.header_snippet.HeaderSnippet.get_file_name</referencedby>
+        <referencedby refid="de/d4f/classopenage_1_1log_1_1_named_log_source_1a593db4f971f201789c72317980d99780" compoundref="df/de3/named__logsource_8cpp" startline="14" endline="16">logsource_name</referencedby>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1aab5ade46752aa652e414b1c3bac704c1" compoundref="d0/d7a/path_8py" startline="289" endline="296">openage.util.fslike.path.Path.stem</referencedby>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1a7b11153f6ef9787c4c583bcf0126ba6a" compoundref="d0/d7a/path_8py" startline="272" endline="278">openage.util.fslike.path.Path.suffix</referencedby>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1a912043b2fbd330e3493588f6c6af92b8" compoundref="d0/d7a/path_8py" startline="281" endline="286">openage.util.fslike.path.Path.suffixes</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d4f/classopenage_1_1log_1_1_named_log_source_1ae56c84e0a5777847acde06683885e1f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::log::NamedLogSource::NamedLogSource</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>NamedLogSource</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/named_logsource.h" line="25" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/named_logsource.cpp" bodystart="9" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d4f/classopenage_1_1log_1_1_named_log_source_1a593db4f971f201789c72317980d99780" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string openage::log::NamedLogSource::logsource_name</definition>
+        <argsstring>() override</argsstring>
+        <name>logsource_name</name>
+        <reimplements refid="de/de3/classopenage_1_1log_1_1_log_source_1a7f4d82915a2298899da93d55ab92e7dc">logsource_name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/named_logsource.h" line="27" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/named_logsource.cpp" bodystart="14" bodyend="16"/>
+        <references refid="de/d4f/classopenage_1_1log_1_1_named_log_source_1a50c3fde3cfd67f27da6e72bf19d040c0" compoundref="db/dc0/named__logsource_8h" startline="30">name</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simple pure log source class with a string name. </para>    </briefdescription>
+    <detaileddescription>
+<para>pxd:</para><para>cppclass NamedLogSource(LogSource): NamedLogSource(string name) except + </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4192">
+        <label>openage::log::NamedLogSource</label>
+        <link refid="de/d4f/classopenage_1_1log_1_1_named_log_source"/>
+        <childnode refid="4193" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4193">
+        <label>openage::log::LogSource</label>
+        <link refid="de/de3/classopenage_1_1log_1_1_log_source"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4194">
+        <label>openage::log::NamedLogSource</label>
+        <link refid="de/d4f/classopenage_1_1log_1_1_named_log_source"/>
+        <childnode refid="4195" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4195">
+        <label>openage::log::LogSource</label>
+        <link refid="de/de3/classopenage_1_1log_1_1_log_source"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/named_logsource.h" line="23" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/named_logsource.h" bodystart="23" bodyend="31"/>
+    <listofallmembers>
+      <member refid="de/de3/classopenage_1_1log_1_1_log_source_1a5640099e20af4cd368c767dbcef3a1df" prot="public" virt="non-virtual"><scope>openage::log::NamedLogSource</scope><name>log</name></member>
+      <member refid="de/de3/classopenage_1_1log_1_1_log_source_1ae75ede4764f389add2e8a870584807bb" prot="public" virt="non-virtual"><scope>openage::log::NamedLogSource</scope><name>logger_id</name></member>
+      <member refid="de/de3/classopenage_1_1log_1_1_log_source_1aa2ff50c079c20b6ff1dfa08f45080b0a" prot="public" virt="non-virtual"><scope>openage::log::NamedLogSource</scope><name>LogSource</name></member>
+      <member refid="de/d4f/classopenage_1_1log_1_1_named_log_source_1a593db4f971f201789c72317980d99780" prot="public" virt="virtual"><scope>openage::log::NamedLogSource</scope><name>logsource_name</name></member>
+      <member refid="de/d4f/classopenage_1_1log_1_1_named_log_source_1a50c3fde3cfd67f27da6e72bf19d040c0" prot="private" virt="non-virtual"><scope>openage::log::NamedLogSource</scope><name>name</name></member>
+      <member refid="de/d4f/classopenage_1_1log_1_1_named_log_source_1ae56c84e0a5777847acde06683885e1f7" prot="public" virt="non-virtual"><scope>openage::log::NamedLogSource</scope><name>NamedLogSource</name></member>
+      <member refid="de/de3/classopenage_1_1log_1_1_log_source_1aa74e829150dd523fea5173cd5d864285" prot="public" virt="virtual"><scope>openage::log::NamedLogSource</scope><name>~LogSource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d5/d60/namespaceopenage_1_1convert_1_1gamedata_1_1tech" kind="namespace" language="Python">
+    <compoundname>openage::convert::gamedata::tech</compoundname>
+    <innerclass refid="d5/da7/classopenage_1_1convert_1_1gamedata_1_1tech_1_1_age_tech_tree" prot="public">openage::convert::gamedata::tech::AgeTechTree</innerclass>
+    <innerclass refid="d8/d38/classopenage_1_1convert_1_1gamedata_1_1tech_1_1_building_connection" prot="public">openage::convert::gamedata::tech::BuildingConnection</innerclass>
+    <innerclass refid="d9/db8/classopenage_1_1convert_1_1gamedata_1_1tech_1_1_effect" prot="public">openage::convert::gamedata::tech::Effect</innerclass>
+    <innerclass refid="d3/d8e/classopenage_1_1convert_1_1gamedata_1_1tech_1_1_mode" prot="public">openage::convert::gamedata::tech::Mode</innerclass>
+    <innerclass refid="d0/d57/classopenage_1_1convert_1_1gamedata_1_1tech_1_1_research_connection" prot="public">openage::convert::gamedata::tech::ResearchConnection</innerclass>
+    <innerclass refid="d9/dfa/classopenage_1_1convert_1_1gamedata_1_1tech_1_1_tech" prot="public">openage::convert::gamedata::tech::Tech</innerclass>
+    <innerclass refid="d9/def/classopenage_1_1convert_1_1gamedata_1_1tech_1_1_unit_connection" prot="public">openage::convert::gamedata::tech::UnitConnection</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d5/d60/namespaceopenage_1_1convert_1_1gamedata_1_1tech_1ae4121c995109875291bed42f213dceb0" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string openage::convert::gamedata::tech.name_struct</definition>
+        <argsstring></argsstring>
+        <name>name_struct</name>
+        <initializer>=  &quot;tech&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/convert/gamedata/tech.py" line="90" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/convert/gamedata/tech.py" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d60/namespaceopenage_1_1convert_1_1gamedata_1_1tech_1aa8f21b73c172819d21d1d10d85b3f0d5" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string openage::convert::gamedata::tech.name_struct_file</definition>
+        <argsstring></argsstring>
+        <name>name_struct_file</name>
+        <initializer>=  &quot;tech&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/convert/gamedata/tech.py" line="91" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/convert/gamedata/tech.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d60/namespaceopenage_1_1convert_1_1gamedata_1_1tech_1a235b25785343776d4bec2a05651d9f5f" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string openage::convert::gamedata::tech.struct_description</definition>
+        <argsstring></argsstring>
+        <name>struct_description</name>
+        <initializer>=  &quot;a technology definition.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/convert/gamedata/tech.py" line="92" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/convert/gamedata/tech.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d60/namespaceopenage_1_1convert_1_1gamedata_1_1tech_1ab67ac9b42591fc4f6d8beded6cea1375" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list openage::convert::gamedata::tech.data_format</definition>
+        <argsstring></argsstring>
+        <name>data_format</name>
+        <initializer>=  [
+        (READ, &quot;name&quot;, &quot;char[31]&quot;),                  # always CHUN4 (change unit 4-arg)
+        (READ, &quot;effect_count&quot;, &quot;uint16_t&quot;),
+        (READ, &quot;effects&quot;, SubdataMember(
+            ref_type=<ref refid="d9/db8/classopenage_1_1convert_1_1gamedata_1_1tech_1_1_effect" kindref="compound">Effect</ref>,
+            length=&quot;effect_count&quot;,
+        )),
+    ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/convert/gamedata/tech.py" line="94" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/convert/gamedata/tech.py" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/convert/gamedata/tech.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,494 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d8/d38/queue_8h" kind="file" language="C++">
+    <compoundname>queue.h</compoundname>
+    <includes refid="df/de9/curve_8h" local="yes">curve.h</includes>
+    <includes refid="d4/d59/queue__filter__iterator_8h" local="yes">queue_filter_iterator.h</includes>
+    <includes local="no">deque</includes>
+    <includes local="no">iostream</includes>
+    <includedby refid="dc/d31/queue_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/queue.cpp</includedby>
+    <includedby refid="d3/dda/container_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/tests/container.cpp</includedby>
+    <incdepgraph>
+      <node id="5280">
+        <label>list</label>
+      </node>
+      <node id="5286">
+        <label>iterator.h</label>
+        <link refid="df/d22/iterator_8h"/>
+        <childnode refid="5246" relation="include">
+        </childnode>
+      </node>
+      <node id="5273">
+        <label>atomic</label>
+      </node>
+      <node id="5285">
+        <label>queue_filter_iterator.h</label>
+        <link refid="d4/d59/queue__filter__iterator_8h"/>
+        <childnode refid="5246" relation="include">
+        </childnode>
+        <childnode refid="5286" relation="include">
+        </childnode>
+        <childnode refid="5287" relation="include">
+        </childnode>
+        <childnode refid="5253" relation="include">
+        </childnode>
+      </node>
+      <node id="5277">
+        <label>functional</label>
+      </node>
+      <node id="5252">
+        <label>iomanip</label>
+      </node>
+      <node id="5253">
+        <label>limits</label>
+      </node>
+      <node id="5287">
+        <label>iterator</label>
+      </node>
+      <node id="5247">
+        <label>cstdint</label>
+      </node>
+      <node id="5274">
+        <label>externalsstream.h</label>
+        <link refid="dc/dcf/externalsstream_8h"/>
+        <childnode refid="5263" relation="include">
+        </childnode>
+        <childnode refid="5259" relation="include">
+        </childnode>
+      </node>
+      <node id="5267">
+        <label>signal.h</label>
+        <link refid="d8/d39/signal_8h"/>
+        <childnode refid="5267" relation="include">
+        </childnode>
+      </node>
+      <node id="5256">
+        <label>misc.h</label>
+        <link refid="d4/d08/misc_8h"/>
+        <childnode refid="5249" relation="include">
+        </childnode>
+        <childnode refid="5257" relation="include">
+        </childnode>
+        <childnode refid="5251" relation="include">
+        </childnode>
+        <childnode refid="5258" relation="include">
+        </childnode>
+        <childnode refid="5259" relation="include">
+        </childnode>
+        <childnode refid="5260" relation="include">
+        </childnode>
+        <childnode refid="5261" relation="include">
+        </childnode>
+        <childnode refid="5262" relation="include">
+        </childnode>
+        <childnode refid="5265" relation="include">
+        </childnode>
+      </node>
+      <node id="5251">
+        <label>cmath</label>
+      </node>
+      <node id="5264">
+        <label>stdexcept</label>
+      </node>
+      <node id="5245">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/queue.h</label>
+        <link refid="d8/d38/queue_8h"/>
+        <childnode refid="5246" relation="include">
+        </childnode>
+        <childnode refid="5285" relation="include">
+        </childnode>
+        <childnode refid="5288" relation="include">
+        </childnode>
+        <childnode refid="5263" relation="include">
+        </childnode>
+      </node>
+      <node id="5276">
+        <label>cstdarg</label>
+      </node>
+      <node id="5259">
+        <label>string</label>
+      </node>
+      <node id="5246">
+        <label>curve.h</label>
+        <link refid="df/de9/curve_8h"/>
+        <childnode refid="5247" relation="include">
+        </childnode>
+        <childnode refid="5248" relation="include">
+        </childnode>
+      </node>
+      <node id="5279">
+        <label>logsink.h</label>
+        <link refid="d3/d4e/logsink_8h"/>
+        <childnode refid="5280" relation="include">
+        </childnode>
+        <childnode refid="5281" relation="include">
+        </childnode>
+        <childnode refid="5282" relation="include">
+        </childnode>
+      </node>
+      <node id="5254">
+        <label>ostream</label>
+      </node>
+      <node id="5268">
+        <label>../log/message.h</label>
+        <link refid="d2/d0d/message_8h"/>
+        <childnode refid="5247" relation="include">
+        </childnode>
+        <childnode refid="5259" relation="include">
+        </childnode>
+        <childnode refid="5269" relation="include">
+        </childnode>
+        <childnode refid="5270" relation="include">
+        </childnode>
+        <childnode refid="5272" relation="include">
+        </childnode>
+        <childnode refid="5279" relation="include">
+        </childnode>
+        <childnode refid="5282" relation="include">
+        </childnode>
+      </node>
+      <node id="5257">
+        <label>limits.h</label>
+      </node>
+      <node id="5283">
+        <label>../util/enum.h</label>
+        <link refid="d0/d9b/enum_8h"/>
+        <childnode refid="5263" relation="include">
+        </childnode>
+        <childnode refid="5284" relation="include">
+        </childnode>
+        <childnode refid="5265" relation="include">
+        </childnode>
+      </node>
+      <node id="5284">
+        <label>typeinfo</label>
+      </node>
+      <node id="5260">
+        <label>vector</label>
+      </node>
+      <node id="5266">
+        <label>ciso646</label>
+      </node>
+      <node id="5248">
+        <label>../util/fixed_point.h</label>
+        <link refid="de/d62/fixed__point_8h"/>
+        <childnode refid="5249" relation="include">
+        </childnode>
+        <childnode refid="5250" relation="include">
+        </childnode>
+        <childnode refid="5251" relation="include">
+        </childnode>
+        <childnode refid="5252" relation="include">
+        </childnode>
+        <childnode refid="5253" relation="include">
+        </childnode>
+        <childnode refid="5254" relation="include">
+        </childnode>
+        <childnode refid="5255" relation="include">
+        </childnode>
+        <childnode refid="5256" relation="include">
+        </childnode>
+      </node>
+      <node id="5262">
+        <label>../error/error.h</label>
+        <link refid="d7/dce/error_2error_8h"/>
+        <childnode refid="5263" relation="include">
+        </childnode>
+        <childnode refid="5261" relation="include">
+        </childnode>
+        <childnode refid="5264" relation="include">
+        </childnode>
+        <childnode refid="5259" relation="include">
+        </childnode>
+        <childnode refid="5265" relation="include">
+        </childnode>
+        <childnode refid="5268" relation="include">
+        </childnode>
+      </node>
+      <node id="5278">
+        <label>sstream</label>
+      </node>
+      <node id="5265">
+        <label>../util/compiler.h</label>
+        <link refid="d4/dd1/compiler_8h"/>
+        <childnode refid="5266" relation="include">
+        </childnode>
+        <childnode refid="5259" relation="include">
+        </childnode>
+        <childnode refid="5267" relation="include">
+        </childnode>
+      </node>
+      <node id="5271">
+        <label>cstdlib</label>
+      </node>
+      <node id="5282">
+        <label>level.h</label>
+        <link refid="de/d09/level_8h"/>
+        <childnode refid="5283" relation="include">
+        </childnode>
+      </node>
+      <node id="5263">
+        <label>iostream</label>
+      </node>
+      <node id="5270">
+        <label>../util/constexpr.h</label>
+        <link refid="d1/d06/constexpr_8h"/>
+        <childnode refid="5271" relation="include">
+        </childnode>
+      </node>
+      <node id="5275">
+        <label>strings.h</label>
+        <link refid="d6/d90/strings_8h"/>
+        <childnode refid="5276" relation="include">
+        </childnode>
+        <childnode refid="5277" relation="include">
+        </childnode>
+        <childnode refid="5252" relation="include">
+        </childnode>
+        <childnode refid="5261" relation="include">
+        </childnode>
+        <childnode refid="5278" relation="include">
+        </childnode>
+        <childnode refid="5259" relation="include">
+        </childnode>
+        <childnode refid="5260" relation="include">
+        </childnode>
+      </node>
+      <node id="5288">
+        <label>deque</label>
+      </node>
+      <node id="5250">
+        <label>climits</label>
+      </node>
+      <node id="5281">
+        <label>mutex</label>
+      </node>
+      <node id="5272">
+        <label>../util/stringformatter.h</label>
+        <link refid="de/d65/stringformatter_8h"/>
+        <childnode refid="5273" relation="include">
+        </childnode>
+        <childnode refid="5261" relation="include">
+        </childnode>
+        <childnode refid="5255" relation="include">
+        </childnode>
+        <childnode refid="5265" relation="include">
+        </childnode>
+        <childnode refid="5274" relation="include">
+        </childnode>
+        <childnode refid="5275" relation="include">
+        </childnode>
+      </node>
+      <node id="5255">
+        <label>type_traits</label>
+      </node>
+      <node id="5269">
+        <label>config.h</label>
+      </node>
+      <node id="5249">
+        <label>algorithm</label>
+      </node>
+      <node id="5258">
+        <label>cstring</label>
+      </node>
+      <node id="5261">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5289">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/queue.h</label>
+        <link refid="d8/d38/queue_8h"/>
+        <childnode refid="5290" relation="include">
+        </childnode>
+        <childnode refid="5291" relation="include">
+        </childnode>
+      </node>
+      <node id="5291">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/tests/container.cpp</label>
+        <link refid="d3/dda/container_8cpp"/>
+      </node>
+      <node id="5290">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/queue.cpp</label>
+        <link refid="dc/d31/queue_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="df/d88/classopenage_1_1curve_1_1_queue" prot="public">openage::curve::Queue</innerclass>
+    <innerclass refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper" prot="private">openage::curve::Queue::queue_wrapper</innerclass>
+    <innernamespace refid="df/dbd/namespaceopenage_1_1curve">openage::curve</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2017-2018<sp/>the<sp/>openage<sp/>authors.<sp/>See<sp/>copying.md<sp/>for<sp/>legal<sp/>info.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/de9/curve_8h" kindref="compound">curve.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d59/queue__filter__iterator_8h" kindref="compound">queue_filter_iterator.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="df/dbd/namespaceopenage_1_1curve" kindref="compound">openage::curve</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="19" refid="df/d88/classopenage_1_1curve_1_1_queue" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="df/d88/classopenage_1_1curve_1_1_queue" kindref="compound">Queue</ref><sp/>{</highlight></codeline>
+<codeline lineno="20" refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper" kindref="compound">queue_wrapper</ref><sp/>{</highlight></codeline>
+<codeline lineno="21" refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper_1afdd6c72cb00c6b5906ab78af3fc77248" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/><ref refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper_1afdd6c72cb00c6b5906ab78af3fc77248" kindref="member">_time</ref>;</highlight></codeline>
+<codeline lineno="22" refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper_1aa5a9f7f1c755925ed6fb65499089c91c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper_1aa5a9f7f1c755925ed6fb65499089c91c" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper_1a9f13d26ca7d8cc64b9b4d003c7d18873" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper_1a9f13d26ca7d8cc64b9b4d003c7d18873" kindref="member">queue_wrapper</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;<ref refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper_1ac9a915e29db89fbd0731899d845db899" kindref="member">time</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T<sp/>&amp;value)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_time{time},</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value{value}<sp/>{}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper_1ac9a915e29db89fbd0731899d845db899" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/><ref refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper_1ac9a915e29db89fbd0731899d845db899" kindref="member">time</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper_1afdd6c72cb00c6b5906ab78af3fc77248" kindref="member">_time</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35" refid="df/d88/classopenage_1_1curve_1_1_queue_1a3a1cbe5732b66e9a5251750a1a24bc22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a3a1cbe5732b66e9a5251750a1a24bc22" kindref="member">container_t</ref><sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>std::deque&lt;queue_wrapper&gt;;</highlight></codeline>
+<codeline lineno="36" refid="df/d88/classopenage_1_1curve_1_1_queue_1af08e78e0f32281f493f714e9e56211fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1af08e78e0f32281f493f714e9e56211fd" kindref="member">const_iterator</ref><sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>container_t::const_iterator;</highlight></codeline>
+<codeline lineno="37" refid="df/d88/classopenage_1_1curve_1_1_queue_1aa2bd95142aa49866516f901aece7e7d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1aa2bd95142aa49866516f901aece7e7d5" kindref="member">iterator</ref><sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>container_t::const_iterator;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reading<sp/>Access</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T<sp/>&amp;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a7fe7c6b582f57ac867d198e9677a2156" kindref="member">front</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Modifying<sp/>access</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/dfc/classopenage_1_1curve_1_1_queue_filter_iterator" kindref="compound">QueueFilterIterator&lt;T, Queue&lt;T&gt;</ref>&gt;<sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1acbff846f0aad39b82c1dbffe83f80fba" kindref="member">begin</ref>(</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;t<sp/>=<sp/>-<ref refid="de/d06/namespaceopenage_1_1console_1_1tests_1a46ebd3333dc9196558ac9aced828d117" kindref="member">std::numeric_limits&lt;time_t&gt;::max</ref>())<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/dfc/classopenage_1_1curve_1_1_queue_filter_iterator" kindref="compound">QueueFilterIterator&lt;T, Queue&lt;T&gt;</ref>&gt;<sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a3a60297cec80ae6d759ea3567922db8e" kindref="member">end</ref>(</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;t<sp/>=<sp/><ref refid="de/d06/namespaceopenage_1_1console_1_1tests_1a46ebd3333dc9196558ac9aced828d117" kindref="member">std::numeric_limits&lt;time_t&gt;::max</ref>())<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/dfc/classopenage_1_1curve_1_1_queue_filter_iterator" kindref="compound">QueueFilterIterator&lt;T, Queue&lt;T&gt;</ref>&gt;<sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a3ba35a56fa550d939d0d16c71c63e56c" kindref="member">between</ref>(</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1acbff846f0aad39b82c1dbffe83f80fba" kindref="member">begin</ref><sp/>=<sp/><ref refid="de/d06/namespaceopenage_1_1console_1_1tests_1a46ebd3333dc9196558ac9aced828d117" kindref="member">std::numeric_limits&lt;time_t&gt;::max</ref>(),</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a3a60297cec80ae6d759ea3567922db8e" kindref="member">end</ref><sp/>=<sp/><ref refid="de/d06/namespaceopenage_1_1console_1_1tests_1a46ebd3333dc9196558ac9aced828d117" kindref="member">std::numeric_limits&lt;time_t&gt;::max</ref>())<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1acb732f8f9c5ec59d691d59067fa09d66" kindref="member">erase</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d1d/classopenage_1_1curve_1_1_curve_iterator" kindref="compound">CurveIterator</ref>&lt;T,<sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue" kindref="compound">Queue&lt;T&gt;</ref>&gt;<sp/>&amp;);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/dfc/classopenage_1_1curve_1_1_queue_filter_iterator" kindref="compound">QueueFilterIterator&lt;T, Queue&lt;T&gt;</ref>&gt;<sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1ae7d94b0875221550e5af663a64ea2aec" kindref="member">insert</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T<sp/>&amp;e);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a5ee4f2514bc1ea089a5aa32567ec0195" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1ac48eba75b18f46ba566155cb9a18d478" kindref="member">clean</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="df/d88/classopenage_1_1curve_1_1_queue_1a87ae2b6fac07d94e9936b70d664cf35c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a87ae2b6fac07d94e9936b70d664cf35c" kindref="member">dump</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>i<sp/>:<sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>i.value<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>at<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>i.time()<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68" refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a3a1cbe5732b66e9a5251750a1a24bc22" kindref="member">container_t</ref><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="73" refid="df/d88/classopenage_1_1curve_1_1_queue_1a7fe7c6b582f57ac867d198e9677a2156" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T<sp/>&amp;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a7fe7c6b582f57ac867d198e9677a2156" kindref="member">Queue&lt;T&gt;::front</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.front();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="79" refid="df/d88/classopenage_1_1curve_1_1_queue_1acbff846f0aad39b82c1dbffe83f80fba" refkind="member"><highlight class="normal"><ref refid="d6/dfc/classopenage_1_1curve_1_1_queue_filter_iterator" kindref="compound">QueueFilterIterator&lt;T, Queue&lt;T&gt;</ref>&gt;<sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1acbff846f0aad39b82c1dbffe83f80fba" kindref="member">Queue&lt;T&gt;::begin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;t)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>this-&gt;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.begin();<sp/>it<sp/>!=<sp/>this-&gt;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.end();<sp/>++it)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(it-&gt;time()<sp/>&gt;=<sp/>t)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d6/dfc/classopenage_1_1curve_1_1_queue_filter_iterator" kindref="compound">QueueFilterIterator&lt;T, Queue&lt;T&gt;</ref>&gt;(</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/namespaceopenage_1_1console_1_1tests_1a46ebd3333dc9196558ac9aced828d117" kindref="member">std::numeric_limits&lt;time_t&gt;::max</ref>());</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a3a60297cec80ae6d759ea3567922db8e" kindref="member">end</ref>(t);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="95" refid="df/d88/classopenage_1_1curve_1_1_queue_1a3a60297cec80ae6d759ea3567922db8e" refkind="member"><highlight class="normal"><ref refid="d6/dfc/classopenage_1_1curve_1_1_queue_filter_iterator" kindref="compound">QueueFilterIterator&lt;T, Queue&lt;T&gt;</ref>&gt;<sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a3a60297cec80ae6d759ea3567922db8e" kindref="member">Queue&lt;T&gt;::end</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;t)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d6/dfc/classopenage_1_1curve_1_1_queue_filter_iterator" kindref="compound">QueueFilterIterator&lt;T, Queue&lt;T&gt;</ref>&gt;(</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.end(),</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d06/namespaceopenage_1_1console_1_1tests_1a46ebd3333dc9196558ac9aced828d117" kindref="member">std::numeric_limits&lt;time_t&gt;::max</ref>());</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="105" refid="df/d88/classopenage_1_1curve_1_1_queue_1a3ba35a56fa550d939d0d16c71c63e56c" refkind="member"><highlight class="normal"><ref refid="d6/dfc/classopenage_1_1curve_1_1_queue_filter_iterator" kindref="compound">QueueFilterIterator&lt;T, Queue&lt;T&gt;</ref>&gt;<sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a3ba35a56fa550d939d0d16c71c63e56c" kindref="member">Queue&lt;T&gt;::between</ref>(</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1acbff846f0aad39b82c1dbffe83f80fba" kindref="member">begin</ref>,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a3a60297cec80ae6d759ea3567922db8e" kindref="member">end</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/><ref refid="d6/dfc/classopenage_1_1curve_1_1_queue_filter_iterator" kindref="compound">QueueFilterIterator&lt;T, Queue&lt;T&gt;</ref>&gt;(</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.begin(),</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1acbff846f0aad39b82c1dbffe83f80fba" kindref="member">begin</ref>,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a3a60297cec80ae6d759ea3567922db8e" kindref="member">end</ref>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.empty()<sp/>&amp;&amp;<sp/>!it.valid())<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++it;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>it;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="122" refid="df/d88/classopenage_1_1curve_1_1_queue_1acb732f8f9c5ec59d691d59067fa09d66" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1acb732f8f9c5ec59d691d59067fa09d66" kindref="member">Queue&lt;T&gt;::erase</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d1d/classopenage_1_1curve_1_1_curve_iterator" kindref="compound">CurveIterator</ref>&lt;T,<sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue" kindref="compound">Queue&lt;T&gt;</ref>&gt;<sp/>&amp;t)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.erase(t.base());</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="129" refid="df/d88/classopenage_1_1curve_1_1_queue_1ae7d94b0875221550e5af663a64ea2aec" refkind="member"><highlight class="normal"><ref refid="d6/dfc/classopenage_1_1curve_1_1_queue_filter_iterator" kindref="compound">QueueFilterIterator&lt;T, Queue&lt;T&gt;</ref>&gt;<sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1ae7d94b0875221550e5af663a64ea2aec" kindref="member">Queue&lt;T&gt;::insert</ref>(</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;<ref refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper_1ac9a915e29db89fbd0731899d845db899" kindref="member">time</ref>,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T<sp/>&amp;e)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1af08e78e0f32281f493f714e9e56211fd" kindref="member">const_iterator</ref><sp/>insertion_point<sp/>=<sp/>this-&gt;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.end();</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>this-&gt;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.begin();<sp/>it<sp/>!=<sp/>this-&gt;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.end();<sp/>++it)<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(time<sp/>&lt;<sp/>it-&gt;<ref refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper_1ac9a915e29db89fbd0731899d845db899" kindref="member">time</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>insertion_point<sp/>=<sp/>this-&gt;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.insert(it,<sp/><ref refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper_1a9f13d26ca7d8cc64b9b4d003c7d18873" kindref="member">queue_wrapper</ref>(time,<sp/>e));</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(insertion_point<sp/>==<sp/>this-&gt;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.end())<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>insertion_point<sp/>=<sp/>this-&gt;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.insert(this-&gt;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.end(),</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper_1a9f13d26ca7d8cc64b9b4d003c7d18873" kindref="member">queue_wrapper</ref>(time,<sp/>e));</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ct<sp/>=<sp/><ref refid="d6/dfc/classopenage_1_1curve_1_1_queue_filter_iterator" kindref="compound">QueueFilterIterator&lt;T, Queue&lt;T&gt;</ref>&gt;(</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>insertion_point,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper_1ac9a915e29db89fbd0731899d845db899" kindref="member">time</ref>,<sp/><ref refid="de/d06/namespaceopenage_1_1console_1_1tests_1a46ebd3333dc9196558ac9aced828d117" kindref="member">std::numeric_limits&lt;time_t&gt;::max</ref>());</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ct.valid())<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++ct;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ct;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="158" refid="df/d88/classopenage_1_1curve_1_1_queue_1a5ee4f2514bc1ea089a5aa32567ec0195" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a5ee4f2514bc1ea089a5aa32567ec0195" kindref="member">Queue&lt;T&gt;::clear</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.clear();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="164" refid="df/d88/classopenage_1_1curve_1_1_queue_1ac48eba75b18f46ba566155cb9a18d478" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d88/classopenage_1_1curve_1_1_queue_1ac48eba75b18f46ba566155cb9a18d478" kindref="member">Queue&lt;T&gt;::clean</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;<ref refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper_1ac9a915e29db89fbd0731899d845db899" kindref="member">time</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>this-&gt;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.begin();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/>!=<sp/>this-&gt;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.end()<sp/>and<sp/>it-&gt;time()<sp/>&lt;<sp/><ref refid="d4/d69/structopenage_1_1curve_1_1_queue_1_1queue__wrapper_1ac9a915e29db89fbd0731899d845db899" kindref="member">time</ref>;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/>=<sp/>this-&gt;<ref refid="df/d88/classopenage_1_1curve_1_1_queue_1a0d3c32ed29fe967fc04b27b2db69d924" kindref="member">container</ref>.erase(it))</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>openage::curve</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/queue.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles" kind="class" language="C++" prot="public">
+    <compoundname>openage::gui::GuiFilledTextureHandles</compoundname>
+    <includes refid="dd/d97/gui__filled__texture__handles_8h" local="no">gui_filled_texture_handles.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a55206c306b7d1a8dd69901b86de8329d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::tuple&lt; QString, QSize, <ref refid="d7/d65/classopenage_1_1gui_1_1_sized_texture_handle" kindref="compound">SizedTextureHandle</ref> * &gt; &gt;</type>
+        <definition>std::vector&lt;std::tuple&lt;QString, QSize, SizedTextureHandle*&gt; &gt; openage::gui::GuiFilledTextureHandles::handles</definition>
+        <argsstring></argsstring>
+        <name>handles</name>
+        <briefdescription>
+<para>Changing the texture handles underneath the QSGTexture to reflect the reload of the <ref refid="de/d6a/classopenage_1_1_game_spec" kindref="compound">GameSpec</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>It&apos;s not a proper Qt usage, so the live reload of the game assets for the gui may break in future Qt releases. When it breaks, this feature should be implemented via the recreation of the qml engine. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.h" line="43" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a7357819459965ee16bda1c736e46a7a9" compoundref="dd/d27/gui__filled__texture__handles_8cpp" startline="16" endline="19">add_texture_handle</referencedby>
+        <referencedby refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a08b5dcae915c7b1cb98cf3763f4b2361" compoundref="dd/d27/gui__filled__texture__handles_8cpp" startline="28" endline="34">fill_all_handles_with_texture</referencedby>
+        <referencedby refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a9592f230aa21b060f44bb8c98da7e86b" compoundref="dd/d27/gui__filled__texture__handles_8cpp" startline="21" endline="26">free_texture_handle</referencedby>
+        <referencedby refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a4996710931e1c2c4d7de7a10872a8b22" compoundref="dd/d27/gui__filled__texture__handles_8cpp" startline="36" endline="49">refresh_all_handles_with_texture</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a2a711dddb6ee87cae1eb651c9a28febd" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex openage::gui::GuiFilledTextureHandles::handles_mutex</definition>
+        <argsstring></argsstring>
+        <name>handles_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.h" line="44" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a7357819459965ee16bda1c736e46a7a9" compoundref="dd/d27/gui__filled__texture__handles_8cpp" startline="16" endline="19">add_texture_handle</referencedby>
+        <referencedby refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a08b5dcae915c7b1cb98cf3763f4b2361" compoundref="dd/d27/gui__filled__texture__handles_8cpp" startline="28" endline="34">fill_all_handles_with_texture</referencedby>
+        <referencedby refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a9592f230aa21b060f44bb8c98da7e86b" compoundref="dd/d27/gui__filled__texture__handles_8cpp" startline="21" endline="26">free_texture_handle</referencedby>
+        <referencedby refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a4996710931e1c2c4d7de7a10872a8b22" compoundref="dd/d27/gui__filled__texture__handles_8cpp" startline="36" endline="49">refresh_all_handles_with_texture</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1ae21b71a16743bdf4c04cd86f10cd661a" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::gui::GuiFilledTextureHandles::GuiFilledTextureHandles</definition>
+        <argsstring>()</argsstring>
+        <name>GuiFilledTextureHandles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.h" line="24" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.cpp" bodystart="10" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a739c37e3f8d590a562e8b85d89e9fcbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::gui::GuiFilledTextureHandles::~GuiFilledTextureHandles</definition>
+        <argsstring>()</argsstring>
+        <name>~GuiFilledTextureHandles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.h" line="25" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.cpp" bodystart="13" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a7357819459965ee16bda1c736e46a7a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::gui::GuiFilledTextureHandles::add_texture_handle</definition>
+        <argsstring>(const QString &amp;id, const QSize &amp;requested_size, SizedTextureHandle *filled_handle)</argsstring>
+        <name>add_texture_handle</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const QSize &amp;</type>
+          <declname>requested_size</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/d65/classopenage_1_1gui_1_1_sized_texture_handle" kindref="compound">SizedTextureHandle</ref> *</type>
+          <declname>filled_handle</declname>
+        </param>
+        <briefdescription>
+<para>Memorizes pointer to provided handle object in order to be able to update it if the source changes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.h" line="30" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.cpp" bodystart="16" bodyend="19"/>
+        <references refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a55206c306b7d1a8dd69901b86de8329d" compoundref="dd/d97/gui__filled__texture__handles_8h" startline="43">handles</references>
+        <references refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a2a711dddb6ee87cae1eb651c9a28febd" compoundref="dd/d97/gui__filled__texture__handles_8h" startline="44">handles_mutex</references>
+      </memberdef>
+      <memberdef kind="function" id="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a9592f230aa21b060f44bb8c98da7e86b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::gui::GuiFilledTextureHandles::free_texture_handle</definition>
+        <argsstring>(SizedTextureHandle *filled_handle)</argsstring>
+        <name>free_texture_handle</name>
+        <param>
+          <type><ref refid="d7/d65/classopenage_1_1gui_1_1_sized_texture_handle" kindref="compound">SizedTextureHandle</ref> *</type>
+          <declname>filled_handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.h" line="31" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.cpp" bodystart="21" bodyend="26"/>
+        <references refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a55206c306b7d1a8dd69901b86de8329d" compoundref="dd/d97/gui__filled__texture__handles_8h" startline="43">handles</references>
+        <references refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a2a711dddb6ee87cae1eb651c9a28febd" compoundref="dd/d97/gui__filled__texture__handles_8h" startline="44">handles_mutex</references>
+      </memberdef>
+      <memberdef kind="function" id="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a08b5dcae915c7b1cb98cf3763f4b2361" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::gui::GuiFilledTextureHandles::fill_all_handles_with_texture</definition>
+        <argsstring>(const TextureHandle &amp;texture)</argsstring>
+        <name>fill_all_handles_with_texture</name>
+        <param>
+          <type>const <ref refid="d2/dcd/classopenage_1_1gui_1_1_texture_handle" kindref="compound">TextureHandle</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.h" line="33" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.cpp" bodystart="28" bodyend="34"/>
+        <references refid="de/d60/namespaceopenage_1_1util_1ac6f34c002692bc844cd70de03e10bc5d" compoundref="df/dd9/algorithm_8h" startline="17" endline="22">openage::util::for_each</references>
+        <references refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a55206c306b7d1a8dd69901b86de8329d" compoundref="dd/d97/gui__filled__texture__handles_8h" startline="43">handles</references>
+        <references refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a2a711dddb6ee87cae1eb651c9a28febd" compoundref="dd/d97/gui__filled__texture__handles_8h" startline="44">handles_mutex</references>
+        <references refid="d2/d2b/namespaceopenage_1_1texturefont__shader_1a80b2cb1e92b294620d32e9378f795083" compoundref="d3/dbb/text_8cpp" startline="16">openage::texturefont_shader::texture</references>
+        <references refid="d3/d8f/namespaceopenage_1_1gui_1a1404eed030dfc77b51edc61cb3fbbbef" compoundref="dd/dfd/gui__texture__handle_8cpp" startline="28" endline="30">openage::gui::textureSize</references>
+      </memberdef>
+      <memberdef kind="function" id="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a4996710931e1c2c4d7de7a10872a8b22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::gui::GuiFilledTextureHandles::refresh_all_handles_with_texture</definition>
+        <argsstring>(std::function&lt; void(const QString &amp;, const QSize &amp;, SizedTextureHandle *)&gt; refresher)</argsstring>
+        <name>refresh_all_handles_with_texture</name>
+        <param>
+          <type>std::function&lt; void(const QString &amp;, const QSize &amp;, <ref refid="d7/d65/classopenage_1_1gui_1_1_sized_texture_handle" kindref="compound">SizedTextureHandle</ref> *)&gt;</type>
+          <declname>refresher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.h" line="34" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.cpp" bodystart="36" bodyend="49"/>
+        <references refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a55206c306b7d1a8dd69901b86de8329d" compoundref="dd/d97/gui__filled__texture__handles_8h" startline="43">handles</references>
+        <references refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a2a711dddb6ee87cae1eb651c9a28febd" compoundref="dd/d97/gui__filled__texture__handles_8h" startline="44">handles_mutex</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Stores pointers to game texture handlers given to the Qt. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3620">
+        <label>openage::gui::GuiFilledTextureHandles</label>
+        <link refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.h" line="22" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_filled_texture_handles.h" bodystart="22" bodyend="45"/>
+    <listofallmembers>
+      <member refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a7357819459965ee16bda1c736e46a7a9" prot="public" virt="non-virtual"><scope>openage::gui::GuiFilledTextureHandles</scope><name>add_texture_handle</name></member>
+      <member refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a08b5dcae915c7b1cb98cf3763f4b2361" prot="public" virt="non-virtual"><scope>openage::gui::GuiFilledTextureHandles</scope><name>fill_all_handles_with_texture</name></member>
+      <member refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a9592f230aa21b060f44bb8c98da7e86b" prot="public" virt="non-virtual"><scope>openage::gui::GuiFilledTextureHandles</scope><name>free_texture_handle</name></member>
+      <member refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1ae21b71a16743bdf4c04cd86f10cd661a" prot="public" virt="non-virtual"><scope>openage::gui::GuiFilledTextureHandles</scope><name>GuiFilledTextureHandles</name></member>
+      <member refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a55206c306b7d1a8dd69901b86de8329d" prot="private" virt="non-virtual"><scope>openage::gui::GuiFilledTextureHandles</scope><name>handles</name></member>
+      <member refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a2a711dddb6ee87cae1eb651c9a28febd" prot="private" virt="non-virtual"><scope>openage::gui::GuiFilledTextureHandles</scope><name>handles_mutex</name></member>
+      <member refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a4996710931e1c2c4d7de7a10872a8b22" prot="public" virt="non-virtual"><scope>openage::gui::GuiFilledTextureHandles</scope><name>refresh_all_handles_with_texture</name></member>
+      <member refid="da/d1c/classopenage_1_1gui_1_1_gui_filled_texture_handles_1a739c37e3f8d590a562e8b85d89e9fcbf" prot="public" virt="non-virtual"><scope>openage::gui::GuiFilledTextureHandles</scope><name>~GuiFilledTextureHandles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

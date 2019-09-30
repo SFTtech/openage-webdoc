@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d4/de2/classopenage_1_1input_1_1_action_manager" kind="class" language="C++" prot="public">
+    <compoundname>openage::input::ActionManager</compoundname>
+    <includes refid="d9/d00/input_2action_8h" local="no">action.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d4/de2/classopenage_1_1input_1_1_action_manager_1aca4e1790866a8accadc1221a4bb7a3f2" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="d5/dc6/namespaceopenage_1_1input_1afc78129c41b8dce77d2b9c52d7619d74" kindref="member">action_t</ref> &gt;</type>
+        <definition>std::unordered_map&lt;std::string, action_t&gt; openage::input::ActionManager::actions</definition>
+        <argsstring></argsstring>
+        <name>actions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.h" line="50" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a172292484fa92f4c391479d6e656808a" compoundref="d3/dba/input_2action_8cpp" startline="117" endline="147">create</referencedby>
+        <referencedby refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a743f9d44332f84adb3eca195732ed09d" compoundref="d3/dba/input_2action_8cpp" startline="150" endline="157">get</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/de2/classopenage_1_1input_1_1_action_manager_1a2278ba8f1edd88616de83b020147e13c" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="d5/dc6/namespaceopenage_1_1input_1afc78129c41b8dce77d2b9c52d7619d74" kindref="member">action_t</ref>, std::string &gt;</type>
+        <definition>std::unordered_map&lt;action_t, std::string&gt; openage::input::ActionManager::reverse_map</definition>
+        <argsstring></argsstring>
+        <name>reverse_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.h" line="52" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a172292484fa92f4c391479d6e656808a" compoundref="d3/dba/input_2action_8cpp" startline="117" endline="147">create</referencedby>
+        <referencedby refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a44e53d5edb2092424df17b709b743358" compoundref="d3/dba/input_2action_8cpp" startline="160" endline="167">get_name</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/de2/classopenage_1_1input_1_1_action_manager_1a65f3385ebda802a0c4f1a1e89f18d484" prot="private" static="no" mutable="no">
+        <type><ref refid="d7/df3/classopenage_1_1input_1_1_input_manager" kindref="compound">InputManager</ref> *const</type>
+        <definition>InputManager* const openage::input::ActionManager::input_manager</definition>
+        <argsstring></argsstring>
+        <name>input_manager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.h" line="54" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a172292484fa92f4c391479d6e656808a" compoundref="d3/dba/input_2action_8cpp" startline="117" endline="147">create</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/de2/classopenage_1_1input_1_1_action_manager_1a2c664814e0ae1cb76108a7b4ece1c988" prot="private" static="no" mutable="no">
+        <type><ref refid="db/db2/classopenage_1_1cvar_1_1_c_var_manager" kindref="compound">cvar::CVarManager</ref> *const</type>
+        <definition>cvar::CVarManager* const openage::input::ActionManager::cvar_manager</definition>
+        <argsstring></argsstring>
+        <name>cvar_manager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.h" line="55" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a4a464cc59f73c65528f92ec8379b3878" compoundref="d3/dba/input_2action_8cpp" startline="104" endline="115">ActionManager</referencedby>
+        <referencedby refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a172292484fa92f4c391479d6e656808a" compoundref="d3/dba/input_2action_8cpp" startline="117" endline="147">create</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/de2/classopenage_1_1input_1_1_action_manager_1a80b0b1c5bd381d79459958c15c4f0983" prot="private" static="no" mutable="no">
+        <type><ref refid="d5/dc6/namespaceopenage_1_1input_1afc78129c41b8dce77d2b9c52d7619d74" kindref="member">action_t</ref></type>
+        <definition>action_t openage::input::ActionManager::next_action_id</definition>
+        <argsstring></argsstring>
+        <name>next_action_id</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.h" line="58" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a172292484fa92f4c391479d6e656808a" compoundref="d3/dba/input_2action_8cpp" startline="117" endline="147">create</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/de2/classopenage_1_1input_1_1_action_manager_1a4a464cc59f73c65528f92ec8379b3878" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::input::ActionManager::ActionManager</definition>
+        <argsstring>(InputManager *input_manager, cvar::CVarManager *cvar_manager)</argsstring>
+        <name>ActionManager</name>
+        <param>
+          <type><ref refid="d7/df3/classopenage_1_1input_1_1_input_manager" kindref="compound">InputManager</ref> *</type>
+          <declname>input_manager</declname>
+        </param>
+        <param>
+          <type><ref refid="db/db2/classopenage_1_1cvar_1_1_c_var_manager" kindref="compound">cvar::CVarManager</ref> *</type>
+          <declname>cvar_manager</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.h" line="38" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.cpp" bodystart="104" bodyend="115"/>
+        <references refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a172292484fa92f4c391479d6e656808a" compoundref="d3/dba/input_2action_8cpp" startline="117" endline="147">create</references>
+        <references refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a2c664814e0ae1cb76108a7b4ece1c988" compoundref="d9/d00/input_2action_8h" startline="55">cvar_manager</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/de2/classopenage_1_1input_1_1_action_manager_1a743f9d44332f84adb3eca195732ed09d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/dc6/namespaceopenage_1_1input_1afc78129c41b8dce77d2b9c52d7619d74" kindref="member">action_t</ref></type>
+        <definition>action_t openage::input::ActionManager::get</definition>
+        <argsstring>(const std::string &amp;type)</argsstring>
+        <name>get</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.h" line="42" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.cpp" bodystart="150" bodyend="157"/>
+        <references refid="d4/de2/classopenage_1_1input_1_1_action_manager_1aca4e1790866a8accadc1221a4bb7a3f2" compoundref="d9/d00/input_2action_8h" startline="50">actions</references>
+        <referencedby refid="d6/d40/classopenage_1_1_engine_1a201016f062279be18da34be570e9971c" compoundref="da/d5c/engine_8cpp" startline="39" endline="223">openage::Engine::Engine</referencedby>
+        <referencedby refid="d3/d7e/classopenage_1_1_game_renderer_1a153e060bb9dd679446e2a3090887590a" compoundref="d3/da1/game__renderer_8cpp" startline="36" endline="186">openage::GameRenderer::GameRenderer</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a368dbccb090d17ca142b1bfde0763011" compoundref="d5/d7f/input__manager_8cpp" startline="64" endline="83">openage::input::InputManager::get_bind</referencedby>
+        <referencedby refid="d8/de3/classopenage_1_1_action_mode_signals_1a400a4674187d1ce007a206c5074390da" compoundref="d0/d03/game__control_8cpp" startline="70" endline="90">openage::ActionModeSignals::on_action</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1af93e6ca8bded1892c1c9d83332468e2d" compoundref="d5/d7f/input__manager_8cpp" startline="85" endline="105">openage::input::InputManager::set_bind</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/de2/classopenage_1_1input_1_1_action_manager_1a44e53d5edb2092424df17b709b743358" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string openage::input::ActionManager::get_name</definition>
+        <argsstring>(const action_t action)</argsstring>
+        <name>get_name</name>
+        <param>
+          <type>const <ref refid="d5/dc6/namespaceopenage_1_1input_1afc78129c41b8dce77d2b9c52d7619d74" kindref="member">action_t</ref></type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.h" line="43" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.cpp" bodystart="160" bodyend="167"/>
+        <references refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a2278ba8f1edd88616de83b020147e13c" compoundref="d9/d00/input_2action_8h" startline="52">reverse_map</references>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ac5b6bbe740edcca81b63996a22472a53" compoundref="d5/d7f/input__manager_8cpp" startline="381" endline="406">openage::input::InputManager::active_binds</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/de2/classopenage_1_1input_1_1_action_manager_1a252869fbc85be3b450eb290794352ba4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::input::ActionManager::is</definition>
+        <argsstring>(const std::string &amp;type, const action_t action)</argsstring>
+        <name>is</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d5/dc6/namespaceopenage_1_1input_1afc78129c41b8dce77d2b9c52d7619d74" kindref="member">action_t</ref></type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.h" line="44" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.cpp" bodystart="170" bodyend="172"/>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a368dbccb090d17ca142b1bfde0763011" compoundref="d5/d7f/input__manager_8cpp" startline="64" endline="83">openage::input::InputManager::get_bind</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1af93e6ca8bded1892c1c9d83332468e2d" compoundref="d5/d7f/input__manager_8cpp" startline="85" endline="105">openage::input::InputManager::set_bind</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d4/de2/classopenage_1_1input_1_1_action_manager_1a172292484fa92f4c391479d6e656808a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::input::ActionManager::create</definition>
+        <argsstring>(const std::string &amp;type)</argsstring>
+        <name>create</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.h" line="47" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.cpp" bodystart="117" bodyend="147"/>
+        <references refid="d4/de2/classopenage_1_1input_1_1_action_manager_1aca4e1790866a8accadc1221a4bb7a3f2" compoundref="d9/d00/input_2action_8h" startline="50">actions</references>
+        <references refid="db/db2/classopenage_1_1cvar_1_1_c_var_manager_1a093074d20bdce055fac654ba01733f36" compoundref="d1/dc4/cvar_8cpp" startline="16" endline="24">openage::cvar::CVarManager::create</references>
+        <references refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a2c664814e0ae1cb76108a7b4ece1c988" compoundref="d9/d00/input_2action_8h" startline="55">cvar_manager</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a368dbccb090d17ca142b1bfde0763011" compoundref="d5/d7f/input__manager_8cpp" startline="64" endline="83">openage::input::InputManager::get_bind</references>
+        <references refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a65f3385ebda802a0c4f1a1e89f18d484" compoundref="d9/d00/input_2action_8h" startline="54">input_manager</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a80b0b1c5bd381d79459958c15c4f0983" compoundref="d9/d00/input_2action_8h" startline="58">next_action_id</references>
+        <references refid="de/d60/namespaceopenage_1_1util_1a7bc4421a5f0f57f3a0aba3f96eb8d19c" compoundref="da/df6/repr_8cpp" startline="12" endline="33">openage::util::repr</references>
+        <references refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a2278ba8f1edd88616de83b020147e13c" compoundref="d9/d00/input_2action_8h" startline="52">reverse_map</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1af93e6ca8bded1892c1c9d83332468e2d" compoundref="d5/d7f/input__manager_8cpp" startline="85" endline="105">openage::input::InputManager::set_bind</references>
+        <references refid="d2/d0d/message_8h_1a271d8f7f52be750e5c744a394ec71344" compoundref="d2/d0d/message_8h" startline="178">WARN</references>
+        <referencedby refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a4a464cc59f73c65528f92ec8379b3878" compoundref="d3/dba/input_2action_8cpp" startline="104" endline="115">ActionManager</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The action manager manages all the actions allow creation, access information and equality. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3941">
+        <label>openage::util::Path</label>
+        <link refid="dd/dc1/classopenage_1_1util_1_1_path"/>
+      </node>
+      <node id="3940">
+        <label>openage::cvar::CVarManager</label>
+        <link refid="db/db2/classopenage_1_1cvar_1_1_c_var_manager"/>
+        <childnode refid="3941" relation="usage">
+          <edgelabel>-path</edgelabel>
+        </childnode>
+      </node>
+      <node id="3939">
+        <label>openage::input::ActionManager</label>
+        <link refid="d4/de2/classopenage_1_1input_1_1_action_manager"/>
+        <childnode refid="3940" relation="usage">
+          <edgelabel>-cvar_manager</edgelabel>
+        </childnode>
+        <childnode refid="3942" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="3948">
+        <label>CoordXYRelative&lt; pixel_t, input, input_delta &gt;</label>
+      </node>
+      <node id="3944">
+        <label>openage::coord::input</label>
+        <link refid="d8/d34/structopenage_1_1coord_1_1input"/>
+        <childnode refid="3945" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3945">
+        <label>CoordXYAbsolute&lt; pixel_t, input, input_delta &gt;</label>
+      </node>
+      <node id="3946">
+        <label>openage::input::InputContext</label>
+        <link refid="d7/d57/classopenage_1_1input_1_1_input_context"/>
+        <childnode refid="3942" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="3947">
+        <label>openage::coord::input_delta</label>
+        <link refid="d8/db7/structopenage_1_1coord_1_1input__delta"/>
+        <childnode refid="3948" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3943">
+        <label>openage::InputHandler</label>
+        <link refid="da/dc5/classopenage_1_1_input_handler"/>
+      </node>
+      <node id="3942">
+        <label>openage::input::InputManager</label>
+        <link refid="d7/df3/classopenage_1_1input_1_1_input_manager"/>
+        <childnode refid="3943" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3944" relation="usage">
+          <edgelabel>-mouse_position</edgelabel>
+        </childnode>
+        <childnode refid="3946" relation="usage">
+          <edgelabel>-global_context</edgelabel>
+        </childnode>
+        <childnode refid="3947" relation="usage">
+          <edgelabel>-mouse_motion</edgelabel>
+        </childnode>
+        <childnode refid="3939" relation="usage">
+          <edgelabel>-action_manager</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.h" line="36" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/action.h" bodystart="36" bodyend="59"/>
+    <listofallmembers>
+      <member refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a4a464cc59f73c65528f92ec8379b3878" prot="public" virt="non-virtual"><scope>openage::input::ActionManager</scope><name>ActionManager</name></member>
+      <member refid="d4/de2/classopenage_1_1input_1_1_action_manager_1aca4e1790866a8accadc1221a4bb7a3f2" prot="private" virt="non-virtual"><scope>openage::input::ActionManager</scope><name>actions</name></member>
+      <member refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a172292484fa92f4c391479d6e656808a" prot="private" virt="non-virtual"><scope>openage::input::ActionManager</scope><name>create</name></member>
+      <member refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a2c664814e0ae1cb76108a7b4ece1c988" prot="private" virt="non-virtual"><scope>openage::input::ActionManager</scope><name>cvar_manager</name></member>
+      <member refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a743f9d44332f84adb3eca195732ed09d" prot="public" virt="non-virtual"><scope>openage::input::ActionManager</scope><name>get</name></member>
+      <member refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a44e53d5edb2092424df17b709b743358" prot="public" virt="non-virtual"><scope>openage::input::ActionManager</scope><name>get_name</name></member>
+      <member refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a65f3385ebda802a0c4f1a1e89f18d484" prot="private" virt="non-virtual"><scope>openage::input::ActionManager</scope><name>input_manager</name></member>
+      <member refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a252869fbc85be3b450eb290794352ba4" prot="public" virt="non-virtual"><scope>openage::input::ActionManager</scope><name>is</name></member>
+      <member refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a80b0b1c5bd381d79459958c15c4f0983" prot="private" virt="non-virtual"><scope>openage::input::ActionManager</scope><name>next_action_id</name></member>
+      <member refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a2278ba8f1edd88616de83b020147e13c" prot="private" virt="non-virtual"><scope>openage::input::ActionManager</scope><name>reverse_map</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

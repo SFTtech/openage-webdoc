@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dd/d57/structopenage_1_1coord_1_1phys2" kind="struct" language="C++" prot="public">
+    <compoundname>openage::coord::phys2</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">CoordNeSeAbsolute&lt; phys_t, phys2, phys2_delta &gt;</basecompoundref>
+    <includes refid="d0/d8a/phys_8h" local="no">phys.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d57/structopenage_1_1coord_1_1phys2_1a8ecf41059192ad2da4940f93a00a0294" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/d10/structopenage_1_1coord_1_1tile" kindref="compound">tile</ref></type>
+        <definition>tile openage::coord::phys2::to_tile</definition>
+        <argsstring>() const</argsstring>
+        <name>to_tile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.h" line="36" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d57/structopenage_1_1coord_1_1phys2_1a2cbf9e4669fb9702e6b086de22ac5eac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">phys3</ref></type>
+        <definition>phys3 openage::coord::phys2::to_phys3</definition>
+        <argsstring>(const Terrain &amp;terrain, phys_t altitude=0) const</argsstring>
+        <name>to_phys3</name>
+        <param>
+          <type>const <ref refid="d4/d15/classopenage_1_1_terrain" kindref="compound">Terrain</ref> &amp;</type>
+          <declname>terrain</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/d93/namespaceopenage_1_1coord_1a257112db0574d981f4bd017656c687fe" kindref="member">phys_t</ref></type>
+          <declname>altitude</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.h" line="37" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.cpp" bodystart="51" bodyend="57"/>
+        <referencedby refid="da/d23/namespaceopenage_1a231617a72c3e699877ee6eacb76850de" compoundref="d5/d40/terrain__object_8cpp" startline="465" endline="480">openage::building_center</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d57/structopenage_1_1coord_1_1phys2_1a759b5a67a3faf43208cfb35712f26451" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double openage::coord::phys2::distance</definition>
+        <argsstring>(phys2 other) const</argsstring>
+        <name>distance</name>
+        <param>
+          <type><ref refid="dd/d57/structopenage_1_1coord_1_1phys2" kindref="compound">phys2</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.h" line="39" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.cpp" bodystart="46" bodyend="48"/>
+        <referencedby refid="d6/d31/classopenage_1_1_radial_object_1a8df3ce8c1bc15cc827e7de59f2a39f5a" compoundref="d5/d40/terrain__object_8cpp" startline="426" endline="428">openage::RadialObject::contains</referencedby>
+        <referencedby refid="d6/d31/classopenage_1_1_radial_object_1af59b8ff3a8aa105883ac3b1ed61ef68a" compoundref="d5/d40/terrain__object_8cpp" startline="415" endline="420">openage::RadialObject::from_edge</referencedby>
+        <referencedby refid="d6/d31/classopenage_1_1_radial_object_1adef472de61d9336b562db89eb8ac28a7" compoundref="d5/d40/terrain__object_8cpp" startline="430" endline="438">openage::RadialObject::intersects</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1740">
+        <label>openage::coord::phys2</label>
+        <link refid="dd/d57/structopenage_1_1coord_1_1phys2"/>
+        <childnode refid="1741" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1741">
+        <label>CoordNeSeAbsolute&lt; phys_t, phys2, phys2_delta &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1742">
+        <label>openage::coord::phys2</label>
+        <link refid="dd/d57/structopenage_1_1coord_1_1phys2"/>
+        <childnode refid="1743" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1743">
+        <label>CoordNeSeAbsolute&lt; phys_t, phys2, phys2_delta &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.h" line="33" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.h" bodystart="33" bodyend="40"/>
+    <listofallmembers>
+      <member refid="dd/d57/structopenage_1_1coord_1_1phys2_1a759b5a67a3faf43208cfb35712f26451" prot="public" virt="non-virtual"><scope>openage::coord::phys2</scope><name>distance</name></member>
+      <member refid="dd/d57/structopenage_1_1coord_1_1phys2_1a2cbf9e4669fb9702e6b086de22ac5eac" prot="public" virt="non-virtual"><scope>openage::coord::phys2</scope><name>to_phys3</name></member>
+      <member refid="dd/d57/structopenage_1_1coord_1_1phys2_1a8ecf41059192ad2da4940f93a00a0294" prot="public" virt="non-virtual"><scope>openage::coord::phys2</scope><name>to_tile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

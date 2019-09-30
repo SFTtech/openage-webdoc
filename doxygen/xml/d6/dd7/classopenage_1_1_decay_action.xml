@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d6/dd7/classopenage_1_1_decay_action" kind="class" language="C++" prot="public">
+    <compoundname>openage::DecayAction</compoundname>
+    <basecompoundref refid="dc/d74/classopenage_1_1_unit_action" prot="public" virt="non-virtual">openage::UnitAction</basecompoundref>
+    <includes refid="d8/d1f/unit_2action_8h" local="no">action.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d6/dd7/classopenage_1_1_decay_action_1a6bfc7de58c273075516fdc580ecf2929" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float openage::DecayAction::end_frame</definition>
+        <argsstring></argsstring>
+        <name>end_frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="288" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" bodystart="288" bodyend="-1"/>
+        <referencedby refid="d6/dd7/classopenage_1_1_decay_action_1abe448cf9a59766e8a6bf77b0ed870b2e" compoundref="de/d96/unit_2action_8cpp" startline="356" endline="358">completed</referencedby>
+        <referencedby refid="d6/dd7/classopenage_1_1_decay_action_1ae358f662cbbce7df5b5c0a4f7c59cbb0" compoundref="de/d96/unit_2action_8cpp" startline="339" endline="348">DecayAction</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/dd7/classopenage_1_1_decay_action_1ae358f662cbbce7df5b5c0a4f7c59cbb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::DecayAction::DecayAction</definition>
+        <argsstring>(Unit *e)</argsstring>
+        <name>DecayAction</name>
+        <param>
+          <type><ref refid="df/dea/classopenage_1_1_unit" kindref="compound">Unit</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="277" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.cpp" bodystart="339" bodyend="348"/>
+        <references refid="dc/d74/classopenage_1_1_unit_action_1a6cd7405af72dd0cf3994cee74608cf8b" compoundref="de/d96/unit_2action_8cpp" startline="127" endline="131">openage::UnitAction::current_graphics</references>
+        <references refid="d6/dd7/classopenage_1_1_decay_action_1a6bfc7de58c273075516fdc580ecf2929" compoundref="d8/d1f/unit_2action_8h" startline="288">end_frame</references>
+        <references refid="dc/d74/classopenage_1_1_unit_action_1afe08a940aa0b7040c3a59d816de00fed" compoundref="d8/d1f/unit_2action_8h" startline="202">openage::UnitAction::graphic</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/dd7/classopenage_1_1_decay_action_1ac2a3207cbc0cb08ce7c7f0ddbf38319d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual openage::DecayAction::~DecayAction</definition>
+        <argsstring>()</argsstring>
+        <name>~DecayAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="278" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" bodystart="278" bodyend="278"/>
+        <references refid="de/d24/classopenage_1_1_interval_timer_1acb51f379d7d73ad7fff1197f9fa2335b" compoundref="de/d96/unit_2action_8cpp" startline="36" endline="47">openage::IntervalTimer::update</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/dd7/classopenage_1_1_decay_action_1a4c49cb25e83bcde8dbab2abd606c4cb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void openage::DecayAction::update</definition>
+        <argsstring>(unsigned int time) override</argsstring>
+        <name>update</name>
+        <reimplements refid="dc/d74/classopenage_1_1_unit_action_1a0196263da38bfa208d50c2241809cd62">update</reimplements>
+        <param>
+          <type>unsigned int</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>each action has its own update functionality which gets called when this is the active action </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="280" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.cpp" bodystart="350" bodyend="352"/>
+        <references refid="dc/d74/classopenage_1_1_unit_action_1a8f995b745da73c4e95ec83d8b14c38c6" compoundref="d8/d1f/unit_2action_8h" startline="203">openage::UnitAction::frame</references>
+        <references refid="dc/d74/classopenage_1_1_unit_action_1a5d0154b413ca914966b9796bc37193b8" compoundref="d8/d1f/unit_2action_8h" startline="204">openage::UnitAction::frame_rate</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/dd7/classopenage_1_1_decay_action_1af64495c81f78d627e726254329a68205" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void openage::DecayAction::on_completion</definition>
+        <argsstring>() override</argsstring>
+        <name>on_completion</name>
+        <reimplements refid="dc/d74/classopenage_1_1_unit_action_1ac84d3cbfa3c489b3975952af157929cb">on_completion</reimplements>
+        <briefdescription>
+<para>action to perform when popped from a units action stack </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="281" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.cpp" bodystart="354" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dd7/classopenage_1_1_decay_action_1abe448cf9a59766e8a6bf77b0ed870b2e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::DecayAction::completed</definition>
+        <argsstring>() const override</argsstring>
+        <name>completed</name>
+        <reimplements refid="dc/d74/classopenage_1_1_unit_action_1a7814554a94e930595ed5dad9b0f03255">completed</reimplements>
+        <briefdescription>
+<para>gets called for all actions on stack each update cycle </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true when action is completed so it and everything above it can be popped </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="282" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.cpp" bodystart="356" bodyend="358"/>
+        <references refid="d6/dd7/classopenage_1_1_decay_action_1a6bfc7de58c273075516fdc580ecf2929" compoundref="d8/d1f/unit_2action_8h" startline="288">end_frame</references>
+        <references refid="dc/d74/classopenage_1_1_unit_action_1a8f995b745da73c4e95ec83d8b14c38c6" compoundref="d8/d1f/unit_2action_8h" startline="203">openage::UnitAction::frame</references>
+      </memberdef>
+      <memberdef kind="function" id="d6/dd7/classopenage_1_1_decay_action_1ab994d7336020fc16d76cd96e7c0e61c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::DecayAction::allow_interrupt</definition>
+        <argsstring>() const override</argsstring>
+        <name>allow_interrupt</name>
+        <reimplements refid="dc/d74/classopenage_1_1_unit_action_1aa34a9ecdb9ee12fb2fe0e298025e8185">allow_interrupt</reimplements>
+        <briefdescription>
+<para>checks if the action can be interrupted, allowing it to be popped if the user specifies a new action, if false the action must reach a completed state before removal eg dead action must be completed and cannot be discarded </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="283" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" bodystart="283" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dd7/classopenage_1_1_decay_action_1aa9f4957af5c7ca039f7ccff311a051dc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::DecayAction::allow_control</definition>
+        <argsstring>() const override</argsstring>
+        <name>allow_control</name>
+        <reimplements refid="dc/d74/classopenage_1_1_unit_action_1a3e222303072f926fa7c925163b8ac10c">allow_control</reimplements>
+        <briefdescription>
+<para>control whether stack can discard the action automatically and should the stack be modifiable when this action is on top </para>        </briefdescription>
+        <detaileddescription>
+<para>if true this action must complete and will not allow new actions to be pushed while it is active and also does not update the secondary actions </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="284" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" bodystart="284" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dd7/classopenage_1_1_decay_action_1a33f1e3bafcbb958cd5b03292ab20e845" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string openage::DecayAction::name</definition>
+        <argsstring>() const override</argsstring>
+        <name>name</name>
+        <reimplements refid="dc/d74/classopenage_1_1_unit_action_1a67647c63a20cec9714a6463b1c823a70">name</reimplements>
+        <briefdescription>
+<para>debug string to identify action types </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="285" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" bodystart="285" bodyend="285"/>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1aab5ade46752aa652e414b1c3bac704c1" compoundref="d0/d7a/path_8py" startline="289" endline="296">openage.util.fslike.path.Path.stem</referencedby>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1a7b11153f6ef9787c4c583bcf0126ba6a" compoundref="d0/d7a/path_8py" startline="272" endline="278">openage.util.fslike.path.Path.suffix</referencedby>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1a912043b2fbd330e3493588f6c6af92b8" compoundref="d0/d7a/path_8py" startline="281" endline="286">openage.util.fslike.path.Path.suffixes</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>plays a fixed number of frames for the units dying animation </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1960">
+        <label>openage::DecayAction</label>
+        <link refid="d6/dd7/classopenage_1_1_decay_action"/>
+        <childnode refid="1961" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1961">
+        <label>openage::UnitAction</label>
+        <link refid="dc/d74/classopenage_1_1_unit_action"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1962">
+        <label>openage::DecayAction</label>
+        <link refid="d6/dd7/classopenage_1_1_decay_action"/>
+        <childnode refid="1963" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1976">
+        <label>openage::TeamScore</label>
+        <link refid="d4/db7/classopenage_1_1_team_score"/>
+        <childnode refid="1974" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1975" relation="usage">
+          <edgelabel>-team</edgelabel>
+        </childnode>
+      </node>
+      <node id="1963">
+        <label>openage::UnitAction</label>
+        <link refid="dc/d74/classopenage_1_1_unit_action"/>
+        <childnode refid="1964" relation="usage">
+          <edgelabel>#entity</edgelabel>
+        </childnode>
+      </node>
+      <node id="1973">
+        <label>openage::PlayerScore</label>
+        <link refid="d8/de3/classopenage_1_1_player_score"/>
+        <childnode refid="1974" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1972" relation="usage">
+          <edgelabel>-player</edgelabel>
+        </childnode>
+      </node>
+      <node id="1974">
+        <label>openage::Score</label>
+        <link refid="d8/dd7/classopenage_1_1_score"/>
+      </node>
+      <node id="1966">
+        <label>openage::UnitType</label>
+        <link refid="dd/d39/classopenage_1_1_unit_type"/>
+        <childnode refid="1967" relation="usage">
+          <edgelabel>+foundation_size</edgelabel>
+        </childnode>
+        <childnode refid="1969" relation="usage">
+          <edgelabel>+default_attributes</edgelabel>
+        </childnode>
+        <childnode refid="1970" relation="usage">
+          <edgelabel>+cost</edgelabel>
+        </childnode>
+        <childnode refid="1972" relation="usage">
+          <edgelabel>+owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="1975">
+        <label>openage::Team</label>
+        <link refid="de/dfb/classopenage_1_1_team"/>
+        <childnode refid="1976" relation="usage">
+          <edgelabel>+score</edgelabel>
+        </childnode>
+      </node>
+      <node id="1964">
+        <label>openage::Unit</label>
+        <link refid="df/dea/classopenage_1_1_unit"/>
+        <childnode refid="1965" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1966" relation="usage">
+          <edgelabel>+unit_type</edgelabel>
+        </childnode>
+        <childnode refid="1979" relation="usage">
+          <edgelabel>-container</edgelabel>
+        </childnode>
+        <childnode refid="1969" relation="usage">
+          <edgelabel>+attributes</edgelabel>
+        </childnode>
+      </node>
+      <node id="1978">
+        <label>openage::Civilisation</label>
+        <link refid="de/d7a/classopenage_1_1_civilisation"/>
+      </node>
+      <node id="1969">
+        <label>openage::Attributes</label>
+        <link refid="de/d8a/classopenage_1_1_attributes"/>
+      </node>
+      <node id="1972">
+        <label>openage::Player</label>
+        <link refid="d8/d47/classopenage_1_1_player"/>
+        <childnode refid="1973" relation="usage">
+          <edgelabel>+score</edgelabel>
+        </childnode>
+        <childnode refid="1975" relation="usage">
+          <edgelabel>+team</edgelabel>
+        </childnode>
+        <childnode refid="1971" relation="usage">
+          <edgelabel>-resources_capacity</edgelabel>
+          <edgelabel>-resources</edgelabel>
+        </childnode>
+        <childnode refid="1977" relation="usage">
+          <edgelabel>+population</edgelabel>
+        </childnode>
+        <childnode refid="1978" relation="usage">
+          <edgelabel>+civ</edgelabel>
+        </childnode>
+      </node>
+      <node id="1965">
+        <label>openage::log::LogSource</label>
+        <link refid="de/de3/classopenage_1_1log_1_1_log_source"/>
+      </node>
+      <node id="1967">
+        <label>openage::coord::tile_delta</label>
+        <link refid="db/db5/structopenage_1_1coord_1_1tile__delta"/>
+        <childnode refid="1968" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1971">
+        <label>openage::ResourceBundle</label>
+        <link refid="d2/de9/classopenage_1_1_resource_bundle"/>
+      </node>
+      <node id="1977">
+        <label>openage::PopulationTracker</label>
+        <link refid="dd/d70/classopenage_1_1_population_tracker"/>
+      </node>
+      <node id="1970">
+        <label>openage::ResourceCost</label>
+        <link refid="d8/d5b/classopenage_1_1_resource_cost"/>
+        <childnode refid="1971" relation="usage">
+          <edgelabel>-resources</edgelabel>
+        </childnode>
+      </node>
+      <node id="1979">
+        <label>openage::UnitContainer</label>
+        <link refid="d2/d82/classopenage_1_1_unit_container"/>
+      </node>
+      <node id="1968">
+        <label>CoordNeSeRelative&lt; tile_t, tile, tile_delta &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" line="275" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/action.h" bodystart="275" bodyend="290"/>
+    <listofallmembers>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a6a13e1e645b744982544ae65ef1addf3" prot="public" virt="non-virtual"><scope>openage::DecayAction</scope><name>adjacent_range</name></member>
+      <member refid="d6/dd7/classopenage_1_1_decay_action_1aa9f4957af5c7ca039f7ccff311a051dc" prot="public" virt="virtual"><scope>openage::DecayAction</scope><name>allow_control</name></member>
+      <member refid="d6/dd7/classopenage_1_1_decay_action_1ab994d7336020fc16d76cd96e7c0e61c2" prot="public" virt="virtual"><scope>openage::DecayAction</scope><name>allow_interrupt</name></member>
+      <member refid="d6/dd7/classopenage_1_1_decay_action_1abe448cf9a59766e8a6bf77b0ed870b2e" prot="public" virt="virtual"><scope>openage::DecayAction</scope><name>completed</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1abfdd7e2764fd795c02ce0a5471563508" prot="public" virt="non-virtual"><scope>openage::DecayAction</scope><name>current_frame</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a6cd7405af72dd0cf3994cee74608cf8b" prot="public" virt="virtual"><scope>openage::DecayAction</scope><name>current_graphics</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a7beffb7ad454cf467d7a6b843df939c7" prot="public" virt="non-virtual"><scope>openage::DecayAction</scope><name>damage_unit</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a0bbcb9637ce725b95cbe818204921e4f" prot="protected" virt="non-virtual"><scope>openage::DecayAction</scope><name>debug_draw_action</name></member>
+      <member refid="d6/dd7/classopenage_1_1_decay_action_1ae358f662cbbce7df5b5c0a4f7c59cbb0" prot="public" virt="non-virtual"><scope>openage::DecayAction</scope><name>DecayAction</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1aef5ad04daa194a06790b4f36ed8a3e83" prot="public" virt="non-virtual"><scope>openage::DecayAction</scope><name>draw_debug</name></member>
+      <member refid="d6/dd7/classopenage_1_1_decay_action_1a6bfc7de58c273075516fdc580ecf2929" prot="private" virt="non-virtual"><scope>openage::DecayAction</scope><name>end_frame</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a5d47af0412db504ab95c58b12418d55c" prot="protected" virt="non-virtual"><scope>openage::DecayAction</scope><name>entity</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a3ab11130480adc3cfe156af7cfb7a58d" prot="public" virt="non-virtual"><scope>openage::DecayAction</scope><name>face_towards</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a8f995b745da73c4e95ec83d8b14c38c6" prot="protected" virt="non-virtual"><scope>openage::DecayAction</scope><name>frame</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a5d0154b413ca914966b9796bc37193b8" prot="protected" virt="non-virtual"><scope>openage::DecayAction</scope><name>frame_rate</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a6e508baa62ec19cd81bea7fce1721e17" prot="public" virt="non-virtual"><scope>openage::DecayAction</scope><name>get_attack_range</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a40320d4e1be2a48373f5b9b0f6bef2ef" prot="public" virt="non-virtual"><scope>openage::DecayAction</scope><name>get_heal_range</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1afe08a940aa0b7040c3a59d816de00fed" prot="protected" virt="non-virtual"><scope>openage::DecayAction</scope><name>graphic</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a16660bd780984c6f11ba30e0c7f634ad" prot="public" virt="non-virtual"><scope>openage::DecayAction</scope><name>move_to</name></member>
+      <member refid="d6/dd7/classopenage_1_1_decay_action_1a33f1e3bafcbb958cd5b03292ab20e845" prot="public" virt="virtual"><scope>openage::DecayAction</scope><name>name</name></member>
+      <member refid="d6/dd7/classopenage_1_1_decay_action_1af64495c81f78d627e726254329a68205" prot="public" virt="virtual"><scope>openage::DecayAction</scope><name>on_completion</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a0a84fac6b39ee42340f67905dd631956" prot="public" virt="non-virtual"><scope>openage::DecayAction</scope><name>show_debug</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1acbadd90ff8cee12d01aa9fd490501c1a" prot="public" virt="non-virtual"><scope>openage::DecayAction</scope><name>type</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a3fd3dd936ea6a850726bcfce9664909a" prot="public" virt="non-virtual"><scope>openage::DecayAction</scope><name>UnitAction</name></member>
+      <member refid="d6/dd7/classopenage_1_1_decay_action_1a4c49cb25e83bcde8dbab2abd606c4cb1" prot="public" virt="virtual"><scope>openage::DecayAction</scope><name>update</name></member>
+      <member refid="d6/dd7/classopenage_1_1_decay_action_1ac2a3207cbc0cb08ce7c7f0ddbf38319d" prot="public" virt="virtual"><scope>openage::DecayAction</scope><name>~DecayAction</name></member>
+      <member refid="dc/d74/classopenage_1_1_unit_action_1a6e4ff108bc1f10e40777ae36710e7a65" prot="public" virt="virtual"><scope>openage::DecayAction</scope><name>~UnitAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

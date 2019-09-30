@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d9/dd6/_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">[![openage](/assets/logo/banner.png)](http://openage.sft.mx)</highlight></codeline>
+<codeline><highlight class="normal">============================================================</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**openage**:<sp/>a<sp/>volunteer<sp/>project<sp/>to<sp/>create<sp/>a<sp/>free<sp/>engine<sp/>clone<sp/>of<sp/>the<sp/>*Genie<sp/>Engine*<sp/>used<sp/>by<sp/>*Age<sp/>of<sp/>Empires*,<sp/>*Age<sp/>of<sp/>Empires<sp/>II<sp/>(HD)*<sp/>and<sp/>*Star<sp/>Wars:<sp/>Galactic<sp/>Battlegrounds*,<sp/>comparable<sp/>to<sp/>projects<sp/>like<sp/>[OpenMW](https://openmw.org/),<sp/>[OpenRA](http://openra.net/),<sp/><sp/>[OpenSAGE](https://github.com/OpenSAGE/OpenSAGE/),<sp/>[OpenTTD](https://openttd.org/)<sp/>and<sp/>[OpenRCT2](https://openrct2.org/).<sp/>At<sp/>the<sp/>moment<sp/>we<sp/>focus<sp/>our<sp/>efforts<sp/>on<sp/>the<sp/>integration<sp/>of<sp/>*Age<sp/>of<sp/>Empires<sp/>II*,<sp/>while<sp/>being<sp/>primarily<sp/>aimed<sp/>at<sp/>POSIX<sp/>platforms<sp/>such<sp/>as<sp/>**GNU/Linux**.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">openage<sp/>uses<sp/>the<sp/>original<sp/>game<sp/>assets<sp/>(such<sp/>as<sp/>sounds<sp/>and<sp/>graphics),<sp/>but<sp/>(for<sp/>obvious<sp/>reasons)<sp/>doesn&apos;t<sp/>ship<sp/>them.</highlight></codeline>
+<codeline><highlight class="normal">To<sp/>play,<sp/>you<sp/>require<sp/>*an<sp/>original<sp/>AoE<sp/>II<sp/>:<sp/>TC<sp/>installation<sp/>or<sp/>[AoE<sp/>II:<sp/>HD](http://store.steampowered.com/app/221380/)*</highlight></codeline>
+<codeline><highlight class="normal">(installation<sp/>via<sp/>[Wine](https://www.winehq.org/)<sp/>or<sp/>[Steam-Linux](doc/media_convert.md#how-to-use-the-original-game-assets)).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[![github<sp/>stars](https://img.shields.io/github/stars/SFTtech/openage.svg)](https://github.com/SFTtech/openage/stargazers)</highlight></codeline>
+<codeline><highlight class="normal">[![#sfttech<sp/>on<sp/>Freenode](https://img.shields.io/badge/chat-on%20freenode-brightgreen)](https://webchat.freenode.net/?channels=sfttech)</highlight></codeline>
+<codeline><highlight class="normal">[![#sfttech<sp/>on<sp/>matrix.org](https://img.shields.io/badge/matrix-%23sfttech-blue.svg)](https://riot.im/app/#/room/#sfttech:matrix.org)</highlight></codeline>
+<codeline><highlight class="normal">[![quality<sp/>badge](https://img.shields.io/badge/cuteness-overload-orange.svg)](http://www.emergencykitten.com/)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Contact</highlight></codeline>
+<codeline><highlight class="normal">-------</highlight></codeline>
+<codeline><highlight class="normal">Contact<sp/><sp/>|<sp/>Where?</highlight></codeline>
+<codeline><highlight class="normal">---------|-------</highlight></codeline>
+<codeline><highlight class="normal">Issue<sp/>Tracker<sp/>|<sp/>[SFTtech/openage](https://github.com/SFTtech/openage/issues)</highlight></codeline>
+<codeline><highlight class="normal">Development<sp/>Blog<sp/>|<sp/>[blog.openage.sft.mx](https://blog.openage.sft.mx)</highlight></codeline>
+<codeline><highlight class="normal">Forum<sp/>|<sp/>[&lt;img<sp/>src=&quot;https://www.redditstatic.com/about/assets/reddit-logo.png&quot;<sp/>alt=&quot;reddit&quot;<sp/>height=&quot;22&quot;/&gt;<sp/>/r/openage](https://www.reddit.com/r/openage/)</highlight></codeline>
+<codeline><highlight class="normal">Matrix<sp/>Chat<sp/>|<sp/>[`#sfttech:matrix.org`](https://riot.im/app/#/room/#sfttech:matrix.org)</highlight></codeline>
+<codeline><highlight class="normal">IRC<sp/>Chat<sp/>|<sp/>[`irc.freenode.net<sp/>#sfttech`](https://webchat.freenode.net/?channels=sfttech)</highlight></codeline>
+<codeline><highlight class="normal">Money<sp/>Sink<sp/>|<sp/>[![money<sp/>sink](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/SFTtech)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Technical<sp/>foundation</highlight></codeline>
+<codeline><highlight class="normal">--------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Technology<sp/><sp/><sp/><sp/><sp/>|<sp/>Component</highlight></codeline>
+<codeline><highlight class="normal">---------------|----------</highlight></codeline>
+<codeline><highlight class="normal">**C++17**<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Engine<sp/>core</highlight></codeline>
+<codeline><highlight class="normal">**Python3**<sp/><sp/><sp/><sp/>|<sp/>Scripting,<sp/>media<sp/>conversion,<sp/>in-game<sp/>console,<sp/>code<sp/>generation</highlight></codeline>
+<codeline><highlight class="normal">**Qt5**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Graphical<sp/>user<sp/>interface</highlight></codeline>
+<codeline><highlight class="normal">**Cython**<sp/><sp/><sp/><sp/><sp/>|<sp/>Glue<sp/>code</highlight></codeline>
+<codeline><highlight class="normal">**CMake**<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Build<sp/>system</highlight></codeline>
+<codeline><highlight class="normal">**OpenGL3.3**<sp/><sp/>|<sp/>Rendering,<sp/>shaders</highlight></codeline>
+<codeline><highlight class="normal">**SDL2**<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Cross-platform<sp/>Audio/Input/Window<sp/>handling</highlight></codeline>
+<codeline><highlight class="normal">**Opus**<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Audio<sp/>codec</highlight></codeline>
+<codeline><highlight class="normal">[**nyan**](https://github.com/SFTtech/nyan)<sp/>|<sp/>Content<sp/>Configuration<sp/>and<sp/>Modding</highlight></codeline>
+<codeline><highlight class="normal">**Humans**<sp/><sp/><sp/><sp/><sp/>|<sp/>Mixing<sp/>together<sp/>all<sp/>of<sp/>the<sp/>above</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Goals</highlight></codeline>
+<codeline><highlight class="normal">-----</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>Fully<sp/>authentic<sp/>look<sp/>and<sp/>feel</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>This<sp/>can<sp/>only<sp/>be<sp/>approximated,<sp/>since<sp/>the<sp/>behaviour<sp/>of<sp/>the<sp/>original<sp/>game<sp/>is<sp/>mostly<sp/>undocumented,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>and<sp/>guessing/experimenting<sp/>can<sp/>only<sp/>get<sp/>you<sp/>this<sp/>close</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>We<sp/>will<sp/>not<sp/>implement<sp/>useless<sp/>artificial<sp/>limitations<sp/>(max<sp/>30<sp/>selectable<sp/>units...)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Multiplayer<sp/>(obviously)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Matchmaking<sp/>and<sp/>ranking<sp/>with<sp/>a<sp/>[haskell<sp/>masterserver](https://github.com/SFTtech/openage-masterserver)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Optionally,<sp/>[improvements](/doc/ideas/)<sp/>over<sp/>the<sp/>original<sp/>game</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>AI<sp/>scripting<sp/>in<sp/>Python,<sp/>you<sp/>can<sp/>use<sp/>[machine<sp/>learning](http://scikit-learn.org/stable/)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>here<sp/>is<sp/>some<sp/>[additional<sp/>literature](http://www.deeplearningbook.org/)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Re-creating<sp/>[free<sp/>game<sp/>assets](https://github.com/SFTtech/openage-data)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>An<sp/>easily-moddable<sp/>content<sp/>format:<sp/>[**nyan**<sp/>yet<sp/>another<sp/>notation](https://github.com/SFTtech/nyan)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>An<sp/>integrated<sp/>Python<sp/>console<sp/>and<sp/>API,<sp/>comparable<sp/>to<sp/>[blender](https://www.blender.org/)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Awesome<sp/>infrastructure<sp/>such<sp/>as<sp/>our<sp/>own<sp/>[Kevin<sp/>CI<sp/>service](https://github.com/SFTtech/kevin)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">But<sp/>beware,<sp/>for<sp/>sanity<sp/>reasons:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>No<sp/>network<sp/>compatibility<sp/>with<sp/>the<sp/>original<sp/>game.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>You<sp/>really<sp/>wanna<sp/>have<sp/>the<sp/>same<sp/>problems<sp/>again?</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>No<sp/>binary<sp/>compatibility<sp/>with<sp/>the<sp/>original<sp/>game.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>A<sp/>one-way<sp/>script<sp/>to<sp/>convert<sp/>maps/savegames/missions<sp/>to<sp/>openage<sp/>is<sp/>planned<sp/>though.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Current<sp/>State<sp/>of<sp/>the<sp/>Project</highlight></codeline>
+<codeline><highlight class="normal">----------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>What<sp/>features<sp/>are<sp/>currently<sp/>implemented?</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>See<sp/>[doc/status.md](/doc/status.md).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>What&apos;s<sp/>the<sp/>plan?</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>See<sp/>[doc/milestones.md](/doc/milestones.md).<sp/>We<sp/>also<sp/>have<sp/>[lists<sp/>of<sp/>crazy<sp/>xor<sp/>good<sp/>ideas](/doc/ideas)<sp/>and<sp/>a<sp/>[technical<sp/>overview<sp/>for<sp/>requested<sp/>features](/doc/ideas/fr_technical_overview.md).<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Installation<sp/>Packages</highlight></codeline>
+<codeline><highlight class="normal">---------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Supported<sp/>Platforms:**<sp/>Linux,<sp/>Windows<sp/>10,<sp/>MacOS<sp/>X<sp/>10.14</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>For<sp/>**Linux**<sp/>check<sp/>at<sp/>[repology](https://repology.org/project/openage/versions)<sp/>if<sp/>your<sp/>distribution<sp/>has<sp/>any<sp/>packages<sp/>available<sp/>or<sp/>[here](https://bintray.com/simonsan/openage-packages/openage-linux-releases)<sp/>for<sp/>any<sp/>future<sp/>updates<sp/>on<sp/>*.deb<sp/>and<sp/>AppImage<sp/>packages.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>For<sp/>**Windows**<sp/>check<sp/>our<sp/>[release<sp/>page](https://github.com/SFTtech/openage/releases)<sp/>for<sp/>the<sp/>latest<sp/>installer<sp/>or<sp/>[here](https://dl.bintray.com/simonsan/openage-packages/)<sp/>for<sp/>nightly<sp/>builds.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>__NOTE:__<sp/>If<sp/>you<sp/>have<sp/>any<sp/>problems<sp/>starting<sp/>conversion<sp/>or<sp/>starting<sp/>*openage*<sp/>take<sp/>a<sp/>look<sp/>into<sp/>the<sp/>[package<sp/>instructions](doc/build_instructions/packages.md)<sp/>and<sp/>our<sp/>[troubleshooting<sp/>guide](/doc/troubleshooting.md).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>__NOTE:__<sp/>For<sp/>**MacOSX**<sp/>we<sp/>don&apos;t<sp/>have<sp/>packages,<sp/>but<sp/>here<sp/>you<sp/>can<sp/>check<sp/>the<sp/>the<sp/>build<sp/>status<sp/>[![Build](https://travis-ci.com/simonsan/openage.svg?branch=master)](https://api.travis-ci.com/simonsan/openage.svg?branch=master)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>We<sp/>also<sp/>have<sp/>building<sp/>instructions<sp/>in<sp/>[here](/doc/build_instructions/os_x_10.14_mojave.md).</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Dependencies,<sp/>Building<sp/>and<sp/>Running</highlight></codeline>
+<codeline><highlight class="normal">----------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>How<sp/>do<sp/>I<sp/>get<sp/>this<sp/>to<sp/>run<sp/>on<sp/>my<sp/>box?</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>See<sp/>[doc/building.md](/doc/building.md).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>I<sp/>compiled<sp/>everything.<sp/>Now<sp/>how<sp/>do<sp/>I<sp/>run<sp/>it?</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>Execute<sp/>`./run`.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>*<sp/>[The<sp/>convert<sp/>script](/doc/media_convert.md)<sp/>will<sp/>transform<sp/>original<sp/>assets<sp/>into<sp/>openage<sp/>formats,<sp/>which<sp/>are<sp/>a<sp/>lot<sp/>saner<sp/>and<sp/>more<sp/>moddable.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>Use<sp/>your<sp/>brain<sp/>and<sp/>react<sp/>to<sp/>the<sp/>things<sp/>you&apos;ll<sp/>see.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>Waaaaaah!<sp/>It</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>segfaults</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>prints<sp/>error<sp/>messages<sp/>I<sp/>don&apos;t<sp/>want<sp/>to<sp/>read</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>-<sp/>ate<sp/>my<sp/>dog</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">All<sp/>of<sp/>those<sp/>are<sp/>features,<sp/>not<sp/>bugs.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>turn<sp/>them<sp/>off,<sp/>use<sp/>`./run<sp/>--dont-segfault<sp/>--no-errors<sp/>--dont-eat-dog`.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>this<sp/>still<sp/>does<sp/>not<sp/>help,<sp/>try<sp/>our<sp/>[troubleshooting<sp/>guide](/doc/troubleshooting.md),<sp/>the<sp/>[contact<sp/>section](#contact)</highlight></codeline>
+<codeline><highlight class="normal">or<sp/>the<sp/>[bug<sp/>tracker](https://github.com/SFTtech/openage/issues).</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Contributing</highlight></codeline>
+<codeline><highlight class="normal">============</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>Being<sp/>typical<sp/>computer<sp/>science<sp/>students,<sp/>we<sp/>hate<sp/>people.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Please<sp/>don&apos;t<sp/>contact<sp/>us.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Nobody<sp/>likes<sp/>Age<sp/>of<sp/>Empires<sp/>anyway.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>None<sp/>of<sp/>you<sp/>is<sp/>interested<sp/>in<sp/>making<sp/>openage<sp/>more<sp/>awesome<sp/>anyway.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>We<sp/>don&apos;t<sp/>want<sp/>a<sp/>community.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Don&apos;t<sp/>even<sp/>think<sp/>about<sp/>trying<sp/>to<sp/>help.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Guidelines:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>No<sp/>**bug<sp/>reports**<sp/>or<sp/>**feature<sp/>requests**,<sp/>the<sp/>game<sp/>is<sp/>perfect<sp/>as<sp/>is.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Don&apos;t<sp/>try<sp/>to<sp/>**fix<sp/>any<sp/>bugs**,<sp/>see<sp/>above.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Don&apos;t<sp/>implement<sp/>any<sp/>features,<sp/>your<sp/>code<sp/>is<sp/>crap.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Don&apos;t<sp/>even<sp/>think<sp/>about<sp/>sending<sp/>a<sp/>**pull<sp/>request**.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Please<sp/>ignore<sp/>the<sp/>[easy<sp/>tasks](https://github.com/SFTtech/openage/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)<sp/>that<sp/>[could<sp/>just<sp/>be<sp/>done](https://github.com/SFTtech/openage/issues?q=is:issue+is:open+label:%22just+do+it%22).</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Absolutely<sp/>never<sp/>ever<sp/>participate<sp/>in<sp/>this<sp/>[boring<sp/>community](https://www.reddit.com/r/openage/).</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Don&apos;t<sp/>note<sp/>the<sp/>irony,<sp/>you<sp/>idiot.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>prevent<sp/>accidental<sp/>violation<sp/>of<sp/>one<sp/>of<sp/>those<sp/>guidelines,<sp/>you<sp/>should<sp/>*never*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>[learn<sp/>git](https://git-scm.com/book/)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[fork<sp/>the<sp/>repo](https://help.github.com/articles/fork-a-repo)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[learn<sp/>python](https://docs.python.org/3/tutorial/appetite.html)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[learn<sp/>c++](http://www.cplusplus.com/doc/tutorial/)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>read<sp/>the<sp/>code<sp/>and<sp/>documentation</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[contribute](/doc/contributing.md)<sp/>anything<sp/>to<sp/>the<sp/>code</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[contact<sp/>us](#contact)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Cheers,<sp/>happy<sp/>hecking.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Development<sp/>Process</highlight></codeline>
+<codeline><highlight class="normal">-------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">What<sp/>does<sp/>openage<sp/>development<sp/>look<sp/>like<sp/>in<sp/>practice?</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>extensive<sp/>[synchronization](#contact)!</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>[doc/development.md](/doc/development.md).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Can<sp/>I<sp/>help?</highlight></codeline>
+<codeline><highlight class="normal"><sp/>-<sp/>[doc/contributing.md](/doc/contributing.md).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">All<sp/>documentation<sp/>is<sp/>also<sp/>in<sp/>this<sp/>repo:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Code<sp/>documentation<sp/>is<sp/>embedded<sp/>in<sp/>the<sp/>sources<sp/>for<sp/>Doxygen<sp/>(see<sp/>[doc<sp/>readme](/doc/README.md)).</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Have<sp/>a<sp/>look<sp/>at<sp/>the<sp/>[doc<sp/>directory](/doc/).<sp/>This<sp/>folder<sp/>tends<sp/>to<sp/>outdate<sp/>when<sp/>code<sp/>changes.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">License</highlight></codeline>
+<codeline><highlight class="normal">-------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**GNU<sp/>GPLv3**<sp/>or<sp/>later;<sp/>see<sp/>[copying.md](copying.md)<sp/>and<sp/>[legal/GPLv3](/legal/GPLv3).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">I<sp/>know<sp/>that<sp/>probably<sp/>nobody<sp/>is<sp/>ever<sp/>gonna<sp/>look<sp/>at<sp/>the<sp/>`copying.md`<sp/>file,</highlight></codeline>
+<codeline><highlight class="normal">but<sp/>if<sp/>you<sp/>want<sp/>to<sp/>contribute<sp/>code<sp/>to<sp/>openage,<sp/>please<sp/>take<sp/>the<sp/>time<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">skim<sp/>through<sp/>it<sp/>and<sp/>add<sp/>yourself<sp/>to<sp/>the<sp/>authors<sp/>list.</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/README.md"/>
+  </compounddef>
+</doxygen>

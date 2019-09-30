@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dc/d1d/namespaceopenage_1_1subprocess" kind="namespace" language="C++">
+    <compoundname>openage::subprocess</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dc/d1d/namespaceopenage_1_1subprocess_1af8b5d87acaf3d044fdd924ef68a1cec8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::subprocess::is_executable</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>is_executable</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>returns true IFF the file is executable </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/subprocess.cpp" line="25" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/subprocess.cpp" bodystart="25" bodyend="35"/>
+        <referencedby refid="dc/d1d/namespaceopenage_1_1subprocess_1aea6af6d7d8e5290e58dfafd50a96a069" compoundref="dc/dc9/subprocess_8cpp" startline="37" endline="70">which</referencedby>
+        <referencedby refid="dd/d90/namespaceopenage_1_1util_1_1files_1aefc9024dcd367647401c6682c2d0d7a5" compoundref="da/d5a/files_8py" startline="52" endline="72">openage.util.files.which</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/d1d/namespaceopenage_1_1subprocess_1aea6af6d7d8e5290e58dfafd50a96a069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string openage::subprocess::which</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>which</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>finds the path to an executable by evaluating env[PATH] </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/subprocess.cpp" line="37" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/subprocess.cpp" bodystart="37" bodyend="70"/>
+        <references refid="de/d60/namespaceopenage_1_1util_1a854794aef09b81dbec641eca208a66d7" compoundref="d9/d15/strings_8cpp" startline="64" endline="69">openage::util::copy_string</references>
+        <references refid="de/d60/namespaceopenage_1_1util_1a664e0be1f5d2f4d1e1a624f6f4a5f0c1" compoundref="db/d2b/util_2path_8cpp" startline="364" endline="371">openage::util::filename</references>
+        <references refid="dc/d1d/namespaceopenage_1_1subprocess_1af8b5d87acaf3d044fdd924ef68a1cec8" compoundref="dc/dc9/subprocess_8cpp" startline="25" endline="35">is_executable</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d2/d0d/message_8h_1a271d8f7f52be750e5c744a394ec71344" compoundref="d2/d0d/message_8h" startline="178">WARN</references>
+        <referencedby refid="de/db7/namespaceopenage_1_1os_1a0c239b26dbfdae2443aa511e31619917" compoundref="d8/dcd/os_8cpp" startline="102" endline="124">openage::os::execute_file</referencedby>
+        <referencedby refid="dd/d6f/classopenage_1_1util_1_1_external_profiler_1add3055482caaf197842cc1661b463ac8" compoundref="d8/d58/externalprofiler_8cpp" startline="72" endline="121">openage::util::ExternalProfiler::show_results</referencedby>
+        <referencedby refid="d6/d02/namespaceopenage_1_1convert_1_1main_1a4a6e38f51a7b482ac175c932acd397e9" compoundref="d8/d6c/convert_2main_8py" startline="225" endline="252">openage.convert.main.wanna_use_wine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dc/d1d/namespaceopenage_1_1subprocess_1a9433d1215dbd3b40cd1c0981b84a8541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int openage::subprocess::call</definition>
+        <argsstring>(const std::vector&lt; const char * &gt; &amp;argv, bool wait=false, const char *redirect_stdout_to=nullptr)</argsstring>
+        <name>call</name>
+        <param>
+          <type>const std::vector&lt; const char * &gt; &amp;</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>wait</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>redirect_stdout_to</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>starts the process at argv[0] passes argv as argv </para>        </briefdescription>
+        <detaileddescription>
+<para>on failure, -1 is returned.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>must consist of at least one non-empty string, and end with a nullptr. this is not verified.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wait</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>decides whether we wait for the process to finish. if true, returns the process&apos;s return value if false, returns 0</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redirect_stdout_to</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if not nullptr, the given file is opened and substituted for the process&apos;s stdout. the existing file is overwritten. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/subprocess.cpp" line="72" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/subprocess.cpp" bodystart="72" bodyend="240"/>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" compoundref="d7/d66/log_2____init_____8py" startline="122" endline="125">openage::log.err</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <referencedby refid="de/db7/namespaceopenage_1_1os_1a0c239b26dbfdae2443aa511e31619917" compoundref="d8/dcd/os_8cpp" startline="102" endline="124">openage::os::execute_file</referencedby>
+        <referencedby refid="dd/dc1/classopenage_1_1util_1_1_path_1ade26ce7a38a05b1e46dca7f839240988" compoundref="db/d2b/util_2path_8cpp" startline="41" endline="41">openage::util::Path::Path</referencedby>
+        <referencedby refid="d1/d18/namespaceopenage_1_1pyinterface_1_1tests_1ad69d94519ba25682897d8da53beb86df" compoundref="d5/d59/pyobject__tests_8cpp" startline="16" endline="130">openage::pyinterface::tests::pyobject</referencedby>
+        <referencedby refid="dd/d6f/classopenage_1_1util_1_1_external_profiler_1add3055482caaf197842cc1661b463ac8" compoundref="d8/d58/externalprofiler_8cpp" startline="72" endline="121">openage::util::ExternalProfiler::show_results</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>similar in its goals to Python&apos;s subprocess module </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/subprocess.cpp" line="23" column="1"/>
+  </compounddef>
+</doxygen>

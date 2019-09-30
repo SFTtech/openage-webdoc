@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="da/d0a/classopenage_1_1util_1_1_variable_base" kind="class" language="C++" prot="public">
+    <compoundname>openage::util::VariableBase</compoundname>
+    <derivedcompoundref refid="df/d2d/classopenage_1_1util_1_1_variable" prot="public" virt="non-virtual">openage::util::Variable&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="df/d2d/classopenage_1_1util_1_1_variable" prot="public" virt="non-virtual">openage::util::Variable&lt; bool &gt;</derivedcompoundref>
+    <includes refid="da/d89/variable_8h" local="no">variable.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/d0a/classopenage_1_1util_1_1_variable_base_1af40913c41076cd605c10a2fb7fc36254" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual openage::util::VariableBase::~VariableBase</definition>
+        <argsstring>()</argsstring>
+        <name>~VariableBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/variable.h" line="13" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/variable.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0a/classopenage_1_1util_1_1_variable_base_1a1acb662ac94f35aed9b2ecd6d3f1ddfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>class V</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void openage::util::VariableBase::set</definition>
+        <argsstring>(const V &amp;value)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const V &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>sets the type and value </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/variable.h" line="18" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/variable.h" bodystart="59" bodyend="61"/>
+        <references refid="df/d2d/classopenage_1_1util_1_1_variable_1a572624d736175eba6d85c461fe2a430f" compoundref="da/d89/variable_8h" startline="42" endline="44">openage::util::Variable&lt; T &gt;::set</references>
+      </memberdef>
+      <memberdef kind="function" id="da/d0a/classopenage_1_1util_1_1_variable_base_1a2fc1503a41c5e241e6c2af106115bf82" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>const T &amp;</type>
+        <definition>const T &amp; openage::util::VariableBase::get</definition>
+        <argsstring>() const</argsstring>
+        <name>get</name>
+        <briefdescription>
+<para>returns the stored value throws an exception if the template does not match the set type </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/variable.h" line="25" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/variable.h" bodystart="54" bodyend="56"/>
+        <references refid="df/d2d/classopenage_1_1util_1_1_variable_1aa25af78b5870a920fb9a2ea04173881b" compoundref="da/d89/variable_8h" startline="38" endline="40">openage::util::Variable&lt; T &gt;::get</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A typed value holder. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6258">
+        <label>openage::util::VariableBase</label>
+        <link refid="da/d0a/classopenage_1_1util_1_1_variable_base"/>
+      </node>
+      <node id="6262">
+        <label>openage::util::Variable&lt; bool &gt;</label>
+        <link refid="df/d2d/classopenage_1_1util_1_1_variable"/>
+        <childnode refid="6259" relation="template-instance">
+          <edgelabel>&lt; bool &gt;</edgelabel>
+        </childnode>
+        <childnode refid="6258" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6260">
+        <label>openage::options::Var&lt; T &gt;</label>
+        <link refid="d6/d6a/classopenage_1_1options_1_1_var"/>
+        <childnode refid="6259" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6261">
+        <label>openage::options::Var&lt; bool &gt;</label>
+        <link refid="d6/d6a/classopenage_1_1options_1_1_var"/>
+        <childnode refid="6260" relation="template-instance">
+          <edgelabel>&lt; bool &gt;</edgelabel>
+        </childnode>
+        <childnode refid="6262" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6259">
+        <label>openage::util::Variable&lt; T &gt;</label>
+        <link refid="df/d2d/classopenage_1_1util_1_1_variable"/>
+        <childnode refid="6258" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6263">
+        <label>openage::util::VariableBase</label>
+        <link refid="da/d0a/classopenage_1_1util_1_1_variable_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/variable.h" line="11" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/variable.h" bodystart="11" bodyend="27"/>
+    <listofallmembers>
+      <member refid="da/d0a/classopenage_1_1util_1_1_variable_base_1a2fc1503a41c5e241e6c2af106115bf82" prot="public" virt="non-virtual"><scope>openage::util::VariableBase</scope><name>get</name></member>
+      <member refid="da/d0a/classopenage_1_1util_1_1_variable_base_1a1acb662ac94f35aed9b2ecd6d3f1ddfe" prot="public" virt="non-virtual"><scope>openage::util::VariableBase</scope><name>set</name></member>
+      <member refid="da/d0a/classopenage_1_1util_1_1_variable_base_1af40913c41076cd605c10a2fb7fc36254" prot="public" virt="virtual"><scope>openage::util::VariableBase</scope><name>~VariableBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

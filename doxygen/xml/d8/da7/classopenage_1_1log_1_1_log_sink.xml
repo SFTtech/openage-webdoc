@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d8/da7/classopenage_1_1log_1_1_log_sink" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>openage::log::LogSink</compoundname>
+    <derivedcompoundref refid="d0/ddf/classopenage_1_1log_1_1_file_sink" prot="public" virt="non-virtual">openage::log::FileSink</derivedcompoundref>
+    <derivedcompoundref refid="d8/d8d/classopenage_1_1log_1_1_std_out_sink" prot="public" virt="non-virtual">openage::log::StdOutSink</derivedcompoundref>
+    <derivedcompoundref refid="d3/d09/classopenage_1_1log_1_1tests_1_1_test_log_sink" prot="public" virt="non-virtual">openage::log::tests::TestLogSink</derivedcompoundref>
+    <includes refid="d3/d4e/logsink_8h" local="no">logsink.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d8/da7/classopenage_1_1log_1_1_log_sink_1a3ae8124ae0d14babd800567c9f55493a" prot="private" static="no" mutable="no">
+        <type><ref refid="db/da4/structopenage_1_1log_1_1level" kindref="compound">level</ref></type>
+        <definition>level openage::log::LogSink::loglevel</definition>
+        <argsstring></argsstring>
+        <name>loglevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/logsink.h" line="35" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/logsink.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="d8/da7/classopenage_1_1log_1_1_log_sink_1ac795e3966c4816c4c09fab3a68642cca" compoundref="df/d51/logsink_8cpp" startline="25" endline="28">set_loglevel</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="d8/da7/classopenage_1_1log_1_1_log_sink_1a430da85acad56bcf974bf09ec2ecba7c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class LogSinkList</definition>
+        <argsstring></argsstring>
+        <name>LogSinkList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/logsink.h" line="43" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/logsink.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/da7/classopenage_1_1log_1_1_log_sink_1aea8f646801e461e689465c769f63136c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::log::LogSink::LogSink</definition>
+        <argsstring>()</argsstring>
+        <name>LogSink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/logsink.h" line="22" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/logsink.cpp" bodystart="13" bodyend="17"/>
+        <references refid="d0/d58/classopenage_1_1log_1_1_log_sink_list_1ad4d92156846b759588637ea53a2d0dab" compoundref="df/d51/logsink_8cpp" startline="53" endline="57">openage::log::LogSinkList::add</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a5cb08687f485da2549d7eebef26368a6" compoundref="d7/d66/log_2____init_____8py" startline="107" endline="110">openage::log.dbg</references>
+        <references refid="d0/d58/classopenage_1_1log_1_1_log_sink_list_1a2d47416fab12651553b4b58c86fd6f84" compoundref="df/d51/logsink_8cpp" startline="36" endline="39">openage::log::LogSinkList::instance</references>
+        <references refid="d8/da7/classopenage_1_1log_1_1_log_sink_1ac795e3966c4816c4c09fab3a68642cca" compoundref="df/d51/logsink_8cpp" startline="25" endline="28">set_loglevel</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/da7/classopenage_1_1log_1_1_log_sink_1a39411101da7dacb22ae1bea3f6a1f5e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>openage::log::LogSink::~LogSink</definition>
+        <argsstring>()</argsstring>
+        <name>~LogSink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/logsink.h" line="23" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/logsink.cpp" bodystart="20" bodyend="22"/>
+        <references refid="d0/d58/classopenage_1_1log_1_1_log_sink_list_1a2d47416fab12651553b4b58c86fd6f84" compoundref="df/d51/logsink_8cpp" startline="36" endline="39">openage::log::LogSinkList::instance</references>
+        <references refid="d0/d58/classopenage_1_1log_1_1_log_sink_list_1a1ab4e5d0b202df164509a5174809685e" compoundref="df/d51/logsink_8cpp" startline="74" endline="78">openage::log::LogSinkList::remove</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/da7/classopenage_1_1log_1_1_log_sink_1ac795e3966c4816c4c09fab3a68642cca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::log::LogSink::set_loglevel</definition>
+        <argsstring>(level loglevel)</argsstring>
+        <name>set_loglevel</name>
+        <param>
+          <type><ref refid="db/da4/structopenage_1_1log_1_1level" kindref="compound">level</ref></type>
+          <declname>loglevel</declname>
+        </param>
+        <briefdescription>
+<para>TODO: Add iptables-like chains that decide whether a message will be logged, depending on msg.info, logger id, thread id, etc. </para>        </briefdescription>
+        <detaileddescription>
+<para>This member variable is only a make-shift solution with obvious limitations. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/logsink.h" line="32" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/logsink.cpp" bodystart="25" bodyend="28"/>
+        <references refid="d0/d58/classopenage_1_1log_1_1_log_sink_list_1a2d47416fab12651553b4b58c86fd6f84" compoundref="df/d51/logsink_8cpp" startline="36" endline="39">openage::log::LogSinkList::instance</references>
+        <references refid="d8/da7/classopenage_1_1log_1_1_log_sink_1a3ae8124ae0d14babd800567c9f55493a" compoundref="d3/d4e/logsink_8h" startline="35">loglevel</references>
+        <references refid="d0/d58/classopenage_1_1log_1_1_log_sink_list_1a92501d950b96e9c1978e9112f91773d2" compoundref="df/d51/logsink_8cpp" startline="60" endline="63">openage::log::LogSinkList::loglevel_changed</references>
+        <referencedby refid="d8/da7/classopenage_1_1log_1_1_log_sink_1aea8f646801e461e689465c769f63136c" compoundref="df/d51/logsink_8cpp" startline="13" endline="17">LogSink</referencedby>
+        <referencedby refid="dd/d1a/namespaceopenage_1_1log_1ac8660073c35f9900e8c1169f2899b7d2" compoundref="d9/db8/log_8cpp" startline="18" endline="20">openage::log::set_level</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d8/da7/classopenage_1_1log_1_1_log_sink_1a93df8d54f1632b8066c15e23b3632a23" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void openage::log::LogSink::output_log_message</definition>
+        <argsstring>(const struct message &amp;msg, class LogSource *source)=0</argsstring>
+        <name>output_log_message</name>
+        <param>
+          <type>const struct <ref refid="dc/d8c/structopenage_1_1log_1_1message" kindref="compound">message</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>class <ref refid="de/de3/classopenage_1_1log_1_1_log_source" kindref="compound">LogSource</ref> *</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Called internally by put_log_message if a message is accepted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/logsink.h" line="40" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract base for classes that - in one way or an other - print log messages. </para>    </briefdescription>
+    <detaileddescription>
+<para>Instances of this class are automatically added to LogSource::global_sink_list vector by their constructors (and removed by their destructors). </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4136">
+        <label>openage::log::StdOutSink</label>
+        <link refid="d8/d8d/classopenage_1_1log_1_1_std_out_sink"/>
+        <childnode refid="4134" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4134">
+        <label>openage::log::LogSink</label>
+        <link refid="d8/da7/classopenage_1_1log_1_1_log_sink"/>
+      </node>
+      <node id="4137">
+        <label>openage::log::tests::TestLogSink</label>
+        <link refid="d3/d09/classopenage_1_1log_1_1tests_1_1_test_log_sink"/>
+        <childnode refid="4134" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4135">
+        <label>openage::log::FileSink</label>
+        <link refid="d0/ddf/classopenage_1_1log_1_1_file_sink"/>
+        <childnode refid="4134" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4143">
+        <label>openage::util::EnumValue&lt; DerivedType, NumericType &gt;</label>
+        <link refid="df/de2/classopenage_1_1util_1_1_enum_value"/>
+        <childnode refid="4144" relation="usage">
+          <edgelabel>+numeric</edgelabel>
+        </childnode>
+      </node>
+      <node id="4144">
+        <label>NumericType</label>
+      </node>
+      <node id="4138">
+        <label>openage::log::LogSink</label>
+        <link refid="d8/da7/classopenage_1_1log_1_1_log_sink"/>
+        <childnode refid="4139" relation="usage">
+          <edgelabel>-loglevel</edgelabel>
+        </childnode>
+      </node>
+      <node id="4142">
+        <label>openage::util::EnumValue&lt; level_value &gt;</label>
+        <link refid="df/de2/classopenage_1_1util_1_1_enum_value"/>
+        <childnode refid="4143" relation="template-instance">
+          <edgelabel>&lt; level_value &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="4140">
+        <label>openage::util::Enum&lt; level_value &gt;</label>
+        <link refid="d0/da2/classopenage_1_1util_1_1_enum"/>
+        <childnode refid="4141" relation="usage">
+          <edgelabel>#value</edgelabel>
+        </childnode>
+        <childnode refid="4145" relation="template-instance">
+          <edgelabel>&lt; level_value &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="4139">
+        <label>openage::log::level</label>
+        <link refid="db/da4/structopenage_1_1log_1_1level"/>
+        <childnode refid="4140" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4141" relation="usage">
+          <edgelabel>+NOOPTIMIZE</edgelabel>
+        </childnode>
+      </node>
+      <node id="4145">
+        <label>openage::util::Enum&lt; DerivedType &gt;</label>
+        <link refid="d0/da2/classopenage_1_1util_1_1_enum"/>
+        <childnode refid="4146" relation="usage">
+          <edgelabel>#value</edgelabel>
+        </childnode>
+      </node>
+      <node id="4146">
+        <label>DerivedType</label>
+      </node>
+      <node id="4141">
+        <label>openage::log::level_value</label>
+        <link refid="db/dbb/structopenage_1_1log_1_1level__value"/>
+        <childnode refid="4142" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/logsink.h" line="20" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/log/logsink.h" bodystart="20" bodyend="44"/>
+    <listofallmembers>
+      <member refid="d8/da7/classopenage_1_1log_1_1_log_sink_1a3ae8124ae0d14babd800567c9f55493a" prot="private" virt="non-virtual"><scope>openage::log::LogSink</scope><name>loglevel</name></member>
+      <member refid="d8/da7/classopenage_1_1log_1_1_log_sink_1aea8f646801e461e689465c769f63136c" prot="public" virt="non-virtual"><scope>openage::log::LogSink</scope><name>LogSink</name></member>
+      <member refid="d8/da7/classopenage_1_1log_1_1_log_sink_1a430da85acad56bcf974bf09ec2ecba7c" prot="private" virt="non-virtual"><scope>openage::log::LogSink</scope><name>LogSinkList</name></member>
+      <member refid="d8/da7/classopenage_1_1log_1_1_log_sink_1a93df8d54f1632b8066c15e23b3632a23" prot="private" virt="pure-virtual"><scope>openage::log::LogSink</scope><name>output_log_message</name></member>
+      <member refid="d8/da7/classopenage_1_1log_1_1_log_sink_1ac795e3966c4816c4c09fab3a68642cca" prot="public" virt="non-virtual"><scope>openage::log::LogSink</scope><name>set_loglevel</name></member>
+      <member refid="d8/da7/classopenage_1_1log_1_1_log_sink_1a39411101da7dacb22ae1bea3f6a1f5e6" prot="public" virt="virtual"><scope>openage::log::LogSink</scope><name>~LogSink</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

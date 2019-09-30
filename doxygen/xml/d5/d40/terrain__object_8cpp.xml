@@ -1,0 +1,1760 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d5/d40/terrain__object_8cpp" kind="file" language="C++">
+    <compoundname>terrain_object.cpp</compoundname>
+    <includes refid="d0/d94/terrain__object_8h" local="yes">terrain_object.h</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">cmath</includes>
+    <includes refid="d1/d55/engine_8h" local="yes">../engine.h</includes>
+    <includes refid="d7/dce/error_2error_8h" local="yes">../error/error.h</includes>
+    <includes refid="df/dba/texture_8h" local="yes">../texture.h</includes>
+    <includes refid="da/dce/tile_8h" local="yes">../coord/tile.h</includes>
+    <includes refid="d0/d8a/phys_8h" local="yes">../coord/phys.h</includes>
+    <includes refid="dd/dcd/pixel_8h" local="yes">../coord/pixel.h</includes>
+    <includes refid="d1/da2/unit_8h" local="yes">../unit/unit.h</includes>
+    <includes refid="d8/db6/terrain_8h" local="yes">terrain.h</includes>
+    <includes refid="dd/deb/terrain__chunk_8h" local="yes">terrain_chunk.h</includes>
+    <includes refid="db/d01/terrain__outline_8h" local="yes">terrain_outline.h</includes>
+    <incdepgraph>
+      <node id="24895">
+        <label>list</label>
+      </node>
+      <node id="24923">
+        <label>../util/language.h</label>
+        <link refid="d8/dce/language_8h"/>
+      </node>
+      <node id="24888">
+        <label>atomic</label>
+      </node>
+      <node id="24966">
+        <label>timing.h</label>
+        <link refid="db/d41/timing_8h"/>
+        <childnode refid="24863" relation="include">
+        </childnode>
+      </node>
+      <node id="24965">
+        <label>timer.h</label>
+        <link refid="d5/dd0/timer_8h"/>
+        <childnode refid="24863" relation="include">
+        </childnode>
+        <childnode refid="24966" relation="include">
+        </childnode>
+      </node>
+      <node id="24910">
+        <label>log/log.h</label>
+        <link refid="d7/d7f/log_8h"/>
+        <childnode refid="24897" relation="include">
+        </childnode>
+        <childnode refid="24883" relation="include">
+        </childnode>
+      </node>
+      <node id="24892">
+        <label>functional</label>
+      </node>
+      <node id="24868">
+        <label>iomanip</label>
+      </node>
+      <node id="24928">
+        <label>fslike/native.h</label>
+        <link refid="d3/d0f/fslike_2native_8h"/>
+      </node>
+      <node id="24942">
+        <label>queue</label>
+      </node>
+      <node id="24869">
+        <label>limits</label>
+      </node>
+      <node id="24982">
+        <label>../unit/unit.h</label>
+        <link refid="d1/da2/unit_8h"/>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24896" relation="include">
+        </childnode>
+        <childnode refid="24908" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24942" relation="include">
+        </childnode>
+        <childnode refid="24905" relation="include">
+        </childnode>
+        <childnode refid="24939" relation="include">
+        </childnode>
+        <childnode refid="24983" relation="include">
+        </childnode>
+        <childnode refid="24858" relation="include">
+        </childnode>
+        <childnode refid="24966" relation="include">
+        </childnode>
+        <childnode refid="24970" relation="include">
+        </childnode>
+        <childnode refid="24984" relation="include">
+        </childnode>
+        <childnode refid="24987" relation="include">
+        </childnode>
+        <childnode refid="24988" relation="include">
+        </childnode>
+        <childnode refid="24973" relation="include">
+        </childnode>
+      </node>
+      <node id="24951">
+        <label>job.h</label>
+        <link refid="d3/d6a/job_8h"/>
+        <childnode refid="24947" relation="include">
+        </childnode>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24946" relation="include">
+        </childnode>
+      </node>
+      <node id="24914">
+        <label>category.h</label>
+        <link refid="d8/d0a/category_8h"/>
+        <childnode refid="24878" relation="include">
+        </childnode>
+      </node>
+      <node id="24957">
+        <label>event.h</label>
+        <link refid="d9/d15/input_2event_8h"/>
+        <childnode refid="24908" relation="include">
+        </childnode>
+        <childnode refid="24958" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24907" relation="include">
+        </childnode>
+      </node>
+      <node id="24909">
+        <label>QObject</label>
+      </node>
+      <node id="24863">
+        <label>cstdint</label>
+      </node>
+      <node id="24889">
+        <label>externalsstream.h</label>
+        <link refid="dc/dcf/externalsstream_8h"/>
+        <childnode refid="24878" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+      </node>
+      <node id="24967">
+        <label>util/profiler.h</label>
+        <link refid="dd/dff/profiler_8h"/>
+        <childnode refid="24903" relation="include">
+        </childnode>
+        <childnode refid="24968" relation="include">
+        </childnode>
+        <childnode refid="24908" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+      </node>
+      <node id="24882">
+        <label>signal.h</label>
+        <link refid="d8/d39/signal_8h"/>
+        <childnode refid="24882" relation="include">
+        </childnode>
+      </node>
+      <node id="24872">
+        <label>misc.h</label>
+        <link refid="d4/d08/misc_8h"/>
+        <childnode refid="24865" relation="include">
+        </childnode>
+        <childnode refid="24873" relation="include">
+        </childnode>
+        <childnode refid="24867" relation="include">
+        </childnode>
+        <childnode refid="24874" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24877" relation="include">
+        </childnode>
+        <childnode refid="24880" relation="include">
+        </childnode>
+      </node>
+      <node id="24900">
+        <label>coord_nese.gen.h</label>
+      </node>
+      <node id="24950">
+        <label>types.h</label>
+        <link refid="da/d65/job_2types_8h"/>
+        <childnode refid="24892" relation="include">
+        </childnode>
+      </node>
+      <node id="24935">
+        <label>stdlib.h</label>
+      </node>
+      <node id="24952">
+        <label>job_group.h</label>
+        <link refid="d3/d81/job__group_8h"/>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24877" relation="include">
+        </childnode>
+        <childnode refid="24944" relation="include">
+        </childnode>
+        <childnode refid="24951" relation="include">
+        </childnode>
+        <childnode refid="24953" relation="include">
+        </childnode>
+        <childnode refid="24950" relation="include">
+        </childnode>
+        <childnode refid="24954" relation="include">
+        </childnode>
+      </node>
+      <node id="24992">
+        <label>../coord/chunk.h</label>
+        <link refid="dd/dd5/chunk_8h"/>
+        <childnode refid="24862" relation="include">
+        </childnode>
+        <childnode refid="24900" relation="include">
+        </childnode>
+        <childnode refid="24901" relation="include">
+        </childnode>
+      </node>
+      <node id="24991">
+        <label>../assetmanager.h</label>
+        <link refid="d0/d45/assetmanager_8h"/>
+        <childnode refid="24884" relation="include">
+        </childnode>
+        <childnode refid="24908" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24919" relation="include">
+        </childnode>
+      </node>
+      <node id="24922">
+        <label>functional.h</label>
+        <link refid="d8/dea/functional_8h"/>
+        <childnode refid="24892" relation="include">
+        </childnode>
+        <childnode refid="24896" relation="include">
+        </childnode>
+        <childnode refid="24880" relation="include">
+        </childnode>
+        <childnode refid="24923" relation="include">
+        </childnode>
+        <childnode refid="24924" relation="include">
+        </childnode>
+        <childnode refid="24925" relation="include">
+        </childnode>
+      </node>
+      <node id="24984">
+        <label>attribute.h</label>
+        <link refid="d3/d7c/attribute_8h"/>
+        <childnode refid="24892" relation="include">
+        </childnode>
+        <childnode refid="24985" relation="include">
+        </childnode>
+        <childnode refid="24865" relation="include">
+        </childnode>
+        <childnode refid="24861" relation="include">
+        </childnode>
+        <childnode refid="24986" relation="include">
+        </childnode>
+        <childnode refid="24858" relation="include">
+        </childnode>
+        <childnode refid="24972" relation="include">
+        </childnode>
+        <childnode refid="24973" relation="include">
+        </childnode>
+      </node>
+      <node id="24905">
+        <label>../coord/phys.h</label>
+        <link refid="d0/d8a/phys_8h"/>
+        <childnode refid="24872" relation="include">
+        </childnode>
+        <childnode refid="24902" relation="include">
+        </childnode>
+        <childnode refid="24862" relation="include">
+        </childnode>
+        <childnode refid="24900" relation="include">
+        </childnode>
+        <childnode refid="24901" relation="include">
+        </childnode>
+      </node>
+      <node id="24867">
+        <label>cmath</label>
+      </node>
+      <node id="24879">
+        <label>stdexcept</label>
+      </node>
+      <node id="24961">
+        <label>options.h</label>
+        <link refid="d7/d5b/options_8h"/>
+        <childnode refid="24892" relation="include">
+        </childnode>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24908" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24962" relation="include">
+        </childnode>
+      </node>
+      <node id="24924">
+        <label>exctranslate.h</label>
+        <link refid="dd/d5f/exctranslate_8h"/>
+        <childnode refid="24877" relation="include">
+        </childnode>
+      </node>
+      <node id="24891">
+        <label>cstdarg</label>
+      </node>
+      <node id="24875">
+        <label>string</label>
+      </node>
+      <node id="24894">
+        <label>logsink.h</label>
+        <link refid="d3/d4e/logsink_8h"/>
+        <childnode refid="24895" relation="include">
+        </childnode>
+        <childnode refid="24896" relation="include">
+        </childnode>
+        <childnode refid="24897" relation="include">
+        </childnode>
+      </node>
+      <node id="24932">
+        <label>pixel.h</label>
+        <link refid="dd/dcd/pixel_8h"/>
+        <childnode refid="24933" relation="include">
+        </childnode>
+        <childnode refid="24862" relation="include">
+        </childnode>
+      </node>
+      <node id="24985">
+        <label>map</label>
+      </node>
+      <node id="24937">
+        <label>gui/engine_info.h</label>
+        <link refid="d9/d29/engine__info_8h"/>
+        <childnode refid="24919" relation="include">
+        </childnode>
+        <childnode refid="24938" relation="include">
+        </childnode>
+      </node>
+      <node id="24986">
+        <label>../gamedata/unit.gen.h</label>
+      </node>
+      <node id="24958">
+        <label>unordered_set</label>
+      </node>
+      <node id="24964">
+        <label>util/fps.h</label>
+        <link refid="d5/d3e/fps_8h"/>
+        <childnode refid="24965" relation="include">
+        </childnode>
+      </node>
+      <node id="24955">
+        <label>input/input_manager.h</label>
+        <link refid="d8/dd2/input__manager_8h"/>
+        <childnode refid="24892" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24907" relation="include">
+        </childnode>
+        <childnode refid="24939" relation="include">
+        </childnode>
+        <childnode refid="24956" relation="include">
+        </childnode>
+        <childnode refid="24957" relation="include">
+        </childnode>
+        <childnode refid="24959" relation="include">
+        </childnode>
+      </node>
+      <node id="24983">
+        <label>../log/logsource.h</label>
+        <link refid="d4/dda/logsource_8h"/>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24883" relation="include">
+        </childnode>
+      </node>
+      <node id="24947">
+        <label>exception</label>
+      </node>
+      <node id="24860">
+        <label>stddef.h</label>
+      </node>
+      <node id="24912">
+        <label>fstream</label>
+      </node>
+      <node id="24870">
+        <label>ostream</label>
+      </node>
+      <node id="24987">
+        <label>attributes.h</label>
+        <link refid="da/d6e/attributes_8h"/>
+        <childnode refid="24985" relation="include">
+        </childnode>
+        <childnode refid="24984" relation="include">
+        </childnode>
+      </node>
+      <node id="24931">
+        <label>coord/coordmanager.h</label>
+        <link refid="da/d63/coordmanager_8h"/>
+        <childnode refid="24905" relation="include">
+        </childnode>
+        <childnode refid="24932" relation="include">
+        </childnode>
+        <childnode refid="24861" relation="include">
+        </childnode>
+      </node>
+      <node id="24883">
+        <label>../log/message.h</label>
+        <link refid="d2/d0d/message_8h"/>
+        <childnode refid="24863" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24884" relation="include">
+        </childnode>
+        <childnode refid="24885" relation="include">
+        </childnode>
+        <childnode refid="24887" relation="include">
+        </childnode>
+        <childnode refid="24894" relation="include">
+        </childnode>
+        <childnode refid="24897" relation="include">
+        </childnode>
+      </node>
+      <node id="24873">
+        <label>limits.h</label>
+      </node>
+      <node id="24930">
+        <label>loader_policy.h</label>
+        <link refid="d2/d64/loader__policy_8h"/>
+        <childnode refid="24870" relation="include">
+        </childnode>
+      </node>
+      <node id="24980">
+        <label>shader/shader.h</label>
+        <link refid="d2/d22/shader_2shader_8h"/>
+        <childnode refid="24981" relation="include">
+        </childnode>
+        <childnode refid="24977" relation="include">
+        </childnode>
+      </node>
+      <node id="24898">
+        <label>../util/enum.h</label>
+        <link refid="d0/d9b/enum_8h"/>
+        <childnode refid="24878" relation="include">
+        </childnode>
+        <childnode refid="24899" relation="include">
+        </childnode>
+        <childnode refid="24880" relation="include">
+        </childnode>
+      </node>
+      <node id="24901">
+        <label>coord_neseup.gen.h</label>
+      </node>
+      <node id="24917">
+        <label>sound.h</label>
+        <link refid="d9/d88/sound_8h"/>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24914" relation="include">
+        </childnode>
+      </node>
+      <node id="24949">
+        <label>job_state_base.h</label>
+        <link refid="d3/d8b/job__state__base_8h"/>
+        <childnode refid="24892" relation="include">
+        </childnode>
+        <childnode refid="24950" relation="include">
+        </childnode>
+      </node>
+      <node id="24907">
+        <label>SDL2/SDL.h</label>
+      </node>
+      <node id="24915">
+        <label>hash_functions.h</label>
+        <link refid="df/dd0/hash__functions_8h"/>
+        <childnode refid="24916" relation="include">
+        </childnode>
+        <childnode refid="24914" relation="include">
+        </childnode>
+      </node>
+      <node id="24940">
+        <label>job/job_manager.h</label>
+        <link refid="d3/de6/job__manager_8h"/>
+        <childnode refid="24888" relation="include">
+        </childnode>
+        <childnode refid="24941" relation="include">
+        </childnode>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24896" relation="include">
+        </childnode>
+        <childnode refid="24942" relation="include">
+        </childnode>
+        <childnode refid="24943" relation="include">
+        </childnode>
+        <childnode refid="24908" relation="include">
+        </childnode>
+        <childnode refid="24944" relation="include">
+        </childnode>
+        <childnode refid="24951" relation="include">
+        </childnode>
+        <childnode refid="24952" relation="include">
+        </childnode>
+        <childnode refid="24953" relation="include">
+        </childnode>
+        <childnode refid="24949" relation="include">
+        </childnode>
+        <childnode refid="24950" relation="include">
+        </childnode>
+      </node>
+      <node id="24941">
+        <label>condition_variable</label>
+      </node>
+      <node id="24938">
+        <label>guisys/public/gui_singleton_items_info.h</label>
+        <link refid="da/ddd/gui__singleton__items__info_8h"/>
+      </node>
+      <node id="24953">
+        <label>job_state.h</label>
+        <link refid="d3/d6e/job__state_8h"/>
+        <childnode refid="24892" relation="include">
+        </childnode>
+        <childnode refid="24946" relation="include">
+        </childnode>
+        <childnode refid="24950" relation="include">
+        </childnode>
+      </node>
+      <node id="24926">
+        <label>file.h</label>
+        <link refid="d2/d4d/file_8h"/>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24927" relation="include">
+        </childnode>
+        <childnode refid="24920" relation="include">
+        </childnode>
+      </node>
+      <node id="24927">
+        <label>filelike/filelike.h</label>
+        <link refid="d7/db5/filelike_8h"/>
+        <childnode refid="24878" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24880" relation="include">
+        </childnode>
+      </node>
+      <node id="24899">
+        <label>typeinfo</label>
+      </node>
+      <node id="24971">
+        <label>bitset</label>
+      </node>
+      <node id="24933">
+        <label>coord_xy.gen.h</label>
+      </node>
+      <node id="24916">
+        <label>tuple</label>
+      </node>
+      <node id="24975">
+        <label>ctime</label>
+      </node>
+      <node id="24989">
+        <label>terrain.h</label>
+        <link refid="d8/db6/terrain_8h"/>
+        <childnode refid="24892" relation="include">
+        </childnode>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24860" relation="include">
+        </childnode>
+        <childnode refid="24990" relation="include">
+        </childnode>
+        <childnode refid="24908" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24991" relation="include">
+        </childnode>
+        <childnode refid="24992" relation="include">
+        </childnode>
+        <childnode refid="24905" relation="include">
+        </childnode>
+        <childnode refid="24932" relation="include">
+        </childnode>
+        <childnode refid="24861" relation="include">
+        </childnode>
+        <childnode refid="24976" relation="include">
+        </childnode>
+        <childnode refid="24872" relation="include">
+        </childnode>
+      </node>
+      <node id="24993">
+        <label>terrain_chunk.h</label>
+        <link refid="dd/deb/terrain__chunk_8h"/>
+        <childnode refid="24860" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24932" relation="include">
+        </childnode>
+        <childnode refid="24861" relation="include">
+        </childnode>
+        <childnode refid="24976" relation="include">
+        </childnode>
+        <childnode refid="24926" relation="include">
+        </childnode>
+      </node>
+      <node id="24973">
+        <label>unit_container.h</label>
+        <link refid="d5/ddb/unit__container_8h"/>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24908" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24861" relation="include">
+        </childnode>
+        <childnode refid="24939" relation="include">
+        </childnode>
+        <childnode refid="24966" relation="include">
+        </childnode>
+      </node>
+      <node id="24970">
+        <label>ability.h</label>
+        <link refid="df/d23/ability_8h"/>
+        <childnode refid="24971" relation="include">
+        </childnode>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24871" relation="include">
+        </childnode>
+        <childnode refid="24908" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24905" relation="include">
+        </childnode>
+        <childnode refid="24972" relation="include">
+        </childnode>
+      </node>
+      <node id="24988">
+        <label>command.h</label>
+        <link refid="d0/d09/command_8h"/>
+        <childnode refid="24958" relation="include">
+        </childnode>
+        <childnode refid="24905" relation="include">
+        </childnode>
+        <childnode refid="24970" relation="include">
+        </childnode>
+      </node>
+      <node id="24960">
+        <label>stack</label>
+      </node>
+      <node id="24876">
+        <label>vector</label>
+      </node>
+      <node id="24881">
+        <label>ciso646</label>
+      </node>
+      <node id="24864">
+        <label>../util/fixed_point.h</label>
+        <link refid="de/d62/fixed__point_8h"/>
+        <childnode refid="24865" relation="include">
+        </childnode>
+        <childnode refid="24866" relation="include">
+        </childnode>
+        <childnode refid="24867" relation="include">
+        </childnode>
+        <childnode refid="24868" relation="include">
+        </childnode>
+        <childnode refid="24869" relation="include">
+        </childnode>
+        <childnode refid="24870" relation="include">
+        </childnode>
+        <childnode refid="24871" relation="include">
+        </childnode>
+        <childnode refid="24872" relation="include">
+        </childnode>
+      </node>
+      <node id="24911">
+        <label>log/file_logsink.h</label>
+        <link refid="de/d61/file__logsink_8h"/>
+        <childnode refid="24878" relation="include">
+        </childnode>
+        <childnode refid="24912" relation="include">
+        </childnode>
+        <childnode refid="24894" relation="include">
+        </childnode>
+      </node>
+      <node id="24902">
+        <label>../util/hash.h</label>
+        <link refid="db/dfb/hash_8h"/>
+        <childnode refid="24886" relation="include">
+        </childnode>
+        <childnode refid="24903" relation="include">
+        </childnode>
+        <childnode refid="24904" relation="include">
+        </childnode>
+      </node>
+      <node id="24921">
+        <label>defs.h</label>
+        <link refid="d5/d64/defs_8h"/>
+      </node>
+      <node id="24877">
+        <label>../error/error.h</label>
+        <link refid="d7/dce/error_2error_8h"/>
+        <childnode refid="24878" relation="include">
+        </childnode>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24879" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24880" relation="include">
+        </childnode>
+        <childnode refid="24883" relation="include">
+        </childnode>
+      </node>
+      <node id="24936">
+        <label>utility</label>
+      </node>
+      <node id="24903">
+        <label>array</label>
+      </node>
+      <node id="24893">
+        <label>sstream</label>
+      </node>
+      <node id="24858">
+        <label>terrain_object.h</label>
+        <link refid="d0/d94/terrain__object_8h"/>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24860" relation="include">
+        </childnode>
+        <childnode refid="24861" relation="include">
+        </childnode>
+        <childnode refid="24905" relation="include">
+        </childnode>
+      </node>
+      <node id="24929">
+        <label>format.h</label>
+        <link refid="d0/d0a/format_8h"/>
+        <childnode refid="24870" relation="include">
+        </childnode>
+      </node>
+      <node id="24977">
+        <label>epoxy/gl.h</label>
+      </node>
+      <node id="24956">
+        <label>action.h</label>
+        <link refid="d9/d00/input_2action_8h"/>
+        <childnode refid="24892" relation="include">
+        </childnode>
+        <childnode refid="24908" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24932" relation="include">
+        </childnode>
+        <childnode refid="24957" relation="include">
+        </childnode>
+      </node>
+      <node id="24962">
+        <label>util/variable.h</label>
+        <link refid="da/d89/variable_8h"/>
+      </node>
+      <node id="24963">
+        <label>util/externalprofiler.h</label>
+        <link refid="d6/d3a/externalprofiler_8h"/>
+      </node>
+      <node id="24934">
+        <label>cvar/cvar.h</label>
+        <link refid="dd/d54/cvar_8h"/>
+        <childnode refid="24892" relation="include">
+        </childnode>
+        <childnode refid="24935" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24908" relation="include">
+        </childnode>
+        <childnode refid="24936" relation="include">
+        </childnode>
+        <childnode refid="24922" relation="include">
+        </childnode>
+        <childnode refid="24919" relation="include">
+        </childnode>
+      </node>
+      <node id="24978">
+        <label>gamedata/texture.gen.h</label>
+      </node>
+      <node id="24925">
+        <label>setup.h</label>
+        <link refid="d7/df7/setup_8h"/>
+        <childnode refid="24892" relation="include">
+        </childnode>
+        <childnode refid="24880" relation="include">
+        </childnode>
+      </node>
+      <node id="24880">
+        <label>../util/compiler.h</label>
+        <link refid="d4/dd1/compiler_8h"/>
+        <childnode refid="24881" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24882" relation="include">
+        </childnode>
+      </node>
+      <node id="24886">
+        <label>cstdlib</label>
+      </node>
+      <node id="24861">
+        <label>../coord/tile.h</label>
+        <link refid="da/dce/tile_8h"/>
+        <childnode refid="24862" relation="include">
+        </childnode>
+        <childnode refid="24900" relation="include">
+        </childnode>
+        <childnode refid="24901" relation="include">
+        </childnode>
+        <childnode refid="24872" relation="include">
+        </childnode>
+        <childnode refid="24902" relation="include">
+        </childnode>
+      </node>
+      <node id="24897">
+        <label>level.h</label>
+        <link refid="de/d09/level_8h"/>
+        <childnode refid="24898" relation="include">
+        </childnode>
+      </node>
+      <node id="24878">
+        <label>iostream</label>
+      </node>
+      <node id="24969">
+        <label>unit/selection.h</label>
+        <link refid="df/d48/selection_8h"/>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24932" relation="include">
+        </childnode>
+        <childnode refid="24939" relation="include">
+        </childnode>
+        <childnode refid="24970" relation="include">
+        </childnode>
+        <childnode refid="24973" relation="include">
+        </childnode>
+      </node>
+      <node id="24885">
+        <label>../util/constexpr.h</label>
+        <link refid="d1/d06/constexpr_8h"/>
+        <childnode refid="24886" relation="include">
+        </childnode>
+      </node>
+      <node id="24920">
+        <label>../pyinterface/pyobject.h</label>
+        <link refid="d2/d4b/pyobject_8h"/>
+        <childnode refid="24863" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24921" relation="include">
+        </childnode>
+        <childnode refid="24922" relation="include">
+        </childnode>
+      </node>
+      <node id="24976">
+        <label>../texture.h</label>
+        <link refid="df/dba/texture_8h"/>
+        <childnode refid="24977" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24978" relation="include">
+        </childnode>
+        <childnode refid="24932" relation="include">
+        </childnode>
+        <childnode refid="24861" relation="include">
+        </childnode>
+        <childnode refid="24979" relation="include">
+        </childnode>
+        <childnode refid="24980" relation="include">
+        </childnode>
+        <childnode refid="24919" relation="include">
+        </childnode>
+      </node>
+      <node id="24890">
+        <label>strings.h</label>
+        <link refid="d6/d90/strings_8h"/>
+        <childnode refid="24891" relation="include">
+        </childnode>
+        <childnode refid="24892" relation="include">
+        </childnode>
+        <childnode refid="24868" relation="include">
+        </childnode>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24893" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+      </node>
+      <node id="24908">
+        <label>unordered_map</label>
+      </node>
+      <node id="24918">
+        <label>resource_def.h</label>
+        <link refid="de/db3/resource__def_8h"/>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24919" relation="include">
+        </childnode>
+        <childnode refid="24914" relation="include">
+        </childnode>
+        <childnode refid="24929" relation="include">
+        </childnode>
+        <childnode refid="24930" relation="include">
+        </childnode>
+      </node>
+      <node id="24866">
+        <label>climits</label>
+      </node>
+      <node id="24974">
+        <label>screenshot.h</label>
+        <link refid="dc/d9e/screenshot_8h"/>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24975" relation="include">
+        </childnode>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24932" relation="include">
+        </childnode>
+      </node>
+      <node id="24896">
+        <label>mutex</label>
+      </node>
+      <node id="24968">
+        <label>chrono</label>
+      </node>
+      <node id="24943">
+        <label>thread</label>
+      </node>
+      <node id="24948">
+        <label>../util/thread_id.h</label>
+        <link refid="d2/d4c/thread__id_8h"/>
+        <childnode refid="24860" relation="include">
+        </childnode>
+      </node>
+      <node id="24939">
+        <label>handlers.h</label>
+        <link refid="d0/dfb/handlers_8h"/>
+        <childnode refid="24907" relation="include">
+        </childnode>
+        <childnode refid="24932" relation="include">
+        </childnode>
+      </node>
+      <node id="24862">
+        <label>declarations.h</label>
+        <link refid="db/d40/declarations_8h"/>
+        <childnode refid="24863" relation="include">
+        </childnode>
+        <childnode refid="24864" relation="include">
+        </childnode>
+      </node>
+      <node id="24887">
+        <label>../util/stringformatter.h</label>
+        <link refid="de/d65/stringformatter_8h"/>
+        <childnode refid="24888" relation="include">
+        </childnode>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24871" relation="include">
+        </childnode>
+        <childnode refid="24880" relation="include">
+        </childnode>
+        <childnode refid="24889" relation="include">
+        </childnode>
+        <childnode refid="24890" relation="include">
+        </childnode>
+      </node>
+      <node id="24871">
+        <label>type_traits</label>
+      </node>
+      <node id="24990">
+        <label>set</label>
+      </node>
+      <node id="24884">
+        <label>config.h</label>
+      </node>
+      <node id="24865">
+        <label>algorithm</label>
+      </node>
+      <node id="24857">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/terrain/terrain_object.cpp</label>
+        <link refid="d5/d40/terrain__object_8cpp"/>
+        <childnode refid="24858" relation="include">
+        </childnode>
+        <childnode refid="24865" relation="include">
+        </childnode>
+        <childnode refid="24867" relation="include">
+        </childnode>
+        <childnode refid="24906" relation="include">
+        </childnode>
+        <childnode refid="24877" relation="include">
+        </childnode>
+        <childnode refid="24976" relation="include">
+        </childnode>
+        <childnode refid="24861" relation="include">
+        </childnode>
+        <childnode refid="24905" relation="include">
+        </childnode>
+        <childnode refid="24932" relation="include">
+        </childnode>
+        <childnode refid="24982" relation="include">
+        </childnode>
+        <childnode refid="24989" relation="include">
+        </childnode>
+        <childnode refid="24993" relation="include">
+        </childnode>
+        <childnode refid="24994" relation="include">
+        </childnode>
+      </node>
+      <node id="24946">
+        <label>typed_job_state_base.h</label>
+        <link refid="da/d6c/typed__job__state__base_8h"/>
+        <childnode refid="24888" relation="include">
+        </childnode>
+        <childnode refid="24947" relation="include">
+        </childnode>
+        <childnode refid="24892" relation="include">
+        </childnode>
+        <childnode refid="24948" relation="include">
+        </childnode>
+        <childnode refid="24877" relation="include">
+        </childnode>
+        <childnode refid="24945" relation="include">
+        </childnode>
+        <childnode refid="24949" relation="include">
+        </childnode>
+        <childnode refid="24950" relation="include">
+        </childnode>
+      </node>
+      <node id="24919">
+        <label>../util/path.h</label>
+        <link refid="d1/d11/util_2path_8h"/>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24920" relation="include">
+        </childnode>
+        <childnode refid="24926" relation="include">
+        </childnode>
+        <childnode refid="24928" relation="include">
+        </childnode>
+      </node>
+      <node id="24906">
+        <label>../engine.h</label>
+        <link refid="d1/d55/engine_8h"/>
+        <childnode refid="24863" relation="include">
+        </childnode>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24907" relation="include">
+        </childnode>
+        <childnode refid="24908" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24909" relation="include">
+        </childnode>
+        <childnode refid="24910" relation="include">
+        </childnode>
+        <childnode refid="24911" relation="include">
+        </childnode>
+        <childnode refid="24913" relation="include">
+        </childnode>
+        <childnode refid="24931" relation="include">
+        </childnode>
+        <childnode refid="24905" relation="include">
+        </childnode>
+        <childnode refid="24932" relation="include">
+        </childnode>
+        <childnode refid="24934" relation="include">
+        </childnode>
+        <childnode refid="24937" relation="include">
+        </childnode>
+        <childnode refid="24939" relation="include">
+        </childnode>
+        <childnode refid="24940" relation="include">
+        </childnode>
+        <childnode refid="24955" relation="include">
+        </childnode>
+        <childnode refid="24956" relation="include">
+        </childnode>
+        <childnode refid="24961" relation="include">
+        </childnode>
+        <childnode refid="24963" relation="include">
+        </childnode>
+        <childnode refid="24964" relation="include">
+        </childnode>
+        <childnode refid="24919" relation="include">
+        </childnode>
+        <childnode refid="24967" relation="include">
+        </childnode>
+        <childnode refid="24969" relation="include">
+        </childnode>
+        <childnode refid="24890" relation="include">
+        </childnode>
+        <childnode refid="24974" relation="include">
+        </childnode>
+      </node>
+      <node id="24979">
+        <label>shader/program.h</label>
+        <link refid="d1/dea/program_8h"/>
+        <childnode refid="24977" relation="include">
+        </childnode>
+      </node>
+      <node id="24874">
+        <label>cstring</label>
+      </node>
+      <node id="24959">
+        <label>input_context.h</label>
+        <link refid="dd/d92/input__context_8h"/>
+        <childnode refid="24892" relation="include">
+        </childnode>
+        <childnode refid="24960" relation="include">
+        </childnode>
+        <childnode refid="24908" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24956" relation="include">
+        </childnode>
+        <childnode refid="24957" relation="include">
+        </childnode>
+      </node>
+      <node id="24913">
+        <label>audio/audio_manager.h</label>
+        <link refid="da/d68/audio__manager_8h"/>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+        <childnode refid="24908" relation="include">
+        </childnode>
+        <childnode refid="24876" relation="include">
+        </childnode>
+        <childnode refid="24907" relation="include">
+        </childnode>
+        <childnode refid="24914" relation="include">
+        </childnode>
+        <childnode refid="24915" relation="include">
+        </childnode>
+        <childnode refid="24917" relation="include">
+        </childnode>
+        <childnode refid="24918" relation="include">
+        </childnode>
+      </node>
+      <node id="24972">
+        <label>../gamestate/resource.h</label>
+        <link refid="df/d9c/gamestate_2resource_8h"/>
+        <childnode refid="24892" relation="include">
+        </childnode>
+        <childnode refid="24875" relation="include">
+        </childnode>
+      </node>
+      <node id="24944">
+        <label>abortable_job_state.h</label>
+        <link refid="dd/ddf/abortable__job__state_8h"/>
+        <childnode refid="24892" relation="include">
+        </childnode>
+        <childnode refid="24945" relation="include">
+        </childnode>
+        <childnode refid="24946" relation="include">
+        </childnode>
+        <childnode refid="24950" relation="include">
+        </childnode>
+      </node>
+      <node id="24859">
+        <label>memory</label>
+      </node>
+      <node id="24981">
+        <label>initializer_list</label>
+      </node>
+      <node id="24994">
+        <label>terrain_outline.h</label>
+        <link refid="db/d01/terrain__outline_8h"/>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24861" relation="include">
+        </childnode>
+      </node>
+      <node id="24904">
+        <label>typeindex</label>
+      </node>
+      <node id="24954">
+        <label>worker.h</label>
+        <link refid="da/da5/worker_8h"/>
+        <childnode refid="24888" relation="include">
+        </childnode>
+        <childnode refid="24941" relation="include">
+        </childnode>
+        <childnode refid="24859" relation="include">
+        </childnode>
+        <childnode refid="24942" relation="include">
+        </childnode>
+        <childnode refid="24943" relation="include">
+        </childnode>
+        <childnode refid="24949" relation="include">
+        </childnode>
+      </node>
+      <node id="24945">
+        <label>job_aborted_exception.h</label>
+        <link refid="df/d29/job__aborted__exception_8h"/>
+        <childnode refid="24879" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="da/d23/namespaceopenage">openage</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2013-2019<sp/>the<sp/>openage<sp/>authors.<sp/>See<sp/>copying.md<sp/>for<sp/>legal<sp/>info.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/d94/terrain__object_8h" kindref="compound">terrain_object.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../engine.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../error/error.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../texture.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../coord/tile.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../coord/phys.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../coord/pixel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../unit/unit.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/db6/terrain_8h" kindref="compound">terrain.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/deb/terrain__chunk_8h" kindref="compound">terrain_chunk.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/d01/terrain__outline_8h" kindref="compound">terrain_outline.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="da/d23/namespaceopenage" kindref="compound">openage</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="db/db3/classopenage_1_1_terrain_object_1a77c47ac9d0f7e115f2f5c38a830d0133" refkind="member"><highlight class="normal"><ref refid="db/db3/classopenage_1_1_terrain_object_1a77c47ac9d0f7e115f2f5c38a830d0133" kindref="member">TerrainObject::TerrainObject</ref>(<ref refid="df/dea/classopenage_1_1_unit" kindref="compound">Unit</ref><sp/>&amp;u)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>unit(u),</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>passable{[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>&amp;)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;}},</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1a8eb5bfc64508b790cc77cf2907c51dd6" kindref="member">draw</ref>{[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d40/classopenage_1_1_engine" kindref="compound">Engine</ref><sp/>&amp;</highlight><highlight class="comment">/*e*/</highlight><highlight class="normal">)<sp/>{}},</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1a443027580e98741afa29075d944c821e" kindref="member">state</ref>{<ref refid="da/d23/namespaceopenage_1a1df3032ec46d1407f95723ad6fc5465eab07286ebbb5bc7aa91cc3eaa8bc19711" kindref="member">object_state::removed</ref>},</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1a70b1e1d14a4aec1bb2be65f37c4456df" kindref="member">occupied_chunk_count</ref>{0},</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1ac33cda2d90c5809f676d11538b119ffe" kindref="member">parent</ref>{</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">}<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="db/db3/classopenage_1_1_terrain_object_1accf1000738bfedfae052b9257509ef97" refkind="member"><highlight class="normal"><ref refid="db/db3/classopenage_1_1_terrain_object_1accf1000738bfedfae052b9257509ef97" kindref="member">TerrainObject::~TerrainObject</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>remove<sp/>all<sp/>connections<sp/>from<sp/>terrain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a0ced8b7c83c658eb9c3545d2c5fd92f7" kindref="member">unit</ref>.<ref refid="de/de3/classopenage_1_1log_1_1_log_source_1a5640099e20af4cd368c767dbcef3a1df" kindref="member">log</ref>(<ref refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" kindref="member">MSG</ref>(<ref refid="dd/d1a/namespaceopenage_1_1log_1a5cb08687f485da2549d7eebef26368a6" kindref="member">dbg</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Cleanup<sp/>terrain<sp/>object&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;</highlight><highlight class="keyword">remove</highlight><highlight class="normal">();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="db/db3/classopenage_1_1_terrain_object_1a770b494c1e3982a678f48a53efb0cf02" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1a770b494c1e3982a678f48a53efb0cf02" kindref="member">TerrainObject::is_floating</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>parent<sp/>is<sp/>floating<sp/>then<sp/>all<sp/>children<sp/>also<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1ac33cda2d90c5809f676d11538b119ffe" kindref="member">parent</ref><sp/>&amp;&amp;<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1ac33cda2d90c5809f676d11538b119ffe" kindref="member">parent</ref>-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a770b494c1e3982a678f48a53efb0cf02" kindref="member">is_floating</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a443027580e98741afa29075d944c821e" kindref="member">state</ref><sp/>==<sp/><ref refid="da/d23/namespaceopenage_1a1df3032ec46d1407f95723ad6fc5465ea374515b23d6f106696387776a6077d17" kindref="member">object_state::floating</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="db/db3/classopenage_1_1_terrain_object_1ad4fa56a3ee5387e217fa8d9297acda7b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1ad4fa56a3ee5387e217fa8d9297acda7b" kindref="member">TerrainObject::is_placed</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>object<sp/>has<sp/>a<sp/>parent<sp/>it<sp/>must<sp/>be<sp/>placed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1ac33cda2d90c5809f676d11538b119ffe" kindref="member">parent</ref><sp/>&amp;&amp;<sp/>!this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1ac33cda2d90c5809f676d11538b119ffe" kindref="member">parent</ref>-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1ad4fa56a3ee5387e217fa8d9297acda7b" kindref="member">is_placed</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a443027580e98741afa29075d944c821e" kindref="member">state</ref><sp/>==<sp/><ref refid="da/d23/namespaceopenage_1a1df3032ec46d1407f95723ad6fc5465ea6ebb25b39f65cab5efa469977b9479e2" kindref="member">object_state::placed</ref><sp/>||</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a443027580e98741afa29075d944c821e" kindref="member">state</ref><sp/>==<sp/><ref refid="da/d23/namespaceopenage_1a1df3032ec46d1407f95723ad6fc5465eac693ee9f8e776555e9625dd624ad5fa3" kindref="member">object_state::placed_no_collision</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="db/db3/classopenage_1_1_terrain_object_1a9ca18bc39c074f2172f12b4903ba0bb0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1a9ca18bc39c074f2172f12b4903ba0bb0" kindref="member">TerrainObject::check_collisions</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>object<sp/>has<sp/>a<sp/>parent<sp/>it<sp/>must<sp/>be<sp/>placed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1ac33cda2d90c5809f676d11538b119ffe" kindref="member">parent</ref><sp/>&amp;&amp;<sp/>!this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1ac33cda2d90c5809f676d11538b119ffe" kindref="member">parent</ref>-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1ad4fa56a3ee5387e217fa8d9297acda7b" kindref="member">is_placed</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a443027580e98741afa29075d944c821e" kindref="member">state</ref><sp/>==<sp/><ref refid="da/d23/namespaceopenage_1a1df3032ec46d1407f95723ad6fc5465ea6ebb25b39f65cab5efa469977b9479e2" kindref="member">object_state::placed</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="db/db3/classopenage_1_1_terrain_object_1a95d5633a7448be10a5e6274351aac959" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1a95d5633a7448be10a5e6274351aac959" kindref="member">TerrainObject::draw_outline</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="de/db5/classopenage_1_1coord_1_1_coord_manager" kindref="compound">coord::CoordManager</ref><sp/>&amp;<ref refid="d0/d3c/namespaceopenage_1_1coord_1_1tests_1ab5f6aa805a24bd58eb365e5af294d807" kindref="member">coord</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a48b30f255fce4952271b5fd633daa488" kindref="member">outline_texture</ref>-&gt;draw(coord,<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>.<ref refid="d6/de8/structopenage_1_1tile__range_1a66f28f55fc7cb96a713d76b15d855a0e" kindref="member">draw</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="db/db3/classopenage_1_1_terrain_object_1a227f50f827d1ae7791f06e323c581bbd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1a227f50f827d1ae7791f06e323c581bbd" kindref="member">TerrainObject::place</ref>(<ref refid="da/d23/namespaceopenage_1a1df3032ec46d1407f95723ad6fc5465e" kindref="member">object_state</ref><sp/>init_state)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a443027580e98741afa29075d944c821e" kindref="member">state</ref><sp/>==<sp/><ref refid="da/d23/namespaceopenage_1a1df3032ec46d1407f95723ad6fc5465eab07286ebbb5bc7aa91cc3eaa8bc19711" kindref="member">object_state::removed</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="d0/df4/classopenage_1_1error_1_1_error" kindref="compound">Error</ref>(<ref refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" kindref="member">MSG</ref>(<ref refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" kindref="member">err</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Building<sp/>cannot<sp/>change<sp/>state<sp/>with<sp/>no<sp/>position&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>remove<sp/>any<sp/>other<sp/>floating<sp/>objects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>which<sp/>intersect<sp/>with<sp/>the<sp/>new<sp/>placement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>non-floating<sp/>objects<sp/>are<sp/>on<sp/>the<sp/>foundation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>then<sp/>this<sp/>placement<sp/>will<sp/>fail</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="d5/d10/structopenage_1_1coord_1_1tile" kindref="compound">coord::tile</ref><sp/>temp_pos<sp/>:<sp/><ref refid="da/d23/namespaceopenage_1a3a0d4d7c2bc234c442c13758d306f60c" kindref="member">tile_list</ref>(this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;TerrainObject<sp/>*&gt;<sp/>to_remove;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/dab/classopenage_1_1_terrain_chunk" kindref="compound">TerrainChunk</ref><sp/>*chunk<sp/>=<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a170289794bdd31d673ffb3aca873bb1d" kindref="member">get_terrain</ref>()-&gt;get_chunk(temp_pos);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(chunk<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>obj<sp/>:<sp/>chunk-&gt;<ref refid="d9/dab/classopenage_1_1_terrain_chunk_1af163db3fba4ae99206de76666f8424df" kindref="member">get_data</ref>(temp_pos)-&gt;<ref refid="d3/dd0/classopenage_1_1_tile_content_1aaeff054a61d61cc0c65cfefcc78de233" kindref="member">obj</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ignore<sp/>self<sp/>and<sp/>annexes<sp/>of<sp/>self</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(obj<sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj-&gt;get_parent()<sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(obj-&gt;is_floating())<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>floating<sp/>objects<sp/>get<sp/>removed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>to_remove.push_back(obj);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(obj-&gt;check_collisions())<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>solid<sp/>objects<sp/>obstruct<sp/>placement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>all<sp/>obstructing<sp/>objects<sp/>get<sp/>deleted</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>remove_obj<sp/>:<sp/>to_remove)<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>remove_obj-&gt;unit.location<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>new<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a443027580e98741afa29075d944c821e" kindref="member">state</ref><sp/>=<sp/>init_state;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="db/db3/classopenage_1_1_terrain_object_1a90235fcc91847da15129ce77ffcb53a8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1a227f50f827d1ae7791f06e323c581bbd" kindref="member">TerrainObject::place</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;Terrain&gt;<sp/>&amp;t,<sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>&amp;position,<sp/><ref refid="da/d23/namespaceopenage_1a1df3032ec46d1407f95723ad6fc5465e" kindref="member">object_state</ref><sp/>init_state)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a443027580e98741afa29075d944c821e" kindref="member">state</ref><sp/>!=<sp/><ref refid="da/d23/namespaceopenage_1a1df3032ec46d1407f95723ad6fc5465eab07286ebbb5bc7aa91cc3eaa8bc19711" kindref="member">object_state::removed</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="d0/df4/classopenage_1_1error_1_1_error" kindref="compound">Error</ref>(<ref refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" kindref="member">MSG</ref>(<ref refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" kindref="member">err</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;This<sp/>object<sp/>has<sp/>already<sp/>been<sp/>placed.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(init_state<sp/>==<sp/><ref refid="da/d23/namespaceopenage_1a1df3032ec46d1407f95723ad6fc5465eab07286ebbb5bc7aa91cc3eaa8bc19711" kindref="member">object_state::removed</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="d0/df4/classopenage_1_1error_1_1_error" kindref="compound">Error</ref>(<ref refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" kindref="member">MSG</ref>(<ref refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" kindref="member">err</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Cannot<sp/>place<sp/>an<sp/>object<sp/>with<sp/>removed<sp/>state.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>use<sp/>passiblity<sp/>test</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(not<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1af86e4e2bf2ac48fc1b37cc436a50c5a1" kindref="member">passable</ref>(position))<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>place<sp/>on<sp/>terrain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1af781d73de8772dfe4454e75eb96d104c" kindref="member">place_unchecked</ref>(t,<sp/>position);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a443027580e98741afa29075d944c821e" kindref="member">state</ref><sp/>=<sp/>init_state;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="db/db3/classopenage_1_1_terrain_object_1aed04f7dfb2a4836107796fd3598accc3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1aed04f7dfb2a4836107796fd3598accc3" kindref="member">TerrainObject::move</ref>(<ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>&amp;position)<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a443027580e98741afa29075d944c821e" kindref="member">state</ref><sp/>==<sp/><ref refid="da/d23/namespaceopenage_1a1df3032ec46d1407f95723ad6fc5465eab07286ebbb5bc7aa91cc3eaa8bc19711" kindref="member">object_state::removed</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>old_state<sp/>=<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a443027580e98741afa29075d944c821e" kindref="member">state</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO<sp/>should<sp/>do<sp/>outside<sp/>of<sp/>this<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>can_move<sp/>=<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1af86e4e2bf2ac48fc1b37cc436a50c5a1" kindref="member">passable</ref>(position);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(can_move)<sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;</highlight><highlight class="keyword">remove</highlight><highlight class="normal">();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1af781d73de8772dfe4454e75eb96d104c" kindref="member">place_unchecked</ref>(this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a170289794bdd31d673ffb3aca873bb1d" kindref="member">get_terrain</ref>(),<sp/>position);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a443027580e98741afa29075d944c821e" kindref="member">state</ref><sp/>=<sp/>old_state;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>can_move;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="db/db3/classopenage_1_1_terrain_object_1af24e842fc429a5dbb73c12abcb9c3378" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1af24e842fc429a5dbb73c12abcb9c3378" kindref="member">TerrainObject::remove</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>remove<sp/>all<sp/>children<sp/>first</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;c<sp/>:<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a4ba763b25501e128abe64acdb073151d" kindref="member">children</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c-&gt;remove();</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;children.clear();</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a70b1e1d14a4aec1bb2be65f37c4456df" kindref="member">occupied_chunk_count</ref><sp/>==<sp/>0<sp/>||</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a443027580e98741afa29075d944c821e" kindref="member">state</ref><sp/>==<sp/><ref refid="da/d23/namespaceopenage_1a1df3032ec46d1407f95723ad6fc5465eab07286ebbb5bc7aa91cc3eaa8bc19711" kindref="member">object_state::removed</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="d5/d10/structopenage_1_1coord_1_1tile" kindref="compound">coord::tile</ref><sp/>temp_pos<sp/>:<sp/><ref refid="da/d23/namespaceopenage_1a3a0d4d7c2bc234c442c13758d306f60c" kindref="member">tile_list</ref>(this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/dab/classopenage_1_1_terrain_chunk" kindref="compound">TerrainChunk</ref><sp/>*chunk<sp/>=<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a170289794bdd31d673ffb3aca873bb1d" kindref="member">get_terrain</ref>()-&gt;get_chunk(temp_pos);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(chunk<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;v<sp/>=<sp/>chunk-&gt;<ref refid="d9/dab/classopenage_1_1_terrain_chunk_1af163db3fba4ae99206de76666f8424df" kindref="member">get_data</ref>(temp_pos.get_pos_on_chunk())-&gt;obj;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>position_it<sp/>=<sp/>std::remove_if(</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::begin(v),</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::end(v),</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](<ref refid="db/db3/classopenage_1_1_terrain_object" kindref="compound">TerrainObject</ref><sp/>*obj)<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>obj;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v.erase(position_it,<sp/>std::end(v));</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a70b1e1d14a4aec1bb2be65f37c4456df" kindref="member">occupied_chunk_count</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a443027580e98741afa29075d944c821e" kindref="member">state</ref><sp/>=<sp/><ref refid="da/d23/namespaceopenage_1a1df3032ec46d1407f95723ad6fc5465eab07286ebbb5bc7aa91cc3eaa8bc19711" kindref="member">object_state::removed</ref>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="db/db3/classopenage_1_1_terrain_object_1a2ad9a9df0f058487a4ec66b68ee390ed" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1a2ad9a9df0f058487a4ec66b68ee390ed" kindref="member">TerrainObject::set_ground</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>additional)<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(not<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1ad4fa56a3ee5387e217fa8d9297acda7b" kindref="member">is_placed</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="d0/df4/classopenage_1_1error_1_1_error" kindref="compound">Error</ref>(<ref refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" kindref="member">MSG</ref>(<ref refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" kindref="member">err</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Setting<sp/>ground<sp/>for<sp/>object<sp/>that<sp/>is<sp/>not<sp/>placed<sp/>yet.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d10/structopenage_1_1coord_1_1tile" kindref="compound">coord::tile</ref><sp/>temp_pos<sp/>=<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>.<ref refid="d6/de8/structopenage_1_1tile__range_1a76c81aec9133e3c6146b52178696716c" kindref="member">start</ref>;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>temp_pos.ne<sp/>-=<sp/>additional;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>temp_pos.se<sp/>-=<sp/>additional;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(temp_pos.ne<sp/>&lt;<sp/>this-&gt;pos.end.ne<sp/>+<sp/>additional)<sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(temp_pos.se<sp/>&lt;<sp/>this-&gt;pos.end.se<sp/>+<sp/>additional)<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/dab/classopenage_1_1_terrain_chunk" kindref="compound">TerrainChunk</ref><sp/>*chunk<sp/>=<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a170289794bdd31d673ffb3aca873bb1d" kindref="member">get_terrain</ref>()-&gt;get_chunk(temp_pos);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(chunk<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chunk-&gt;<ref refid="d9/dab/classopenage_1_1_terrain_chunk_1af163db3fba4ae99206de76666f8424df" kindref="member">get_data</ref>(temp_pos.<ref refid="d5/d10/structopenage_1_1coord_1_1tile_1ab4811e492cabe885d33e85df51ceff83" kindref="member">get_pos_on_chunk</ref>())-&gt;terrain_id<sp/>=<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp_pos.se++;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp_pos.se<sp/>=<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>.<ref refid="d6/de8/structopenage_1_1tile__range_1a76c81aec9133e3c6146b52178696716c" kindref="member">start</ref>.se<sp/>-<sp/>additional;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp_pos.ne++;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="db/db3/classopenage_1_1_terrain_object_1a1e5c4905f3a581bb96600eef9ca09a0a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/db3/classopenage_1_1_terrain_object" kindref="compound">TerrainObject</ref><sp/>*<ref refid="db/db3/classopenage_1_1_terrain_object_1a1e5c4905f3a581bb96600eef9ca09a0a" kindref="member">TerrainObject::get_parent</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1ac33cda2d90c5809f676d11538b119ffe" kindref="member">parent</ref>;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="db/db3/classopenage_1_1_terrain_object_1a601a0aaa58d28c66540b8463662fab85" refkind="member"><highlight class="normal">std::vector&lt;TerrainObject<sp/>*&gt;<sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1a601a0aaa58d28c66540b8463662fab85" kindref="member">TerrainObject::get_children</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>a<sp/>better<sp/>performing<sp/>way<sp/>of<sp/>doing<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>example<sp/>accept<sp/>a<sp/>lambda<sp/>to<sp/>use<sp/>for<sp/>each<sp/>element</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>or<sp/>maintain<sp/>a<sp/>duplicate<sp/>class<sp/>field<sp/>for<sp/>raw<sp/>pointers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;TerrainObject<sp/>*&gt;<sp/><ref refid="d5/d0e/namespaceopenage_1_1testing_1_1testing_1ac25bf81db406af62d08113ef7ae9fd6e" kindref="member">result</ref>;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;obj:<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a4ba763b25501e128abe64acdb073151d" kindref="member">children</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.push_back(obj.get());</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d5/d0e/namespaceopenage_1_1testing_1_1testing_1ac25bf81db406af62d08113ef7ae9fd6e" kindref="member">result</ref>;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="db/db3/classopenage_1_1_terrain_object_1a70a6bf42cb9c63065a615cc91d05bc0f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1a70a6bf42cb9c63065a615cc91d05bc0f" kindref="member">TerrainObject::operator &lt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/db3/classopenage_1_1_terrain_object" kindref="compound">TerrainObject</ref><sp/>&amp;other)<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>&amp;other)<sp/>{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>this_ne<sp/><sp/><sp/><sp/>=<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>.<ref refid="d6/de8/structopenage_1_1tile__range_1a66f28f55fc7cb96a713d76b15d855a0e" kindref="member">draw</ref>.ne;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>this_se<sp/><sp/><sp/><sp/>=<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>.<ref refid="d6/de8/structopenage_1_1tile__range_1a66f28f55fc7cb96a713d76b15d855a0e" kindref="member">draw</ref>.se;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>other_ne<sp/><sp/><sp/>=<sp/>other.<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>.<ref refid="d6/de8/structopenage_1_1tile__range_1a66f28f55fc7cb96a713d76b15d855a0e" kindref="member">draw</ref>.ne;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>other_se<sp/><sp/><sp/>=<sp/>other.<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>.<ref refid="d6/de8/structopenage_1_1tile__range_1a66f28f55fc7cb96a713d76b15d855a0e" kindref="member">draw</ref>.se;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>this_ypos<sp/><sp/>=<sp/>this_ne<sp/><sp/>-<sp/>this_se;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>other_ypos<sp/>=<sp/>other_ne<sp/>-<sp/>other_se;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this_ypos<sp/>&lt;<sp/>other_ypos)<sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this_ypos<sp/>==<sp/>other_ypos)<sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this_ne<sp/>&gt;<sp/>other_ne)<sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this_ne<sp/>==<sp/>other_ne)<sp/>{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this_se<sp/>&gt;<sp/>other_se;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257" refid="db/db3/classopenage_1_1_terrain_object_1af781d73de8772dfe4454e75eb96d104c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1af781d73de8772dfe4454e75eb96d104c" kindref="member">TerrainObject::place_unchecked</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;Terrain&gt;<sp/>&amp;t,<sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>&amp;position)<sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>storing<sp/>the<sp/>position:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref><sp/>=<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a1fc44d40095260aca43dd9582c61de97" kindref="member">get_range</ref>(position,<sp/>*t);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a8c5e009bd234e32fdcf21b51dde4061e" kindref="member">terrain</ref><sp/>=<sp/>t;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a70b1e1d14a4aec1bb2be65f37c4456df" kindref="member">occupied_chunk_count</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>chunk_known<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>pointers<sp/>to<sp/>this<sp/>object<sp/>on<sp/>each<sp/>terrain<sp/>tile</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>where<sp/>the<sp/>building<sp/>will<sp/>stand<sp/>and<sp/>block<sp/>the<sp/>ground</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="d5/d10/structopenage_1_1coord_1_1tile" kindref="compound">coord::tile</ref><sp/>temp_pos<sp/>:<sp/><ref refid="da/d23/namespaceopenage_1a3a0d4d7c2bc234c442c13758d306f60c" kindref="member">tile_list</ref>(this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/dab/classopenage_1_1_terrain_chunk" kindref="compound">TerrainChunk</ref><sp/>*chunk<sp/>=<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a170289794bdd31d673ffb3aca873bb1d" kindref="member">get_terrain</ref>()-&gt;get_chunk(temp_pos);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(chunk<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>0;<sp/>c<sp/>&lt;<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a70b1e1d14a4aec1bb2be65f37c4456df" kindref="member">occupied_chunk_count</ref>;<sp/>c++)<sp/>{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a156accfa21be059dc19f5ff98e7c3d1d" kindref="member">occupied_chunk</ref>[c]<sp/>==<sp/>chunk)<sp/>{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chunk_known<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(not<sp/>chunk_known)<sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a156accfa21be059dc19f5ff98e7c3d1d" kindref="member">occupied_chunk</ref>[this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a70b1e1d14a4aec1bb2be65f37c4456df" kindref="member">occupied_chunk_count</ref>]<sp/>=<sp/>chunk;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;occupied_chunk_count<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chunk_known<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chunk-&gt;<ref refid="d9/dab/classopenage_1_1_terrain_chunk_1af163db3fba4ae99206de76666f8424df" kindref="member">get_data</ref>(temp_pos.get_pos_on_chunk())-&gt;obj.push_back(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="d0/dcc/classopenage_1_1_square_object_1acb6d7328590ebf5404de6ef9caab1f0d" refkind="member"><highlight class="normal"><ref refid="d0/dcc/classopenage_1_1_square_object_1acb6d7328590ebf5404de6ef9caab1f0d" kindref="member">SquareObject::SquareObject</ref>(<ref refid="df/dea/classopenage_1_1_unit" kindref="compound">Unit</ref><sp/>&amp;u,<sp/><ref refid="db/db5/structopenage_1_1coord_1_1tile__delta" kindref="compound">coord::tile_delta</ref><sp/>foundation_size)</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>:</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/dcc/classopenage_1_1_square_object" kindref="compound">SquareObject</ref>(u,<sp/>foundation_size,<sp/><ref refid="da/d23/namespaceopenage_1a8f7c4c46ae7b03cd0cc8ceae47ae7139" kindref="member">square_outline</ref>(foundation_size))<sp/>{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297" refid="d0/dcc/classopenage_1_1_square_object_1a625e0ffb10a54ec8ed01d865a52bb2ce" refkind="member"><highlight class="normal"><ref refid="d0/dcc/classopenage_1_1_square_object_1acb6d7328590ebf5404de6ef9caab1f0d" kindref="member">SquareObject::SquareObject</ref>(<ref refid="df/dea/classopenage_1_1_unit" kindref="compound">Unit</ref><sp/>&amp;u,<sp/><ref refid="db/db5/structopenage_1_1coord_1_1tile__delta" kindref="compound">coord::tile_delta</ref><sp/>foundation_size,<sp/>std::shared_ptr&lt;Texture&gt;<sp/>out_tex)</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>:</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/db3/classopenage_1_1_terrain_object" kindref="compound">TerrainObject</ref>(u),</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/dcc/classopenage_1_1_square_object_1a3c42ee56a8eedf741695e75ef70faeb7" kindref="member">size</ref>(foundation_size)<sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a48b30f255fce4952271b5fd633daa488" kindref="member">outline_texture</ref><sp/>=<sp/>out_tex;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304" refid="d0/dcc/classopenage_1_1_square_object_1a5eed088ef26bbca31aeb3dce76979cc3" refkind="member"><highlight class="normal"><ref refid="d0/dcc/classopenage_1_1_square_object_1a5eed088ef26bbca31aeb3dce76979cc3" kindref="member">SquareObject::~SquareObject</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="d0/dcc/classopenage_1_1_square_object_1a4c05c7ac16bbdbb7b4d74be4e9e113be" refkind="member"><highlight class="normal"><ref refid="d6/de8/structopenage_1_1tile__range" kindref="compound">tile_range</ref><sp/><ref refid="d0/dcc/classopenage_1_1_square_object_1a4c05c7ac16bbdbb7b4d74be4e9e113be" kindref="member">SquareObject::get_range</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>&amp;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d4/d15/classopenage_1_1_terrain" kindref="compound">Terrain</ref><sp/>&amp;<ref refid="db/db3/classopenage_1_1_terrain_object_1a8c5e009bd234e32fdcf21b51dde4061e" kindref="member">terrain</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/d23/namespaceopenage_1a231617a72c3e699877ee6eacb76850de" kindref="member">building_center</ref>(pos,<sp/>this-&gt;<ref refid="d0/dcc/classopenage_1_1_square_object_1a3c42ee56a8eedf741695e75ef70faeb7" kindref="member">size</ref>,<sp/>terrain);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310" refid="d0/dcc/classopenage_1_1_square_object_1af43e3d3caa4951b79a5dfee9a4aeee8a" refkind="member"><highlight class="normal"><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref><sp/><ref refid="d0/dcc/classopenage_1_1_square_object_1af43e3d3caa4951b79a5dfee9a4aeee8a" kindref="member">SquareObject::from_edge</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>&amp;point)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clamp<sp/>between<sp/>start<sp/>and<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d57/structopenage_1_1coord_1_1phys2" kindref="compound">coord::phys2</ref><sp/>start_phys<sp/>=<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>.<ref refid="d6/de8/structopenage_1_1tile__range_1a76c81aec9133e3c6146b52178696716c" kindref="member">start</ref>.<ref refid="d5/d10/structopenage_1_1coord_1_1tile_1a26e7ddc05f99069e9df2f35f3338d037" kindref="member">to_phys2</ref>();</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d57/structopenage_1_1coord_1_1phys2" kindref="compound">coord::phys2</ref><sp/>end_phys<sp/>=<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>.<ref refid="d6/de8/structopenage_1_1tile__range_1aab99b1acbf7af695f7a278406d817e03" kindref="member">end</ref>.<ref refid="d5/d10/structopenage_1_1coord_1_1tile_1a26e7ddc05f99069e9df2f35f3338d037" kindref="member">to_phys2</ref>();</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref><sp/>cx<sp/>=<sp/><ref refid="d8/dcc/namespacestd_1a1c0bc145caf5f0b2af8d16d29d952180" kindref="member">std::max</ref>(start_phys.ne,<sp/><ref refid="d8/dcc/namespacestd_1a34591a1d8ee5da3f16f56554590d5e16" kindref="member">std::min</ref>(end_phys.ne,<sp/>point.ne));</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref><sp/>cy<sp/>=<sp/><ref refid="d8/dcc/namespacestd_1a1c0bc145caf5f0b2af8d16d29d952180" kindref="member">std::max</ref>(start_phys.se,<sp/><ref refid="d8/dcc/namespacestd_1a34591a1d8ee5da3f16f56554590d5e16" kindref="member">std::min</ref>(end_phys.se,<sp/>point.se));</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>distance<sp/>to<sp/>clamped<sp/>point</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref><sp/>dx<sp/>=<sp/>point.ne<sp/>-<sp/>cx;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref><sp/>dy<sp/>=<sp/>point.se<sp/>-<sp/>cy;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/dcc/namespacestd_1a8058d6b15a78f7a977945ee4d62de903" kindref="member">std::hypot</ref>(dx,<sp/>dy);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324" refid="d0/dcc/classopenage_1_1_square_object_1aaab1452776a2962c6ccb6bf3b55efecf" refkind="member"><highlight class="normal"><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/><ref refid="d0/dcc/classopenage_1_1_square_object_1aaab1452776a2962c6ccb6bf3b55efecf" kindref="member">SquareObject::on_edge</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>&amp;angle,<sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref><sp/></highlight><highlight class="comment">/*<sp/>extra<sp/>*/</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clamp<sp/>between<sp/>start<sp/>and<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO<sp/>extra<sp/>is<sp/>unused</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d57/structopenage_1_1coord_1_1phys2" kindref="compound">coord::phys2</ref><sp/>start_phys<sp/>=<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>.<ref refid="d6/de8/structopenage_1_1tile__range_1a76c81aec9133e3c6146b52178696716c" kindref="member">start</ref>.<ref refid="d5/d10/structopenage_1_1coord_1_1tile_1a26e7ddc05f99069e9df2f35f3338d037" kindref="member">to_phys2</ref>();</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d57/structopenage_1_1coord_1_1phys2" kindref="compound">coord::phys2</ref><sp/>end_phys<sp/>=<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>.<ref refid="d6/de8/structopenage_1_1tile__range_1aab99b1acbf7af695f7a278406d817e03" kindref="member">end</ref>.<ref refid="d5/d10/structopenage_1_1coord_1_1tile_1a26e7ddc05f99069e9df2f35f3338d037" kindref="member">to_phys2</ref>();</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref><sp/>cx<sp/>=<sp/><ref refid="d8/dcc/namespacestd_1a1c0bc145caf5f0b2af8d16d29d952180" kindref="member">std::max</ref>(start_phys.ne,<sp/><ref refid="d8/dcc/namespacestd_1a34591a1d8ee5da3f16f56554590d5e16" kindref="member">std::min</ref>(end_phys.ne,<sp/>angle.ne));</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref><sp/>cy<sp/>=<sp/><ref refid="d8/dcc/namespacestd_1a1c0bc145caf5f0b2af8d16d29d952180" kindref="member">std::max</ref>(start_phys.se,<sp/><ref refid="d8/dcc/namespacestd_1a34591a1d8ee5da3f16f56554590d5e16" kindref="member">std::min</ref>(end_phys.se,<sp/>angle.se));</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>todo<sp/>use<sp/>extra<sp/>distance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref>{cx,<sp/>cy,<sp/>0};</highlight></codeline>
+<codeline lineno="334"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336" refid="d0/dcc/classopenage_1_1_square_object_1a0deacb1dd962cd1729e6765e8dea01de" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/dcc/classopenage_1_1_square_object_1a0deacb1dd962cd1729e6765e8dea01de" kindref="member">SquareObject::contains</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>&amp;other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d10/structopenage_1_1coord_1_1tile" kindref="compound">coord::tile</ref><sp/>other_tile<sp/>=<sp/>other.<ref refid="d2/da4/structopenage_1_1coord_1_1phys3_1a8ed61fb85a083922af8fbbabd087ae31" kindref="member">to_tile3</ref>().<ref refid="db/dd1/structopenage_1_1coord_1_1tile3_1af828e2ee284deb35ce13d30b57b14ad0" kindref="member">to_tile</ref>();</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="d5/d10/structopenage_1_1coord_1_1tile" kindref="compound">coord::tile</ref><sp/>check_pos<sp/>:<sp/><ref refid="da/d23/namespaceopenage_1a3a0d4d7c2bc234c442c13758d306f60c" kindref="member">tile_list</ref>(this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(check_pos<sp/>==<sp/>other_tile)<sp/>{</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347" refid="d0/dcc/classopenage_1_1_square_object_1a6ab34e730282117594441a96e2fb5882" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d0/dcc/classopenage_1_1_square_object_1a6ab34e730282117594441a96e2fb5882" kindref="member">SquareObject::intersects</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/db3/classopenage_1_1_terrain_object" kindref="compound">TerrainObject</ref><sp/>&amp;other,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>&amp;position)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/dcc/classopenage_1_1_square_object" kindref="compound">SquareObject</ref><sp/>*sq<sp/>=<sp/>dynamic_cast&lt;const<sp/>SquareObject<sp/>*&gt;(&amp;other))<sp/>{</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>terrain_ptr<sp/>=<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a8c5e009bd234e32fdcf21b51dde4061e" kindref="member">terrain</ref>.lock();</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(not<sp/>terrain_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="d0/df4/classopenage_1_1error_1_1_error" kindref="compound">Error</ref>{<ref refid="d2/d0d/message_8h_1a735563036dced0b7d6cc98f97ea4978b" kindref="member">ERR</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;object<sp/>is<sp/>not<sp/>associated<sp/>to<sp/>a<sp/>valid<sp/>terrain&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/de8/structopenage_1_1tile__range" kindref="compound">tile_range</ref><sp/>rng<sp/>=<sp/>this-&gt;<ref refid="d0/dcc/classopenage_1_1_square_object_1a4c05c7ac16bbdbb7b4d74be4e9e113be" kindref="member">get_range</ref>(position,<sp/>*terrain_ptr);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>.<ref refid="d6/de8/structopenage_1_1tile__range_1aab99b1acbf7af695f7a278406d817e03" kindref="member">end</ref>.ne<sp/>&lt;<sp/>rng.<ref refid="d6/de8/structopenage_1_1tile__range_1a76c81aec9133e3c6146b52178696716c" kindref="member">start</ref>.ne</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>rng.<ref refid="d6/de8/structopenage_1_1tile__range_1aab99b1acbf7af695f7a278406d817e03" kindref="member">end</ref>.ne<sp/>&lt;<sp/>sq-&gt;pos.start.ne</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>rng.<ref refid="d6/de8/structopenage_1_1tile__range_1aab99b1acbf7af695f7a278406d817e03" kindref="member">end</ref>.se<sp/>&lt;<sp/>sq-&gt;pos.start.se</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>rng.<ref refid="d6/de8/structopenage_1_1tile__range_1aab99b1acbf7af695f7a278406d817e03" kindref="member">end</ref>.se<sp/>&lt;<sp/>sq-&gt;pos.start.se;</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d31/classopenage_1_1_radial_object" kindref="compound">RadialObject</ref><sp/>*rad<sp/>=<sp/>dynamic_cast&lt;const<sp/>RadialObject<sp/>*&gt;(&amp;other))<sp/>{</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>terrain_ptr<sp/>=<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a8c5e009bd234e32fdcf21b51dde4061e" kindref="member">terrain</ref>.lock();</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(not<sp/>terrain_ptr)<sp/>{</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="d0/df4/classopenage_1_1error_1_1_error" kindref="compound">Error</ref>{<ref refid="d2/d0d/message_8h_1a735563036dced0b7d6cc98f97ea4978b" kindref="member">ERR</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;object<sp/>is<sp/>not<sp/>associated<sp/>to<sp/>a<sp/>valid<sp/>terrain&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clamp<sp/>between<sp/>start<sp/>and<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/de8/structopenage_1_1tile__range" kindref="compound">tile_range</ref><sp/>rng<sp/>=<sp/>this-&gt;<ref refid="d0/dcc/classopenage_1_1_square_object_1a4c05c7ac16bbdbb7b4d74be4e9e113be" kindref="member">get_range</ref>(position,<sp/>*terrain_ptr);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d57/structopenage_1_1coord_1_1phys2" kindref="compound">coord::phys2</ref><sp/>start_phys<sp/>=<sp/>rng.<ref refid="d6/de8/structopenage_1_1tile__range_1a76c81aec9133e3c6146b52178696716c" kindref="member">start</ref>.<ref refid="d5/d10/structopenage_1_1coord_1_1tile_1a26e7ddc05f99069e9df2f35f3338d037" kindref="member">to_phys2</ref>();</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dd/d57/structopenage_1_1coord_1_1phys2" kindref="compound">coord::phys2</ref><sp/>end_phys<sp/>=<sp/>rng.<ref refid="d6/de8/structopenage_1_1tile__range_1aab99b1acbf7af695f7a278406d817e03" kindref="member">end</ref>.<ref refid="d5/d10/structopenage_1_1coord_1_1tile_1a26e7ddc05f99069e9df2f35f3338d037" kindref="member">to_phys2</ref>();</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref><sp/>cx<sp/>=<sp/><ref refid="d8/dcc/namespacestd_1a1c0bc145caf5f0b2af8d16d29d952180" kindref="member">std::max</ref>(start_phys.ne,<sp/><ref refid="d8/dcc/namespacestd_1a34591a1d8ee5da3f16f56554590d5e16" kindref="member">std::min</ref>(end_phys.ne,<sp/>rad-&gt;pos.draw.ne));</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref><sp/>cy<sp/>=<sp/><ref refid="d8/dcc/namespacestd_1a1c0bc145caf5f0b2af8d16d29d952180" kindref="member">std::max</ref>(start_phys.se,<sp/><ref refid="d8/dcc/namespacestd_1a34591a1d8ee5da3f16f56554590d5e16" kindref="member">std::min</ref>(end_phys.se,<sp/>rad-&gt;pos.draw.se));</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>distance<sp/>to<sp/>square<sp/>object<sp/>base</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref><sp/>dx<sp/>=<sp/>rad-&gt;pos.draw.ne<sp/>-<sp/>cx;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref><sp/>dy<sp/>=<sp/>rad-&gt;pos.draw.se<sp/>-<sp/>cy;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/dcc/namespacestd_1a8058d6b15a78f7a977945ee4d62de903" kindref="member">std::hypot</ref>(dx,<sp/>dy)<sp/>&lt;<sp/>rad-&gt;phys_radius.to_double();</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380" refid="d0/dcc/classopenage_1_1_square_object_1ac5232c53c071a31afb4be3f6ffe45b10" refkind="member"><highlight class="normal"><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref><sp/><ref refid="d0/dcc/classopenage_1_1_square_object_1ac5232c53c071a31afb4be3f6ffe45b10" kindref="member">SquareObject::min_axis</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/dcc/namespacestd_1a34591a1d8ee5da3f16f56554590d5e16" kindref="member">std::min</ref>(this-&gt;<ref refid="d0/dcc/classopenage_1_1_square_object_1a3c42ee56a8eedf741695e75ef70faeb7" kindref="member">size</ref>.ne,<sp/>this-&gt;size.se);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384" refid="d6/d31/classopenage_1_1_radial_object_1a077a90bfb9efb02c129235d3ab2c12bd" refkind="member"><highlight class="normal"><ref refid="d6/d31/classopenage_1_1_radial_object_1a077a90bfb9efb02c129235d3ab2c12bd" kindref="member">RadialObject::RadialObject</ref>(<ref refid="df/dea/classopenage_1_1_unit" kindref="compound">Unit</ref><sp/>&amp;u,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rad)</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/>:</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d31/classopenage_1_1_radial_object" kindref="compound">RadialObject</ref>(u,<sp/>rad,<sp/><ref refid="da/d23/namespaceopenage_1ae2e68c0049a3b6c5671c8006c6a74f84" kindref="member">radial_outline</ref>(rad))<sp/>{</highlight></codeline>
+<codeline lineno="387"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389" refid="d6/d31/classopenage_1_1_radial_object_1a9eb807b0c54b975287c956eec1150941" refkind="member"><highlight class="normal"><ref refid="d6/d31/classopenage_1_1_radial_object_1a077a90bfb9efb02c129235d3ab2c12bd" kindref="member">RadialObject::RadialObject</ref>(<ref refid="df/dea/classopenage_1_1_unit" kindref="compound">Unit</ref><sp/>&amp;u,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rad,<sp/>std::shared_ptr&lt;Texture&gt;<sp/>out_tex)</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/>:</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/db3/classopenage_1_1_terrain_object" kindref="compound">TerrainObject</ref>(u),</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/d31/classopenage_1_1_radial_object_1a1add8d71baff4386b468adb1c8f49323" kindref="member">phys_radius</ref>(rad)<sp/>{</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1a48b30f255fce4952271b5fd633daa488" kindref="member">outline_texture</ref><sp/>=<sp/>out_tex;</highlight></codeline>
+<codeline lineno="394"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396" refid="d6/d31/classopenage_1_1_radial_object_1a612cfab3fd84a8ad72818d923d999169" refkind="member"><highlight class="normal"><ref refid="d6/d31/classopenage_1_1_radial_object_1a612cfab3fd84a8ad72818d923d999169" kindref="member">RadialObject::~RadialObject</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398" refid="d6/d31/classopenage_1_1_radial_object_1a92c40d889a2877bc6b8aba7523ab7dfe" refkind="member"><highlight class="normal"><ref refid="d6/de8/structopenage_1_1tile__range" kindref="compound">tile_range</ref><sp/><ref refid="d6/d31/classopenage_1_1_radial_object_1a92c40d889a2877bc6b8aba7523ab7dfe" kindref="member">RadialObject::get_range</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>&amp;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d4/d15/classopenage_1_1_terrain" kindref="compound">Terrain</ref><sp/>&amp;</highlight><highlight class="comment">/*terrain*/</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/de8/structopenage_1_1tile__range" kindref="compound">tile_range</ref><sp/><ref refid="d5/d0e/namespaceopenage_1_1testing_1_1testing_1ac25bf81db406af62d08113ef7ae9fd6e" kindref="member">result</ref>;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>bounds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>p_start<sp/>=<sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>,<sp/>p_end<sp/>=<sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>;</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/>p_start.ne<sp/>-=<sp/>this-&gt;<ref refid="d6/d31/classopenage_1_1_radial_object_1a1add8d71baff4386b468adb1c8f49323" kindref="member">phys_radius</ref>;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/>p_start.se<sp/>-=<sp/>this-&gt;<ref refid="d6/d31/classopenage_1_1_radial_object_1a1add8d71baff4386b468adb1c8f49323" kindref="member">phys_radius</ref>;</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/>p_end.ne<sp/>+=<sp/>this-&gt;<ref refid="d6/d31/classopenage_1_1_radial_object_1a1add8d71baff4386b468adb1c8f49323" kindref="member">phys_radius</ref>;</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/>p_end.se<sp/>+=<sp/>this-&gt;<ref refid="d6/d31/classopenage_1_1_radial_object_1a1add8d71baff4386b468adb1c8f49323" kindref="member">phys_radius</ref>;</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>result</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/>result.<ref refid="d6/de8/structopenage_1_1tile__range_1a76c81aec9133e3c6146b52178696716c" kindref="member">start</ref><sp/><sp/><sp/>=<sp/>p_start.<ref refid="d2/da4/structopenage_1_1coord_1_1phys3_1a8ed61fb85a083922af8fbbabd087ae31" kindref="member">to_tile3</ref>().<ref refid="db/dd1/structopenage_1_1coord_1_1tile3_1af828e2ee284deb35ce13d30b57b14ad0" kindref="member">to_tile</ref>();</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/>result.<ref refid="d6/de8/structopenage_1_1tile__range_1aab99b1acbf7af695f7a278406d817e03" kindref="member">end</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>p_end.<ref refid="d5/d10/structopenage_1_1coord_1_1tile_1a3b1cc7af8687d57f014cf86e57476b2b" kindref="member">to_tile3</ref>().<ref refid="db/dd1/structopenage_1_1coord_1_1tile3_1af828e2ee284deb35ce13d30b57b14ad0" kindref="member">to_tile</ref>()<sp/>+<sp/><ref refid="db/db5/structopenage_1_1coord_1_1tile__delta" kindref="compound">coord::tile_delta</ref>{<sp/>1,<sp/>1<sp/>};</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/>result.<ref refid="d6/de8/structopenage_1_1tile__range_1a66f28f55fc7cb96a713d76b15d855a0e" kindref="member">draw</ref><sp/>=<sp/><ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>;</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d5/d0e/namespaceopenage_1_1testing_1_1testing_1ac25bf81db406af62d08113ef7ae9fd6e" kindref="member">result</ref>;</highlight></codeline>
+<codeline lineno="413"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="415" refid="d6/d31/classopenage_1_1_radial_object_1af59b8ff3a8aa105883ac3b1ed61ef68a" refkind="member"><highlight class="normal"><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref><sp/><ref refid="d6/d31/classopenage_1_1_radial_object_1af59b8ff3a8aa105883ac3b1ed61ef68a" kindref="member">RadialObject::from_edge</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>&amp;point)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/dcc/namespacestd_1a1c0bc145caf5f0b2af8d16d29d952180" kindref="member">std::max</ref>(</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref>(point.<ref refid="d2/da4/structopenage_1_1coord_1_1phys3_1a24ddc021570223779a5ffad9e3a575b4" kindref="member">to_phys2</ref>().<ref refid="dd/d57/structopenage_1_1coord_1_1phys2_1a759b5a67a3faf43208cfb35712f26451" kindref="member">distance</ref>(this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>.<ref refid="d6/de8/structopenage_1_1tile__range_1a66f28f55fc7cb96a713d76b15d855a0e" kindref="member">draw</ref>.<ref refid="d2/da4/structopenage_1_1coord_1_1phys3_1a24ddc021570223779a5ffad9e3a575b4" kindref="member">to_phys2</ref>()))<sp/>-<sp/>this-&gt;<ref refid="d6/d31/classopenage_1_1_radial_object_1a1add8d71baff4386b468adb1c8f49323" kindref="member">phys_radius</ref>,</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(0)</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="420"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422" refid="d6/d31/classopenage_1_1_radial_object_1a49bdbb9c2e34b7fac95d8498adef1bc4" refkind="member"><highlight class="normal"><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/><ref refid="d6/d31/classopenage_1_1_radial_object_1a49bdbb9c2e34b7fac95d8498adef1bc4" kindref="member">RadialObject::on_edge</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>&amp;angle,<sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref><sp/>extra)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>.<ref refid="d6/de8/structopenage_1_1tile__range_1a66f28f55fc7cb96a713d76b15d855a0e" kindref="member">draw</ref><sp/>+<sp/>(angle<sp/>-<sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>.<ref refid="d6/de8/structopenage_1_1tile__range_1a66f28f55fc7cb96a713d76b15d855a0e" kindref="member">draw</ref>).to_phys2().normalize((this-&gt;<ref refid="d6/d31/classopenage_1_1_radial_object_1a1add8d71baff4386b468adb1c8f49323" kindref="member">phys_radius</ref><sp/>+<sp/>extra).to_double()).to_phys3();</highlight></codeline>
+<codeline lineno="424"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426" refid="d6/d31/classopenage_1_1_radial_object_1a8df3ce8c1bc15cc827e7de59f2a39f5a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d31/classopenage_1_1_radial_object_1a8df3ce8c1bc15cc827e7de59f2a39f5a" kindref="member">RadialObject::contains</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>&amp;other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="db/db3/classopenage_1_1_terrain_object_1adf9b18542dda79a323947f5d8707346b" kindref="member">pos</ref>.<ref refid="d6/de8/structopenage_1_1tile__range_1a66f28f55fc7cb96a713d76b15d855a0e" kindref="member">draw</ref>.<ref refid="d2/da4/structopenage_1_1coord_1_1phys3_1a24ddc021570223779a5ffad9e3a575b4" kindref="member">to_phys2</ref>().<ref refid="dd/d57/structopenage_1_1coord_1_1phys2_1a759b5a67a3faf43208cfb35712f26451" kindref="member">distance</ref>(other.<ref refid="d2/da4/structopenage_1_1coord_1_1phys3_1a24ddc021570223779a5ffad9e3a575b4" kindref="member">to_phys2</ref>())<sp/>&lt;<sp/>this-&gt;<ref refid="d6/d31/classopenage_1_1_radial_object_1a1add8d71baff4386b468adb1c8f49323" kindref="member">phys_radius</ref>.<ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point_1a3d55d1b8ecdb0fd4ff8e7e3da2598554" kindref="member">to_double</ref>();</highlight></codeline>
+<codeline lineno="428"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight></codeline>
+<codeline lineno="430" refid="d6/d31/classopenage_1_1_radial_object_1adef472de61d9336b562db89eb8ac28a7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="d6/d31/classopenage_1_1_radial_object_1adef472de61d9336b562db89eb8ac28a7" kindref="member">RadialObject::intersects</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/db3/classopenage_1_1_terrain_object" kindref="compound">TerrainObject</ref><sp/>&amp;other,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>&amp;position)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/dcc/classopenage_1_1_square_object" kindref="compound">SquareObject</ref><sp/>*sq<sp/>=<sp/>dynamic_cast&lt;const<sp/>SquareObject<sp/>*&gt;(&amp;other))<sp/>{</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sq-&gt;from_edge(position)<sp/>&lt;<sp/>this-&gt;<ref refid="d6/d31/classopenage_1_1_radial_object_1a1add8d71baff4386b468adb1c8f49323" kindref="member">phys_radius</ref>;</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/d31/classopenage_1_1_radial_object" kindref="compound">RadialObject</ref><sp/>*rad<sp/>=<sp/>dynamic_cast&lt;const<sp/>RadialObject<sp/>*&gt;(&amp;other))<sp/>{</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>position.<ref refid="d2/da4/structopenage_1_1coord_1_1phys3_1a24ddc021570223779a5ffad9e3a575b4" kindref="member">to_phys2</ref>().<ref refid="dd/d57/structopenage_1_1coord_1_1phys2_1a759b5a67a3faf43208cfb35712f26451" kindref="member">distance</ref>(rad-&gt;pos.draw.to_phys2())<sp/>&lt;<sp/>(this-&gt;<ref refid="d6/d31/classopenage_1_1_radial_object_1a1add8d71baff4386b468adb1c8f49323" kindref="member">phys_radius</ref><sp/>+<sp/>rad-&gt;phys_radius).to_double();</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="438"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"></highlight></codeline>
+<codeline lineno="440" refid="d6/d31/classopenage_1_1_radial_object_1a3d04f4576d79ec1386283a37c357c3e3" refkind="member"><highlight class="normal"><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">coord::phys_t</ref><sp/><ref refid="d6/d31/classopenage_1_1_radial_object_1a3d04f4576d79ec1386283a37c357c3e3" kindref="member">RadialObject::min_axis</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="d6/d31/classopenage_1_1_radial_object_1a1add8d71baff4386b468adb1c8f49323" kindref="member">phys_radius</ref><sp/>*<sp/>2;</highlight></codeline>
+<codeline lineno="442"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="444" refid="da/d23/namespaceopenage_1a3a0d4d7c2bc234c442c13758d306f60c" refkind="member"><highlight class="normal">std::vector&lt;coord::tile&gt;<sp/><ref refid="da/d23/namespaceopenage_1a3a0d4d7c2bc234c442c13758d306f60c" kindref="member">tile_list</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d6/de8/structopenage_1_1tile__range" kindref="compound">tile_range</ref><sp/>&amp;rng)<sp/>{</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;coord::tile&gt;<sp/>tiles;</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d10/structopenage_1_1coord_1_1tile" kindref="compound">coord::tile</ref><sp/>check_pos<sp/>=<sp/>rng.<ref refid="d6/de8/structopenage_1_1tile__range_1a76c81aec9133e3c6146b52178696716c" kindref="member">start</ref>;</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(check_pos.ne<sp/>&lt;<sp/>rng.<ref refid="d6/de8/structopenage_1_1tile__range_1aab99b1acbf7af695f7a278406d817e03" kindref="member">end</ref>.ne)<sp/>{</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(check_pos.se<sp/>&lt;<sp/>rng.<ref refid="d6/de8/structopenage_1_1tile__range_1aab99b1acbf7af695f7a278406d817e03" kindref="member">end</ref>.se)<sp/>{</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tiles.push_back(check_pos);</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>check_pos.se<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>check_pos.se<sp/>=<sp/>rng.<ref refid="d6/de8/structopenage_1_1tile__range_1a76c81aec9133e3c6146b52178696716c" kindref="member">start</ref>.se;</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>check_pos.ne<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>a<sp/>case<sp/>when<sp/>the<sp/>objects<sp/>radius<sp/>is<sp/>zero</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tiles.empty())<sp/>{</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tiles.push_back(rng.<ref refid="d6/de8/structopenage_1_1tile__range_1a76c81aec9133e3c6146b52178696716c" kindref="member">start</ref>);</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tiles;</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"></highlight></codeline>
+<codeline lineno="463"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"></highlight></codeline>
+<codeline lineno="465" refid="da/d23/namespaceopenage_1a231617a72c3e699877ee6eacb76850de" refkind="member"><highlight class="normal"><ref refid="d6/de8/structopenage_1_1tile__range" kindref="compound">tile_range</ref><sp/><ref refid="da/d23/namespaceopenage_1a231617a72c3e699877ee6eacb76850de" kindref="member">building_center</ref>(<ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref><sp/>west,<sp/><ref refid="db/db5/structopenage_1_1coord_1_1tile__delta" kindref="compound">coord::tile_delta</ref><sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d4/d15/classopenage_1_1_terrain" kindref="compound">Terrain</ref><sp/>&amp;<ref refid="db/db3/classopenage_1_1_terrain_object_1a8c5e009bd234e32fdcf21b51dde4061e" kindref="member">terrain</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d6/de8/structopenage_1_1tile__range" kindref="compound">tile_range</ref><sp/><ref refid="d5/d0e/namespaceopenage_1_1testing_1_1testing_1ac25bf81db406af62d08113ef7ae9fd6e" kindref="member">result</ref>;</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO<sp/>it<sp/>should<sp/>be<sp/>possible<sp/>that<sp/>the<sp/>building<sp/>is<sp/>placed<sp/>on<sp/>any<sp/>position,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>not<sp/>just<sp/>tile<sp/>positions.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/>result.<ref refid="d6/de8/structopenage_1_1tile__range_1a76c81aec9133e3c6146b52178696716c" kindref="member">start</ref><sp/>=<sp/>west.<ref refid="d2/da4/structopenage_1_1coord_1_1phys3_1aa8aa4b7a7a76ddb625b8770ba12484d6" kindref="member">to_tile</ref>();</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/>result.<ref refid="d6/de8/structopenage_1_1tile__range_1aab99b1acbf7af695f7a278406d817e03" kindref="member">end</ref><sp/><sp/><sp/>=<sp/>result.<ref refid="d6/de8/structopenage_1_1tile__range_1a76c81aec9133e3c6146b52178696716c" kindref="member">start</ref><sp/>+<sp/>size;</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d57/structopenage_1_1coord_1_1phys2" kindref="compound">coord::phys2</ref><sp/>draw_pos<sp/>=<sp/>result.<ref refid="d6/de8/structopenage_1_1tile__range_1a76c81aec9133e3c6146b52178696716c" kindref="member">start</ref>.<ref refid="d5/d10/structopenage_1_1coord_1_1tile_1a26e7ddc05f99069e9df2f35f3338d037" kindref="member">to_phys2</ref>();</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/>draw_pos.ne<sp/>+=<sp/><ref refid="d1/d93/namespaceopenage_1_1coord_1a257112db0574d981f4bd017656c687fe" kindref="member">coord::phys_t</ref>(size.ne<sp/>/<sp/>2.0f);</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/>draw_pos.se<sp/>+=<sp/><ref refid="d1/d93/namespaceopenage_1_1coord_1a257112db0574d981f4bd017656c687fe" kindref="member">coord::phys_t</ref>(size.se<sp/>/<sp/>2.0f);</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"></highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/>result.<ref refid="d6/de8/structopenage_1_1tile__range_1a66f28f55fc7cb96a713d76b15d855a0e" kindref="member">draw</ref><sp/><sp/>=<sp/>draw_pos.<ref refid="dd/d57/structopenage_1_1coord_1_1phys2_1a2cbf9e4669fb9702e6b086de22ac5eac" kindref="member">to_phys3</ref>(terrain);</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d5/d0e/namespaceopenage_1_1testing_1_1testing_1ac25bf81db406af62d08113ef7ae9fd6e" kindref="member">result</ref>;</highlight></codeline>
+<codeline lineno="480"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight></codeline>
+<codeline lineno="482" refid="da/d23/namespaceopenage_1a8c248986ac22a8251e1f27a6cef087eb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="da/d23/namespaceopenage_1a8c248986ac22a8251e1f27a6cef087eb" kindref="member">complete_building</ref>(<ref refid="df/dea/classopenage_1_1_unit" kindref="compound">Unit</ref><sp/>&amp;u)<sp/>{</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(u.<ref refid="df/dea/classopenage_1_1_unit_1a6c56a8b7e9856a8e0535cacbe831bae7" kindref="member">has_attribute</ref>(<ref refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a1b20e9021b3a16b059287caddc7862f6" kindref="member">attr_type::building</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;<ref refid="da/d23/namespaceopenage_1a7278b1c0b8d94d06da155b0b693b2828ab0da275520918e23dd615e2a747528f1" kindref="member">build</ref><sp/>=<sp/>u.<ref refid="df/dea/classopenage_1_1_unit_1a3e12324401051119f44e212dae1a87ce" kindref="member">get_attribute</ref>&lt;<ref refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a1b20e9021b3a16b059287caddc7862f6" kindref="member">attr_type::building</ref>&gt;();</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d23/namespaceopenage_1a7278b1c0b8d94d06da155b0b693b2828ab0da275520918e23dd615e2a747528f1" kindref="member">build</ref>.completed<sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>ground<sp/>under<sp/>a<sp/>completed<sp/>building</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>target_location<sp/>=<sp/>u.<ref refid="df/dea/classopenage_1_1_unit_1a12811894b98383b4c3cfe6769bc3ff80" kindref="member">location</ref>.get();</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>placed_ok<sp/>=<sp/>target_location-&gt;place(<ref refid="da/d23/namespaceopenage_1a7278b1c0b8d94d06da155b0b693b2828ab0da275520918e23dd615e2a747528f1" kindref="member">build</ref>.completion_state);</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(placed_ok)<sp/>{</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>target_location-&gt;set_ground(<ref refid="da/d23/namespaceopenage_1a7278b1c0b8d94d06da155b0b693b2828ab0da275520918e23dd615e2a747528f1" kindref="member">build</ref>.foundation_terrain,<sp/>0);</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>placed_ok;</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="496"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>openage</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/terrain/terrain_object.cpp"/>
+  </compounddef>
+</doxygen>

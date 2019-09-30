@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d9/db0/pyexception_8h" kind="file" language="C++">
+    <compoundname>pyexception.h</compoundname>
+    <includes local="no">memory</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes refid="d7/dce/error_2error_8h" local="yes">../error/error.h</includes>
+    <includes refid="d3/dda/backtrace_8h" local="yes">../error/backtrace.h</includes>
+    <includes refid="d8/dea/functional_8h" local="yes">functional.h</includes>
+    <includes refid="d2/d4b/pyobject_8h" local="yes">pyobject.h</includes>
+    <includedby refid="dc/d25/exctranslate_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pyinterface/exctranslate.cpp</includedby>
+    <includedby refid="d2/d8f/exctranslate__tests_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pyinterface/exctranslate_tests.cpp</includedby>
+    <includedby refid="dd/d1a/pyexception_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pyinterface/pyexception.cpp</includedby>
+    <includedby refid="d5/d59/pyobject__tests_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pyinterface/pyobject_tests.cpp</includedby>
+    <incdepgraph>
+      <node id="20090">
+        <label>list</label>
+      </node>
+      <node id="20097">
+        <label>../util/language.h</label>
+        <link refid="d8/dce/language_8h"/>
+      </node>
+      <node id="20081">
+        <label>atomic</label>
+      </node>
+      <node id="20087">
+        <label>iomanip</label>
+      </node>
+      <node id="20086">
+        <label>functional</label>
+      </node>
+      <node id="20076">
+        <label>cstdint</label>
+      </node>
+      <node id="20083">
+        <label>externalsstream.h</label>
+        <link refid="dc/dcf/externalsstream_8h"/>
+        <childnode refid="20070" relation="include">
+        </childnode>
+        <childnode refid="20067" relation="include">
+        </childnode>
+      </node>
+      <node id="20074">
+        <label>signal.h</label>
+        <link refid="d8/d39/signal_8h"/>
+        <childnode refid="20074" relation="include">
+        </childnode>
+      </node>
+      <node id="20096">
+        <label>functional.h</label>
+        <link refid="d8/dea/functional_8h"/>
+        <childnode refid="20086" relation="include">
+        </childnode>
+        <childnode refid="20091" relation="include">
+        </childnode>
+        <childnode refid="20072" relation="include">
+        </childnode>
+        <childnode refid="20097" relation="include">
+        </childnode>
+        <childnode refid="20098" relation="include">
+        </childnode>
+        <childnode refid="20099" relation="include">
+        </childnode>
+      </node>
+      <node id="20071">
+        <label>stdexcept</label>
+      </node>
+      <node id="20098">
+        <label>exctranslate.h</label>
+        <link refid="dd/d5f/exctranslate_8h"/>
+        <childnode refid="20069" relation="include">
+        </childnode>
+      </node>
+      <node id="20085">
+        <label>cstdarg</label>
+      </node>
+      <node id="20067">
+        <label>string</label>
+      </node>
+      <node id="20089">
+        <label>logsink.h</label>
+        <link refid="d3/d4e/logsink_8h"/>
+        <childnode refid="20090" relation="include">
+        </childnode>
+        <childnode refid="20091" relation="include">
+        </childnode>
+        <childnode refid="20092" relation="include">
+        </childnode>
+      </node>
+      <node id="20075">
+        <label>../log/message.h</label>
+        <link refid="d2/d0d/message_8h"/>
+        <childnode refid="20076" relation="include">
+        </childnode>
+        <childnode refid="20067" relation="include">
+        </childnode>
+        <childnode refid="20077" relation="include">
+        </childnode>
+        <childnode refid="20078" relation="include">
+        </childnode>
+        <childnode refid="20080" relation="include">
+        </childnode>
+        <childnode refid="20089" relation="include">
+        </childnode>
+        <childnode refid="20092" relation="include">
+        </childnode>
+      </node>
+      <node id="20093">
+        <label>../util/enum.h</label>
+        <link refid="d0/d9b/enum_8h"/>
+        <childnode refid="20070" relation="include">
+        </childnode>
+        <childnode refid="20094" relation="include">
+        </childnode>
+        <childnode refid="20072" relation="include">
+        </childnode>
+      </node>
+      <node id="20094">
+        <label>typeinfo</label>
+      </node>
+      <node id="20068">
+        <label>vector</label>
+      </node>
+      <node id="20073">
+        <label>ciso646</label>
+      </node>
+      <node id="20101">
+        <label>defs.h</label>
+        <link refid="d5/d64/defs_8h"/>
+      </node>
+      <node id="20069">
+        <label>../error/error.h</label>
+        <link refid="d7/dce/error_2error_8h"/>
+        <childnode refid="20070" relation="include">
+        </childnode>
+        <childnode refid="20066" relation="include">
+        </childnode>
+        <childnode refid="20071" relation="include">
+        </childnode>
+        <childnode refid="20067" relation="include">
+        </childnode>
+        <childnode refid="20072" relation="include">
+        </childnode>
+        <childnode refid="20075" relation="include">
+        </childnode>
+      </node>
+      <node id="20088">
+        <label>sstream</label>
+      </node>
+      <node id="20099">
+        <label>setup.h</label>
+        <link refid="d7/df7/setup_8h"/>
+        <childnode refid="20086" relation="include">
+        </childnode>
+        <childnode refid="20072" relation="include">
+        </childnode>
+      </node>
+      <node id="20072">
+        <label>../util/compiler.h</label>
+        <link refid="d4/dd1/compiler_8h"/>
+        <childnode refid="20073" relation="include">
+        </childnode>
+        <childnode refid="20067" relation="include">
+        </childnode>
+        <childnode refid="20074" relation="include">
+        </childnode>
+      </node>
+      <node id="20079">
+        <label>cstdlib</label>
+      </node>
+      <node id="20092">
+        <label>level.h</label>
+        <link refid="de/d09/level_8h"/>
+        <childnode refid="20093" relation="include">
+        </childnode>
+      </node>
+      <node id="20070">
+        <label>iostream</label>
+      </node>
+      <node id="20078">
+        <label>../util/constexpr.h</label>
+        <link refid="d1/d06/constexpr_8h"/>
+        <childnode refid="20079" relation="include">
+        </childnode>
+      </node>
+      <node id="20100">
+        <label>pyobject.h</label>
+        <link refid="d2/d4b/pyobject_8h"/>
+        <childnode refid="20076" relation="include">
+        </childnode>
+        <childnode refid="20067" relation="include">
+        </childnode>
+        <childnode refid="20068" relation="include">
+        </childnode>
+        <childnode refid="20101" relation="include">
+        </childnode>
+        <childnode refid="20096" relation="include">
+        </childnode>
+      </node>
+      <node id="20084">
+        <label>strings.h</label>
+        <link refid="d6/d90/strings_8h"/>
+        <childnode refid="20085" relation="include">
+        </childnode>
+        <childnode refid="20086" relation="include">
+        </childnode>
+        <childnode refid="20087" relation="include">
+        </childnode>
+        <childnode refid="20066" relation="include">
+        </childnode>
+        <childnode refid="20088" relation="include">
+        </childnode>
+        <childnode refid="20067" relation="include">
+        </childnode>
+        <childnode refid="20068" relation="include">
+        </childnode>
+      </node>
+      <node id="20091">
+        <label>mutex</label>
+      </node>
+      <node id="20065">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pyinterface/pyexception.h</label>
+        <link refid="d9/db0/pyexception_8h"/>
+        <childnode refid="20066" relation="include">
+        </childnode>
+        <childnode refid="20067" relation="include">
+        </childnode>
+        <childnode refid="20068" relation="include">
+        </childnode>
+        <childnode refid="20069" relation="include">
+        </childnode>
+        <childnode refid="20095" relation="include">
+        </childnode>
+        <childnode refid="20096" relation="include">
+        </childnode>
+        <childnode refid="20100" relation="include">
+        </childnode>
+      </node>
+      <node id="20080">
+        <label>../util/stringformatter.h</label>
+        <link refid="de/d65/stringformatter_8h"/>
+        <childnode refid="20081" relation="include">
+        </childnode>
+        <childnode refid="20066" relation="include">
+        </childnode>
+        <childnode refid="20082" relation="include">
+        </childnode>
+        <childnode refid="20072" relation="include">
+        </childnode>
+        <childnode refid="20083" relation="include">
+        </childnode>
+        <childnode refid="20084" relation="include">
+        </childnode>
+      </node>
+      <node id="20082">
+        <label>type_traits</label>
+      </node>
+      <node id="20077">
+        <label>config.h</label>
+      </node>
+      <node id="20066">
+        <label>memory</label>
+      </node>
+      <node id="20095">
+        <label>../error/backtrace.h</label>
+        <link refid="d3/dda/backtrace_8h"/>
+        <childnode refid="20068" relation="include">
+        </childnode>
+        <childnode refid="20067" relation="include">
+        </childnode>
+        <childnode refid="20070" relation="include">
+        </childnode>
+        <childnode refid="20086" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="20106">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pyinterface/pyobject_tests.cpp</label>
+        <link refid="d5/d59/pyobject__tests_8cpp"/>
+      </node>
+      <node id="20104">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pyinterface/exctranslate_tests.cpp</label>
+        <link refid="d2/d8f/exctranslate__tests_8cpp"/>
+      </node>
+      <node id="20103">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pyinterface/exctranslate.cpp</label>
+        <link refid="dc/d25/exctranslate_8cpp"/>
+      </node>
+      <node id="20102">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pyinterface/pyexception.h</label>
+        <link refid="d9/db0/pyexception_8h"/>
+        <childnode refid="20103" relation="include">
+        </childnode>
+        <childnode refid="20104" relation="include">
+        </childnode>
+        <childnode refid="20105" relation="include">
+        </childnode>
+        <childnode refid="20106" relation="include">
+        </childnode>
+      </node>
+      <node id="20105">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pyinterface/pyexception.cpp</label>
+        <link refid="dd/d1a/pyexception_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d3/d7f/classopenage_1_1pyinterface_1_1_py_exception_backtrace" prot="public">openage::pyinterface::PyExceptionBacktrace</innerclass>
+    <innerclass refid="df/d62/classopenage_1_1pyinterface_1_1_py_exception" prot="public">openage::pyinterface::PyException</innerclass>
+    <innernamespace refid="da/d23/namespaceopenage">openage</innernamespace>
+    <innernamespace refid="d9/dde/namespaceopenage_1_1pyinterface">openage::pyinterface</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2015-2017<sp/>the<sp/>openage<sp/>authors.<sp/>See<sp/>copying.md<sp/>for<sp/>legal<sp/>info.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>pxd:<sp/>from<sp/>libcpp.string<sp/>cimport<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>pxd:<sp/>from<sp/>libcpp.vector<sp/>cimport<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>pxd:<sp/>from<sp/>libopenage.error.error<sp/>cimport<sp/>Error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../error/error.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>pxd:<sp/>from<sp/>libopenage.error.backtrace<sp/>cimport<sp/>backtrace_symbol_constptr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../error/backtrace.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>pxd:<sp/>from<sp/>libopenage.pyinterface.functional<sp/>cimport<sp/>PyIfFunc2,<sp/>Func1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/dea/functional_8h" kindref="compound">functional.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>pxd:<sp/>from<sp/>libopenage.pyinterface.pyobject<sp/>cimport<sp/>PyObjectRef,<sp/>PyObjectPtr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d2/d4b/pyobject_8h" kindref="compound">pyobject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="da/d23/namespaceopenage" kindref="compound">openage</ref><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">pyinterface<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="d3/d7f/classopenage_1_1pyinterface_1_1_py_exception_backtrace" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/d7f/classopenage_1_1pyinterface_1_1_py_exception_backtrace" kindref="compound">PyExceptionBacktrace</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="dd/d0f/classopenage_1_1error_1_1_backtrace" kindref="compound">error::Backtrace</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36" refid="d3/d7f/classopenage_1_1pyinterface_1_1_py_exception_backtrace_1a9a4a6dfca267f9bffc012c31b8901d1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d7f/classopenage_1_1pyinterface_1_1_py_exception_backtrace_1a9a4a6dfca267f9bffc012c31b8901d1f" kindref="member">PyExceptionBacktrace</ref>(<ref refid="d5/d64/defs_8h_1afcb7b4d4ac414eefbeef02c60e6acb52" kindref="member">PyObject</ref><sp/>*<ref refid="d3/d7f/classopenage_1_1pyinterface_1_1_py_exception_backtrace_1a6fdae658b88f0eee99c803e265d5ae97" kindref="member">ref</ref>)<sp/>:<sp/>ref{ref}<sp/>{}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d3/d7f/classopenage_1_1pyinterface_1_1_py_exception_backtrace_1ac33230cda520fbd8269fc58154607d29" kindref="member">get_symbols</ref>(std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d4/d66/structopenage_1_1error_1_1backtrace__symbol" kindref="compound">error::backtrace_symbol</ref><sp/>*)&gt;<sp/>cb,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>reversed)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44" refid="d3/d7f/classopenage_1_1pyinterface_1_1_py_exception_backtrace_1a6fdae658b88f0eee99c803e265d5ae97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/d64/defs_8h_1afcb7b4d4ac414eefbeef02c60e6acb52" kindref="member">PyObject</ref><sp/>*<ref refid="d3/d7f/classopenage_1_1pyinterface_1_1_py_exception_backtrace_1a6fdae658b88f0eee99c803e265d5ae97" kindref="member">ref</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="df/d62/classopenage_1_1pyinterface_1_1_py_exception" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d4/dd1/compiler_8h_1aea581b919984cda327632efe3d11f8b3" kindref="member">OAAPI</ref><sp/><ref refid="df/d62/classopenage_1_1pyinterface_1_1_py_exception" kindref="compound">PyException</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d0/df4/classopenage_1_1error_1_1_error" kindref="compound">error::Error</ref><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>type_name()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="df/d62/classopenage_1_1pyinterface_1_1_py_exception_1ac541a09011ddd24b3e16700f9979b3fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d68/classopenage_1_1pyinterface_1_1_py_object_ref" kindref="compound">PyObjectRef</ref><sp/><ref refid="df/d62/classopenage_1_1pyinterface_1_1_py_exception_1ac541a09011ddd24b3e16700f9979b3fc" kindref="member">py_obj</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_backtrace();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/>pxd:<sp/>PyIfFunc2[void,<sp/>PyObjectPtr,<sp/>Func1[void,<sp/>backtrace_symbol_constptr]]<sp/>pyexception_bt_get_symbols</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d4/dd1/compiler_8h_1aea581b919984cda327632efe3d11f8b3" kindref="member">OAAPI</ref><sp/><ref refid="d2/d29/classopenage_1_1pyinterface_1_1_py_if_func" kindref="compound">PyIfFunc&lt;void, PyObject *, Func&lt;void, const error::backtrace_symbol *&gt;</ref>&gt;<sp/><ref refid="d9/dde/namespaceopenage_1_1pyinterface_1abd497e13d9c1d349faac93274a50dece" kindref="member">pyexception_bt_get_symbols</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}}<sp/></highlight><highlight class="comment">//<sp/>openage::pyinterface</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pyinterface/pyexception.h"/>
+  </compounddef>
+</doxygen>

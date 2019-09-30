@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d4/d0d/namespaceopenage_1_1gameio" kind="namespace" language="C++">
+    <compoundname>openage::gameio</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d4/d0d/namespaceopenage_1_1gameio_1adf4c124763b55a6c31005b67d3f398a4" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string openage::gameio::save_label</definition>
+        <argsstring></argsstring>
+        <name>save_label</name>
+        <initializer>= &quot;openage-<ref refid="d4/d0d/namespaceopenage_1_1gameio_1afc1134c3c633c8bddb614ecb3da48eb2" kindref="member">save</ref>-file&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_save.h" line="14" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_save.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="d4/d0d/namespaceopenage_1_1gameio_1ae6761d88280466d1d1b5c638e7c7a042" compoundref="da/d49/game__save_8cpp" startline="102" endline="146">load</referencedby>
+        <referencedby refid="d4/d0d/namespaceopenage_1_1gameio_1afc1134c3c633c8bddb614ecb3da48eb2" compoundref="da/d49/game__save_8cpp" startline="70" endline="100">save</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/d0d/namespaceopenage_1_1gameio_1a78ae26de66b1864190daaef67669bd98" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string openage::gameio::save_version</definition>
+        <argsstring></argsstring>
+        <name>save_version</name>
+        <initializer>= &quot;v0.1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_save.h" line="15" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_save.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="d4/d0d/namespaceopenage_1_1gameio_1ae6761d88280466d1d1b5c638e7c7a042" compoundref="da/d49/game__save_8cpp" startline="102" endline="146">load</referencedby>
+        <referencedby refid="d4/d0d/namespaceopenage_1_1gameio_1afc1134c3c633c8bddb614ecb3da48eb2" compoundref="da/d49/game__save_8cpp" startline="70" endline="100">save</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d4/d0d/namespaceopenage_1_1gameio_1a644610ec4e114bf5109a4a46847f3762" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::gameio::save_unit</definition>
+        <argsstring>(std::ofstream &amp;file, Unit *unit)</argsstring>
+        <name>save_unit</name>
+        <param>
+          <type>std::ofstream &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="df/dea/classopenage_1_1_unit" kindref="compound">Unit</ref> *</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_save.cpp" line="20" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_save.cpp" bodystart="20" bodyend="31"/>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a1b20e9021b3a16b059287caddc7862f6">openage::building</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a3e12324401051119f44e212dae1a87ce" compoundref="d1/da2/unit_8h" startline="199" endline="203">openage::Unit::get_attribute</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a6c56a8b7e9856a8e0535cacbe831bae7" compoundref="d7/d49/unit_8cpp" startline="258" endline="260">openage::Unit::has_attribute</references>
+        <references refid="dd/d39/classopenage_1_1_unit_type_1ad295b572c0aa0399a04133dc61fb8a4b">openage::UnitType::id</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a12811894b98383b4c3cfe6769bc3ff80" compoundref="d1/da2/unit_8h" startline="68">openage::Unit::location</references>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a72122ce96bfec66e2396d2e25225d70a">openage::owner</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a2d7da7c7ccd95557e10d54a58a033187" compoundref="d1/da2/unit_8h" startline="54">openage::Unit::unit_type</references>
+        <referencedby refid="d4/d0d/namespaceopenage_1_1gameio_1afc1134c3c633c8bddb614ecb3da48eb2" compoundref="da/d49/game__save_8cpp" startline="70" endline="100">save</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d0d/namespaceopenage_1_1gameio_1ac86e0756708907f826cb04e6f13d588d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::gameio::load_unit</definition>
+        <argsstring>(std::ifstream &amp;file, GameMain *game)</argsstring>
+        <name>load_unit</name>
+        <param>
+          <type>std::ifstream &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="d9/d9c/classopenage_1_1_game_main" kindref="compound">GameMain</ref> *</type>
+          <declname>game</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_save.cpp" line="33" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_save.cpp" bodystart="33" bodyend="54"/>
+        <references refid="da/d23/namespaceopenage_1a8c248986ac22a8251e1f27a6cef087eb" compoundref="d5/d40/terrain__object_8cpp" startline="482" endline="496">openage::complete_building</references>
+        <references refid="d9/d9c/classopenage_1_1_game_main_1ace86de3be7238212c0b49ecc1247e8a4" compoundref="d9/d96/game__main_8cpp" startline="47" endline="49">openage::GameMain::get_player</references>
+        <references refid="d8/d47/classopenage_1_1_player_1a67c7f6853d4be5c38d2456169af3d5a1" compoundref="db/d80/player_8cpp" startline="119" endline="127">openage::Player::get_type</references>
+        <references refid="d2/d82/classopenage_1_1_unit_container_1a39947500d16e9d67eb72458f3df7c796" compoundref="d6/dd5/unit__container_8cpp" startline="88" endline="94">openage::UnitContainer::new_unit</references>
+        <references refid="d9/d9c/classopenage_1_1_game_main_1ac0651e2cfcbf6733dfe637b6b72eaefc" compoundref="d9/db2/game__main_8h" startline="87">openage::GameMain::placed_units</references>
+        <references refid="da/d94/constinit__vector_8cpp_1aad68795cb6d982f4dda0a4b91a8c1577" compoundref="da/d94/constinit__vector_8cpp" startline="47">ref</references>
+        <references refid="d9/d9c/classopenage_1_1_game_main_1a0a2423176e649f9865eb97fc0f187b63" compoundref="d9/db2/game__main_8h" startline="72">openage::GameMain::terrain</references>
+        <references refid="d5/d10/structopenage_1_1coord_1_1tile_1ac306cc74c14e094567447277327b389a" compoundref="d7/d2f/tile_8cpp" startline="26" endline="28">openage::coord::tile::to_phys3</references>
+        <referencedby refid="d4/d0d/namespaceopenage_1_1gameio_1ae6761d88280466d1d1b5c638e7c7a042" compoundref="da/d49/game__save_8cpp" startline="102" endline="146">load</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d0d/namespaceopenage_1_1gameio_1a3dbc6f4b94629a296a514691fb34a470" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::gameio::save_tile_content</definition>
+        <argsstring>(std::ofstream &amp;file, openage::TileContent *content)</argsstring>
+        <name>save_tile_content</name>
+        <param>
+          <type>std::ofstream &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/dd0/classopenage_1_1_tile_content" kindref="compound">openage::TileContent</ref> *</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_save.cpp" line="56" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_save.cpp" bodystart="56" bodyend="59"/>
+        <references refid="d3/dd0/classopenage_1_1_tile_content_1aaeff054a61d61cc0c65cfefcc78de233" compoundref="d8/db6/terrain_8h" startline="59">openage::TileContent::obj</references>
+        <references refid="d3/dd0/classopenage_1_1_tile_content_1ac370821023f0c2e78ef4ab0c27c7bf09" compoundref="d8/db6/terrain_8h" startline="58">openage::TileContent::terrain_id</references>
+        <referencedby refid="d4/d0d/namespaceopenage_1_1gameio_1afc1134c3c633c8bddb614ecb3da48eb2" compoundref="da/d49/game__save_8cpp" startline="70" endline="100">save</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d0d/namespaceopenage_1_1gameio_1a4141acb6d3c777a66792c1f02a8678bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/dd0/classopenage_1_1_tile_content" kindref="compound">TileContent</ref></type>
+        <definition>TileContent openage::gameio::load_tile_content</definition>
+        <argsstring>(std::ifstream &amp;file)</argsstring>
+        <name>load_tile_content</name>
+        <param>
+          <type>std::ifstream &amp;</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_save.cpp" line="61" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_save.cpp" bodystart="61" bodyend="68"/>
+        <references refid="d3/dd0/classopenage_1_1_tile_content_1ac370821023f0c2e78ef4ab0c27c7bf09" compoundref="d8/db6/terrain_8h" startline="58">openage::TileContent::terrain_id</references>
+        <referencedby refid="d4/d0d/namespaceopenage_1_1gameio_1ae6761d88280466d1d1b5c638e7c7a042" compoundref="da/d49/game__save_8cpp" startline="102" endline="146">load</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d0d/namespaceopenage_1_1gameio_1afc1134c3c633c8bddb614ecb3da48eb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::gameio::save</definition>
+        <argsstring>(openage::GameMain *, std::string fname)</argsstring>
+        <name>save</name>
+        <param>
+          <type><ref refid="d9/d9c/classopenage_1_1_game_main" kindref="compound">openage::GameMain</ref> *</type>
+          <declname>game</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+<para>a game save function that sometimes works </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_save.cpp" line="70" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_save.cpp" bodystart="70" bodyend="100"/>
+        <references refid="d2/d82/classopenage_1_1_unit_container_1a38b39ded603419425f1b5a38f188cc17" compoundref="d6/dd5/unit__container_8cpp" startline="164" endline="170">openage::UnitContainer::all_units</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a5cb08687f485da2549d7eebef26368a6" compoundref="d7/d66/log_2____init_____8py" startline="107" endline="110">openage::log.dbg</references>
+        <references refid="d9/dab/classopenage_1_1_terrain_chunk_1af163db3fba4ae99206de76666f8424df" compoundref="d8/d52/terrain__chunk_8cpp" startline="46" endline="48">openage::TerrainChunk::get_data</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <references refid="d9/d9c/classopenage_1_1_game_main_1ac0651e2cfcbf6733dfe637b6b72eaefc" compoundref="d9/db2/game__main_8h" startline="87">openage::GameMain::placed_units</references>
+        <references refid="d4/d0d/namespaceopenage_1_1gameio_1adf4c124763b55a6c31005b67d3f398a4" compoundref="da/dc9/game__save_8h" startline="14">save_label</references>
+        <references refid="d4/d0d/namespaceopenage_1_1gameio_1a3dbc6f4b94629a296a514691fb34a470" compoundref="da/d49/game__save_8cpp" startline="56" endline="59">save_tile_content</references>
+        <references refid="d4/d0d/namespaceopenage_1_1gameio_1a644610ec4e114bf5109a4a46847f3762" compoundref="da/d49/game__save_8cpp" startline="20" endline="31">save_unit</references>
+        <references refid="d4/d0d/namespaceopenage_1_1gameio_1a78ae26de66b1864190daaef67669bd98" compoundref="da/dc9/game__save_8h" startline="15">save_version</references>
+        <references refid="d9/d9c/classopenage_1_1_game_main_1a0a2423176e649f9865eb97fc0f187b63" compoundref="d9/db2/game__main_8h" startline="72">openage::GameMain::terrain</references>
+        <references refid="d9/dab/classopenage_1_1_terrain_chunk_1a81015b410635cc83ba91f84bb92e8cb7" compoundref="dd/deb/terrain__chunk_8h" startline="56">openage::TerrainChunk::tile_count</references>
+        <referencedby refid="d5/d54/classopenage_1_1gui_1_1_game_saver_1a8d88b6621b60cfc359cbeaae88475686" compoundref="d8/d5c/game__saver_8cpp" startline="37" endline="79">openage::gui::GameSaver::activate</referencedby>
+        <referencedby refid="d6/d02/namespaceopenage_1_1convert_1_1main_1a4973f96b5a25450372f6d09c153284bf" compoundref="d8/d6c/convert_2main_8py" startline="501" endline="559">openage.convert.main.interactive_browser</referencedby>
+        <referencedby refid="d6/d8c/classopenage_1_1convert_1_1colortable_1_1_color_table_1aeea5aabc465e55e3b8a519049bbcb623" compoundref="d6/d5c/colortable_8py" startline="144" endline="146">openage.convert.colortable.ColorTable.save_visualization</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d0d/namespaceopenage_1_1gameio_1ae6761d88280466d1d1b5c638e7c7a042" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::gameio::load</definition>
+        <argsstring>(openage::GameMain *, std::string fname)</argsstring>
+        <name>load</name>
+        <param>
+          <type><ref refid="d9/d9c/classopenage_1_1_game_main" kindref="compound">openage::GameMain</ref> *</type>
+          <declname>game</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>fname</declname>
+        </param>
+        <briefdescription>
+<para>a game load function that sometimes works </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_save.cpp" line="102" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_save.cpp" bodystart="102" bodyend="146"/>
+        <references refid="da/d23/namespaceopenage_1a7278b1c0b8d94d06da155b0b693b2828ab0da275520918e23dd615e2a747528f1">openage::build</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a5cb08687f485da2549d7eebef26368a6" compoundref="d7/d66/log_2____init_____8py" startline="107" endline="110">openage::log.dbg</references>
+        <references refid="d9/dab/classopenage_1_1_terrain_chunk_1af163db3fba4ae99206de76666f8424df" compoundref="d8/d52/terrain__chunk_8cpp" startline="46" endline="48">openage::TerrainChunk::get_data</references>
+        <references refid="d4/d0d/namespaceopenage_1_1gameio_1a4141acb6d3c777a66792c1f02a8678bc" compoundref="da/d49/game__save_8cpp" startline="61" endline="68">load_tile_content</references>
+        <references refid="d4/d0d/namespaceopenage_1_1gameio_1ac86e0756708907f826cb04e6f13d588d" compoundref="da/d49/game__save_8cpp" startline="33" endline="54">load_unit</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <references refid="d9/d9c/classopenage_1_1_game_main_1ac0651e2cfcbf6733dfe637b6b72eaefc" compoundref="d9/db2/game__main_8h" startline="87">openage::GameMain::placed_units</references>
+        <references refid="d2/d82/classopenage_1_1_unit_container_1ae475b34e7deb9bd70b01db1abc698779" compoundref="d6/dd5/unit__container_8cpp" startline="58" endline="60">openage::UnitContainer::reset</references>
+        <references refid="d4/d0d/namespaceopenage_1_1gameio_1adf4c124763b55a6c31005b67d3f398a4" compoundref="da/dc9/game__save_8h" startline="14">save_label</references>
+        <references refid="d4/d0d/namespaceopenage_1_1gameio_1a78ae26de66b1864190daaef67669bd98" compoundref="da/dc9/game__save_8h" startline="15">save_version</references>
+        <references refid="d9/d9c/classopenage_1_1_game_main_1a0a2423176e649f9865eb97fc0f187b63" compoundref="d9/db2/game__main_8h" startline="72">openage::GameMain::terrain</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a2a1b7ecac013c794375d21d5efd89f87" compoundref="d7/d66/log_2____init_____8py" startline="117" endline="120">openage::log.warn</references>
+        <referencedby refid="dd/d78/classopenage_1_1_generator_1ab7579f771b73612867f7d07482e0a540" compoundref="d8/d1b/generator_8cpp" startline="304" endline="321">openage::Generator::create</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_save.cpp" line="18" column="1"/>
+  </compounddef>
+</doxygen>

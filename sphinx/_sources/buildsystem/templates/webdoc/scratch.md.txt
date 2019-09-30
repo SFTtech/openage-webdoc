@@ -1,0 +1,56 @@
+Doxygen
+doxypypy
+
+pip install -U sphinx doxypypy recommonmark autodoc breathe graphviz
+
+
+Doxygen -> breathe -> sphinx -> sphinx_rtd_theme - config
+
+Important files:
+Doxyfile
+py_filter.sh/.bat
+
+conf.py
+index.rst
+
+pip install --upgrade recommonmark
+
+
+HTML builden
+sphinx-build -b html . web/.
+
+
+# Software at chocolatey
+# graphviz
+# doxygen
+# dejavu-fonts
+# cmake
+# WinFlex
+# Git
+# python
+# nsis
+
++ generate doxygen xml to build\doc\doxygen\xml
+
+sudo apt install doxygen graphwiz
+
+python -m pip install --upgrade pip
+
+pip install -U sphinx doxypypy recommonmark autodoc breathe graphviz sphinx-markdown-tables sphinx-rtd-theme
+
+# Clone openage-modding into build/doc/modding
+git clone https://github.com/SFTtech/openage-modding.git modding
+
+# Clone nyan into build/doc/modding
+git clone https://github.com/SFTtech/nyan.git nyan
+
+
+sphinx-build -E -c buildsystem\doc\ -b html . build\doc\sphinx\web\.
+
+-E builds docs without caching
+
+
+
+
+# Note
+sphinx-markdown-parser?

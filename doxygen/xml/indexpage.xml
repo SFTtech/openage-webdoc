@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>[![openage](/assets/logo/banner.png)](http://openage.sft.mx)</title>
+    <detaileddescription>
+<para><bold>openage</bold>: a volunteer project to create a free engine clone of the <emphasis>Genie Engine</emphasis> used by <emphasis>Age of Empires</emphasis>, <emphasis>Age of Empires II (HD)</emphasis> and <emphasis>Star Wars: Galactic Battlegrounds</emphasis>, comparable to projects like <ulink url="https://openmw.org/">OpenMW</ulink>, <ulink url="http://openra.net/">OpenRA</ulink>, <ulink url="https://github.com/OpenSAGE/OpenSAGE/">OpenSAGE</ulink>, <ulink url="https://openttd.org/">OpenTTD</ulink> and <ulink url="https://openrct2.org/">OpenRCT2</ulink>. At the moment we focus our efforts on the integration of <emphasis>Age of Empires II</emphasis>, while being primarily aimed at POSIX platforms such as <bold>GNU/Linux</bold>.</para><para>openage uses the original game assets (such as sounds and graphics), but (for obvious reasons) doesn&apos;t ship them. To play, you require <emphasis>an original AoE II : TC installation or <ulink url="http://store.steampowered.com/app/221380/">AoE II: HD</ulink></emphasis> (installation via <ulink url="https://www.winehq.org/">Wine</ulink> or <ulink url="doc/media_convert.md#how-to-use-the-original-game-assets">Steam-Linux</ulink>).</para><para><ulink url="https://github.com/SFTtech/openage/stargazers"></ulink> <ulink url="https://webchat.freenode.net/?channels=sfttech"></ulink> <ulink url="https://riot.im/app/#/room/#sfttech:matrix.org"></ulink> <ulink url="http://www.emergencykitten.com/"></ulink></para><para><heading level="2">Contact </heading>
+</para><para><table rows="7" cols="2"><row>
+<entry thead="yes"><para>Contact </para></entry><entry thead="yes"><para>Where?  </para></entry></row>
+<row>
+<entry thead="no"><para>Issue Tracker </para></entry><entry thead="no"><para><ulink url="https://github.com/SFTtech/openage/issues">SFTtech/openage</ulink> </para></entry></row>
+<row>
+<entry thead="no"><para>Development Blog </para></entry><entry thead="no"><para><ulink url="https://blog.openage.sft.mx">blog.openage.sft.mx</ulink> </para></entry></row>
+<row>
+<entry thead="no"><para>Forum </para></entry><entry thead="no"><para><ulink url="https://www.reddit.com/r/openage/">/r/openage</ulink> </para></entry></row>
+<row>
+<entry thead="no"><para>Matrix Chat </para></entry><entry thead="no"><para><ulink url="https://riot.im/app/#/room/#sfttech:matrix.org"><computeroutput>#sfttech:matrix.org</computeroutput></ulink> </para></entry></row>
+<row>
+<entry thead="no"><para>IRC Chat </para></entry><entry thead="no"><para><ulink url="https://webchat.freenode.net/?channels=sfttech"><computeroutput>irc.freenode.net #sfttech</computeroutput></ulink> </para></entry></row>
+<row>
+<entry thead="no"><para>Money Sink </para></entry><entry thead="no"><para><ulink url="https://liberapay.com/SFTtech"></ulink> </para></entry></row>
+</table>
+</para><para><heading level="2">Technical foundation </heading>
+</para><para><table rows="11" cols="2"><row>
+<entry thead="yes"><para>Technology </para></entry><entry thead="yes"><para>Component  </para></entry></row>
+<row>
+<entry thead="no"><para>**C++17** </para></entry><entry thead="no"><para>Engine core </para></entry></row>
+<row>
+<entry thead="no"><para>**Python3** </para></entry><entry thead="no"><para>Scripting, media conversion, in-game console, code generation </para></entry></row>
+<row>
+<entry thead="no"><para>**Qt5** </para></entry><entry thead="no"><para>Graphical user interface </para></entry></row>
+<row>
+<entry thead="no"><para>**Cython** </para></entry><entry thead="no"><para>Glue code </para></entry></row>
+<row>
+<entry thead="no"><para>**CMake** </para></entry><entry thead="no"><para>Build system </para></entry></row>
+<row>
+<entry thead="no"><para>**OpenGL3.3** </para></entry><entry thead="no"><para>Rendering, shaders </para></entry></row>
+<row>
+<entry thead="no"><para>**SDL2** </para></entry><entry thead="no"><para>Cross-platform Audio/Input/Window handling </para></entry></row>
+<row>
+<entry thead="no"><para>**Opus** </para></entry><entry thead="no"><para>Audio codec </para></entry></row>
+<row>
+<entry thead="no"><para><ulink url="https://github.com/SFTtech/nyan"><bold>nyan</bold></ulink> </para></entry><entry thead="no"><para>Content Configuration and Modding </para></entry></row>
+<row>
+<entry thead="no"><para>**Humans** </para></entry><entry thead="no"><para>Mixing together all of the above </para></entry></row>
+</table>
+</para><para><heading level="2">Goals </heading>
+</para><para><itemizedlist>
+<listitem><para>Fully authentic look and feel<itemizedlist>
+<listitem><para>This can only be approximated, since the behaviour of the original game is mostly undocumented, and guessing/experimenting can only get you this close</para></listitem><listitem><para>We will not implement useless artificial limitations (max 30 selectable units...)</para></listitem></itemizedlist>
+</para></listitem><listitem><para>Multiplayer (obviously)</para></listitem><listitem><para>Matchmaking and ranking with a <ulink url="https://github.com/SFTtech/openage-masterserver">haskell masterserver</ulink></para></listitem><listitem><para>Optionally, <ulink url="/doc/ideas/">improvements</ulink> over the original game</para></listitem><listitem><para>AI scripting in Python, you can use <ulink url="http://scikit-learn.org/stable/">machine learning</ulink><itemizedlist>
+<listitem><para>here is some <ulink url="http://www.deeplearningbook.org/">additional literature</ulink></para></listitem></itemizedlist>
+</para></listitem><listitem><para>Re-creating <ulink url="https://github.com/SFTtech/openage-data">free game assets</ulink></para></listitem><listitem><para>An easily-moddable content format: <ulink url="https://github.com/SFTtech/nyan"><bold>nyan</bold> yet another notation</ulink></para></listitem><listitem><para>An integrated Python console and API, comparable to <ulink url="https://www.blender.org/">blender</ulink></para></listitem><listitem><para>Awesome infrastructure such as our own <ulink url="https://github.com/SFTtech/kevin">Kevin CI service</ulink></para></listitem></itemizedlist>
+</para><para>But beware, for sanity reasons:</para><para><itemizedlist>
+<listitem><para>No network compatibility with the original game. You really wanna have the same problems again?</para></listitem><listitem><para>No binary compatibility with the original game. A one-way script to convert maps/savegames/missions to openage is planned though.</para></listitem></itemizedlist>
+</para><para><heading level="2">Current State of the Project </heading>
+</para><para><itemizedlist>
+<listitem><para>What features are currently implemented?<itemizedlist>
+<listitem><para>See /doc/status.md &quot;doc/status.md&quot;.</para></listitem></itemizedlist>
+</para></listitem><listitem><para>What&apos;s the plan?<itemizedlist>
+<listitem><para>See /doc/milestones.md &quot;doc/milestones.md&quot;. We also have <ulink url="/doc/ideas">lists of crazy xor good ideas</ulink> and a /doc/ideas/fr_technical_overview.md &quot;technical overview for requested features&quot;.</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para><para><heading level="2">Installation Packages </heading>
+</para><para><bold>Supported Platforms:</bold> Linux, Windows 10, MacOS X 10.14</para><para><itemizedlist>
+<listitem><para>For <bold>Linux</bold> check at <ulink url="https://repology.org/project/openage/versions">repology</ulink> if your distribution has any packages available or <ulink url="https://bintray.com/simonsan/openage-packages/openage-linux-releases">here</ulink> for any future updates on *.deb and AppImage packages.</para></listitem><listitem><para>For <bold>Windows</bold> check our <ulink url="https://github.com/SFTtech/openage/releases">release page</ulink> for the latest installer or <ulink url="https://dl.bintray.com/simonsan/openage-packages/">here</ulink> for nightly builds.</para><para><bold>NOTE:</bold> If you have any problems starting conversion or starting <emphasis>openage</emphasis> take a look into the package instructions and our /doc/troubleshooting.md &quot;troubleshooting guide&quot;.</para><para><bold>NOTE:</bold> For <bold>MacOSX</bold> we don&apos;t have packages, but here you can check the the build status <ulink url="https://api.travis-ci.com/simonsan/openage.svg?branch=master"></ulink></para><para>We also have building instructions in /doc/build_instructions/os_x_10.14_mojave.md &quot;here&quot;.</para></listitem></itemizedlist>
+</para><para><heading level="2">Dependencies, Building and Running </heading>
+</para><para><itemizedlist>
+<listitem><para>How do I get this to run on my box?<itemizedlist>
+<listitem><para>See /doc/building.md &quot;doc/building.md&quot;.</para></listitem></itemizedlist>
+</para></listitem><listitem><para>I compiled everything. Now how do I run it?<itemizedlist>
+<listitem><para>Execute <computeroutput>./run</computeroutput>.</para></listitem><listitem><para>/doc/media_convert.md &quot;The convert script&quot; will transform original assets into openage formats, which are a lot saner and more moddable.</para></listitem><listitem><para>Use your brain and react to the things you&apos;ll see.</para></listitem></itemizedlist>
+</para></listitem><listitem><para>Waaaaaah! It<itemizedlist>
+<listitem><para>segfaults</para></listitem><listitem><para>prints error messages I don&apos;t want to read</para></listitem><listitem><para>ate my dog</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para><para>All of those are features, not bugs.</para><para>To turn them off, use <computeroutput>./run --dont-segfault --no-errors --dont-eat-dog</computeroutput>.</para><para>If this still does not help, try our /doc/troubleshooting.md &quot;troubleshooting guide&quot;, the <ulink url="#contact">contact section</ulink> or the <ulink url="https://github.com/SFTtech/openage/issues">bug tracker</ulink>.</para><para><heading level="1">Contributing </heading>
+</para><para><itemizedlist>
+<listitem><para>Being typical computer science students, we hate people.</para></listitem><listitem><para>Please don&apos;t contact us.</para></listitem><listitem><para>Nobody likes Age of Empires anyway.</para></listitem><listitem><para>None of you is interested in making openage more awesome anyway.</para></listitem><listitem><para>We don&apos;t want a community.</para></listitem><listitem><para>Don&apos;t even think about trying to help.</para></listitem></itemizedlist>
+</para><para>Guidelines:</para><para><itemizedlist>
+<listitem><para>No <bold>bug reports</bold> or <bold>feature requests</bold>, the game is perfect as is.</para></listitem><listitem><para>Don&apos;t try to <bold>fix any bugs</bold>, see above.</para></listitem><listitem><para>Don&apos;t implement any features, your code is crap.</para></listitem><listitem><para>Don&apos;t even think about sending a <bold>pull request</bold>.</para></listitem><listitem><para>Please ignore the <ulink url="https://github.com/SFTtech/openage/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22">easy tasks</ulink> that <ulink url="https://github.com/SFTtech/openage/issues?q=is:issue+is:open+label:%22just+do+it%22">could just be done</ulink>.</para></listitem><listitem><para>Absolutely never ever participate in this <ulink url="https://www.reddit.com/r/openage/">boring community</ulink>.</para></listitem><listitem><para>Don&apos;t note the irony, you idiot.</para></listitem></itemizedlist>
+</para><para>To prevent accidental violation of one of those guidelines, you should <emphasis>never</emphasis></para><para><itemizedlist>
+<listitem><para><ulink url="https://git-scm.com/book/">learn git</ulink></para></listitem><listitem><para><ulink url="https://help.github.com/articles/fork-a-repo">fork the repo</ulink></para></listitem><listitem><para><ulink url="https://docs.python.org/3/tutorial/appetite.html">learn python</ulink></para></listitem><listitem><para><ulink url="http://www.cplusplus.com/doc/tutorial/">learn c++</ulink></para></listitem><listitem><para>read the code and documentation</para></listitem><listitem><para>/doc/contributing.md &quot;contribute&quot; anything to the code</para></listitem><listitem><para><ulink url="#contact">contact us</ulink></para></listitem></itemizedlist>
+</para><para>Cheers, happy hecking.</para><para><heading level="2">Development Process </heading>
+</para><para>What does openage development look like in practice?<itemizedlist>
+<listitem><para>extensive <ulink url="#contact">synchronization</ulink>!</para></listitem><listitem><para>/doc/development.md &quot;doc/development.md&quot;.</para></listitem></itemizedlist>
+</para><para>Can I help?<itemizedlist>
+<listitem><para>/doc/contributing.md &quot;doc/contributing.md&quot;.</para></listitem></itemizedlist>
+</para><para>All documentation is also in this repo:</para><para><itemizedlist>
+<listitem><para>Code documentation is embedded in the sources for Doxygen (see /doc/README.md &quot;doc readme&quot;).</para></listitem><listitem><para>Have a look at the <ulink url="/doc/">doc directory</ulink>. This folder tends to outdate when code changes.</para></listitem></itemizedlist>
+</para><para><heading level="2">License </heading>
+</para><para><bold>GNU GPLv3</bold> or later; see copying.md and <ulink url="/legal/GPLv3">legal/GPLv3</ulink>.</para><para>I know that probably nobody is ever gonna look at the <computeroutput>copying.md</computeroutput> file, but if you want to contribute code to openage, please take the time to skim through it and add yourself to the authors list. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

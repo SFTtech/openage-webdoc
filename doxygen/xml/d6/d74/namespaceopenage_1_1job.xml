@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d6/d74/namespaceopenage_1_1job" kind="namespace" language="C++">
+    <compoundname>openage::job</compoundname>
+    <innerclass refid="d1/dce/classopenage_1_1job_1_1_abortable_job_state" prot="public">openage::job::AbortableJobState</innerclass>
+    <innerclass refid="d6/d48/classopenage_1_1job_1_1_job" prot="public">openage::job::Job</innerclass>
+    <innerclass refid="d1/d16/classopenage_1_1job_1_1_job_aborted_exception" prot="public">openage::job::JobAbortedException</innerclass>
+    <innerclass refid="d1/d28/classopenage_1_1job_1_1_job_group" prot="public">openage::job::JobGroup</innerclass>
+    <innerclass refid="dc/d9a/classopenage_1_1job_1_1_job_manager" prot="public">openage::job::JobManager</innerclass>
+    <innerclass refid="d5/d82/classopenage_1_1job_1_1_job_state" prot="public">openage::job::JobState</innerclass>
+    <innerclass refid="de/da1/classopenage_1_1job_1_1_job_state_base" prot="public">openage::job::JobStateBase</innerclass>
+    <innerclass refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base" prot="public">openage::job::TypedJobStateBase</innerclass>
+    <innerclass refid="d5/d79/classopenage_1_1job_1_1_worker" prot="public">openage::job::Worker</innerclass>
+    <innernamespace refid="d3/d5d/namespaceopenage_1_1job_1_1tests">openage::job::tests</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d6/d74/namespaceopenage_1_1job_1a3e3a23d8e117aba5577c273f75ed630e" prot="public" static="no">
+        <type>std::function&lt; T()&gt;</type>
+        <definition>using openage::job::job_function_t = typedef std::function&lt;T()&gt;</definition>
+        <argsstring></argsstring>
+        <name>job_function_t</name>
+        <briefdescription>
+<para>Type of a function that is executed by a job and returns a result. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the job&apos;s result type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/types.h" line="16" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/types.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d6/d74/namespaceopenage_1_1job_1aae93538aa9f8440cd9bbd3fe67d88e75" prot="public" static="no">
+        <type>std::function&lt; T(std::function&lt; bool()&gt;, std::function&lt; void()&gt;)&gt;</type>
+        <definition>using openage::job::abortable_function_t = typedef std::function&lt;T(std::function&lt;bool()&gt;,std::function&lt;void()&gt;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>abortable_function_t</name>
+        <briefdescription>
+<para>Type of a function that is executed by a job and returns a result. </para>        </briefdescription>
+        <detaileddescription>
+<para>It can be aborted using the two passed function objects.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the job&apos;s result type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/types.h" line="25" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/types.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d6/d74/namespaceopenage_1_1job_1aa7f614139b9f8585d91285475c260c2f" prot="public" static="no">
+        <type>std::function&lt; T()&gt;</type>
+        <definition>using openage::job::result_function_t = typedef std::function&lt;T()&gt;</definition>
+        <argsstring></argsstring>
+        <name>result_function_t</name>
+        <briefdescription>
+<para>Type of a function to retrieve the result of a job. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the job threw an exception, it is rethrown by this function.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the job&apos;s result type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/types.h" line="34" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/types.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d6/d74/namespaceopenage_1_1job_1a9e457e59ab065783dbb679ab82cfdfa4" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="d6/d74/namespaceopenage_1_1job_1aa7f614139b9f8585d91285475c260c2f" kindref="member">result_function_t</ref>&lt; T &gt;)&gt;</type>
+        <definition>using openage::job::callback_function_t = typedef std::function&lt;void(result_function_t&lt;T&gt;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>callback_function_t</name>
+        <briefdescription>
+<para>Type of a job&apos;s callback function, which is called, when a job has finished. </para>        </briefdescription>
+        <detaileddescription>
+<para>The passed result function object is used to retrieve the job&apos;s result.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the job&apos;s result type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/types.h" line="43" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/types.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d6/d74/namespaceopenage_1_1job_1aa67062d8c4a001038067eb490177604b" prot="public" static="no">
+        <type>std::function&lt; bool()&gt;</type>
+        <definition>using openage::job::should_abort_t = typedef std::function&lt;bool()&gt;</definition>
+        <argsstring></argsstring>
+        <name>should_abort_t</name>
+        <briefdescription>
+<para>Type of a function that returns whether a job should be aborted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/types.h" line="46" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/types.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d6/d74/namespaceopenage_1_1job_1a8e43d5cc58984baa7a8d4f3ea294cee8" prot="public" static="no">
+        <type>std::function&lt; void()&gt;</type>
+        <definition>using openage::job::abort_t = typedef std::function&lt;void()&gt;</definition>
+        <argsstring></argsstring>
+        <name>abort_t</name>
+        <briefdescription>
+<para>Type of a function that aborts a job. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/types.h" line="49" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/types.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="22" column="1"/>
+  </compounddef>
+</doxygen>

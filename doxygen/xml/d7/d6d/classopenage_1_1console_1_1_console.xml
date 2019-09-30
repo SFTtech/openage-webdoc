@@ -1,0 +1,884 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d7/d6d/classopenage_1_1console_1_1_console" kind="class" language="C++" prot="public">
+    <compoundname>openage::console::Console</compoundname>
+    <basecompoundref refid="da/dc5/classopenage_1_1_input_handler" prot="private" virt="non-virtual">openage::InputHandler</basecompoundref>
+    <basecompoundref refid="d1/da0/classopenage_1_1_tick_handler" prot="private" virt="non-virtual">openage::TickHandler</basecompoundref>
+    <basecompoundref refid="dd/dba/classopenage_1_1_hud_handler" prot="private" virt="non-virtual">openage::HudHandler</basecompoundref>
+    <basecompoundref refid="db/d8a/classopenage_1_1_resize_handler" prot="private" virt="non-virtual">openage::ResizeHandler</basecompoundref>
+    <includes refid="d0/de3/console_8h" local="no">console.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d7/d6d/classopenage_1_1console_1_1_console_1a275f8903f340585c59536854129d4931" prot="protected" static="no" mutable="no">
+        <type><ref refid="d6/d40/classopenage_1_1_engine" kindref="compound">Engine</ref> *</type>
+        <definition>Engine* openage::console::Console::engine</definition>
+        <argsstring></argsstring>
+        <name>engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="60" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a4e0359f0f3cbbf66da045ba1a33ffa57" compoundref="d9/dda/console_8cpp" startline="126" endline="152">interpret</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a1ce3c30cdc768559e11fc548cbcbddd8" compoundref="d9/dda/console_8cpp" startline="164" endline="172">on_drawhud</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1ab5e30408417ac212bd3f35e50edd3a82" compoundref="d9/dda/console_8cpp" startline="60" endline="108">register_to_engine</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a8a86e7fece57c47da16e37633c624ece" compoundref="d9/dda/console_8cpp" startline="110" endline="119">set_visible</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d7/d6d/classopenage_1_1console_1_1_console_1a005c1608c8128b7312134b47be2ca2ca" prot="public" static="no" mutable="no">
+        <type><ref refid="d2/d89/structopenage_1_1coord_1_1camhud" kindref="compound">coord::camhud</ref></type>
+        <definition>coord::camhud openage::console::Console::bottomleft</definition>
+        <argsstring></argsstring>
+        <name>bottomleft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="63" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a0e1f861a8f19ed84b00c580d50d9f49f" compoundref="d9/dda/console_8cpp" startline="25" endline="46">Console</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a9e8a7d06ccbf4e5bf402e87cf4726ffb" compoundref="d9/dda/console_8cpp" startline="191" endline="199">on_resize</referencedby>
+        <referencedby refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ad603edf799bbe6017b89fd25a6ed4512" compoundref="da/d9f/draw_8cpp" startline="22" endline="89">openage::console::draw::to_opengl</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d6d/classopenage_1_1console_1_1_console_1ac0aa3142154a9048bcebf0681efccec8" prot="public" static="no" mutable="no">
+        <type><ref refid="d2/d89/structopenage_1_1coord_1_1camhud" kindref="compound">coord::camhud</ref></type>
+        <definition>coord::camhud openage::console::Console::topright</definition>
+        <argsstring></argsstring>
+        <name>topright</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="64" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a0e1f861a8f19ed84b00c580d50d9f49f" compoundref="d9/dda/console_8cpp" startline="25" endline="46">Console</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a9e8a7d06ccbf4e5bf402e87cf4726ffb" compoundref="d9/dda/console_8cpp" startline="191" endline="199">on_resize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d6d/classopenage_1_1console_1_1_console_1affa7cf7767200b98fd7e3b9e2ed7fea7" prot="public" static="no" mutable="no">
+        <type><ref refid="d2/d89/structopenage_1_1coord_1_1camhud" kindref="compound">coord::camhud</ref></type>
+        <definition>coord::camhud openage::console::Console::charsize</definition>
+        <argsstring></argsstring>
+        <name>charsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="65" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a0e1f861a8f19ed84b00c580d50d9f49f" compoundref="d9/dda/console_8cpp" startline="25" endline="46">Console</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a9e8a7d06ccbf4e5bf402e87cf4726ffb" compoundref="d9/dda/console_8cpp" startline="191" endline="199">on_resize</referencedby>
+        <referencedby refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ad603edf799bbe6017b89fd25a6ed4512" compoundref="da/d9f/draw_8cpp" startline="22" endline="89">openage::console::draw::to_opengl</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d6d/classopenage_1_1console_1_1_console_1a6464555281f8b3e43de594460911737c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d2/dea/structopenage_1_1util_1_1col" kindref="compound">util::col</ref> &gt;</type>
+        <definition>std::vector&lt;util::col&gt; openage::console::Console::termcolors</definition>
+        <argsstring></argsstring>
+        <name>termcolors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="67" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a0e1f861a8f19ed84b00c580d50d9f49f" compoundref="d9/dda/console_8cpp" startline="25" endline="46">Console</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a31dd3007762052acacdb2b1750bc3905" compoundref="d9/dda/console_8cpp" startline="50" endline="58">load_colors</referencedby>
+        <referencedby refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ad603edf799bbe6017b89fd25a6ed4512" compoundref="da/d9f/draw_8cpp" startline="22" endline="89">openage::console::draw::to_opengl</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d6d/classopenage_1_1console_1_1_console_1aa5ddaf2967b33d917593dd147a1058ee" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool openage::console::Console::visible</definition>
+        <argsstring></argsstring>
+        <name>visible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="69" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" bodystart="69" bodyend="-1"/>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a0e1f861a8f19ed84b00c580d50d9f49f" compoundref="d9/dda/console_8cpp" startline="25" endline="46">Console</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a1ce3c30cdc768559e11fc548cbcbddd8" compoundref="d9/dda/console_8cpp" startline="164" endline="172">on_drawhud</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1af42e9fbab2caf9c762303b7d55f85d3a" compoundref="d9/dda/console_8cpp" startline="174" endline="189">on_input</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1ae061753f445808da5dbc813dd0e0f4da" compoundref="d9/dda/console_8cpp" startline="154" endline="162">on_tick</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1ab5e30408417ac212bd3f35e50edd3a82" compoundref="d9/dda/console_8cpp" startline="60" endline="108">register_to_engine</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a8a86e7fece57c47da16e37633c624ece" compoundref="d9/dda/console_8cpp" startline="110" endline="119">set_visible</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d6d/classopenage_1_1console_1_1_console_1a8557c875f6648526e3e17264aed71210" prot="public" static="no" mutable="no">
+        <type><ref refid="d9/db3/classopenage_1_1console_1_1_buf" kindref="compound">Buf</ref></type>
+        <definition>Buf openage::console::Console::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="71" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a0e1f861a8f19ed84b00c580d50d9f49f" compoundref="d9/dda/console_8cpp" startline="25" endline="46">Console</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a9e8a7d06ccbf4e5bf402e87cf4726ffb" compoundref="d9/dda/console_8cpp" startline="191" endline="199">on_resize</referencedby>
+        <referencedby refid="d4/d99/classopenage_1_1util_1_1filelike_1_1stream_1_1_stream_seek_buffer_1a37e1fc79dc2eeffcd4d529e9607db220" compoundref="d7/d0e/stream_8py" startline="53" endline="87">openage.util.filelike.stream.StreamSeekBuffer.read</referencedby>
+        <referencedby refid="df/d79/classopenage_1_1cabextract_1_1lzxdstream_1_1_l_z_x_d_stream_1a383153d8dbaf96c6e8ad44a200b2cfce" compoundref="d2/d93/lzxdstream_8py" startline="67" endline="80">openage.cabextract.lzxdstream.LZXDStream.read</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1ab5e30408417ac212bd3f35e50edd3a82" compoundref="d9/dda/console_8cpp" startline="60" endline="108">register_to_engine</referencedby>
+        <referencedby refid="d4/d99/classopenage_1_1util_1_1filelike_1_1stream_1_1_stream_seek_buffer_1ac3ea3ea3ade1644ef5d17d0231375d4b" compoundref="d7/d0e/stream_8py" startline="49" endline="52">openage.util.filelike.stream.StreamSeekBuffer.resetwrappeed</referencedby>
+        <referencedby refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ad603edf799bbe6017b89fd25a6ed4512" compoundref="da/d9f/draw_8cpp" startline="22" endline="89">openage::console::draw::to_opengl</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a4d97e8f7fc2d7ba24490bf5f0b494332" compoundref="d9/dda/console_8cpp" startline="121" endline="124">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d6d/classopenage_1_1console_1_1_console_1ab1d376fb1fd8b179e8c464671e16ba3a" prot="public" static="no" mutable="no">
+        <type><ref refid="df/db8/classopenage_1_1renderer_1_1_font" kindref="compound">renderer::Font</ref></type>
+        <definition>renderer::Font openage::console::Console::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="72" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a0e1f861a8f19ed84b00c580d50d9f49f" compoundref="d9/dda/console_8cpp" startline="25" endline="46">Console</referencedby>
+        <referencedby refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ad603edf799bbe6017b89fd25a6ed4512" compoundref="da/d9f/draw_8cpp" startline="22" endline="89">openage::console::draw::to_opengl</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d6d/classopenage_1_1console_1_1_console_1a103f6555f63a2cc87eef702322c66585" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/d57/classopenage_1_1input_1_1_input_context" kindref="compound">input::InputContext</ref></type>
+        <definition>input::InputContext openage::console::Console::input_context</definition>
+        <argsstring></argsstring>
+        <name>input_context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="74" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1ab5e30408417ac212bd3f35e50edd3a82" compoundref="d9/dda/console_8cpp" startline="60" endline="108">register_to_engine</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a8a86e7fece57c47da16e37633c624ece" compoundref="d9/dda/console_8cpp" startline="110" endline="119">set_visible</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d6d/classopenage_1_1console_1_1_console_1ad348b9c975750b5b6f6f9f533ca8bcea" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string openage::console::Console::command</definition>
+        <argsstring></argsstring>
+        <name>command</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="77" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1ab5e30408417ac212bd3f35e50edd3a82" compoundref="d9/dda/console_8cpp" startline="60" endline="108">register_to_engine</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d6d/classopenage_1_1console_1_1_console_1a0e1f861a8f19ed84b00c580d50d9f49f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::console::Console::Console</definition>
+        <argsstring>(Engine *engine)</argsstring>
+        <name>Console</name>
+        <param>
+          <type><ref refid="d6/d40/classopenage_1_1_engine" kindref="compound">Engine</ref> *</type>
+          <declname>engine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="28" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.cpp" bodystart="25" bodyend="46"/>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a005c1608c8128b7312134b47be2ca2ca" compoundref="d0/de3/console_8h" startline="63">bottomleft</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a8557c875f6648526e3e17264aed71210" compoundref="d0/de3/console_8h" startline="71">buf</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1affa7cf7767200b98fd7e3b9e2ed7fea7" compoundref="d0/de3/console_8h" startline="65">charsize</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a5cb08687f485da2549d7eebef26368a6" compoundref="d7/d66/log_2____init_____8py" startline="107" endline="110">openage::log.dbg</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1ab1d376fb1fd8b179e8c464671e16ba3a" compoundref="d0/de3/console_8h" startline="72">font</references>
+        <references refid="df/db8/classopenage_1_1renderer_1_1_font_1a2fac4e6433df045834538de8e814fc13" compoundref="dd/d53/font_8cpp" startline="163" endline="189">openage::renderer::Font::get_advance_width</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ae0e0cf2f6bb5e5c324ff9f4554ec2852" compoundref="d3/d0f/buf_8cpp" startline="1162" endline="1164">openage::console::Buf::get_dims</references>
+        <references refid="df/db8/classopenage_1_1renderer_1_1_font_1aa5cbff2acbc06b04b76fb6f7492b24fe" compoundref="dd/d53/font_8cpp" startline="147" endline="156">openage::renderer::Font::get_line_height</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a6464555281f8b3e43de594460911737c" compoundref="d0/de3/console_8h" startline="67">termcolors</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1ac0aa3142154a9048bcebf0681efccec8" compoundref="d0/de3/console_8h" startline="64">topright</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1aa5ddaf2967b33d917593dd147a1058ee" compoundref="d0/de3/console_8h" startline="69">visible</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d6d/classopenage_1_1console_1_1_console_1ae2d69839f8be1652ba4f61b9af4c8bb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::console::Console::~Console</definition>
+        <argsstring>()</argsstring>
+        <name>~Console</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="29" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.cpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d6d/classopenage_1_1console_1_1_console_1a31dd3007762052acacdb2b1750bc3905" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Console::load_colors</definition>
+        <argsstring>(std::vector&lt; gamedata::palette_color &gt; &amp;colortable)</argsstring>
+        <name>load_colors</name>
+        <param>
+          <type>std::vector&lt; gamedata::palette_color &gt; &amp;</type>
+          <declname>colortable</declname>
+        </param>
+        <briefdescription>
+<para>load the consoles color table </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="34" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.cpp" bodystart="50" bodyend="58"/>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" compoundref="d7/d66/log_2____init_____8py" startline="122" endline="125">openage::log.err</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a6464555281f8b3e43de594460911737c" compoundref="d0/de3/console_8h" startline="67">termcolors</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d6d/classopenage_1_1console_1_1_console_1ab5e30408417ac212bd3f35e50edd3a82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Console::register_to_engine</definition>
+        <argsstring>()</argsstring>
+        <name>register_to_engine</name>
+        <briefdescription>
+<para>register this console to the engine. </para>        </briefdescription>
+        <detaileddescription>
+<para>this leads to the drawing calls, and input handling. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="40" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.cpp" bodystart="60" bodyend="108"/>
+        <references refid="d1/d51/classopenage_1_1input_1_1_event_1a99740091e0cdf50a32f93b70967df361" compoundref="df/dc7/input_2event_8cpp" startline="59" endline="61">openage::input::Event::as_char</references>
+        <references refid="d1/d51/classopenage_1_1input_1_1_event_1a1c423e3dac033838c02e10a69c521056" compoundref="df/dc7/input_2event_8cpp" startline="64" endline="66">openage::input::Event::as_utf8</references>
+        <references refid="d7/d57/classopenage_1_1input_1_1_input_context_1a32c669bab23aa04b6d17309b21486ffa" compoundref="d9/d6c/input__context_8cpp" startline="34" endline="36">openage::input::InputContext::bind</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a8557c875f6648526e3e17264aed71210" compoundref="d0/de3/console_8h" startline="71">buf</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1ad348b9c975750b5b6f6f9f533ca8bcea" compoundref="d0/de3/console_8h" startline="77">command</references>
+        <references refid="dd/d2d/structopenage_1_1input_1_1action__arg__t_1a75c7dda55a421ea33b2503f69fe2383a" compoundref="d9/d00/input_2action_8h" startline="74">openage::input::action_arg_t::e</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a275f8903f340585c59536854129d4931" compoundref="d0/de3/console_8h" startline="60">engine</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1ab6233b0bf461be4bb1633cd9f7e7f08b" compoundref="da/d5c/engine_8cpp" startline="505" endline="507">openage::Engine::get_action_manager</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a06819b1b5f717d9fbf45bc098e7fd457" compoundref="d5/d7f/input__manager_8cpp" startline="139" endline="141">openage::input::InputManager::get_global_context</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1a248149eac4678d70fe55d6ba5cdc695a" compoundref="da/d5c/engine_8cpp" startline="513" endline="515">openage::Engine::get_input_manager</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a103f6555f63a2cc87eef702322c66585" compoundref="d0/de3/console_8h" startline="74">input_context</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a4e0359f0f3cbbf66da045ba1a33ffa57" compoundref="d9/dda/console_8cpp" startline="126" endline="152">interpret</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1a278a7af94e412aa285e58d870c64a849a473d7f95e1409a797f859f013fbccaa2">openage::input::NONPRINT</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a698e2cce3ee2d13637bc55da38232a95" compoundref="d3/d0f/buf_8cpp" startline="393" endline="414">openage::console::Buf::pop_last_char</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1a3fd2662bc4b40777d9432af165c8b213" compoundref="da/d5c/engine_8cpp" startline="469" endline="475">openage::Engine::register_drawhud_action</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1a73fdf4e650bd81de3414ba5997a9129f" compoundref="da/d5c/engine_8cpp" startline="461" endline="463">openage::Engine::register_input_action</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1a90a9eb968b51cb8166c058afff334eca" compoundref="da/d5c/engine_8cpp" startline="481" endline="483">openage::Engine::register_resize_action</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1a39f0d187a32285eaa2dca377aee8be45" compoundref="da/d5c/engine_8cpp" startline="465" endline="467">openage::Engine::register_tick_action</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a8a86e7fece57c47da16e37633c624ece" compoundref="d9/dda/console_8cpp" startline="110" endline="119">set_visible</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1a278a7af94e412aa285e58d870c64a849aeb7ee0fb585e2ac64fdc086466c474b1">openage::input::UTF8</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1a66c182e7a6c17284f918dd401d6fded3" compoundref="df/dc7/input_2event_8cpp" startline="152" endline="154">openage::input::utf8</references>
+        <references refid="d7/d57/classopenage_1_1input_1_1_input_context_1a190c561c895ffc95c2f3092e47509737" compoundref="dd/d92/input__context_8h" startline="92">openage::input::InputContext::utf8_mode</references>
+        <references refid="de/d60/namespaceopenage_1_1util_1a82a1e7bf14b6f49be2d5fe4ec89f920e" compoundref="dd/d9c/unicode_8cpp" startline="167" endline="169">openage::util::utf8_pop_back</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1aa5ddaf2967b33d917593dd147a1058ee" compoundref="d0/de3/console_8h" startline="69">visible</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a3db6d160e44c8db825a37c0cfbc143ea" compoundref="d3/d0f/buf_8cpp" startline="309" endline="320">openage::console::Buf::write</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d6d/classopenage_1_1console_1_1_console_1a8a86e7fece57c47da16e37633c624ece" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Console::set_visible</definition>
+        <argsstring>(bool make_visible)</argsstring>
+        <name>set_visible</name>
+        <param>
+          <type>bool</type>
+          <declname>make_visible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="42" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.cpp" bodystart="110" bodyend="119"/>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a275f8903f340585c59536854129d4931" compoundref="d0/de3/console_8h" startline="60">engine</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1a248149eac4678d70fe55d6ba5cdc695a" compoundref="da/d5c/engine_8cpp" startline="513" endline="515">openage::Engine::get_input_manager</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a103f6555f63a2cc87eef702322c66585" compoundref="d0/de3/console_8h" startline="74">input_context</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2ece2b2ad4a08c15fb00a39b0f553d3c" compoundref="d5/d7f/input__manager_8cpp" startline="152" endline="157">openage::input::InputManager::push_context</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a469024c2b2ac7769e0fa578c73fde160" compoundref="d5/d7f/input__manager_8cpp" startline="160" endline="172">openage::input::InputManager::remove_context</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1aa5ddaf2967b33d917593dd147a1058ee" compoundref="d0/de3/console_8h" startline="69">visible</references>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a4e0359f0f3cbbf66da045ba1a33ffa57" compoundref="d9/dda/console_8cpp" startline="126" endline="152">interpret</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1ab5e30408417ac212bd3f35e50edd3a82" compoundref="d9/dda/console_8cpp" startline="60" endline="108">register_to_engine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/d6d/classopenage_1_1console_1_1_console_1a4d97e8f7fc2d7ba24490bf5f0b494332" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Console::write</definition>
+        <argsstring>(const char *text)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>prints the given text on the console. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="47" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.cpp" bodystart="121" bodyend="124"/>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a8557c875f6648526e3e17264aed71210" compoundref="d0/de3/console_8h" startline="71">buf</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a3db6d160e44c8db825a37c0cfbc143ea" compoundref="d3/d0f/buf_8cpp" startline="309" endline="320">openage::console::Buf::write</references>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a4e0359f0f3cbbf66da045ba1a33ffa57" compoundref="d9/dda/console_8cpp" startline="126" endline="152">interpret</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/d6d/classopenage_1_1console_1_1_console_1a4e0359f0f3cbbf66da045ba1a33ffa57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Console::interpret</definition>
+        <argsstring>(const std::string &amp;command)</argsstring>
+        <name>interpret</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+<para>a temporary console command interpreter </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="52" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.cpp" bodystart="126" bodyend="152"/>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a275f8903f340585c59536854129d4931" compoundref="d0/de3/console_8h" startline="60">engine</references>
+        <references refid="db/db2/classopenage_1_1cvar_1_1_c_var_manager_1abf47769212763bbf43146a97443779da" compoundref="d1/dc4/cvar_8cpp" startline="27" endline="33">openage::cvar::CVarManager::get</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1ab9a7642ba035448c4a3c22e11ad40646" compoundref="da/d5c/engine_8cpp" startline="509" endline="511">openage::Engine::get_cvar_manager</references>
+        <references refid="da/d23/namespaceopenage_1a0093da9e88fad4b564ffa3c2fed20f20a6438c669e0d0de98e6929c2cc0fac474">openage::line</references>
+        <references refid="d9/d52/classopenage_1_1options_1_1_option_node_1a39b02a21c2c4b5693dba2e515a81dd2d" compoundref="d5/d1e/options_8cpp" startline="249" endline="266">openage::options::OptionNode::list_options</references>
+        <references refid="db/db2/classopenage_1_1cvar_1_1_c_var_manager_1a972739b7927c488b0761a10319653e8a" compoundref="d1/dc4/cvar_8cpp" startline="36" endline="41">openage::cvar::CVarManager::set</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a8a86e7fece57c47da16e37633c624ece" compoundref="d9/dda/console_8cpp" startline="110" endline="119">set_visible</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a4d97e8f7fc2d7ba24490bf5f0b494332" compoundref="d9/dda/console_8cpp" startline="121" endline="124">write</references>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1ab5e30408417ac212bd3f35e50edd3a82" compoundref="d9/dda/console_8cpp" startline="60" endline="108">register_to_engine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/d6d/classopenage_1_1console_1_1_console_1a1ce3c30cdc768559e11fc548cbcbddd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::console::Console::on_drawhud</definition>
+        <argsstring>() override</argsstring>
+        <name>on_drawhud</name>
+        <reimplements refid="dd/dba/classopenage_1_1_hud_handler_1a52d98b171b853a47609d924e1d1fca48">on_drawhud</reimplements>
+        <briefdescription>
+<para>execute the drawing action. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="54" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.cpp" bodystart="164" bodyend="172"/>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a275f8903f340585c59536854129d4931" compoundref="d0/de3/console_8h" startline="60">engine</references>
+        <references refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ad603edf799bbe6017b89fd25a6ed4512" compoundref="da/d9f/draw_8cpp" startline="22" endline="89">openage::console::draw::to_opengl</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1aa5ddaf2967b33d917593dd147a1058ee" compoundref="d0/de3/console_8h" startline="69">visible</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d6d/classopenage_1_1console_1_1_console_1ae061753f445808da5dbc813dd0e0f4da" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::console::Console::on_tick</definition>
+        <argsstring>() override</argsstring>
+        <name>on_tick</name>
+        <reimplements refid="d1/da0/classopenage_1_1_tick_handler_1a1a30e127fd708cf29600b0aa0ff402f7">on_tick</reimplements>
+        <briefdescription>
+<para>execute the tick action. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="55" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.cpp" bodystart="154" bodyend="162"/>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1aa5ddaf2967b33d917593dd147a1058ee" compoundref="d0/de3/console_8h" startline="69">visible</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d6d/classopenage_1_1console_1_1_console_1af42e9fbab2caf9c762303b7d55f85d3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::console::Console::on_input</definition>
+        <argsstring>(SDL_Event *event) override</argsstring>
+        <name>on_input</name>
+        <reimplements refid="da/dc5/classopenage_1_1_input_handler_1ad2e50fdb45b1d46170ac0882518742e5">on_input</reimplements>
+        <param>
+          <type>SDL_Event *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>execute the input handler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="56" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.cpp" bodystart="174" bodyend="189"/>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1aa5ddaf2967b33d917593dd147a1058ee" compoundref="d0/de3/console_8h" startline="69">visible</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d6d/classopenage_1_1console_1_1_console_1a9e8a7d06ccbf4e5bf402e87cf4726ffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::console::Console::on_resize</definition>
+        <argsstring>(coord::viewport_delta new_size) override</argsstring>
+        <name>on_resize</name>
+        <reimplements refid="db/d8a/classopenage_1_1_resize_handler_1ac89fb1c1c32643ec234210884fc6b29d">on_resize</reimplements>
+        <param>
+          <type><ref refid="d5/d5e/structopenage_1_1coord_1_1viewport__delta" kindref="compound">coord::viewport_delta</ref></type>
+          <declname>new_size</declname>
+        </param>
+        <briefdescription>
+<para>execute the resize handler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="57" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.cpp" bodystart="191" bodyend="199"/>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a005c1608c8128b7312134b47be2ca2ca" compoundref="d0/de3/console_8h" startline="63">bottomleft</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1a8557c875f6648526e3e17264aed71210" compoundref="d0/de3/console_8h" startline="71">buf</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1affa7cf7767200b98fd7e3b9e2ed7fea7" compoundref="d0/de3/console_8h" startline="65">charsize</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ae0e0cf2f6bb5e5c324ff9f4554ec2852" compoundref="d3/d0f/buf_8cpp" startline="1162" endline="1164">openage::console::Buf::get_dims</references>
+        <references refid="d7/d6d/classopenage_1_1console_1_1_console_1ac0aa3142154a9048bcebf0681efccec8" compoundref="d0/de3/console_8h" startline="64">topright</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="838">
+        <label>openage::TickHandler</label>
+        <link refid="d1/da0/classopenage_1_1_tick_handler"/>
+      </node>
+      <node id="836">
+        <label>openage::console::Console</label>
+        <link refid="d7/d6d/classopenage_1_1console_1_1_console"/>
+        <childnode refid="837" relation="private-inheritance">
+        </childnode>
+        <childnode refid="838" relation="private-inheritance">
+        </childnode>
+        <childnode refid="839" relation="private-inheritance">
+        </childnode>
+        <childnode refid="840" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="839">
+        <label>openage::HudHandler</label>
+        <link refid="dd/dba/classopenage_1_1_hud_handler"/>
+      </node>
+      <node id="840">
+        <label>openage::ResizeHandler</label>
+        <link refid="db/d8a/classopenage_1_1_resize_handler"/>
+      </node>
+      <node id="837">
+        <label>openage::InputHandler</label>
+        <link refid="da/dc5/classopenage_1_1_input_handler"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="892">
+        <label>CoordXYAbsolute&lt; pixel_t, camhud, camhud_delta &gt;</label>
+      </node>
+      <node id="881">
+        <label>CoordNeSeUpAbsolute&lt; phys_t, phys3, phys3_delta &gt;</label>
+      </node>
+      <node id="856">
+        <label>openage::util::Path</label>
+        <link refid="dd/dc1/classopenage_1_1util_1_1_path"/>
+      </node>
+      <node id="866">
+        <label>openage::EngineSignals</label>
+        <link refid="de/dbb/classopenage_1_1_engine_signals"/>
+        <childnode refid="867" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="891">
+        <label>openage::coord::camhud</label>
+        <link refid="d2/d89/structopenage_1_1coord_1_1camhud"/>
+        <childnode refid="892" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="882">
+        <label>openage::coord::camgame_delta</label>
+        <link refid="d5/d40/structopenage_1_1coord_1_1camgame__delta"/>
+        <childnode refid="883" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="861">
+        <label>openage::util::VariableBase</label>
+        <link refid="da/d0a/classopenage_1_1util_1_1_variable_base"/>
+      </node>
+      <node id="868">
+        <label>openage::ScreenshotManager</label>
+        <link refid="d5/dfd/classopenage_1_1_screenshot_manager"/>
+        <childnode refid="869" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+        <childnode refid="870" relation="usage">
+          <edgelabel>+window_size</edgelabel>
+        </childnode>
+      </node>
+      <node id="863">
+        <label>T</label>
+      </node>
+      <node id="871">
+        <label>CoordXYRelative&lt; pixel_t, viewport, viewport_delta &gt;</label>
+      </node>
+      <node id="843">
+        <label>openage::TickHandler</label>
+        <link refid="d1/da0/classopenage_1_1_tick_handler"/>
+      </node>
+      <node id="860">
+        <label>openage::util::Variable&lt; bool &gt;</label>
+        <link refid="df/d2d/classopenage_1_1util_1_1_variable"/>
+        <childnode refid="861" relation="public-inheritance">
+        </childnode>
+        <childnode refid="862" relation="template-instance">
+          <edgelabel>&lt; bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="867">
+        <label>QObject</label>
+      </node>
+      <node id="890">
+        <label>CoordXYAbsolute&lt; term_t, term, term_delta &gt;</label>
+      </node>
+      <node id="855">
+        <label>openage::cvar::CVarManager</label>
+        <link refid="db/db2/classopenage_1_1cvar_1_1_c_var_manager"/>
+        <childnode refid="856" relation="usage">
+          <edgelabel>-path</edgelabel>
+        </childnode>
+      </node>
+      <node id="880">
+        <label>openage::coord::phys3</label>
+        <link refid="d2/da4/structopenage_1_1coord_1_1phys3"/>
+        <childnode refid="881" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="841">
+        <label>openage::console::Console</label>
+        <link refid="d7/d6d/classopenage_1_1console_1_1_console"/>
+        <childnode refid="842" relation="private-inheritance">
+        </childnode>
+        <childnode refid="843" relation="private-inheritance">
+        </childnode>
+        <childnode refid="844" relation="private-inheritance">
+        </childnode>
+        <childnode refid="845" relation="private-inheritance">
+        </childnode>
+        <childnode refid="846" relation="usage">
+          <edgelabel>+font</edgelabel>
+        </childnode>
+        <childnode refid="848" relation="usage">
+          <edgelabel>+input_context</edgelabel>
+        </childnode>
+        <childnode refid="857" relation="usage">
+          <edgelabel>#engine</edgelabel>
+        </childnode>
+        <childnode refid="885" relation="usage">
+          <edgelabel>+buf</edgelabel>
+        </childnode>
+        <childnode refid="891" relation="usage">
+          <edgelabel>+charsize</edgelabel>
+          <edgelabel>+bottomleft</edgelabel>
+          <edgelabel>+topright</edgelabel>
+        </childnode>
+      </node>
+      <node id="874">
+        <label>openage::util::ExternalProfiler</label>
+        <link refid="dd/d6f/classopenage_1_1util_1_1_external_profiler"/>
+      </node>
+      <node id="858">
+        <label>openage::options::OptionNode</label>
+        <link refid="d9/d52/classopenage_1_1options_1_1_option_node"/>
+        <childnode refid="858" relation="usage">
+          <edgelabel>-parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="878">
+        <label>openage::coord::viewport</label>
+        <link refid="d2/dcd/structopenage_1_1coord_1_1viewport"/>
+        <childnode refid="879" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="854">
+        <label>openage::input::ActionManager</label>
+        <link refid="d4/de2/classopenage_1_1input_1_1_action_manager"/>
+        <childnode refid="855" relation="usage">
+          <edgelabel>-cvar_manager</edgelabel>
+        </childnode>
+        <childnode refid="849" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="876">
+        <label>qtsdl::GuiSingletonItemsInfo</label>
+        <link refid="d2/dbf/classqtsdl_1_1_gui_singleton_items_info"/>
+      </node>
+      <node id="870">
+        <label>openage::coord::viewport_delta</label>
+        <link refid="d5/d5e/structopenage_1_1coord_1_1viewport__delta"/>
+        <childnode refid="871" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="844">
+        <label>openage::HudHandler</label>
+        <link refid="dd/dba/classopenage_1_1_hud_handler"/>
+      </node>
+      <node id="888">
+        <label>openage::util::utf8_decoder</label>
+        <link refid="d3/d0c/classopenage_1_1util_1_1utf8__decoder"/>
+      </node>
+      <node id="853">
+        <label>CoordXYRelative&lt; pixel_t, input, input_delta &gt;</label>
+      </node>
+      <node id="886">
+        <label>openage::console::buf_char</label>
+        <link refid="d7/d20/structopenage_1_1console_1_1buf__char"/>
+      </node>
+      <node id="864">
+        <label>openage::options::Var&lt; T &gt;</label>
+        <link refid="d6/d6a/classopenage_1_1options_1_1_var"/>
+        <childnode refid="862" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="850">
+        <label>openage::coord::input</label>
+        <link refid="d8/d34/structopenage_1_1coord_1_1input"/>
+        <childnode refid="851" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="883">
+        <label>CoordXYRelative&lt; pixel_t, camgame, camgame_delta &gt;</label>
+      </node>
+      <node id="869">
+        <label>openage::job::JobManager</label>
+        <link refid="dc/d9a/classopenage_1_1job_1_1_job_manager"/>
+      </node>
+      <node id="851">
+        <label>CoordXYAbsolute&lt; pixel_t, input, input_delta &gt;</label>
+      </node>
+      <node id="872">
+        <label>openage::util::FrameCounter</label>
+        <link refid="d9/d71/classopenage_1_1util_1_1_frame_counter"/>
+        <childnode refid="873" relation="usage">
+          <edgelabel>-frame_timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="848">
+        <label>openage::input::InputContext</label>
+        <link refid="d7/d57/classopenage_1_1input_1_1_input_context"/>
+        <childnode refid="849" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="875">
+        <label>openage::gui::EngineQMLInfo</label>
+        <link refid="d4/d73/classopenage_1_1gui_1_1_engine_q_m_l_info"/>
+        <childnode refid="876" relation="public-inheritance">
+        </childnode>
+        <childnode refid="856" relation="usage">
+          <edgelabel>+asset_dir</edgelabel>
+        </childnode>
+        <childnode refid="857" relation="usage">
+          <edgelabel>+engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="884">
+        <label>openage::audio::AudioManager</label>
+        <link refid="d0/d62/classopenage_1_1audio_1_1_audio_manager"/>
+        <childnode refid="869" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="865">
+        <label>openage::util::Profiler</label>
+        <link refid="db/de7/classopenage_1_1util_1_1_profiler"/>
+        <childnode refid="857" relation="usage">
+          <edgelabel>-engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="857">
+        <label>openage::Engine</label>
+        <link refid="d6/d40/classopenage_1_1_engine"/>
+        <childnode refid="845" relation="public-inheritance">
+        </childnode>
+        <childnode refid="858" relation="public-inheritance">
+        </childnode>
+        <childnode refid="859" relation="usage">
+          <edgelabel>+drawing_huds</edgelabel>
+          <edgelabel>+drawing_debug_overlay</edgelabel>
+        </childnode>
+        <childnode refid="865" relation="usage">
+          <edgelabel>-profiler</edgelabel>
+        </childnode>
+        <childnode refid="856" relation="usage">
+          <edgelabel>-root_dir</edgelabel>
+        </childnode>
+        <childnode refid="866" relation="usage">
+          <edgelabel>+gui_signals</edgelabel>
+        </childnode>
+        <childnode refid="855" relation="usage">
+          <edgelabel>-cvar_manager</edgelabel>
+        </childnode>
+        <childnode refid="868" relation="usage">
+          <edgelabel>-screenshot_manager</edgelabel>
+        </childnode>
+        <childnode refid="872" relation="usage">
+          <edgelabel>-fps_counter</edgelabel>
+        </childnode>
+        <childnode refid="874" relation="usage">
+          <edgelabel>+external_profiler</edgelabel>
+        </childnode>
+        <childnode refid="849" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+        <childnode refid="875" relation="usage">
+          <edgelabel>-qml_info</edgelabel>
+        </childnode>
+        <childnode refid="877" relation="usage">
+          <edgelabel>+coord</edgelabel>
+        </childnode>
+        <childnode refid="869" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+        <childnode refid="854" relation="usage">
+          <edgelabel>-action_manager</edgelabel>
+        </childnode>
+        <childnode refid="884" relation="usage">
+          <edgelabel>-audio_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="879">
+        <label>CoordXYAbsolute&lt; pixel_t, viewport, viewport_delta &gt;</label>
+      </node>
+      <node id="889">
+        <label>openage::coord::term</label>
+        <link refid="df/dc5/structopenage_1_1coord_1_1term"/>
+        <childnode refid="890" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="845">
+        <label>openage::ResizeHandler</label>
+        <link refid="db/d8a/classopenage_1_1_resize_handler"/>
+      </node>
+      <node id="859">
+        <label>openage::options::Var&lt; bool &gt;</label>
+        <link refid="d6/d6a/classopenage_1_1options_1_1_var"/>
+        <childnode refid="860" relation="public-inheritance">
+        </childnode>
+        <childnode refid="864" relation="template-instance">
+          <edgelabel>&lt; bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="852">
+        <label>openage::coord::input_delta</label>
+        <link refid="d8/db7/structopenage_1_1coord_1_1input__delta"/>
+        <childnode refid="853" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="887">
+        <label>openage::console::buf_line</label>
+        <link refid="dd/de2/structopenage_1_1console_1_1buf__line"/>
+      </node>
+      <node id="873">
+        <label>openage::util::Timer</label>
+        <link refid="d3/d81/classopenage_1_1util_1_1_timer"/>
+      </node>
+      <node id="846">
+        <label>openage::renderer::Font</label>
+        <link refid="df/db8/classopenage_1_1renderer_1_1_font"/>
+        <childnode refid="847" relation="usage">
+          <edgelabel>+description</edgelabel>
+        </childnode>
+      </node>
+      <node id="847">
+        <label>openage::renderer::font_description</label>
+        <link refid="d4/d2e/structopenage_1_1renderer_1_1font__description"/>
+      </node>
+      <node id="842">
+        <label>openage::InputHandler</label>
+        <link refid="da/dc5/classopenage_1_1_input_handler"/>
+      </node>
+      <node id="885">
+        <label>openage::console::Buf</label>
+        <link refid="d9/db3/classopenage_1_1console_1_1_buf"/>
+        <childnode refid="886" relation="usage">
+          <edgelabel>+chrdata_end</edgelabel>
+          <edgelabel>+screen_chrdata</edgelabel>
+          <edgelabel>+chrdata</edgelabel>
+          <edgelabel>+current_char_fmt</edgelabel>
+          <edgelabel>+default_char_fmt</edgelabel>
+        </childnode>
+        <childnode refid="887" relation="usage">
+          <edgelabel>+linedata</edgelabel>
+          <edgelabel>+screen_linedata</edgelabel>
+          <edgelabel>+linedata_end</edgelabel>
+        </childnode>
+        <childnode refid="888" relation="usage">
+          <edgelabel>+streamdecoder</edgelabel>
+        </childnode>
+        <childnode refid="889" relation="usage">
+          <edgelabel>+cursorpos</edgelabel>
+          <edgelabel>+dims</edgelabel>
+          <edgelabel>+saved_cursorpos</edgelabel>
+        </childnode>
+      </node>
+      <node id="862">
+        <label>openage::util::Variable&lt; T &gt;</label>
+        <link refid="df/d2d/classopenage_1_1util_1_1_variable"/>
+        <childnode refid="861" relation="public-inheritance">
+        </childnode>
+        <childnode refid="863" relation="usage">
+          <edgelabel>+value</edgelabel>
+        </childnode>
+      </node>
+      <node id="849">
+        <label>openage::input::InputManager</label>
+        <link refid="d7/df3/classopenage_1_1input_1_1_input_manager"/>
+        <childnode refid="842" relation="public-inheritance">
+        </childnode>
+        <childnode refid="850" relation="usage">
+          <edgelabel>-mouse_position</edgelabel>
+        </childnode>
+        <childnode refid="848" relation="usage">
+          <edgelabel>-global_context</edgelabel>
+        </childnode>
+        <childnode refid="852" relation="usage">
+          <edgelabel>-mouse_motion</edgelabel>
+        </childnode>
+        <childnode refid="854" relation="usage">
+          <edgelabel>-action_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="877">
+        <label>openage::coord::CoordManager</label>
+        <link refid="de/db5/classopenage_1_1coord_1_1_coord_manager"/>
+        <childnode refid="878" relation="usage">
+          <edgelabel>+camgame_viewport</edgelabel>
+          <edgelabel>+camhud_viewport</edgelabel>
+        </childnode>
+        <childnode refid="880" relation="usage">
+          <edgelabel>+camgame_phys</edgelabel>
+        </childnode>
+        <childnode refid="882" relation="usage">
+          <edgelabel>+tile_size</edgelabel>
+        </childnode>
+        <childnode refid="870" relation="usage">
+          <edgelabel>+viewport_size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" line="25" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.h" bodystart="25" bodyend="78"/>
+    <listofallmembers>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1a005c1608c8128b7312134b47be2ca2ca" prot="public" virt="non-virtual"><scope>openage::console::Console</scope><name>bottomleft</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1a8557c875f6648526e3e17264aed71210" prot="public" virt="non-virtual"><scope>openage::console::Console</scope><name>buf</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1affa7cf7767200b98fd7e3b9e2ed7fea7" prot="public" virt="non-virtual"><scope>openage::console::Console</scope><name>charsize</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1ad348b9c975750b5b6f6f9f533ca8bcea" prot="public" virt="non-virtual"><scope>openage::console::Console</scope><name>command</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1a0e1f861a8f19ed84b00c580d50d9f49f" prot="public" virt="non-virtual"><scope>openage::console::Console</scope><name>Console</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1a275f8903f340585c59536854129d4931" prot="protected" virt="non-virtual"><scope>openage::console::Console</scope><name>engine</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1ab1d376fb1fd8b179e8c464671e16ba3a" prot="public" virt="non-virtual"><scope>openage::console::Console</scope><name>font</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1a103f6555f63a2cc87eef702322c66585" prot="public" virt="non-virtual"><scope>openage::console::Console</scope><name>input_context</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1a4e0359f0f3cbbf66da045ba1a33ffa57" prot="public" virt="non-virtual"><scope>openage::console::Console</scope><name>interpret</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1a31dd3007762052acacdb2b1750bc3905" prot="public" virt="non-virtual"><scope>openage::console::Console</scope><name>load_colors</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1a1ce3c30cdc768559e11fc548cbcbddd8" prot="public" virt="virtual"><scope>openage::console::Console</scope><name>on_drawhud</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1af42e9fbab2caf9c762303b7d55f85d3a" prot="public" virt="virtual"><scope>openage::console::Console</scope><name>on_input</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1a9e8a7d06ccbf4e5bf402e87cf4726ffb" prot="public" virt="virtual"><scope>openage::console::Console</scope><name>on_resize</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1ae061753f445808da5dbc813dd0e0f4da" prot="public" virt="virtual"><scope>openage::console::Console</scope><name>on_tick</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1ab5e30408417ac212bd3f35e50edd3a82" prot="public" virt="non-virtual"><scope>openage::console::Console</scope><name>register_to_engine</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1a8a86e7fece57c47da16e37633c624ece" prot="public" virt="non-virtual"><scope>openage::console::Console</scope><name>set_visible</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1a6464555281f8b3e43de594460911737c" prot="public" virt="non-virtual"><scope>openage::console::Console</scope><name>termcolors</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1ac0aa3142154a9048bcebf0681efccec8" prot="public" virt="non-virtual"><scope>openage::console::Console</scope><name>topright</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1aa5ddaf2967b33d917593dd147a1058ee" prot="public" virt="non-virtual"><scope>openage::console::Console</scope><name>visible</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1a4d97e8f7fc2d7ba24490bf5f0b494332" prot="public" virt="non-virtual"><scope>openage::console::Console</scope><name>write</name></member>
+      <member refid="d7/d6d/classopenage_1_1console_1_1_console_1ae2d69839f8be1652ba4f61b9af4c8bb3" prot="public" virt="non-virtual"><scope>openage::console::Console</scope><name>~Console</name></member>
+      <member refid="dd/dba/classopenage_1_1_hud_handler_1a5b1435a782148709e7acf4a0dd94189f" prot="private" virt="virtual"><scope>openage::console::Console</scope><name>~HudHandler</name></member>
+      <member refid="da/dc5/classopenage_1_1_input_handler_1abdb25a0f6baffa8c6bd4d69671565fc6" prot="private" virt="virtual"><scope>openage::console::Console</scope><name>~InputHandler</name></member>
+      <member refid="db/d8a/classopenage_1_1_resize_handler_1afc4933884e9ebdfebc3d68b7bb2a8e69" prot="private" virt="virtual"><scope>openage::console::Console</scope><name>~ResizeHandler</name></member>
+      <member refid="d1/da0/classopenage_1_1_tick_handler_1ac15f0f314627bf50bbd1c9a4d430fd5c" prot="private" virt="virtual"><scope>openage::console::Console</scope><name>~TickHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

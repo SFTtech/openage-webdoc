@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>openage::job::TypedJobStateBase</compoundname>
+    <basecompoundref refid="de/da1/classopenage_1_1job_1_1_job_state_base" prot="public" virt="non-virtual">openage::job::JobStateBase</basecompoundref>
+    <derivedcompoundref refid="d1/dce/classopenage_1_1job_1_1_abortable_job_state" prot="public" virt="non-virtual">openage::job::AbortableJobState&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="d5/d82/classopenage_1_1job_1_1_job_state" prot="public" virt="non-virtual">openage::job::JobState&lt; T &gt;</derivedcompoundref>
+    <includes refid="da/d6c/typed__job__state__base_8h" local="no">typed_job_state_base.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1ad75c622c0f6282b5d58208099a0d70fa" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t openage::job::TypedJobStateBase&lt; T &gt;::thread_id</definition>
+        <argsstring></argsstring>
+        <name>thread_id</name>
+        <briefdescription>
+<para>Id of the thread, that created this job state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" line="29" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1abae19bb907d061aa9707b6ba619fe631" compoundref="da/d6c/typed__job__state__base_8h" startline="96" endline="98">openage::job::TypedJobStateBase&lt; T &gt;::get_thread_id</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a830096838fa28692b52e346b3b3e7294" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d74/namespaceopenage_1_1job_1a9e457e59ab065783dbb679ab82cfdfa4" kindref="member">callback_function_t</ref>&lt; T &gt;</type>
+        <definition>callback_function_t&lt;T&gt; openage::job::TypedJobStateBase&lt; T &gt;::callback</definition>
+        <argsstring></argsstring>
+        <name>callback</name>
+        <briefdescription>
+<para>A callback function that is called when the job has finished. </para>        </briefdescription>
+        <detaileddescription>
+<para>Can be empty. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" line="35" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a4c8a6b1c64e615799feafc50842dd93c" compoundref="da/d6c/typed__job__state__base_8h" startline="82" endline="94">openage::job::TypedJobStateBase&lt; T &gt;::execute_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a7d8c9d88ba8f01ae168995baf750af8e" prot="public" static="no" mutable="no">
+        <type>std::atomic_bool</type>
+        <definition>std::atomic_bool openage::job::TypedJobStateBase&lt; T &gt;::finished</definition>
+        <argsstring></argsstring>
+        <name>finished</name>
+        <briefdescription>
+<para>Whether the <ref refid="d6/d48/classopenage_1_1job_1_1_job" kindref="compound">Job</ref>&apos;s execution has already been finished. </para>        </briefdescription>
+        <detaileddescription>
+<para>An atomic_bool is used, as this field can be used by multiple threads. Thus explicit synchronization is avoided. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" line="42" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a12857f0200ece6f5d1205ea7f2c36a76" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T openage::job::TypedJobStateBase&lt; T &gt;::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <briefdescription>
+<para>The result of the <ref refid="d6/d48/classopenage_1_1job_1_1_job" kindref="compound">Job</ref>&apos;s executed function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" line="45" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a6f32f7f56cacd11e8efbd695997f1bdc" prot="public" static="no" mutable="no">
+        <type>std::exception_ptr</type>
+        <definition>std::exception_ptr openage::job::TypedJobStateBase&lt; T &gt;::exception</definition>
+        <argsstring></argsstring>
+        <name>exception</name>
+        <briefdescription>
+<para>If executing the <ref refid="d6/d48/classopenage_1_1job_1_1_job" kindref="compound">Job</ref> throws an exception, it is stored here. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" line="48" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a8e29b857a4d99759518b542746a02936" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>openage::job::TypedJobStateBase&lt; T &gt;::TypedJobStateBase</definition>
+        <argsstring>(callback_function_t&lt; T &gt; callback)</argsstring>
+        <name>TypedJobStateBase</name>
+        <param>
+          <type><ref refid="d6/d74/namespaceopenage_1_1job_1a9e457e59ab065783dbb679ab82cfdfa4" kindref="member">callback_function_t</ref>&lt; T &gt;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new typed job with the given callback. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" line="51" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" bodystart="51" bodyend="56"/>
+        <references refid="de/d60/namespaceopenage_1_1util_1ac99f61e1d0c06d9b83650a71cff2f02f" compoundref="df/d88/thread__id_8cpp" startline="44" endline="51">openage::util::get_current_thread_id</references>
+        <references refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1ab73f6b3ae1b61fd57f63f8fe8466582a">openage::job::TypedJobStateBase&lt; T &gt;::~TypedJobStateBase</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1ab73f6b3ae1b61fd57f63f8fe8466582a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual openage::job::TypedJobStateBase&lt; T &gt;::~TypedJobStateBase</definition>
+        <argsstring>()=default</argsstring>
+        <name>~TypedJobStateBase</name>
+        <briefdescription>
+<para>Default destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" line="59" column="1"/>
+        <referencedby refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a8e29b857a4d99759518b542746a02936" compoundref="da/d6c/typed__job__state__base_8h" startline="51" endline="56">openage::job::TypedJobStateBase&lt; T &gt;::TypedJobStateBase</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a417161d234770ebadb0f98ecf1fece50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::job::TypedJobStateBase&lt; T &gt;::execute</definition>
+        <argsstring>(should_abort_t should_abort) override</argsstring>
+        <name>execute</name>
+        <reimplements refid="de/da1/classopenage_1_1job_1_1_job_state_base_1a031e479cce5b10af52a28ccb5301b588">execute</reimplements>
+        <param>
+          <type><ref refid="d6/d74/namespaceopenage_1_1job_1aa67062d8c4a001038067eb490177604b" kindref="member">should_abort_t</ref></type>
+          <declname>should_abort</declname>
+        </param>
+        <briefdescription>
+<para>Executes the internal function object and stores its result. </para>        </briefdescription>
+        <detaileddescription>
+<para>Occuring exceptions are stored, as well. Returns whether this job has been aborted. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" line="66" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" bodystart="66" bodyend="76"/>
+        <references refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a6db4bc3757e40d5c04618c472ac75257">openage::job::TypedJobStateBase&lt; T &gt;::execute_and_get</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a4c8a6b1c64e615799feafc50842dd93c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void openage::job::TypedJobStateBase&lt; T &gt;::execute_callback</definition>
+        <argsstring>() override</argsstring>
+        <name>execute_callback</name>
+        <reimplements refid="de/da1/classopenage_1_1job_1_1_job_state_base_1ae5c8164b998e8a1ba780c3114e4492b4">execute_callback</reimplements>
+        <briefdescription>
+<para>Called when the job was finished. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the result notification for the place where the job was constructed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" line="82" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" bodystart="82" bodyend="94"/>
+        <references refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a830096838fa28692b52e346b3b3e7294" compoundref="da/d6c/typed__job__state__base_8h" startline="35">openage::job::TypedJobStateBase&lt; T &gt;::callback</references>
+        <references refid="d7/dce/error_2error_8h_1ae20e8a0a86b80f8211fdf87477524f87" compoundref="d7/dce/error_2error_8h" startline="155">ENSURE</references>
+        <references refid="da/d23/namespaceopenage_1a7278b1c0b8d94d06da155b0b693b2828a3734a903022249b3010be1897042568e">openage::move</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1abae19bb907d061aa9707b6ba619fe631" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t openage::job::TypedJobStateBase&lt; T &gt;::get_thread_id</definition>
+        <argsstring>() override</argsstring>
+        <name>get_thread_id</name>
+        <reimplements refid="de/da1/classopenage_1_1job_1_1_job_state_base_1aee0926a562a65f87308e1eda7d14040c">get_thread_id</reimplements>
+        <briefdescription>
+<para>Returns the id of the thread that has created this job. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" line="96" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" bodystart="96" bodyend="98"/>
+        <references refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a6db4bc3757e40d5c04618c472ac75257">openage::job::TypedJobStateBase&lt; T &gt;::execute_and_get</references>
+        <references refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1ad75c622c0f6282b5d58208099a0d70fa" compoundref="da/d6c/typed__job__state__base_8h" startline="29">openage::job::TypedJobStateBase&lt; T &gt;::thread_id</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a6db4bc3757e40d5c04618c472ac75257" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>T</type>
+        <definition>virtual T openage::job::TypedJobStateBase&lt; T &gt;::execute_and_get</definition>
+        <argsstring>(should_abort_t should_abort)=0</argsstring>
+        <name>execute_and_get</name>
+        <reimplementedby refid="d5/d82/classopenage_1_1job_1_1_job_state_1a79a232a28e4517f7dcb2c7dcd66eea41">execute_and_get</reimplementedby>
+        <reimplementedby refid="d1/dce/classopenage_1_1job_1_1_abortable_job_state_1abbf6faad72065feb6dcf3691cbbe52b5">execute_and_get</reimplementedby>
+        <param>
+          <type><ref refid="d6/d74/namespaceopenage_1_1job_1aa67062d8c4a001038067eb490177604b" kindref="member">should_abort_t</ref></type>
+          <declname>should_abort</declname>
+        </param>
+        <briefdescription>
+<para>Executes the job and returns the result. </para>        </briefdescription>
+        <detaileddescription>
+<para>If an exception is thrown it must be passed to the calling function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" line="105" column="1"/>
+        <referencedby refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a417161d234770ebadb0f98ecf1fece50" compoundref="da/d6c/typed__job__state__base_8h" startline="66" endline="76">openage::job::TypedJobStateBase&lt; T &gt;::execute</referencedby>
+        <referencedby refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1abae19bb907d061aa9707b6ba619fe631" compoundref="da/d6c/typed__job__state__base_8h" startline="96" endline="98">openage::job::TypedJobStateBase&lt; T &gt;::get_thread_id</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A templated job state base class, that implements basic functionality of job states. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the result type of this job state. This type must have a default constructor and support move semantics. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4028">
+        <label>openage::job::JobState&lt; T &gt;</label>
+        <link refid="d5/d82/classopenage_1_1job_1_1_job_state"/>
+        <childnode refid="4025" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4027">
+        <label>openage::job::AbortableJobState&lt; T &gt;</label>
+        <link refid="d1/dce/classopenage_1_1job_1_1_abortable_job_state"/>
+        <childnode refid="4025" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4025">
+        <label>openage::job::TypedJobStateBase&lt; T &gt;</label>
+        <link refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base"/>
+        <childnode refid="4026" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4026">
+        <label>openage::job::JobStateBase</label>
+        <link refid="de/da1/classopenage_1_1job_1_1_job_state_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4029">
+        <label>openage::job::TypedJobStateBase&lt; T &gt;</label>
+        <link refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base"/>
+        <childnode refid="4030" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4030">
+        <label>openage::job::JobStateBase</label>
+        <link refid="de/da1/classopenage_1_1job_1_1_job_state_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" line="26" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/job/typed_job_state_base.h" bodystart="26" bodyend="106"/>
+    <listofallmembers>
+      <member refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a830096838fa28692b52e346b3b3e7294" prot="public" virt="non-virtual"><scope>openage::job::TypedJobStateBase</scope><name>callback</name></member>
+      <member refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a6f32f7f56cacd11e8efbd695997f1bdc" prot="public" virt="non-virtual"><scope>openage::job::TypedJobStateBase</scope><name>exception</name></member>
+      <member refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a417161d234770ebadb0f98ecf1fece50" prot="public" virt="virtual"><scope>openage::job::TypedJobStateBase</scope><name>execute</name></member>
+      <member refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a6db4bc3757e40d5c04618c472ac75257" prot="protected" virt="pure-virtual"><scope>openage::job::TypedJobStateBase</scope><name>execute_and_get</name></member>
+      <member refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a4c8a6b1c64e615799feafc50842dd93c" prot="public" virt="virtual"><scope>openage::job::TypedJobStateBase</scope><name>execute_callback</name></member>
+      <member refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a7d8c9d88ba8f01ae168995baf750af8e" prot="public" virt="non-virtual"><scope>openage::job::TypedJobStateBase</scope><name>finished</name></member>
+      <member refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1abae19bb907d061aa9707b6ba619fe631" prot="public" virt="virtual"><scope>openage::job::TypedJobStateBase</scope><name>get_thread_id</name></member>
+      <member refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a12857f0200ece6f5d1205ea7f2c36a76" prot="public" virt="non-virtual"><scope>openage::job::TypedJobStateBase</scope><name>result</name></member>
+      <member refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1ad75c622c0f6282b5d58208099a0d70fa" prot="public" virt="non-virtual"><scope>openage::job::TypedJobStateBase</scope><name>thread_id</name></member>
+      <member refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1a8e29b857a4d99759518b542746a02936" prot="public" virt="non-virtual"><scope>openage::job::TypedJobStateBase</scope><name>TypedJobStateBase</name></member>
+      <member refid="de/da1/classopenage_1_1job_1_1_job_state_base_1a95e1cb836c2404c1166803684c5997de" prot="public" virt="virtual"><scope>openage::job::TypedJobStateBase</scope><name>~JobStateBase</name></member>
+      <member refid="d3/d8c/classopenage_1_1job_1_1_typed_job_state_base_1ab73f6b3ae1b61fd57f63f8fe8466582a" prot="public" virt="virtual"><scope>openage::job::TypedJobStateBase</scope><name>~TypedJobStateBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

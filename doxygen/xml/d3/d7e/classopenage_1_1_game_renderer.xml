@@ -1,0 +1,552 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d3/d7e/classopenage_1_1_game_renderer" kind="class" language="C++" prot="public">
+    <compoundname>openage::GameRenderer</compoundname>
+    <basecompoundref refid="d3/dbd/classopenage_1_1_draw_handler" prot="private" virt="non-virtual">openage::DrawHandler</basecompoundref>
+    <includes refid="da/db1/game__renderer_8h" local="no">game_renderer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d3/d7e/classopenage_1_1_game_renderer_1ae46ce85c8fea7c92b85f1e2b1c0cdfa2" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/d5b/classopenage_1_1_texture" kindref="compound">Texture</ref> *</type>
+        <definition>Texture* openage::GameRenderer::gaben</definition>
+        <argsstring></argsstring>
+        <name>gaben</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.h" line="56" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="d3/d7e/classopenage_1_1_game_renderer_1a153e060bb9dd679446e2a3090887590a" compoundref="d3/da1/game__renderer_8cpp" startline="36" endline="186">GameRenderer</referencedby>
+        <referencedby refid="d3/d7e/classopenage_1_1_game_renderer_1a0cc83cf1a6697522d581d220661081a4" compoundref="d3/da1/game__renderer_8cpp" startline="199" endline="213">on_draw</referencedby>
+        <referencedby refid="d3/d7e/classopenage_1_1_game_renderer_1a83040812fefc420ba1b9c55bcd29b52c" compoundref="d3/da1/game__renderer_8cpp" startline="188" endline="196">~GameRenderer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d7e/classopenage_1_1_game_renderer_1ab7c4b639063cc00b11634fb8dfe66304" prot="public" static="no" mutable="no">
+        <type><ref refid="dd/df6/classopenage_1_1_render_options" kindref="compound">RenderOptions</ref></type>
+        <definition>RenderOptions openage::GameRenderer::settings</definition>
+        <argsstring></argsstring>
+        <name>settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.h" line="58" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="d3/d7e/classopenage_1_1_game_renderer_1a153e060bb9dd679446e2a3090887590a" compoundref="d3/da1/game__renderer_8cpp" startline="36" endline="186">GameRenderer</referencedby>
+        <referencedby refid="d3/d7e/classopenage_1_1_game_renderer_1a0cc83cf1a6697522d581d220661081a4" compoundref="d3/da1/game__renderer_8cpp" startline="199" endline="213">on_draw</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d3/d7e/classopenage_1_1_game_renderer_1a4bc21e81b38641f10944aeecf1cd54dc" prot="private" static="no" mutable="no">
+        <type><ref refid="d6/d40/classopenage_1_1_engine" kindref="compound">Engine</ref> *</type>
+        <definition>Engine* openage::GameRenderer::engine</definition>
+        <argsstring></argsstring>
+        <name>engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.h" line="61" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="d3/d7e/classopenage_1_1_game_renderer_1a1824b69c5f78ed1db93b6fa6417fdf83" compoundref="d3/da1/game__renderer_8cpp" startline="215" endline="217">game</referencedby>
+        <referencedby refid="d3/d7e/classopenage_1_1_game_renderer_1a153e060bb9dd679446e2a3090887590a" compoundref="d3/da1/game__renderer_8cpp" startline="36" endline="186">GameRenderer</referencedby>
+        <referencedby refid="d3/d7e/classopenage_1_1_game_renderer_1a0cc83cf1a6697522d581d220661081a4" compoundref="d3/da1/game__renderer_8cpp" startline="199" endline="213">on_draw</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d7e/classopenage_1_1_game_renderer_1a153e060bb9dd679446e2a3090887590a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::GameRenderer::GameRenderer</definition>
+        <argsstring>(Engine *e)</argsstring>
+        <name>GameRenderer</name>
+        <param>
+          <type><ref refid="d6/d40/classopenage_1_1_engine" kindref="compound">Engine</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.h" line="41" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.cpp" bodystart="36" bodyend="186"/>
+        <references refid="db/d64/namespaceopenage_1_1teamcolor__shader_1a250c796f16cfb2e4ae0a31d812e500c4" compoundref="d2/d20/texture_8cpp" startline="29">openage::teamcolor_shader::alpha_marker_var</references>
+        <references refid="db/da3/namespaceopenage_1_1alphamask__shader_1a58775bda88577e4b2819a53e55ddd9be" compoundref="d2/d20/texture_8cpp" startline="34">openage::alphamask_shader::base_coord</references>
+        <references refid="db/da3/namespaceopenage_1_1alphamask__shader_1a39389a158565f7be3c74a786671bcbcc" compoundref="d2/d20/texture_8cpp" startline="34">openage::alphamask_shader::base_texture</references>
+        <references refid="d7/d57/classopenage_1_1input_1_1_input_context_1a32c669bab23aa04b6d17309b21486ffa" compoundref="d9/d6c/input__context_8cpp" startline="34" endline="36">openage::input::InputContext::bind</references>
+        <references refid="d2/d2b/namespaceopenage_1_1texturefont__shader_1a82374b732aa3c4123fee88dc25508564" compoundref="d3/dbb/text_8cpp" startline="16">openage::texturefont_shader::color</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a5cb08687f485da2549d7eebef26368a6" compoundref="d7/d66/log_2____init_____8py" startline="107" endline="110">openage::log.dbg</references>
+        <references refid="dd/df6/classopenage_1_1_render_options_1aa4161a856f857cc96774a07a7b2fa2b5" compoundref="da/db1/game__renderer_8h" startline="31">openage::RenderOptions::draw_debug</references>
+        <references refid="d3/d7e/classopenage_1_1_game_renderer_1a4bc21e81b38641f10944aeecf1cd54dc" compoundref="da/db1/game__renderer_8h" startline="61">engine</references>
+        <references refid="d3/d7e/classopenage_1_1_game_renderer_1ae46ce85c8fea7c92b85f1e2b1c0cdfa2" compoundref="da/db1/game__renderer_8h" startline="56">gaben</references>
+        <references refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a743f9d44332f84adb3eca195732ed09d" compoundref="d3/dba/input_2action_8cpp" startline="150" endline="157">openage::input::ActionManager::get</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1ab6233b0bf461be4bb1633cd9f7e7f08b" compoundref="da/d5c/engine_8cpp" startline="505" endline="507">openage::Engine::get_action_manager</references>
+        <references refid="d9/de4/classopenage_1_1shader_1_1_program_1a99b5e69d6cc3b17b942c5314c148731a" compoundref="d1/d14/program_8cpp" startline="118" endline="135">openage::shader::Program::get_attribute_id</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a06819b1b5f717d9fbf45bc098e7fd457" compoundref="d5/d7f/input__manager_8cpp" startline="139" endline="141">openage::input::InputManager::get_global_context</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1a248149eac4678d70fe55d6ba5cdc695a" compoundref="da/d5c/engine_8cpp" startline="513" endline="515">openage::Engine::get_input_manager</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1a1a34f025683f6be30e37154be879c354" compoundref="da/d5c/engine_8cpp" startline="485" endline="487">openage::Engine::get_root_dir</references>
+        <references refid="d9/de4/classopenage_1_1shader_1_1_program_1aecded60710ed9a7afb034bf0c402bd97" compoundref="d1/d14/program_8cpp" startline="114" endline="116">openage::shader::Program::get_uniform_id</references>
+        <references refid="da/d23/namespaceopenage_1a0093da9e88fad4b564ffa3c2fed20f20a6438c669e0d0de98e6929c2cc0fac474">openage::line</references>
+        <references refid="d9/de4/classopenage_1_1shader_1_1_program_1aa1776f13c5e6a6de8b21ecabee9962dc" compoundref="d1/d14/program_8cpp" startline="48" endline="65">openage::shader::Program::link</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="db/da3/namespaceopenage_1_1alphamask__shader_1aadcbcdb078318bc73e55755280dda70b" compoundref="d2/d20/texture_8cpp" startline="34">openage::alphamask_shader::mask_coord</references>
+        <references refid="db/da3/namespaceopenage_1_1alphamask__shader_1a64874bd7ffd0c4f356826976af477bb3" compoundref="d2/d20/texture_8cpp" startline="34">openage::alphamask_shader::mask_texture</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <references refid="dd/dc1/classopenage_1_1util_1_1_path_1a5b429e300ae4a048dbbd1a733bc1452a" compoundref="db/d2b/util_2path_8cpp" startline="111" endline="130">openage::util::Path::open</references>
+        <references refid="db/d64/namespaceopenage_1_1teamcolor__shader_1ae06f7518406e08c1c00ae0f281ecb4ef" compoundref="d2/d20/texture_8cpp" startline="29">openage::teamcolor_shader::player_color_var</references>
+        <references refid="db/d64/namespaceopenage_1_1teamcolor__shader_1a34ad1a040b992e6be28c954460c611f8" compoundref="d2/d20/texture_8cpp" startline="29">openage::teamcolor_shader::player_id_var</references>
+        <references refid="d2/d2b/namespaceopenage_1_1texturefont__shader_1a4b7dfc749fd189a6bd8d12bf2bd89a62" compoundref="d3/dbb/text_8cpp" startline="15">openage::texturefont_shader::program</references>
+        <references refid="d9/de8/namespaceopenage_1_1texture__shader_1a5b862f8ed8e822e082d52a12511eeec9" compoundref="d2/d20/texture_8cpp" startline="22">openage::texture_shader::program</references>
+        <references refid="db/d64/namespaceopenage_1_1teamcolor__shader_1a290de9c73d125cfbdbf583ee24cee3c8" compoundref="d2/d20/texture_8cpp" startline="27">openage::teamcolor_shader::program</references>
+        <references refid="db/da3/namespaceopenage_1_1alphamask__shader_1a91d9794fbedeb8a2ca32f79e13c860e3" compoundref="d2/d20/texture_8cpp" startline="33">openage::alphamask_shader::program</references>
+        <references refid="dc/d27/classopenage_1_1util_1_1_file_1ac7c3188dd66e5b7aa84bc5a538c93885" compoundref="df/dd5/file_8cpp" startline="46" endline="48">openage::util::File::read</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1a32161204054965fa310a15287087e619" compoundref="da/d5c/engine_8cpp" startline="477" endline="479">openage::Engine::register_draw_action</references>
+        <references refid="d9/d52/classopenage_1_1options_1_1_option_node_1a079876f216961d551413c7c0d73e9a06" compoundref="d5/d1e/options_8cpp" startline="306" endline="312">openage::options::OptionNode::set_parent</references>
+        <references refid="d3/d7e/classopenage_1_1_game_renderer_1ab7c4b639063cc00b11634fb8dfe66304" compoundref="da/db1/game__renderer_8h" startline="58">settings</references>
+        <references refid="dc/d74/classopenage_1_1_unit_action_1a0a84fac6b39ee42340f67905dd631956" compoundref="d8/d1f/unit_2action_8h" startline="173">openage::UnitAction::show_debug</references>
+        <references refid="db/da3/namespaceopenage_1_1alphamask__shader_1a4413a93ea827ac75b828f77f6cc69e17" compoundref="d2/d20/texture_8cpp" startline="34">openage::alphamask_shader::show_mask</references>
+        <references refid="d9/de4/classopenage_1_1shader_1_1_program_1abfd70a48ce216cf044f558328f8dfa4e" compoundref="d1/d14/program_8cpp" startline="110" endline="112">openage::shader::Program::stopusing</references>
+        <references refid="dd/df6/classopenage_1_1_render_options_1afa9ff97e7c4c0d15f01e0765f9a05ce0" compoundref="da/db1/game__renderer_8h" startline="32">openage::RenderOptions::terrain_blending</references>
+        <references refid="d2/d2b/namespaceopenage_1_1texturefont__shader_1a9783220dab674cce458e30335942571e" compoundref="d3/dbb/text_8cpp" startline="16">openage::texturefont_shader::tex_coord</references>
+        <references refid="d9/de8/namespaceopenage_1_1texture__shader_1afc27bd08aad20cadf84d8f39268876af" compoundref="d2/d20/texture_8cpp" startline="23">openage::texture_shader::tex_coord</references>
+        <references refid="db/d64/namespaceopenage_1_1teamcolor__shader_1a0d006aeb703278468eb6e97c4fca9abe" compoundref="d2/d20/texture_8cpp" startline="28">openage::teamcolor_shader::tex_coord</references>
+        <references refid="d2/d2b/namespaceopenage_1_1texturefont__shader_1a80b2cb1e92b294620d32e9378f795083" compoundref="d3/dbb/text_8cpp" startline="16">openage::texturefont_shader::texture</references>
+        <references refid="d9/de8/namespaceopenage_1_1texture__shader_1ab12adc72bbe0d0f68ad592800b3e57d4" compoundref="d2/d20/texture_8cpp" startline="23">openage::texture_shader::texture</references>
+        <references refid="db/d64/namespaceopenage_1_1teamcolor__shader_1a82581c01972dbc5864d834a7106b5802" compoundref="d2/d20/texture_8cpp" startline="28">openage::teamcolor_shader::texture</references>
+        <references refid="d9/de4/classopenage_1_1shader_1_1_program_1ab36b7c92db2a3e3ce76b79e0451b6978" compoundref="d1/d14/program_8cpp" startline="106" endline="108">openage::shader::Program::use</references>
+        <references refid="df/d2d/classopenage_1_1util_1_1_variable_1a2a5e67f8f00e6d539210f496513633b5" compoundref="da/d89/variable_8h" startline="49">openage::util::Variable&lt; T &gt;::value</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d7e/classopenage_1_1_game_renderer_1a83040812fefc420ba1b9c55bcd29b52c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::GameRenderer::~GameRenderer</definition>
+        <argsstring>()</argsstring>
+        <name>~GameRenderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.h" line="42" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.cpp" bodystart="188" bodyend="196"/>
+        <references refid="d3/d7e/classopenage_1_1_game_renderer_1ae46ce85c8fea7c92b85f1e2b1c0cdfa2" compoundref="da/db1/game__renderer_8h" startline="56">gaben</references>
+        <references refid="d2/d2b/namespaceopenage_1_1texturefont__shader_1a4b7dfc749fd189a6bd8d12bf2bd89a62" compoundref="d3/dbb/text_8cpp" startline="15">openage::texturefont_shader::program</references>
+        <references refid="d9/de8/namespaceopenage_1_1texture__shader_1a5b862f8ed8e822e082d52a12511eeec9" compoundref="d2/d20/texture_8cpp" startline="22">openage::texture_shader::program</references>
+        <references refid="db/d64/namespaceopenage_1_1teamcolor__shader_1a290de9c73d125cfbdbf583ee24cee3c8" compoundref="d2/d20/texture_8cpp" startline="27">openage::teamcolor_shader::program</references>
+        <references refid="db/da3/namespaceopenage_1_1alphamask__shader_1a91d9794fbedeb8a2ca32f79e13c860e3" compoundref="d2/d20/texture_8cpp" startline="33">openage::alphamask_shader::program</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d7e/classopenage_1_1_game_renderer_1a0cc83cf1a6697522d581d220661081a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::GameRenderer::on_draw</definition>
+        <argsstring>() override</argsstring>
+        <name>on_draw</name>
+        <reimplements refid="d3/dbd/classopenage_1_1_draw_handler_1a95c62d6a9b360af162a7506b96b6aa46">on_draw</reimplements>
+        <briefdescription>
+<para>execute the drawing action. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.h" line="44" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.cpp" bodystart="199" bodyend="213"/>
+        <references refid="d6/d40/classopenage_1_1_engine_1ad5478f5f2e6dba3a8b4aab3fe828ef3c" compoundref="d1/d55/engine_8h" startline="296">openage::Engine::coord</references>
+        <references refid="d4/d5b/classopenage_1_1_texture_1a0bb8ecfa34c39de191c45b95139da3ed" compoundref="d2/d20/texture_8cpp" startline="197" endline="201">openage::Texture::draw</references>
+        <references refid="d3/d7e/classopenage_1_1_game_renderer_1a4bc21e81b38641f10944aeecf1cd54dc" compoundref="da/db1/game__renderer_8h" startline="61">engine</references>
+        <references refid="d3/d7e/classopenage_1_1_game_renderer_1ae46ce85c8fea7c92b85f1e2b1c0cdfa2" compoundref="da/db1/game__renderer_8h" startline="56">gaben</references>
+        <references refid="d3/d7e/classopenage_1_1_game_renderer_1a1824b69c5f78ed1db93b6fa6417fdf83" compoundref="d3/da1/game__renderer_8cpp" startline="215" endline="217">game</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1a3e79c3919abbc3cab0716e4807f7c93e" compoundref="da/d5c/engine_8cpp" startline="489" endline="491">openage::Engine::get_game</references>
+        <references refid="d3/d7e/classopenage_1_1_game_renderer_1ab7c4b639063cc00b11634fb8dfe66304" compoundref="da/db1/game__renderer_8h" startline="58">settings</references>
+        <references refid="d9/d9c/classopenage_1_1_game_main_1a0a2423176e649f9865eb97fc0f187b63" compoundref="d9/db2/game__main_8h" startline="72">openage::GameMain::terrain</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d7e/classopenage_1_1_game_renderer_1a1824b69c5f78ed1db93b6fa6417fdf83" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/d9c/classopenage_1_1_game_main" kindref="compound">GameMain</ref> *</type>
+        <definition>GameMain * openage::GameRenderer::game</definition>
+        <argsstring>() const</argsstring>
+        <name>game</name>
+        <briefdescription>
+<para>the game this renderer is using </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.h" line="49" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.cpp" bodystart="215" bodyend="217"/>
+        <references refid="d3/d7e/classopenage_1_1_game_renderer_1a4bc21e81b38641f10944aeecf1cd54dc" compoundref="da/db1/game__renderer_8h" startline="61">engine</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1a3e79c3919abbc3cab0716e4807f7c93e" compoundref="da/d5c/engine_8cpp" startline="489" endline="491">openage::Engine::get_game</references>
+        <referencedby refid="d3/d7e/classopenage_1_1_game_renderer_1a5c385f1939e1c4a4ca3feb6813f68b06" compoundref="d3/da1/game__renderer_8cpp" startline="219" endline="221">game_spec</referencedby>
+        <referencedby refid="d3/d7e/classopenage_1_1_game_renderer_1a0cc83cf1a6697522d581d220661081a4" compoundref="d3/da1/game__renderer_8cpp" startline="199" endline="213">on_draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d7e/classopenage_1_1_game_renderer_1a5c385f1939e1c4a4ca3feb6813f68b06" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/d6a/classopenage_1_1_game_spec" kindref="compound">GameSpec</ref> *</type>
+        <definition>GameSpec * openage::GameRenderer::game_spec</definition>
+        <argsstring>() const</argsstring>
+        <name>game_spec</name>
+        <briefdescription>
+<para><ref refid="de/d6a/classopenage_1_1_game_spec" kindref="compound">GameSpec</ref> used by this renderer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.h" line="54" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.cpp" bodystart="219" bodyend="221"/>
+        <references refid="d3/d7e/classopenage_1_1_game_renderer_1a1824b69c5f78ed1db93b6fa6417fdf83" compoundref="d3/da1/game__renderer_8cpp" startline="215" endline="217">game</references>
+        <references refid="d9/d9c/classopenage_1_1_game_main_1a9c18854cb18678045a149d3dba99eba1" compoundref="d9/d96/game__main_8cpp" startline="59" endline="61">openage::GameMain::get_spec</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>renders the editor and action views </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2505">
+        <label>openage::DrawHandler</label>
+        <link refid="d3/dbd/classopenage_1_1_draw_handler"/>
+      </node>
+      <node id="2504">
+        <label>openage::GameRenderer</label>
+        <link refid="d3/d7e/classopenage_1_1_game_renderer"/>
+        <childnode refid="2505" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2544">
+        <label>CoordNeSeUpAbsolute&lt; phys_t, phys3, phys3_delta &gt;</label>
+      </node>
+      <node id="2509">
+        <label>openage::util::Path</label>
+        <link refid="dd/dc1/classopenage_1_1util_1_1_path"/>
+      </node>
+      <node id="2520">
+        <label>openage::EngineSignals</label>
+        <link refid="de/dbb/classopenage_1_1_engine_signals"/>
+        <childnode refid="2521" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2545">
+        <label>openage::coord::camgame_delta</label>
+        <link refid="d5/d40/structopenage_1_1coord_1_1camgame__delta"/>
+        <childnode refid="2546" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2515">
+        <label>openage::util::VariableBase</label>
+        <link refid="da/d0a/classopenage_1_1util_1_1_variable_base"/>
+      </node>
+      <node id="2523">
+        <label>openage::ScreenshotManager</label>
+        <link refid="d5/dfd/classopenage_1_1_screenshot_manager"/>
+        <childnode refid="2524" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+        <childnode refid="2525" relation="usage">
+          <edgelabel>+window_size</edgelabel>
+        </childnode>
+      </node>
+      <node id="2517">
+        <label>T</label>
+      </node>
+      <node id="2526">
+        <label>CoordXYRelative&lt; pixel_t, viewport, viewport_delta &gt;</label>
+      </node>
+      <node id="2514">
+        <label>openage::util::Variable&lt; bool &gt;</label>
+        <link refid="df/d2d/classopenage_1_1util_1_1_variable"/>
+        <childnode refid="2515" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2516" relation="template-instance">
+          <edgelabel>&lt; bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2521">
+        <label>QObject</label>
+      </node>
+      <node id="2507">
+        <label>openage::DrawHandler</label>
+        <link refid="d3/dbd/classopenage_1_1_draw_handler"/>
+      </node>
+      <node id="2522">
+        <label>openage::cvar::CVarManager</label>
+        <link refid="db/db2/classopenage_1_1cvar_1_1_c_var_manager"/>
+        <childnode refid="2509" relation="usage">
+          <edgelabel>-path</edgelabel>
+        </childnode>
+      </node>
+      <node id="2543">
+        <label>openage::coord::phys3</label>
+        <link refid="d2/da4/structopenage_1_1coord_1_1phys3"/>
+        <childnode refid="2544" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2548">
+        <label>openage::RenderOptions</label>
+        <link refid="dd/df6/classopenage_1_1_render_options"/>
+        <childnode refid="2512" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2513" relation="usage">
+          <edgelabel>+draw_debug</edgelabel>
+          <edgelabel>+terrain_blending</edgelabel>
+        </childnode>
+      </node>
+      <node id="2529">
+        <label>openage::util::ExternalProfiler</label>
+        <link refid="dd/d6f/classopenage_1_1util_1_1_external_profiler"/>
+      </node>
+      <node id="2512">
+        <label>openage::options::OptionNode</label>
+        <link refid="d9/d52/classopenage_1_1options_1_1_option_node"/>
+        <childnode refid="2512" relation="usage">
+          <edgelabel>-parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2541">
+        <label>openage::coord::viewport</label>
+        <link refid="d2/dcd/structopenage_1_1coord_1_1viewport"/>
+        <childnode refid="2542" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2537">
+        <label>openage::input::ActionManager</label>
+        <link refid="d4/de2/classopenage_1_1input_1_1_action_manager"/>
+        <childnode refid="2522" relation="usage">
+          <edgelabel>-cvar_manager</edgelabel>
+        </childnode>
+        <childnode refid="2530" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2508">
+        <label>openage::Texture</label>
+        <link refid="d4/d5b/classopenage_1_1_texture"/>
+        <childnode refid="2509" relation="usage">
+          <edgelabel>-filename</edgelabel>
+        </childnode>
+      </node>
+      <node id="2539">
+        <label>qtsdl::GuiSingletonItemsInfo</label>
+        <link refid="d2/dbf/classqtsdl_1_1_gui_singleton_items_info"/>
+      </node>
+      <node id="2525">
+        <label>openage::coord::viewport_delta</label>
+        <link refid="d5/d5e/structopenage_1_1coord_1_1viewport__delta"/>
+        <childnode refid="2526" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2536">
+        <label>CoordXYRelative&lt; pixel_t, input, input_delta &gt;</label>
+      </node>
+      <node id="2518">
+        <label>openage::options::Var&lt; T &gt;</label>
+        <link refid="d6/d6a/classopenage_1_1options_1_1_var"/>
+        <childnode refid="2516" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2532">
+        <label>openage::coord::input</label>
+        <link refid="d8/d34/structopenage_1_1coord_1_1input"/>
+        <childnode refid="2533" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2546">
+        <label>CoordXYRelative&lt; pixel_t, camgame, camgame_delta &gt;</label>
+      </node>
+      <node id="2524">
+        <label>openage::job::JobManager</label>
+        <link refid="dc/d9a/classopenage_1_1job_1_1_job_manager"/>
+      </node>
+      <node id="2533">
+        <label>CoordXYAbsolute&lt; pixel_t, input, input_delta &gt;</label>
+      </node>
+      <node id="2506">
+        <label>openage::GameRenderer</label>
+        <link refid="d3/d7e/classopenage_1_1_game_renderer"/>
+        <childnode refid="2507" relation="private-inheritance">
+        </childnode>
+        <childnode refid="2508" relation="usage">
+          <edgelabel>+gaben</edgelabel>
+        </childnode>
+        <childnode refid="2510" relation="usage">
+          <edgelabel>-engine</edgelabel>
+        </childnode>
+        <childnode refid="2548" relation="usage">
+          <edgelabel>+settings</edgelabel>
+        </childnode>
+      </node>
+      <node id="2527">
+        <label>openage::util::FrameCounter</label>
+        <link refid="d9/d71/classopenage_1_1util_1_1_frame_counter"/>
+        <childnode refid="2528" relation="usage">
+          <edgelabel>-frame_timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="2534">
+        <label>openage::input::InputContext</label>
+        <link refid="d7/d57/classopenage_1_1input_1_1_input_context"/>
+        <childnode refid="2530" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2538">
+        <label>openage::gui::EngineQMLInfo</label>
+        <link refid="d4/d73/classopenage_1_1gui_1_1_engine_q_m_l_info"/>
+        <childnode refid="2539" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2509" relation="usage">
+          <edgelabel>+asset_dir</edgelabel>
+        </childnode>
+        <childnode refid="2510" relation="usage">
+          <edgelabel>+engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="2547">
+        <label>openage::audio::AudioManager</label>
+        <link refid="d0/d62/classopenage_1_1audio_1_1_audio_manager"/>
+        <childnode refid="2524" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2519">
+        <label>openage::util::Profiler</label>
+        <link refid="db/de7/classopenage_1_1util_1_1_profiler"/>
+        <childnode refid="2510" relation="usage">
+          <edgelabel>-engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="2510">
+        <label>openage::Engine</label>
+        <link refid="d6/d40/classopenage_1_1_engine"/>
+        <childnode refid="2511" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2512" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2513" relation="usage">
+          <edgelabel>+drawing_huds</edgelabel>
+          <edgelabel>+drawing_debug_overlay</edgelabel>
+        </childnode>
+        <childnode refid="2519" relation="usage">
+          <edgelabel>-profiler</edgelabel>
+        </childnode>
+        <childnode refid="2509" relation="usage">
+          <edgelabel>-root_dir</edgelabel>
+        </childnode>
+        <childnode refid="2520" relation="usage">
+          <edgelabel>+gui_signals</edgelabel>
+        </childnode>
+        <childnode refid="2522" relation="usage">
+          <edgelabel>-cvar_manager</edgelabel>
+        </childnode>
+        <childnode refid="2523" relation="usage">
+          <edgelabel>-screenshot_manager</edgelabel>
+        </childnode>
+        <childnode refid="2527" relation="usage">
+          <edgelabel>-fps_counter</edgelabel>
+        </childnode>
+        <childnode refid="2529" relation="usage">
+          <edgelabel>+external_profiler</edgelabel>
+        </childnode>
+        <childnode refid="2530" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+        <childnode refid="2538" relation="usage">
+          <edgelabel>-qml_info</edgelabel>
+        </childnode>
+        <childnode refid="2540" relation="usage">
+          <edgelabel>+coord</edgelabel>
+        </childnode>
+        <childnode refid="2524" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+        <childnode refid="2537" relation="usage">
+          <edgelabel>-action_manager</edgelabel>
+        </childnode>
+        <childnode refid="2547" relation="usage">
+          <edgelabel>-audio_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2542">
+        <label>CoordXYAbsolute&lt; pixel_t, viewport, viewport_delta &gt;</label>
+      </node>
+      <node id="2511">
+        <label>openage::ResizeHandler</label>
+        <link refid="db/d8a/classopenage_1_1_resize_handler"/>
+      </node>
+      <node id="2513">
+        <label>openage::options::Var&lt; bool &gt;</label>
+        <link refid="d6/d6a/classopenage_1_1options_1_1_var"/>
+        <childnode refid="2514" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2518" relation="template-instance">
+          <edgelabel>&lt; bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2535">
+        <label>openage::coord::input_delta</label>
+        <link refid="d8/db7/structopenage_1_1coord_1_1input__delta"/>
+        <childnode refid="2536" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2528">
+        <label>openage::util::Timer</label>
+        <link refid="d3/d81/classopenage_1_1util_1_1_timer"/>
+      </node>
+      <node id="2531">
+        <label>openage::InputHandler</label>
+        <link refid="da/dc5/classopenage_1_1_input_handler"/>
+      </node>
+      <node id="2516">
+        <label>openage::util::Variable&lt; T &gt;</label>
+        <link refid="df/d2d/classopenage_1_1util_1_1_variable"/>
+        <childnode refid="2515" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2517" relation="usage">
+          <edgelabel>+value</edgelabel>
+        </childnode>
+      </node>
+      <node id="2530">
+        <label>openage::input::InputManager</label>
+        <link refid="d7/df3/classopenage_1_1input_1_1_input_manager"/>
+        <childnode refid="2531" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2532" relation="usage">
+          <edgelabel>-mouse_position</edgelabel>
+        </childnode>
+        <childnode refid="2534" relation="usage">
+          <edgelabel>-global_context</edgelabel>
+        </childnode>
+        <childnode refid="2535" relation="usage">
+          <edgelabel>-mouse_motion</edgelabel>
+        </childnode>
+        <childnode refid="2537" relation="usage">
+          <edgelabel>-action_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2540">
+        <label>openage::coord::CoordManager</label>
+        <link refid="de/db5/classopenage_1_1coord_1_1_coord_manager"/>
+        <childnode refid="2541" relation="usage">
+          <edgelabel>+camgame_viewport</edgelabel>
+          <edgelabel>+camhud_viewport</edgelabel>
+        </childnode>
+        <childnode refid="2543" relation="usage">
+          <edgelabel>+camgame_phys</edgelabel>
+        </childnode>
+        <childnode refid="2545" relation="usage">
+          <edgelabel>+tile_size</edgelabel>
+        </childnode>
+        <childnode refid="2525" relation="usage">
+          <edgelabel>+viewport_size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.h" line="39" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_renderer.h" bodystart="39" bodyend="63"/>
+    <listofallmembers>
+      <member refid="d3/d7e/classopenage_1_1_game_renderer_1a4bc21e81b38641f10944aeecf1cd54dc" prot="private" virt="non-virtual"><scope>openage::GameRenderer</scope><name>engine</name></member>
+      <member refid="d3/d7e/classopenage_1_1_game_renderer_1ae46ce85c8fea7c92b85f1e2b1c0cdfa2" prot="public" virt="non-virtual"><scope>openage::GameRenderer</scope><name>gaben</name></member>
+      <member refid="d3/d7e/classopenage_1_1_game_renderer_1a1824b69c5f78ed1db93b6fa6417fdf83" prot="public" virt="non-virtual"><scope>openage::GameRenderer</scope><name>game</name></member>
+      <member refid="d3/d7e/classopenage_1_1_game_renderer_1a5c385f1939e1c4a4ca3feb6813f68b06" prot="public" virt="non-virtual"><scope>openage::GameRenderer</scope><name>game_spec</name></member>
+      <member refid="d3/d7e/classopenage_1_1_game_renderer_1a153e060bb9dd679446e2a3090887590a" prot="public" virt="non-virtual"><scope>openage::GameRenderer</scope><name>GameRenderer</name></member>
+      <member refid="d3/d7e/classopenage_1_1_game_renderer_1a0cc83cf1a6697522d581d220661081a4" prot="public" virt="virtual"><scope>openage::GameRenderer</scope><name>on_draw</name></member>
+      <member refid="d3/d7e/classopenage_1_1_game_renderer_1ab7c4b639063cc00b11634fb8dfe66304" prot="public" virt="non-virtual"><scope>openage::GameRenderer</scope><name>settings</name></member>
+      <member refid="d3/dbd/classopenage_1_1_draw_handler_1a18b5457409d12c306c63135e94e5bfb7" prot="private" virt="virtual"><scope>openage::GameRenderer</scope><name>~DrawHandler</name></member>
+      <member refid="d3/d7e/classopenage_1_1_game_renderer_1a83040812fefc420ba1b9c55bcd29b52c" prot="public" virt="non-virtual"><scope>openage::GameRenderer</scope><name>~GameRenderer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

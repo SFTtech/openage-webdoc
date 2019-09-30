@@ -1,0 +1,654 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory" kind="class" language="Python" prot="public">
+    <compoundname>openage::util::fslike::directory::Directory</compoundname>
+    <basecompoundref refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object" prot="public" virt="non-virtual">openage.util.fslike.abstract.FSLikeObject</basecompoundref>
+    <derivedcompoundref refid="d0/d8a/classopenage_1_1util_1_1fslike_1_1directory_1_1_case_ignoring_directory" prot="public" virt="non-virtual">openage.util.fslike.directory.CaseIgnoringDirectory</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a9b605e81c1106a82ab8c4a4221ed43ff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>openage::util::fslike.directory.Directory::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="39" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="39" bodyend="-1"/>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1abbb32dc478b13e8cae25d6d505eefcbd" compoundref="d4/dae/directory_8py" startline="41" endline="43">openage.util.fslike.directory.Directory.__repr__</referencedby>
+        <referencedby refid="d0/d8a/classopenage_1_1util_1_1fslike_1_1directory_1_1_case_ignoring_directory_1ab533e87449e37812327d9a771186ab71" compoundref="d4/dae/directory_8py" startline="135" endline="137">openage.util.fslike.directory.CaseIgnoringDirectory.__repr__</referencedby>
+        <referencedby refid="d0/d8a/classopenage_1_1util_1_1fslike_1_1directory_1_1_case_ignoring_directory_1af57fc26b68b337aa0a8a36fce91a1790" compoundref="d4/dae/directory_8py" startline="142" endline="162">openage.util.fslike.directory.CaseIgnoringDirectory.actual_name</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</referencedby>
+        <referencedby refid="d0/d8a/classopenage_1_1util_1_1fslike_1_1directory_1_1_case_ignoring_directory_1a5e6cb3d9ce1feb5718b7a30158faa45e" compoundref="d4/dae/directory_8py" startline="163" endline="183">openage.util.fslike.directory.CaseIgnoringDirectory.resolve</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a593147786283242dd86370ad6f97e068" compoundref="d4/dae/directory_8py" startline="100" endline="112">openage.util.fslike.directory.Directory.writable</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a0aba1574a0d51aa0b8d4bd14f1174177" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.__init__</definition>
+        <argsstring>(self, path_, create_if_missing=False)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>path_</type>
+          <defname>path_</defname>
+        </param>
+        <param>
+          <type>create_if_missing</type>
+          <defname>create_if_missing</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="23" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="23" bodyend="40"/>
+        <references refid="d4/dd4/namespaceopenage_1_1py_1a5108334e805e942718d59b97160775d1" compoundref="d0/dee/pyobject_8cpp" startline="338" endline="342">openage::py::bytes</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1abbb32dc478b13e8cae25d6d505eefcbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.__repr__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__repr__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="41" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="41" bodyend="43"/>
+        <references refid="d0/df5/classopenage_1_1audio_1_1_dynamic_loader_1a527295cdc13c4a680af0ef0c022979f2" compoundref="d9/df3/dynamic__loader_8h" startline="26">openage::audio::DynamicLoader::path</references>
+        <references refid="d9/db1/classopenage_1_1audio_1_1_in_memory_loader_1a241525f491fad633191358da938c9472" compoundref="da/d8e/in__memory__loader_8h" startline="26">openage::audio::InMemoryLoader::path</references>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a9b605e81c1106a82ab8c4a4221ed43ff" compoundref="d4/dae/directory_8py" startline="39">openage.util.fslike.directory.Directory.path</references>
+        <references refid="d5/d1e/classopenage_1_1util_1_1filelike_1_1_native_1a5c59a8686c8a3374ae5f0cf38bbdf7d2" compoundref="d1/d72/filelike_2native_8h" startline="44">openage::util::filelike::Native::path</references>
+        <references refid="db/db2/classopenage_1_1cvar_1_1_c_var_manager_1a0aa073ffda4e894c0f62a108da465a89" compoundref="dd/d54/cvar_8h" startline="91">openage::cvar::CVarManager::path</references>
+        <references refid="d4/de5/classopenage_1_1audio_1_1_dynamic_resource_1a0c2bf4230af8628c0cc935e3423d1dec" compoundref="d4/d47/dynamic__resource_8h" startline="105">openage::audio::DynamicResource::path</references>
+        <references refid="dc/dd9/classopenage_1_1cabextract_1_1cab_1_1_c_f_file_1a28a782f1904cfb1a2e80bd141622b841" compoundref="d9/d50/cab_8py" startline="165">openage.cabextract.cab.CFFile.path</references>
+        <references refid="d2/d4e/classopenage_1_1_move_action_1a0b53b70c09f569929f40a4b870e4e42d" compoundref="d8/d1f/unit_2action_8h" startline="387">openage::MoveAction::path</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.resolve</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>resolve</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+<para>resolves parts to an actual path name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="45" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="45" bodyend="47"/>
+        <references refid="d0/df5/classopenage_1_1audio_1_1_dynamic_loader_1a527295cdc13c4a680af0ef0c022979f2" compoundref="d9/df3/dynamic__loader_8h" startline="26">openage::audio::DynamicLoader::path</references>
+        <references refid="d9/db1/classopenage_1_1audio_1_1_in_memory_loader_1a241525f491fad633191358da938c9472" compoundref="da/d8e/in__memory__loader_8h" startline="26">openage::audio::InMemoryLoader::path</references>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a9b605e81c1106a82ab8c4a4221ed43ff" compoundref="d4/dae/directory_8py" startline="39">openage.util.fslike.directory.Directory.path</references>
+        <references refid="d5/d1e/classopenage_1_1util_1_1filelike_1_1_native_1a5c59a8686c8a3374ae5f0cf38bbdf7d2" compoundref="d1/d72/filelike_2native_8h" startline="44">openage::util::filelike::Native::path</references>
+        <references refid="db/db2/classopenage_1_1cvar_1_1_c_var_manager_1a0aa073ffda4e894c0f62a108da465a89" compoundref="dd/d54/cvar_8h" startline="91">openage::cvar::CVarManager::path</references>
+        <references refid="d4/de5/classopenage_1_1audio_1_1_dynamic_resource_1a0c2bf4230af8628c0cc935e3423d1dec" compoundref="d4/d47/dynamic__resource_8h" startline="105">openage::audio::DynamicResource::path</references>
+        <references refid="dc/dd9/classopenage_1_1cabextract_1_1cab_1_1_c_f_file_1a28a782f1904cfb1a2e80bd141622b841" compoundref="d9/d50/cab_8py" startline="165">openage.cabextract.cab.CFFile.path</references>
+        <references refid="d2/d4e/classopenage_1_1_move_action_1a0b53b70c09f569929f40a4b870e4e42d" compoundref="d8/d1f/unit_2action_8h" startline="387">openage::MoveAction::path</references>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a4ac25f156e1e61aaf181aeac4a8ed536" compoundref="d4/dae/directory_8py" startline="70" endline="72">openage.util.fslike.directory.Directory.filesize</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a4b6007750c576514ea97305cd10299b1" compoundref="d4/dae/directory_8py" startline="63" endline="65">openage.util.fslike.directory.Directory.get_native_path</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a2cd6e092ef3d99243d60ba7d05ff10c5" compoundref="d4/dae/directory_8py" startline="97" endline="99">openage.util.fslike.directory.Directory.is_dir</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1aaf5c2b924c92a941b7a0bb5044bad272" compoundref="d4/dae/directory_8py" startline="94" endline="96">openage.util.fslike.directory.Directory.is_file</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a25898fdc286da3d08b1a8010c96fca6b" compoundref="d4/dae/directory_8py" startline="66" endline="69">openage.util.fslike.directory.Directory.list</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1afcf06147cea96c5b86d105ec9c02af92" compoundref="d4/dae/directory_8py" startline="76" endline="78">openage.util.fslike.directory.Directory.mkdirs</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1ad8d226499167ea30f6e47638ea498987" compoundref="d4/dae/directory_8py" startline="73" endline="75">openage.util.fslike.directory.Directory.mtime</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1adc68385f8c0a0bb2e2bef0f10436574d" compoundref="d4/dae/directory_8py" startline="57" endline="59">openage.util.fslike.directory.Directory.open_a</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1ad6e7f48b2d5c8f010c9c1088e6341559" compoundref="d4/dae/directory_8py" startline="60" endline="62">openage.util.fslike.directory.Directory.open_ar</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a3dfe1315b1f3db58f58c0bcd5febe499" compoundref="d4/dae/directory_8py" startline="48" endline="50">openage.util.fslike.directory.Directory.open_r</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a250151bde89bbed4e41d7d203bc10fc4" compoundref="d4/dae/directory_8py" startline="54" endline="56">openage.util.fslike.directory.Directory.open_rw</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a99e770abe2bcbff7b472b348de2bf67c" compoundref="d4/dae/directory_8py" startline="51" endline="53">openage.util.fslike.directory.Directory.open_w</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a3d1559d9fd9d3b3d7b8802b35865b734" compoundref="d4/dae/directory_8py" startline="91" endline="93">openage.util.fslike.directory.Directory.rename</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a26b80b14c729ade6d012864fc94423d7" compoundref="d4/dae/directory_8py" startline="79" endline="81">openage.util.fslike.directory.Directory.rmdir</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1aad6df15589e4b45b0b4ff322c5ae49a2" compoundref="d4/dae/directory_8py" startline="85" endline="90">openage.util.fslike.directory.Directory.touch</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a31bd13c783048d9480ee5c3cb1e7687b" compoundref="d4/dae/directory_8py" startline="82" endline="84">openage.util.fslike.directory.Directory.unlink</referencedby>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a593147786283242dd86370ad6f97e068" compoundref="d4/dae/directory_8py" startline="100" endline="112">openage.util.fslike.directory.Directory.writable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a3dfe1315b1f3db58f58c0bcd5febe499" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.open_r</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>open_r</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="48" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="48" bodyend="50"/>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</references>
+        <references refid="dd/d4e/classopenage_1_1util_1_1fslike_1_1_directory_1a7dab02972c0d0fa8ef5b3fd387966855" compoundref="d3/d62/directory_8cpp" startline="59" endline="65">openage::util::fslike::Directory::resolve</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a99e770abe2bcbff7b472b348de2bf67c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.open_w</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>open_w</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="51" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="51" bodyend="53"/>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</references>
+        <references refid="dd/d4e/classopenage_1_1util_1_1fslike_1_1_directory_1a7dab02972c0d0fa8ef5b3fd387966855" compoundref="d3/d62/directory_8cpp" startline="59" endline="65">openage::util::fslike::Directory::resolve</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a250151bde89bbed4e41d7d203bc10fc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.open_rw</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>open_rw</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="54" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="54" bodyend="56"/>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</references>
+        <references refid="dd/d4e/classopenage_1_1util_1_1fslike_1_1_directory_1a7dab02972c0d0fa8ef5b3fd387966855" compoundref="d3/d62/directory_8cpp" startline="59" endline="65">openage::util::fslike::Directory::resolve</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1adc68385f8c0a0bb2e2bef0f10436574d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.open_a</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>open_a</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="57" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="57" bodyend="59"/>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</references>
+        <references refid="dd/d4e/classopenage_1_1util_1_1fslike_1_1_directory_1a7dab02972c0d0fa8ef5b3fd387966855" compoundref="d3/d62/directory_8cpp" startline="59" endline="65">openage::util::fslike::Directory::resolve</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1ad6e7f48b2d5c8f010c9c1088e6341559" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.open_ar</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>open_ar</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="60" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="60" bodyend="62"/>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</references>
+        <references refid="dd/d4e/classopenage_1_1util_1_1fslike_1_1_directory_1a7dab02972c0d0fa8ef5b3fd387966855" compoundref="d3/d62/directory_8cpp" startline="59" endline="65">openage::util::fslike::Directory::resolve</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a4b6007750c576514ea97305cd10299b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.get_native_path</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>get_native_path</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="63" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="63" bodyend="65"/>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</references>
+        <references refid="dd/d4e/classopenage_1_1util_1_1fslike_1_1_directory_1a7dab02972c0d0fa8ef5b3fd387966855" compoundref="d3/d62/directory_8cpp" startline="59" endline="65">openage::util::fslike::Directory::resolve</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a25898fdc286da3d08b1a8010c96fca6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.list</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>list</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="66" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="66" bodyend="69"/>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</references>
+        <references refid="dd/d4e/classopenage_1_1util_1_1fslike_1_1_directory_1a7dab02972c0d0fa8ef5b3fd387966855" compoundref="d3/d62/directory_8cpp" startline="59" endline="65">openage::util::fslike::Directory::resolve</references>
+        <referencedby refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a593147786283242dd86370ad6f97e068" compoundref="d4/dae/directory_8py" startline="100" endline="112">openage.util.fslike.directory.Directory.writable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a4ac25f156e1e61aaf181aeac4a8ed536" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.filesize</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>filesize</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="70" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="70" bodyend="72"/>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</references>
+        <references refid="dd/d4e/classopenage_1_1util_1_1fslike_1_1_directory_1a7dab02972c0d0fa8ef5b3fd387966855" compoundref="d3/d62/directory_8cpp" startline="59" endline="65">openage::util::fslike::Directory::resolve</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1ad8d226499167ea30f6e47638ea498987" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.mtime</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>mtime</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="73" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="73" bodyend="75"/>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</references>
+        <references refid="dd/d4e/classopenage_1_1util_1_1fslike_1_1_directory_1a7dab02972c0d0fa8ef5b3fd387966855" compoundref="d3/d62/directory_8cpp" startline="59" endline="65">openage::util::fslike::Directory::resolve</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1afcf06147cea96c5b86d105ec9c02af92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.mkdirs</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>mkdirs</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="76" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="76" bodyend="78"/>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</references>
+        <references refid="dd/d4e/classopenage_1_1util_1_1fslike_1_1_directory_1a7dab02972c0d0fa8ef5b3fd387966855" compoundref="d3/d62/directory_8cpp" startline="59" endline="65">openage::util::fslike::Directory::resolve</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a26b80b14c729ade6d012864fc94423d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.rmdir</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>rmdir</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="79" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="79" bodyend="81"/>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</references>
+        <references refid="dd/d4e/classopenage_1_1util_1_1fslike_1_1_directory_1a7dab02972c0d0fa8ef5b3fd387966855" compoundref="d3/d62/directory_8cpp" startline="59" endline="65">openage::util::fslike::Directory::resolve</references>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1a54ddfaca7c17c046c0a7472bb6af3d76" compoundref="d0/d7a/path_8py" startline="227" endline="234">openage.util.fslike.path.Path.removerecursive</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a31bd13c783048d9480ee5c3cb1e7687b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.unlink</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>unlink</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="82" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="82" bodyend="84"/>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</references>
+        <references refid="dd/d4e/classopenage_1_1util_1_1fslike_1_1_directory_1a7dab02972c0d0fa8ef5b3fd387966855" compoundref="d3/d62/directory_8cpp" startline="59" endline="65">openage::util::fslike::Directory::resolve</references>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1a54ddfaca7c17c046c0a7472bb6af3d76" compoundref="d0/d7a/path_8py" startline="227" endline="234">openage.util.fslike.path.Path.removerecursive</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1aad6df15589e4b45b0b4ff322c5ae49a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.touch</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>touch</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="85" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="85" bodyend="90"/>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</references>
+        <references refid="dd/d4e/classopenage_1_1util_1_1fslike_1_1_directory_1a7dab02972c0d0fa8ef5b3fd387966855" compoundref="d3/d62/directory_8cpp" startline="59" endline="65">openage::util::fslike::Directory::resolve</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a3d1559d9fd9d3b3d7b8802b35865b734" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.rename</definition>
+        <argsstring>(self, srcparts, tgtparts)</argsstring>
+        <name>rename</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>srcparts</type>
+          <defname>srcparts</defname>
+        </param>
+        <param>
+          <type>tgtparts</type>
+          <defname>tgtparts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="91" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="91" bodyend="93"/>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</references>
+        <references refid="dd/d4e/classopenage_1_1util_1_1fslike_1_1_directory_1a7dab02972c0d0fa8ef5b3fd387966855" compoundref="d3/d62/directory_8cpp" startline="59" endline="65">openage::util::fslike::Directory::resolve</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1aaf5c2b924c92a941b7a0bb5044bad272" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.is_file</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>is_file</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="94" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="94" bodyend="96"/>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</references>
+        <references refid="dd/d4e/classopenage_1_1util_1_1fslike_1_1_directory_1a7dab02972c0d0fa8ef5b3fd387966855" compoundref="d3/d62/directory_8cpp" startline="59" endline="65">openage::util::fslike::Directory::resolve</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a2cd6e092ef3d99243d60ba7d05ff10c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.is_dir</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>is_dir</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="97" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="97" bodyend="99"/>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</references>
+        <references refid="dd/d4e/classopenage_1_1util_1_1fslike_1_1_directory_1a7dab02972c0d0fa8ef5b3fd387966855" compoundref="d3/d62/directory_8cpp" startline="59" endline="65">openage::util::fslike::Directory::resolve</references>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1a54ddfaca7c17c046c0a7472bb6af3d76" compoundref="d0/d7a/path_8py" startline="227" endline="234">openage.util.fslike.path.Path.removerecursive</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a593147786283242dd86370ad6f97e068" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.writable</definition>
+        <argsstring>(self, parts)</argsstring>
+        <name>writable</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="100" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="100" bodyend="112"/>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a25898fdc286da3d08b1a8010c96fca6b" compoundref="d4/dae/directory_8py" startline="66" endline="69">openage.util.fslike.directory.Directory.list</references>
+        <references refid="d0/df5/classopenage_1_1audio_1_1_dynamic_loader_1a527295cdc13c4a680af0ef0c022979f2" compoundref="d9/df3/dynamic__loader_8h" startline="26">openage::audio::DynamicLoader::path</references>
+        <references refid="d9/db1/classopenage_1_1audio_1_1_in_memory_loader_1a241525f491fad633191358da938c9472" compoundref="da/d8e/in__memory__loader_8h" startline="26">openage::audio::InMemoryLoader::path</references>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a9b605e81c1106a82ab8c4a4221ed43ff" compoundref="d4/dae/directory_8py" startline="39">openage.util.fslike.directory.Directory.path</references>
+        <references refid="d5/d1e/classopenage_1_1util_1_1filelike_1_1_native_1a5c59a8686c8a3374ae5f0cf38bbdf7d2" compoundref="d1/d72/filelike_2native_8h" startline="44">openage::util::filelike::Native::path</references>
+        <references refid="db/db2/classopenage_1_1cvar_1_1_c_var_manager_1a0aa073ffda4e894c0f62a108da465a89" compoundref="dd/d54/cvar_8h" startline="91">openage::cvar::CVarManager::path</references>
+        <references refid="d4/de5/classopenage_1_1audio_1_1_dynamic_resource_1a0c2bf4230af8628c0cc935e3423d1dec" compoundref="d4/d47/dynamic__resource_8h" startline="105">openage::audio::DynamicResource::path</references>
+        <references refid="dc/dd9/classopenage_1_1cabextract_1_1cab_1_1_c_f_file_1a28a782f1904cfb1a2e80bd141622b841" compoundref="d9/d50/cab_8py" startline="165">openage.cabextract.cab.CFFile.path</references>
+        <references refid="d2/d4e/classopenage_1_1_move_action_1a0b53b70c09f569929f40a4b870e4e42d" compoundref="d8/d1f/unit_2action_8h" startline="387">openage::MoveAction::path</references>
+        <references refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" compoundref="d4/dae/directory_8py" startline="45" endline="47">openage.util.fslike.directory.Directory.resolve</references>
+        <references refid="dd/d4e/classopenage_1_1util_1_1fslike_1_1_directory_1a7dab02972c0d0fa8ef5b3fd387966855" compoundref="d3/d62/directory_8cpp" startline="59" endline="65">openage::util::fslike::Directory::resolve</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a14c1528593f6d0faa49110f25d1ba095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.watch</definition>
+        <argsstring>(self, parts, callback)</argsstring>
+        <name>watch</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>parts</type>
+          <defname>parts</defname>
+        </param>
+        <param>
+          <type>callback</type>
+          <defname>callback</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="113" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a65022ceabb3a9b9ed24acdcae5c6c8f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.fslike.directory.Directory.poll_watches</definition>
+        <argsstring>(self)</argsstring>
+        <name>poll_watches</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="117" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="117" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provides an actual file system directory&apos;s contents as-they-are. </para>    </briefdescription>
+    <detaileddescription>
+<para>Initialized from some real path that is mounted already by your system. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5982">
+        <label>openage.util.fslike.abstract.FSLikeObject</label>
+        <link refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object"/>
+        <childnode refid="5983" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5981">
+        <label>openage.util.fslike.directory.Directory</label>
+        <link refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory"/>
+        <childnode refid="5982" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5983">
+        <label>ABC</label>
+      </node>
+      <node id="5984">
+        <label>openage.util.fslike.directory.CaseIgnoringDirectory</label>
+        <link refid="d0/d8a/classopenage_1_1util_1_1fslike_1_1directory_1_1_case_ignoring_directory"/>
+        <childnode refid="5981" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5986">
+        <label>openage.util.fslike.abstract.FSLikeObject</label>
+        <link refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object"/>
+        <childnode refid="5987" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5985">
+        <label>openage.util.fslike.directory.Directory</label>
+        <link refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory"/>
+        <childnode refid="5986" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5987">
+        <label>ABC</label>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" line="21" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/fslike/directory.py" bodystart="21" bodyend="129"/>
+    <listofallmembers>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a0aba1574a0d51aa0b8d4bd14f1174177" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>__init__</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1abbb32dc478b13e8cae25d6d505eefcbd" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>__repr__</name></member>
+      <member refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object_1abc5969fa041b778d0906a452d45f9d0c" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>exists</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a4ac25f156e1e61aaf181aeac4a8ed536" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>filesize</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a4b6007750c576514ea97305cd10299b1" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>get_native_path</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a2cd6e092ef3d99243d60ba7d05ff10c5" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>is_dir</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1aaf5c2b924c92a941b7a0bb5044bad272" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>is_file</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a25898fdc286da3d08b1a8010c96fca6b" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>list</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1afcf06147cea96c5b86d105ec9c02af92" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>mkdirs</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1ad8d226499167ea30f6e47638ea498987" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>mtime</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1adc68385f8c0a0bb2e2bef0f10436574d" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>open_a</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1ad6e7f48b2d5c8f010c9c1088e6341559" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>open_ar</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a3dfe1315b1f3db58f58c0bcd5febe499" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>open_r</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a250151bde89bbed4e41d7d203bc10fc4" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>open_rw</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a99e770abe2bcbff7b472b348de2bf67c" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>open_w</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a9b605e81c1106a82ab8c4a4221ed43ff" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>path</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a65022ceabb3a9b9ed24acdcae5c6c8f8" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>poll_watches</name></member>
+      <member refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object_1a53ae3dc0d5327095637653e4d17b638d" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>pretty</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a3d1559d9fd9d3b3d7b8802b35865b734" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>rename</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a64bdaf726aac07d4913107cc5ba9fe65" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>resolve</name></member>
+      <member refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object_1af30b34d88a17e5d1d7e99046da0490f5" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>resolve_r</name></member>
+      <member refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object_1a255427aef3f55eea705114af7d7c107f" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>resolve_w</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a26b80b14c729ade6d012864fc94423d7" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>rmdir</name></member>
+      <member refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object_1a04bffeae7754d2f18fc374b4c656633e" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>root</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1aad6df15589e4b45b0b4ff322c5ae49a2" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>touch</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a31bd13c783048d9480ee5c3cb1e7687b" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>unlink</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a14c1528593f6d0faa49110f25d1ba095" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>watch</name></member>
+      <member refid="dd/d95/classopenage_1_1util_1_1fslike_1_1directory_1_1_directory_1a593147786283242dd86370ad6f97e068" prot="public" virt="non-virtual"><scope>openage::util::fslike::directory::Directory</scope><name>writable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

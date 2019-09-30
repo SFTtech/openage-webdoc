@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d3/d60/structopenage_1_1renderer_1_1_renderable" kind="struct" language="C++" prot="public">
+    <compoundname>openage::renderer::Renderable</compoundname>
+    <includes refid="d6/d85/renderer_8h" local="no">renderer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d3/d60/structopenage_1_1renderer_1_1_renderable_1a775e71a74952beb4e208fe5fb4b46668" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/def/classopenage_1_1renderer_1_1_uniform_input" kindref="compound">UniformInput</ref> const  *</type>
+        <definition>UniformInput const* openage::renderer::Renderable::unif_in</definition>
+        <argsstring></argsstring>
+        <name>unif_in</name>
+        <briefdescription>
+<para>Uniform values to be set in the appropriate shader. </para>        </briefdescription>
+        <detaileddescription>
+<para>Contains a reference to the correct shader, and this is the shader that will be used for drawing if geometry is present. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/renderer.h" line="52" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/renderer.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d60/structopenage_1_1renderer_1_1_renderable_1a3bf2064282bcd7c446d32832d4b4bee7" prot="public" static="no" mutable="no">
+        <type><ref refid="d2/d58/classopenage_1_1renderer_1_1_geometry" kindref="compound">Geometry</ref> const  *</type>
+        <definition>Geometry const* openage::renderer::Renderable::geometry</definition>
+        <argsstring></argsstring>
+        <name>geometry</name>
+        <briefdescription>
+<para>The geometry. </para>        </briefdescription>
+        <detaileddescription>
+<para>It can be a simple primitive or a complex mesh. Can be nullptr to only set uniforms but do not perform draw call. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/renderer.h" line="55" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/renderer.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d60/structopenage_1_1renderer_1_1_renderable_1a2f7cb774035e9d9445e5ec3aff4791e4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool openage::renderer::Renderable::alpha_blending</definition>
+        <argsstring></argsstring>
+        <name>alpha_blending</name>
+        <briefdescription>
+<para>Whether to perform alpha-based color blending with whatever was in the render target before. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/renderer.h" line="57" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/renderer.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d60/structopenage_1_1renderer_1_1_renderable_1a2876a554a04f54f329230e7239e4f0a8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool openage::renderer::Renderable::depth_test</definition>
+        <argsstring></argsstring>
+        <name>depth_test</name>
+        <briefdescription>
+<para>Whether to perform depth testing and discard occluded fragments. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/renderer.h" line="59" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/renderer.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A renderable is a set of shader uniform inputs and a possible draw call. </para>    </briefdescription>
+    <detaileddescription>
+<para>When a renderable is parsed, the uniform inputs are first passed to the shader they were created with. Then, if the geometry is not nullptr, the shader is executed with the geometry and the specified settings and the results are written into the render target. If the geometry is nullptr, the uniform values are uploaded to the shader but no draw call is performed. This can be used to, for example, first set the values of uniforms that many objects have in common, and then only upload the uniforms that vary between them in each draw call. This works because uniform values in any given shader are preserved across a render pass. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="4870">
+        <label>openage::renderer::Renderable</label>
+        <link refid="d3/d60/structopenage_1_1renderer_1_1_renderable"/>
+        <childnode refid="4871" relation="usage">
+          <edgelabel>+unif_in</edgelabel>
+        </childnode>
+        <childnode refid="4872" relation="usage">
+          <edgelabel>+geometry</edgelabel>
+        </childnode>
+      </node>
+      <node id="4872">
+        <label>openage::renderer::Geometry</label>
+        <link refid="d2/d58/classopenage_1_1renderer_1_1_geometry"/>
+      </node>
+      <node id="4871">
+        <label>openage::renderer::UniformInput</label>
+        <link refid="d6/def/classopenage_1_1renderer_1_1_uniform_input"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/renderer.h" line="49" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/renderer.h" bodystart="49" bodyend="60"/>
+    <listofallmembers>
+      <member refid="d3/d60/structopenage_1_1renderer_1_1_renderable_1a2f7cb774035e9d9445e5ec3aff4791e4" prot="public" virt="non-virtual"><scope>openage::renderer::Renderable</scope><name>alpha_blending</name></member>
+      <member refid="d3/d60/structopenage_1_1renderer_1_1_renderable_1a2876a554a04f54f329230e7239e4f0a8" prot="public" virt="non-virtual"><scope>openage::renderer::Renderable</scope><name>depth_test</name></member>
+      <member refid="d3/d60/structopenage_1_1renderer_1_1_renderable_1a3bf2064282bcd7c446d32832d4b4bee7" prot="public" virt="non-virtual"><scope>openage::renderer::Renderable</scope><name>geometry</name></member>
+      <member refid="d3/d60/structopenage_1_1renderer_1_1_renderable_1a775e71a74952beb4e208fe5fb4b46668" prot="public" virt="non-virtual"><scope>openage::renderer::Renderable</scope><name>unif_in</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

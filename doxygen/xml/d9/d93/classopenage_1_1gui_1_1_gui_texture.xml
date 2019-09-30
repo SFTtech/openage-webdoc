@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d9/d93/classopenage_1_1gui_1_1_gui_texture" kind="class" language="C++" prot="public">
+    <compoundname>openage::gui::GuiTexture</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QSGTexture</basecompoundref>
+    <includes refid="d4/dad/gui__texture_8h" local="no">gui_texture.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a9702dd3e2fe6bb1b0a488c3c674a3d31" prot="private" static="no" mutable="no">
+        <type>const <ref refid="d7/d65/classopenage_1_1gui_1_1_sized_texture_handle" kindref="compound">SizedTextureHandle</ref></type>
+        <definition>const SizedTextureHandle openage::gui::GuiTexture::texture_handle</definition>
+        <argsstring></argsstring>
+        <name>texture_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.h" line="31" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1ac2d56de7a7c3830e023fcdd2c1ed3c84" compoundref="df/db3/gui__texture_8cpp" startline="16" endline="20">GuiTexture</referencedby>
+        <referencedby refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1aa857182d062f11dc1d300e5965596511" compoundref="df/db3/gui__texture_8cpp" startline="38" endline="40">isAtlasTexture</referencedby>
+        <referencedby refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1afee0e8d811d508b6e16ae7ab4cf2c4a3" compoundref="df/db3/gui__texture_8cpp" startline="103" endline="111">normalizedTextureSubRect</referencedby>
+        <referencedby refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1acabd4037e0b47cda554ae353c2c3be3e" compoundref="df/db3/gui__texture_8cpp" startline="69" endline="101">removedFromAtlas</referencedby>
+        <referencedby refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1aae0bd80c66326d89472b98043e40ce4f" compoundref="df/db3/gui__texture_8cpp" startline="113" endline="115">textureId</referencedby>
+        <referencedby refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a1cf359edf8b8ca23bd7c445d44ecc5f2" compoundref="df/db3/gui__texture_8cpp" startline="117" endline="119">textureSize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a02f579956e3f4234fef014c569bd1b21" prot="private" static="no" mutable="yes">
+        <type>std::unique_ptr&lt; QSGTexture &gt;</type>
+        <definition>std::unique_ptr&lt;QSGTexture&gt; openage::gui::GuiTexture::standalone</definition>
+        <argsstring></argsstring>
+        <name>standalone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.h" line="32" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1acabd4037e0b47cda554ae353c2c3be3e" compoundref="df/db3/gui__texture_8cpp" startline="69" endline="101">removedFromAtlas</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d93/classopenage_1_1gui_1_1_gui_texture_1ac2d56de7a7c3830e023fcdd2c1ed3c84" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::gui::GuiTexture::GuiTexture</definition>
+        <argsstring>(const SizedTextureHandle &amp;texture_handle)</argsstring>
+        <name>GuiTexture</name>
+        <param>
+          <type>const <ref refid="d7/d65/classopenage_1_1gui_1_1_sized_texture_handle" kindref="compound">SizedTextureHandle</ref> &amp;</type>
+          <declname>texture_handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.h" line="18" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.cpp" bodystart="16" bodyend="20"/>
+        <references refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a9702dd3e2fe6bb1b0a488c3c674a3d31" compoundref="d4/dad/gui__texture_8h" startline="31">texture_handle</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a28467f551f6f209eeda541ecc0b0005c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>openage::gui::GuiTexture::~GuiTexture</definition>
+        <argsstring>()</argsstring>
+        <name>~GuiTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.h" line="19" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.cpp" bodystart="22" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a627ea5f09fd50329525003cd235dea0d" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void openage::gui::GuiTexture::bind</definition>
+        <argsstring>() override</argsstring>
+        <name>bind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.h" line="22" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.cpp" bodystart="25" bodyend="27"/>
+        <references refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1aae0bd80c66326d89472b98043e40ce4f" compoundref="df/db3/gui__texture_8cpp" startline="113" endline="115">textureId</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a98bd617d33823fa3fe0997ce46ef12fa" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::gui::GuiTexture::hasAlphaChannel</definition>
+        <argsstring>() const override</argsstring>
+        <name>hasAlphaChannel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.h" line="23" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a8935c00cb718d09c7da1661a038ce3c9" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::gui::GuiTexture::hasMipmaps</definition>
+        <argsstring>() const override</argsstring>
+        <name>hasMipmaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.h" line="24" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.cpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d93/classopenage_1_1gui_1_1_gui_texture_1aa857182d062f11dc1d300e5965596511" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::gui::GuiTexture::isAtlasTexture</definition>
+        <argsstring>() const override</argsstring>
+        <name>isAtlasTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.h" line="25" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.cpp" bodystart="38" bodyend="40"/>
+        <references refid="d3/d8f/namespaceopenage_1_1gui_1af717f0e1527d227ea7c4a8e9f34e87b8" compoundref="dd/dfd/gui__texture__handle_8cpp" startline="24" endline="26">openage::gui::isAtlasTexture</references>
+        <references refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a9702dd3e2fe6bb1b0a488c3c674a3d31" compoundref="d4/dad/gui__texture_8h" startline="31">texture_handle</references>
+        <referencedby refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1afee0e8d811d508b6e16ae7ab4cf2c4a3" compoundref="df/db3/gui__texture_8cpp" startline="103" endline="111">normalizedTextureSubRect</referencedby>
+        <referencedby refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1acabd4037e0b47cda554ae353c2c3be3e" compoundref="df/db3/gui__texture_8cpp" startline="69" endline="101">removedFromAtlas</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/d93/classopenage_1_1gui_1_1_gui_texture_1acabd4037e0b47cda554ae353c2c3be3e" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QSGTexture *</type>
+        <definition>QSGTexture * openage::gui::GuiTexture::removedFromAtlas</definition>
+        <argsstring>() const override</argsstring>
+        <name>removedFromAtlas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.h" line="26" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.cpp" bodystart="69" bodyend="101"/>
+        <references refid="d4/d5b/classopenage_1_1_texture_1aa2ba756d0a2a61a5dada563790e3ceec" compoundref="d2/d20/texture_8cpp" startline="399" endline="409">openage::Texture::get_subtexture</references>
+        <references refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1aa857182d062f11dc1d300e5965596511" compoundref="df/db3/gui__texture_8cpp" startline="38" endline="40">isAtlasTexture</references>
+        <references refid="d3/d8f/namespaceopenage_1_1gui_1ad386ee98cd26c09c0e03fdc7f50ad6de" compoundref="d6/d2c/gui__make__standalone__subtexture_8cpp" startline="9" endline="11">openage::gui::make_standalone_subtexture</references>
+        <references refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a02f579956e3f4234fef014c569bd1b21" compoundref="d4/dad/gui__texture_8h" startline="32">standalone</references>
+        <references refid="d2/dcd/classopenage_1_1gui_1_1_texture_handle_1abb5d85fbb659fc9bb7f7dc018b2b36a4" compoundref="d4/dea/gui__texture__handle_8h" startline="16">openage::gui::TextureHandle::subid</references>
+        <references refid="d2/dcd/classopenage_1_1gui_1_1_texture_handle_1a97428c32c25fe252566c5206ad19dc87" compoundref="d4/dea/gui__texture__handle_8h" startline="15">openage::gui::TextureHandle::texture</references>
+        <references refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a9702dd3e2fe6bb1b0a488c3c674a3d31" compoundref="d4/dad/gui__texture_8h" startline="31">texture_handle</references>
+        <references refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1aae0bd80c66326d89472b98043e40ce4f" compoundref="df/db3/gui__texture_8cpp" startline="113" endline="115">textureId</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d93/classopenage_1_1gui_1_1_gui_texture_1afee0e8d811d508b6e16ae7ab4cf2c4a3" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QRectF</type>
+        <definition>QRectF openage::gui::GuiTexture::normalizedTextureSubRect</definition>
+        <argsstring>() const override</argsstring>
+        <name>normalizedTextureSubRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.h" line="27" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.cpp" bodystart="103" bodyend="111"/>
+        <references refid="d4/d5b/classopenage_1_1_texture_1aa2ba756d0a2a61a5dada563790e3ceec" compoundref="d2/d20/texture_8cpp" startline="399" endline="409">openage::Texture::get_subtexture</references>
+        <references refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1aa857182d062f11dc1d300e5965596511" compoundref="df/db3/gui__texture_8cpp" startline="38" endline="40">isAtlasTexture</references>
+        <references refid="d2/dcd/classopenage_1_1gui_1_1_texture_handle_1abb5d85fbb659fc9bb7f7dc018b2b36a4" compoundref="d4/dea/gui__texture__handle_8h" startline="16">openage::gui::TextureHandle::subid</references>
+        <references refid="d2/dcd/classopenage_1_1gui_1_1_texture_handle_1a97428c32c25fe252566c5206ad19dc87" compoundref="d4/dea/gui__texture__handle_8h" startline="15">openage::gui::TextureHandle::texture</references>
+        <references refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a9702dd3e2fe6bb1b0a488c3c674a3d31" compoundref="d4/dad/gui__texture_8h" startline="31">texture_handle</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d93/classopenage_1_1gui_1_1_gui_texture_1aae0bd80c66326d89472b98043e40ce4f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int openage::gui::GuiTexture::textureId</definition>
+        <argsstring>() const override</argsstring>
+        <name>textureId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.h" line="28" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.cpp" bodystart="113" bodyend="115"/>
+        <references refid="d4/d5b/classopenage_1_1_texture_1a4a39cc1e433e023254dabef12fe20490" compoundref="d2/d20/texture_8cpp" startline="442" endline="445">openage::Texture::get_texture_id</references>
+        <references refid="d2/dcd/classopenage_1_1gui_1_1_texture_handle_1a97428c32c25fe252566c5206ad19dc87" compoundref="d4/dea/gui__texture__handle_8h" startline="15">openage::gui::TextureHandle::texture</references>
+        <references refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a9702dd3e2fe6bb1b0a488c3c674a3d31" compoundref="d4/dad/gui__texture_8h" startline="31">texture_handle</references>
+        <referencedby refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a627ea5f09fd50329525003cd235dea0d" compoundref="df/db3/gui__texture_8cpp" startline="25" endline="27">bind</referencedby>
+        <referencedby refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1acabd4037e0b47cda554ae353c2c3be3e" compoundref="df/db3/gui__texture_8cpp" startline="69" endline="101">removedFromAtlas</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a1cf359edf8b8ca23bd7c445d44ecc5f2" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QSize</type>
+        <definition>QSize openage::gui::GuiTexture::textureSize</definition>
+        <argsstring>() const override</argsstring>
+        <name>textureSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.h" line="29" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.cpp" bodystart="117" bodyend="119"/>
+        <references refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a9702dd3e2fe6bb1b0a488c3c674a3d31" compoundref="d4/dad/gui__texture_8h" startline="31">texture_handle</references>
+        <references refid="d3/d8f/namespaceopenage_1_1gui_1a1404eed030dfc77b51edc61cb3fbbbef" compoundref="dd/dfd/gui__texture__handle_8cpp" startline="28" endline="30">openage::gui::textureSize</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3702">
+        <label>QSGTexture</label>
+      </node>
+      <node id="3701">
+        <label>openage::gui::GuiTexture</label>
+        <link refid="d9/d93/classopenage_1_1gui_1_1_gui_texture"/>
+        <childnode refid="3702" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3708">
+        <label>openage::util::Path</label>
+        <link refid="dd/dc1/classopenage_1_1util_1_1_path"/>
+      </node>
+      <node id="3706">
+        <label>openage::gui::TextureHandle</label>
+        <link refid="d2/dcd/classopenage_1_1gui_1_1_texture_handle"/>
+        <childnode refid="3707" relation="usage">
+          <edgelabel>+texture</edgelabel>
+        </childnode>
+      </node>
+      <node id="3707">
+        <label>openage::Texture</label>
+        <link refid="d4/d5b/classopenage_1_1_texture"/>
+        <childnode refid="3708" relation="usage">
+          <edgelabel>-filename</edgelabel>
+        </childnode>
+      </node>
+      <node id="3704">
+        <label>QSGTexture</label>
+      </node>
+      <node id="3703">
+        <label>openage::gui::GuiTexture</label>
+        <link refid="d9/d93/classopenage_1_1gui_1_1_gui_texture"/>
+        <childnode refid="3704" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3705" relation="usage">
+          <edgelabel>-texture_handle</edgelabel>
+        </childnode>
+      </node>
+      <node id="3705">
+        <label>openage::gui::SizedTextureHandle</label>
+        <link refid="d7/d65/classopenage_1_1gui_1_1_sized_texture_handle"/>
+        <childnode refid="3706" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.h" line="14" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/private/gui_texture.h" bodystart="14" bodyend="33"/>
+    <listofallmembers>
+      <member refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a627ea5f09fd50329525003cd235dea0d" prot="private" virt="virtual"><scope>openage::gui::GuiTexture</scope><name>bind</name></member>
+      <member refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1ac2d56de7a7c3830e023fcdd2c1ed3c84" prot="public" virt="non-virtual"><scope>openage::gui::GuiTexture</scope><name>GuiTexture</name></member>
+      <member refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a98bd617d33823fa3fe0997ce46ef12fa" prot="private" virt="virtual"><scope>openage::gui::GuiTexture</scope><name>hasAlphaChannel</name></member>
+      <member refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a8935c00cb718d09c7da1661a038ce3c9" prot="private" virt="virtual"><scope>openage::gui::GuiTexture</scope><name>hasMipmaps</name></member>
+      <member refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1aa857182d062f11dc1d300e5965596511" prot="private" virt="virtual"><scope>openage::gui::GuiTexture</scope><name>isAtlasTexture</name></member>
+      <member refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1afee0e8d811d508b6e16ae7ab4cf2c4a3" prot="private" virt="virtual"><scope>openage::gui::GuiTexture</scope><name>normalizedTextureSubRect</name></member>
+      <member refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1acabd4037e0b47cda554ae353c2c3be3e" prot="private" virt="virtual"><scope>openage::gui::GuiTexture</scope><name>removedFromAtlas</name></member>
+      <member refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a02f579956e3f4234fef014c569bd1b21" prot="private" virt="non-virtual"><scope>openage::gui::GuiTexture</scope><name>standalone</name></member>
+      <member refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a9702dd3e2fe6bb1b0a488c3c674a3d31" prot="private" virt="non-virtual"><scope>openage::gui::GuiTexture</scope><name>texture_handle</name></member>
+      <member refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1aae0bd80c66326d89472b98043e40ce4f" prot="private" virt="virtual"><scope>openage::gui::GuiTexture</scope><name>textureId</name></member>
+      <member refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a1cf359edf8b8ca23bd7c445d44ecc5f2" prot="private" virt="virtual"><scope>openage::gui::GuiTexture</scope><name>textureSize</name></member>
+      <member refid="d9/d93/classopenage_1_1gui_1_1_gui_texture_1a28467f551f6f209eeda541ecc0b0005c" prot="public" virt="virtual"><scope>openage::gui::GuiTexture</scope><name>~GuiTexture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

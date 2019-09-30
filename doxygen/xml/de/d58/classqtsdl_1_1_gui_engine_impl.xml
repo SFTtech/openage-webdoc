@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="de/d58/classqtsdl_1_1_gui_engine_impl" kind="class" language="C++" prot="public">
+    <compoundname>qtsdl::GuiEngineImpl</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="d1/d02/gui__engine__impl_8h" local="no">gui_engine_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/d58/classqtsdl_1_1_gui_engine_impl_1a420e7d89f9adfd52c422f058a8fdbe6b" prot="private" static="no" mutable="no">
+        <type><ref refid="dd/db2/classqtsdl_1_1_gui_renderer_impl" kindref="compound">GuiRendererImpl</ref> *</type>
+        <definition>GuiRendererImpl* qtsdl::GuiEngineImpl::renderer</definition>
+        <argsstring></argsstring>
+        <name>renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" line="46" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a5b83bd915fa9ce9bf9e36f26000143cc" compoundref="d5/dce/gui__engine__impl_8cpp" startline="51" endline="54">attach_to</referencedby>
+        <referencedby refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a4088026e44037a9ec5c6a7d664651c0f" compoundref="d5/dce/gui__engine__impl_8cpp" startline="17" endline="42">GuiEngineImpl</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d58/classqtsdl_1_1_gui_engine_impl_1a6c207f5585af640ff7b32e90c31c9508" prot="private" static="no" mutable="no">
+        <type><ref refid="d1/dd2/classqtsdl_1_1_qml_engine_with_singleton_items_info" kindref="compound">QmlEngineWithSingletonItemsInfo</ref></type>
+        <definition>QmlEngineWithSingletonItemsInfo qtsdl::GuiEngineImpl::engine</definition>
+        <argsstring></argsstring>
+        <name>engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" line="48" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a5b83bd915fa9ce9bf9e36f26000143cc" compoundref="d5/dce/gui__engine__impl_8cpp" startline="51" endline="54">attach_to</referencedby>
+        <referencedby refid="de/d58/classqtsdl_1_1_gui_engine_impl_1af1dc911943688d3c296909af70dfc62e" compoundref="d5/dce/gui__engine__impl_8cpp" startline="56" endline="58">get_qml_engine</referencedby>
+        <referencedby refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a4088026e44037a9ec5c6a7d664651c0f" compoundref="d5/dce/gui__engine__impl_8cpp" startline="17" endline="42">GuiEngineImpl</referencedby>
+        <referencedby refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1a4c562054452367a7e826a4612fa1dee7" compoundref="dc/d71/gui__subtree__impl_8cpp" startline="238" endline="245">qtsdl::GuiEngineImplConnection::GuiEngineImplConnection</referencedby>
+        <referencedby refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a8a5e647f1df22a102c691e721dcc8f26" compoundref="d5/dce/gui__engine__impl_8cpp" startline="60" endline="64">onReload</referencedby>
+        <referencedby refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1a3de39e1c4b2cc6b97f38d9c1217d5de5" compoundref="dc/d71/gui__subtree__impl_8cpp" startline="247" endline="257">qtsdl::GuiEngineImplConnection::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d58/classqtsdl_1_1_gui_engine_impl_1a42567da87e28cbae9978f57330a23103" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/dea/classqtsdl_1_1_recursive_directory_watcher" kindref="compound">RecursiveDirectoryWatcher</ref></type>
+        <definition>RecursiveDirectoryWatcher qtsdl::GuiEngineImpl::watcher</definition>
+        <argsstring></argsstring>
+        <name>watcher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" line="49" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a4088026e44037a9ec5c6a7d664651c0f" compoundref="d5/dce/gui__engine__impl_8cpp" startline="17" endline="42">GuiEngineImpl</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d58/classqtsdl_1_1_gui_engine_impl_1a9e079732f149647eb9e47529e2cb7b67" prot="private" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList qtsdl::GuiEngineImpl::root_dirs_paths</definition>
+        <argsstring></argsstring>
+        <name>root_dirs_paths</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" line="51" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a9ede5811b7eb20e26e0b7d2d2e07474b" compoundref="d5/dce/gui__engine__impl_8cpp" startline="66" endline="69">add_root_dir_path</referencedby>
+        <referencedby refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a7ad899a288943e1bd4266fee8fb79b30" compoundref="d5/dce/gui__engine__impl_8cpp" startline="71" endline="76">remove_root_dir_path</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d58/classqtsdl_1_1_gui_engine_impl_1a4088026e44037a9ec5c6a7d664651c0f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>qtsdl::GuiEngineImpl::GuiEngineImpl</definition>
+        <argsstring>(GuiRenderer *renderer, const std::vector&lt; GuiImageProvider *&gt; &amp;image_providers=std::vector&lt; GuiImageProvider *&gt;(), GuiSingletonItemsInfo *singleton_items_info=nullptr)</argsstring>
+        <name>GuiEngineImpl</name>
+        <param>
+          <type><ref refid="d0/d58/classqtsdl_1_1_gui_renderer" kindref="compound">GuiRenderer</ref> *</type>
+          <declname>renderer</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="d5/df5/classqtsdl_1_1_gui_image_provider" kindref="compound">GuiImageProvider</ref> *&gt; &amp;</type>
+          <declname>image_providers</declname>
+          <defval>std::vector&lt; <ref refid="d5/df5/classqtsdl_1_1_gui_image_provider" kindref="compound">GuiImageProvider</ref> *&gt;()</defval>
+        </param>
+        <param>
+          <type><ref refid="d2/dbf/classqtsdl_1_1_gui_singleton_items_info" kindref="compound">GuiSingletonItemsInfo</ref> *</type>
+          <declname>singleton_items_info</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" line="25" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.cpp" bodystart="17" bodyend="42"/>
+        <references refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a5b83bd915fa9ce9bf9e36f26000143cc" compoundref="d5/dce/gui__engine__impl_8cpp" startline="51" endline="54">attach_to</references>
+        <references refid="d3/dea/classqtsdl_1_1_recursive_directory_watcher_1a8023f71a72a9b22765d88d33cd71b237">qtsdl::RecursiveDirectoryWatcher::changeDetected</references>
+        <references refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a6c207f5585af640ff7b32e90c31c9508" compoundref="d1/d02/gui__engine__impl_8h" startline="48">engine</references>
+        <references refid="dd/db2/classqtsdl_1_1_gui_renderer_impl_1a84a47f6f426e8f5342b656f76c023d82" compoundref="dc/d7d/gui__renderer__impl_8cpp" startline="141" endline="143">qtsdl::GuiRendererImpl::impl</references>
+        <references refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a8a5e647f1df22a102c691e721dcc8f26" compoundref="d5/dce/gui__engine__impl_8cpp" startline="60" endline="64">onReload</references>
+        <references refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a420e7d89f9adfd52c422f058a8fdbe6b" compoundref="d1/d02/gui__engine__impl_8h" startline="46">renderer</references>
+        <references refid="d3/dea/classqtsdl_1_1_recursive_directory_watcher_1aabc2911d48c9af1d435ccb894e216b0e">qtsdl::RecursiveDirectoryWatcher::rootDirsPathsChanged</references>
+        <references refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a3f9eb6dff849859000c60bc556c4c65c">rootDirsPathsChanged</references>
+        <references refid="db/d28/classqtsdl_1_1_gui_image_provider_impl_1a1cf6dfe2bc7558c22f3af638e0286cf1" compoundref="d9/dd2/gui__image__provider__impl_8cpp" startline="19" endline="23">qtsdl::GuiImageProviderImpl::take_ownership</references>
+        <references refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a42567da87e28cbae9978f57330a23103" compoundref="d1/d02/gui__engine__impl_8h" startline="49">watcher</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d58/classqtsdl_1_1_gui_engine_impl_1a7b14a50a70e1bc615b38e618e011a899" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>qtsdl::GuiEngineImpl::~GuiEngineImpl</definition>
+        <argsstring>()</argsstring>
+        <name>~GuiEngineImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" line="28" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.cpp" bodystart="44" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d58/classqtsdl_1_1_gui_engine_impl_1af1dc911943688d3c296909af70dfc62e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QQmlEngine *</type>
+        <definition>QQmlEngine * qtsdl::GuiEngineImpl::get_qml_engine</definition>
+        <argsstring>()</argsstring>
+        <name>get_qml_engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" line="32" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.cpp" bodystart="56" bodyend="58"/>
+        <references refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a6c207f5585af640ff7b32e90c31c9508" compoundref="d1/d02/gui__engine__impl_8h" startline="48">engine</references>
+        <referencedby refid="d4/d96/classqtsdl_1_1_gui_subtree_impl_1a903d02ad6f5349af96add80f99ddf345" compoundref="dc/d71/gui__subtree__impl_8cpp" startline="111" endline="130">qtsdl::GuiSubtreeImpl::attach_to</referencedby>
+        <referencedby refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1a679c00b61c59c7eaba774b7e4788bbbd" compoundref="dc/d71/gui__subtree__impl_8cpp" startline="269" endline="273">qtsdl::GuiEngineImplConnection::get_qml_engine</referencedby>
+        <referencedby refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1a53fe06a5892eaa14cf0a9f4b8d0004a6" compoundref="dc/d71/gui__subtree__impl_8cpp" startline="263" endline="267">qtsdl::GuiEngineImplConnection::rootContext</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d58/classqtsdl_1_1_gui_engine_impl_1a9ede5811b7eb20e26e0b7d2d2e07474b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void qtsdl::GuiEngineImpl::add_root_dir_path</definition>
+        <argsstring>(const QString &amp;root_dir_path)</argsstring>
+        <name>add_root_dir_path</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>root_dir_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" line="34" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.cpp" bodystart="66" bodyend="69"/>
+        <references refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a9e079732f149647eb9e47529e2cb7b67" compoundref="d1/d02/gui__engine__impl_8h" startline="51">root_dirs_paths</references>
+        <references refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a3f9eb6dff849859000c60bc556c4c65c">rootDirsPathsChanged</references>
+        <referencedby refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1af9d75573df9d5f7b433c54eb6f2690fa" compoundref="dc/d71/gui__subtree__impl_8cpp" startline="195" endline="215">qtsdl::GuiEngineImplConnection::GuiEngineImplConnection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d58/classqtsdl_1_1_gui_engine_impl_1a7ad899a288943e1bd4266fee8fb79b30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void qtsdl::GuiEngineImpl::remove_root_dir_path</definition>
+        <argsstring>(const QString &amp;root_dir_path)</argsstring>
+        <name>remove_root_dir_path</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>root_dir_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" line="35" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.cpp" bodystart="71" bodyend="76"/>
+        <references refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a9e079732f149647eb9e47529e2cb7b67" compoundref="d1/d02/gui__engine__impl_8h" startline="51">root_dirs_paths</references>
+        <references refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a3f9eb6dff849859000c60bc556c4c65c">rootDirsPathsChanged</references>
+        <referencedby refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1ac2ef61bcd0cdb991b399a29eeb5ec74c" compoundref="dc/d71/gui__subtree__impl_8cpp" startline="221" endline="236">qtsdl::GuiEngineImplConnection::disconnect</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="de/d58/classqtsdl_1_1_gui_engine_impl_1a7a1f3506f8bc11e95f3a981291a4ade0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/d58/classqtsdl_1_1_gui_engine_impl" kindref="compound">GuiEngineImpl</ref> *</type>
+        <definition>GuiEngineImpl * qtsdl::GuiEngineImpl::impl</definition>
+        <argsstring>(GuiEngine *engine)</argsstring>
+        <name>impl</name>
+        <param>
+          <type><ref refid="d8/d14/classqtsdl_1_1_gui_engine" kindref="compound">GuiEngine</ref> *</type>
+          <declname>engine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" line="30" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.cpp" bodystart="47" bodyend="49"/>
+        <references refid="d8/d14/classqtsdl_1_1_gui_engine_1a59c5aae8ba0f37036d4e37cd90895b0b" compoundref="d4/de6/gui__engine_8h" startline="25">qtsdl::GuiEngine::impl</references>
+        <referencedby refid="d4/d96/classqtsdl_1_1_gui_subtree_impl_1a9534f49628a4fe4f157a4495e6518c3c" compoundref="dc/d71/gui__subtree__impl_8cpp" startline="25" endline="68">qtsdl::GuiSubtreeImpl::GuiSubtreeImpl</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="de/d58/classqtsdl_1_1_gui_engine_impl_1ad57811cbb531486d7aadd98aedfdcf31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void qtsdl::GuiEngineImpl::reload</definition>
+        <argsstring>()</argsstring>
+        <name>reload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" line="38" column="1"/>
+        <referencedby refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1ac2ef61bcd0cdb991b399a29eeb5ec74c" compoundref="dc/d71/gui__subtree__impl_8cpp" startline="221" endline="236">qtsdl::GuiEngineImplConnection::disconnect</referencedby>
+        <referencedby refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1af9d75573df9d5f7b433c54eb6f2690fa" compoundref="dc/d71/gui__subtree__impl_8cpp" startline="195" endline="215">qtsdl::GuiEngineImplConnection::GuiEngineImplConnection</referencedby>
+        <referencedby refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a8a5e647f1df22a102c691e721dcc8f26" compoundref="d5/dce/gui__engine__impl_8cpp" startline="60" endline="64">onReload</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="de/d58/classqtsdl_1_1_gui_engine_impl_1a3f9eb6dff849859000c60bc556c4c65c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void qtsdl::GuiEngineImpl::rootDirsPathsChanged</definition>
+        <argsstring>(const QStringList &amp;)</argsstring>
+        <name>rootDirsPathsChanged</name>
+        <param>
+          <type>const QStringList &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" line="39" column="1"/>
+        <referencedby refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a9ede5811b7eb20e26e0b7d2d2e07474b" compoundref="d5/dce/gui__engine__impl_8cpp" startline="66" endline="69">add_root_dir_path</referencedby>
+        <referencedby refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a4088026e44037a9ec5c6a7d664651c0f" compoundref="d5/dce/gui__engine__impl_8cpp" startline="17" endline="42">GuiEngineImpl</referencedby>
+        <referencedby refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a7ad899a288943e1bd4266fee8fb79b30" compoundref="d5/dce/gui__engine__impl_8cpp" startline="71" endline="76">remove_root_dir_path</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="de/d58/classqtsdl_1_1_gui_engine_impl_1a5b83bd915fa9ce9bf9e36f26000143cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void qtsdl::GuiEngineImpl::attach_to</definition>
+        <argsstring>(GuiRendererImpl *renderer)</argsstring>
+        <name>attach_to</name>
+        <param>
+          <type><ref refid="dd/db2/classqtsdl_1_1_gui_renderer_impl" kindref="compound">GuiRendererImpl</ref> *</type>
+          <declname>renderer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" line="42" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.cpp" bodystart="51" bodyend="54"/>
+        <references refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a6c207f5585af640ff7b32e90c31c9508" compoundref="d1/d02/gui__engine__impl_8h" startline="48">engine</references>
+        <references refid="dd/db2/classqtsdl_1_1_gui_renderer_impl_1a6c76b7a4a79a481cf8962e268ae56bb4" compoundref="dc/d7d/gui__renderer__impl_8cpp" startline="240" endline="242">qtsdl::GuiRendererImpl::get_window</references>
+        <references refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a420e7d89f9adfd52c422f058a8fdbe6b" compoundref="d1/d02/gui__engine__impl_8h" startline="46">renderer</references>
+        <referencedby refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a4088026e44037a9ec5c6a7d664651c0f" compoundref="d5/dce/gui__engine__impl_8cpp" startline="17" endline="42">GuiEngineImpl</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="de/d58/classqtsdl_1_1_gui_engine_impl_1a8a5e647f1df22a102c691e721dcc8f26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void qtsdl::GuiEngineImpl::onReload</definition>
+        <argsstring>()</argsstring>
+        <name>onReload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" line="43" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.cpp" bodystart="60" bodyend="64"/>
+        <references refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a6c207f5585af640ff7b32e90c31c9508" compoundref="d1/d02/gui__engine__impl_8h" startline="48">engine</references>
+        <references refid="de/d58/classqtsdl_1_1_gui_engine_impl_1ad57811cbb531486d7aadd98aedfdcf31">reload</references>
+        <referencedby refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a4088026e44037a9ec5c6a7d664651c0f" compoundref="d5/dce/gui__engine__impl_8cpp" startline="17" endline="42">GuiEngineImpl</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6317">
+        <label>QObject</label>
+      </node>
+      <node id="6316">
+        <label>qtsdl::GuiEngineImpl</label>
+        <link refid="de/d58/classqtsdl_1_1_gui_engine_impl"/>
+        <childnode refid="6317" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6322">
+        <label>qtsdl::GuiRenderingSetupRoutines</label>
+        <link refid="d1/df3/classqtsdl_1_1_gui_rendering_setup_routines"/>
+      </node>
+      <node id="6319">
+        <label>QObject</label>
+      </node>
+      <node id="6320">
+        <label>qtsdl::RecursiveDirectoryWatcher</label>
+        <link refid="d3/dea/classqtsdl_1_1_recursive_directory_watcher"/>
+        <childnode refid="6319" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6318">
+        <label>qtsdl::GuiEngineImpl</label>
+        <link refid="de/d58/classqtsdl_1_1_gui_engine_impl"/>
+        <childnode refid="6319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6320" relation="usage">
+          <edgelabel>-watcher</edgelabel>
+        </childnode>
+        <childnode refid="6321" relation="usage">
+          <edgelabel>-renderer</edgelabel>
+        </childnode>
+        <childnode refid="6323" relation="usage">
+          <edgelabel>-engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="6324">
+        <label>QQmlEngine</label>
+      </node>
+      <node id="6325">
+        <label>qtsdl::GuiSingletonItemsInfo</label>
+        <link refid="d2/dbf/classqtsdl_1_1_gui_singleton_items_info"/>
+      </node>
+      <node id="6321">
+        <label>qtsdl::GuiRendererImpl</label>
+        <link refid="dd/db2/classqtsdl_1_1_gui_renderer_impl"/>
+        <childnode refid="6319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6322" relation="usage">
+          <edgelabel>-gui_rendering_setup_routines</edgelabel>
+        </childnode>
+      </node>
+      <node id="6323">
+        <label>qtsdl::QmlEngineWithSingletonItemsInfo</label>
+        <link refid="d1/dd2/classqtsdl_1_1_qml_engine_with_singleton_items_info"/>
+        <childnode refid="6324" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6325" relation="usage">
+          <edgelabel>-singleton_items_info</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" line="21" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_engine_impl.h" bodystart="21" bodyend="52"/>
+    <listofallmembers>
+      <member refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a9ede5811b7eb20e26e0b7d2d2e07474b" prot="public" virt="non-virtual"><scope>qtsdl::GuiEngineImpl</scope><name>add_root_dir_path</name></member>
+      <member refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a5b83bd915fa9ce9bf9e36f26000143cc" prot="public" virt="non-virtual"><scope>qtsdl::GuiEngineImpl</scope><name>attach_to</name></member>
+      <member refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a6c207f5585af640ff7b32e90c31c9508" prot="private" virt="non-virtual"><scope>qtsdl::GuiEngineImpl</scope><name>engine</name></member>
+      <member refid="de/d58/classqtsdl_1_1_gui_engine_impl_1af1dc911943688d3c296909af70dfc62e" prot="public" virt="non-virtual"><scope>qtsdl::GuiEngineImpl</scope><name>get_qml_engine</name></member>
+      <member refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a4088026e44037a9ec5c6a7d664651c0f" prot="public" virt="non-virtual"><scope>qtsdl::GuiEngineImpl</scope><name>GuiEngineImpl</name></member>
+      <member refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a7a1f3506f8bc11e95f3a981291a4ade0" prot="public" virt="non-virtual"><scope>qtsdl::GuiEngineImpl</scope><name>impl</name></member>
+      <member refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a8a5e647f1df22a102c691e721dcc8f26" prot="public" virt="non-virtual"><scope>qtsdl::GuiEngineImpl</scope><name>onReload</name></member>
+      <member refid="de/d58/classqtsdl_1_1_gui_engine_impl_1ad57811cbb531486d7aadd98aedfdcf31" prot="public" virt="non-virtual"><scope>qtsdl::GuiEngineImpl</scope><name>reload</name></member>
+      <member refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a7ad899a288943e1bd4266fee8fb79b30" prot="public" virt="non-virtual"><scope>qtsdl::GuiEngineImpl</scope><name>remove_root_dir_path</name></member>
+      <member refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a420e7d89f9adfd52c422f058a8fdbe6b" prot="private" virt="non-virtual"><scope>qtsdl::GuiEngineImpl</scope><name>renderer</name></member>
+      <member refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a9e079732f149647eb9e47529e2cb7b67" prot="private" virt="non-virtual"><scope>qtsdl::GuiEngineImpl</scope><name>root_dirs_paths</name></member>
+      <member refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a3f9eb6dff849859000c60bc556c4c65c" prot="public" virt="non-virtual"><scope>qtsdl::GuiEngineImpl</scope><name>rootDirsPathsChanged</name></member>
+      <member refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a42567da87e28cbae9978f57330a23103" prot="private" virt="non-virtual"><scope>qtsdl::GuiEngineImpl</scope><name>watcher</name></member>
+      <member refid="de/d58/classqtsdl_1_1_gui_engine_impl_1a7b14a50a70e1bc615b38e618e011a899" prot="public" virt="virtual"><scope>qtsdl::GuiEngineImpl</scope><name>~GuiEngineImpl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

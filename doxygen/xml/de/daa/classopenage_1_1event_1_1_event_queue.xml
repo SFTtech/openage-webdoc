@@ -1,0 +1,451 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="de/daa/classopenage_1_1event_1_1_event_queue" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>openage::event::EventQueue</compoundname>
+    <includes refid="d4/d67/eventqueue_8h" local="no">eventqueue.h</includes>
+    <innerclass refid="d9/d4a/classopenage_1_1event_1_1_event_queue_1_1_on_change_element" prot="public">openage::event::EventQueue::OnChangeElement</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="de/daa/classopenage_1_1event_1_1_event_queue_1aaabd21eb088af6bb687e1bd6c71076db" prot="public" static="no">
+        <type>std::unordered_set&lt; <ref refid="d9/d4a/classopenage_1_1event_1_1_event_queue_1_1_on_change_element" kindref="compound">OnChangeElement</ref>, <ref refid="d9/d8b/classopenage_1_1event_1_1_event_queue_1_1_on_change_element_1_1_hasher" kindref="compound">OnChangeElement::Hasher</ref>, <ref refid="d2/da3/classopenage_1_1event_1_1_event_queue_1_1_on_change_element_1_1_equal" kindref="compound">OnChangeElement::Equal</ref> &gt;</type>
+        <definition>using openage::event::EventQueue::change_set =  std::unordered_set&lt;OnChangeElement, OnChangeElement::Hasher, OnChangeElement::Equal&gt;</definition>
+        <argsstring></argsstring>
+        <name>change_set</name>
+        <briefdescription>
+<para>Type for the set to store changes to track. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="51" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/daa/classopenage_1_1event_1_1_event_queue_1a07cfe681660473cfc3ec607490c7c42d" prot="private" static="no" mutable="no">
+        <type><ref refid="de/daa/classopenage_1_1event_1_1_event_queue_1aaabd21eb088af6bb687e1bd6c71076db" kindref="member">change_set</ref> *</type>
+        <definition>change_set* openage::event::EventQueue::changes</definition>
+        <argsstring></argsstring>
+        <name>changes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="128" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" bodystart="128" bodyend="-1"/>
+        <referencedby refid="de/daa/classopenage_1_1event_1_1_event_queue_1a7115692628b99b277fead8b39603c885" compoundref="d5/d30/eventqueue_8cpp" startline="82" endline="126">add_change</referencedby>
+        <referencedby refid="de/daa/classopenage_1_1event_1_1_event_queue_1a2f04cadaa84a8629b94020cb26b999ad" compoundref="d5/d30/eventqueue_8cpp" startline="183" endline="185">clear_changes</referencedby>
+        <referencedby refid="de/daa/classopenage_1_1event_1_1_event_queue_1a501fe0a6571ddf1a97bf6d7a6328d924" compoundref="d5/d30/eventqueue_8cpp" startline="178" endline="180">get_changes</referencedby>
+        <referencedby refid="de/daa/classopenage_1_1event_1_1_event_queue_1a11ac5f64f4344db4281924887f8bda1d" compoundref="d5/d30/eventqueue_8cpp" startline="188" endline="190">swap_changesets</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/daa/classopenage_1_1event_1_1_event_queue_1a92c22f62ef3fc1e3ce03051fc2c6c964" prot="private" static="no" mutable="no">
+        <type><ref refid="de/daa/classopenage_1_1event_1_1_event_queue_1aaabd21eb088af6bb687e1bd6c71076db" kindref="member">change_set</ref> *</type>
+        <definition>change_set* openage::event::EventQueue::future_changes</definition>
+        <argsstring></argsstring>
+        <name>future_changes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="129" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" bodystart="129" bodyend="-1"/>
+        <referencedby refid="de/daa/classopenage_1_1event_1_1_event_queue_1a7115692628b99b277fead8b39603c885" compoundref="d5/d30/eventqueue_8cpp" startline="82" endline="126">add_change</referencedby>
+        <referencedby refid="de/daa/classopenage_1_1event_1_1_event_queue_1a11ac5f64f4344db4281924887f8bda1d" compoundref="d5/d30/eventqueue_8cpp" startline="188" endline="190">swap_changesets</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/daa/classopenage_1_1event_1_1_event_queue_1a14b1f5a54b6a3c3898bf534b50fee7f9" prot="private" static="no" mutable="no">
+        <type><ref refid="de/daa/classopenage_1_1event_1_1_event_queue_1aaabd21eb088af6bb687e1bd6c71076db" kindref="member">change_set</ref></type>
+        <definition>change_set openage::event::EventQueue::changeset_A</definition>
+        <argsstring></argsstring>
+        <name>changeset_A</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="132" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/daa/classopenage_1_1event_1_1_event_queue_1ae4954774fca16c32b81530415a3b5d76" prot="private" static="no" mutable="no">
+        <type><ref refid="de/daa/classopenage_1_1event_1_1_event_queue_1aaabd21eb088af6bb687e1bd6c71076db" kindref="member">change_set</ref></type>
+        <definition>change_set openage::event::EventQueue::changeset_B</definition>
+        <argsstring></argsstring>
+        <name>changeset_B</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="133" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/daa/classopenage_1_1event_1_1_event_queue_1a59e482122fd26c9e261f4eaff00ebcc8" prot="private" static="no" mutable="no">
+        <type>std::unordered_set&lt; std::shared_ptr&lt; <ref refid="d9/dad/classopenage_1_1event_1_1_event" kindref="compound">Event</ref> &gt; &gt;</type>
+        <definition>std::unordered_set&lt;std::shared_ptr&lt;Event&gt; &gt; openage::event::EventQueue::dependency_events</definition>
+        <argsstring></argsstring>
+        <name>dependency_events</name>
+        <briefdescription>
+<para>Stores events that sleep until their dependency changes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="138" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" bodystart="138" bodyend="-1"/>
+        <referencedby refid="de/daa/classopenage_1_1event_1_1_event_queue_1ac5abd71bf0167e4b7d36f19a29f4a611" compoundref="d5/d30/eventqueue_8cpp" startline="16" endline="73">create_event</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/daa/classopenage_1_1event_1_1_event_queue_1accc0e126e8a8b9560d229fabdd23f17d" prot="private" static="no" mutable="no">
+        <type>std::unordered_set&lt; std::shared_ptr&lt; <ref refid="d9/dad/classopenage_1_1event_1_1_event" kindref="compound">Event</ref> &gt; &gt;</type>
+        <definition>std::unordered_set&lt;std::shared_ptr&lt;Event&gt; &gt; openage::event::EventQueue::dependency_immediately_events</definition>
+        <argsstring></argsstring>
+        <name>dependency_immediately_events</name>
+        <briefdescription>
+<para>Stores events that sleep until their dependency changes, but they trigger instantly when their dependency changes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="144" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" bodystart="144" bodyend="-1"/>
+        <referencedby refid="de/daa/classopenage_1_1event_1_1_event_queue_1ac5abd71bf0167e4b7d36f19a29f4a611" compoundref="d5/d30/eventqueue_8cpp" startline="16" endline="73">create_event</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/daa/classopenage_1_1event_1_1_event_queue_1a2453f2e8a018a7b4bdbbc95618bc85f9" prot="private" static="no" mutable="no">
+        <type>std::unordered_set&lt; std::shared_ptr&lt; <ref refid="d9/dad/classopenage_1_1event_1_1_event" kindref="compound">Event</ref> &gt; &gt;</type>
+        <definition>std::unordered_set&lt;std::shared_ptr&lt;Event&gt; &gt; openage::event::EventQueue::trigger_events</definition>
+        <argsstring></argsstring>
+        <name>trigger_events</name>
+        <briefdescription>
+<para>Events that fire only when triggered. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="149" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" bodystart="149" bodyend="-1"/>
+        <referencedby refid="de/daa/classopenage_1_1event_1_1_event_queue_1ac5abd71bf0167e4b7d36f19a29f4a611" compoundref="d5/d30/eventqueue_8cpp" startline="16" endline="73">create_event</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/daa/classopenage_1_1event_1_1_event_queue_1a790ceca6fa0cfa9eec28581350727756" prot="private" static="no" mutable="no">
+        <type><ref refid="d1/d17/classopenage_1_1event_1_1_event_store" kindref="compound">EventStore</ref></type>
+        <definition>EventStore openage::event::EventQueue::event_queue</definition>
+        <argsstring></argsstring>
+        <name>event_queue</name>
+        <briefdescription>
+<para>The universe timeline processes through this queue. </para>        </briefdescription>
+        <detaileddescription>
+<para>Type::ONCE is only inserted into the queue. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="155" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" bodystart="155" bodyend="-1"/>
+        <referencedby refid="de/daa/classopenage_1_1event_1_1_event_queue_1ac5abd71bf0167e4b7d36f19a29f4a611" compoundref="d5/d30/eventqueue_8cpp" startline="16" endline="73">create_event</referencedby>
+        <referencedby refid="de/daa/classopenage_1_1event_1_1_event_queue_1a8f45163ce661267cf80d811a776c8733" compoundref="d5/d30/eventqueue_8cpp" startline="137" endline="144">enqueue_change</referencedby>
+        <referencedby refid="de/daa/classopenage_1_1event_1_1_event_queue_1a7da54eb03b82d893e26af2af2749dd62" compoundref="d5/d30/eventqueue_8cpp" startline="152" endline="154">get_event_queue</referencedby>
+        <referencedby refid="de/daa/classopenage_1_1event_1_1_event_queue_1ac4990fe7904f09c54158de776c6cb805" compoundref="d5/d30/eventqueue_8cpp" startline="147" endline="149">reenqueue</referencedby>
+        <referencedby refid="de/daa/classopenage_1_1event_1_1_event_queue_1a42433f50adffb7e0a20c43889292e54c" compoundref="d5/d30/eventqueue_8cpp" startline="129" endline="134">remove</referencedby>
+        <referencedby refid="de/daa/classopenage_1_1event_1_1_event_queue_1aec381e61d472643475de6fa50ae7b5d8" compoundref="d5/d30/eventqueue_8cpp" startline="157" endline="175">take_event</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/daa/classopenage_1_1event_1_1_event_queue_1a1b424b6e8cc92b0e597bd335d1b01967" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::event::EventQueue::EventQueue</definition>
+        <argsstring>()</argsstring>
+        <name>EventQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="56" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.cpp" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="de/daa/classopenage_1_1event_1_1_event_queue_1ac5abd71bf0167e4b7d36f19a29f4a611" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="d9/dad/classopenage_1_1event_1_1_event" kindref="compound">Event</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; Event &gt; openage::event::EventQueue::create_event</definition>
+        <argsstring>(const std::shared_ptr&lt; EventTarget &gt; &amp;eventtarget, const std::shared_ptr&lt; EventClass &gt; &amp;eventclass, const std::shared_ptr&lt; State &gt; &amp;state, const curve::time_t &amp;reference_time, const EventClass::param_map &amp;params)</argsstring>
+        <name>create_event</name>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d6/d15/classopenage_1_1event_1_1_event_target" kindref="compound">EventTarget</ref> &gt; &amp;</type>
+          <declname>eventtarget</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="de/de9/classopenage_1_1event_1_1_event_class" kindref="compound">EventClass</ref> &gt; &amp;</type>
+          <declname>eventclass</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d2/d86/classopenage_1_1event_1_1_state" kindref="compound">State</ref> &gt; &amp;</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const <ref refid="df/dbd/namespaceopenage_1_1curve_1af909cf1de79df6389fd9431b7424b48a" kindref="member">curve::time_t</ref> &amp;</type>
+          <declname>reference_time</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d3/d5d/classopenage_1_1event_1_1_event_class_1_1param__map" kindref="compound">EventClass::param_map</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Add an event for a specified target. </para>        </briefdescription>
+        <detaileddescription>
+<para>A target is every single unit in the game world - so best add these events in the constructor of the game objects.</para><para>The <computeroutput>insertion_time</computeroutput> is the time used to calculate when the actual event time will happen! </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="67" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.cpp" bodystart="16" bodyend="73"/>
+        <references refid="d2/d0d/message_8h_1a49606be7356624568932ec81c0d429f4" compoundref="d2/d0d/message_8h" startline="176">DBG</references>
+        <references refid="de/de9/classopenage_1_1event_1_1_event_class_1a911de25538d1280c375a90ed694bb717a46e158d5ce615a4f0057515b9a242188">openage::event::EventClass::DEPENDENCY</references>
+        <references refid="de/daa/classopenage_1_1event_1_1_event_queue_1a59e482122fd26c9e261f4eaff00ebcc8" compoundref="d4/d67/eventqueue_8h" startline="138">dependency_events</references>
+        <references refid="de/de9/classopenage_1_1event_1_1_event_class_1a911de25538d1280c375a90ed694bb717a66ce7f5b73a0a164407078b598f45e09">openage::event::EventClass::DEPENDENCY_IMMEDIATELY</references>
+        <references refid="de/daa/classopenage_1_1event_1_1_event_queue_1accc0e126e8a8b9560d229fabdd23f17d" compoundref="d4/d67/eventqueue_8h" startline="144">dependency_immediately_events</references>
+        <references refid="de/daa/classopenage_1_1event_1_1_event_queue_1a790ceca6fa0cfa9eec28581350727756" compoundref="d4/d67/eventqueue_8h" startline="155">event_queue</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d8/dcc/namespacestd_1a34591a1d8ee5da3f16f56554590d5e16" compoundref="de/d62/fixed__point_8h" startline="475" endline="480">std::min</references>
+        <references refid="de/de9/classopenage_1_1event_1_1_event_class_1a911de25538d1280c375a90ed694bb717aa32d16355630f112473d1ae254519c24">openage::event::EventClass::ONCE</references>
+        <references refid="d1/d17/classopenage_1_1event_1_1_event_store_1ae17679f5da2da238bc0f423befda3850" compoundref="d8/daa/eventstore_8cpp" startline="15" endline="25">openage::event::EventStore::push</references>
+        <references refid="de/de9/classopenage_1_1event_1_1_event_class_1a911de25538d1280c375a90ed694bb717a5be68175be14dfaa080165456c2e9555">openage::event::EventClass::REPEAT</references>
+        <references refid="de/de9/classopenage_1_1event_1_1_event_class_1a911de25538d1280c375a90ed694bb717ab8cd801b107a9a8f62c5b61ea5646620">openage::event::EventClass::TRIGGER</references>
+        <references refid="de/daa/classopenage_1_1event_1_1_event_queue_1a2453f2e8a018a7b4bdbbc95618bc85f9" compoundref="d4/d67/eventqueue_8h" startline="149">trigger_events</references>
+        <referencedby refid="df/d23/classopenage_1_1event_1_1_loop_1a345332e87684e73eeef16da46255882f" compoundref="dd/d41/loop_8cpp" startline="21" endline="33">openage::event::Loop::create_event</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/daa/classopenage_1_1event_1_1_event_queue_1a42433f50adffb7e0a20c43889292e54c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::event::EventQueue::remove</definition>
+        <argsstring>(const std::shared_ptr&lt; Event &gt; &amp;evnt)</argsstring>
+        <name>remove</name>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d9/dad/classopenage_1_1event_1_1_event" kindref="compound">Event</ref> &gt; &amp;</type>
+          <declname>evnt</declname>
+        </param>
+        <briefdescription>
+<para>Remove the given event from the queue. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="76" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.cpp" bodystart="129" bodyend="134"/>
+        <references refid="d1/d17/classopenage_1_1event_1_1_event_store_1acf182eb2f89c80bb6c790a24d192398f" compoundref="d8/daa/eventstore_8cpp" startline="54" endline="64">openage::event::EventStore::erase</references>
+        <references refid="de/daa/classopenage_1_1event_1_1_event_queue_1a790ceca6fa0cfa9eec28581350727756" compoundref="d4/d67/eventqueue_8h" startline="155">event_queue</references>
+        <referencedby refid="df/d23/classopenage_1_1event_1_1_loop_1a3cb0ae638435b575fe689c550b27a823" compoundref="dd/d41/loop_8cpp" startline="158" endline="215">openage::event::Loop::update_changes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/daa/classopenage_1_1event_1_1_event_queue_1a8f45163ce661267cf80d811a776c8733" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::event::EventQueue::enqueue_change</definition>
+        <argsstring>(const std::shared_ptr&lt; Event &gt; &amp;event)</argsstring>
+        <name>enqueue_change</name>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d9/dad/classopenage_1_1event_1_1_event" kindref="compound">Event</ref> &gt; &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>An update to existing events has to be applied. </para>        </briefdescription>
+        <detaileddescription>
+<para>The execution time of this event may have changed or it is newly created. This updates/inserts the given event in the main queue. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="84" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.cpp" bodystart="137" bodyend="144"/>
+        <references refid="d1/d17/classopenage_1_1event_1_1_event_store_1a4be75c01219e59abd20b9f906c8b7154" compoundref="d8/daa/eventstore_8cpp" startline="78" endline="80">openage::event::EventStore::contains</references>
+        <references refid="de/daa/classopenage_1_1event_1_1_event_queue_1a790ceca6fa0cfa9eec28581350727756" compoundref="d4/d67/eventqueue_8h" startline="155">event_queue</references>
+        <references refid="d1/d17/classopenage_1_1event_1_1_event_store_1ae17679f5da2da238bc0f423befda3850" compoundref="d8/daa/eventstore_8cpp" startline="15" endline="25">openage::event::EventStore::push</references>
+        <references refid="d1/d17/classopenage_1_1event_1_1_event_store_1ae8a67463b44b369d9402186cf332e247" compoundref="d8/daa/eventstore_8cpp" startline="67" endline="75">openage::event::EventStore::update</references>
+        <referencedby refid="df/d23/classopenage_1_1event_1_1_loop_1a3cb0ae638435b575fe689c550b27a823" compoundref="dd/d41/loop_8cpp" startline="158" endline="215">openage::event::Loop::update_changes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/daa/classopenage_1_1event_1_1_event_queue_1ac4990fe7904f09c54158de776c6cb805" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::event::EventQueue::reenqueue</definition>
+        <argsstring>(const std::shared_ptr&lt; Event &gt; &amp;event)</argsstring>
+        <name>reenqueue</name>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d9/dad/classopenage_1_1event_1_1_event" kindref="compound">Event</ref> &gt; &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>The event was just removed, add it again. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used for REPEAT events so that they are repeated. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="90" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.cpp" bodystart="147" bodyend="149"/>
+        <references refid="de/daa/classopenage_1_1event_1_1_event_queue_1a790ceca6fa0cfa9eec28581350727756" compoundref="d4/d67/eventqueue_8h" startline="155">event_queue</references>
+        <references refid="d1/d17/classopenage_1_1event_1_1_event_store_1ae17679f5da2da238bc0f423befda3850" compoundref="d8/daa/eventstore_8cpp" startline="15" endline="25">openage::event::EventStore::push</references>
+        <referencedby refid="df/d23/classopenage_1_1event_1_1_loop_1aa73104f71472a83e1afff4f11e0c619f" compoundref="dd/d41/loop_8cpp" startline="90" endline="155">openage::event::Loop::execute_events</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/daa/classopenage_1_1event_1_1_event_queue_1a7115692628b99b277fead8b39603c885" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::event::EventQueue::add_change</definition>
+        <argsstring>(const std::shared_ptr&lt; Event &gt; &amp;event, const curve::time_t &amp;changed_at)</argsstring>
+        <name>add_change</name>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="d9/dad/classopenage_1_1event_1_1_event" kindref="compound">Event</ref> &gt; &amp;</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>const <ref refid="df/dbd/namespaceopenage_1_1curve_1af909cf1de79df6389fd9431b7424b48a" kindref="member">curve::time_t</ref> &amp;</type>
+          <declname>changed_at</declname>
+        </param>
+        <briefdescription>
+<para>An event target has changed, and the event shall be retriggered. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="95" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.cpp" bodystart="82" bodyend="126"/>
+        <references refid="de/daa/classopenage_1_1event_1_1_event_queue_1a07cfe681660473cfc3ec607490c7c42d" compoundref="d4/d67/eventqueue_8h" startline="128">changes</references>
+        <references refid="d2/d0d/message_8h_1a49606be7356624568932ec81c0d429f4" compoundref="d2/d0d/message_8h" startline="176">DBG</references>
+        <references refid="de/daa/classopenage_1_1event_1_1_event_queue_1a92c22f62ef3fc1e3ce03051fc2c6c964" compoundref="d4/d67/eventqueue_8h" startline="129">future_changes</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d9/d4a/classopenage_1_1event_1_1_event_queue_1_1_on_change_element_1a3983cb8a1cc4722919ee551aff1d9499" compoundref="d4/d67/eventqueue_8h" startline="30">openage::event::EventQueue::OnChangeElement::time</references>
+      </memberdef>
+      <memberdef kind="function" id="de/daa/classopenage_1_1event_1_1_event_queue_1a7da54eb03b82d893e26af2af2749dd62" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="d1/d17/classopenage_1_1event_1_1_event_store" kindref="compound">EventStore</ref> &amp;</type>
+        <definition>const EventStore &amp; openage::event::EventQueue::get_event_queue</definition>
+        <argsstring>() const</argsstring>
+        <name>get_event_queue</name>
+        <briefdescription>
+<para>Get an accessor to the running queue for state output purpose. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="101" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.cpp" bodystart="152" bodyend="154"/>
+        <references refid="de/daa/classopenage_1_1event_1_1_event_queue_1a790ceca6fa0cfa9eec28581350727756" compoundref="d4/d67/eventqueue_8h" startline="155">event_queue</references>
+        <referencedby refid="df/d23/classopenage_1_1event_1_1_loop_1aa73104f71472a83e1afff4f11e0c619f" compoundref="dd/d41/loop_8cpp" startline="90" endline="155">openage::event::Loop::execute_events</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/daa/classopenage_1_1event_1_1_event_queue_1aec381e61d472643475de6fa50ae7b5d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="d9/dad/classopenage_1_1event_1_1_event" kindref="compound">Event</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; Event &gt; openage::event::EventQueue::take_event</definition>
+        <argsstring>(const curve::time_t &amp;max_time)</argsstring>
+        <name>take_event</name>
+        <param>
+          <type>const <ref refid="df/dbd/namespaceopenage_1_1curve_1af909cf1de79df6389fd9431b7424b48a" kindref="member">curve::time_t</ref> &amp;</type>
+          <declname>max_time</declname>
+        </param>
+        <briefdescription>
+<para>Obtain the next event from the <computeroutput>event_queue</computeroutput> that happens before <computeroutput>&lt;= max_time</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="106" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.cpp" bodystart="157" bodyend="175"/>
+        <references refid="de/daa/classopenage_1_1event_1_1_event_queue_1a790ceca6fa0cfa9eec28581350727756" compoundref="d4/d67/eventqueue_8h" startline="155">event_queue</references>
+        <references refid="d1/d17/classopenage_1_1event_1_1_event_store_1a6758260ffbc439c15c70590979acb2f9" compoundref="d8/daa/eventstore_8cpp" startline="28" endline="46">openage::event::EventStore::pop</references>
+        <references refid="d1/d17/classopenage_1_1event_1_1_event_store_1a895a291c20860520abba447e1cd48fd0" compoundref="d8/daa/eventstore_8cpp" startline="89" endline="91">openage::event::EventStore::size</references>
+        <references refid="d1/d17/classopenage_1_1event_1_1_event_store_1abbad60ac960f4020d813237260867dcb" compoundref="d8/daa/eventstore_8cpp" startline="49" endline="51">openage::event::EventStore::top</references>
+        <referencedby refid="df/d23/classopenage_1_1event_1_1_loop_1aa73104f71472a83e1afff4f11e0c619f" compoundref="dd/d41/loop_8cpp" startline="90" endline="155">openage::event::Loop::execute_events</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/daa/classopenage_1_1event_1_1_event_queue_1a501fe0a6571ddf1a97bf6d7a6328d924" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="de/daa/classopenage_1_1event_1_1_event_queue_1aaabd21eb088af6bb687e1bd6c71076db" kindref="member">change_set</ref> &amp;</type>
+        <definition>const EventQueue::change_set &amp; openage::event::EventQueue::get_changes</definition>
+        <argsstring>() const</argsstring>
+        <name>get_changes</name>
+        <briefdescription>
+<para>Get the change_set to process changes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="111" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.cpp" bodystart="178" bodyend="180"/>
+        <references refid="de/daa/classopenage_1_1event_1_1_event_queue_1a07cfe681660473cfc3ec607490c7c42d" compoundref="d4/d67/eventqueue_8h" startline="128">changes</references>
+        <referencedby refid="df/d23/classopenage_1_1event_1_1_loop_1a3cb0ae638435b575fe689c550b27a823" compoundref="dd/d41/loop_8cpp" startline="158" endline="215">openage::event::Loop::update_changes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/daa/classopenage_1_1event_1_1_event_queue_1a2f04cadaa84a8629b94020cb26b999ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::event::EventQueue::clear_changes</definition>
+        <argsstring>()</argsstring>
+        <name>clear_changes</name>
+        <briefdescription>
+<para>All changes (fetched with <computeroutput>get_changes</computeroutput>) have been processed, so we can clear the change_set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="117" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.cpp" bodystart="183" bodyend="185"/>
+        <references refid="de/daa/classopenage_1_1event_1_1_event_queue_1a07cfe681660473cfc3ec607490c7c42d" compoundref="d4/d67/eventqueue_8h" startline="128">changes</references>
+        <referencedby refid="df/d23/classopenage_1_1event_1_1_loop_1a3cb0ae638435b575fe689c550b27a823" compoundref="dd/d41/loop_8cpp" startline="158" endline="215">openage::event::Loop::update_changes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/daa/classopenage_1_1event_1_1_event_queue_1a11ac5f64f4344db4281924887f8bda1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::event::EventQueue::swap_changesets</definition>
+        <argsstring>()</argsstring>
+        <name>swap_changesets</name>
+        <briefdescription>
+<para>Swap the <computeroutput>changes</computeroutput> and <computeroutput>future_changes</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="122" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.cpp" bodystart="188" bodyend="190"/>
+        <references refid="de/daa/classopenage_1_1event_1_1_event_queue_1a07cfe681660473cfc3ec607490c7c42d" compoundref="d4/d67/eventqueue_8h" startline="128">changes</references>
+        <references refid="de/daa/classopenage_1_1event_1_1_event_queue_1a92c22f62ef3fc1e3ce03051fc2c6c964" compoundref="d4/d67/eventqueue_8h" startline="129">future_changes</references>
+        <referencedby refid="df/d23/classopenage_1_1event_1_1_loop_1aeba9e515057a87d7fbfddb8585095de6" compoundref="dd/d41/loop_8cpp" startline="56" endline="87">openage::event::Loop::reach_time</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The core event class for execution and execution dependencies. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2243">
+        <label>openage::datastructure::PairingHeap&lt; T, compare, heapnode_t &gt;</label>
+        <link refid="dc/dfd/classopenage_1_1datastructure_1_1_pairing_heap"/>
+        <childnode refid="2244" relation="usage">
+          <edgelabel>#cmp</edgelabel>
+        </childnode>
+      </node>
+      <node id="2241">
+        <label>openage::util::SharedPtrLess&lt; Event &gt;</label>
+        <link refid="d1/dba/structopenage_1_1util_1_1_shared_ptr_less"/>
+        <childnode refid="2242" relation="template-instance">
+          <edgelabel>&lt; Event &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2239">
+        <label>openage::event::EventStore</label>
+        <link refid="d1/d17/classopenage_1_1event_1_1_event_store"/>
+        <childnode refid="2240" relation="usage">
+          <edgelabel>+heap</edgelabel>
+        </childnode>
+      </node>
+      <node id="2242">
+        <label>openage::util::SharedPtrLess&lt; T &gt;</label>
+        <link refid="d1/dba/structopenage_1_1util_1_1_shared_ptr_less"/>
+      </node>
+      <node id="2244">
+        <label>compare</label>
+      </node>
+      <node id="2238">
+        <label>openage::event::EventQueue</label>
+        <link refid="de/daa/classopenage_1_1event_1_1_event_queue"/>
+        <childnode refid="2239" relation="usage">
+          <edgelabel>-event_queue</edgelabel>
+        </childnode>
+      </node>
+      <node id="2240">
+        <label>openage::datastructure::PairingHeap&lt; std::shared_ptr&lt; Event &gt;, util::SharedPtrLess&lt; Event &gt; &gt;</label>
+        <link refid="dc/dfd/classopenage_1_1datastructure_1_1_pairing_heap"/>
+        <childnode refid="2241" relation="usage">
+          <edgelabel>#cmp</edgelabel>
+        </childnode>
+        <childnode refid="2243" relation="template-instance">
+          <edgelabel>&lt; std::shared_ptr&lt; Event &gt;, util::SharedPtrLess&lt; Event &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" line="22" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/eventqueue.h" bodystart="22" bodyend="156"/>
+    <listofallmembers>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1a7115692628b99b277fead8b39603c885" prot="public" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>add_change</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1aaabd21eb088af6bb687e1bd6c71076db" prot="public" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>change_set</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1a07cfe681660473cfc3ec607490c7c42d" prot="private" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>changes</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1a14b1f5a54b6a3c3898bf534b50fee7f9" prot="private" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>changeset_A</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1ae4954774fca16c32b81530415a3b5d76" prot="private" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>changeset_B</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1a2f04cadaa84a8629b94020cb26b999ad" prot="public" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>clear_changes</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1ac5abd71bf0167e4b7d36f19a29f4a611" prot="public" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>create_event</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1a59e482122fd26c9e261f4eaff00ebcc8" prot="private" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>dependency_events</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1accc0e126e8a8b9560d229fabdd23f17d" prot="private" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>dependency_immediately_events</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1a8f45163ce661267cf80d811a776c8733" prot="public" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>enqueue_change</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1a790ceca6fa0cfa9eec28581350727756" prot="private" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>event_queue</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1a1b424b6e8cc92b0e597bd335d1b01967" prot="public" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>EventQueue</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1a92c22f62ef3fc1e3ce03051fc2c6c964" prot="private" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>future_changes</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1a501fe0a6571ddf1a97bf6d7a6328d924" prot="public" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>get_changes</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1a7da54eb03b82d893e26af2af2749dd62" prot="public" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>get_event_queue</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1ac4990fe7904f09c54158de776c6cb805" prot="public" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>reenqueue</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1a42433f50adffb7e0a20c43889292e54c" prot="public" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>remove</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1a11ac5f64f4344db4281924887f8bda1d" prot="public" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>swap_changesets</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1aec381e61d472643475de6fa50ae7b5d8" prot="public" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>take_event</name></member>
+      <member refid="de/daa/classopenage_1_1event_1_1_event_queue_1a2453f2e8a018a7b4bdbbc95618bc85f9" prot="private" virt="non-virtual"><scope>openage::event::EventQueue</scope><name>trigger_events</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

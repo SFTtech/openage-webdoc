@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d4/d32/classopenage_1_1util_1_1_external_string_buf" kind="class" language="C++" prot="public">
+    <compoundname>openage::util::ExternalStringBuf</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">streambuf</basecompoundref>
+    <includes refid="dc/dcf/externalsstream_8h" local="no">externalsstream.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d4/d32/classopenage_1_1util_1_1_external_string_buf_1a92b422e9e616bcdcb82489736983b65c" prot="public" static="no" mutable="no">
+        <type>std::string *</type>
+        <definition>std::string* openage::util::ExternalStringBuf::output</definition>
+        <argsstring></argsstring>
+        <name>output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/externalsstream.h" line="21" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/externalsstream.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="d4/daf/classopenage_1_1util_1_1_external_o_string_stream_1aa35d807fa9bc56758974bbe602bf1a8e" compoundref="dc/dcf/externalsstream_8h" startline="54" endline="56">openage::util::ExternalOStringStream::use_with</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d32/classopenage_1_1util_1_1_external_string_buf_1adfd17d9c74ef14b035ac068e3444d628" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int openage::util::ExternalStringBuf::overflow</definition>
+        <argsstring>(int chr) override</argsstring>
+        <name>overflow</name>
+        <param>
+          <type>int</type>
+          <declname>chr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/externalsstream.h" line="23" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/externalsstream.h" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d32/classopenage_1_1util_1_1_external_string_buf_1a638c1843417cf92b96adfe9d662fc4ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::streamsize</type>
+        <definition>std::streamsize openage::util::ExternalStringBuf::xsputn</definition>
+        <argsstring>(const char *s, std::streamsize count) override</argsstring>
+        <name>xsputn</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>std::streamsize</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/externalsstream.h" line="28" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/externalsstream.h" bodystart="28" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Used by <ref refid="d4/daf/classopenage_1_1util_1_1_external_o_string_stream" kindref="compound">ExternalOStringStream</ref>; data is written to the external accumulator. </para>    </briefdescription>
+    <detaileddescription>
+<para>If this object&apos;s write functionality is accessed before output has been manually set to a valid std::string object, or if the lifetime of that object has been exceeded, undefined behavior will result. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5841">
+        <label>std::streambuf</label>
+      </node>
+      <node id="5840">
+        <label>openage::util::ExternalStringBuf</label>
+        <link refid="d4/d32/classopenage_1_1util_1_1_external_string_buf"/>
+        <childnode refid="5841" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5843">
+        <label>std::streambuf</label>
+      </node>
+      <node id="5842">
+        <label>openage::util::ExternalStringBuf</label>
+        <link refid="d4/d32/classopenage_1_1util_1_1_external_string_buf"/>
+        <childnode refid="5843" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/externalsstream.h" line="19" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/externalsstream.h" bodystart="19" bodyend="32"/>
+    <listofallmembers>
+      <member refid="d4/d32/classopenage_1_1util_1_1_external_string_buf_1a92b422e9e616bcdcb82489736983b65c" prot="public" virt="non-virtual"><scope>openage::util::ExternalStringBuf</scope><name>output</name></member>
+      <member refid="d4/d32/classopenage_1_1util_1_1_external_string_buf_1adfd17d9c74ef14b035ac068e3444d628" prot="public" virt="non-virtual"><scope>openage::util::ExternalStringBuf</scope><name>overflow</name></member>
+      <member refid="d4/d32/classopenage_1_1util_1_1_external_string_buf_1a638c1843417cf92b96adfe9d662fc4ab" prot="public" virt="non-virtual"><scope>openage::util::ExternalStringBuf</scope><name>xsputn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

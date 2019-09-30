@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d8/d00/stringformatter_8cpp" kind="file" language="C++">
+    <compoundname>stringformatter.cpp</compoundname>
+    <includes refid="de/d65/stringformatter_8h" local="yes">stringformatter.h</includes>
+    <includes local="no">array</includes>
+    <incdepgraph>
+      <node id="32455">
+        <label>atomic</label>
+      </node>
+      <node id="32467">
+        <label>iomanip</label>
+      </node>
+      <node id="32466">
+        <label>functional</label>
+      </node>
+      <node id="32462">
+        <label>externalsstream.h</label>
+        <link refid="dc/dcf/externalsstream_8h"/>
+        <childnode refid="32463" relation="include">
+        </childnode>
+        <childnode refid="32460" relation="include">
+        </childnode>
+      </node>
+      <node id="32461">
+        <label>signal.h</label>
+        <link refid="d8/d39/signal_8h"/>
+        <childnode refid="32461" relation="include">
+        </childnode>
+      </node>
+      <node id="32465">
+        <label>cstdarg</label>
+      </node>
+      <node id="32460">
+        <label>string</label>
+      </node>
+      <node id="32469">
+        <label>vector</label>
+      </node>
+      <node id="32459">
+        <label>ciso646</label>
+      </node>
+      <node id="32470">
+        <label>array</label>
+      </node>
+      <node id="32468">
+        <label>sstream</label>
+      </node>
+      <node id="32458">
+        <label>../util/compiler.h</label>
+        <link refid="d4/dd1/compiler_8h"/>
+        <childnode refid="32459" relation="include">
+        </childnode>
+        <childnode refid="32460" relation="include">
+        </childnode>
+        <childnode refid="32461" relation="include">
+        </childnode>
+      </node>
+      <node id="32463">
+        <label>iostream</label>
+      </node>
+      <node id="32464">
+        <label>strings.h</label>
+        <link refid="d6/d90/strings_8h"/>
+        <childnode refid="32465" relation="include">
+        </childnode>
+        <childnode refid="32466" relation="include">
+        </childnode>
+        <childnode refid="32467" relation="include">
+        </childnode>
+        <childnode refid="32456" relation="include">
+        </childnode>
+        <childnode refid="32468" relation="include">
+        </childnode>
+        <childnode refid="32460" relation="include">
+        </childnode>
+        <childnode refid="32469" relation="include">
+        </childnode>
+      </node>
+      <node id="32454">
+        <label>stringformatter.h</label>
+        <link refid="de/d65/stringformatter_8h"/>
+        <childnode refid="32455" relation="include">
+        </childnode>
+        <childnode refid="32456" relation="include">
+        </childnode>
+        <childnode refid="32457" relation="include">
+        </childnode>
+        <childnode refid="32458" relation="include">
+        </childnode>
+        <childnode refid="32462" relation="include">
+        </childnode>
+        <childnode refid="32464" relation="include">
+        </childnode>
+      </node>
+      <node id="32457">
+        <label>type_traits</label>
+      </node>
+      <node id="32453">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/stringformatter.cpp</label>
+        <link refid="d8/d00/stringformatter_8cpp"/>
+        <childnode refid="32454" relation="include">
+        </childnode>
+        <childnode refid="32470" relation="include">
+        </childnode>
+      </node>
+      <node id="32456">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="da/d23/namespaceopenage">openage</innernamespace>
+    <innernamespace refid="de/d60/namespaceopenage_1_1util">openage::util</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2015-2016<sp/>the<sp/>openage<sp/>authors.<sp/>See<sp/>copying.md<sp/>for<sp/>legal<sp/>info.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="de/d65/stringformatter_8h" kindref="compound">stringformatter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="da/d23/namespaceopenage" kindref="compound">openage</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">util<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1af5a5b6f793311c523e1aee1a354e73ff" refkind="member"><highlight class="normal"><ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1af5a5b6f793311c523e1aee1a354e73ff" kindref="member">CachableOSStream::CachableOSStream</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1acff1e0e6a81b08fac82788f921e677b7" refkind="member"><highlight class="normal"><ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1af5a5b6f793311c523e1aee1a354e73ff" kindref="member">CachableOSStream::CachableOSStream</ref>(std::string<sp/>&amp;output)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream" kindref="compound">CachableOSStream</ref>{}<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a286e7e1b4c5d5340c8bc35f87660f621" kindref="member">stream</ref>.<ref refid="d4/daf/classopenage_1_1util_1_1_external_o_string_stream_1aa35d807fa9bc56758974bbe602bf1a8e" kindref="member">use_with</ref>(output);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a9d7710f8703f4dbba1b65d8b02e84036" refkind="member"><highlight class="normal"><ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream" kindref="compound">CachableOSStream</ref><sp/>*<ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a9d7710f8703f4dbba1b65d8b02e84036" kindref="member">CachableOSStream::acquire</ref>(std::string<sp/>&amp;output)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::array&lt;CachableOSStream,<sp/>128&gt;<sp/>cache;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Find<sp/>an<sp/>available<sp/>cache<sp/>element.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream" kindref="compound">CachableOSStream</ref><sp/>&amp;elem<sp/>:<sp/>cache)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(elem.flag.test_and_set()<sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elem.<ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a286e7e1b4c5d5340c8bc35f87660f621" kindref="member">stream</ref>.<ref refid="d4/daf/classopenage_1_1util_1_1_external_o_string_stream_1aa35d807fa9bc56758974bbe602bf1a8e" kindref="member">use_with</ref>(output);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;elem;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>All<sp/>cached<sp/>objects<sp/>are<sp/>currently<sp/>in<sp/>use...<sp/>that<sp/>probably<sp/>means<sp/>that</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>your<sp/>code<sp/>is<sp/>broken.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Anyways,<sp/>have<sp/>fun<sp/>with<sp/>your<sp/>dynamically-allocated<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO<sp/>Print<sp/>a<sp/>warning<sp/>debug<sp/>message<sp/>about<sp/>this?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>then<sp/>again,<sp/>printing<sp/>a<sp/>log<sp/>message<sp/>about<sp/>the<sp/>logging<sp/>system<sp/>being</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>overloaded<sp/>might<sp/>not<sp/>be<sp/>the<sp/>most<sp/>clever<sp/>idea.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream" kindref="compound">CachableOSStream</ref>{output};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1ad770ce91fe372bb8069e06ea06293f85" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1ad770ce91fe372bb8069e06ea06293f85" kindref="member">CachableOSStream::release</ref>(<ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream" kindref="compound">CachableOSStream</ref><sp/>*cs)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cs<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::atomic_flag<sp/>doesn&apos;t<sp/>have<sp/>a<sp/>simple<sp/>way<sp/>of<sp/>getting<sp/>the<sp/>truth</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>value,<sp/>so<sp/>we<sp/>have<sp/>to<sp/>do<sp/>a<sp/>&quot;full&quot;<sp/>test_and_set()<sp/>instead,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>even<sp/>though<sp/>thread-safety<sp/>is<sp/>not<sp/>a<sp/>concern<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cs-&gt;<ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a5b3cdc213039012cd3064b613a59ab94" kindref="member">flag</ref>.test_and_set())<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cs-&gt;<ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a286e7e1b4c5d5340c8bc35f87660f621" kindref="member">stream</ref>.clear();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cs-&gt;<ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a5b3cdc213039012cd3064b613a59ab94" kindref="member">flag</ref>.clear();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>test_and_set<sp/>returned<sp/>false<sp/>-&gt;<sp/>the<sp/>flag<sp/>was<sp/>not<sp/>set.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>because<sp/>the<sp/>element<sp/>was<sp/>not<sp/>acquired<sp/>from<sp/>the<sp/>cache,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>but<sp/>instead<sp/>dynamically<sp/>allocated.<sp/>de-alloc<sp/>it.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>cs;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>openage::util</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/stringformatter.cpp"/>
+  </compounddef>
+</doxygen>

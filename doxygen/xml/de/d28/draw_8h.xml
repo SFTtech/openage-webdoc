@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="de/d28/draw_8h" kind="file" language="C++">
+    <compoundname>draw.h</compoundname>
+    <includedby refid="d9/dda/console_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.cpp</includedby>
+    <includedby refid="da/d9f/draw_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/draw.cpp</includedby>
+    <includedby refid="de/d77/console_2tests_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/tests.cpp</includedby>
+    <invincdepgraph>
+      <node id="2818">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/draw.h</label>
+        <link refid="de/d28/draw_8h"/>
+        <childnode refid="2819" relation="include">
+        </childnode>
+        <childnode refid="2820" relation="include">
+        </childnode>
+        <childnode refid="2821" relation="include">
+        </childnode>
+      </node>
+      <node id="2820">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/draw.cpp</label>
+        <link refid="da/d9f/draw_8cpp"/>
+      </node>
+      <node id="2821">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/tests.cpp</label>
+        <link refid="de/d77/console_2tests_8cpp"/>
+      </node>
+      <node id="2819">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/console.cpp</label>
+        <link refid="d9/dda/console_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="da/d23/namespaceopenage">openage</innernamespace>
+    <innernamespace refid="de/d60/namespaceopenage_1_1util">openage::util</innernamespace>
+    <innernamespace refid="dd/d31/namespaceopenage_1_1console">openage::console</innernamespace>
+    <innernamespace refid="dc/d43/namespaceopenage_1_1console_1_1draw">openage::console::draw</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2014-2016<sp/>the<sp/>openage<sp/>authors.<sp/>See<sp/>copying.md<sp/>for<sp/>legal<sp/>info.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="da/d23/namespaceopenage" kindref="compound">openage</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Engine;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="de/d60/namespaceopenage_1_1util" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">util<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d2/d02/classopenage_1_1util_1_1_f_d" kindref="compound">FD</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>openage::util</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">console<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Buf;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Console;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">draw<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ad603edf799bbe6017b89fd25a6ed4512" kindref="member">to_opengl</ref>(<ref refid="d6/d40/classopenage_1_1_engine" kindref="compound">Engine</ref><sp/>*<ref refid="d3/d8f/namespaceopenage_1_1gui_1af04609e6ca54bc68fde786f6bb33f14e" kindref="member">engine</ref>,<sp/>Console<sp/>*console);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ab9e51a5e1f100773a19da09a4f9d1597" kindref="member">to_terminal</ref>(Buf<sp/>*buf,<sp/><ref refid="d2/d02/classopenage_1_1util_1_1_f_d" kindref="compound">util::FD</ref><sp/>*fd,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>clear=</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}}}<sp/></highlight><highlight class="comment">//<sp/>openage::console::draw</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/draw.h"/>
+  </compounddef>
+</doxygen>

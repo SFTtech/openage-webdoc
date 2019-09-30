@@ -1,0 +1,620 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d7/dd9/value__container_8h" kind="file" language="C++">
+    <compoundname>value_container.h</compoundname>
+    <includes refid="df/d63/eventtarget_8h" local="yes">../event/eventtarget.h</includes>
+    <includes refid="d7/dac/keyframe__container_8h" local="yes">keyframe_container.h</includes>
+    <includes local="no">cmath</includes>
+    <includedby refid="d8/db7/continuous_8h" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/continuous.h</includedby>
+    <includedby refid="da/d78/discrete_8h" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/discrete.h</includedby>
+    <includedby refid="d5/df4/value__container_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/value_container.cpp</includedby>
+    <incdepgraph>
+      <node id="5601">
+        <label>list</label>
+      </node>
+      <node id="5594">
+        <label>atomic</label>
+      </node>
+      <node id="5617">
+        <label>../log/log.h</label>
+        <link refid="d7/d7f/log_8h"/>
+        <childnode refid="5603" relation="include">
+        </childnode>
+        <childnode refid="5589" relation="include">
+        </childnode>
+      </node>
+      <node id="5598">
+        <label>functional</label>
+      </node>
+      <node id="5573">
+        <label>iomanip</label>
+      </node>
+      <node id="5574">
+        <label>limits</label>
+      </node>
+      <node id="5568">
+        <label>cstdint</label>
+      </node>
+      <node id="5595">
+        <label>externalsstream.h</label>
+        <link refid="dc/dcf/externalsstream_8h"/>
+        <childnode refid="5584" relation="include">
+        </childnode>
+        <childnode refid="5580" relation="include">
+        </childnode>
+      </node>
+      <node id="5588">
+        <label>signal.h</label>
+        <link refid="d8/d39/signal_8h"/>
+        <childnode refid="5588" relation="include">
+        </childnode>
+      </node>
+      <node id="5577">
+        <label>misc.h</label>
+        <link refid="d4/d08/misc_8h"/>
+        <childnode refid="5570" relation="include">
+        </childnode>
+        <childnode refid="5578" relation="include">
+        </childnode>
+        <childnode refid="5572" relation="include">
+        </childnode>
+        <childnode refid="5579" relation="include">
+        </childnode>
+        <childnode refid="5580" relation="include">
+        </childnode>
+        <childnode refid="5581" relation="include">
+        </childnode>
+        <childnode refid="5582" relation="include">
+        </childnode>
+        <childnode refid="5583" relation="include">
+        </childnode>
+        <childnode refid="5586" relation="include">
+        </childnode>
+      </node>
+      <node id="5572">
+        <label>cmath</label>
+      </node>
+      <node id="5585">
+        <label>stdexcept</label>
+      </node>
+      <node id="5615">
+        <label>eventfilter.h</label>
+        <link refid="de/d09/eventfilter_8h"/>
+        <childnode refid="5582" relation="include">
+        </childnode>
+        <childnode refid="5598" relation="include">
+        </childnode>
+        <childnode refid="5566" relation="include">
+        </childnode>
+      </node>
+      <node id="5597">
+        <label>cstdarg</label>
+      </node>
+      <node id="5580">
+        <label>string</label>
+      </node>
+      <node id="5567">
+        <label>../curve/curve.h</label>
+        <link refid="df/de9/curve_8h"/>
+        <childnode refid="5568" relation="include">
+        </childnode>
+        <childnode refid="5569" relation="include">
+        </childnode>
+      </node>
+      <node id="5600">
+        <label>logsink.h</label>
+        <link refid="d3/d4e/logsink_8h"/>
+        <childnode refid="5601" relation="include">
+        </childnode>
+        <childnode refid="5602" relation="include">
+        </childnode>
+        <childnode refid="5603" relation="include">
+        </childnode>
+      </node>
+      <node id="5610">
+        <label>unordered_set</label>
+      </node>
+      <node id="5575">
+        <label>ostream</label>
+      </node>
+      <node id="5607">
+        <label>../event/loop.h</label>
+        <link refid="dd/dbf/event_2loop_8h"/>
+        <childnode refid="5598" relation="include">
+        </childnode>
+        <childnode refid="5601" relation="include">
+        </childnode>
+        <childnode refid="5582" relation="include">
+        </childnode>
+        <childnode refid="5608" relation="include">
+        </childnode>
+        <childnode refid="5567" relation="include">
+        </childnode>
+        <childnode refid="5609" relation="include">
+        </childnode>
+        <childnode refid="5615" relation="include">
+        </childnode>
+        <childnode refid="5616" relation="include">
+        </childnode>
+        <childnode refid="5617" relation="include">
+        </childnode>
+      </node>
+      <node id="5589">
+        <label>../log/message.h</label>
+        <link refid="d2/d0d/message_8h"/>
+        <childnode refid="5568" relation="include">
+        </childnode>
+        <childnode refid="5580" relation="include">
+        </childnode>
+        <childnode refid="5590" relation="include">
+        </childnode>
+        <childnode refid="5591" relation="include">
+        </childnode>
+        <childnode refid="5593" relation="include">
+        </childnode>
+        <childnode refid="5600" relation="include">
+        </childnode>
+        <childnode refid="5603" relation="include">
+        </childnode>
+      </node>
+      <node id="5578">
+        <label>limits.h</label>
+      </node>
+      <node id="5613">
+        <label>eventstore.h</label>
+        <link refid="d1/d2a/eventstore_8h"/>
+        <childnode refid="5614" relation="include">
+        </childnode>
+        <childnode refid="5577" relation="include">
+        </childnode>
+        <childnode refid="5582" relation="include">
+        </childnode>
+        <childnode refid="5608" relation="include">
+        </childnode>
+      </node>
+      <node id="5604">
+        <label>../util/enum.h</label>
+        <link refid="d0/d9b/enum_8h"/>
+        <childnode refid="5584" relation="include">
+        </childnode>
+        <childnode refid="5605" relation="include">
+        </childnode>
+        <childnode refid="5586" relation="include">
+        </childnode>
+      </node>
+      <node id="5612">
+        <label>any</label>
+      </node>
+      <node id="5609">
+        <label>eventqueue.h</label>
+        <link refid="d4/d67/eventqueue_8h"/>
+        <childnode refid="5582" relation="include">
+        </childnode>
+        <childnode refid="5610" relation="include">
+        </childnode>
+        <childnode refid="5611" relation="include">
+        </childnode>
+        <childnode refid="5613" relation="include">
+        </childnode>
+        <childnode refid="5567" relation="include">
+        </childnode>
+      </node>
+      <node id="5605">
+        <label>typeinfo</label>
+      </node>
+      <node id="5581">
+        <label>vector</label>
+      </node>
+      <node id="5587">
+        <label>ciso646</label>
+      </node>
+      <node id="5569">
+        <label>../util/fixed_point.h</label>
+        <link refid="de/d62/fixed__point_8h"/>
+        <childnode refid="5570" relation="include">
+        </childnode>
+        <childnode refid="5571" relation="include">
+        </childnode>
+        <childnode refid="5572" relation="include">
+        </childnode>
+        <childnode refid="5573" relation="include">
+        </childnode>
+        <childnode refid="5574" relation="include">
+        </childnode>
+        <childnode refid="5575" relation="include">
+        </childnode>
+        <childnode refid="5576" relation="include">
+        </childnode>
+        <childnode refid="5577" relation="include">
+        </childnode>
+      </node>
+      <node id="5583">
+        <label>../error/error.h</label>
+        <link refid="d7/dce/error_2error_8h"/>
+        <childnode refid="5584" relation="include">
+        </childnode>
+        <childnode refid="5582" relation="include">
+        </childnode>
+        <childnode refid="5585" relation="include">
+        </childnode>
+        <childnode refid="5580" relation="include">
+        </childnode>
+        <childnode refid="5586" relation="include">
+        </childnode>
+        <childnode refid="5589" relation="include">
+        </childnode>
+      </node>
+      <node id="5599">
+        <label>sstream</label>
+      </node>
+      <node id="5586">
+        <label>../util/compiler.h</label>
+        <link refid="d4/dd1/compiler_8h"/>
+        <childnode refid="5587" relation="include">
+        </childnode>
+        <childnode refid="5580" relation="include">
+        </childnode>
+        <childnode refid="5588" relation="include">
+        </childnode>
+      </node>
+      <node id="5592">
+        <label>cstdlib</label>
+      </node>
+      <node id="5565">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/value_container.h</label>
+        <link refid="d7/dd9/value__container_8h"/>
+        <childnode refid="5566" relation="include">
+        </childnode>
+        <childnode refid="5606" relation="include">
+        </childnode>
+        <childnode refid="5572" relation="include">
+        </childnode>
+      </node>
+      <node id="5603">
+        <label>level.h</label>
+        <link refid="de/d09/level_8h"/>
+        <childnode refid="5604" relation="include">
+        </childnode>
+      </node>
+      <node id="5616">
+        <label>event.h</label>
+        <link refid="dc/dd7/event_2event_8h"/>
+        <childnode refid="5582" relation="include">
+        </childnode>
+        <childnode refid="5611" relation="include">
+        </childnode>
+        <childnode refid="5567" relation="include">
+        </childnode>
+      </node>
+      <node id="5584">
+        <label>iostream</label>
+      </node>
+      <node id="5591">
+        <label>../util/constexpr.h</label>
+        <link refid="d1/d06/constexpr_8h"/>
+        <childnode refid="5592" relation="include">
+        </childnode>
+      </node>
+      <node id="5596">
+        <label>strings.h</label>
+        <link refid="d6/d90/strings_8h"/>
+        <childnode refid="5597" relation="include">
+        </childnode>
+        <childnode refid="5598" relation="include">
+        </childnode>
+        <childnode refid="5573" relation="include">
+        </childnode>
+        <childnode refid="5582" relation="include">
+        </childnode>
+        <childnode refid="5599" relation="include">
+        </childnode>
+        <childnode refid="5580" relation="include">
+        </childnode>
+        <childnode refid="5581" relation="include">
+        </childnode>
+      </node>
+      <node id="5606">
+        <label>keyframe_container.h</label>
+        <link refid="d7/dac/keyframe__container_8h"/>
+        <childnode refid="5584" relation="include">
+        </childnode>
+        <childnode refid="5574" relation="include">
+        </childnode>
+        <childnode refid="5601" relation="include">
+        </childnode>
+        <childnode refid="5567" relation="include">
+        </childnode>
+        <childnode refid="5607" relation="include">
+        </childnode>
+        <childnode refid="5583" relation="include">
+        </childnode>
+      </node>
+      <node id="5608">
+        <label>unordered_map</label>
+      </node>
+      <node id="5571">
+        <label>climits</label>
+      </node>
+      <node id="5602">
+        <label>mutex</label>
+      </node>
+      <node id="5593">
+        <label>../util/stringformatter.h</label>
+        <link refid="de/d65/stringformatter_8h"/>
+        <childnode refid="5594" relation="include">
+        </childnode>
+        <childnode refid="5582" relation="include">
+        </childnode>
+        <childnode refid="5576" relation="include">
+        </childnode>
+        <childnode refid="5586" relation="include">
+        </childnode>
+        <childnode refid="5595" relation="include">
+        </childnode>
+        <childnode refid="5596" relation="include">
+        </childnode>
+      </node>
+      <node id="5576">
+        <label>type_traits</label>
+      </node>
+      <node id="5590">
+        <label>config.h</label>
+      </node>
+      <node id="5614">
+        <label>../datastructure/pairing_heap.h</label>
+        <link refid="d8/da2/pairing__heap_8h"/>
+        <childnode refid="5582" relation="include">
+        </childnode>
+        <childnode refid="5598" relation="include">
+        </childnode>
+        <childnode refid="5576" relation="include">
+        </childnode>
+        <childnode refid="5610" relation="include">
+        </childnode>
+        <childnode refid="5586" relation="include">
+        </childnode>
+        <childnode refid="5583" relation="include">
+        </childnode>
+      </node>
+      <node id="5570">
+        <label>algorithm</label>
+      </node>
+      <node id="5611">
+        <label>eventclass.h</label>
+        <link refid="d5/d08/eventclass_8h"/>
+        <childnode refid="5567" relation="include">
+        </childnode>
+        <childnode refid="5612" relation="include">
+        </childnode>
+        <childnode refid="5582" relation="include">
+        </childnode>
+        <childnode refid="5580" relation="include">
+        </childnode>
+        <childnode refid="5608" relation="include">
+        </childnode>
+      </node>
+      <node id="5566">
+        <label>../event/eventtarget.h</label>
+        <link refid="df/d63/eventtarget_8h"/>
+        <childnode refid="5567" relation="include">
+        </childnode>
+        <childnode refid="5598" relation="include">
+        </childnode>
+        <childnode refid="5601" relation="include">
+        </childnode>
+        <childnode refid="5582" relation="include">
+        </childnode>
+      </node>
+      <node id="5579">
+        <label>cstring</label>
+      </node>
+      <node id="5582">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5627">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/demo/gamestate.cpp</label>
+        <link refid="d5/da3/gamestate_8cpp"/>
+      </node>
+      <node id="5622">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/tests/curve_types.cpp</label>
+        <link refid="d2/d61/curve__types_8cpp"/>
+      </node>
+      <node id="5631">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/discrete.cpp</label>
+        <link refid="d3/db6/discrete_8cpp"/>
+      </node>
+      <node id="5632">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/value_container.cpp</label>
+        <link refid="d5/df4/value__container_8cpp"/>
+      </node>
+      <node id="5625">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/demo/aicontroller.cpp</label>
+        <link refid="dd/d36/aicontroller_8cpp"/>
+      </node>
+      <node id="5628">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/demo/physics.h</label>
+        <link refid="da/d77/physics_8h"/>
+        <childnode refid="5626" relation="include">
+        </childnode>
+        <childnode refid="5629" relation="include">
+        </childnode>
+      </node>
+      <node id="5619">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/continuous.h</label>
+        <link refid="d8/db7/continuous_8h"/>
+        <childnode refid="5620" relation="include">
+        </childnode>
+        <childnode refid="5621" relation="include">
+        </childnode>
+        <childnode refid="5622" relation="include">
+        </childnode>
+        <childnode refid="5623" relation="include">
+        </childnode>
+      </node>
+      <node id="5623">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/demo/gamestate.h</label>
+        <link refid="d0/d1b/gamestate_8h"/>
+        <childnode refid="5624" relation="include">
+        </childnode>
+        <childnode refid="5627" relation="include">
+        </childnode>
+        <childnode refid="5626" relation="include">
+        </childnode>
+        <childnode refid="5628" relation="include">
+        </childnode>
+      </node>
+      <node id="5626">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/demo/main.cpp</label>
+        <link refid="db/d5e/event_2demo_2main_8cpp"/>
+      </node>
+      <node id="5620">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/continuous.cpp</label>
+        <link refid="d4/d98/continuous_8cpp"/>
+      </node>
+      <node id="5618">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/value_container.h</label>
+        <link refid="d7/dd9/value__container_8h"/>
+        <childnode refid="5619" relation="include">
+        </childnode>
+        <childnode refid="5630" relation="include">
+        </childnode>
+        <childnode refid="5632" relation="include">
+        </childnode>
+      </node>
+      <node id="5629">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/demo/physics.cpp</label>
+        <link refid="d0/d2b/physics_8cpp"/>
+      </node>
+      <node id="5624">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/event/demo/aicontroller.h</label>
+        <link refid="dd/dd9/aicontroller_8h"/>
+        <childnode refid="5625" relation="include">
+        </childnode>
+        <childnode refid="5626" relation="include">
+        </childnode>
+      </node>
+      <node id="5621">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/tests/container.cpp</label>
+        <link refid="d3/dda/container_8cpp"/>
+      </node>
+      <node id="5630">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/discrete.h</label>
+        <link refid="da/d78/discrete_8h"/>
+        <childnode refid="5631" relation="include">
+        </childnode>
+        <childnode refid="5621" relation="include">
+        </childnode>
+        <childnode refid="5622" relation="include">
+        </childnode>
+        <childnode refid="5623" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="db/d06/classopenage_1_1curve_1_1_value_container" prot="public">openage::curve::ValueContainer</innerclass>
+    <innernamespace refid="df/dbd/namespaceopenage_1_1curve">openage::curve</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2017-2018<sp/>the<sp/>openage<sp/>authors.<sp/>See<sp/>copying.md<sp/>for<sp/>legal<sp/>info.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../event/eventtarget.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/dac/keyframe__container_8h" kindref="compound">keyframe_container.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="df/dbd/namespaceopenage_1_1curve" kindref="compound">openage::curve</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="14" refid="db/d06/classopenage_1_1curve_1_1_value_container" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="db/d06/classopenage_1_1curve_1_1_value_container" kindref="compound">ValueContainer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d6/d15/classopenage_1_1event_1_1_event_target" kindref="compound">event::EventTarget</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16" refid="db/d06/classopenage_1_1curve_1_1_value_container_1aa901d833956ff09b5fa00f3fb126e8fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1aa901d833956ff09b5fa00f3fb126e8fb" kindref="member">ValueContainer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;event::Loop&gt;<sp/>&amp;mgr,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EventTarget::single_change_notifier<sp/>&amp;notifier=</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d15/classopenage_1_1event_1_1_event_target_1abe6736c7ec9aeba96a045c9e517bdf66" kindref="member">EventTarget</ref>(mgr,<sp/>notifier),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1a565150e1c3965878953bca2afa1c1ad2" kindref="member">container</ref>{mgr},</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1ab4f6249d04c614100240ca09d6704ba4" kindref="member">_id</ref>{</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1af307dc2d35246999cea18dfb1d478be9" kindref="member">last_element</ref>{this-&gt;<ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1a565150e1c3965878953bca2afa1c1ad2" kindref="member">container</ref>.begin()}<sp/>{}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1aa72ebf92805c7aed981f9c3fbf2c7efb" kindref="member">~ValueContainer</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>T<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;t)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="db/d06/classopenage_1_1curve_1_1_value_container_1a21af7f25367a85a49ed2d2391d8ffd3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>T<sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1a21af7f25367a85a49ed2d2391d8ffd3f" kindref="member">operator ()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;now)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(now);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::pair&lt;time_t,<sp/>const<sp/>T<sp/>&amp;&gt;<sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1af22c2d98ebfbec213ca2257869022e3e" kindref="member">frame</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::pair&lt;time_t,<sp/>const<sp/>T<sp/>&amp;&gt;<sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1a9af089eef9feb357fe0e36fad9397b8c" kindref="member">next_frame</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Inserter<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1acb0b0b216cb64435edf52a01d16f70db" kindref="member">set_last</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;at,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T<sp/>&amp;value);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1af7643c2abd7b18238a3092ac4f186368" kindref="member">set_insert</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;at,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T<sp/>&amp;value);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="db/d06/classopenage_1_1curve_1_1_value_container_1aa4ccad0b4eae016862241e5a662575c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1aa4ccad0b4eae016862241e5a662575c6" kindref="member">id</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1ab4f6249d04c614100240ca09d6704ba4" kindref="member">_id</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48" refid="db/d06/classopenage_1_1curve_1_1_value_container_1a565150e1c3965878953bca2afa1c1ad2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d7b/classopenage_1_1curve_1_1_keyframe_container" kindref="compound">KeyframeContainer&lt;T&gt;</ref><sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1a565150e1c3965878953bca2afa1c1ad2" kindref="member">container</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="db/d06/classopenage_1_1curve_1_1_value_container_1ab4f6249d04c614100240ca09d6704ba4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1ab4f6249d04c614100240ca09d6704ba4" kindref="member">_id</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="db/d06/classopenage_1_1curve_1_1_value_container_1af307dc2d35246999cea18dfb1d478be9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="df/d7b/classopenage_1_1curve_1_1_keyframe_container_1a2ac421c1a774c53ab8034a344e423b68" kindref="member">KeyframeContainer&lt;T&gt;::KeyframeIterator</ref><sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1af307dc2d35246999cea18dfb1d478be9" kindref="member">last_element</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="63" refid="db/d06/classopenage_1_1curve_1_1_value_container_1acb0b0b216cb64435edf52a01d16f70db" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1acb0b0b216cb64435edf52a01d16f70db" kindref="member">ValueContainer&lt;T&gt;::set_last</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;at,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T<sp/>&amp;value)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>hint<sp/>=<sp/>this-&gt;<ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1a565150e1c3965878953bca2afa1c1ad2" kindref="member">container</ref>.last(at,<sp/>this-&gt;<ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1af307dc2d35246999cea18dfb1d478be9" kindref="member">last_element</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>want<sp/>to<sp/>remove<sp/>a<sp/>possible<sp/>equal<sp/>timed<sp/>element<sp/>from<sp/>the<sp/>container</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>to<sp/>do<sp/>fabs(x-y)<sp/>&lt;<sp/>min<sp/>is<sp/>only<sp/>necessary<sp/>when<sp/>time_t<sp/>is<sp/>floating<sp/>point!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if<sp/>(std::abs(hint-&gt;time<sp/>-<sp/>at)<sp/>&lt;<sp/>std::numeric_limits&lt;time_t&gt;::min())<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hint-&gt;time<sp/>==<sp/>at)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hint--;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>hint<sp/>=<sp/>this-&gt;<ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1a565150e1c3965878953bca2afa1c1ad2" kindref="member">container</ref>.erase_after(hint);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1a565150e1c3965878953bca2afa1c1ad2" kindref="member">container</ref>.insert(at,<sp/>value,<sp/>hint);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1af307dc2d35246999cea18dfb1d478be9" kindref="member">last_element</ref><sp/>=<sp/>hint;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="d6/d15/classopenage_1_1event_1_1_event_target_1a6da66e1f05d92d87ce931d06204b6d9b" kindref="member">changes</ref>(at);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="84" refid="db/d06/classopenage_1_1curve_1_1_value_container_1af7643c2abd7b18238a3092ac4f186368" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1af7643c2abd7b18238a3092ac4f186368" kindref="member">ValueContainer&lt;T&gt;::set_insert</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;at,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T<sp/>&amp;value)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1a565150e1c3965878953bca2afa1c1ad2" kindref="member">container</ref>.insert(at,<sp/>value,<sp/>this-&gt;<ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1af307dc2d35246999cea18dfb1d478be9" kindref="member">last_element</ref>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="d6/d15/classopenage_1_1event_1_1_event_target_1a6da66e1f05d92d87ce931d06204b6d9b" kindref="member">changes</ref>(at);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="91" refid="db/d06/classopenage_1_1curve_1_1_value_container_1af22c2d98ebfbec213ca2257869022e3e" refkind="member"><highlight class="normal">std::pair&lt;time_t,<sp/>const<sp/>T&amp;&gt;<sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1af22c2d98ebfbec213ca2257869022e3e" kindref="member">ValueContainer&lt;T&gt;::frame</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;time)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>e<sp/>=<sp/>this-&gt;<ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1a565150e1c3965878953bca2afa1c1ad2" kindref="member">container</ref>.last(time,<sp/>this-&gt;<ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1a565150e1c3965878953bca2afa1c1ad2" kindref="member">container</ref>.end());</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(e-&gt;time,<sp/>e-&gt;value);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="98" refid="db/d06/classopenage_1_1curve_1_1_value_container_1a9af089eef9feb357fe0e36fad9397b8c" refkind="member"><highlight class="normal">std::pair&lt;time_t,<sp/>const<sp/>T&amp;&gt;<sp/><ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1a9af089eef9feb357fe0e36fad9397b8c" kindref="member">ValueContainer&lt;T&gt;::next_frame</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/d65/classopenage_1_1util_1_1_fixed_point" kindref="compound">time_t</ref><sp/>&amp;time)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>e<sp/>=<sp/>this-&gt;<ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1a565150e1c3965878953bca2afa1c1ad2" kindref="member">container</ref>.last(time,<sp/>this-&gt;<ref refid="db/d06/classopenage_1_1curve_1_1_value_container_1a565150e1c3965878953bca2afa1c1ad2" kindref="member">container</ref>.end());</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>e++;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(e-&gt;time,<sp/>e-&gt;value);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>openage::curve</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/curve/value_container.h"/>
+  </compounddef>
+</doxygen>

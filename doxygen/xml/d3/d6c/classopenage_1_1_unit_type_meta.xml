@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d3/d6c/classopenage_1_1_unit_type_meta" kind="class" language="C++" prot="public">
+    <compoundname>openage::UnitTypeMeta</compoundname>
+    <includes refid="d7/dfc/unit__type_8h" local="no">unit_type.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="d3/d6c/classopenage_1_1_unit_type_meta_1a6148f55c3ed5f3af968745ec93c53ad5" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="dd/d39/classopenage_1_1_unit_type" kindref="compound">UnitType</ref> &gt;</type>
+        <definition>using openage::UnitTypeMeta::type_ptr =  std::shared_ptr&lt;UnitType&gt;</definition>
+        <argsstring></argsstring>
+        <name>type_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.h" line="30" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/d6c/classopenage_1_1_unit_type_meta_1a60cf4cba9b119119de034fc3edc785b1" prot="public" static="no">
+        <type>std::function&lt; <ref refid="d3/d6c/classopenage_1_1_unit_type_meta_1a6148f55c3ed5f3af968745ec93c53ad5" kindref="member">type_ptr</ref>(const <ref refid="d8/d47/classopenage_1_1_player" kindref="compound">Player</ref> &amp;<ref refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a72122ce96bfec66e2396d2e25225d70a" kindref="member">owner</ref>)&gt;</type>
+        <definition>using openage::UnitTypeMeta::init_func =  std::function&lt;type_ptr(const Player &amp;owner)&gt;</definition>
+        <argsstring></argsstring>
+        <name>init_func</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.h" line="31" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d3/d6c/classopenage_1_1_unit_type_meta_1ae575d326f49ccc2ecfcfa3148dcf87ae" prot="public" static="no" mutable="no">
+        <type>const <ref refid="d3/d6c/classopenage_1_1_unit_type_meta_1a60cf4cba9b119119de034fc3edc785b1" kindref="member">init_func</ref></type>
+        <definition>const init_func openage::UnitTypeMeta::init</definition>
+        <argsstring></argsstring>
+        <name>init</name>
+        <briefdescription>
+<para>creates the base unit type for a player </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.h" line="41" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d3/d6c/classopenage_1_1_unit_type_meta_1a067a5262896d540af03f855a1fe29cac" prot="private" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string openage::UnitTypeMeta::type_name</definition>
+        <argsstring></argsstring>
+        <name>type_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.h" line="44" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="d1/d8c/classopenage_1_1convert_1_1dataformat_1_1members_1_1_enum_member_1a15f292c4683ba4337a33bd52c0581f70" compoundref="de/d1a/members_8py" startline="479" endline="482">openage.convert.dataformat.members.EnumMember.__repr__</referencedby>
+        <referencedby refid="d7/da4/classopenage_1_1convert_1_1dataformat_1_1members_1_1_multisubtype_member_1ae0a3a0241b823f90f1bcb74e1619df1f" compoundref="de/d1a/members_8py" startline="803" endline="810">openage.convert.dataformat.members.MultisubtypeMember.__repr__</referencedby>
+        <referencedby refid="d1/de9/classopenage_1_1convert_1_1dataformat_1_1members_1_1_enum_lookup_member_1a4d654b6ba05da6a0aba27b9008fa38cb" compoundref="de/d1a/members_8py" startline="500" endline="511">openage.convert.dataformat.members.EnumLookupMember.entry_hook</referencedby>
+        <referencedby refid="dd/da6/classopenage_1_1convert_1_1dataformat_1_1members_1_1_ref_member_1ab1259c0fbb6ecce62302f086c5167396" compoundref="de/d1a/members_8py" startline="244" endline="255">openage.convert.dataformat.members.RefMember.format_hash</referencedby>
+        <referencedby refid="d1/d8c/classopenage_1_1convert_1_1dataformat_1_1members_1_1_enum_member_1a0252612eeda42f3c7553ea1b1e1212f9" compoundref="de/d1a/members_8py" startline="432" endline="434">openage.convert.dataformat.members.EnumMember.get_effective_type</referencedby>
+        <referencedby refid="d7/da4/classopenage_1_1convert_1_1dataformat_1_1members_1_1_multisubtype_member_1a27571ee3aea8f88f36ae23140c9e77c0" compoundref="de/d1a/members_8py" startline="623" endline="625">openage.convert.dataformat.members.MultisubtypeMember.get_effective_type</referencedby>
+        <referencedby refid="d1/d8c/classopenage_1_1convert_1_1dataformat_1_1members_1_1_enum_member_1a815464eef9720becdee8f954d2134989" compoundref="de/d1a/members_8py" startline="392" endline="425">openage.convert.dataformat.members.EnumMember.get_parsers</referencedby>
+        <referencedby refid="d1/d8c/classopenage_1_1convert_1_1dataformat_1_1members_1_1_enum_member_1a274e331b508216591106df9b98644854" compoundref="de/d1a/members_8py" startline="444" endline="470">openage.convert.dataformat.members.EnumMember.get_snippets</referencedby>
+        <referencedby refid="d7/da4/classopenage_1_1convert_1_1dataformat_1_1members_1_1_multisubtype_member_1a81e16d3f5273041083c8497f102803ae" compoundref="de/d1a/members_8py" startline="661" endline="793">openage.convert.dataformat.members.MultisubtypeMember.get_snippets</referencedby>
+        <referencedby refid="d7/da4/classopenage_1_1convert_1_1dataformat_1_1members_1_1_multisubtype_member_1a567e8cd4638f6d804bb7a4da292b076f" compoundref="de/d1a/members_8py" startline="655" endline="657">openage.convert.dataformat.members.MultisubtypeMember.get_typerefs</referencedby>
+        <referencedby refid="d3/d6c/classopenage_1_1_unit_type_meta_1a8799c223c298b6f9ae0016f9bb5913a8" compoundref="dc/d8d/unit__type_8cpp" startline="20" endline="22">name</referencedby>
+        <referencedby refid="d3/d6c/classopenage_1_1_unit_type_meta_1a60d9b3ed26e72cfb76a32ba99cce5981" compoundref="dc/d8d/unit__type_8cpp" startline="13" endline="18">UnitTypeMeta</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d6c/classopenage_1_1_unit_type_meta_1a4b12edb0fa3c9e31fc969bd8e4a35bf2" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int openage::UnitTypeMeta::type_id</definition>
+        <argsstring></argsstring>
+        <name>type_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.h" line="45" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="d3/d6c/classopenage_1_1_unit_type_meta_1acbceb8177feee1b14c63db50a24b1530" compoundref="dc/d8d/unit__type_8cpp" startline="24" endline="26">id</referencedby>
+        <referencedby refid="d3/d6c/classopenage_1_1_unit_type_meta_1a60d9b3ed26e72cfb76a32ba99cce5981" compoundref="dc/d8d/unit__type_8cpp" startline="13" endline="18">UnitTypeMeta</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d6c/classopenage_1_1_unit_type_meta_1a60d9b3ed26e72cfb76a32ba99cce5981" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::UnitTypeMeta::UnitTypeMeta</definition>
+        <argsstring>(const std::string &amp;name, int id, init_func f)</argsstring>
+        <name>UnitTypeMeta</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d6c/classopenage_1_1_unit_type_meta_1a60cf4cba9b119119de034fc3edc785b1" kindref="member">init_func</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.h" line="32" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.cpp" bodystart="13" bodyend="18"/>
+        <references refid="d3/d6c/classopenage_1_1_unit_type_meta_1a8799c223c298b6f9ae0016f9bb5913a8" compoundref="dc/d8d/unit__type_8cpp" startline="20" endline="22">name</references>
+        <references refid="d3/d6c/classopenage_1_1_unit_type_meta_1a4b12edb0fa3c9e31fc969bd8e4a35bf2" compoundref="d7/dfc/unit__type_8h" startline="45">type_id</references>
+        <references refid="d3/d6c/classopenage_1_1_unit_type_meta_1a067a5262896d540af03f855a1fe29cac" compoundref="d7/dfc/unit__type_8h" startline="44">type_name</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d6c/classopenage_1_1_unit_type_meta_1a8799c223c298b6f9ae0016f9bb5913a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string openage::UnitTypeMeta::name</definition>
+        <argsstring>() const</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.h" line="34" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.cpp" bodystart="20" bodyend="22"/>
+        <references refid="d3/d6c/classopenage_1_1_unit_type_meta_1a067a5262896d540af03f855a1fe29cac" compoundref="d7/dfc/unit__type_8h" startline="44">type_name</references>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1aab5ade46752aa652e414b1c3bac704c1" compoundref="d0/d7a/path_8py" startline="289" endline="296">openage.util.fslike.path.Path.stem</referencedby>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1a7b11153f6ef9787c4c583bcf0126ba6a" compoundref="d0/d7a/path_8py" startline="272" endline="278">openage.util.fslike.path.Path.suffix</referencedby>
+        <referencedby refid="d6/d6b/classopenage_1_1util_1_1fslike_1_1path_1_1_path_1a912043b2fbd330e3493588f6c6af92b8" compoundref="d0/d7a/path_8py" startline="281" endline="286">openage.util.fslike.path.Path.suffixes</referencedby>
+        <referencedby refid="d3/d6c/classopenage_1_1_unit_type_meta_1a60d9b3ed26e72cfb76a32ba99cce5981" compoundref="dc/d8d/unit__type_8cpp" startline="13" endline="18">UnitTypeMeta</referencedby>
+        <referencedby refid="dd/d39/classopenage_1_1_unit_type_1a29b9bcea7d358a295c45dcd5e0e6cda5" compoundref="d7/dfc/unit__type_8h" startline="62" endline="62">openage::UnitType::~UnitType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d6c/classopenage_1_1_unit_type_meta_1acbceb8177feee1b14c63db50a24b1530" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int openage::UnitTypeMeta::id</definition>
+        <argsstring>() const</argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.h" line="36" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.cpp" bodystart="24" bodyend="26"/>
+        <references refid="d3/d6c/classopenage_1_1_unit_type_meta_1a4b12edb0fa3c9e31fc969bd8e4a35bf2" compoundref="d7/dfc/unit__type_8h" startline="45">type_id</references>
+        <referencedby refid="dd/d39/classopenage_1_1_unit_type_1a29b9bcea7d358a295c45dcd5e0e6cda5" compoundref="d7/dfc/unit__type_8h" startline="62" endline="62">openage::UnitType::~UnitType</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>an abstract unit type which is not yet owned by any player </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5740">
+        <label>openage::UnitTypeMeta</label>
+        <link refid="d3/d6c/classopenage_1_1_unit_type_meta"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.h" line="28" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_type.h" bodystart="28" bodyend="47"/>
+    <listofallmembers>
+      <member refid="d3/d6c/classopenage_1_1_unit_type_meta_1acbceb8177feee1b14c63db50a24b1530" prot="public" virt="non-virtual"><scope>openage::UnitTypeMeta</scope><name>id</name></member>
+      <member refid="d3/d6c/classopenage_1_1_unit_type_meta_1ae575d326f49ccc2ecfcfa3148dcf87ae" prot="public" virt="non-virtual"><scope>openage::UnitTypeMeta</scope><name>init</name></member>
+      <member refid="d3/d6c/classopenage_1_1_unit_type_meta_1a60cf4cba9b119119de034fc3edc785b1" prot="public" virt="non-virtual"><scope>openage::UnitTypeMeta</scope><name>init_func</name></member>
+      <member refid="d3/d6c/classopenage_1_1_unit_type_meta_1a8799c223c298b6f9ae0016f9bb5913a8" prot="public" virt="non-virtual"><scope>openage::UnitTypeMeta</scope><name>name</name></member>
+      <member refid="d3/d6c/classopenage_1_1_unit_type_meta_1a4b12edb0fa3c9e31fc969bd8e4a35bf2" prot="private" virt="non-virtual"><scope>openage::UnitTypeMeta</scope><name>type_id</name></member>
+      <member refid="d3/d6c/classopenage_1_1_unit_type_meta_1a067a5262896d540af03f855a1fe29cac" prot="private" virt="non-virtual"><scope>openage::UnitTypeMeta</scope><name>type_name</name></member>
+      <member refid="d3/d6c/classopenage_1_1_unit_type_meta_1a6148f55c3ed5f3af968745ec93c53ad5" prot="public" virt="non-virtual"><scope>openage::UnitTypeMeta</scope><name>type_ptr</name></member>
+      <member refid="d3/d6c/classopenage_1_1_unit_type_meta_1a60d9b3ed26e72cfb76a32ba99cce5981" prot="public" virt="non-virtual"><scope>openage::UnitTypeMeta</scope><name>UnitTypeMeta</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

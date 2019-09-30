@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d4/d49/structopenage_1_1coord_1_1phys3__delta" kind="struct" language="C++" prot="public">
+    <compoundname>openage::coord::phys3_delta</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">CoordNeSeUpRelative&lt; phys_t, phys3, phys3_delta &gt;</basecompoundref>
+    <includes refid="d0/d8a/phys_8h" local="no">phys.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/d49/structopenage_1_1coord_1_1phys3__delta_1af63b7f5b841ffab9004b2ffd3550ab9e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double openage::coord::phys3_delta::length</definition>
+        <argsstring>() const</argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.h" line="50" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.cpp" bodystart="81" bodyend="83"/>
+        <references refid="df/dc9/namespaceopenage_1_1math_1a29c55215e73408c49f2654261fd73d8e" compoundref="df/db1/math_8h" startline="17" endline="19">openage::math::hypot3</references>
+        <referencedby refid="d5/d14/classopenage_1_1_projectile_action_1ad5f60eb378fa84cbccd6fa61f221c7e5" compoundref="de/d96/unit_2action_8cpp" startline="1303" endline="1339">openage::ProjectileAction::ProjectileAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/d49/structopenage_1_1coord_1_1phys3__delta_1a42b05574ff3cf1e1f25ddc4586060a0f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d4/d49/structopenage_1_1coord_1_1phys3__delta" kindref="compound">phys3_delta</ref></type>
+        <definition>phys3_delta openage::coord::phys3_delta::normalize</definition>
+        <argsstring>(double length=1) const</argsstring>
+        <name>normalize</name>
+        <param>
+          <type>double</type>
+          <declname>length</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.h" line="51" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.cpp" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d49/structopenage_1_1coord_1_1phys3__delta_1ace92b215378b122ce3fb17101986011f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/d40/structopenage_1_1coord_1_1camgame__delta" kindref="compound">camgame_delta</ref></type>
+        <definition>camgame_delta openage::coord::phys3_delta::to_camgame</definition>
+        <argsstring>(const CoordManager &amp;mgr) const</argsstring>
+        <name>to_camgame</name>
+        <param>
+          <type>const <ref refid="de/db5/classopenage_1_1coord_1_1_coord_manager" kindref="compound">CoordManager</ref> &amp;</type>
+          <declname>mgr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.h" line="53" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.cpp" bodystart="60" bodyend="73"/>
+        <references refid="de/db5/classopenage_1_1coord_1_1_coord_manager_1abd45c3c2cf20f76ac980e18bba3128e3" compoundref="da/d63/coordmanager_8h" startline="51">openage::coord::CoordManager::tile_size</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/d49/structopenage_1_1coord_1_1phys3__delta_1a533ad585342b96d2ee06877f8fd5b5ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dd/d68/structopenage_1_1coord_1_1phys2__delta" kindref="compound">phys2_delta</ref></type>
+        <definition>phys2_delta openage::coord::phys3_delta::to_phys2</definition>
+        <argsstring>() const</argsstring>
+        <name>to_phys2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.h" line="54" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.cpp" bodystart="76" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1752">
+        <label>openage::coord::phys3_delta</label>
+        <link refid="d4/d49/structopenage_1_1coord_1_1phys3__delta"/>
+        <childnode refid="1753" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1753">
+        <label>CoordNeSeUpRelative&lt; phys_t, phys3, phys3_delta &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1754">
+        <label>openage::coord::phys3_delta</label>
+        <link refid="d4/d49/structopenage_1_1coord_1_1phys3__delta"/>
+        <childnode refid="1755" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1755">
+        <label>CoordNeSeUpRelative&lt; phys_t, phys3, phys3_delta &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.h" line="42" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.h" bodystart="42" bodyend="55"/>
+    <listofallmembers>
+      <member refid="d4/d49/structopenage_1_1coord_1_1phys3__delta_1af63b7f5b841ffab9004b2ffd3550ab9e" prot="public" virt="non-virtual"><scope>openage::coord::phys3_delta</scope><name>length</name></member>
+      <member refid="d4/d49/structopenage_1_1coord_1_1phys3__delta_1a42b05574ff3cf1e1f25ddc4586060a0f" prot="public" virt="non-virtual"><scope>openage::coord::phys3_delta</scope><name>normalize</name></member>
+      <member refid="d4/d49/structopenage_1_1coord_1_1phys3__delta_1ace92b215378b122ce3fb17101986011f" prot="public" virt="non-virtual"><scope>openage::coord::phys3_delta</scope><name>to_camgame</name></member>
+      <member refid="d4/d49/structopenage_1_1coord_1_1phys3__delta_1a533ad585342b96d2ee06877f8fd5b5ec" prot="public" virt="non-virtual"><scope>openage::coord::phys3_delta</scope><name>to_phys2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

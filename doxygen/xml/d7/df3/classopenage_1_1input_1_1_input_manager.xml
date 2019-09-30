@@ -1,0 +1,910 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d7/df3/classopenage_1_1input_1_1_input_manager" kind="class" language="C++" prot="public">
+    <compoundname>openage::input::InputManager</compoundname>
+    <basecompoundref refid="da/dc5/classopenage_1_1_input_handler" prot="public" virt="non-virtual">openage::InputHandler</basecompoundref>
+    <includes refid="d8/dd2/input__manager_8h" local="no">input_manager.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a349bf2aa6ba3a9aa0c7d76119ddd6c7a" prot="public" static="no">
+        <name>Edge</name>
+        <enumvalue id="d7/df3/classopenage_1_1input_1_1_input_manager_1a349bf2aa6ba3a9aa0c7d76119ddd6c7aa684d325a7303f52e64011467ff5c5758" prot="public">
+          <name>LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/df3/classopenage_1_1input_1_1_input_manager_1a349bf2aa6ba3a9aa0c7d76119ddd6c7aa21507b40c80068eda19865706fdc2403" prot="public">
+          <name>RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/df3/classopenage_1_1input_1_1_input_manager_1a349bf2aa6ba3a9aa0c7d76119ddd6c7aafbaedde498cdead4f2780217646e9ba1" prot="public">
+          <name>UP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d7/df3/classopenage_1_1input_1_1_input_manager_1a349bf2aa6ba3a9aa0c7d76119ddd6c7aac4e0e4e3118472beeb2ae75827450f1f" prot="public">
+          <name>DOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Screen edges used for edge scrolling. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="47" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" bodystart="47" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a1da9c726ba40f3d3ee10324fce8a2fb0" prot="private" static="no" mutable="no">
+        <type><ref refid="d4/de2/classopenage_1_1input_1_1_action_manager" kindref="compound">ActionManager</ref> *</type>
+        <definition>ActionManager* openage::input::InputManager::action_manager</definition>
+        <argsstring></argsstring>
+        <name>action_manager</name>
+        <briefdescription>
+<para>The action manager to used for keybind action lookups. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="204" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" bodystart="204" bodyend="-1"/>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1aa0777d6b8ecc513c2a90ae8273d1938c" compoundref="d5/d7f/input__manager_8cpp" startline="409" endline="411">get_action_manager</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a368dbccb090d17ca142b1bfde0763011" compoundref="d5/d7f/input__manager_8cpp" startline="64" endline="83">get_bind</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1af93e6ca8bded1892c1c9d83332468e2d" compoundref="d5/d7f/input__manager_8cpp" startline="85" endline="105">set_bind</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df3/classopenage_1_1input_1_1_input_manager_1acc8f950721bd51f8d211f538cd6678eb" prot="private" static="no" mutable="no">
+        <type><ref refid="d7/d57/classopenage_1_1input_1_1_input_context" kindref="compound">InputContext</ref></type>
+        <definition>InputContext openage::input::InputManager::global_context</definition>
+        <argsstring></argsstring>
+        <name>global_context</name>
+        <briefdescription>
+<para>The global context. </para>        </briefdescription>
+        <detaileddescription>
+<para>Used as fallback. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="209" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" bodystart="209" bodyend="-1"/>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a06819b1b5f717d9fbf45bc098e7fd457" compoundref="d5/d7f/input__manager_8cpp" startline="139" endline="141">get_global_context</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a9ccb8754431247dd05c56c445bda15bc" compoundref="d5/d7f/input__manager_8cpp" startline="143" endline="150">get_top_context</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a00f4f3f2347c90e118d83a6204646810" compoundref="d5/d7f/input__manager_8cpp" startline="15" endline="22">InputManager</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ac8c7b7b7db15158d7b1cdab7ee41bd1d" compoundref="d5/d7f/input__manager_8cpp" startline="185" endline="208">trigger</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a2f7d393c9007363a3bbbb8b1b10f4193" prot="private" static="no" mutable="no">
+        <type><ref refid="d5/dc6/namespaceopenage_1_1input_1a9e27223f05a88e3091798701b3770ffd" kindref="member">binding_map_t</ref></type>
+        <definition>binding_map_t openage::input::InputManager::keys</definition>
+        <argsstring></argsstring>
+        <name>keys</name>
+        <briefdescription>
+<para>Maps actions to events. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="214" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" bodystart="214" bodyend="-1"/>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ac5b6bbe740edcca81b63996a22472a53" compoundref="d5/d7f/input__manager_8cpp" startline="381" endline="406">active_binds</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a368dbccb090d17ca142b1bfde0763011" compoundref="d5/d7f/input__manager_8cpp" startline="64" endline="83">get_bind</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1af93e6ca8bded1892c1c9d83332468e2d" compoundref="d5/d7f/input__manager_8cpp" startline="85" endline="105">set_bind</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ac8c7b7b7db15158d7b1cdab7ee41bd1d" compoundref="d5/d7f/input__manager_8cpp" startline="185" endline="208">trigger</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df3/classopenage_1_1input_1_1_input_manager_1ad194b272e597069d93b43e0568562a4a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="d7/d57/classopenage_1_1input_1_1_input_context" kindref="compound">InputContext</ref> * &gt;</type>
+        <definition>std::vector&lt;InputContext *&gt; openage::input::InputManager::contexts</definition>
+        <argsstring></argsstring>
+        <name>contexts</name>
+        <briefdescription>
+<para>Stack of active input contexts. </para>        </briefdescription>
+        <detaileddescription>
+<para>The most recent entry is pushed on top of the stack. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="220" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" bodystart="220" bodyend="-1"/>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a9ccb8754431247dd05c56c445bda15bc" compoundref="d5/d7f/input__manager_8cpp" startline="143" endline="150">get_top_context</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2ece2b2ad4a08c15fb00a39b0f553d3c" compoundref="d5/d7f/input__manager_8cpp" startline="152" endline="157">push_context</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a469024c2b2ac7769e0fa578c73fde160" compoundref="d5/d7f/input__manager_8cpp" startline="160" endline="172">remove_context</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ac8c7b7b7db15158d7b1cdab7ee41bd1d" compoundref="d5/d7f/input__manager_8cpp" startline="185" endline="208">trigger</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a187c1ea8c13125527e02d9c25f716bea" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="da/d08/classopenage_1_1input_1_1_class_code" kindref="compound">ClassCode</ref>, bool, <ref refid="d0/d7f/structopenage_1_1input_1_1class__code__hash" kindref="compound">class_code_hash</ref> &gt;</type>
+        <definition>std::unordered_map&lt;ClassCode, bool, class_code_hash&gt; openage::input::InputManager::states</definition>
+        <argsstring></argsstring>
+        <name>states</name>
+        <briefdescription>
+<para>key to is_down map. </para>        </briefdescription>
+        <detaileddescription>
+<para>stores a mapping between keycodes and its pressing state. a true value means the key is currently pressed, false indicates the key is untouched. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="228" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" bodystart="228" bodyend="-1"/>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a60531d6140e41fbff6d48d6811077aab" compoundref="d5/d7f/input__manager_8cpp" startline="282" endline="288">is_down</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1aa49cac4e6c67e66aecd9c9deac412ffb" compoundref="d5/d7f/input__manager_8cpp" startline="211" endline="226">set_state</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a928b8699a9d8af1fda4c14f02c97bef6" prot="private" static="no" mutable="no">
+        <type><ref refid="d5/dc6/namespaceopenage_1_1input_1a35fb62561b5dee35b84bc9a228b04ab1" kindref="member">modset_t</ref></type>
+        <definition>modset_t openage::input::InputManager::keymod</definition>
+        <argsstring></argsstring>
+        <name>keymod</name>
+        <briefdescription>
+<para>Current key modifiers. </para>        </briefdescription>
+        <detaileddescription>
+<para>Included ALL modifiers including num lock and caps lock. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="234" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" bodystart="234" bodyend="-1"/>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a03c93e707ca0ace2d8d6d3621f09ee52" compoundref="d5/d7f/input__manager_8cpp" startline="301" endline="303">is_mod_down</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1aa49cac4e6c67e66aecd9c9deac412ffb" compoundref="d5/d7f/input__manager_8cpp" startline="211" endline="226">set_state</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a1ee3af7567756b2a65a7da5d51d7b682" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool openage::input::InputManager::relative_mode</definition>
+        <argsstring></argsstring>
+        <name>relative_mode</name>
+        <briefdescription>
+<para>mode where mouse position is ignored used for map scrolling </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="240" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" bodystart="240" bodyend="-1"/>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a00f4f3f2347c90e118d83a6204646810" compoundref="d5/d7f/input__manager_8cpp" startline="15" endline="22">InputManager</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2e46dfc175d1fd66e92a8644d994e6ab" compoundref="d5/d7f/input__manager_8cpp" startline="312" endline="378">on_input</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1abedf603b902412de66c56b0eb8aed4da" compoundref="d5/d7f/input__manager_8cpp" startline="242" endline="255">set_relative</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a1bd243d2391930be3db6bf5aa21d55f1" prot="private" static="no" mutable="no">
+        <type><ref refid="d8/d34/structopenage_1_1coord_1_1input" kindref="compound">coord::input</ref></type>
+        <definition>coord::input openage::input::InputManager::mouse_position</definition>
+        <argsstring></argsstring>
+        <name>mouse_position</name>
+        <initializer>{0, 0}</initializer>
+        <briefdescription>
+<para>mouse position in the window </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="245" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" bodystart="245" bodyend="-1"/>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a4fd1b0eb5adbdb5a04ebb22cd01a42e2" compoundref="d5/d7f/input__manager_8cpp" startline="229" endline="233">set_mouse</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ac8c7b7b7db15158d7b1cdab7ee41bd1d" compoundref="d5/d7f/input__manager_8cpp" startline="185" endline="208">trigger</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df3/classopenage_1_1input_1_1_input_manager_1accb3a89fd672e0821f2c71330396f12a" prot="private" static="no" mutable="no">
+        <type><ref refid="d8/db7/structopenage_1_1coord_1_1input__delta" kindref="compound">coord::input_delta</ref></type>
+        <definition>coord::input_delta openage::input::InputManager::mouse_motion</definition>
+        <argsstring></argsstring>
+        <name>mouse_motion</name>
+        <initializer>{0, 0}</initializer>
+        <briefdescription>
+<para>mouse position relative to the last frame position. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="250" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" bodystart="250" bodyend="-1"/>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1aa51d0f61b2b3d3859067fa75e187d39d" compoundref="d5/d7f/input__manager_8cpp" startline="236" endline="239">set_motion</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a4fd1b0eb5adbdb5a04ebb22cd01a42e2" compoundref="d5/d7f/input__manager_8cpp" startline="229" endline="233">set_mouse</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ac8c7b7b7db15158d7b1cdab7ee41bd1d" compoundref="d5/d7f/input__manager_8cpp" startline="185" endline="208">trigger</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a0a83cf1d9d4b11f7690284c4cb0acb3e" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend openage::input::InputManager::InputContext</definition>
+        <argsstring></argsstring>
+        <name>InputContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="252" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a00f4f3f2347c90e118d83a6204646810" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::input::InputManager::InputManager</definition>
+        <argsstring>(ActionManager *action_manager)</argsstring>
+        <name>InputManager</name>
+        <param>
+          <type><ref refid="d4/de2/classopenage_1_1input_1_1_action_manager" kindref="compound">ActionManager</ref> *</type>
+          <declname>action_manager</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="54" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="15" bodyend="22"/>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1acb13cdff06ccc41195e6e020d7d185d5adfbfc9cc7a235560f04cb1a5faf1ec3e">openage::input::ALT</references>
+        <references refid="d1/d51/classopenage_1_1input_1_1_event_1a1c423e3dac033838c02e10a69c521056" compoundref="df/dc7/input_2event_8cpp" startline="64" endline="66">openage::input::Event::as_utf8</references>
+        <references refid="d1/d51/classopenage_1_1input_1_1_event_1af6758c0f24529defde0e1a4788c86ff7" compoundref="d9/d15/input_2event_8h" startline="137">openage::input::Event::cc</references>
+        <references refid="da/d08/classopenage_1_1input_1_1_class_code_1a48b950f4719c5452ce1feb6f48b83495" compoundref="d9/d15/input_2event_8h" startline="96">openage::input::ClassCode::code</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1acb13cdff06ccc41195e6e020d7d185d5a32f7eee2581c72a5561c21df3013a89a">openage::input::CTRL</references>
+        <references refid="da/d08/classopenage_1_1input_1_1_class_code_1abff7aa73f0e6abab9fe2cf91e524cc66" compoundref="d9/d15/input_2event_8h" startline="95">openage::input::ClassCode::eclass</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1acc8f950721bd51f8d211f538cd6678eb" compoundref="d8/dd2/input__manager_8h" startline="209">global_context</references>
+        <references refid="de/d60/namespaceopenage_1_1util_1a7e483e123bf554b630319eb3dd012c02" compoundref="d4/d08/misc_8h" startline="32" endline="40">openage::util::mod</references>
+        <references refid="d1/d51/classopenage_1_1input_1_1_event_1abf335431803174eb2f1d5bc90970dceb" compoundref="d9/d15/input_2event_8h" startline="138">openage::input::Event::mod</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1a278a7af94e412aa285e58d870c64a849a5f7856b6bcb3430acde17c87c700a4bc">openage::input::MOUSE_WHEEL</references>
+        <references refid="d7/d57/classopenage_1_1input_1_1_input_context_1a0a5d3374a164faf57483d7555f0b84b5" compoundref="d9/d6c/input__context_8cpp" startline="77" endline="79">openage::input::InputContext::register_to</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a1ee3af7567756b2a65a7da5d51d7b682" compoundref="d8/dd2/input__manager_8h" startline="240">relative_mode</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1acb13cdff06ccc41195e6e020d7d185d5a46afff2b309b8b16a46d812172a9235c">openage::input::SHIFT</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a368dbccb090d17ca142b1bfde0763011" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string openage::input::InputManager::get_bind</definition>
+        <argsstring>(const std::string &amp;action)</argsstring>
+        <name>get_bind</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Return the string representation of the bind assignated to an action. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="59" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="64" bodyend="83"/>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a1da9c726ba40f3d3ee10324fce8a2fb0" compoundref="d8/dd2/input__manager_8h" startline="204">action_manager</references>
+        <references refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a743f9d44332f84adb3eca195732ed09d" compoundref="d3/dba/input_2action_8cpp" startline="150" endline="157">openage::input::ActionManager::get</references>
+        <references refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a252869fbc85be3b450eb290794352ba4" compoundref="d3/dba/input_2action_8cpp" startline="170" endline="172">openage::input::ActionManager::is</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2f44a9836b240db76767fe04584a36b4" compoundref="d5/d7f/input__manager_8cpp" startline="107" endline="121">key_bind_to_string</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2f7d393c9007363a3bbbb8b1b10f4193" compoundref="d8/dd2/input__manager_8h" startline="214">keys</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a0ba02d8e086457a659747b154facab7a" compoundref="d5/d7f/input__manager_8cpp" startline="123" endline="125">mouse_bind_to_string</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1a278a7af94e412aa285e58d870c64a849a3421ce503e9731d435babad896b7aef8">openage::input::MOUSE_BUTTON</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1a278a7af94e412aa285e58d870c64a849a5f7856b6bcb3430acde17c87c700a4bc">openage::input::MOUSE_WHEEL</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ae8d78a246ac5d178588ef79b9e380b89" compoundref="d5/d7f/input__manager_8cpp" startline="127" endline="137">wheel_bind_to_string</references>
+        <referencedby refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a172292484fa92f4c391479d6e656808a" compoundref="d3/dba/input_2action_8cpp" startline="117" endline="147">openage::input::ActionManager::create</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1af93e6ca8bded1892c1c9d83332468e2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::input::InputManager::set_bind</definition>
+        <argsstring>(const std::string &amp;bind_str, const std::string action)</argsstring>
+        <name>set_bind</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>bind_str</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Set the given action to be triggered by the given bind (key/mouse /wheel). </para>        </briefdescription>
+        <detaileddescription>
+<para>Remove previous assignation. Do nothing if either they given bind or action is invalid/unknow. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="66" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="85" bodyend="105"/>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a1da9c726ba40f3d3ee10324fce8a2fb0" compoundref="d8/dd2/input__manager_8h" startline="204">action_manager</references>
+        <references refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a743f9d44332f84adb3eca195732ed09d" compoundref="d3/dba/input_2action_8cpp" startline="150" endline="157">openage::input::ActionManager::get</references>
+        <references refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a252869fbc85be3b450eb290794352ba4" compoundref="d3/dba/input_2action_8cpp" startline="170" endline="172">openage::input::ActionManager::is</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2f7d393c9007363a3bbbb8b1b10f4193" compoundref="d8/dd2/input__manager_8h" startline="214">keys</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1a910f68a5c426735a2b353eefa6229348" compoundref="d9/d38/text__to__event_8cpp" startline="76" endline="109">openage::input::text_to_event</references>
+        <referencedby refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a172292484fa92f4c391479d6e656808a" compoundref="d3/dba/input_2action_8cpp" startline="117" endline="147">openage::input::ActionManager::create</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a2f44a9836b240db76767fe04584a36b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string openage::input::InputManager::key_bind_to_string</definition>
+        <argsstring>(const Event &amp;ev)</argsstring>
+        <name>key_bind_to_string</name>
+        <param>
+          <type>const <ref refid="d1/d51/classopenage_1_1input_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>ev</declname>
+        </param>
+        <briefdescription>
+<para>Return the string representation of the key event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="71" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="107" bodyend="121"/>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1acb13cdff06ccc41195e6e020d7d185d5adfbfc9cc7a235560f04cb1a5faf1ec3e">openage::input::ALT</references>
+        <references refid="d1/d51/classopenage_1_1input_1_1_event_1af6758c0f24529defde0e1a4788c86ff7" compoundref="d9/d15/input_2event_8h" startline="137">openage::input::Event::cc</references>
+        <references refid="da/d08/classopenage_1_1input_1_1_class_code_1a48b950f4719c5452ce1feb6f48b83495" compoundref="d9/d15/input_2event_8h" startline="96">openage::input::ClassCode::code</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1acb13cdff06ccc41195e6e020d7d185d5a32f7eee2581c72a5561c21df3013a89a">openage::input::CTRL</references>
+        <references refid="d1/d51/classopenage_1_1input_1_1_event_1abf335431803174eb2f1d5bc90970dceb" compoundref="d9/d15/input_2event_8h" startline="138">openage::input::Event::mod</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1acb13cdff06ccc41195e6e020d7d185d5a46afff2b309b8b16a46d812172a9235c">openage::input::SHIFT</references>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a368dbccb090d17ca142b1bfde0763011" compoundref="d5/d7f/input__manager_8cpp" startline="64" endline="83">get_bind</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a0ba02d8e086457a659747b154facab7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string openage::input::InputManager::mouse_bind_to_string</definition>
+        <argsstring>(const Event &amp;ev)</argsstring>
+        <name>mouse_bind_to_string</name>
+        <param>
+          <type>const <ref refid="d1/d51/classopenage_1_1input_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>ev</declname>
+        </param>
+        <briefdescription>
+<para>Return the string representation of the mouse event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="76" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="123" bodyend="125"/>
+        <references refid="d1/d51/classopenage_1_1input_1_1_event_1af6758c0f24529defde0e1a4788c86ff7" compoundref="d9/d15/input_2event_8h" startline="137">openage::input::Event::cc</references>
+        <references refid="da/d08/classopenage_1_1input_1_1_class_code_1a48b950f4719c5452ce1feb6f48b83495" compoundref="d9/d15/input_2event_8h" startline="96">openage::input::ClassCode::code</references>
+        <references refid="d8/dcc/namespacestd_1a26aa0f4be3a77ac5cc3ce0cabb545042" compoundref="d8/d4f/gamestate_2resource_8cpp" startline="193" endline="206">std::to_string</references>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a368dbccb090d17ca142b1bfde0763011" compoundref="d5/d7f/input__manager_8cpp" startline="64" endline="83">get_bind</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1ae8d78a246ac5d178588ef79b9e380b89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string openage::input::InputManager::wheel_bind_to_string</definition>
+        <argsstring>(const Event &amp;ev)</argsstring>
+        <name>wheel_bind_to_string</name>
+        <param>
+          <type>const <ref refid="d1/d51/classopenage_1_1input_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>ev</declname>
+        </param>
+        <briefdescription>
+<para>Return the key representation of the event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="81" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="127" bodyend="137"/>
+        <references refid="d1/d51/classopenage_1_1input_1_1_event_1af6758c0f24529defde0e1a4788c86ff7" compoundref="d9/d15/input_2event_8h" startline="137">openage::input::Event::cc</references>
+        <references refid="da/d08/classopenage_1_1input_1_1_class_code_1a48b950f4719c5452ce1feb6f48b83495" compoundref="d9/d15/input_2event_8h" startline="96">openage::input::ClassCode::code</references>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a368dbccb090d17ca142b1bfde0763011" compoundref="d5/d7f/input__manager_8cpp" startline="64" endline="83">get_bind</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a06819b1b5f717d9fbf45bc098e7fd457" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d7/d57/classopenage_1_1input_1_1_input_context" kindref="compound">InputContext</ref> &amp;</type>
+        <definition>InputContext &amp; openage::input::InputManager::get_global_context</definition>
+        <argsstring>()</argsstring>
+        <name>get_global_context</name>
+        <briefdescription>
+<para>returns the global keybind context. </para>        </briefdescription>
+        <detaileddescription>
+<para>actions bound here will be retained even when override_context is called. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="87" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="139" bodyend="141"/>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1acc8f950721bd51f8d211f538cd6678eb" compoundref="d8/dd2/input__manager_8h" startline="209">global_context</references>
+        <referencedby refid="d6/d40/classopenage_1_1_engine_1a201016f062279be18da34be570e9971c" compoundref="da/d5c/engine_8cpp" startline="39" endline="223">openage::Engine::Engine</referencedby>
+        <referencedby refid="d3/d7e/classopenage_1_1_game_renderer_1a153e060bb9dd679446e2a3090887590a" compoundref="d3/da1/game__renderer_8cpp" startline="36" endline="186">openage::GameRenderer::GameRenderer</referencedby>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a9c7d1f16c862692b1172079402ac0f18" compoundref="d0/d03/game__control_8cpp" startline="377" endline="391">openage::ActionMode::on_exit</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1ab5e30408417ac212bd3f35e50edd3a82" compoundref="d9/dda/console_8cpp" startline="60" endline="108">openage::console::Console::register_to_engine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a9ccb8754431247dd05c56c445bda15bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d7/d57/classopenage_1_1input_1_1_input_context" kindref="compound">InputContext</ref> &amp;</type>
+        <definition>InputContext &amp; openage::input::InputManager::get_top_context</definition>
+        <argsstring>()</argsstring>
+        <name>get_top_context</name>
+        <briefdescription>
+<para>Returns the context on top. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note there is always a top context since the global context will be considered on top when none are registered </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="95" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="143" bodyend="150"/>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ad194b272e597069d93b43e0568562a4a" compoundref="d8/dd2/input__manager_8h" startline="220">contexts</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1acc8f950721bd51f8d211f538cd6678eb" compoundref="d8/dd2/input__manager_8h" startline="209">global_context</references>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a30654ed7b85fa4cf0a2728c447dfa652" compoundref="d0/d03/game__control_8cpp" startline="510" endline="534">openage::ActionMode::announce_buttons_type</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a564ccab7ee30da3ebaf97beb1fa2fcc0" compoundref="d5/d7f/input__manager_8cpp" startline="175" endline="182">ignored</referencedby>
+        <referencedby refid="d8/de3/classopenage_1_1_action_mode_signals_1a400a4674187d1ce007a206c5074390da" compoundref="d0/d03/game__control_8cpp" startline="70" endline="90">openage::ActionModeSignals::on_action</referencedby>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a9c7d1f16c862692b1172079402ac0f18" compoundref="d0/d03/game__control_8cpp" startline="377" endline="391">openage::ActionMode::on_exit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a2ece2b2ad4a08c15fb00a39b0f553d3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::input::InputManager::push_context</definition>
+        <argsstring>(InputContext *context)</argsstring>
+        <name>push_context</name>
+        <param>
+          <type><ref refid="d7/d57/classopenage_1_1input_1_1_input_context" kindref="compound">InputContext</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>register a hotkey context by pushing it onto the stack. </para>        </briefdescription>
+        <detaileddescription>
+<para>this adds the given pointer to the <computeroutput>contexts</computeroutput> list. that way the context lays on &quot;top&quot;.</para><para>if other contexts are registered afterwards, it wanders down the stack, i.e. looses priority. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="106" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="152" bodyend="157"/>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ad194b272e597069d93b43e0568562a4a" compoundref="d8/dd2/input__manager_8h" startline="220">contexts</references>
+        <references refid="d7/d57/classopenage_1_1input_1_1_input_context_1a0a5d3374a164faf57483d7555f0b84b5" compoundref="d9/d6c/input__context_8cpp" startline="77" endline="79">openage::input::InputContext::register_to</references>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a1d0f073f844955000861e4c0d08b20e0" compoundref="d0/d03/game__control_8cpp" startline="870" endline="931">openage::GameControl::set_mode</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a8a86e7fece57c47da16e37633c624ece" compoundref="d9/dda/console_8cpp" startline="110" endline="119">openage::console::Console::set_visible</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a469024c2b2ac7769e0fa578c73fde160" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::input::InputManager::remove_context</definition>
+        <argsstring>(InputContext *context)</argsstring>
+        <name>remove_context</name>
+        <param>
+          <type><ref refid="d7/d57/classopenage_1_1input_1_1_input_context" kindref="compound">InputContext</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>removes any matching registered context from the stack. </para>        </briefdescription>
+        <detaileddescription>
+<para>the removal is done by finding the given pointer in the <computeroutput>contexts</computeroutput> lists, then deleting it in there. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="114" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="160" bodyend="172"/>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ad194b272e597069d93b43e0568562a4a" compoundref="d8/dd2/input__manager_8h" startline="220">contexts</references>
+        <references refid="d7/d57/classopenage_1_1input_1_1_input_context_1a12ae83daa8c6bfefef320a07377a9246" compoundref="d9/d6c/input__context_8cpp" startline="82" endline="84">openage::input::InputContext::unregister</references>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a9c7d1f16c862692b1172079402ac0f18" compoundref="d0/d03/game__control_8cpp" startline="377" endline="391">openage::ActionMode::on_exit</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a1d0f073f844955000861e4c0d08b20e0" compoundref="d0/d03/game__control_8cpp" startline="870" endline="931">openage::GameControl::set_mode</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a8a86e7fece57c47da16e37633c624ece" compoundref="d9/dda/console_8cpp" startline="110" endline="119">openage::console::Console::set_visible</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a564ccab7ee30da3ebaf97beb1fa2fcc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::input::InputManager::ignored</definition>
+        <argsstring>(const Event &amp;e)</argsstring>
+        <name>ignored</name>
+        <param>
+          <type>const <ref refid="d1/d51/classopenage_1_1input_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>true if the given event type is being ignored </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="119" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="175" bodyend="182"/>
+        <references refid="d1/d51/classopenage_1_1input_1_1_event_1af6758c0f24529defde0e1a4788c86ff7" compoundref="d9/d15/input_2event_8h" startline="137">openage::input::Event::cc</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1a278a7af94e412aa285e58d870c64a849a027acd3aa6b1dd7f26119d3cf0f9a063">openage::input::CHAR</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a9ccb8754431247dd05c56c445bda15bc" compoundref="d5/d7f/input__manager_8cpp" startline="143" endline="150">get_top_context</references>
+        <references refid="da/d08/classopenage_1_1input_1_1_class_code_1a164160fc35b66ea9f4bf6ba5211c48e5" compoundref="df/dc7/input_2event_8cpp" startline="31" endline="38">openage::input::ClassCode::has_class</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1a278a7af94e412aa285e58d870c64a849aeb7ee0fb585e2ac64fdc086466c474b1">openage::input::UTF8</references>
+        <references refid="d7/d57/classopenage_1_1input_1_1_input_context_1a190c561c895ffc95c2f3092e47509737" compoundref="dd/d92/input__context_8h" startline="92">openage::input::InputContext::utf8_mode</references>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1aa49cac4e6c67e66aecd9c9deac412ffb" compoundref="d5/d7f/input__manager_8cpp" startline="211" endline="226">set_state</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ac8c7b7b7db15158d7b1cdab7ee41bd1d" compoundref="d5/d7f/input__manager_8cpp" startline="185" endline="208">trigger</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1ac8c7b7b7db15158d7b1cdab7ee41bd1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::input::InputManager::trigger</definition>
+        <argsstring>(const Event &amp;e)</argsstring>
+        <name>trigger</name>
+        <param>
+          <type>const <ref refid="d1/d51/classopenage_1_1input_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>manages the pressing of an input event (key, mouse, ...). </para>        </briefdescription>
+        <detaileddescription>
+<para>first checks whether an action is bound to it. if it is, look for an handler to execute that handler. returns true if the event was responded to </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="127" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="185" bodyend="208"/>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ad194b272e597069d93b43e0568562a4a" compoundref="d8/dd2/input__manager_8h" startline="220">contexts</references>
+        <references refid="d7/d57/classopenage_1_1input_1_1_input_context_1a97804df5309a2fd7773b02568c8ca461" compoundref="d9/d6c/input__context_8cpp" startline="46" endline="74">openage::input::InputContext::execute_if_bound</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1acc8f950721bd51f8d211f538cd6678eb" compoundref="d8/dd2/input__manager_8h" startline="209">global_context</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a564ccab7ee30da3ebaf97beb1fa2fcc0" compoundref="d5/d7f/input__manager_8cpp" startline="175" endline="182">ignored</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2f7d393c9007363a3bbbb8b1b10f4193" compoundref="d8/dd2/input__manager_8h" startline="214">keys</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1accb3a89fd672e0821f2c71330396f12a" compoundref="d8/dd2/input__manager_8h" startline="250">mouse_motion</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a1bd243d2391930be3db6bf5aa21d55f1" compoundref="d8/dd2/input__manager_8h" startline="245">mouse_position</references>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2e46dfc175d1fd66e92a8644d994e6ab" compoundref="d5/d7f/input__manager_8cpp" startline="312" endline="378">on_input</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1aa49cac4e6c67e66aecd9c9deac412ffb" compoundref="d5/d7f/input__manager_8cpp" startline="211" endline="226">set_state</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1aa49cac4e6c67e66aecd9c9deac412ffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::input::InputManager::set_state</definition>
+        <argsstring>(const Event &amp;ev, bool is_down)</argsstring>
+        <name>set_state</name>
+        <param>
+          <type>const <ref refid="d1/d51/classopenage_1_1input_1_1_event" kindref="compound">Event</ref> &amp;</type>
+          <declname>ev</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_down</declname>
+        </param>
+        <briefdescription>
+<para>sets the state of a specific key </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="132" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="211" bodyend="226"/>
+        <references refid="d1/d51/classopenage_1_1input_1_1_event_1af6758c0f24529defde0e1a4788c86ff7" compoundref="d9/d15/input_2event_8h" startline="137">openage::input::Event::cc</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a564ccab7ee30da3ebaf97beb1fa2fcc0" compoundref="d5/d7f/input__manager_8cpp" startline="175" endline="182">ignored</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a60531d6140e41fbff6d48d6811077aab" compoundref="d5/d7f/input__manager_8cpp" startline="282" endline="288">is_down</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a928b8699a9d8af1fda4c14f02c97bef6" compoundref="d8/dd2/input__manager_8h" startline="234">keymod</references>
+        <references refid="d1/d51/classopenage_1_1input_1_1_event_1abf335431803174eb2f1d5bc90970dceb" compoundref="d9/d15/input_2event_8h" startline="138">openage::input::Event::mod</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a187c1ea8c13125527e02d9c25f716bea" compoundref="d8/dd2/input__manager_8h" startline="228">states</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ac8c7b7b7db15158d7b1cdab7ee41bd1d" compoundref="d5/d7f/input__manager_8cpp" startline="185" endline="208">trigger</references>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2e46dfc175d1fd66e92a8644d994e6ab" compoundref="d5/d7f/input__manager_8cpp" startline="312" endline="378">on_input</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a4fd1b0eb5adbdb5a04ebb22cd01a42e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::input::InputManager::set_mouse</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>set_mouse</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>updates mouse position state and motion </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="137" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="229" bodyend="233"/>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1accb3a89fd672e0821f2c71330396f12a" compoundref="d8/dd2/input__manager_8h" startline="250">mouse_motion</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a1bd243d2391930be3db6bf5aa21d55f1" compoundref="d8/dd2/input__manager_8h" startline="245">mouse_position</references>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2e46dfc175d1fd66e92a8644d994e6ab" compoundref="d5/d7f/input__manager_8cpp" startline="312" endline="378">on_input</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1aa51d0f61b2b3d3859067fa75e187d39d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::input::InputManager::set_motion</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>set_motion</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>updates mouse motion only </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="142" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="236" bodyend="239"/>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1accb3a89fd672e0821f2c71330396f12a" compoundref="d8/dd2/input__manager_8h" startline="250">mouse_motion</references>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2e46dfc175d1fd66e92a8644d994e6ab" compoundref="d5/d7f/input__manager_8cpp" startline="312" endline="378">on_input</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1abedf603b902412de66c56b0eb8aed4da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::input::InputManager::set_relative</definition>
+        <argsstring>(bool mode)</argsstring>
+        <name>set_relative</name>
+        <param>
+          <type>bool</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>enable relative mouse mode </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="147" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="242" bodyend="255"/>
+        <references refid="d3/d8f/namespaceopenage_1_1gui_1a78b9b31c68faa4fe66303c754d8074e2" compoundref="d1/de8/game__control__link_8cpp" startline="340">openage::gui::mode</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a1ee3af7567756b2a65a7da5d51d7b682" compoundref="d8/dd2/input__manager_8h" startline="240">relative_mode</references>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2e46dfc175d1fd66e92a8644d994e6ab" compoundref="d5/d7f/input__manager_8cpp" startline="312" endline="378">on_input</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1aee8d9369313ee81d552ea4fe97f6165c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::input::InputManager::is_mouse_at_edge</definition>
+        <argsstring>(Edge edge, int window_size)</argsstring>
+        <name>is_mouse_at_edge</name>
+        <param>
+          <type><ref refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a349bf2aa6ba3a9aa0c7d76119ddd6c7a" kindref="member">Edge</ref></type>
+          <declname>edge</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>window_size</declname>
+        </param>
+        <briefdescription>
+<para>Query whether cursor is at edgo of screen. </para>        </briefdescription>
+        <detaileddescription>
+<para>edge variable is enum Edges</para><para><simplesect kind="return"><para>true when the mouse is at the queried screen edge, false else. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="156" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="257" bodyend="280"/>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a349bf2aa6ba3a9aa0c7d76119ddd6c7aac4e0e4e3118472beeb2ae75827450f1f">DOWN</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a349bf2aa6ba3a9aa0c7d76119ddd6c7aa684d325a7303f52e64011467ff5c5758">LEFT</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a349bf2aa6ba3a9aa0c7d76119ddd6c7aa21507b40c80068eda19865706fdc2403">RIGHT</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a349bf2aa6ba3a9aa0c7d76119ddd6c7aafbaedde498cdead4f2780217646e9ba1">UP</references>
+        <referencedby refid="d6/d40/classopenage_1_1_engine_1adc80abfebed9b4f30df3de15984431e8" compoundref="da/d5c/engine_8cpp" startline="313" endline="459">openage::Engine::loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a60531d6140e41fbff6d48d6811077aab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::input::InputManager::is_down</definition>
+        <argsstring>(const ClassCode &amp;cc) const</argsstring>
+        <name>is_down</name>
+        <param>
+          <type>const <ref refid="da/d08/classopenage_1_1input_1_1_class_code" kindref="compound">ClassCode</ref> &amp;</type>
+          <declname>cc</declname>
+        </param>
+        <briefdescription>
+<para>Query stored pressing stat for a key. </para>        </briefdescription>
+        <detaileddescription>
+<para>note that the function stores a unknown/new keycode as &apos;not pressed&apos; if requested <simplesect kind="return"><para>true when the key is pressed, false else. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="165" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="282" bodyend="288"/>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a187c1ea8c13125527e02d9c25f716bea" compoundref="d8/dd2/input__manager_8h" startline="228">states</references>
+        <referencedby refid="d6/d40/classopenage_1_1_engine_1a201016f062279be18da34be570e9971c" compoundref="da/d5c/engine_8cpp" startline="39" endline="223">openage::Engine::Engine</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a4b46e70d0aeb78687f2cc12d331f4088" compoundref="d5/d7f/input__manager_8cpp" startline="291" endline="293">is_down</referencedby>
+        <referencedby refid="d6/d40/classopenage_1_1_engine_1adc80abfebed9b4f30df3de15984431e8" compoundref="da/d5c/engine_8cpp" startline="313" endline="459">openage::Engine::loop</referencedby>
+        <referencedby refid="db/d42/classopenage_1_1_editor_mode_1a29b4d3a8c32153ccdc566f60fcdacf7f" compoundref="d0/d03/game__control_8cpp" startline="554" endline="584">openage::EditorMode::on_game_control_set</referencedby>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1aa49cac4e6c67e66aecd9c9deac412ffb" compoundref="d5/d7f/input__manager_8cpp" startline="211" endline="226">set_state</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a4b46e70d0aeb78687f2cc12d331f4088" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::input::InputManager::is_down</definition>
+        <argsstring>(event_class ec, code_t code) const</argsstring>
+        <name>is_down</name>
+        <param>
+          <type><ref refid="d5/dc6/namespaceopenage_1_1input_1a278a7af94e412aa285e58d870c64a849" kindref="member">event_class</ref></type>
+          <declname>ec</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/dc6/namespaceopenage_1_1input_1aae287ba8846c11563c4b17a98e220b54" kindref="member">code_t</ref></type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="166" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="291" bodyend="293"/>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a60531d6140e41fbff6d48d6811077aab" compoundref="d5/d7f/input__manager_8cpp" startline="282" endline="288">is_down</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1aaadc3f3ef245e361c4179a082b22d690" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::input::InputManager::is_down</definition>
+        <argsstring>(SDL_Keycode k) const</argsstring>
+        <name>is_down</name>
+        <param>
+          <type>SDL_Keycode</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Most cases should use above is_down(class, code) instead to avoid relying on sdl types. </para>        </briefdescription>
+        <detaileddescription>
+<para>Query stored pressing stat for a key. <simplesect kind="return"><para>true when the key is pressed, false else. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="175" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="296" bodyend="298"/>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a60531d6140e41fbff6d48d6811077aab" compoundref="d5/d7f/input__manager_8cpp" startline="282" endline="288">is_down</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1aad63294ea2a94dc1723869be3c8d1670" compoundref="df/dc7/input_2event_8cpp" startline="127" endline="150">openage::input::sdl_key</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a03c93e707ca0ace2d8d6d3621f09ee52" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::input::InputManager::is_mod_down</definition>
+        <argsstring>(modifier mod) const</argsstring>
+        <name>is_mod_down</name>
+        <param>
+          <type><ref refid="d5/dc6/namespaceopenage_1_1input_1acb13cdff06ccc41195e6e020d7d185d5" kindref="member">modifier</ref></type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether a key modifier is held down. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="180" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="301" bodyend="303"/>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a928b8699a9d8af1fda4c14f02c97bef6" compoundref="d8/dd2/input__manager_8h" startline="234">keymod</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a2e46dfc175d1fd66e92a8644d994e6ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::input::InputManager::on_input</definition>
+        <argsstring>(SDL_Event *e) override</argsstring>
+        <name>on_input</name>
+        <reimplements refid="da/dc5/classopenage_1_1_input_handler_1ad2e50fdb45b1d46170ac0882518742e5">on_input</reimplements>
+        <param>
+          <type>SDL_Event *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>When a SDL event happens, this is called. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="185" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="312" bodyend="378"/>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a3f1fe3ab63277870db07fb817a91696b" compoundref="d5/d7f/input__manager_8cpp" startline="306" endline="309">get_mod</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1a278a7af94e412aa285e58d870c64a849a6a52684199a74ef0bd3415fe6a76da4f">openage::input::MOUSE_MOTION</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a1ee3af7567756b2a65a7da5d51d7b682" compoundref="d8/dd2/input__manager_8h" startline="240">relative_mode</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1aad63294ea2a94dc1723869be3c8d1670" compoundref="df/dc7/input_2event_8cpp" startline="127" endline="150">openage::input::sdl_key</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1abae2435eecb13af4c06e9449299ceb41" compoundref="df/dc7/input_2event_8cpp" startline="156" endline="158">openage::input::sdl_mouse</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1ad3082ad89eabf77fdae7da9f72f26910" compoundref="df/dc7/input_2event_8cpp" startline="160" endline="162">openage::input::sdl_mouse_up_down</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1ab6f0345d20c07a72034dc85a73d1cdf1" compoundref="df/dc7/input_2event_8cpp" startline="164" endline="166">openage::input::sdl_wheel</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1aa51d0f61b2b3d3859067fa75e187d39d" compoundref="d5/d7f/input__manager_8cpp" startline="236" endline="239">set_motion</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a4fd1b0eb5adbdb5a04ebb22cd01a42e2" compoundref="d5/d7f/input__manager_8cpp" startline="229" endline="233">set_mouse</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1abedf603b902412de66c56b0eb8aed4da" compoundref="d5/d7f/input__manager_8cpp" startline="242" endline="255">set_relative</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1aa49cac4e6c67e66aecd9c9deac412ffb" compoundref="d5/d7f/input__manager_8cpp" startline="211" endline="226">set_state</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ac8c7b7b7db15158d7b1cdab7ee41bd1d" compoundref="d5/d7f/input__manager_8cpp" startline="185" endline="208">trigger</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1a66c182e7a6c17284f918dd401d6fded3" compoundref="df/dc7/input_2event_8cpp" startline="152" endline="154">openage::input::utf8</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1ac5b6bbe740edcca81b63996a22472a53" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; openage::input::InputManager::active_binds</definition>
+        <argsstring>(const std::unordered_map&lt; action_t, action_func_t &gt; &amp;ctx_actions) const</argsstring>
+        <name>active_binds</name>
+        <param>
+          <type>const std::unordered_map&lt; <ref refid="d5/dc6/namespaceopenage_1_1input_1afc78129c41b8dce77d2b9c52d7619d74" kindref="member">action_t</ref>, <ref refid="d5/dc6/namespaceopenage_1_1input_1a20e943c4e2c674bd2fbc51cc1aa95f4e" kindref="member">action_func_t</ref> &gt; &amp;</type>
+          <declname>ctx_actions</declname>
+        </param>
+        <briefdescription>
+<para>Return a string representation of active key bindings from the given context. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="191" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="381" bodyend="406"/>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1aa0777d6b8ecc513c2a90ae8273d1938c" compoundref="d5/d7f/input__manager_8cpp" startline="409" endline="411">get_action_manager</references>
+        <references refid="d4/de2/classopenage_1_1input_1_1_action_manager_1a44e53d5edb2092424df17b709b743358" compoundref="d3/dba/input_2action_8cpp" startline="160" endline="167">openage::input::ActionManager::get_name</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2f7d393c9007363a3bbbb8b1b10f4193" compoundref="d8/dd2/input__manager_8h" startline="214">keys</references>
+        <references refid="d5/d0e/namespaceopenage_1_1testing_1_1testing_1ac25bf81db406af62d08113ef7ae9fd6e" compoundref="de/dd3/testing_8py" startline="42" endline="45">openage.testing.testing.result</references>
+        <referencedby refid="d7/d57/classopenage_1_1input_1_1_input_context_1ab79e2d06d4aab199d3fb9c5dc5b6ff3f" compoundref="d9/d6c/input__context_8cpp" startline="25" endline="32">openage::input::InputContext::active_binds</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1aa0777d6b8ecc513c2a90ae8273d1938c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d4/de2/classopenage_1_1input_1_1_action_manager" kindref="compound">ActionManager</ref> *</type>
+        <definition>ActionManager * openage::input::InputManager::get_action_manager</definition>
+        <argsstring>() const</argsstring>
+        <name>get_action_manager</name>
+        <briefdescription>
+<para>Get the action manager attached to this input manager. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="196" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="409" bodyend="411"/>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a1da9c726ba40f3d3ee10324fce8a2fb0" compoundref="d8/dd2/input__manager_8h" startline="204">action_manager</references>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ac5b6bbe740edcca81b63996a22472a53" compoundref="d5/d7f/input__manager_8cpp" startline="381" endline="406">active_binds</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d7/df3/classopenage_1_1input_1_1_input_manager_1a3f1fe3ab63277870db07fb817a91696b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/dc6/namespaceopenage_1_1input_1a35fb62561b5dee35b84bc9a228b04ab1" kindref="member">modset_t</ref></type>
+        <definition>modset_t openage::input::InputManager::get_mod</definition>
+        <argsstring>() const</argsstring>
+        <name>get_mod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="199" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.cpp" bodystart="306" bodyend="309"/>
+        <references refid="de/d60/namespaceopenage_1_1util_1a7e483e123bf554b630319eb3dd012c02" compoundref="d4/d08/misc_8h" startline="32" endline="40">openage::util::mod</references>
+        <references refid="d5/dc6/namespaceopenage_1_1input_1a440ec4f21ee7c8cf0a64ecb96e4fca91" compoundref="df/dc7/input_2event_8cpp" startline="110" endline="124">openage::input::sdl_mod</references>
+        <referencedby refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2e46dfc175d1fd66e92a8644d994e6ab" compoundref="d5/d7f/input__manager_8cpp" startline="312" endline="378">on_input</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The input manager manages all input layers (hud, game, ...) and triggers the registered actions depending on the active layer. </para>    </briefdescription>
+    <detaileddescription>
+<para>pxd:</para><para>cppclass <ref refid="d7/df3/classopenage_1_1input_1_1_input_manager" kindref="compound">InputManager</ref>: bool set_bind(char* bind_char, string action) except + string get_bind(string action) except + </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="3976">
+        <label>openage::InputHandler</label>
+        <link refid="da/dc5/classopenage_1_1_input_handler"/>
+      </node>
+      <node id="3975">
+        <label>openage::input::InputManager</label>
+        <link refid="d7/df3/classopenage_1_1input_1_1_input_manager"/>
+        <childnode refid="3976" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3986">
+        <label>openage::util::Path</label>
+        <link refid="dd/dc1/classopenage_1_1util_1_1_path"/>
+      </node>
+      <node id="3985">
+        <label>openage::cvar::CVarManager</label>
+        <link refid="db/db2/classopenage_1_1cvar_1_1_c_var_manager"/>
+        <childnode refid="3986" relation="usage">
+          <edgelabel>-path</edgelabel>
+        </childnode>
+      </node>
+      <node id="3984">
+        <label>openage::input::ActionManager</label>
+        <link refid="d4/de2/classopenage_1_1input_1_1_action_manager"/>
+        <childnode refid="3985" relation="usage">
+          <edgelabel>-cvar_manager</edgelabel>
+        </childnode>
+        <childnode refid="3977" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="3983">
+        <label>CoordXYRelative&lt; pixel_t, input, input_delta &gt;</label>
+      </node>
+      <node id="3979">
+        <label>openage::coord::input</label>
+        <link refid="d8/d34/structopenage_1_1coord_1_1input"/>
+        <childnode refid="3980" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3980">
+        <label>CoordXYAbsolute&lt; pixel_t, input, input_delta &gt;</label>
+      </node>
+      <node id="3981">
+        <label>openage::input::InputContext</label>
+        <link refid="d7/d57/classopenage_1_1input_1_1_input_context"/>
+        <childnode refid="3977" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="3982">
+        <label>openage::coord::input_delta</label>
+        <link refid="d8/db7/structopenage_1_1coord_1_1input__delta"/>
+        <childnode refid="3983" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3978">
+        <label>openage::InputHandler</label>
+        <link refid="da/dc5/classopenage_1_1_input_handler"/>
+      </node>
+      <node id="3977">
+        <label>openage::input::InputManager</label>
+        <link refid="d7/df3/classopenage_1_1input_1_1_input_manager"/>
+        <childnode refid="3978" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3979" relation="usage">
+          <edgelabel>-mouse_position</edgelabel>
+        </childnode>
+        <childnode refid="3981" relation="usage">
+          <edgelabel>-global_context</edgelabel>
+        </childnode>
+        <childnode refid="3982" relation="usage">
+          <edgelabel>-mouse_motion</edgelabel>
+        </childnode>
+        <childnode refid="3984" relation="usage">
+          <edgelabel>-action_manager</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" line="42" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/input/input_manager.h" bodystart="42" bodyend="253"/>
+    <listofallmembers>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a1da9c726ba40f3d3ee10324fce8a2fb0" prot="private" virt="non-virtual"><scope>openage::input::InputManager</scope><name>action_manager</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ac5b6bbe740edcca81b63996a22472a53" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>active_binds</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ad194b272e597069d93b43e0568562a4a" prot="private" virt="non-virtual"><scope>openage::input::InputManager</scope><name>contexts</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a349bf2aa6ba3a9aa0c7d76119ddd6c7a" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>Edge</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1aa0777d6b8ecc513c2a90ae8273d1938c" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>get_action_manager</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a368dbccb090d17ca142b1bfde0763011" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>get_bind</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a06819b1b5f717d9fbf45bc098e7fd457" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>get_global_context</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a3f1fe3ab63277870db07fb817a91696b" prot="private" virt="non-virtual"><scope>openage::input::InputManager</scope><name>get_mod</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a9ccb8754431247dd05c56c445bda15bc" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>get_top_context</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1acc8f950721bd51f8d211f538cd6678eb" prot="private" virt="non-virtual"><scope>openage::input::InputManager</scope><name>global_context</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a564ccab7ee30da3ebaf97beb1fa2fcc0" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>ignored</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a0a83cf1d9d4b11f7690284c4cb0acb3e" prot="private" virt="non-virtual"><scope>openage::input::InputManager</scope><name>InputContext</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a00f4f3f2347c90e118d83a6204646810" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>InputManager</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a60531d6140e41fbff6d48d6811077aab" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>is_down</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a4b46e70d0aeb78687f2cc12d331f4088" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>is_down</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1aaadc3f3ef245e361c4179a082b22d690" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>is_down</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a03c93e707ca0ace2d8d6d3621f09ee52" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>is_mod_down</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1aee8d9369313ee81d552ea4fe97f6165c" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>is_mouse_at_edge</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2f44a9836b240db76767fe04584a36b4" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>key_bind_to_string</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a928b8699a9d8af1fda4c14f02c97bef6" prot="private" virt="non-virtual"><scope>openage::input::InputManager</scope><name>keymod</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2f7d393c9007363a3bbbb8b1b10f4193" prot="private" virt="non-virtual"><scope>openage::input::InputManager</scope><name>keys</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a0ba02d8e086457a659747b154facab7a" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>mouse_bind_to_string</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1accb3a89fd672e0821f2c71330396f12a" prot="private" virt="non-virtual"><scope>openage::input::InputManager</scope><name>mouse_motion</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a1bd243d2391930be3db6bf5aa21d55f1" prot="private" virt="non-virtual"><scope>openage::input::InputManager</scope><name>mouse_position</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2e46dfc175d1fd66e92a8644d994e6ab" prot="public" virt="virtual"><scope>openage::input::InputManager</scope><name>on_input</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2ece2b2ad4a08c15fb00a39b0f553d3c" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>push_context</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a1ee3af7567756b2a65a7da5d51d7b682" prot="private" virt="non-virtual"><scope>openage::input::InputManager</scope><name>relative_mode</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a469024c2b2ac7769e0fa578c73fde160" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>remove_context</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1af93e6ca8bded1892c1c9d83332468e2d" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>set_bind</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1aa51d0f61b2b3d3859067fa75e187d39d" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>set_motion</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a4fd1b0eb5adbdb5a04ebb22cd01a42e2" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>set_mouse</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1abedf603b902412de66c56b0eb8aed4da" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>set_relative</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1aa49cac4e6c67e66aecd9c9deac412ffb" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>set_state</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a187c1ea8c13125527e02d9c25f716bea" prot="private" virt="non-virtual"><scope>openage::input::InputManager</scope><name>states</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ac8c7b7b7db15158d7b1cdab7ee41bd1d" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>trigger</name></member>
+      <member refid="d7/df3/classopenage_1_1input_1_1_input_manager_1ae8d78a246ac5d178588ef79b9e380b89" prot="public" virt="non-virtual"><scope>openage::input::InputManager</scope><name>wheel_bind_to_string</name></member>
+      <member refid="da/dc5/classopenage_1_1_input_handler_1abdb25a0f6baffa8c6bd4d69671565fc6" prot="public" virt="virtual"><scope>openage::input::InputManager</scope><name>~InputHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

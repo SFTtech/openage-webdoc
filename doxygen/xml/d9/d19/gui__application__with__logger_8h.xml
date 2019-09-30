@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d9/d19/gui__application__with__logger_8h" kind="file" language="C++">
+    <compoundname>gui_application_with_logger.h</compoundname>
+    <includes refid="d8/d6c/gui__application_8h" local="yes">../../guisys/public/gui_application.h</includes>
+    <includedby refid="dc/d94/gui_2gui_8h" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/gui.h</includedby>
+    <includedby refid="d2/da3/gui__application__with__logger_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/public/gui_application_with_logger.cpp</includedby>
+    <incdepgraph>
+      <node id="14914">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/public/gui_application_with_logger.h</label>
+        <link refid="d9/d19/gui__application__with__logger_8h"/>
+        <childnode refid="14915" relation="include">
+        </childnode>
+      </node>
+      <node id="14915">
+        <label>../../guisys/public/gui_application.h</label>
+        <link refid="d8/d6c/gui__application_8h"/>
+        <childnode refid="14916" relation="include">
+        </childnode>
+      </node>
+      <node id="14916">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="14921">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/public/gui_application_with_logger.cpp</label>
+        <link refid="d2/da3/gui__application__with__logger_8cpp"/>
+      </node>
+      <node id="14917">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/public/gui_application_with_logger.h</label>
+        <link refid="d9/d19/gui__application__with__logger_8h"/>
+        <childnode refid="14918" relation="include">
+        </childnode>
+        <childnode refid="14921" relation="include">
+        </childnode>
+      </node>
+      <node id="14918">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/gui.h</label>
+        <link refid="dc/d94/gui_2gui_8h"/>
+        <childnode refid="14919" relation="include">
+        </childnode>
+        <childnode refid="14920" relation="include">
+        </childnode>
+      </node>
+      <node id="14920">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/gui.cpp</label>
+        <link refid="d6/d86/gui_2gui_8cpp"/>
+      </node>
+      <node id="14919">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/engine.cpp</label>
+        <link refid="da/d5c/engine_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d2/dc8/classopenage_1_1gui_1_1_gui_application_with_logger" prot="public">openage::gui::GuiApplicationWithLogger</innerclass>
+    <innernamespace refid="da/d23/namespaceopenage">openage</innernamespace>
+    <innernamespace refid="d3/d8f/namespaceopenage_1_1gui">openage::gui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2015-2016<sp/>the<sp/>openage<sp/>authors.<sp/>See<sp/>copying.md<sp/>for<sp/>legal<sp/>info.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../guisys/public/gui_application.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="da/d23/namespaceopenage" kindref="compound">openage</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">gui<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="d2/dc8/classopenage_1_1gui_1_1_gui_application_with_logger" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d2/dc8/classopenage_1_1gui_1_1_gui_application_with_logger" kindref="compound">GuiApplicationWithLogger</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="dc/d0a/classqtsdl_1_1_gui_application" kindref="compound">qtsdl::GuiApplication</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/dc8/classopenage_1_1gui_1_1_gui_application_with_logger_1a3c8f7676a2b7884da82e571cb6d17047" kindref="member">GuiApplicationWithLogger</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/dc8/classopenage_1_1gui_1_1_gui_application_with_logger_1a798636737357a5a22d4f06752978102d" kindref="member">~GuiApplicationWithLogger</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>openage::gui</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/integration/public/gui_application_with_logger.h"/>
+  </compounddef>
+</doxygen>

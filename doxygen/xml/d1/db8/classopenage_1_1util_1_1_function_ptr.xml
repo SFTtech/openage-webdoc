@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d1/db8/classopenage_1_1util_1_1_function_ptr" kind="class" language="C++" prot="public">
+    <compoundname>openage::util::FunctionPtr</compoundname>
+    <includes refid="d8/dce/language_8h" local="no">language.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>ReturnType</declname>
+        <defname>ReturnType</defname>
+      </param>
+      <param>
+        <type>typename ...</type>
+        <declname>ArgTypes</declname>
+        <defname>ArgTypes</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d1/db8/classopenage_1_1util_1_1_function_ptr_1ab5cdb320863a46abc561330527a01e3d" prot="public" static="no" mutable="no">
+        <type>ReturnType(*</type>
+        <definition>ReturnType(* openage::util::FunctionPtr&lt; ReturnType, ArgTypes &gt;::ptr) (ArgTypes ...)</definition>
+        <argsstring>)(ArgTypes ...)</argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/language.h" line="28" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/language.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="d0/d44/classopenage_1_1pyinterface_1_1_func_1acea6cb67bc0e8ea78d513f6db4e2e477" compoundref="d8/dea/functional_8h" startline="168" endline="173">openage::pyinterface::Func&lt; ReturnType, ArgTypes ... &gt;::bind_catchexcept_impl</referencedby>
+        <referencedby refid="d0/d44/classopenage_1_1pyinterface_1_1_func_1a543c66d2cfec84be7ea1cc38b413e74b" compoundref="d8/dea/functional_8h" startline="194" endline="198">openage::pyinterface::Func&lt; ReturnType, ArgTypes ... &gt;::bind_noexcept</referencedby>
+        <referencedby refid="d1/db8/classopenage_1_1util_1_1_function_ptr_1a10ad84f67b4050c1b46fbd9166f31266" compoundref="d8/dce/language_8h" startline="25" endline="26">openage::util::FunctionPtr&lt; ReturnType, ArgTypes &gt;::FunctionPtr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/db8/classopenage_1_1util_1_1_function_ptr_1a10ad84f67b4050c1b46fbd9166f31266" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>openage::util::FunctionPtr&lt; ReturnType, ArgTypes &gt;::FunctionPtr</definition>
+        <argsstring>(ReturnType(*ptr)(ArgTypes ...))</argsstring>
+        <name>FunctionPtr</name>
+        <param>
+          <type>ReturnType(*)(ArgTypes ...)</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Implicit conversion from raw type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/language.h" line="25" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/language.h" bodystart="25" bodyend="26"/>
+        <references refid="d1/db8/classopenage_1_1util_1_1_function_ptr_1ab5cdb320863a46abc561330527a01e3d" compoundref="d8/dce/language_8h" startline="28">openage::util::FunctionPtr&lt; ReturnType, ArgTypes &gt;::ptr</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simple wrapper type that contains a function pointer. </para>    </briefdescription>
+    <detaileddescription>
+<para>Needed as workaround for <ulink url="http://stackoverflow.com/questions/31040075">http://stackoverflow.com/questions/31040075</ulink> </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="6080">
+        <label>openage::util::FunctionPtr&lt; ReturnType, ArgTypes &gt;</label>
+        <link refid="d1/db8/classopenage_1_1util_1_1_function_ptr"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/language.h" line="20" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/language.h" bodystart="20" bodyend="29"/>
+    <listofallmembers>
+      <member refid="d1/db8/classopenage_1_1util_1_1_function_ptr_1a10ad84f67b4050c1b46fbd9166f31266" prot="public" virt="non-virtual"><scope>openage::util::FunctionPtr</scope><name>FunctionPtr</name></member>
+      <member refid="d1/db8/classopenage_1_1util_1_1_function_ptr_1ab5cdb320863a46abc561330527a01e3d" prot="public" virt="non-virtual"><scope>openage::util::FunctionPtr</scope><name>ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

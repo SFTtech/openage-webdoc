@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d0/d9f/structopenage_1_1audio_1_1opus__file__t" kind="struct" language="C++" prot="public">
+    <compoundname>openage::audio::opus_file_t</compoundname>
+    <includes refid="d6/d6a/opus__loading_8h" local="no">opus_loading.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d0/d9f/structopenage_1_1audio_1_1opus__file__t_1a581840588795e9b90c6546ff24b8e189" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; OggOpusFile, std::function&lt; void(OggOpusFile *)&gt; &gt;</type>
+        <definition>std::unique_ptr&lt;OggOpusFile, std::function&lt;void(OggOpusFile*)&gt; &gt; openage::audio::opus_file_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+<para>The opusfile handle, with a custom deleter that frees the opusfile memory. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_loading.h" line="24" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_loading.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="d4/d04/classopenage_1_1audio_1_1_opus_in_memory_loader_1afd535fc99780b2823cdd38c8dfc03f5d" compoundref="d8/df0/opus__in__memory__loader_8cpp" startline="21" endline="70">openage::audio::OpusInMemoryLoader::get_resource</referencedby>
+        <referencedby refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1a4e5604664bb038018600653c7b6300fc" compoundref="dd/d6a/opus__dynamic__loader_8cpp" startline="33" endline="98">openage::audio::OpusDynamicLoader::load_chunk</referencedby>
+        <referencedby refid="d5/d78/namespaceopenage_1_1audio_1a2b9ae1ef31b0fe76e8f6d90fa1fc9db7" compoundref="d2/d8a/opus__loading_8cpp" startline="57" endline="125">openage::audio::open_opus_file</referencedby>
+        <referencedby refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1aaabed108ab439a182bd2aba5bbb54e64" compoundref="dd/d6a/opus__dynamic__loader_8cpp" startline="14" endline="30">openage::audio::OpusDynamicLoader::OpusDynamicLoader</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d9f/structopenage_1_1audio_1_1opus__file__t_1a249e11933a2c73d85513f0c38f07cfa8" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="dc/d27/classopenage_1_1util_1_1_file" kindref="compound">util::File</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;util::File&gt; openage::audio::opus_file_t::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+<para>File used to supply the data. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is unused if the file is a real file. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_loading.h" line="30" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_loading.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="d5/d78/namespaceopenage_1_1audio_1a2b9ae1ef31b0fe76e8f6d90fa1fc9db7" compoundref="d2/d8a/opus__loading_8cpp" startline="57" endline="125">openage::audio::open_opus_file</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>opusfile handle storage. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="508">
+        <label>openage::audio::opus_file_t</label>
+        <link refid="d0/d9f/structopenage_1_1audio_1_1opus__file__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_loading.h" line="19" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_loading.h" bodystart="19" bodyend="31"/>
+    <listofallmembers>
+      <member refid="d0/d9f/structopenage_1_1audio_1_1opus__file__t_1a249e11933a2c73d85513f0c38f07cfa8" prot="public" virt="non-virtual"><scope>openage::audio::opus_file_t</scope><name>file</name></member>
+      <member refid="d0/d9f/structopenage_1_1audio_1_1opus__file__t_1a581840588795e9b90c6546ff24b8e189" prot="public" virt="non-virtual"><scope>openage::audio::opus_file_t</scope><name>handle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

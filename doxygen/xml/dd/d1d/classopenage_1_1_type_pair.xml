@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dd/d1d/classopenage_1_1_type_pair" kind="class" language="C++" prot="public">
+    <compoundname>openage::TypePair</compoundname>
+    <includes refid="d5/d13/type__pair_8h" local="no">type_pair.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="dd/d1d/classopenage_1_1_type_pair_1a9a9b57233d5950caa9a40a8738d98d73" prot="private" static="no" mutable="no">
+        <type><ref refid="dd/d39/classopenage_1_1_unit_type" kindref="compound">UnitType</ref></type>
+        <definition>UnitType openage::TypePair::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/type_pair.h" line="33" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/type_pair.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d1d/classopenage_1_1_type_pair_1a7cc1adeb5868782e2237f1220b2a0116" prot="private" static="no" mutable="no">
+        <type><ref refid="dd/d39/classopenage_1_1_unit_type" kindref="compound">UnitType</ref></type>
+        <definition>UnitType openage::TypePair::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/type_pair.h" line="33" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/type_pair.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/d1d/classopenage_1_1_type_pair_1aa892274df5dd2a35a659ee04cba10ab4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::TypePair::TypePair</definition>
+        <argsstring>()</argsstring>
+        <name>TypePair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/type_pair.h" line="30" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/type_pair.cpp" bodystart="14" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>many effects in aoc use a pair structure such as attack bonuses, armour and selection commands </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5471">
+        <label>openage::TypePair</label>
+        <link refid="dd/d1d/classopenage_1_1_type_pair"/>
+        <childnode refid="5472" relation="usage">
+          <edgelabel>-a</edgelabel>
+          <edgelabel>-b</edgelabel>
+        </childnode>
+      </node>
+      <node id="5482">
+        <label>openage::TeamScore</label>
+        <link refid="d4/db7/classopenage_1_1_team_score"/>
+        <childnode refid="5480" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5481" relation="usage">
+          <edgelabel>-team</edgelabel>
+        </childnode>
+      </node>
+      <node id="5479">
+        <label>openage::PlayerScore</label>
+        <link refid="d8/de3/classopenage_1_1_player_score"/>
+        <childnode refid="5480" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5478" relation="usage">
+          <edgelabel>-player</edgelabel>
+        </childnode>
+      </node>
+      <node id="5480">
+        <label>openage::Score</label>
+        <link refid="d8/dd7/classopenage_1_1_score"/>
+      </node>
+      <node id="5472">
+        <label>openage::UnitType</label>
+        <link refid="dd/d39/classopenage_1_1_unit_type"/>
+        <childnode refid="5473" relation="usage">
+          <edgelabel>+foundation_size</edgelabel>
+        </childnode>
+        <childnode refid="5475" relation="usage">
+          <edgelabel>+default_attributes</edgelabel>
+        </childnode>
+        <childnode refid="5476" relation="usage">
+          <edgelabel>+cost</edgelabel>
+        </childnode>
+        <childnode refid="5478" relation="usage">
+          <edgelabel>+owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="5481">
+        <label>openage::Team</label>
+        <link refid="de/dfb/classopenage_1_1_team"/>
+        <childnode refid="5482" relation="usage">
+          <edgelabel>+score</edgelabel>
+        </childnode>
+      </node>
+      <node id="5484">
+        <label>openage::Civilisation</label>
+        <link refid="de/d7a/classopenage_1_1_civilisation"/>
+      </node>
+      <node id="5475">
+        <label>openage::Attributes</label>
+        <link refid="de/d8a/classopenage_1_1_attributes"/>
+      </node>
+      <node id="5478">
+        <label>openage::Player</label>
+        <link refid="d8/d47/classopenage_1_1_player"/>
+        <childnode refid="5479" relation="usage">
+          <edgelabel>+score</edgelabel>
+        </childnode>
+        <childnode refid="5481" relation="usage">
+          <edgelabel>+team</edgelabel>
+        </childnode>
+        <childnode refid="5477" relation="usage">
+          <edgelabel>-resources_capacity</edgelabel>
+          <edgelabel>-resources</edgelabel>
+        </childnode>
+        <childnode refid="5483" relation="usage">
+          <edgelabel>+population</edgelabel>
+        </childnode>
+        <childnode refid="5484" relation="usage">
+          <edgelabel>+civ</edgelabel>
+        </childnode>
+      </node>
+      <node id="5473">
+        <label>openage::coord::tile_delta</label>
+        <link refid="db/db5/structopenage_1_1coord_1_1tile__delta"/>
+        <childnode refid="5474" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5477">
+        <label>openage::ResourceBundle</label>
+        <link refid="d2/de9/classopenage_1_1_resource_bundle"/>
+      </node>
+      <node id="5483">
+        <label>openage::PopulationTracker</label>
+        <link refid="dd/d70/classopenage_1_1_population_tracker"/>
+      </node>
+      <node id="5476">
+        <label>openage::ResourceCost</label>
+        <link refid="d8/d5b/classopenage_1_1_resource_cost"/>
+        <childnode refid="5477" relation="usage">
+          <edgelabel>-resources</edgelabel>
+        </childnode>
+      </node>
+      <node id="5474">
+        <label>CoordNeSeRelative&lt; tile_t, tile, tile_delta &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/type_pair.h" line="28" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/type_pair.h" bodystart="28" bodyend="35"/>
+    <listofallmembers>
+      <member refid="dd/d1d/classopenage_1_1_type_pair_1a9a9b57233d5950caa9a40a8738d98d73" prot="private" virt="non-virtual"><scope>openage::TypePair</scope><name>a</name></member>
+      <member refid="dd/d1d/classopenage_1_1_type_pair_1a7cc1adeb5868782e2237f1220b2a0116" prot="private" virt="non-virtual"><scope>openage::TypePair</scope><name>b</name></member>
+      <member refid="dd/d1d/classopenage_1_1_type_pair_1aa892274df5dd2a35a659ee04cba10ab4" prot="public" virt="non-virtual"><scope>openage::TypePair</scope><name>TypePair</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

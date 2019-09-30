@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d7/dc9/classqtsdl_1_1_gui_event_queue" kind="class" language="C++" prot="public">
+    <compoundname>qtsdl::GuiEventQueue</compoundname>
+    <includes refid="d4/d00/gui__event__queue_8h" local="no">gui_event_queue.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="d7/dc9/classqtsdl_1_1_gui_event_queue_1ae42bcdfa445720590a44468e20d505d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class GuiEventQueueImpl</definition>
+        <argsstring></argsstring>
+        <name>GuiEventQueueImpl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_event_queue.h" line="22" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_event_queue.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/dc9/classqtsdl_1_1_gui_event_queue_1adcd28a57420b8fbd566b719f5d3f68f2" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="dc/dc7/classqtsdl_1_1_gui_event_queue_impl" kindref="compound">GuiEventQueueImpl</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;GuiEventQueueImpl&gt; qtsdl::GuiEventQueue::impl</definition>
+        <argsstring></argsstring>
+        <name>impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_event_queue.h" line="23" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_event_queue.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="dc/dc7/classqtsdl_1_1_gui_event_queue_impl_1aa210a90acba7405dbf013ca75b60778e" compoundref="da/d42/gui__event__queue__impl_8cpp" startline="24" endline="26">qtsdl::GuiEventQueueImpl::impl</referencedby>
+        <referencedby refid="d7/dc9/classqtsdl_1_1_gui_event_queue_1a9dfaf95d4590839c4ed7a40ab61ed69e" compoundref="d3/d6a/gui__event__queue_8cpp" startline="17" endline="19">process_callbacks</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/dc9/classqtsdl_1_1_gui_event_queue_1a64f25a5d14abca7bd1898b32ed98f99e" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>qtsdl::GuiEventQueue::GuiEventQueue</definition>
+        <argsstring>()</argsstring>
+        <name>GuiEventQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_event_queue.h" line="16" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_event_queue.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc9/classqtsdl_1_1_gui_event_queue_1a04b5b8332243b9820f6f3bd12553786b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>qtsdl::GuiEventQueue::~GuiEventQueue</definition>
+        <argsstring>()</argsstring>
+        <name>~GuiEventQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_event_queue.h" line="17" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_event_queue.cpp" bodystart="14" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/dc9/classqtsdl_1_1_gui_event_queue_1a9dfaf95d4590839c4ed7a40ab61ed69e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void qtsdl::GuiEventQueue::process_callbacks</definition>
+        <argsstring>()</argsstring>
+        <name>process_callbacks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_event_queue.h" line="19" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_event_queue.cpp" bodystart="17" bodyend="19"/>
+        <references refid="d7/dc9/classqtsdl_1_1_gui_event_queue_1adcd28a57420b8fbd566b719f5d3f68f2" compoundref="d4/d00/gui__event__queue_8h" startline="23">impl</references>
+        <referencedby refid="df/dfe/classopenage_1_1gui_1_1_g_u_i_1ac8c4bc112830f466957923bde0e65a6c" compoundref="d6/d86/gui_2gui_8cpp" startline="161" endline="197">openage::gui::GUI::on_drawhud</referencedby>
+        <referencedby refid="df/dfe/classopenage_1_1gui_1_1_g_u_i_1afa4d056d76395d3d4041a4ec0e1b3cb8" compoundref="d6/d86/gui_2gui_8cpp" startline="110" endline="113">openage::gui::GUI::process_events</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provides synchronization with some game thread. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6340">
+        <label>qtsdl::GuiEventQueue</label>
+        <link refid="d7/dc9/classqtsdl_1_1_gui_event_queue"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_event_queue.h" line="14" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_event_queue.h" bodystart="14" bodyend="24"/>
+    <listofallmembers>
+      <member refid="d7/dc9/classqtsdl_1_1_gui_event_queue_1a64f25a5d14abca7bd1898b32ed98f99e" prot="public" virt="non-virtual"><scope>qtsdl::GuiEventQueue</scope><name>GuiEventQueue</name></member>
+      <member refid="d7/dc9/classqtsdl_1_1_gui_event_queue_1ae42bcdfa445720590a44468e20d505d6" prot="private" virt="non-virtual"><scope>qtsdl::GuiEventQueue</scope><name>GuiEventQueueImpl</name></member>
+      <member refid="d7/dc9/classqtsdl_1_1_gui_event_queue_1adcd28a57420b8fbd566b719f5d3f68f2" prot="private" virt="non-virtual"><scope>qtsdl::GuiEventQueue</scope><name>impl</name></member>
+      <member refid="d7/dc9/classqtsdl_1_1_gui_event_queue_1a9dfaf95d4590839c4ed7a40ab61ed69e" prot="public" virt="non-virtual"><scope>qtsdl::GuiEventQueue</scope><name>process_callbacks</name></member>
+      <member refid="d7/dc9/classqtsdl_1_1_gui_event_queue_1a04b5b8332243b9820f6f3bd12553786b" prot="public" virt="non-virtual"><scope>qtsdl::GuiEventQueue</scope><name>~GuiEventQueue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

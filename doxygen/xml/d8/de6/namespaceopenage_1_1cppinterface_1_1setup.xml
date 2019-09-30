@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d8/de6/namespaceopenage_1_1cppinterface_1_1setup" kind="namespace" language="Python">
+    <compoundname>openage::cppinterface::setup</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d8/de6/namespaceopenage_1_1cppinterface_1_1setup_1ae1c256c521da867c4f2ee7e9a7460ad3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.cppinterface.setup.setup</definition>
+        <argsstring>(args)</argsstring>
+        <name>setup</name>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+<para>After a call to <ref refid="d8/de6/namespaceopenage_1_1cppinterface_1_1setup_1ae1c256c521da867c4f2ee7e9a7460ad3" kindref="member">setup()</ref>, the C++ interface is in a usable state. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="d8/de6/namespaceopenage_1_1cppinterface_1_1setup_1ae1c256c521da867c4f2ee7e9a7460ad3" kindref="member">setup()</ref> automatically checks whether there are any remaining un-initialized PyFunc objects, and raises an Exception if so.</para><para>Must be invoked before any functions from libopenage are invoked. Runs only once; any subsequent invocations are a no-op, so don&apos;t hesitate to call this method whenever likely.</para><para>Do <emphasis>not</emphasis> invoke from a .pyx extension module that itself provides a setup method (circular imports)! </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/cppinterface/setup.py" line="28" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/cppinterface/setup.py" bodystart="28" bodyend="57"/>
+        <references refid="d9/dde/namespaceopenage_1_1pyinterface_1a7c3f96bce0d4711ba04a941b5c460b17" compoundref="d6/d18/setup_8cpp" startline="73" endline="124">openage::pyinterface::check</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a5cb08687f485da2549d7eebef26368a6" compoundref="d7/d66/log_2____init_____8py" startline="107" endline="110">openage::log.dbg</references>
+        <referencedby refid="d6/d02/namespaceopenage_1_1convert_1_1main_1ab4e998cdda52db3b3cae6efbcd2eda23" compoundref="d8/d6c/convert_2main_8py" startline="622" endline="651">openage.convert.main.main</referencedby>
+        <referencedby refid="d7/d35/namespaceopenage_1_1testing_1_1main_1a346b6762051aaadb5cc302e1adbf5f1e" compoundref="d9/da3/testing_2main_8py" startline="53" endline="110">openage.testing.main.process_args</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/cppinterface/setup.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

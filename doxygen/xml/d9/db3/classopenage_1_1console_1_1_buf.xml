@@ -1,0 +1,1176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d9/db3/classopenage_1_1console_1_1_buf" kind="class" language="C++" prot="public">
+    <compoundname>openage::console::Buf</compoundname>
+    <includes refid="d6/d6d/buf_8h" local="no">buf.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="d9/db3/classopenage_1_1console_1_1_buf_1a94f6263ebbf6ccfef936eb5c410c2ada" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class NewBuf</definition>
+        <argsstring></argsstring>
+        <name>NewBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="122" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1ae41adb957a289c65c86f5e79702399de" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d0c/classopenage_1_1util_1_1utf8__decoder" kindref="compound">util::utf8_decoder</ref></type>
+        <definition>util::utf8_decoder openage::console::Buf::streamdecoder</definition>
+        <argsstring></argsstring>
+        <name>streamdecoder</name>
+        <briefdescription>
+<para>utf-8 state-machine that reads input bytes and outputs unicode codepoints </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="188" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="188" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a7f70c41ed91a5283fd2dd337b7493eaa" compoundref="d3/d0f/buf_8cpp" startline="382" endline="391">write</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1af591ad8b27d0d5528dd83f39589a377f" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/d20/structopenage_1_1console_1_1buf__char" kindref="compound">buf_char</ref> *</type>
+        <definition>buf_char* openage::console::Buf::chrdata</definition>
+        <argsstring></argsstring>
+        <name>chrdata</name>
+        <briefdescription>
+<para>the complete (2-dimensional) terminal output buffer content </para>        </briefdescription>
+        <detaileddescription>
+<para>contains the screen buffer (where the cursor may move), and the scrollback buffer (which is invisible while not scrolled back)</para><para>thus, its size is always screen buffer size + scrollback buffer size (dims.x * dims.y + dims.x * scrollback_lines)</para><para>on resize, this buffer is completely re-created.</para><para>the first entry of data is not neccesarily the first character of the screen or scrollback buffer; see screen_chrdata. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="347" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="347" bodyend="-1"/>
+        <referencedby refid="dc/d3d/classopenage_1_1console_1_1_new_buf_1ab00cc1e9661d52eb6ae50c708a17a520" compoundref="d3/d0f/buf_8cpp" startline="133" endline="154">openage::console::NewBuf::apply_to_buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a51a780e9a4df80cdb56f8d94186d527e" compoundref="d3/d0f/buf_8cpp" startline="14" endline="44">Buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a1108eb4031232054e271e3c7321b24ef" compoundref="d3/d0f/buf_8cpp" startline="1111" endline="1124">chrdata_clear</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1ad54e6fb8e82e15a085cae30d3646d7b7" compoundref="d3/d0f/buf_8cpp" startline="1141" endline="1149">chrdataptr</referencedby>
+        <referencedby refid="dc/d3d/classopenage_1_1console_1_1_new_buf_1a5b5b1d0951916fee7948751eaf03228c" compoundref="d3/d0f/buf_8cpp" startline="156" endline="172">openage::console::NewBuf::move_ptrs_to_next_line</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a7060ca85ba5a820b0c8e55870a9919c8" compoundref="d3/d0f/buf_8cpp" startline="215" endline="307">resize</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a83ecd364b255a4dd8964686fb0d069be" compoundref="d3/d0f/buf_8cpp" startline="46" endline="50">~Buf</referencedby>
+        <referencedby refid="dc/d3d/classopenage_1_1console_1_1_new_buf_1a200a5ac80f54942482b48155d62bda28" compoundref="d3/d0f/buf_8cpp" startline="128" endline="131">openage::console::NewBuf::~NewBuf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1ad3b09ac6afcafdabc8ac7cad2bbb1991" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t openage::console::Buf::chrdata_size</definition>
+        <argsstring></argsstring>
+        <name>chrdata_size</name>
+        <briefdescription>
+<para>stores the (array) size of data, for performance and convenience reasons. </para>        </briefdescription>
+        <detaileddescription>
+<para>always has the value dims.x * (dims.y + scrollback_lines) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="356" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="356" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a752e54412ebbb08b3d8ac0edc90891ee" compoundref="d3/d0f/buf_8cpp" startline="341" endline="380">advance</referencedby>
+        <referencedby refid="dc/d3d/classopenage_1_1console_1_1_new_buf_1ab00cc1e9661d52eb6ae50c708a17a520" compoundref="d3/d0f/buf_8cpp" startline="133" endline="154">openage::console::NewBuf::apply_to_buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a51a780e9a4df80cdb56f8d94186d527e" compoundref="d3/d0f/buf_8cpp" startline="14" endline="44">Buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1ad54e6fb8e82e15a085cae30d3646d7b7" compoundref="d3/d0f/buf_8cpp" startline="1141" endline="1149">chrdataptr</referencedby>
+        <referencedby refid="dc/d3d/classopenage_1_1console_1_1_new_buf_1ae994348316fb0b88fa09dcec09c9ff6d" compoundref="d3/d0f/buf_8cpp" startline="102" endline="126">openage::console::NewBuf::NewBuf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1a55229c780654c2e7445cb313fde990a7" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/d20/structopenage_1_1console_1_1buf__char" kindref="compound">buf_char</ref> *</type>
+        <definition>buf_char* openage::console::Buf::chrdata_end</definition>
+        <argsstring></argsstring>
+        <name>chrdata_end</name>
+        <briefdescription>
+<para>stores the end of the region allocated for data, for performance and convenience reasons. </para>        </briefdescription>
+        <detaileddescription>
+<para>points to the first memory region outside the data buffer.</para><para>always has the value data + chrdata_size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="366" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="366" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a752e54412ebbb08b3d8ac0edc90891ee" compoundref="d3/d0f/buf_8cpp" startline="341" endline="380">advance</referencedby>
+        <referencedby refid="dc/d3d/classopenage_1_1console_1_1_new_buf_1ab00cc1e9661d52eb6ae50c708a17a520" compoundref="d3/d0f/buf_8cpp" startline="133" endline="154">openage::console::NewBuf::apply_to_buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a51a780e9a4df80cdb56f8d94186d527e" compoundref="d3/d0f/buf_8cpp" startline="14" endline="44">Buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a1108eb4031232054e271e3c7321b24ef" compoundref="d3/d0f/buf_8cpp" startline="1111" endline="1124">chrdata_clear</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1ad54e6fb8e82e15a085cae30d3646d7b7" compoundref="d3/d0f/buf_8cpp" startline="1141" endline="1149">chrdataptr</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a7060ca85ba5a820b0c8e55870a9919c8" compoundref="d3/d0f/buf_8cpp" startline="215" endline="307">resize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1aae04bf7f71d8d61153a63c8016756bd0" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/d20/structopenage_1_1console_1_1buf__char" kindref="compound">buf_char</ref> *</type>
+        <definition>buf_char* openage::console::Buf::screen_chrdata</definition>
+        <argsstring></argsstring>
+        <name>screen_chrdata</name>
+        <briefdescription>
+<para>points to the first character that belongs to the screen buffer, inside the data buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para>this pointer is changed when the terminal buffer advances one line.</para><para>note that screen_chrdata may NOT be directly indexed, as *screen_chrdata[k] might be &gt;= chrdata_end. in this case, the correct memory location will be *screen_chrdata[k - chrdata_size].</para><para>*screen_chrdata[0] always is the correct memory location of the screen buffer top left corner.</para><para>*screen_chrdata[dims.x * dims.y] is the memory location of the scrollback buffer top left corner, but it might be neccesary to subtract chrdata_size to get an actually valid memory location. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="384" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="384" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a752e54412ebbb08b3d8ac0edc90891ee" compoundref="d3/d0f/buf_8cpp" startline="341" endline="380">advance</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a51a780e9a4df80cdb56f8d94186d527e" compoundref="d3/d0f/buf_8cpp" startline="14" endline="44">Buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1ad54e6fb8e82e15a085cae30d3646d7b7" compoundref="d3/d0f/buf_8cpp" startline="1141" endline="1149">chrdataptr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1ad524a3276262d17b952233d58d735fb2" prot="public" static="no" mutable="no">
+        <type><ref refid="dd/de2/structopenage_1_1console_1_1buf__line" kindref="compound">buf_line</ref> *</type>
+        <definition>buf_line* openage::console::Buf::linedata</definition>
+        <argsstring></argsstring>
+        <name>linedata</name>
+        <briefdescription>
+<para>similar to how data holds information about all characters, linedata holds information about all lines. </para>        </briefdescription>
+        <detaileddescription>
+<para>currently, the only held information is whether the line has been started by wrapping an existing line (and thus is not a &apos;real&apos; new line) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="392" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="392" bodyend="-1"/>
+        <referencedby refid="dc/d3d/classopenage_1_1console_1_1_new_buf_1ab00cc1e9661d52eb6ae50c708a17a520" compoundref="d3/d0f/buf_8cpp" startline="133" endline="154">openage::console::NewBuf::apply_to_buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a51a780e9a4df80cdb56f8d94186d527e" compoundref="d3/d0f/buf_8cpp" startline="14" endline="44">Buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a76d65b492fdef7853b939598235881e2" compoundref="d3/d0f/buf_8cpp" startline="1126" endline="1139">linedata_clear</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a4c48f84f2a29ae7472c54bce03fcbd65" compoundref="d3/d0f/buf_8cpp" startline="1151" endline="1160">linedataptr</referencedby>
+        <referencedby refid="dc/d3d/classopenage_1_1console_1_1_new_buf_1a5b5b1d0951916fee7948751eaf03228c" compoundref="d3/d0f/buf_8cpp" startline="156" endline="172">openage::console::NewBuf::move_ptrs_to_next_line</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a7060ca85ba5a820b0c8e55870a9919c8" compoundref="d3/d0f/buf_8cpp" startline="215" endline="307">resize</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a83ecd364b255a4dd8964686fb0d069be" compoundref="d3/d0f/buf_8cpp" startline="46" endline="50">~Buf</referencedby>
+        <referencedby refid="dc/d3d/classopenage_1_1console_1_1_new_buf_1a200a5ac80f54942482b48155d62bda28" compoundref="d3/d0f/buf_8cpp" startline="128" endline="131">openage::console::NewBuf::~NewBuf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1a0980d008e8fc8a7fc02f7bc51b253dc5" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t openage::console::Buf::linedata_size</definition>
+        <argsstring></argsstring>
+        <name>linedata_size</name>
+        <briefdescription>
+<para>see chrdata_size </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="397" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="397" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a752e54412ebbb08b3d8ac0edc90891ee" compoundref="d3/d0f/buf_8cpp" startline="341" endline="380">advance</referencedby>
+        <referencedby refid="dc/d3d/classopenage_1_1console_1_1_new_buf_1ab00cc1e9661d52eb6ae50c708a17a520" compoundref="d3/d0f/buf_8cpp" startline="133" endline="154">openage::console::NewBuf::apply_to_buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a51a780e9a4df80cdb56f8d94186d527e" compoundref="d3/d0f/buf_8cpp" startline="14" endline="44">Buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a4c48f84f2a29ae7472c54bce03fcbd65" compoundref="d3/d0f/buf_8cpp" startline="1151" endline="1160">linedataptr</referencedby>
+        <referencedby refid="dc/d3d/classopenage_1_1console_1_1_new_buf_1ae994348316fb0b88fa09dcec09c9ff6d" compoundref="d3/d0f/buf_8cpp" startline="102" endline="126">openage::console::NewBuf::NewBuf</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1ab0c8a14f50eaeb58afc86d20bbb01158" prot="public" static="no" mutable="no">
+        <type><ref refid="dd/de2/structopenage_1_1console_1_1buf__line" kindref="compound">buf_line</ref> *</type>
+        <definition>buf_line* openage::console::Buf::linedata_end</definition>
+        <argsstring></argsstring>
+        <name>linedata_end</name>
+        <briefdescription>
+<para>see chrdata_end </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="402" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="402" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a752e54412ebbb08b3d8ac0edc90891ee" compoundref="d3/d0f/buf_8cpp" startline="341" endline="380">advance</referencedby>
+        <referencedby refid="dc/d3d/classopenage_1_1console_1_1_new_buf_1ab00cc1e9661d52eb6ae50c708a17a520" compoundref="d3/d0f/buf_8cpp" startline="133" endline="154">openage::console::NewBuf::apply_to_buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a51a780e9a4df80cdb56f8d94186d527e" compoundref="d3/d0f/buf_8cpp" startline="14" endline="44">Buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a76d65b492fdef7853b939598235881e2" compoundref="d3/d0f/buf_8cpp" startline="1126" endline="1139">linedata_clear</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a4c48f84f2a29ae7472c54bce03fcbd65" compoundref="d3/d0f/buf_8cpp" startline="1151" endline="1160">linedataptr</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a7060ca85ba5a820b0c8e55870a9919c8" compoundref="d3/d0f/buf_8cpp" startline="215" endline="307">resize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1a75cdec48d09432a80bc7e32182a4775a" prot="public" static="no" mutable="no">
+        <type><ref refid="dd/de2/structopenage_1_1console_1_1buf__line" kindref="compound">buf_line</ref> *</type>
+        <definition>buf_line* openage::console::Buf::screen_linedata</definition>
+        <argsstring></argsstring>
+        <name>screen_linedata</name>
+        <briefdescription>
+<para>as an analog to screen_chrdata, this points to the entry in linedata that holds metadata about the top line of the screen buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="408" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="408" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a752e54412ebbb08b3d8ac0edc90891ee" compoundref="d3/d0f/buf_8cpp" startline="341" endline="380">advance</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a51a780e9a4df80cdb56f8d94186d527e" compoundref="d3/d0f/buf_8cpp" startline="14" endline="44">Buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a4c48f84f2a29ae7472c54bce03fcbd65" compoundref="d3/d0f/buf_8cpp" startline="1151" endline="1160">linedataptr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1ac33c1a30d0a22cfee3d3eeabd33a606d" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/d93/namespaceopenage_1_1coord_1a0eec10a35243d1dcb3e4d1154a82127c" kindref="member">coord::term_t</ref></type>
+        <definition>coord::term_t openage::console::Buf::min_width</definition>
+        <argsstring></argsstring>
+        <name>min_width</name>
+        <briefdescription>
+<para>minimum screen buffer width </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="415" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="415" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a51a780e9a4df80cdb56f8d94186d527e" compoundref="d3/d0f/buf_8cpp" startline="14" endline="44">Buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a7060ca85ba5a820b0c8e55870a9919c8" compoundref="d3/d0f/buf_8cpp" startline="215" endline="307">resize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1a06e75c551d4009e9976cd43dab18fb30" prot="public" static="no" mutable="no">
+        <type><ref refid="df/dc5/structopenage_1_1coord_1_1term" kindref="compound">coord::term</ref></type>
+        <definition>coord::term openage::console::Buf::dims</definition>
+        <argsstring></argsstring>
+        <name>dims</name>
+        <briefdescription>
+<para>screen buffer dimensions (in characters) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="420" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="420" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a752e54412ebbb08b3d8ac0edc90891ee" compoundref="d3/d0f/buf_8cpp" startline="341" endline="380">advance</referencedby>
+        <referencedby refid="dc/d3d/classopenage_1_1console_1_1_new_buf_1ab00cc1e9661d52eb6ae50c708a17a520" compoundref="d3/d0f/buf_8cpp" startline="133" endline="154">openage::console::NewBuf::apply_to_buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a51a780e9a4df80cdb56f8d94186d527e" compoundref="d3/d0f/buf_8cpp" startline="14" endline="44">Buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1ad54e6fb8e82e15a085cae30d3646d7b7" compoundref="d3/d0f/buf_8cpp" startline="1141" endline="1149">chrdataptr</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1ae0e0cf2f6bb5e5c324ff9f4554ec2852" compoundref="d3/d0f/buf_8cpp" startline="1162" endline="1164">get_dims</referencedby>
+        <referencedby refid="de/d06/namespaceopenage_1_1console_1_1tests_1a4a108e620e3fead2c08ff14841552186" compoundref="de/d77/console_2tests_8cpp" startline="55" endline="181">openage::console::tests::interactive</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a698e2cce3ee2d13637bc55da38232a95" compoundref="d3/d0f/buf_8cpp" startline="393" endline="414">pop_last_char</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1ab2dd3bbdbc82ae2a4276a433b40aac91" compoundref="d3/d0f/buf_8cpp" startline="479" endline="597">print_codepoint</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a83a7e7db654360cff1c6796b169efc22" compoundref="d3/d0f/buf_8cpp" startline="661" endline="917">process_csi_escape_sequence</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a23267e4cb18a2921f14406e6307cbb95" compoundref="d3/d0f/buf_8cpp" startline="52" endline="67">reset</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a7060ca85ba5a820b0c8e55870a9919c8" compoundref="d3/d0f/buf_8cpp" startline="215" endline="307">resize</referencedby>
+        <referencedby refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ad603edf799bbe6017b89fd25a6ed4512" compoundref="da/d9f/draw_8cpp" startline="22" endline="89">openage::console::draw::to_opengl</referencedby>
+        <referencedby refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ab9e51a5e1f100773a19da09a4f9d1597" compoundref="da/d9f/draw_8cpp" startline="91" endline="169">openage::console::draw::to_terminal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1a14f2cdfd24154571850ed8ca005d3efc" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/d93/namespaceopenage_1_1coord_1a0eec10a35243d1dcb3e4d1154a82127c" kindref="member">coord::term_t</ref></type>
+        <definition>coord::term_t openage::console::Buf::scrollback_lines</definition>
+        <argsstring></argsstring>
+        <name>scrollback_lines</name>
+        <briefdescription>
+<para>scrollback buffer height; scrollback buffer width is identical to screen buffer width. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="426" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="426" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a752e54412ebbb08b3d8ac0edc90891ee" compoundref="d3/d0f/buf_8cpp" startline="341" endline="380">advance</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a51a780e9a4df80cdb56f8d94186d527e" compoundref="d3/d0f/buf_8cpp" startline="14" endline="44">Buf</referencedby>
+        <referencedby refid="dc/d3d/classopenage_1_1console_1_1_new_buf_1ae994348316fb0b88fa09dcec09c9ff6d" compoundref="d3/d0f/buf_8cpp" startline="102" endline="126">openage::console::NewBuf::NewBuf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a23267e4cb18a2921f14406e6307cbb95" compoundref="d3/d0f/buf_8cpp" startline="52" endline="67">reset</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a7060ca85ba5a820b0c8e55870a9919c8" compoundref="d3/d0f/buf_8cpp" startline="215" endline="307">resize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1a25719bddd1345d6b86e4373dfa474825" prot="public" static="no" mutable="no">
+        <type><ref refid="df/dc5/structopenage_1_1coord_1_1term" kindref="compound">coord::term</ref></type>
+        <definition>coord::term openage::console::Buf::cursorpos</definition>
+        <argsstring></argsstring>
+        <name>cursorpos</name>
+        <briefdescription>
+<para>cursor position </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="433" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="433" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a51a780e9a4df80cdb56f8d94186d527e" compoundref="d3/d0f/buf_8cpp" startline="14" endline="44">Buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a698e2cce3ee2d13637bc55da38232a95" compoundref="d3/d0f/buf_8cpp" startline="393" endline="414">pop_last_char</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1ab2dd3bbdbc82ae2a4276a433b40aac91" compoundref="d3/d0f/buf_8cpp" startline="479" endline="597">print_codepoint</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a83a7e7db654360cff1c6796b169efc22" compoundref="d3/d0f/buf_8cpp" startline="661" endline="917">process_csi_escape_sequence</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a23267e4cb18a2921f14406e6307cbb95" compoundref="d3/d0f/buf_8cpp" startline="52" endline="67">reset</referencedby>
+        <referencedby refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ad603edf799bbe6017b89fd25a6ed4512" compoundref="da/d9f/draw_8cpp" startline="22" endline="89">openage::console::draw::to_opengl</referencedby>
+        <referencedby refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ab9e51a5e1f100773a19da09a4f9d1597" compoundref="da/d9f/draw_8cpp" startline="91" endline="169">openage::console::draw::to_terminal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1a7d65c2c715635ae80a3362abc61abc22" prot="public" static="no" mutable="no">
+        <type><ref refid="df/dc5/structopenage_1_1coord_1_1term" kindref="compound">coord::term</ref></type>
+        <definition>coord::term openage::console::Buf::saved_cursorpos</definition>
+        <argsstring></argsstring>
+        <name>saved_cursorpos</name>
+        <briefdescription>
+<para>saved cursor position </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="438" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="438" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a51a780e9a4df80cdb56f8d94186d527e" compoundref="d3/d0f/buf_8cpp" startline="14" endline="44">Buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a83a7e7db654360cff1c6796b169efc22" compoundref="d3/d0f/buf_8cpp" startline="661" endline="917">process_csi_escape_sequence</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a23267e4cb18a2921f14406e6307cbb95" compoundref="d3/d0f/buf_8cpp" startline="52" endline="67">reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1a3b4aca71e4891bd71a0c57ca5fa58e86" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool openage::console::Buf::cursor_visible</definition>
+        <argsstring></argsstring>
+        <name>cursor_visible</name>
+        <briefdescription>
+<para>true if the cursor is visible </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="443" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="443" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a83a7e7db654360cff1c6796b169efc22" compoundref="d3/d0f/buf_8cpp" startline="661" endline="917">process_csi_escape_sequence</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a23267e4cb18a2921f14406e6307cbb95" compoundref="d3/d0f/buf_8cpp" startline="52" endline="67">reset</referencedby>
+        <referencedby refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ad603edf799bbe6017b89fd25a6ed4512" compoundref="da/d9f/draw_8cpp" startline="22" endline="89">openage::console::draw::to_opengl</referencedby>
+        <referencedby refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ab9e51a5e1f100773a19da09a4f9d1597" compoundref="da/d9f/draw_8cpp" startline="91" endline="169">openage::console::draw::to_terminal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1a53574615a1e2df75adad05bd27bf04d4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool openage::console::Buf::cursor_special_lastcol</definition>
+        <argsstring></argsstring>
+        <name>cursor_special_lastcol</name>
+        <briefdescription>
+<para>true if cursor is in the last column while whole line is filled this is very special. </para>        </briefdescription>
+        <detaileddescription>
+<para>this allows CR after fully-filled lines to return to the same line, instead of being in the next line. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="451" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="451" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a698e2cce3ee2d13637bc55da38232a95" compoundref="d3/d0f/buf_8cpp" startline="393" endline="414">pop_last_char</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1ab2dd3bbdbc82ae2a4276a433b40aac91" compoundref="d3/d0f/buf_8cpp" startline="479" endline="597">print_codepoint</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a23267e4cb18a2921f14406e6307cbb95" compoundref="d3/d0f/buf_8cpp" startline="52" endline="67">reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1aabe7c503936227e510bb7be84bde2fa3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool openage::console::Buf::escaped</definition>
+        <argsstring></argsstring>
+        <name>escaped</name>
+        <briefdescription>
+<para>true if we are currently reading an escape sequence </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="458" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="458" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1ac59a20dcbdcb3aaffaedc8d9d21d0ec9" compoundref="d3/d0f/buf_8cpp" startline="609" endline="614">escape_sequence_aborted</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a3e924482fd0e3524e44b20acc316fb19" compoundref="d3/d0f/buf_8cpp" startline="616" endline="619">escape_sequence_processed</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1ab2dd3bbdbc82ae2a4276a433b40aac91" compoundref="d3/d0f/buf_8cpp" startline="479" endline="597">print_codepoint</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1adcdc21533ab920bd72f92f27333716bf" compoundref="d3/d0f/buf_8cpp" startline="416" endline="477">process_codepoint</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a23267e4cb18a2921f14406e6307cbb95" compoundref="d3/d0f/buf_8cpp" startline="52" endline="67">reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1a381b42f50364ebd1842d1e330bae5909" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; openage::console::Buf::escape_sequence</definition>
+        <argsstring></argsstring>
+        <name>escape_sequence</name>
+        <briefdescription>
+<para>current escape sequence </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="463" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="463" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1ac59a20dcbdcb3aaffaedc8d9d21d0ec9" compoundref="d3/d0f/buf_8cpp" startline="609" endline="614">escape_sequence_aborted</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a3e924482fd0e3524e44b20acc316fb19" compoundref="d3/d0f/buf_8cpp" startline="616" endline="619">escape_sequence_processed</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1adcdc21533ab920bd72f92f27333716bf" compoundref="d3/d0f/buf_8cpp" startline="416" endline="477">process_codepoint</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a83a7e7db654360cff1c6796b169efc22" compoundref="d3/d0f/buf_8cpp" startline="661" endline="917">process_csi_escape_sequence</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1aa6ae8933e3c2bbaafa8d81cf1c405406" compoundref="d3/d0f/buf_8cpp" startline="633" endline="659">process_text_escape_sequence</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1afd9db1c1324909e2a0a98cafa53d9cd4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool openage::console::Buf::bell</definition>
+        <argsstring></argsstring>
+        <name>bell</name>
+        <briefdescription>
+<para>true if an bell (&apos;<emphasis></emphasis>&apos;) has been received, but not cleared </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="468" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="468" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1ab2dd3bbdbc82ae2a4276a433b40aac91" compoundref="d3/d0f/buf_8cpp" startline="479" endline="597">print_codepoint</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a23267e4cb18a2921f14406e6307cbb95" compoundref="d3/d0f/buf_8cpp" startline="52" endline="67">reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1a51310590a608b1d2b601d3303893500d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; openage::console::Buf::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <briefdescription>
+<para>window title </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="473" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="473" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1aa6ae8933e3c2bbaafa8d81cf1c405406" compoundref="d3/d0f/buf_8cpp" startline="633" endline="659">process_text_escape_sequence</referencedby>
+        <referencedby refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ab9e51a5e1f100773a19da09a4f9d1597" compoundref="da/d9f/draw_8cpp" startline="91" endline="169">openage::console::draw::to_terminal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1af6fb637bfa9764b03b7e5c732b1628a6" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/d20/structopenage_1_1console_1_1buf__char" kindref="compound">buf_char</ref></type>
+        <definition>buf_char openage::console::Buf::current_char_fmt</definition>
+        <argsstring></argsstring>
+        <name>current_char_fmt</name>
+        <briefdescription>
+<para>surrently selected formatting (colors, flags). </para>        </briefdescription>
+        <detaileddescription>
+<para>all printed chars, as well as all buffer clearing, will use this until it is changed by an SGR escape sequence.</para><para>the codepoint is the codepoint used for filling empty chars (e.g. 0x20 (&apos;space&apos;)) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="483" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="483" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a1108eb4031232054e271e3c7321b24ef" compoundref="d3/d0f/buf_8cpp" startline="1111" endline="1124">chrdata_clear</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a698e2cce3ee2d13637bc55da38232a95" compoundref="d3/d0f/buf_8cpp" startline="393" endline="414">pop_last_char</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1ab2dd3bbdbc82ae2a4276a433b40aac91" compoundref="d3/d0f/buf_8cpp" startline="479" endline="597">print_codepoint</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a9320618afe1ebdf770518ab69cc72271" compoundref="d3/d0f/buf_8cpp" startline="919" endline="1076">process_sgr_code</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a23267e4cb18a2921f14406e6307cbb95" compoundref="d3/d0f/buf_8cpp" startline="52" endline="67">reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1a3fa3840a58379ede7a40f6382f95cc06" prot="public" static="no" mutable="no">
+        <type>const <ref refid="d7/d20/structopenage_1_1console_1_1buf__char" kindref="compound">buf_char</ref></type>
+        <definition>const buf_char openage::console::Buf::default_char_fmt</definition>
+        <argsstring></argsstring>
+        <name>default_char_fmt</name>
+        <briefdescription>
+<para>the default buf char, which will be used for filling new lines, or determining whether a line is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para>should have space (0x20) as its char, and the desired default values for fgcol and bgcol. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="491" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="491" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a51a780e9a4df80cdb56f8d94186d527e" compoundref="d3/d0f/buf_8cpp" startline="14" endline="44">Buf</referencedby>
+        <referencedby refid="dc/d3d/classopenage_1_1console_1_1_new_buf_1aeed148908cd1279e29c1400ff53f33ce" compoundref="d3/d0f/buf_8cpp" startline="177" endline="186">openage::console::NewBuf::new_line</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a9320618afe1ebdf770518ab69cc72271" compoundref="d3/d0f/buf_8cpp" startline="919" endline="1076">process_sgr_code</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a23267e4cb18a2921f14406e6307cbb95" compoundref="d3/d0f/buf_8cpp" startline="52" endline="67">reset</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a7060ca85ba5a820b0c8e55870a9919c8" compoundref="d3/d0f/buf_8cpp" startline="215" endline="307">resize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1a324edefddfbe59f14ecd7841d2598c29" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/d93/namespaceopenage_1_1coord_1a0eec10a35243d1dcb3e4d1154a82127c" kindref="member">coord::term_t</ref></type>
+        <definition>coord::term_t openage::console::Buf::scrollback_possible</definition>
+        <argsstring></argsstring>
+        <name>scrollback_possible</name>
+        <briefdescription>
+<para>how far it&apos;s currently possible to scroll back. </para>        </briefdescription>
+        <detaileddescription>
+<para>this value steadily increases when the buffer advances.</para><para>if this is 0, all lines outside the screen buffer are empty.</para><para>must be &gt;= 0 and &lt;= scrollback_lines </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="501" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="501" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a752e54412ebbb08b3d8ac0edc90891ee" compoundref="d3/d0f/buf_8cpp" startline="341" endline="380">advance</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a23267e4cb18a2921f14406e6307cbb95" compoundref="d3/d0f/buf_8cpp" startline="52" endline="67">reset</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a06f58f1b06e5aae9664b1d07d8607048" compoundref="d3/d0f/buf_8cpp" startline="322" endline="339">scroll</referencedby>
+        <referencedby refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ab9e51a5e1f100773a19da09a4f9d1597" compoundref="da/d9f/draw_8cpp" startline="91" endline="169">openage::console::draw::to_terminal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/db3/classopenage_1_1console_1_1_buf_1aed68e2efd6dfa0dc6e4d2c6985965458" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/d93/namespaceopenage_1_1coord_1a0eec10a35243d1dcb3e4d1154a82127c" kindref="member">coord::term_t</ref></type>
+        <definition>coord::term_t openage::console::Buf::scrollback_pos</definition>
+        <argsstring></argsstring>
+        <name>scrollback_pos</name>
+        <briefdescription>
+<para>how many lines the buffer is currently scrolled back. </para>        </briefdescription>
+        <detaileddescription>
+<para>if 0, the screen buffer is wholly rendered. if the terminal is being advanced, this stays 0. this makes the terminal follow newly printed text. if &gt; 0, the bottom lines of the screen buffer are not rendered, and the bottom lines of the scrollback buffer are rendered instead. if screen buffer advances, this is increased accordingly (unless it would become &gt;= scrollback_lines). this causes the currently scrolled-to position to remain scrolled-to even when new text is printed.</para><para>must be &gt;= 0 and &lt;= scrollback_possible. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="518" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="518" bodyend="-1"/>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a752e54412ebbb08b3d8ac0edc90891ee" compoundref="d3/d0f/buf_8cpp" startline="341" endline="380">advance</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a23267e4cb18a2921f14406e6307cbb95" compoundref="d3/d0f/buf_8cpp" startline="52" endline="67">reset</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a06f58f1b06e5aae9664b1d07d8607048" compoundref="d3/d0f/buf_8cpp" startline="322" endline="339">scroll</referencedby>
+        <referencedby refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ad603edf799bbe6017b89fd25a6ed4512" compoundref="da/d9f/draw_8cpp" startline="22" endline="89">openage::console::draw::to_opengl</referencedby>
+        <referencedby refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ab9e51a5e1f100773a19da09a4f9d1597" compoundref="da/d9f/draw_8cpp" startline="91" endline="169">openage::console::draw::to_terminal</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a51a780e9a4df80cdb56f8d94186d527e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::console::Buf::Buf</definition>
+        <argsstring>(coord::term dims, coord::term_t scrollback_lines, coord::term_t min_width, buf_char default_char_fmt={0x20, 254, 0, 0})</argsstring>
+        <name>Buf</name>
+        <param>
+          <type><ref refid="df/dc5/structopenage_1_1coord_1_1term" kindref="compound">coord::term</ref></type>
+          <declname>dims</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/d93/namespaceopenage_1_1coord_1a0eec10a35243d1dcb3e4d1154a82127c" kindref="member">coord::term_t</ref></type>
+          <declname>scrollback_lines</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/d93/namespaceopenage_1_1coord_1a0eec10a35243d1dcb3e4d1154a82127c" kindref="member">coord::term_t</ref></type>
+          <declname>min_width</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/d20/structopenage_1_1console_1_1buf__char" kindref="compound">buf_char</ref></type>
+          <declname>default_char_fmt</declname>
+          <defval>{0x20, 254, 0, 0}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="125" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="14" bodyend="44"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1af591ad8b27d0d5528dd83f39589a377f" compoundref="d6/d6d/buf_8h" startline="347">chrdata</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a55229c780654c2e7445cb313fde990a7" compoundref="d6/d6d/buf_8h" startline="366">chrdata_end</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ad3b09ac6afcafdabc8ac7cad2bbb1991" compoundref="d6/d6d/buf_8h" startline="356">chrdata_size</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a25719bddd1345d6b86e4373dfa474825" compoundref="d6/d6d/buf_8h" startline="433">cursorpos</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a3fa3840a58379ede7a40f6382f95cc06" compoundref="d6/d6d/buf_8h" startline="491">default_char_fmt</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a06e75c551d4009e9976cd43dab18fb30" compoundref="d6/d6d/buf_8h" startline="420">dims</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ad524a3276262d17b952233d58d735fb2" compoundref="d6/d6d/buf_8h" startline="392">linedata</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ab0c8a14f50eaeb58afc86d20bbb01158" compoundref="d6/d6d/buf_8h" startline="402">linedata_end</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a0980d008e8fc8a7fc02f7bc51b253dc5" compoundref="d6/d6d/buf_8h" startline="397">linedata_size</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ac33c1a30d0a22cfee3d3eeabd33a606d" compoundref="d6/d6d/buf_8h" startline="415">min_width</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a23267e4cb18a2921f14406e6307cbb95" compoundref="d3/d0f/buf_8cpp" startline="52" endline="67">reset</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a7d65c2c715635ae80a3362abc61abc22" compoundref="d6/d6d/buf_8h" startline="438">saved_cursorpos</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1aae04bf7f71d8d61153a63c8016756bd0" compoundref="d6/d6d/buf_8h" startline="384">screen_chrdata</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a75cdec48d09432a80bc7e32182a4775a" compoundref="d6/d6d/buf_8h" startline="408">screen_linedata</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a14f2cdfd24154571850ed8ca005d3efc" compoundref="d6/d6d/buf_8h" startline="426">scrollback_lines</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a83ecd364b255a4dd8964686fb0d069be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::console::Buf::~Buf</definition>
+        <argsstring>()</argsstring>
+        <name>~Buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="127" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="46" bodyend="50"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1af591ad8b27d0d5528dd83f39589a377f" compoundref="d6/d6d/buf_8h" startline="347">chrdata</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ad524a3276262d17b952233d58d735fb2" compoundref="d6/d6d/buf_8h" startline="392">linedata</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a1b57a435f75898936d21928f3641f345" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/db3/classopenage_1_1console_1_1_buf" kindref="compound">Buf</ref> &amp;</type>
+        <definition>Buf&amp; openage::console::Buf::operator=</definition>
+        <argsstring>(const Buf &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="d9/db3/classopenage_1_1console_1_1_buf" kindref="compound">Buf</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a4fc8817e4fc059c81f836482b8f163b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::console::Buf::Buf</definition>
+        <argsstring>(const Buf &amp;)=delete</argsstring>
+        <name>Buf</name>
+        <param>
+          <type>const <ref refid="d9/db3/classopenage_1_1console_1_1_buf" kindref="compound">Buf</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a23267e4cb18a2921f14406e6307cbb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>resets the buffer to its constructor defaults </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="139" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="52" bodyend="67"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1afd9db1c1324909e2a0a98cafa53d9cd4" compoundref="d6/d6d/buf_8h" startline="468">bell</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1af6b49e0178333e01a08fd61ca2006219" compoundref="d3/d0f/buf_8cpp" startline="1078" endline="1109">clear</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1af6fb637bfa9764b03b7e5c732b1628a6" compoundref="d6/d6d/buf_8h" startline="483">current_char_fmt</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a53574615a1e2df75adad05bd27bf04d4" compoundref="d6/d6d/buf_8h" startline="451">cursor_special_lastcol</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a3b4aca71e4891bd71a0c57ca5fa58e86" compoundref="d6/d6d/buf_8h" startline="443">cursor_visible</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a25719bddd1345d6b86e4373dfa474825" compoundref="d6/d6d/buf_8h" startline="433">cursorpos</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a3fa3840a58379ede7a40f6382f95cc06" compoundref="d6/d6d/buf_8h" startline="491">default_char_fmt</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a06e75c551d4009e9976cd43dab18fb30" compoundref="d6/d6d/buf_8h" startline="420">dims</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1aabe7c503936227e510bb7be84bde2fa3" compoundref="d6/d6d/buf_8h" startline="458">escaped</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a7d65c2c715635ae80a3362abc61abc22" compoundref="d6/d6d/buf_8h" startline="438">saved_cursorpos</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a14f2cdfd24154571850ed8ca005d3efc" compoundref="d6/d6d/buf_8h" startline="426">scrollback_lines</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1aed68e2efd6dfa0dc6e4d2c6985965458" compoundref="d6/d6d/buf_8h" startline="518">scrollback_pos</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a324edefddfbe59f14ecd7841d2598c29" compoundref="d6/d6d/buf_8h" startline="501">scrollback_possible</references>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a51a780e9a4df80cdb56f8d94186d527e" compoundref="d3/d0f/buf_8cpp" startline="14" endline="44">Buf</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a809f4a27cd3bf92c2458a5b3176fae43" compoundref="d3/d0f/buf_8cpp" startline="621" endline="631">process_escaped_cp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a3db6d160e44c8db825a37c0cfbc143ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::write</definition>
+        <argsstring>(const char *c, ssize_t len=-1)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const char *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>ssize_t</type>
+          <declname>len</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>write a byte string to the buffer </para>        </briefdescription>
+        <detaileddescription>
+<para>the string is assumed to be UTF-8 encoded.</para><para>if len &gt;= 0, it describes the length of the string. otherwise, the string is assumed to be null-terminated. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="149" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="309" bodyend="320"/>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1ab5e30408417ac212bd3f35e50edd3a82" compoundref="d9/dda/console_8cpp" startline="60" endline="108">openage::console::Console::register_to_engine</referencedby>
+        <referencedby refid="de/d06/namespaceopenage_1_1console_1_1tests_1a15c3b269411a779e1ae9af60a3b6fedf" compoundref="de/d77/console_2tests_8cpp" startline="39" endline="52">openage::console::tests::render</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a4d97e8f7fc2d7ba24490bf5f0b494332" compoundref="d9/dda/console_8cpp" startline="121" endline="124">openage::console::Console::write</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a7f70c41ed91a5283fd2dd337b7493eaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::write</definition>
+        <argsstring>(char c)</argsstring>
+        <name>write</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>write a single byte to the buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para>assumed to be UTF-8 encoded. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="156" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="382" bodyend="391"/>
+        <references refid="d3/d0c/classopenage_1_1util_1_1utf8__decoder_1ad74a496758770d9f1be27e9b3fec4dd0" compoundref="dd/d9c/unicode_8cpp" startline="19" endline="70">openage::util::utf8_decoder::feed</references>
+        <references refid="d3/d0c/classopenage_1_1util_1_1utf8__decoder_1ac5e38c7efcc1e8d4b7f7668da156ba4b" compoundref="dd/d90/unicode_8h" startline="28">openage::util::utf8_decoder::out</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1adcdc21533ab920bd72f92f27333716bf" compoundref="d3/d0f/buf_8cpp" startline="416" endline="477">process_codepoint</references>
+        <references refid="d3/d0c/classopenage_1_1util_1_1utf8__decoder_1a55d64109af786e729e84a4da7d275c19" compoundref="dd/d90/unicode_8h" startline="33">openage::util::utf8_decoder::remaining</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ae41adb957a289c65c86f5e79702399de" compoundref="d6/d6d/buf_8h" startline="188">streamdecoder</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a698e2cce3ee2d13637bc55da38232a95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::pop_last_char</definition>
+        <argsstring>()</argsstring>
+        <name>pop_last_char</name>
+        <briefdescription>
+<para>Pop the last char of the current line. </para>        </briefdescription>
+        <detaileddescription>
+<para>Will correctly handle UTF-8 chars and wrapped lines. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="163" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="393" bodyend="414"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ad54e6fb8e82e15a085cae30d3646d7b7" compoundref="d3/d0f/buf_8cpp" startline="1141" endline="1149">chrdataptr</references>
+        <references refid="d7/d20/structopenage_1_1console_1_1buf__char_1a4b4588eb3c49f45c281f67a95ec58973" compoundref="d6/d6d/buf_8h" startline="67">openage::console::buf_char::cp</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1af6fb637bfa9764b03b7e5c732b1628a6" compoundref="d6/d6d/buf_8h" startline="483">current_char_fmt</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a53574615a1e2df75adad05bd27bf04d4" compoundref="d6/d6d/buf_8h" startline="451">cursor_special_lastcol</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a25719bddd1345d6b86e4373dfa474825" compoundref="d6/d6d/buf_8h" startline="433">cursorpos</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a06e75c551d4009e9976cd43dab18fb30" compoundref="d6/d6d/buf_8h" startline="420">dims</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1aa09a20fff5c3fe6f00987bb27d28c3ff" compoundref="d6/d6d/buf_8h" startline="99">openage::console::LINE_EMPTY</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1a2f8b6f12c1655f3259fbdc6873ccb0a2" compoundref="d6/d6d/buf_8h" startline="103">openage::console::LINE_REGULAR</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1ae5dcef92c8c76cebffd40c925cb209cd" compoundref="d6/d6d/buf_8h" startline="110">openage::console::LINE_WRAPPED</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a4c48f84f2a29ae7472c54bce03fcbd65" compoundref="d3/d0f/buf_8cpp" startline="1151" endline="1160">linedataptr</references>
+        <references refid="dd/de2/structopenage_1_1console_1_1buf__line_1af481a8ea9bc97ab5fe57e0f0d2102a6c" compoundref="d6/d6d/buf_8h" startline="116">openage::console::buf_line::type</references>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1ab5e30408417ac212bd3f35e50edd3a82" compoundref="d9/dda/console_8cpp" startline="60" endline="108">openage::console::Console::register_to_engine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a7060ca85ba5a820b0c8e55870a9919c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::resize</definition>
+        <argsstring>(coord::term new_dims)</argsstring>
+        <name>resize</name>
+        <param>
+          <type><ref refid="df/dc5/structopenage_1_1coord_1_1term" kindref="compound">coord::term</ref></type>
+          <declname>new_dims</declname>
+        </param>
+        <briefdescription>
+<para>resizes the screen buffer </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="168" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="215" bodyend="307"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1af591ad8b27d0d5528dd83f39589a377f" compoundref="d6/d6d/buf_8h" startline="347">chrdata</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a55229c780654c2e7445cb313fde990a7" compoundref="d6/d6d/buf_8h" startline="366">chrdata_end</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ad54e6fb8e82e15a085cae30d3646d7b7" compoundref="d3/d0f/buf_8cpp" startline="1141" endline="1149">chrdataptr</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a3fa3840a58379ede7a40f6382f95cc06" compoundref="d6/d6d/buf_8h" startline="491">default_char_fmt</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a06e75c551d4009e9976cd43dab18fb30" compoundref="d6/d6d/buf_8h" startline="420">dims</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ad524a3276262d17b952233d58d735fb2" compoundref="d6/d6d/buf_8h" startline="392">linedata</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ab0c8a14f50eaeb58afc86d20bbb01158" compoundref="d6/d6d/buf_8h" startline="402">linedata_end</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a4c48f84f2a29ae7472c54bce03fcbd65" compoundref="d3/d0f/buf_8cpp" startline="1151" endline="1160">linedataptr</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ac33c1a30d0a22cfee3d3eeabd33a606d" compoundref="d6/d6d/buf_8h" startline="415">min_width</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a14f2cdfd24154571850ed8ca005d3efc" compoundref="d6/d6d/buf_8h" startline="426">scrollback_lines</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a06f58f1b06e5aae9664b1d07d8607048" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::scroll</definition>
+        <argsstring>(coord::term_t lines)</argsstring>
+        <name>scroll</name>
+        <param>
+          <type><ref refid="d1/d93/namespaceopenage_1_1coord_1a0eec10a35243d1dcb3e4d1154a82127c" kindref="member">coord::term_t</ref></type>
+          <declname>lines</declname>
+        </param>
+        <briefdescription>
+<para>scrolls up or down by the given number of lines </para>        </briefdescription>
+        <detaileddescription>
+<para>lines amount of lines to scroll up - may be negative if the upper or lower limit is reached, this is capped. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="177" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="322" bodyend="339"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1aed68e2efd6dfa0dc6e4d2c6985965458" compoundref="d6/d6d/buf_8h" startline="518">scrollback_pos</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a324edefddfbe59f14ecd7841d2598c29" compoundref="d6/d6d/buf_8h" startline="501">scrollback_possible</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1adcdc21533ab920bd72f92f27333716bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::process_codepoint</definition>
+        <argsstring>(int cp)</argsstring>
+        <name>process_codepoint</name>
+        <param>
+          <type>int</type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+<para>processes one unicode codepoint internally called by <ref refid="d9/db3/classopenage_1_1console_1_1_buf_1a7f70c41ed91a5283fd2dd337b7493eaa" kindref="member">write(char)</ref> after feeding the char into streamdecoder </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="195" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="416" bodyend="477"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a381b42f50364ebd1842d1e330bae5909" compoundref="d6/d6d/buf_8h" startline="463">escape_sequence</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ac59a20dcbdcb3aaffaedc8d9d21d0ec9" compoundref="d3/d0f/buf_8cpp" startline="609" endline="614">escape_sequence_aborted</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1aabe7c503936227e510bb7be84bde2fa3" compoundref="d6/d6d/buf_8h" startline="458">escaped</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ab2dd3bbdbc82ae2a4276a433b40aac91" compoundref="d3/d0f/buf_8cpp" startline="479" endline="597">print_codepoint</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a83a7e7db654360cff1c6796b169efc22" compoundref="d3/d0f/buf_8cpp" startline="661" endline="917">process_csi_escape_sequence</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a809f4a27cd3bf92c2458a5b3176fae43" compoundref="d3/d0f/buf_8cpp" startline="621" endline="631">process_escaped_cp</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1aa6ae8933e3c2bbaafa8d81cf1c405406" compoundref="d3/d0f/buf_8cpp" startline="633" endline="659">process_text_escape_sequence</references>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a7f70c41ed91a5283fd2dd337b7493eaa" compoundref="d3/d0f/buf_8cpp" startline="382" endline="391">write</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1ab2dd3bbdbc82ae2a4276a433b40aac91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::print_codepoint</definition>
+        <argsstring>(int cp)</argsstring>
+        <name>print_codepoint</name>
+        <param>
+          <type>int</type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+<para>prints one unicode codepoint interally called by <ref refid="d9/db3/classopenage_1_1console_1_1_buf_1adcdc21533ab920bd72f92f27333716bf" kindref="member">process_codepoint(int cp)</ref> after sorting out escape sequences, and by some escape sequences such as CSI @ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="201" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="479" bodyend="597"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a752e54412ebbb08b3d8ac0edc90891ee" compoundref="d3/d0f/buf_8cpp" startline="341" endline="380">advance</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1afd9db1c1324909e2a0a98cafa53d9cd4" compoundref="d6/d6d/buf_8h" startline="468">bell</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ad54e6fb8e82e15a085cae30d3646d7b7" compoundref="d3/d0f/buf_8cpp" startline="1141" endline="1149">chrdataptr</references>
+        <references refid="d7/d20/structopenage_1_1console_1_1buf__char_1a4b4588eb3c49f45c281f67a95ec58973" compoundref="d6/d6d/buf_8h" startline="67">openage::console::buf_char::cp</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1af6fb637bfa9764b03b7e5c732b1628a6" compoundref="d6/d6d/buf_8h" startline="483">current_char_fmt</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a53574615a1e2df75adad05bd27bf04d4" compoundref="d6/d6d/buf_8h" startline="451">cursor_special_lastcol</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a25719bddd1345d6b86e4373dfa474825" compoundref="d6/d6d/buf_8h" startline="433">cursorpos</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a06e75c551d4009e9976cd43dab18fb30" compoundref="d6/d6d/buf_8h" startline="420">dims</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1aabe7c503936227e510bb7be84bde2fa3" compoundref="d6/d6d/buf_8h" startline="458">escaped</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1aa09a20fff5c3fe6f00987bb27d28c3ff" compoundref="d6/d6d/buf_8h" startline="99">openage::console::LINE_EMPTY</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1a2f8b6f12c1655f3259fbdc6873ccb0a2" compoundref="d6/d6d/buf_8h" startline="103">openage::console::LINE_REGULAR</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1ae5dcef92c8c76cebffd40c925cb209cd" compoundref="d6/d6d/buf_8h" startline="110">openage::console::LINE_WRAPPED</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a4c48f84f2a29ae7472c54bce03fcbd65" compoundref="d3/d0f/buf_8cpp" startline="1151" endline="1160">linedataptr</references>
+        <references refid="dd/de2/structopenage_1_1console_1_1buf__line_1af481a8ea9bc97ab5fe57e0f0d2102a6c" compoundref="d6/d6d/buf_8h" startline="116">openage::console::buf_line::type</references>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1adcdc21533ab920bd72f92f27333716bf" compoundref="d3/d0f/buf_8cpp" startline="416" endline="477">process_codepoint</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a83a7e7db654360cff1c6796b169efc22" compoundref="d3/d0f/buf_8cpp" startline="661" endline="917">process_csi_escape_sequence</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1ac59a20dcbdcb3aaffaedc8d9d21d0ec9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::escape_sequence_aborted</definition>
+        <argsstring>()</argsstring>
+        <name>escape_sequence_aborted</name>
+        <briefdescription>
+<para>aborts the current escape sequence (e.g. </para>        </briefdescription>
+        <detaileddescription>
+<para>because it contained an illegal character, or is not implemented) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="208" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="609" bodyend="614"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a381b42f50364ebd1842d1e330bae5909" compoundref="d6/d6d/buf_8h" startline="463">escape_sequence</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1aabe7c503936227e510bb7be84bde2fa3" compoundref="d6/d6d/buf_8h" startline="458">escaped</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1ac6af4ff8acdecaf3ebf91c57e2c20953" compoundref="d3/d0f/buf_8cpp" startline="599" endline="607">openage::console::print_cps</references>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1adcdc21533ab920bd72f92f27333716bf" compoundref="d3/d0f/buf_8cpp" startline="416" endline="477">process_codepoint</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a83a7e7db654360cff1c6796b169efc22" compoundref="d3/d0f/buf_8cpp" startline="661" endline="917">process_csi_escape_sequence</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a809f4a27cd3bf92c2458a5b3176fae43" compoundref="d3/d0f/buf_8cpp" startline="621" endline="631">process_escaped_cp</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1aa6ae8933e3c2bbaafa8d81cf1c405406" compoundref="d3/d0f/buf_8cpp" startline="633" endline="659">process_text_escape_sequence</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a3e924482fd0e3524e44b20acc316fb19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::escape_sequence_processed</definition>
+        <argsstring>()</argsstring>
+        <name>escape_sequence_processed</name>
+        <briefdescription>
+<para>called when a escape sequence has been successfully processed, clears the sequence. </para>        </briefdescription>
+        <detaileddescription>
+<para>either this or abort_escape_sequence is called for each escape sequence. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="216" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="616" bodyend="619"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a381b42f50364ebd1842d1e330bae5909" compoundref="d6/d6d/buf_8h" startline="463">escape_sequence</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1aabe7c503936227e510bb7be84bde2fa3" compoundref="d6/d6d/buf_8h" startline="458">escaped</references>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a83a7e7db654360cff1c6796b169efc22" compoundref="d3/d0f/buf_8cpp" startline="661" endline="917">process_csi_escape_sequence</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1aa6ae8933e3c2bbaafa8d81cf1c405406" compoundref="d3/d0f/buf_8cpp" startline="633" endline="659">process_text_escape_sequence</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a83a7e7db654360cff1c6796b169efc22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::process_csi_escape_sequence</definition>
+        <argsstring>()</argsstring>
+        <name>process_csi_escape_sequence</name>
+        <briefdescription>
+<para>processes the CSI escape sequence currently stored in escape_sequence. </para>        </briefdescription>
+        <detaileddescription>
+<para>invalid sequences are ignored. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="223" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="661" bodyend="917"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1af6b49e0178333e01a08fd61ca2006219" compoundref="d3/d0f/buf_8cpp" startline="1078" endline="1109">clear</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a3b4aca71e4891bd71a0c57ca5fa58e86" compoundref="d6/d6d/buf_8h" startline="443">cursor_visible</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a25719bddd1345d6b86e4373dfa474825" compoundref="d6/d6d/buf_8h" startline="433">cursorpos</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a06e75c551d4009e9976cd43dab18fb30" compoundref="d6/d6d/buf_8h" startline="420">dims</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a381b42f50364ebd1842d1e330bae5909" compoundref="d6/d6d/buf_8h" startline="463">escape_sequence</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ac59a20dcbdcb3aaffaedc8d9d21d0ec9" compoundref="d3/d0f/buf_8cpp" startline="609" endline="614">escape_sequence_aborted</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a3e924482fd0e3524e44b20acc316fb19" compoundref="d3/d0f/buf_8cpp" startline="616" endline="619">escape_sequence_processed</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ab2dd3bbdbc82ae2a4276a433b40aac91" compoundref="d3/d0f/buf_8cpp" startline="479" endline="597">print_codepoint</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a9320618afe1ebdf770518ab69cc72271" compoundref="d3/d0f/buf_8cpp" startline="919" endline="1076">process_sgr_code</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a7d65c2c715635ae80a3362abc61abc22" compoundref="d6/d6d/buf_8h" startline="438">saved_cursorpos</references>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1adcdc21533ab920bd72f92f27333716bf" compoundref="d3/d0f/buf_8cpp" startline="416" endline="477">process_codepoint</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a809f4a27cd3bf92c2458a5b3176fae43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::process_escaped_cp</definition>
+        <argsstring>(int cp)</argsstring>
+        <name>process_escaped_cp</name>
+        <param>
+          <type>int</type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+<para>processes a single-codepoint escape sequence. </para>        </briefdescription>
+        <detaileddescription>
+<para>invalid codepoints are ignored. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="229" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="621" bodyend="631"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ac59a20dcbdcb3aaffaedc8d9d21d0ec9" compoundref="d3/d0f/buf_8cpp" startline="609" endline="614">escape_sequence_aborted</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a23267e4cb18a2921f14406e6307cbb95" compoundref="d3/d0f/buf_8cpp" startline="52" endline="67">reset</references>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1adcdc21533ab920bd72f92f27333716bf" compoundref="d3/d0f/buf_8cpp" startline="416" endline="477">process_codepoint</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1aa6ae8933e3c2bbaafa8d81cf1c405406" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::process_text_escape_sequence</definition>
+        <argsstring>()</argsstring>
+        <name>process_text_escape_sequence</name>
+        <briefdescription>
+<para>processes a text escape sequence that is one of OSC, DCS, APC or PM </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="235" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="633" bodyend="659"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a381b42f50364ebd1842d1e330bae5909" compoundref="d6/d6d/buf_8h" startline="463">escape_sequence</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ac59a20dcbdcb3aaffaedc8d9d21d0ec9" compoundref="d3/d0f/buf_8cpp" startline="609" endline="614">escape_sequence_aborted</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a3e924482fd0e3524e44b20acc316fb19" compoundref="d3/d0f/buf_8cpp" startline="616" endline="619">escape_sequence_processed</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a51310590a608b1d2b601d3303893500d" compoundref="d6/d6d/buf_8h" startline="473">title</references>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1adcdc21533ab920bd72f92f27333716bf" compoundref="d3/d0f/buf_8cpp" startline="416" endline="477">process_codepoint</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a9320618afe1ebdf770518ab69cc72271" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::process_sgr_code</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;params)</argsstring>
+        <name>process_sgr_code</name>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>sets graphics rendition parameters; called by process_escape_sequence </para>        </briefdescription>
+        <detaileddescription>
+<para>params: numerical params list from escape sequence </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="244" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="919" bodyend="1076"/>
+        <references refid="d7/d20/structopenage_1_1console_1_1buf__char_1ad268cc5e0d42a2c6c533805f2749c3ac" compoundref="d6/d6d/buf_8h" startline="75">openage::console::buf_char::bgcol</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1af47bf3d97cd359c6c10f897202d86f6e" compoundref="d6/d6d/buf_8h" startline="33">openage::console::CHR_BLINKING</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1a4c87ac281f12c1a70ce7a42e994b1f4e" compoundref="d6/d6d/buf_8h" startline="34">openage::console::CHR_BLINKINGFAST</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1a9745bb286bb9090f6a1108ab396a7b8a" compoundref="d6/d6d/buf_8h" startline="30">openage::console::CHR_BOLD</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1a5b36a87df8bd26b15cd6cf9c405be21e" compoundref="d6/d6d/buf_8h" startline="41">openage::console::CHR_ENCIRCLED</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1a8344de72e80fee53e75bb2d8ed0d05fa" compoundref="d6/d6d/buf_8h" startline="31">openage::console::CHR_FAINT</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1ab5697bf92be9d8d51dcf4302601bca8b" compoundref="d6/d6d/buf_8h" startline="37">openage::console::CHR_FRAKTUR</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1a5ed01c84ea51ab071895ba4893def65a" compoundref="d6/d6d/buf_8h" startline="40">openage::console::CHR_FRAMED</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1afb42dd8609458df8845f0fcfe1369a02" compoundref="d6/d6d/buf_8h" startline="39">openage::console::CHR_INVISIBLE</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1a0c77f6f996bfc8d29bcf3328dd59a7ed" compoundref="d6/d6d/buf_8h" startline="32">openage::console::CHR_ITALIC</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1a0e58c4dd9bc39bc92df452fed1d3b3bd" compoundref="d6/d6d/buf_8h" startline="44">openage::console::CHR_LEFTLINED</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1a704887dfb1063ef039b3d0b3a47c8e3a" compoundref="d6/d6d/buf_8h" startline="38">openage::console::CHR_NEGATIVE</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1ac1c0a1692341ff6e2f561f047ae69443" compoundref="d6/d6d/buf_8h" startline="42">openage::console::CHR_OVERLINED</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1ad9457c58e4cd80cf614f2fdfd9746a52" compoundref="d6/d6d/buf_8h" startline="43">openage::console::CHR_RIGHTLINED</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1a2fdcdc91078a83eb1c89e268f9b45426" compoundref="d6/d6d/buf_8h" startline="45">openage::console::CHR_STRESS_IDEOGRAM</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1a5e51abe4b309530b0e3ce99dd7e15542" compoundref="d6/d6d/buf_8h" startline="36">openage::console::CHR_STRUCKOUT</references>
+        <references refid="dd/d31/namespaceopenage_1_1console_1a93039d0f5b2e81d5c16ea27f24726d46" compoundref="d6/d6d/buf_8h" startline="35">openage::console::CHR_UNDERLINED</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1af6fb637bfa9764b03b7e5c732b1628a6" compoundref="d6/d6d/buf_8h" startline="483">current_char_fmt</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a3fa3840a58379ede7a40f6382f95cc06" compoundref="d6/d6d/buf_8h" startline="491">default_char_fmt</references>
+        <references refid="d7/d20/structopenage_1_1console_1_1buf__char_1a205c87e5042f1bdeb3bb60580196620d" compoundref="d6/d6d/buf_8h" startline="71">openage::console::buf_char::fgcol</references>
+        <references refid="d7/d20/structopenage_1_1console_1_1buf__char_1a4488bd83177a49837fcc93128d18c5cb" compoundref="d6/d6d/buf_8h" startline="79">openage::console::buf_char::flags</references>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a83a7e7db654360cff1c6796b169efc22" compoundref="d3/d0f/buf_8cpp" startline="661" endline="917">process_csi_escape_sequence</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a752e54412ebbb08b3d8ac0edc90891ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::advance</definition>
+        <argsstring>(unsigned linecount=1)</argsstring>
+        <name>advance</name>
+        <param>
+          <type>unsigned</type>
+          <declname>linecount</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>advances the buffer by the specified number of lines. </para>        </briefdescription>
+        <detaileddescription>
+<para>the top lines are moved to the scrollback buffer. the top lines of the scrollback buffer are discarded. the bottom lines of the buffer are empty after this. the cursor position is not changed by this.</para><para>linecount: the number of lines to advance the buffer; defaults to one. may be &gt; buffer height. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="259" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="341" bodyend="380"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a55229c780654c2e7445cb313fde990a7" compoundref="d6/d6d/buf_8h" startline="366">chrdata_end</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ad3b09ac6afcafdabc8ac7cad2bbb1991" compoundref="d6/d6d/buf_8h" startline="356">chrdata_size</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1af6b49e0178333e01a08fd61ca2006219" compoundref="d3/d0f/buf_8cpp" startline="1078" endline="1109">clear</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a06e75c551d4009e9976cd43dab18fb30" compoundref="d6/d6d/buf_8h" startline="420">dims</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ab0c8a14f50eaeb58afc86d20bbb01158" compoundref="d6/d6d/buf_8h" startline="402">linedata_end</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a0980d008e8fc8a7fc02f7bc51b253dc5" compoundref="d6/d6d/buf_8h" startline="397">linedata_size</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1aae04bf7f71d8d61153a63c8016756bd0" compoundref="d6/d6d/buf_8h" startline="384">screen_chrdata</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a75cdec48d09432a80bc7e32182a4775a" compoundref="d6/d6d/buf_8h" startline="408">screen_linedata</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a14f2cdfd24154571850ed8ca005d3efc" compoundref="d6/d6d/buf_8h" startline="426">scrollback_lines</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1aed68e2efd6dfa0dc6e4d2c6985965458" compoundref="d6/d6d/buf_8h" startline="518">scrollback_pos</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a324edefddfbe59f14ecd7841d2598c29" compoundref="d6/d6d/buf_8h" startline="501">scrollback_possible</references>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1ab2dd3bbdbc82ae2a4276a433b40aac91" compoundref="d3/d0f/buf_8cpp" startline="479" endline="597">print_codepoint</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1af6b49e0178333e01a08fd61ca2006219" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::clear</definition>
+        <argsstring>(coord::term start, coord::term end, bool clear_end=false)</argsstring>
+        <name>clear</name>
+        <param>
+          <type><ref refid="df/dc5/structopenage_1_1coord_1_1term" kindref="compound">coord::term</ref></type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="df/dc5/structopenage_1_1coord_1_1term" kindref="compound">coord::term</ref></type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear_end</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>clears the screen character and line buffers. </para>        </briefdescription>
+        <detaileddescription>
+<para>lines are cleared iff all of their characters are cleared.</para><para>if start &gt;= end, nothing happens.</para><para>inputs are not sanitized.</para><para>start screen buffer coordinates of first character to be deleted negative values of y indicate scrollback buffer -scrollback_lines &lt;= y &lt; dims.y 0 &lt;= x &lt; dims.x end screen buffer coordinates of first character not to be deleted negative values of y indicate scrollback buffer -scrollback_lines &lt;= y &lt; dims.y 0 &lt;= x &lt; dims.x {x, y} = {0, dims.y} is allowed. clear_end if true, end is incremented by 1. this affects all constraints. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="283" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="1078" bodyend="1109"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a1108eb4031232054e271e3c7321b24ef" compoundref="d3/d0f/buf_8cpp" startline="1111" endline="1124">chrdata_clear</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ad54e6fb8e82e15a085cae30d3646d7b7" compoundref="d3/d0f/buf_8cpp" startline="1141" endline="1149">chrdataptr</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a76d65b492fdef7853b939598235881e2" compoundref="d3/d0f/buf_8cpp" startline="1126" endline="1139">linedata_clear</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a4c48f84f2a29ae7472c54bce03fcbd65" compoundref="d3/d0f/buf_8cpp" startline="1151" endline="1160">linedataptr</references>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a752e54412ebbb08b3d8ac0edc90891ee" compoundref="d3/d0f/buf_8cpp" startline="341" endline="380">advance</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a83a7e7db654360cff1c6796b169efc22" compoundref="d3/d0f/buf_8cpp" startline="661" endline="917">process_csi_escape_sequence</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a23267e4cb18a2921f14406e6307cbb95" compoundref="d3/d0f/buf_8cpp" startline="52" endline="67">reset</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a1108eb4031232054e271e3c7321b24ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::chrdata_clear</definition>
+        <argsstring>(buf_char *start, buf_char *end)</argsstring>
+        <name>chrdata_clear</name>
+        <param>
+          <type><ref refid="d7/d20/structopenage_1_1console_1_1buf__char" kindref="compound">buf_char</ref> *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/d20/structopenage_1_1console_1_1buf__char" kindref="compound">buf_char</ref> *</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>clears a range of the data buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para>end is the first character that is not cleared. end and start both must be valid pointers within data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="290" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="1111" bodyend="1124"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1af591ad8b27d0d5528dd83f39589a377f" compoundref="d6/d6d/buf_8h" startline="347">chrdata</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a55229c780654c2e7445cb313fde990a7" compoundref="d6/d6d/buf_8h" startline="366">chrdata_end</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1af6fb637bfa9764b03b7e5c732b1628a6" compoundref="d6/d6d/buf_8h" startline="483">current_char_fmt</references>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1af6b49e0178333e01a08fd61ca2006219" compoundref="d3/d0f/buf_8cpp" startline="1078" endline="1109">clear</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a76d65b492fdef7853b939598235881e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::console::Buf::linedata_clear</definition>
+        <argsstring>(buf_line *start, buf_line *end)</argsstring>
+        <name>linedata_clear</name>
+        <param>
+          <type><ref refid="dd/de2/structopenage_1_1console_1_1buf__line" kindref="compound">buf_line</ref> *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="dd/de2/structopenage_1_1console_1_1buf__line" kindref="compound">buf_line</ref> *</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>clears a range of the linedata buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para>end is the first line that is not cleared. end and start both must be valid pointers within data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="297" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="1126" bodyend="1139"/>
+        <references refid="dd/d31/namespaceopenage_1_1console_1a84a7cb454b1e8ee8221d2099833547ae" compoundref="d6/d6d/buf_8h" startline="119">openage::console::BUF_LINE_DEFAULT</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ad524a3276262d17b952233d58d735fb2" compoundref="d6/d6d/buf_8h" startline="392">linedata</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ab0c8a14f50eaeb58afc86d20bbb01158" compoundref="d6/d6d/buf_8h" startline="402">linedata_end</references>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1af6b49e0178333e01a08fd61ca2006219" compoundref="d3/d0f/buf_8cpp" startline="1078" endline="1109">clear</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1ad54e6fb8e82e15a085cae30d3646d7b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d7/d20/structopenage_1_1console_1_1buf__char" kindref="compound">buf_char</ref> *</type>
+        <definition>buf_char * openage::console::Buf::chrdataptr</definition>
+        <argsstring>(coord::term pos)</argsstring>
+        <name>chrdataptr</name>
+        <param>
+          <type><ref refid="df/dc5/structopenage_1_1coord_1_1term" kindref="compound">coord::term</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+<para>returns a valid pointer to the character info for the character designated by pos </para>        </briefdescription>
+        <detaileddescription>
+<para>pos screen buffer coordinates negative values of y indicate scrollback buffer -scrollback_lines &lt;= pos.y &lt;= dims.y 0 &lt;= pos.x &lt; dims.x if y == dims.y, the return ptr is not guaranteed to be valid. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="310" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="1141" bodyend="1149"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1af591ad8b27d0d5528dd83f39589a377f" compoundref="d6/d6d/buf_8h" startline="347">chrdata</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a55229c780654c2e7445cb313fde990a7" compoundref="d6/d6d/buf_8h" startline="366">chrdata_end</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ad3b09ac6afcafdabc8ac7cad2bbb1991" compoundref="d6/d6d/buf_8h" startline="356">chrdata_size</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a06e75c551d4009e9976cd43dab18fb30" compoundref="d6/d6d/buf_8h" startline="420">dims</references>
+        <references refid="d5/d0e/namespaceopenage_1_1testing_1_1testing_1ac25bf81db406af62d08113ef7ae9fd6e" compoundref="de/dd3/testing_8py" startline="42" endline="45">openage.testing.testing.result</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1aae04bf7f71d8d61153a63c8016756bd0" compoundref="d6/d6d/buf_8h" startline="384">screen_chrdata</references>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1af6b49e0178333e01a08fd61ca2006219" compoundref="d3/d0f/buf_8cpp" startline="1078" endline="1109">clear</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a698e2cce3ee2d13637bc55da38232a95" compoundref="d3/d0f/buf_8cpp" startline="393" endline="414">pop_last_char</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1ab2dd3bbdbc82ae2a4276a433b40aac91" compoundref="d3/d0f/buf_8cpp" startline="479" endline="597">print_codepoint</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a7060ca85ba5a820b0c8e55870a9919c8" compoundref="d3/d0f/buf_8cpp" startline="215" endline="307">resize</referencedby>
+        <referencedby refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ad603edf799bbe6017b89fd25a6ed4512" compoundref="da/d9f/draw_8cpp" startline="22" endline="89">openage::console::draw::to_opengl</referencedby>
+        <referencedby refid="dc/d43/namespaceopenage_1_1console_1_1draw_1ab9e51a5e1f100773a19da09a4f9d1597" compoundref="da/d9f/draw_8cpp" startline="91" endline="169">openage::console::draw::to_terminal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1a4c48f84f2a29ae7472c54bce03fcbd65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dd/de2/structopenage_1_1console_1_1buf__line" kindref="compound">buf_line</ref> *</type>
+        <definition>buf_line * openage::console::Buf::linedataptr</definition>
+        <argsstring>(coord::term_t lineno)</argsstring>
+        <name>linedataptr</name>
+        <param>
+          <type><ref refid="d1/d93/namespaceopenage_1_1coord_1a0eec10a35243d1dcb3e4d1154a82127c" kindref="member">coord::term_t</ref></type>
+          <declname>lineno</declname>
+        </param>
+        <briefdescription>
+<para>returns a valid pointer to the line info for the line designated by lineno </para>        </briefdescription>
+        <detaileddescription>
+<para>lineno number of line in screen buffer negative numbers indicate scrollback buffer -scrollback_lines &lt;= lineno &lt;= dims.y if lineno == dims.y, the return ptr is not guaranteed to be valid. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="322" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="1151" bodyend="1160"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ad524a3276262d17b952233d58d735fb2" compoundref="d6/d6d/buf_8h" startline="392">linedata</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1ab0c8a14f50eaeb58afc86d20bbb01158" compoundref="d6/d6d/buf_8h" startline="402">linedata_end</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a0980d008e8fc8a7fc02f7bc51b253dc5" compoundref="d6/d6d/buf_8h" startline="397">linedata_size</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a40f2145be6a41017301e9a64f64a540a" compoundref="d8/d6a/message_8cpp" startline="43">openage::log::lineno</references>
+        <references refid="d5/d0e/namespaceopenage_1_1testing_1_1testing_1ac25bf81db406af62d08113ef7ae9fd6e" compoundref="de/dd3/testing_8py" startline="42" endline="45">openage.testing.testing.result</references>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a75cdec48d09432a80bc7e32182a4775a" compoundref="d6/d6d/buf_8h" startline="408">screen_linedata</references>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1af6b49e0178333e01a08fd61ca2006219" compoundref="d3/d0f/buf_8cpp" startline="1078" endline="1109">clear</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a698e2cce3ee2d13637bc55da38232a95" compoundref="d3/d0f/buf_8cpp" startline="393" endline="414">pop_last_char</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1ab2dd3bbdbc82ae2a4276a433b40aac91" compoundref="d3/d0f/buf_8cpp" startline="479" endline="597">print_codepoint</referencedby>
+        <referencedby refid="d9/db3/classopenage_1_1console_1_1_buf_1a7060ca85ba5a820b0c8e55870a9919c8" compoundref="d3/d0f/buf_8cpp" startline="215" endline="307">resize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/db3/classopenage_1_1console_1_1_buf_1ae0e0cf2f6bb5e5c324ff9f4554ec2852" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="df/dc5/structopenage_1_1coord_1_1term" kindref="compound">coord::term</ref> &amp;</type>
+        <definition>const coord::term &amp; openage::console::Buf::get_dims</definition>
+        <argsstring>() const</argsstring>
+        <name>get_dims</name>
+        <briefdescription>
+<para>Return the dimensions of the visible console area. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="327" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.cpp" bodystart="1162" bodyend="1164"/>
+        <references refid="d9/db3/classopenage_1_1console_1_1_buf_1a06e75c551d4009e9976cd43dab18fb30" compoundref="d6/d6d/buf_8h" startline="420">dims</references>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a0e1f861a8f19ed84b00c580d50d9f49f" compoundref="d9/dda/console_8cpp" startline="25" endline="46">openage::console::Console::Console</referencedby>
+        <referencedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a9e8a7d06ccbf4e5bf402e87cf4726ffb" compoundref="d9/dda/console_8cpp" startline="191" endline="199">openage::console::Console::on_resize</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="831">
+        <label>CoordXYAbsolute&lt; term_t, term, term_delta &gt;</label>
+      </node>
+      <node id="829">
+        <label>openage::util::utf8_decoder</label>
+        <link refid="d3/d0c/classopenage_1_1util_1_1utf8__decoder"/>
+      </node>
+      <node id="827">
+        <label>openage::console::buf_char</label>
+        <link refid="d7/d20/structopenage_1_1console_1_1buf__char"/>
+      </node>
+      <node id="830">
+        <label>openage::coord::term</label>
+        <link refid="df/dc5/structopenage_1_1coord_1_1term"/>
+        <childnode refid="831" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="828">
+        <label>openage::console::buf_line</label>
+        <link refid="dd/de2/structopenage_1_1console_1_1buf__line"/>
+      </node>
+      <node id="826">
+        <label>openage::console::Buf</label>
+        <link refid="d9/db3/classopenage_1_1console_1_1_buf"/>
+        <childnode refid="827" relation="usage">
+          <edgelabel>+chrdata_end</edgelabel>
+          <edgelabel>+screen_chrdata</edgelabel>
+          <edgelabel>+chrdata</edgelabel>
+          <edgelabel>+current_char_fmt</edgelabel>
+          <edgelabel>+default_char_fmt</edgelabel>
+        </childnode>
+        <childnode refid="828" relation="usage">
+          <edgelabel>+linedata</edgelabel>
+          <edgelabel>+screen_linedata</edgelabel>
+          <edgelabel>+linedata_end</edgelabel>
+        </childnode>
+        <childnode refid="829" relation="usage">
+          <edgelabel>+streamdecoder</edgelabel>
+        </childnode>
+        <childnode refid="830" relation="usage">
+          <edgelabel>+cursorpos</edgelabel>
+          <edgelabel>+dims</edgelabel>
+          <edgelabel>+saved_cursorpos</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" line="121" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/console/buf.h" bodystart="121" bodyend="519"/>
+    <listofallmembers>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a752e54412ebbb08b3d8ac0edc90891ee" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>advance</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1afd9db1c1324909e2a0a98cafa53d9cd4" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>bell</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a51a780e9a4df80cdb56f8d94186d527e" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>Buf</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a4fc8817e4fc059c81f836482b8f163b5" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>Buf</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1af591ad8b27d0d5528dd83f39589a377f" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>chrdata</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a1108eb4031232054e271e3c7321b24ef" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>chrdata_clear</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a55229c780654c2e7445cb313fde990a7" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>chrdata_end</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1ad3b09ac6afcafdabc8ac7cad2bbb1991" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>chrdata_size</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1ad54e6fb8e82e15a085cae30d3646d7b7" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>chrdataptr</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1af6b49e0178333e01a08fd61ca2006219" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>clear</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1af6fb637bfa9764b03b7e5c732b1628a6" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>current_char_fmt</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a53574615a1e2df75adad05bd27bf04d4" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>cursor_special_lastcol</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a3b4aca71e4891bd71a0c57ca5fa58e86" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>cursor_visible</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a25719bddd1345d6b86e4373dfa474825" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>cursorpos</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a3fa3840a58379ede7a40f6382f95cc06" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>default_char_fmt</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a06e75c551d4009e9976cd43dab18fb30" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>dims</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a381b42f50364ebd1842d1e330bae5909" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>escape_sequence</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1ac59a20dcbdcb3aaffaedc8d9d21d0ec9" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>escape_sequence_aborted</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a3e924482fd0e3524e44b20acc316fb19" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>escape_sequence_processed</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1aabe7c503936227e510bb7be84bde2fa3" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>escaped</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1ae0e0cf2f6bb5e5c324ff9f4554ec2852" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>get_dims</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1ad524a3276262d17b952233d58d735fb2" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>linedata</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a76d65b492fdef7853b939598235881e2" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>linedata_clear</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1ab0c8a14f50eaeb58afc86d20bbb01158" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>linedata_end</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a0980d008e8fc8a7fc02f7bc51b253dc5" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>linedata_size</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a4c48f84f2a29ae7472c54bce03fcbd65" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>linedataptr</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1ac33c1a30d0a22cfee3d3eeabd33a606d" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>min_width</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a94f6263ebbf6ccfef936eb5c410c2ada" prot="private" virt="non-virtual"><scope>openage::console::Buf</scope><name>NewBuf</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a1b57a435f75898936d21928f3641f345" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>operator=</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a698e2cce3ee2d13637bc55da38232a95" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>pop_last_char</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1ab2dd3bbdbc82ae2a4276a433b40aac91" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>print_codepoint</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1adcdc21533ab920bd72f92f27333716bf" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>process_codepoint</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a83a7e7db654360cff1c6796b169efc22" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>process_csi_escape_sequence</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a809f4a27cd3bf92c2458a5b3176fae43" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>process_escaped_cp</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a9320618afe1ebdf770518ab69cc72271" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>process_sgr_code</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1aa6ae8933e3c2bbaafa8d81cf1c405406" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>process_text_escape_sequence</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a23267e4cb18a2921f14406e6307cbb95" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>reset</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a7060ca85ba5a820b0c8e55870a9919c8" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>resize</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a7d65c2c715635ae80a3362abc61abc22" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>saved_cursorpos</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1aae04bf7f71d8d61153a63c8016756bd0" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>screen_chrdata</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a75cdec48d09432a80bc7e32182a4775a" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>screen_linedata</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a06f58f1b06e5aae9664b1d07d8607048" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>scroll</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a14f2cdfd24154571850ed8ca005d3efc" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>scrollback_lines</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1aed68e2efd6dfa0dc6e4d2c6985965458" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>scrollback_pos</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a324edefddfbe59f14ecd7841d2598c29" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>scrollback_possible</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1ae41adb957a289c65c86f5e79702399de" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>streamdecoder</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a51310590a608b1d2b601d3303893500d" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>title</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a3db6d160e44c8db825a37c0cfbc143ea" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>write</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a7f70c41ed91a5283fd2dd337b7493eaa" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>write</name></member>
+      <member refid="d9/db3/classopenage_1_1console_1_1_buf_1a83ecd364b255a4dd8964686fb0d069be" prot="public" virt="non-virtual"><scope>openage::console::Buf</scope><name>~Buf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

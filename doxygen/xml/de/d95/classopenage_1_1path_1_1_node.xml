@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="de/d95/classopenage_1_1path_1_1_node" kind="class" language="C++" prot="public">
+    <compoundname>openage::path::Node</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::enable_shared_from_this&lt; Node &gt;</basecompoundref>
+    <includes refid="da/d7a/pathfinding_2path_8h" local="no">path.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="de/d95/classopenage_1_1path_1_1_node_1ab2a7dc59c9efb7f5baef572bbbb00228" prot="public" static="no" mutable="no">
+        <type><ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref></type>
+        <definition>coord::phys3 openage::path::Node::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+<para>The tile position this node is associated to. </para>        </briefdescription>
+        <detaileddescription>
+<para>todo make const </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="121" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" bodystart="121" bodyend="-1"/>
+        <referencedby refid="de/d95/classopenage_1_1path_1_1_node_1a8461fbce64d91cb521d76e313ed65662" compoundref="dd/ddb/pathfinding_2path_8cpp" startline="61" endline="65">cost_to</referencedby>
+        <referencedby refid="de/d95/classopenage_1_1path_1_1_node_1a5847aed20e19a4334ce6a7359c7b9720" compoundref="dd/ddb/pathfinding_2path_8cpp" startline="83" endline="97">get_neighbors</referencedby>
+        <referencedby refid="de/d95/classopenage_1_1path_1_1_node_1ae86ecb07671f4be9fe23535c99b8d40a" compoundref="dd/ddb/pathfinding_2path_8cpp" startline="18" endline="39">Node</referencedby>
+        <referencedby refid="dd/d63/structstd_1_1hash_3_01openage_1_1path_1_1_node_01_6_01_4_1a82c375ba3d6cda6123b93c89890b5af1" compoundref="da/d7a/pathfinding_2path_8h" startline="208" endline="214">std::hash&lt; openage::path::Node &amp; &gt;::operator()</referencedby>
+        <referencedby refid="de/d95/classopenage_1_1path_1_1_node_1afae105c3ca20e09659e66fc6e5dd4eea" compoundref="dd/ddb/pathfinding_2path_8cpp" startline="56" endline="58">operator==</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d95/classopenage_1_1path_1_1_node_1af71eefaa0601bbfbb76bcaed643c18f6" prot="public" static="no" mutable="no">
+        <type><ref refid="d5/d10/structopenage_1_1coord_1_1tile" kindref="compound">coord::tile</ref></type>
+        <definition>coord::tile openage::path::Node::tile_position</definition>
+        <argsstring></argsstring>
+        <name>tile_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="122" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d95/classopenage_1_1path_1_1_node_1aad8137f68110f1e82ff358e795092675" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/d49/structopenage_1_1coord_1_1phys3__delta" kindref="compound">coord::phys3_delta</ref></type>
+        <definition>coord::phys3_delta openage::path::Node::direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="123" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" bodystart="123" bodyend="-1"/>
+        <referencedby refid="de/d95/classopenage_1_1path_1_1_node_1ae86ecb07671f4be9fe23535c99b8d40a" compoundref="dd/ddb/pathfinding_2path_8cpp" startline="18" endline="39">Node</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d95/classopenage_1_1path_1_1_node_1ad37572f2d995a0978c8f860ad5edaa30" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/df4/namespaceopenage_1_1path_1aeb0eaee59cf635000d9a737312cd4215" kindref="member">cost_t</ref></type>
+        <definition>cost_t openage::path::Node::future_cost</definition>
+        <argsstring></argsstring>
+        <name>future_cost</name>
+        <briefdescription>
+<para>Future cost estimation value for this node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="128" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" bodystart="128" bodyend="-1"/>
+        <referencedby refid="de/d95/classopenage_1_1path_1_1_node_1a64dacb5aaeed97517ffd26217f38ee8f" compoundref="dd/ddb/pathfinding_2path_8cpp" startline="42" endline="48">Node</referencedby>
+        <referencedby refid="de/d95/classopenage_1_1path_1_1_node_1a990b8a7c4344fbe54a96c3b048a3fcbd" compoundref="dd/ddb/pathfinding_2path_8cpp" startline="51" endline="53">operator&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d95/classopenage_1_1path_1_1_node_1a665c106823920c92839d263642e22f6b" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/df4/namespaceopenage_1_1path_1aeb0eaee59cf635000d9a737312cd4215" kindref="member">cost_t</ref></type>
+        <definition>cost_t openage::path::Node::past_cost</definition>
+        <argsstring></argsstring>
+        <name>past_cost</name>
+        <briefdescription>
+<para>Evaluated past cost value for the node. </para>        </briefdescription>
+        <detaileddescription>
+<para>This stores the actual cost from start to this node. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="134" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" bodystart="134" bodyend="-1"/>
+        <referencedby refid="de/d95/classopenage_1_1path_1_1_node_1a64dacb5aaeed97517ffd26217f38ee8f" compoundref="dd/ddb/pathfinding_2path_8cpp" startline="42" endline="48">Node</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d95/classopenage_1_1path_1_1_node_1af2d2958545a3dd1f6bef291342498d49" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/df4/namespaceopenage_1_1path_1aeb0eaee59cf635000d9a737312cd4215" kindref="member">cost_t</ref></type>
+        <definition>cost_t openage::path::Node::heuristic_cost</definition>
+        <argsstring></argsstring>
+        <name>heuristic_cost</name>
+        <briefdescription>
+<para>Heuristic cost cache. </para>        </briefdescription>
+        <detaileddescription>
+<para>Calculated once, is the heuristic distance from this node to the goal. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="141" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" bodystart="141" bodyend="-1"/>
+        <referencedby refid="de/d95/classopenage_1_1path_1_1_node_1a64dacb5aaeed97517ffd26217f38ee8f" compoundref="dd/ddb/pathfinding_2path_8cpp" startline="42" endline="48">Node</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d95/classopenage_1_1path_1_1_node_1ad9dd309dc7c4fc593d90c45babe3dcfc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool openage::path::Node::accessible</definition>
+        <argsstring></argsstring>
+        <name>accessible</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Can this node be passed? </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="146" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d95/classopenage_1_1path_1_1_node_1a4aaa468b9936616ff99a232b6f1b601e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool openage::path::Node::visited</definition>
+        <argsstring></argsstring>
+        <name>visited</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Has this <ref refid="de/d95/classopenage_1_1path_1_1_node" kindref="compound">Node</ref> been visited? </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="151" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" bodystart="151" bodyend="-1"/>
+        <referencedby refid="de/d95/classopenage_1_1path_1_1_node_1ae86ecb07671f4be9fe23535c99b8d40a" compoundref="dd/ddb/pathfinding_2path_8cpp" startline="18" endline="39">Node</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d95/classopenage_1_1path_1_1_node_1aed96d0edb4b44cbdcaf958c8cdc98fc6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool openage::path::Node::was_best</definition>
+        <argsstring></argsstring>
+        <name>was_best</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Does this node already have an alternative path? If the node was once selected as the best next hop, this is set to true. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="158" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" bodystart="158" bodyend="-1"/>
+        <referencedby refid="de/d95/classopenage_1_1path_1_1_node_1ae86ecb07671f4be9fe23535c99b8d40a" compoundref="dd/ddb/pathfinding_2path_8cpp" startline="18" endline="39">Node</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d95/classopenage_1_1path_1_1_node_1af30ebda81f962a25f97559049c988d24" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/df4/namespaceopenage_1_1path_1aeb0eaee59cf635000d9a737312cd4215" kindref="member">cost_t</ref></type>
+        <definition>cost_t openage::path::Node::factor</definition>
+        <argsstring></argsstring>
+        <name>factor</name>
+        <briefdescription>
+<para>Factor to adjust movement cost. </para>        </briefdescription>
+        <detaileddescription>
+<para>default: 1 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="164" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" bodystart="164" bodyend="-1"/>
+        <referencedby refid="de/d95/classopenage_1_1path_1_1_node_1a8461fbce64d91cb521d76e313ed65662" compoundref="dd/ddb/pathfinding_2path_8cpp" startline="61" endline="65">cost_to</referencedby>
+        <referencedby refid="de/d95/classopenage_1_1path_1_1_node_1ae86ecb07671f4be9fe23535c99b8d40a" compoundref="dd/ddb/pathfinding_2path_8cpp" startline="18" endline="39">Node</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d95/classopenage_1_1path_1_1_node_1a795f800f11ccbf7177b3eb65ccaeaff2" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/df4/namespaceopenage_1_1path_1adf2b15337cb3eec1712f18c17c75c325" kindref="member">node_pt</ref></type>
+        <definition>node_pt openage::path::Node::path_predecessor</definition>
+        <argsstring></argsstring>
+        <name>path_predecessor</name>
+        <briefdescription>
+<para><ref refid="de/d95/classopenage_1_1path_1_1_node" kindref="compound">Node</ref> where this one was reached by least cost. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="169" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" bodystart="169" bodyend="-1"/>
+        <referencedby refid="de/d95/classopenage_1_1path_1_1_node_1a7e0bc44afe4b4dcddd24e947fec677ee" compoundref="dd/ddb/pathfinding_2path_8cpp" startline="68" endline="80">generate_backtrace</referencedby>
+        <referencedby refid="de/d95/classopenage_1_1path_1_1_node_1ae86ecb07671f4be9fe23535c99b8d40a" compoundref="dd/ddb/pathfinding_2path_8cpp" startline="18" endline="39">Node</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d95/classopenage_1_1path_1_1_node_1af1c5b7a80d572db9fdfdc220beb0aed8" prot="public" static="no" mutable="no">
+        <type><ref refid="dc/dfd/classopenage_1_1datastructure_1_1_pairing_heap_1af89a07b90150d0d4606787f0ac202242" kindref="member">heap_t::element_t</ref></type>
+        <definition>heap_t::element_t openage::path::Node::heap_node</definition>
+        <argsstring></argsstring>
+        <name>heap_node</name>
+        <briefdescription>
+<para>Priority queue node that contains this path node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="174" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" bodystart="174" bodyend="-1"/>
+        <referencedby refid="de/d95/classopenage_1_1path_1_1_node_1ae86ecb07671f4be9fe23535c99b8d40a" compoundref="dd/ddb/pathfinding_2path_8cpp" startline="18" endline="39">Node</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d95/classopenage_1_1path_1_1_node_1ae86ecb07671f4be9fe23535c99b8d40a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::path::Node::Node</definition>
+        <argsstring>(const coord::phys3 &amp;pos, node_pt prev)</argsstring>
+        <name>Node</name>
+        <param>
+          <type>const <ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/df4/namespaceopenage_1_1path_1adf2b15337cb3eec1712f18c17c75c325" kindref="member">node_pt</ref></type>
+          <declname>prev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="88" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.cpp" bodystart="18" bodyend="39"/>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36aef72c37be9d1b9e6e5bbd6ef09448abe">openage::direction</references>
+        <references refid="de/d95/classopenage_1_1path_1_1_node_1aad8137f68110f1e82ff358e795092675" compoundref="da/d7a/pathfinding_2path_8h" startline="123">direction</references>
+        <references refid="de/d95/classopenage_1_1path_1_1_node_1af30ebda81f962a25f97559049c988d24" compoundref="da/d7a/pathfinding_2path_8h" startline="164">factor</references>
+        <references refid="de/d95/classopenage_1_1path_1_1_node_1af1c5b7a80d572db9fdfdc220beb0aed8" compoundref="da/d7a/pathfinding_2path_8h" startline="174">heap_node</references>
+        <references refid="de/d95/classopenage_1_1path_1_1_node_1a795f800f11ccbf7177b3eb65ccaeaff2" compoundref="da/d7a/pathfinding_2path_8h" startline="169">path_predecessor</references>
+        <references refid="de/d95/classopenage_1_1path_1_1_node_1ab2a7dc59c9efb7f5baef572bbbb00228" compoundref="da/d7a/pathfinding_2path_8h" startline="121">position</references>
+        <references refid="de/d95/classopenage_1_1path_1_1_node_1a4aaa468b9936616ff99a232b6f1b601e" compoundref="da/d7a/pathfinding_2path_8h" startline="151">visited</references>
+        <references refid="de/d95/classopenage_1_1path_1_1_node_1aed96d0edb4b44cbdcaf958c8cdc98fc6" compoundref="da/d7a/pathfinding_2path_8h" startline="158">was_best</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d95/classopenage_1_1path_1_1_node_1a64dacb5aaeed97517ffd26217f38ee8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::path::Node::Node</definition>
+        <argsstring>(const coord::phys3 &amp;pos, node_pt prev, cost_t past, cost_t heuristic)</argsstring>
+        <name>Node</name>
+        <param>
+          <type>const <ref refid="d2/da4/structopenage_1_1coord_1_1phys3" kindref="compound">coord::phys3</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/df4/namespaceopenage_1_1path_1adf2b15337cb3eec1712f18c17c75c325" kindref="member">node_pt</ref></type>
+          <declname>prev</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/df4/namespaceopenage_1_1path_1aeb0eaee59cf635000d9a737312cd4215" kindref="member">cost_t</ref></type>
+          <declname>past</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/df4/namespaceopenage_1_1path_1aeb0eaee59cf635000d9a737312cd4215" kindref="member">cost_t</ref></type>
+          <declname>heuristic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="89" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.cpp" bodystart="42" bodyend="48"/>
+        <references refid="de/d95/classopenage_1_1path_1_1_node_1ad37572f2d995a0978c8f860ad5edaa30" compoundref="da/d7a/pathfinding_2path_8h" startline="128">future_cost</references>
+        <references refid="de/d95/classopenage_1_1path_1_1_node_1af2d2958545a3dd1f6bef291342498d49" compoundref="da/d7a/pathfinding_2path_8h" startline="141">heuristic_cost</references>
+        <references refid="de/d95/classopenage_1_1path_1_1_node_1a665c106823920c92839d263642e22f6b" compoundref="da/d7a/pathfinding_2path_8h" startline="134">past_cost</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d95/classopenage_1_1path_1_1_node_1a990b8a7c4344fbe54a96c3b048a3fcbd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::path::Node::operator&lt;</definition>
+        <argsstring>(const Node &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="de/d95/classopenage_1_1path_1_1_node" kindref="compound">Node</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Orders nodes according to their future cost value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="94" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.cpp" bodystart="51" bodyend="53"/>
+        <references refid="de/d95/classopenage_1_1path_1_1_node_1ad37572f2d995a0978c8f860ad5edaa30" compoundref="da/d7a/pathfinding_2path_8h" startline="128">future_cost</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d95/classopenage_1_1path_1_1_node_1afae105c3ca20e09659e66fc6e5dd4eea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::path::Node::operator==</definition>
+        <argsstring>(const Node &amp;other) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="de/d95/classopenage_1_1path_1_1_node" kindref="compound">Node</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Compare the node to another one. </para>        </briefdescription>
+        <detaileddescription>
+<para>They are the same if their position is. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="100" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.cpp" bodystart="56" bodyend="58"/>
+        <references refid="de/d95/classopenage_1_1path_1_1_node_1ab2a7dc59c9efb7f5baef572bbbb00228" compoundref="da/d7a/pathfinding_2path_8h" startline="121">position</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d95/classopenage_1_1path_1_1_node_1a8461fbce64d91cb521d76e313ed65662" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/df4/namespaceopenage_1_1path_1aeb0eaee59cf635000d9a737312cd4215" kindref="member">cost_t</ref></type>
+        <definition>cost_t openage::path::Node::cost_to</definition>
+        <argsstring>(const Node &amp;other) const</argsstring>
+        <name>cost_to</name>
+        <param>
+          <type>const <ref refid="de/d95/classopenage_1_1path_1_1_node" kindref="compound">Node</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the actual movement cose to another node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="105" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.cpp" bodystart="61" bodyend="65"/>
+        <references refid="de/d95/classopenage_1_1path_1_1_node_1af30ebda81f962a25f97559049c988d24" compoundref="da/d7a/pathfinding_2path_8h" startline="164">factor</references>
+        <references refid="de/d95/classopenage_1_1path_1_1_node_1ab2a7dc59c9efb7f5baef572bbbb00228" compoundref="da/d7a/pathfinding_2path_8h" startline="121">position</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d95/classopenage_1_1path_1_1_node_1a7e0bc44afe4b4dcddd24e947fec677ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d0/d8e/classopenage_1_1path_1_1_path" kindref="compound">Path</ref></type>
+        <definition>Path openage::path::Node::generate_backtrace</definition>
+        <argsstring>()</argsstring>
+        <name>generate_backtrace</name>
+        <briefdescription>
+<para>Create a backtrace path beginning at this node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="110" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.cpp" bodystart="68" bodyend="80"/>
+        <references refid="de/d95/classopenage_1_1path_1_1_node_1a795f800f11ccbf7177b3eb65ccaeaff2" compoundref="da/d7a/pathfinding_2path_8h" startline="169">path_predecessor</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d95/classopenage_1_1path_1_1_node_1a5847aed20e19a4334ce6a7359c7b9720" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="d3/df4/namespaceopenage_1_1path_1adf2b15337cb3eec1712f18c17c75c325" kindref="member">node_pt</ref> &gt;</type>
+        <definition>std::vector&lt; node_pt &gt; openage::path::Node::get_neighbors</definition>
+        <argsstring>(const nodemap_t &amp;, float scale=1.0f)</argsstring>
+        <name>get_neighbors</name>
+        <param>
+          <type>const <ref refid="d3/df4/namespaceopenage_1_1path_1a2889597504b5f2d6987d132f1e5682f6" kindref="member">nodemap_t</ref> &amp;</type>
+          <defname>nodes</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+<para>Get all neighbors of this graph node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="115" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.cpp" bodystart="83" bodyend="97"/>
+        <references refid="d3/df4/namespaceopenage_1_1path_1aec9efa004e47a51d7525a0959ebdfb83" compoundref="da/d7a/pathfinding_2path_8h" startline="67">openage::path::neigh_phys</references>
+        <references refid="de/d95/classopenage_1_1path_1_1_node_1ab2a7dc59c9efb7f5baef572bbbb00228" compoundref="da/d7a/pathfinding_2path_8h" startline="121">position</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>One navigation waypoint in a path. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4545">
+        <label>std::enable_shared_from_this&lt; Node &gt;</label>
+      </node>
+      <node id="4544">
+        <label>openage::path::Node</label>
+        <link refid="de/d95/classopenage_1_1path_1_1_node"/>
+        <childnode refid="4545" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4549">
+        <label>CoordNeSeUpAbsolute&lt; phys_t, phys3, phys3_delta &gt;</label>
+      </node>
+      <node id="4552">
+        <label>openage::coord::phys3_delta</label>
+        <link refid="d4/d49/structopenage_1_1coord_1_1phys3__delta"/>
+        <childnode refid="4553" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4548">
+        <label>openage::coord::phys3</label>
+        <link refid="d2/da4/structopenage_1_1coord_1_1phys3"/>
+        <childnode refid="4549" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4551">
+        <label>CoordNeSeAbsolute&lt; tile_t, tile, tile_delta &gt;</label>
+      </node>
+      <node id="4550">
+        <label>openage::coord::tile</label>
+        <link refid="d5/d10/structopenage_1_1coord_1_1tile"/>
+        <childnode refid="4551" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4547">
+        <label>std::enable_shared_from_this&lt; Node &gt;</label>
+      </node>
+      <node id="4553">
+        <label>CoordNeSeUpRelative&lt; phys_t, phys3, phys3_delta &gt;</label>
+      </node>
+      <node id="4546">
+        <label>openage::path::Node</label>
+        <link refid="de/d95/classopenage_1_1path_1_1_node"/>
+        <childnode refid="4547" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4548" relation="usage">
+          <edgelabel>+position</edgelabel>
+        </childnode>
+        <childnode refid="4550" relation="usage">
+          <edgelabel>+tile_position</edgelabel>
+        </childnode>
+        <childnode refid="4552" relation="usage">
+          <edgelabel>+direction</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" line="86" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/pathfinding/path.h" bodystart="86" bodyend="175"/>
+    <listofallmembers>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1ad9dd309dc7c4fc593d90c45babe3dcfc" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>accessible</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1a8461fbce64d91cb521d76e313ed65662" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>cost_to</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1aad8137f68110f1e82ff358e795092675" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>direction</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1af30ebda81f962a25f97559049c988d24" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>factor</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1ad37572f2d995a0978c8f860ad5edaa30" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>future_cost</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1a7e0bc44afe4b4dcddd24e947fec677ee" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>generate_backtrace</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1a5847aed20e19a4334ce6a7359c7b9720" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>get_neighbors</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1af1c5b7a80d572db9fdfdc220beb0aed8" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>heap_node</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1af2d2958545a3dd1f6bef291342498d49" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>heuristic_cost</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1ae86ecb07671f4be9fe23535c99b8d40a" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>Node</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1a64dacb5aaeed97517ffd26217f38ee8f" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>Node</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1a990b8a7c4344fbe54a96c3b048a3fcbd" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>operator&lt;</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1afae105c3ca20e09659e66fc6e5dd4eea" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>operator==</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1a665c106823920c92839d263642e22f6b" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>past_cost</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1a795f800f11ccbf7177b3eb65ccaeaff2" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>path_predecessor</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1ab2a7dc59c9efb7f5baef572bbbb00228" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>position</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1af71eefaa0601bbfbb76bcaed643c18f6" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>tile_position</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1a4aaa468b9936616ff99a232b6f1b601e" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>visited</name></member>
+      <member refid="de/d95/classopenage_1_1path_1_1_node_1aed96d0edb4b44cbdcaf958c8cdc98fc6" prot="public" virt="non-virtual"><scope>openage::path::Node</scope><name>was_best</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d2/d4a/namespaceopenage_1_1datastructure" kind="namespace" language="C++">
+    <compoundname>openage::datastructure</compoundname>
+    <innerclass refid="d8/de2/classopenage_1_1datastructure_1_1_concurrent_queue" prot="public">openage::datastructure::ConcurrentQueue</innerclass>
+    <innerclass refid="d1/de9/classopenage_1_1datastructure_1_1_const_map" prot="public">openage::datastructure::ConstMap</innerclass>
+    <innerclass refid="de/dd8/classopenage_1_1datastructure_1_1_const_map_3_01_k_00_01_v_00_010_01_4" prot="public">openage::datastructure::ConstMap&lt; K, V, 0 &gt;</innerclass>
+    <innerclass refid="dc/dfd/classopenage_1_1datastructure_1_1_pairing_heap" prot="public">openage::datastructure::PairingHeap</innerclass>
+    <innerclass refid="d6/d61/classopenage_1_1datastructure_1_1_pairing_heap_node" prot="public">openage::datastructure::PairingHeapNode</innerclass>
+    <innernamespace refid="d3/d09/namespaceopenage_1_1datastructure_1_1tests">openage::datastructure::tests</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d2/d4a/namespaceopenage_1_1datastructure_1ab0127314c49a7c5dc7e6a794779211c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename K</type>
+          </param>
+          <param>
+            <type>typename V</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Entries</declname>
+            <defname>Entries</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr auto</type>
+        <definition>constexpr auto openage::datastructure::create_const_map</definition>
+        <argsstring>(Entries &amp;&amp;... entry)</argsstring>
+        <name>create_const_map</name>
+        <param>
+          <type>Entries &amp;&amp;...</type>
+          <declname>entry</declname>
+        </param>
+        <briefdescription>
+<para>Creates a compiletime lookup table from K to V, where all entries of K must be unique. </para>        </briefdescription>
+        <detaileddescription>
+<para>usage: constexpr auto bla = create_const_map&lt;type0, type1&gt;(entry0, entry1, ...); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" line="131" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" bodystart="131" bodyend="133"/>
+        <references refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1ae9b9f33a7c41eac464ee3324de7b5822" compoundref="d3/dd6/constexpr__map_8h" startline="30" endline="34">openage::datastructure::ConstMap&lt; K, V, count &gt;::ConstMap</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d4a/namespaceopenage_1_1datastructure_1aced7c3fdbfe03f08c718bf5ee4f24b62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Entry</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Rest</declname>
+            <defname>Rest</defname>
+          </param>
+          <param>
+            <type>typename</type>
+            <defval>std::enable_if_t&lt;std::conjunction_v&lt;std::is_same&lt;Entry, Rest&gt;...&gt;&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>openage::datastructure::ConstMap</definition>
+        <argsstring>(Entry, Rest &amp;&amp;...) -&gt; ConstMap&lt; typename Entry::first_type, typename Entry::second_type, 1+sizeof...(Rest)&gt;</argsstring>
+        <name>ConstMap</name>
+        <param>
+          <type>Entry</type>
+        </param>
+        <param>
+          <type>Rest &amp;&amp;</type>
+          <declname>...</declname>
+        </param>
+        <briefdescription>
+<para>Template deduction guide to deduce the Key-Value types for the <ref refid="d1/de9/classopenage_1_1datastructure_1_1_const_map" kindref="compound">ConstMap</ref> from the paired entries passed. </para>        </briefdescription>
+        <detaileddescription>
+<para>usage: constexpr <ref refid="d1/de9/classopenage_1_1datastructure_1_1_const_map" kindref="compound">ConstMap</ref> boss{std::pair{k0, v0}, std::pair{k1, v1}, ...};</para><para>Note: Use when automatic type deduction is desirable. For manually specifying types, use the other method. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" line="146" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/concurrent_queue.h" line="11" column="1"/>
+  </compounddef>
+</doxygen>

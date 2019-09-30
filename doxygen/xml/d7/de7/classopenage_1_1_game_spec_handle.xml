@@ -1,0 +1,618 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d7/de7/classopenage_1_1_game_spec_handle" kind="class" language="C++" prot="public">
+    <compoundname>openage::GameSpecHandle</compoundname>
+    <includes refid="d4/d97/game__spec_8h" local="no">game_spec.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/de7/classopenage_1_1_game_spec_handle_1a9794524a651ba717256e50a0fa4e0a37" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="de/d6a/classopenage_1_1_game_spec" kindref="compound">GameSpec</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;GameSpec&gt; openage::GameSpecHandle::spec</definition>
+        <argsstring></argsstring>
+        <name>spec</name>
+        <briefdescription>
+<para>The real game specification. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" line="307" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" bodystart="307" bodyend="-1"/>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1a4598e32e6a01733806234d193a871255" compoundref="dd/d4a/game__spec_8cpp" startline="490" endline="493">announce_spec</referencedby>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1aaf18425a59c8ec0b7e7fa176c64b8bc8" compoundref="dd/d4a/game__spec_8cpp" startline="495" endline="497">get_spec</referencedby>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1a019a81d88722206e82c7b5c87ddfe04f" compoundref="dd/d4a/game__spec_8cpp" startline="481" endline="488">invalidate</referencedby>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1a66912843935edcdb600cd47bc58e6cb0" compoundref="dd/d4a/game__spec_8cpp" startline="477" endline="479">is_ready</referencedby>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1afcf8867f4e0077e6a8a2a6fe6c0c98ff" compoundref="dd/d4a/game__spec_8cpp" startline="510" endline="546">start_load_job</referencedby>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1ab95bd8daf4250f175a5ebb3c6753277d" compoundref="dd/d4a/game__spec_8cpp" startline="499" endline="508">start_loading_if_needed</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/de7/classopenage_1_1_game_spec_handle_1a54699d8be271264a4feb3ddffe169865" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool openage::GameSpecHandle::active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <briefdescription>
+<para>enables the loading of the game specification. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" line="312" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" bodystart="312" bodyend="-1"/>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1ab7fe02e9268aff99041da5e2684d2e4d" compoundref="dd/d4a/game__spec_8cpp" startline="463" endline="467">set_active</referencedby>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1ab95bd8daf4250f175a5ebb3c6753277d" compoundref="dd/d4a/game__spec_8cpp" startline="499" endline="508">start_loading_if_needed</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/de7/classopenage_1_1_game_spec_handle_1a874f61fef1e91022de73339303291d0a" prot="private" static="no" mutable="no">
+        <type><ref refid="d4/dbb/classopenage_1_1_asset_manager" kindref="compound">AssetManager</ref> *</type>
+        <definition>AssetManager* openage::GameSpecHandle::asset_manager</definition>
+        <argsstring></argsstring>
+        <name>asset_manager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" line="314" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" bodystart="314" bodyend="-1"/>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1a23718c700764a8ffe7e3e82218b56dc8" compoundref="dd/d4a/game__spec_8cpp" startline="455" endline="461">GameSpecHandle</referencedby>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1a019a81d88722206e82c7b5c87ddfe04f" compoundref="dd/d4a/game__spec_8cpp" startline="481" endline="488">invalidate</referencedby>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1ad9c03812749a8ac9b21960e0f5bb462e" compoundref="dd/d4a/game__spec_8cpp" startline="469" endline="475">set_asset_manager</referencedby>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1afcf8867f4e0077e6a8a2a6fe6c0c98ff" compoundref="dd/d4a/game__spec_8cpp" startline="510" endline="546">start_load_job</referencedby>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1ab95bd8daf4250f175a5ebb3c6753277d" compoundref="dd/d4a/game__spec_8cpp" startline="499" endline="508">start_loading_if_needed</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d7/de7/classopenage_1_1_game_spec_handle_1a05d8b8251196b389e267b646e6356526" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="da/dde/classopenage_1_1_game_spec_signals" kindref="compound">GameSpecSignals</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;GameSpecSignals&gt; openage::GameSpecHandle::gui_signals</definition>
+        <argsstring></argsstring>
+        <name>gui_signals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" line="317" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" bodystart="317" bodyend="-1"/>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1a4598e32e6a01733806234d193a871255" compoundref="dd/d4a/game__spec_8cpp" startline="490" endline="493">announce_spec</referencedby>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1a23718c700764a8ffe7e3e82218b56dc8" compoundref="dd/d4a/game__spec_8cpp" startline="455" endline="461">GameSpecHandle</referencedby>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1afcf8867f4e0077e6a8a2a6fe6c0c98ff" compoundref="dd/d4a/game__spec_8cpp" startline="510" endline="546">start_load_job</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/de7/classopenage_1_1_game_spec_handle_1aebe7334bc966e3899eb8e0faa9c321fb" prot="public" static="no" mutable="no">
+        <type><ref refid="da/dff/classqtsdl_1_1_gui_item_link" kindref="compound">qtsdl::GuiItemLink</ref> *</type>
+        <definition>qtsdl::GuiItemLink* openage::GameSpecHandle::gui_link</definition>
+        <argsstring></argsstring>
+        <name>gui_link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" line="318" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" bodystart="318" bodyend="-1"/>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1a23718c700764a8ffe7e3e82218b56dc8" compoundref="dd/d4a/game__spec_8cpp" startline="455" endline="461">GameSpecHandle</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/de7/classopenage_1_1_game_spec_handle_1a23718c700764a8ffe7e3e82218b56dc8" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::GameSpecHandle::GameSpecHandle</definition>
+        <argsstring>(qtsdl::GuiItemLink *gui_link)</argsstring>
+        <name>GameSpecHandle</name>
+        <param>
+          <type><ref refid="da/dff/classqtsdl_1_1_gui_item_link" kindref="compound">qtsdl::GuiItemLink</ref> *</type>
+          <declname>gui_link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" line="254" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.cpp" bodystart="455" bodyend="461"/>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1a874f61fef1e91022de73339303291d0a" compoundref="d4/d97/game__spec_8h" startline="314">asset_manager</references>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1aebe7334bc966e3899eb8e0faa9c321fb" compoundref="d4/d97/game__spec_8h" startline="318">gui_link</references>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1a05d8b8251196b389e267b646e6356526" compoundref="d4/d97/game__spec_8h" startline="317">gui_signals</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/de7/classopenage_1_1_game_spec_handle_1ab7fe02e9268aff99041da5e2684d2e4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::GameSpecHandle::set_active</definition>
+        <argsstring>(bool active)</argsstring>
+        <name>set_active</name>
+        <param>
+          <type>bool</type>
+          <declname>active</declname>
+        </param>
+        <briefdescription>
+<para>Control whether this specification can be loaded (=true) or will not be loaded (=false). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" line="260" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.cpp" bodystart="463" bodyend="467"/>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1a54699d8be271264a4feb3ddffe169865" compoundref="d4/d97/game__spec_8h" startline="312">active</references>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1ab95bd8daf4250f175a5ebb3c6753277d" compoundref="dd/d4a/game__spec_8cpp" startline="499" endline="508">start_loading_if_needed</references>
+        <referencedby refid="d2/d90/classopenage_1_1gui_1_1_game_spec_link_1a65d2c73c99d6724ead9ca41556253c56" compoundref="d9/d8d/game__spec__link_8cpp" startline="86" endline="93">openage::gui::GameSpecLink::set_active</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/de7/classopenage_1_1_game_spec_handle_1ad9c03812749a8ac9b21960e0f5bb462e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::GameSpecHandle::set_asset_manager</definition>
+        <argsstring>(AssetManager *asset_manager)</argsstring>
+        <name>set_asset_manager</name>
+        <param>
+          <type><ref refid="d4/dbb/classopenage_1_1_asset_manager" kindref="compound">AssetManager</ref> *</type>
+          <declname>asset_manager</declname>
+        </param>
+        <briefdescription>
+<para>invoked from qml when the asset_manager member is set. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" line="265" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.cpp" bodystart="469" bodyend="475"/>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1a874f61fef1e91022de73339303291d0a" compoundref="d4/d97/game__spec_8h" startline="314">asset_manager</references>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1ab95bd8daf4250f175a5ebb3c6753277d" compoundref="dd/d4a/game__spec_8cpp" startline="499" endline="508">start_loading_if_needed</references>
+        <referencedby refid="d2/d90/classopenage_1_1gui_1_1_game_spec_link_1acee4b3764eaa0e07144e164b8b7bdca0" compoundref="d9/d8d/game__spec__link_8cpp" startline="99" endline="104">openage::gui::GameSpecLink::set_asset_manager</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/de7/classopenage_1_1_game_spec_handle_1a66912843935edcdb600cd47bc58e6cb0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::GameSpecHandle::is_ready</definition>
+        <argsstring>() const</argsstring>
+        <name>is_ready</name>
+        <briefdescription>
+<para>Return if the specification was fully loaded. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" line="270" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.cpp" bodystart="477" bodyend="479"/>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1a9794524a651ba717256e50a0fa4e0a37" compoundref="d4/d97/game__spec_8h" startline="307">spec</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/de7/classopenage_1_1_game_spec_handle_1a019a81d88722206e82c7b5c87ddfe04f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::GameSpecHandle::invalidate</definition>
+        <argsstring>()</argsstring>
+        <name>invalidate</name>
+        <briefdescription>
+<para>forget everything about the specification and reload it with <computeroutput>start_loading_if_needed</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" line="276" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.cpp" bodystart="481" bodyend="488"/>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1a874f61fef1e91022de73339303291d0a" compoundref="d4/d97/game__spec_8h" startline="314">asset_manager</references>
+        <references refid="d4/dbb/classopenage_1_1_asset_manager_1add18a1e0933affe40c982f62c88f4c05" compoundref="d4/d03/assetmanager_8cpp" startline="133" endline="170">openage::AssetManager::check_updates</references>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1a9794524a651ba717256e50a0fa4e0a37" compoundref="d4/d97/game__spec_8h" startline="307">spec</references>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1ab95bd8daf4250f175a5ebb3c6753277d" compoundref="dd/d4a/game__spec_8cpp" startline="499" endline="508">start_loading_if_needed</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/de7/classopenage_1_1_game_spec_handle_1a4598e32e6a01733806234d193a871255" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::GameSpecHandle::announce_spec</definition>
+        <argsstring>()</argsstring>
+        <name>announce_spec</name>
+        <briefdescription>
+<para>signal about a loaded spec if any </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" line="281" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.cpp" bodystart="490" bodyend="493"/>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1a05d8b8251196b389e267b646e6356526" compoundref="d4/d97/game__spec_8h" startline="317">gui_signals</references>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1a9794524a651ba717256e50a0fa4e0a37" compoundref="d4/d97/game__spec_8h" startline="307">spec</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/de7/classopenage_1_1_game_spec_handle_1aaf18425a59c8ec0b7e7fa176c64b8bc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="de/d6a/classopenage_1_1_game_spec" kindref="compound">GameSpec</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; GameSpec &gt; openage::GameSpecHandle::get_spec</definition>
+        <argsstring>()</argsstring>
+        <name>get_spec</name>
+        <briefdescription>
+<para>Return the contained game specification. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" line="286" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.cpp" bodystart="495" bodyend="497"/>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1a9794524a651ba717256e50a0fa4e0a37" compoundref="d4/d97/game__spec_8h" startline="307">spec</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d7/de7/classopenage_1_1_game_spec_handle_1ab95bd8daf4250f175a5ebb3c6753277d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::GameSpecHandle::start_loading_if_needed</definition>
+        <argsstring>()</argsstring>
+        <name>start_loading_if_needed</name>
+        <briefdescription>
+<para>load the game specification if not already present. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" line="292" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.cpp" bodystart="499" bodyend="508"/>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1a54699d8be271264a4feb3ddffe169865" compoundref="d4/d97/game__spec_8h" startline="312">active</references>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1a874f61fef1e91022de73339303291d0a" compoundref="d4/d97/game__spec_8h" startline="314">asset_manager</references>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1a9794524a651ba717256e50a0fa4e0a37" compoundref="d4/d97/game__spec_8h" startline="307">spec</references>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1afcf8867f4e0077e6a8a2a6fe6c0c98ff" compoundref="dd/d4a/game__spec_8cpp" startline="510" endline="546">start_load_job</references>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1a019a81d88722206e82c7b5c87ddfe04f" compoundref="dd/d4a/game__spec_8cpp" startline="481" endline="488">invalidate</referencedby>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1ab7fe02e9268aff99041da5e2684d2e4d" compoundref="dd/d4a/game__spec_8cpp" startline="463" endline="467">set_active</referencedby>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1ad9c03812749a8ac9b21960e0f5bb462e" compoundref="dd/d4a/game__spec_8cpp" startline="469" endline="475">set_asset_manager</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/de7/classopenage_1_1_game_spec_handle_1afcf8867f4e0077e6a8a2a6fe6c0c98ff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::GameSpecHandle::start_load_job</definition>
+        <argsstring>()</argsstring>
+        <name>start_load_job</name>
+        <briefdescription>
+<para>Actually dispatch the loading job to the job manager. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" line="297" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.cpp" bodystart="510" bodyend="546"/>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1a874f61fef1e91022de73339303291d0a" compoundref="d4/d97/game__spec_8h" startline="314">asset_manager</references>
+        <references refid="dc/d9a/classopenage_1_1job_1_1_job_manager_1ab12ca59d9b54653a1106a405a23721b2" compoundref="d3/de6/job__manager_8h" startline="93" endline="98">openage::job::JobManager::enqueue</references>
+        <references refid="d2/d0d/message_8h_1a735563036dced0b7d6cc98f97ea4978b" compoundref="d2/d0d/message_8h" startline="179">ERR</references>
+        <references refid="d4/dbb/classopenage_1_1_asset_manager_1a50069b4b3cd4b5fcf8fb5f4b480c721d" compoundref="d4/d03/assetmanager_8cpp" startline="53" endline="55">openage::AssetManager::get_engine</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1a65102655ef3f9fb0fc8617deb7e80c02" compoundref="da/d5c/engine_8cpp" startline="493" endline="495">openage::Engine::get_job_manager</references>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1a05d8b8251196b389e267b646e6356526" compoundref="d4/d97/game__spec_8h" startline="317">gui_signals</references>
+        <references refid="d5/d0e/namespaceopenage_1_1testing_1_1testing_1ac25bf81db406af62d08113ef7ae9fd6e" compoundref="de/dd3/testing_8py" startline="42" endline="45">openage.testing.testing.result</references>
+        <references refid="d7/de7/classopenage_1_1_game_spec_handle_1a9794524a651ba717256e50a0fa4e0a37" compoundref="d4/d97/game__spec_8h" startline="307">spec</references>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1ab95bd8daf4250f175a5ebb3c6753277d" compoundref="dd/d4a/game__spec_8cpp" startline="499" endline="508">start_loading_if_needed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d7/de7/classopenage_1_1_game_spec_handle_1ab576a5e43a862b3383b7ba1e19b73545" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::GameSpecHandle::on_loaded</definition>
+        <argsstring>(job::result_function_t&lt; bool &gt; result)</argsstring>
+        <name>on_loaded</name>
+        <param>
+          <type><ref refid="d6/d74/namespaceopenage_1_1job_1aa7f614139b9f8585d91285475c260c2f" kindref="member">job::result_function_t</ref>&lt; bool &gt;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>called from the job manager when the loading job finished. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" line="302" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Game specification instanciated in QML. </para>    </briefdescription>
+    <detaileddescription>
+<para>Linked to the &quot;GameSpec&quot; QML type.</para><para>Wraps the &quot;GameSpec&quot; C++ class from above. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="2631">
+        <label>CoordNeSeUpAbsolute&lt; phys_t, phys3, phys3_delta &gt;</label>
+      </node>
+      <node id="2596">
+        <label>openage::util::Path</label>
+        <link refid="dd/dc1/classopenage_1_1util_1_1_path"/>
+      </node>
+      <node id="2607">
+        <label>openage::EngineSignals</label>
+        <link refid="de/dbb/classopenage_1_1_engine_signals"/>
+        <childnode refid="2608" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2632">
+        <label>openage::coord::camgame_delta</label>
+        <link refid="d5/d40/structopenage_1_1coord_1_1camgame__delta"/>
+        <childnode refid="2633" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2602">
+        <label>openage::util::VariableBase</label>
+        <link refid="da/d0a/classopenage_1_1util_1_1_variable_base"/>
+      </node>
+      <node id="2610">
+        <label>openage::ScreenshotManager</label>
+        <link refid="d5/dfd/classopenage_1_1_screenshot_manager"/>
+        <childnode refid="2611" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+        <childnode refid="2612" relation="usage">
+          <edgelabel>+window_size</edgelabel>
+        </childnode>
+      </node>
+      <node id="2604">
+        <label>T</label>
+      </node>
+      <node id="2635">
+        <label>qtsdl::GuiItemLink</label>
+        <link refid="da/dff/classqtsdl_1_1_gui_item_link"/>
+      </node>
+      <node id="2613">
+        <label>CoordXYRelative&lt; pixel_t, viewport, viewport_delta &gt;</label>
+      </node>
+      <node id="2601">
+        <label>openage::util::Variable&lt; bool &gt;</label>
+        <link refid="df/d2d/classopenage_1_1util_1_1_variable"/>
+        <childnode refid="2602" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2603" relation="template-instance">
+          <edgelabel>&lt; bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2608">
+        <label>QObject</label>
+      </node>
+      <node id="2609">
+        <label>openage::cvar::CVarManager</label>
+        <link refid="db/db2/classopenage_1_1cvar_1_1_c_var_manager"/>
+        <childnode refid="2596" relation="usage">
+          <edgelabel>-path</edgelabel>
+        </childnode>
+      </node>
+      <node id="2630">
+        <label>openage::coord::phys3</label>
+        <link refid="d2/da4/structopenage_1_1coord_1_1phys3"/>
+        <childnode refid="2631" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2616">
+        <label>openage::util::ExternalProfiler</label>
+        <link refid="dd/d6f/classopenage_1_1util_1_1_external_profiler"/>
+      </node>
+      <node id="2599">
+        <label>openage::options::OptionNode</label>
+        <link refid="d9/d52/classopenage_1_1options_1_1_option_node"/>
+        <childnode refid="2599" relation="usage">
+          <edgelabel>-parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2628">
+        <label>openage::coord::viewport</label>
+        <link refid="d2/dcd/structopenage_1_1coord_1_1viewport"/>
+        <childnode refid="2629" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2624">
+        <label>openage::input::ActionManager</label>
+        <link refid="d4/de2/classopenage_1_1input_1_1_action_manager"/>
+        <childnode refid="2609" relation="usage">
+          <edgelabel>-cvar_manager</edgelabel>
+        </childnode>
+        <childnode refid="2617" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2626">
+        <label>qtsdl::GuiSingletonItemsInfo</label>
+        <link refid="d2/dbf/classqtsdl_1_1_gui_singleton_items_info"/>
+      </node>
+      <node id="2612">
+        <label>openage::coord::viewport_delta</label>
+        <link refid="d5/d5e/structopenage_1_1coord_1_1viewport__delta"/>
+        <childnode refid="2613" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2623">
+        <label>CoordXYRelative&lt; pixel_t, input, input_delta &gt;</label>
+      </node>
+      <node id="2605">
+        <label>openage::options::Var&lt; T &gt;</label>
+        <link refid="d6/d6a/classopenage_1_1options_1_1_var"/>
+        <childnode refid="2603" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2619">
+        <label>openage::coord::input</label>
+        <link refid="d8/d34/structopenage_1_1coord_1_1input"/>
+        <childnode refid="2620" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2633">
+        <label>CoordXYRelative&lt; pixel_t, camgame, camgame_delta &gt;</label>
+      </node>
+      <node id="2611">
+        <label>openage::job::JobManager</label>
+        <link refid="dc/d9a/classopenage_1_1job_1_1_job_manager"/>
+      </node>
+      <node id="2620">
+        <label>CoordXYAbsolute&lt; pixel_t, input, input_delta &gt;</label>
+      </node>
+      <node id="2614">
+        <label>openage::util::FrameCounter</label>
+        <link refid="d9/d71/classopenage_1_1util_1_1_frame_counter"/>
+        <childnode refid="2615" relation="usage">
+          <edgelabel>-frame_timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="2621">
+        <label>openage::input::InputContext</label>
+        <link refid="d7/d57/classopenage_1_1input_1_1_input_context"/>
+        <childnode refid="2617" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2625">
+        <label>openage::gui::EngineQMLInfo</label>
+        <link refid="d4/d73/classopenage_1_1gui_1_1_engine_q_m_l_info"/>
+        <childnode refid="2626" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2596" relation="usage">
+          <edgelabel>+asset_dir</edgelabel>
+        </childnode>
+        <childnode refid="2597" relation="usage">
+          <edgelabel>+engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="2634">
+        <label>openage::audio::AudioManager</label>
+        <link refid="d0/d62/classopenage_1_1audio_1_1_audio_manager"/>
+        <childnode refid="2611" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2606">
+        <label>openage::util::Profiler</label>
+        <link refid="db/de7/classopenage_1_1util_1_1_profiler"/>
+        <childnode refid="2597" relation="usage">
+          <edgelabel>-engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="2597">
+        <label>openage::Engine</label>
+        <link refid="d6/d40/classopenage_1_1_engine"/>
+        <childnode refid="2598" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2599" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2600" relation="usage">
+          <edgelabel>+drawing_huds</edgelabel>
+          <edgelabel>+drawing_debug_overlay</edgelabel>
+        </childnode>
+        <childnode refid="2606" relation="usage">
+          <edgelabel>-profiler</edgelabel>
+        </childnode>
+        <childnode refid="2596" relation="usage">
+          <edgelabel>-root_dir</edgelabel>
+        </childnode>
+        <childnode refid="2607" relation="usage">
+          <edgelabel>+gui_signals</edgelabel>
+        </childnode>
+        <childnode refid="2609" relation="usage">
+          <edgelabel>-cvar_manager</edgelabel>
+        </childnode>
+        <childnode refid="2610" relation="usage">
+          <edgelabel>-screenshot_manager</edgelabel>
+        </childnode>
+        <childnode refid="2614" relation="usage">
+          <edgelabel>-fps_counter</edgelabel>
+        </childnode>
+        <childnode refid="2616" relation="usage">
+          <edgelabel>+external_profiler</edgelabel>
+        </childnode>
+        <childnode refid="2617" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+        <childnode refid="2625" relation="usage">
+          <edgelabel>-qml_info</edgelabel>
+        </childnode>
+        <childnode refid="2627" relation="usage">
+          <edgelabel>+coord</edgelabel>
+        </childnode>
+        <childnode refid="2611" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+        <childnode refid="2624" relation="usage">
+          <edgelabel>-action_manager</edgelabel>
+        </childnode>
+        <childnode refid="2634" relation="usage">
+          <edgelabel>-audio_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2629">
+        <label>CoordXYAbsolute&lt; pixel_t, viewport, viewport_delta &gt;</label>
+      </node>
+      <node id="2598">
+        <label>openage::ResizeHandler</label>
+        <link refid="db/d8a/classopenage_1_1_resize_handler"/>
+      </node>
+      <node id="2600">
+        <label>openage::options::Var&lt; bool &gt;</label>
+        <link refid="d6/d6a/classopenage_1_1options_1_1_var"/>
+        <childnode refid="2601" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2605" relation="template-instance">
+          <edgelabel>&lt; bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2622">
+        <label>openage::coord::input_delta</label>
+        <link refid="d8/db7/structopenage_1_1coord_1_1input__delta"/>
+        <childnode refid="2623" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2615">
+        <label>openage::util::Timer</label>
+        <link refid="d3/d81/classopenage_1_1util_1_1_timer"/>
+      </node>
+      <node id="2594">
+        <label>openage::GameSpecHandle</label>
+        <link refid="d7/de7/classopenage_1_1_game_spec_handle"/>
+        <childnode refid="2595" relation="usage">
+          <edgelabel>-asset_manager</edgelabel>
+        </childnode>
+        <childnode refid="2635" relation="usage">
+          <edgelabel>+gui_link</edgelabel>
+        </childnode>
+      </node>
+      <node id="2618">
+        <label>openage::InputHandler</label>
+        <link refid="da/dc5/classopenage_1_1_input_handler"/>
+      </node>
+      <node id="2603">
+        <label>openage::util::Variable&lt; T &gt;</label>
+        <link refid="df/d2d/classopenage_1_1util_1_1_variable"/>
+        <childnode refid="2602" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2604" relation="usage">
+          <edgelabel>+value</edgelabel>
+        </childnode>
+      </node>
+      <node id="2617">
+        <label>openage::input::InputManager</label>
+        <link refid="d7/df3/classopenage_1_1input_1_1_input_manager"/>
+        <childnode refid="2618" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2619" relation="usage">
+          <edgelabel>-mouse_position</edgelabel>
+        </childnode>
+        <childnode refid="2621" relation="usage">
+          <edgelabel>-global_context</edgelabel>
+        </childnode>
+        <childnode refid="2622" relation="usage">
+          <edgelabel>-mouse_motion</edgelabel>
+        </childnode>
+        <childnode refid="2624" relation="usage">
+          <edgelabel>-action_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2595">
+        <label>openage::AssetManager</label>
+        <link refid="d4/dbb/classopenage_1_1_asset_manager"/>
+        <childnode refid="2596" relation="usage">
+          <edgelabel>-asset_path</edgelabel>
+        </childnode>
+        <childnode refid="2597" relation="usage">
+          <edgelabel>-engine</edgelabel>
+        </childnode>
+        <childnode refid="2635" relation="usage">
+          <edgelabel>+gui_link</edgelabel>
+        </childnode>
+      </node>
+      <node id="2627">
+        <label>openage::coord::CoordManager</label>
+        <link refid="de/db5/classopenage_1_1coord_1_1_coord_manager"/>
+        <childnode refid="2628" relation="usage">
+          <edgelabel>+camgame_viewport</edgelabel>
+          <edgelabel>+camhud_viewport</edgelabel>
+        </childnode>
+        <childnode refid="2630" relation="usage">
+          <edgelabel>+camgame_phys</edgelabel>
+        </childnode>
+        <childnode refid="2632" relation="usage">
+          <edgelabel>+tile_size</edgelabel>
+        </childnode>
+        <childnode refid="2612" relation="usage">
+          <edgelabel>+viewport_size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" line="252" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/game_spec.h" bodystart="252" bodyend="319"/>
+    <listofallmembers>
+      <member refid="d7/de7/classopenage_1_1_game_spec_handle_1a54699d8be271264a4feb3ddffe169865" prot="private" virt="non-virtual"><scope>openage::GameSpecHandle</scope><name>active</name></member>
+      <member refid="d7/de7/classopenage_1_1_game_spec_handle_1a4598e32e6a01733806234d193a871255" prot="public" virt="non-virtual"><scope>openage::GameSpecHandle</scope><name>announce_spec</name></member>
+      <member refid="d7/de7/classopenage_1_1_game_spec_handle_1a874f61fef1e91022de73339303291d0a" prot="private" virt="non-virtual"><scope>openage::GameSpecHandle</scope><name>asset_manager</name></member>
+      <member refid="d7/de7/classopenage_1_1_game_spec_handle_1a23718c700764a8ffe7e3e82218b56dc8" prot="public" virt="non-virtual"><scope>openage::GameSpecHandle</scope><name>GameSpecHandle</name></member>
+      <member refid="d7/de7/classopenage_1_1_game_spec_handle_1aaf18425a59c8ec0b7e7fa176c64b8bc8" prot="public" virt="non-virtual"><scope>openage::GameSpecHandle</scope><name>get_spec</name></member>
+      <member refid="d7/de7/classopenage_1_1_game_spec_handle_1aebe7334bc966e3899eb8e0faa9c321fb" prot="public" virt="non-virtual"><scope>openage::GameSpecHandle</scope><name>gui_link</name></member>
+      <member refid="d7/de7/classopenage_1_1_game_spec_handle_1a05d8b8251196b389e267b646e6356526" prot="public" virt="non-virtual"><scope>openage::GameSpecHandle</scope><name>gui_signals</name></member>
+      <member refid="d7/de7/classopenage_1_1_game_spec_handle_1a019a81d88722206e82c7b5c87ddfe04f" prot="public" virt="non-virtual"><scope>openage::GameSpecHandle</scope><name>invalidate</name></member>
+      <member refid="d7/de7/classopenage_1_1_game_spec_handle_1a66912843935edcdb600cd47bc58e6cb0" prot="public" virt="non-virtual"><scope>openage::GameSpecHandle</scope><name>is_ready</name></member>
+      <member refid="d7/de7/classopenage_1_1_game_spec_handle_1ab576a5e43a862b3383b7ba1e19b73545" prot="private" virt="non-virtual"><scope>openage::GameSpecHandle</scope><name>on_loaded</name></member>
+      <member refid="d7/de7/classopenage_1_1_game_spec_handle_1ab7fe02e9268aff99041da5e2684d2e4d" prot="public" virt="non-virtual"><scope>openage::GameSpecHandle</scope><name>set_active</name></member>
+      <member refid="d7/de7/classopenage_1_1_game_spec_handle_1ad9c03812749a8ac9b21960e0f5bb462e" prot="public" virt="non-virtual"><scope>openage::GameSpecHandle</scope><name>set_asset_manager</name></member>
+      <member refid="d7/de7/classopenage_1_1_game_spec_handle_1a9794524a651ba717256e50a0fa4e0a37" prot="private" virt="non-virtual"><scope>openage::GameSpecHandle</scope><name>spec</name></member>
+      <member refid="d7/de7/classopenage_1_1_game_spec_handle_1afcf8867f4e0077e6a8a2a6fe6c0c98ff" prot="private" virt="non-virtual"><scope>openage::GameSpecHandle</scope><name>start_load_job</name></member>
+      <member refid="d7/de7/classopenage_1_1_game_spec_handle_1ab95bd8daf4250f175a5ebb3c6753277d" prot="private" virt="non-virtual"><scope>openage::GameSpecHandle</scope><name>start_loading_if_needed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

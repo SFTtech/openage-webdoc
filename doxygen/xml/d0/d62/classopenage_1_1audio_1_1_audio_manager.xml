@@ -1,0 +1,543 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d0/d62/classopenage_1_1audio_1_1_audio_manager" kind="class" language="C++" prot="public">
+    <compoundname>openage::audio::AudioManager</compoundname>
+    <includes refid="da/d68/audio__manager_8h" local="no">audio_manager.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a50914f77c7cf4fb97616c898c5291f4b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Sound</definition>
+        <argsstring></argsstring>
+        <name>Sound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="90" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1ad9a24264ec70c9075d21fb84ce5b9fc6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool openage::audio::AudioManager::available</definition>
+        <argsstring></argsstring>
+        <name>available</name>
+        <briefdescription>
+<para>If no audio device was found, this audio manager will be unavailable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="96" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" bodystart="96" bodyend="-1"/>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a2473968954e72e8768969f2c2a9ee8dd" compoundref="d9/d47/audio__manager_8cpp" startline="48" endline="118">AudioManager</referencedby>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a4fcd0ea2e63f5035df72bdceb0ac22f2" compoundref="d9/d47/audio__manager_8cpp" startline="142" endline="160">get_sound</referencedby>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a6df7195e7f02f6959a9a241037e48657" compoundref="d9/d47/audio__manager_8cpp" startline="225" endline="227">is_available</referencedby>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a7d1dc28dded852d3eadf34771ee8f6b0" compoundref="d9/d47/audio__manager_8cpp" startline="124" endline="140">load_resources</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a504acbb591d8311262de437dec964eef" prot="private" static="no" mutable="no">
+        <type><ref refid="dc/d9a/classopenage_1_1job_1_1_job_manager" kindref="compound">job::JobManager</ref> *</type>
+        <definition>job::JobManager* openage::audio::AudioManager::job_manager</definition>
+        <argsstring></argsstring>
+        <name>job_manager</name>
+        <briefdescription>
+<para>The job manager used in this audio manager for job queuing. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="101" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a2473968954e72e8768969f2c2a9ee8dd" compoundref="d9/d47/audio__manager_8cpp" startline="48" endline="118">AudioManager</referencedby>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1add5dcdf1895b883af210f102e4e64199" compoundref="d9/d47/audio__manager_8cpp" startline="221" endline="223">get_job_manager</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a7a9a49cf22b64ad851d82e8924250793" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string openage::audio::AudioManager::device_name</definition>
+        <argsstring></argsstring>
+        <name>device_name</name>
+        <briefdescription>
+<para>the used audio device&apos;s name </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="106" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" bodystart="106" bodyend="-1"/>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a2473968954e72e8768969f2c2a9ee8dd" compoundref="d9/d47/audio__manager_8cpp" startline="48" endline="118">AudioManager</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1adc15832f7792345214cef9fe4f9c628a" prot="private" static="no" mutable="no">
+        <type>SDL_AudioSpec</type>
+        <definition>SDL_AudioSpec openage::audio::AudioManager::device_spec</definition>
+        <argsstring></argsstring>
+        <name>device_spec</name>
+        <briefdescription>
+<para>the audio output format </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="111" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" bodystart="111" bodyend="-1"/>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a2473968954e72e8768969f2c2a9ee8dd" compoundref="d9/d47/audio__manager_8cpp" startline="48" endline="118">AudioManager</referencedby>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a3da184db392ad3e0d57b1c13d241079d" compoundref="d9/d47/audio__manager_8cpp" startline="217" endline="219">get_device_spec</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1aa5adbf540e742e17d2589ef3aa622230" prot="private" static="no" mutable="no">
+        <type>SDL_AudioDeviceID</type>
+        <definition>SDL_AudioDeviceID openage::audio::AudioManager::device_id</definition>
+        <argsstring></argsstring>
+        <name>device_id</name>
+        <briefdescription>
+<para>the used audio device&apos;s id </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="116" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" bodystart="116" bodyend="-1"/>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a558810ebb9233d8f80da70d48b0bf282" compoundref="d9/d47/audio__manager_8cpp" startline="194" endline="201">add_sound</referencedby>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a2473968954e72e8768969f2c2a9ee8dd" compoundref="d9/d47/audio__manager_8cpp" startline="48" endline="118">AudioManager</referencedby>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a30af6b961d77d0b564e4813560666b2c" compoundref="d9/d47/audio__manager_8cpp" startline="203" endline="215">remove_sound</referencedby>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a94eedfc2de3d679485957dde9c77de26" compoundref="d9/d47/audio__manager_8cpp" startline="120" endline="122">~AudioManager</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1abea3f670c5b0618061c7ea795d18b978" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; int32_t[]&gt;</type>
+        <definition>std::unique_ptr&lt;int32_t[]&gt; openage::audio::AudioManager::mix_buffer</definition>
+        <argsstring></argsstring>
+        <name>mix_buffer</name>
+        <briefdescription>
+<para>Buffer used for mixing audio to one stream. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="121" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" bodystart="121" bodyend="-1"/>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a4a4b32a5632f953c11696400487b1ef5" compoundref="d9/d47/audio__manager_8cpp" startline="163" endline="192">audio_callback</referencedby>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a2473968954e72e8768969f2c2a9ee8dd" compoundref="d9/d47/audio__manager_8cpp" startline="48" endline="118">AudioManager</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a86857e2920dffa94665b69902c907512" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::tuple&lt; <ref refid="d5/d78/namespaceopenage_1_1audio_1ad0ada74763a06b76c42d3a351597e060" kindref="member">category_t</ref>, int &gt;, std::shared_ptr&lt; <ref refid="d1/da7/classopenage_1_1audio_1_1_resource" kindref="compound">Resource</ref> &gt; &gt;</type>
+        <definition>std::unordered_map&lt;std::tuple&lt;category_t,int&gt;,std::shared_ptr&lt;Resource&gt; &gt; openage::audio::AudioManager::resources</definition>
+        <argsstring></argsstring>
+        <name>resources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="123" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" bodystart="123" bodyend="-1"/>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a4fcd0ea2e63f5035df72bdceb0ac22f2" compoundref="d9/d47/audio__manager_8cpp" startline="142" endline="160">get_sound</referencedby>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a7d1dc28dded852d3eadf34771ee8f6b0" compoundref="d9/d47/audio__manager_8cpp" startline="124" endline="140">load_resources</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1ae788e584b655a72126dba0087c149ac8" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="d5/d78/namespaceopenage_1_1audio_1ad0ada74763a06b76c42d3a351597e060" kindref="member">category_t</ref>, std::vector&lt; std::shared_ptr&lt; <ref refid="d9/d91/classopenage_1_1audio_1_1_sound_impl" kindref="compound">SoundImpl</ref> &gt; &gt; &gt;</type>
+        <definition>std::unordered_map&lt;category_t,std::vector&lt;std::shared_ptr&lt;SoundImpl&gt; &gt; &gt; openage::audio::AudioManager::playing_sounds</definition>
+        <argsstring></argsstring>
+        <name>playing_sounds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="125" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" bodystart="125" bodyend="-1"/>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a558810ebb9233d8f80da70d48b0bf282" compoundref="d9/d47/audio__manager_8cpp" startline="194" endline="201">add_sound</referencedby>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a4a4b32a5632f953c11696400487b1ef5" compoundref="d9/d47/audio__manager_8cpp" startline="163" endline="192">audio_callback</referencedby>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a2473968954e72e8768969f2c2a9ee8dd" compoundref="d9/d47/audio__manager_8cpp" startline="48" endline="118">AudioManager</referencedby>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a30af6b961d77d0b564e4813560666b2c" compoundref="d9/d47/audio__manager_8cpp" startline="203" endline="215">remove_sound</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a2473968954e72e8768969f2c2a9ee8dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::audio::AudioManager::AudioManager</definition>
+        <argsstring>(job::JobManager *job_manager, const std::string &amp;device_name=&quot;&quot;)</argsstring>
+        <name>AudioManager</name>
+        <param>
+          <type><ref refid="dc/d9a/classopenage_1_1job_1_1_job_manager" kindref="compound">job::JobManager</ref> *</type>
+          <declname>job_manager</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>device_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Initializes the audio manager with the given device name. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the name is empty, the default device is used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="38" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.cpp" bodystart="48" bodyend="118"/>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a4a4b32a5632f953c11696400487b1ef5" compoundref="d9/d47/audio__manager_8cpp" startline="163" endline="192">audio_callback</references>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1ad9a24264ec70c9075d21fb84ce5b9fc6" compoundref="da/d68/audio__manager_8h" startline="96">available</references>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1aa5adbf540e742e17d2589ef3aa622230" compoundref="da/d68/audio__manager_8h" startline="116">device_id</references>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a7a9a49cf22b64ad851d82e8924250793" compoundref="da/d68/audio__manager_8h" startline="106">device_name</references>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1adc15832f7792345214cef9fe4f9c628a" compoundref="da/d68/audio__manager_8h" startline="111">device_spec</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" compoundref="d7/d66/log_2____init_____8py" startline="122" endline="125">openage::log.err</references>
+        <references refid="d5/d78/namespaceopenage_1_1audio_1ad0ada74763a06b76c42d3a351597e060a4504e1ed59cd9732b8a844e5424e6f13">openage::audio::GAME</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a403182e8d0c54bd49bea6934c3cb1e28" compoundref="d7/d66/log_2____init_____8py" startline="112" endline="115">openage::log.info</references>
+        <references refid="d5/d78/namespaceopenage_1_1audio_1ad0ada74763a06b76c42d3a351597e060a596acbde60b98295256f8e4073a8e341">openage::audio::INTERFACE</references>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a504acbb591d8311262de437dec964eef" compoundref="da/d68/audio__manager_8h" startline="101">job_manager</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1abea3f670c5b0618061c7ea795d18b978" compoundref="da/d68/audio__manager_8h" startline="121">mix_buffer</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <references refid="d5/d78/namespaceopenage_1_1audio_1ad0ada74763a06b76c42d3a351597e060ad74c735013cdd2b883e25ccca502a2e9">openage::audio::MUSIC</references>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1ae788e584b655a72126dba0087c149ac8" compoundref="da/d68/audio__manager_8h" startline="125">playing_sounds</references>
+        <references refid="d5/d78/namespaceopenage_1_1audio_1ad0ada74763a06b76c42d3a351597e060ae221efa5e7bfc56d59f71cb211533def">openage::audio::TAUNT</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a94eedfc2de3d679485957dde9c77de26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::audio::AudioManager::~AudioManager</definition>
+        <argsstring>()</argsstring>
+        <name>~AudioManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="41" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.cpp" bodystart="120" bodyend="122"/>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1aa5adbf540e742e17d2589ef3aa622230" compoundref="da/d68/audio__manager_8h" startline="116">device_id</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a9e7c0cceacd134cae9697b0ecb973052" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::audio::AudioManager::AudioManager</definition>
+        <argsstring>(const AudioManager &amp;)=delete</argsstring>
+        <name>AudioManager</name>
+        <param>
+          <type>const <ref refid="d0/d62/classopenage_1_1audio_1_1_audio_manager" kindref="compound">AudioManager</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a2ec8c23ee360c6da7babfffe7de69646" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::audio::AudioManager::AudioManager</definition>
+        <argsstring>(AudioManager &amp;&amp;)=delete</argsstring>
+        <name>AudioManager</name>
+        <param>
+          <type><ref refid="d0/d62/classopenage_1_1audio_1_1_audio_manager" kindref="compound">AudioManager</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1ac9cdf1334005ba2468acaf0adc518376" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d0/d62/classopenage_1_1audio_1_1_audio_manager" kindref="compound">AudioManager</ref> &amp;</type>
+        <definition>AudioManager&amp; openage::audio::AudioManager::operator=</definition>
+        <argsstring>(const AudioManager &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="d0/d62/classopenage_1_1audio_1_1_audio_manager" kindref="compound">AudioManager</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a0a83c35ab74dd81d00407e4c266dd543" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d0/d62/classopenage_1_1audio_1_1_audio_manager" kindref="compound">AudioManager</ref> &amp;</type>
+        <definition>AudioManager&amp; openage::audio::AudioManager::operator=</definition>
+        <argsstring>(AudioManager &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="d0/d62/classopenage_1_1audio_1_1_audio_manager" kindref="compound">AudioManager</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a7d1dc28dded852d3eadf34771ee8f6b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::audio::AudioManager::load_resources</definition>
+        <argsstring>(const std::vector&lt; resource_def &gt; &amp;sound_files)</argsstring>
+        <name>load_resources</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="d1/dde/structopenage_1_1audio_1_1resource__def" kindref="compound">resource_def</ref> &gt; &amp;</type>
+          <declname>sound_files</declname>
+        </param>
+        <briefdescription>
+<para>Loads all audio resources, that are specified in the sound_files vector. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sound_files</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a list of all sound resources </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="53" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.cpp" bodystart="124" bodyend="140"/>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1ad9a24264ec70c9075d21fb84ce5b9fc6" compoundref="da/d68/audio__manager_8h" startline="96">available</references>
+        <references refid="d1/da7/classopenage_1_1audio_1_1_resource_1a01dfa61156a48fe06ea5e3c22978f378" compoundref="db/d87/audio_2resource_8cpp" startline="32" endline="53">openage::audio::Resource::create_resource</references>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a96ab4e163f4ee03aaa4d1051aa51d204">openage::resource</references>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a86857e2920dffa94665b69902c907512" compoundref="da/d68/audio__manager_8h" startline="123">resources</references>
+        <referencedby refid="de/d6a/classopenage_1_1_game_spec_1a979c8104ad4832b1912e703f19558bc9" compoundref="dd/d4a/game__spec_8cpp" startline="192" endline="270">openage::GameSpec::on_gamedata_loaded</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a4fcd0ea2e63f5035df72bdceb0ac22f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/de9/classopenage_1_1audio_1_1_sound" kindref="compound">Sound</ref></type>
+        <definition>Sound openage::audio::AudioManager::get_sound</definition>
+        <argsstring>(category_t category, int id)</argsstring>
+        <name>get_sound</name>
+        <param>
+          <type><ref refid="d5/d78/namespaceopenage_1_1audio_1ad0ada74763a06b76c42d3a351597e060" kindref="member">category_t</ref></type>
+          <declname>category</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Returns a sound object with the given category and the given id. </para>        </briefdescription>
+        <detaileddescription>
+<para>If no such sound exists an <ref refid="d5/df1/classopenage_1_1audio_1_1_error" kindref="compound">Error</ref> will be thrown. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>category</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sound&apos;s category </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the sound&apos;s id </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="61" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.cpp" bodystart="142" bodyend="160"/>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1ad9a24264ec70c9075d21fb84ce5b9fc6" compoundref="da/d68/audio__manager_8h" startline="96">available</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" compoundref="d7/d66/log_2____init_____8py" startline="122" endline="125">openage::log.err</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a96ab4e163f4ee03aaa4d1051aa51d204">openage::resource</references>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a86857e2920dffa94665b69902c907512" compoundref="da/d68/audio__manager_8h" startline="123">resources</references>
+        <referencedby refid="d6/d57/classopenage_1_1_sound_1a526acd600cd69f6f421a253fc169398b" compoundref="dd/d4a/game__spec_8cpp" startline="431" endline="453">openage::Sound::play</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a4a4b32a5632f953c11696400487b1ef5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::audio::AudioManager::audio_callback</definition>
+        <argsstring>(int16_t *stream, int length)</argsstring>
+        <name>audio_callback</name>
+        <param>
+          <type>int16_t *</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Called from the audio system once to request new data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="66" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.cpp" bodystart="163" bodyend="192"/>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1abea3f670c5b0618061c7ea795d18b978" compoundref="da/d68/audio__manager_8h" startline="121">mix_buffer</references>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1ae788e584b655a72126dba0087c149ac8" compoundref="da/d68/audio__manager_8h" startline="125">playing_sounds</references>
+        <references refid="de/d60/namespaceopenage_1_1util_1acd8f5a72ed6227f640eda13229878c6f" compoundref="d4/d08/misc_8h" startline="268" endline="280">openage::util::vector_remove_swap_end</references>
+        <referencedby refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a2473968954e72e8768969f2c2a9ee8dd" compoundref="d9/d47/audio__manager_8cpp" startline="48" endline="118">AudioManager</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a3da184db392ad3e0d57b1c13d241079d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>SDL_AudioSpec</type>
+        <definition>SDL_AudioSpec openage::audio::AudioManager::get_device_spec</definition>
+        <argsstring>() const</argsstring>
+        <name>get_device_spec</name>
+        <briefdescription>
+<para>Returns the currently used audio output format. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="71" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.cpp" bodystart="217" bodyend="219"/>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1adc15832f7792345214cef9fe4f9c628a" compoundref="da/d68/audio__manager_8h" startline="111">device_spec</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1add5dcdf1895b883af210f102e4e64199" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dc/d9a/classopenage_1_1job_1_1_job_manager" kindref="compound">job::JobManager</ref> *</type>
+        <definition>job::JobManager * openage::audio::AudioManager::get_job_manager</definition>
+        <argsstring>() const</argsstring>
+        <name>get_job_manager</name>
+        <briefdescription>
+<para>Return the game engine the audio manager is attached to. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="76" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.cpp" bodystart="221" bodyend="223"/>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a504acbb591d8311262de437dec964eef" compoundref="da/d68/audio__manager_8h" startline="101">job_manager</references>
+        <referencedby refid="d4/de5/classopenage_1_1audio_1_1_dynamic_resource_1ac1ffb9fa48d2665e4452b644fbcb972c" compoundref="d7/d28/dynamic__resource_8cpp" startline="39" endline="61">openage::audio::DynamicResource::use</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a6df7195e7f02f6959a9a241037e48657" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::audio::AudioManager::is_available</definition>
+        <argsstring>() const</argsstring>
+        <name>is_available</name>
+        <briefdescription>
+<para>If this audio manager is available. </para>        </briefdescription>
+        <detaileddescription>
+<para>It&apos;s not available if </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="82" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.cpp" bodystart="225" bodyend="227"/>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1ad9a24264ec70c9075d21fb84ce5b9fc6" compoundref="da/d68/audio__manager_8h" startline="96">available</references>
+        <referencedby refid="d9/de9/classopenage_1_1audio_1_1_sound_1afc94edcbbee8f78f7c3b25c759f6ee62" compoundref="d6/df1/sound_8cpp" startline="97" endline="99">openage::audio::Sound::is_playing</referencedby>
+        <referencedby refid="d6/d57/classopenage_1_1_sound_1a526acd600cd69f6f421a253fc169398b" compoundref="dd/d4a/game__spec_8cpp" startline="431" endline="453">openage::Sound::play</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a558810ebb9233d8f80da70d48b0bf282" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::audio::AudioManager::add_sound</definition>
+        <argsstring>(std::shared_ptr&lt; SoundImpl &gt; sound)</argsstring>
+        <name>add_sound</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="d9/d91/classopenage_1_1audio_1_1_sound_impl" kindref="compound">SoundImpl</ref> &gt;</type>
+          <declname>sound</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="85" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.cpp" bodystart="194" bodyend="201"/>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1aa5adbf540e742e17d2589ef3aa622230" compoundref="da/d68/audio__manager_8h" startline="116">device_id</references>
+        <references refid="d6/d18/setup_8cpp_1a8ae9fdb10d60db487571238897882e2b" compoundref="d6/d18/setup_8cpp" startline="22">lock</references>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1ae788e584b655a72126dba0087c149ac8" compoundref="da/d68/audio__manager_8h" startline="125">playing_sounds</references>
+        <referencedby refid="d9/de9/classopenage_1_1audio_1_1_sound_1a7e4854e55386f2498a332eed36e374d4" compoundref="d6/df1/sound_8cpp" startline="51" endline="61">openage::audio::Sound::play</referencedby>
+        <referencedby refid="d9/de9/classopenage_1_1audio_1_1_sound_1a976abde72ad8a2328ef5d723d0fd7e75" compoundref="d6/df1/sound_8cpp" startline="72" endline="81">openage::audio::Sound::resume</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a30af6b961d77d0b564e4813560666b2c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::audio::AudioManager::remove_sound</definition>
+        <argsstring>(std::shared_ptr&lt; SoundImpl &gt; sound)</argsstring>
+        <name>remove_sound</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="d9/d91/classopenage_1_1audio_1_1_sound_impl" kindref="compound">SoundImpl</ref> &gt;</type>
+          <declname>sound</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="86" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.cpp" bodystart="203" bodyend="215"/>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1aa5adbf540e742e17d2589ef3aa622230" compoundref="da/d68/audio__manager_8h" startline="116">device_id</references>
+        <references refid="d6/d18/setup_8cpp_1a8ae9fdb10d60db487571238897882e2b" compoundref="d6/d18/setup_8cpp" startline="22">lock</references>
+        <references refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1ae788e584b655a72126dba0087c149ac8" compoundref="da/d68/audio__manager_8h" startline="125">playing_sounds</references>
+        <references refid="de/d60/namespaceopenage_1_1util_1acd8f5a72ed6227f640eda13229878c6f" compoundref="d4/d08/misc_8h" startline="268" endline="280">openage::util::vector_remove_swap_end</references>
+        <referencedby refid="d9/de9/classopenage_1_1audio_1_1_sound_1a2974dc942136bfead20c8f7b988cb1ac" compoundref="d6/df1/sound_8cpp" startline="64" endline="69">openage::audio::Sound::pause</referencedby>
+        <referencedby refid="d9/de9/classopenage_1_1audio_1_1_sound_1af11cd36b7a1dd5475d811e30580298fe" compoundref="d6/df1/sound_8cpp" startline="84" endline="94">openage::audio::Sound::stop</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a602bd6e6edf5d1e7c368b3f04dbc0b83" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; openage::audio::AudioManager::get_devices</definition>
+        <argsstring>()</argsstring>
+        <name>get_devices</name>
+        <briefdescription>
+<para>Returns a vector of all available device names. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="132" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.cpp" bodystart="230" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a66955e72dee06952663f77f9634a3abf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; openage::audio::AudioManager::get_drivers</definition>
+        <argsstring>()</argsstring>
+        <name>get_drivers</name>
+        <briefdescription>
+<para>Returns a vector of all available driver names. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="137" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.cpp" bodystart="239" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a07e08ece558d8068ef0e6a114212b7d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string openage::audio::AudioManager::get_current_driver</definition>
+        <argsstring>()</argsstring>
+        <name>get_current_driver</name>
+        <briefdescription>
+<para>Returns the name of the currently used driver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="142" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.cpp" bodystart="248" bodyend="255"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class provides audio functionality for openage. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="464">
+        <label>openage::job::JobManager</label>
+        <link refid="dc/d9a/classopenage_1_1job_1_1_job_manager"/>
+      </node>
+      <node id="463">
+        <label>openage::audio::AudioManager</label>
+        <link refid="d0/d62/classopenage_1_1audio_1_1_audio_manager"/>
+        <childnode refid="464" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" line="32" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/audio_manager.h" bodystart="32" bodyend="143"/>
+    <listofallmembers>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a558810ebb9233d8f80da70d48b0bf282" prot="private" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>add_sound</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a4a4b32a5632f953c11696400487b1ef5" prot="public" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>audio_callback</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a2473968954e72e8768969f2c2a9ee8dd" prot="public" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>AudioManager</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a9e7c0cceacd134cae9697b0ecb973052" prot="public" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>AudioManager</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a2ec8c23ee360c6da7babfffe7de69646" prot="public" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>AudioManager</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1ad9a24264ec70c9075d21fb84ce5b9fc6" prot="private" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>available</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1aa5adbf540e742e17d2589ef3aa622230" prot="private" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>device_id</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a7a9a49cf22b64ad851d82e8924250793" prot="private" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>device_name</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1adc15832f7792345214cef9fe4f9c628a" prot="private" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>device_spec</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a07e08ece558d8068ef0e6a114212b7d4" prot="public" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>get_current_driver</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a3da184db392ad3e0d57b1c13d241079d" prot="public" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>get_device_spec</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a602bd6e6edf5d1e7c368b3f04dbc0b83" prot="public" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>get_devices</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a66955e72dee06952663f77f9634a3abf" prot="public" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>get_drivers</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1add5dcdf1895b883af210f102e4e64199" prot="public" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>get_job_manager</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a4fcd0ea2e63f5035df72bdceb0ac22f2" prot="public" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>get_sound</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a6df7195e7f02f6959a9a241037e48657" prot="public" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>is_available</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a504acbb591d8311262de437dec964eef" prot="private" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>job_manager</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a7d1dc28dded852d3eadf34771ee8f6b0" prot="public" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>load_resources</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1abea3f670c5b0618061c7ea795d18b978" prot="private" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>mix_buffer</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1ac9cdf1334005ba2468acaf0adc518376" prot="public" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>operator=</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a0a83c35ab74dd81d00407e4c266dd543" prot="public" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>operator=</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1ae788e584b655a72126dba0087c149ac8" prot="private" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>playing_sounds</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a30af6b961d77d0b564e4813560666b2c" prot="private" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>remove_sound</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a86857e2920dffa94665b69902c907512" prot="private" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>resources</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a50914f77c7cf4fb97616c898c5291f4b" prot="private" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>Sound</name></member>
+      <member refid="d0/d62/classopenage_1_1audio_1_1_audio_manager_1a94eedfc2de3d679485957dde9c77de26" prot="public" virt="non-virtual"><scope>openage::audio::AudioManager</scope><name>~AudioManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

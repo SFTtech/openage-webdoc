@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader" kind="class" language="C++" prot="public">
+    <compoundname>openage::audio::OpusDynamicLoader</compoundname>
+    <basecompoundref refid="d0/df5/classopenage_1_1audio_1_1_dynamic_loader" prot="public" virt="non-virtual">openage::audio::DynamicLoader</basecompoundref>
+    <includes refid="d8/d0a/opus__dynamic__loader_8h" local="no">opus_dynamic_loader.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1ad6be7660f97f7a1861f053f17db12bb2" prot="private" static="no" mutable="no">
+        <type><ref refid="d0/d9f/structopenage_1_1audio_1_1opus__file__t" kindref="compound">opus_file_t</ref></type>
+        <definition>opus_file_t openage::audio::OpusDynamicLoader::source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <briefdescription>
+<para>The source file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_dynamic_loader.h" line="24" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_dynamic_loader.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1a4e5604664bb038018600653c7b6300fc" compoundref="dd/d6a/opus__dynamic__loader_8cpp" startline="33" endline="98">load_chunk</referencedby>
+        <referencedby refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1aaabed108ab439a182bd2aba5bbb54e64" compoundref="dd/d6a/opus__dynamic__loader_8cpp" startline="14" endline="30">OpusDynamicLoader</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1a072f5cfe9e7514325eeb39ebfb8fd1ab" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t openage::audio::OpusDynamicLoader::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+<para>The resource&apos;s length in int16_t values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_dynamic_loader.h" line="26" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_dynamic_loader.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="d0/df0/classopenage_1_1convert_1_1dataformat_1_1members_1_1_char_array_member_1a07b4dd518b5b9151d4510d893f8c07e5" compoundref="de/d1a/members_8py" startline="564" endline="567">openage.convert.dataformat.members.CharArrayMember.__repr__</referencedby>
+        <referencedby refid="d7/da4/classopenage_1_1convert_1_1dataformat_1_1members_1_1_multisubtype_member_1ae0a3a0241b823f90f1bcb74e1619df1f" compoundref="de/d1a/members_8py" startline="803" endline="810">openage.convert.dataformat.members.MultisubtypeMember.__repr__</referencedby>
+        <referencedby refid="d7/d97/classopenage_1_1convert_1_1dataformat_1_1members_1_1_subdata_member_1a160732dffbb5935f0b02b26938d2e658" compoundref="de/d1a/members_8py" startline="867" endline="870">openage.convert.dataformat.members.SubdataMember.__repr__</referencedby>
+        <referencedby refid="dd/d6b/classopenage_1_1convert_1_1dataformat_1_1members_1_1_array_member_1a5dc1be9f5fadd1b992d6f76befb07a27" compoundref="de/d1a/members_8py" startline="880" endline="882">openage.convert.dataformat.members.ArrayMember.__repr__</referencedby>
+        <referencedby refid="d7/d7c/classopenage_1_1convert_1_1dataformat_1_1members_1_1_dyn_length_member_1a9d61825e531ff63ac842efeb88376e8c" compoundref="de/d1a/members_8py" startline="219" endline="229">openage.convert.dataformat.members.DynLengthMember.format_hash</referencedby>
+        <referencedby refid="d3/d78/classopenage_1_1convert_1_1dataformat_1_1members_1_1_data_member_1a5020d135379031c1726d24343ab23310" compoundref="de/d1a/members_8py" startline="60" endline="63">openage.convert.dataformat.members.DataMember.get_length</referencedby>
+        <referencedby refid="d7/d7c/classopenage_1_1convert_1_1dataformat_1_1members_1_1_dyn_length_member_1a14ed52f719d6d07a9f4308b6824ae6ec" compoundref="de/d1a/members_8py" startline="171" endline="203">openage.convert.dataformat.members.DynLengthMember.get_length</referencedby>
+        <referencedby refid="d7/d7c/classopenage_1_1convert_1_1dataformat_1_1members_1_1_dyn_length_member_1a65df1261e8a5c28c98ad325de5c4fdbe" compoundref="de/d1a/members_8py" startline="204" endline="218">openage.convert.dataformat.members.DynLengthMember.is_dynamic_length</referencedby>
+        <referencedby refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1a4e5604664bb038018600653c7b6300fc" compoundref="dd/d6a/opus__dynamic__loader_8cpp" startline="33" endline="98">load_chunk</referencedby>
+        <referencedby refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1aaabed108ab439a182bd2aba5bbb54e64" compoundref="dd/d6a/opus__dynamic__loader_8cpp" startline="14" endline="30">OpusDynamicLoader</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1ad32bb4bbb22deaf18966861666ed89a9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int openage::audio::OpusDynamicLoader::channels</definition>
+        <argsstring></argsstring>
+        <name>channels</name>
+        <briefdescription>
+<para>The resource&apos;s pcm channels. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_dynamic_loader.h" line="28" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_dynamic_loader.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1a4e5604664bb038018600653c7b6300fc" compoundref="dd/d6a/opus__dynamic__loader_8cpp" startline="33" endline="98">load_chunk</referencedby>
+        <referencedby refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1aaabed108ab439a182bd2aba5bbb54e64" compoundref="dd/d6a/opus__dynamic__loader_8cpp" startline="14" endline="30">OpusDynamicLoader</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1aaabed108ab439a182bd2aba5bbb54e64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::audio::OpusDynamicLoader::OpusDynamicLoader</definition>
+        <argsstring>(const util::Path &amp;path)</argsstring>
+        <name>OpusDynamicLoader</name>
+        <param>
+          <type>const <ref refid="dd/dc1/classopenage_1_1util_1_1_path" kindref="compound">util::Path</ref> &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new <ref refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader" kindref="compound">OpusDynamicLoader</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the resource&apos;s location in the filesystem </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_dynamic_loader.h" line="35" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_dynamic_loader.cpp" bodystart="14" bodyend="30"/>
+        <references refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1ad32bb4bbb22deaf18966861666ed89a9" compoundref="d8/d0a/opus__dynamic__loader_8h" startline="28">channels</references>
+        <references refid="d2/d0d/message_8h_1a735563036dced0b7d6cc98f97ea4978b" compoundref="d2/d0d/message_8h" startline="179">ERR</references>
+        <references refid="d0/d9f/structopenage_1_1audio_1_1opus__file__t_1a581840588795e9b90c6546ff24b8e189" compoundref="d6/d6a/opus__loading_8h" startline="24">openage::audio::opus_file_t::handle</references>
+        <references refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1a072f5cfe9e7514325eeb39ebfb8fd1ab" compoundref="d8/d0a/opus__dynamic__loader_8h" startline="26">length</references>
+        <references refid="d5/d78/namespaceopenage_1_1audio_1a2b9ae1ef31b0fe76e8f6d90fa1fc9db7" compoundref="d2/d8a/opus__loading_8cpp" startline="57" endline="125">openage::audio::open_opus_file</references>
+        <references refid="d0/df5/classopenage_1_1audio_1_1_dynamic_loader_1a527295cdc13c4a680af0ef0c022979f2" compoundref="d9/df3/dynamic__loader_8h" startline="26">openage::audio::DynamicLoader::path</references>
+        <references refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1ad6be7660f97f7a1861f053f17db12bb2" compoundref="d8/d0a/opus__dynamic__loader_8h" startline="24">source</references>
+      </memberdef>
+      <memberdef kind="function" id="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1aa5781d41cad8c893df451150ea047a16" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual openage::audio::OpusDynamicLoader::~OpusDynamicLoader</definition>
+        <argsstring>()=default</argsstring>
+        <name>~OpusDynamicLoader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_dynamic_loader.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1a4e5604664bb038018600653c7b6300fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t openage::audio::OpusDynamicLoader::load_chunk</definition>
+        <argsstring>(int16_t *chunk_buffer, size_t offset, size_t chunk_size) override</argsstring>
+        <name>load_chunk</name>
+        <reimplements refid="d0/df5/classopenage_1_1audio_1_1_dynamic_loader_1a3b691e2596c617e3ccbd0bc6595109db">load_chunk</reimplements>
+        <param>
+          <type>int16_t *</type>
+          <declname>chunk_buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>chunk_size</declname>
+        </param>
+        <briefdescription>
+<para>Loads a chunk of stereo pcm data from the resource. </para>        </briefdescription>
+        <detaileddescription>
+<para>The chunk of data begins at the given offset from the beginning of the resource. The actual read number of int16_t values is returned. TODO: Returns zero if the end of resource is reached.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>chunk_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the buffer to save the chunk into </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the offset from the resource&apos;s beginning </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chunk_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of int16_t values that fit in one chunk </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_dynamic_loader.h" line="38" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_dynamic_loader.cpp" bodystart="33" bodyend="98"/>
+        <references refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1ad32bb4bbb22deaf18966861666ed89a9" compoundref="d8/d0a/opus__dynamic__loader_8h" startline="28">channels</references>
+        <references refid="d2/d0d/message_8h_1a735563036dced0b7d6cc98f97ea4978b" compoundref="d2/d0d/message_8h" startline="179">ERR</references>
+        <references refid="d0/d9f/structopenage_1_1audio_1_1opus__file__t_1a581840588795e9b90c6546ff24b8e189" compoundref="d6/d6a/opus__loading_8h" startline="24">openage::audio::opus_file_t::handle</references>
+        <references refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1a072f5cfe9e7514325eeb39ebfb8fd1ab" compoundref="d8/d0a/opus__dynamic__loader_8h" startline="26">length</references>
+        <references refid="d0/df5/classopenage_1_1audio_1_1_dynamic_loader_1a527295cdc13c4a680af0ef0c022979f2" compoundref="d9/df3/dynamic__loader_8h" startline="26">openage::audio::DynamicLoader::path</references>
+        <references refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1ad6be7660f97f7a1861f053f17db12bb2" compoundref="d8/d0a/opus__dynamic__loader_8h" startline="24">source</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader" kindref="compound">OpusDynamicLoader</ref> load&apos;s opus encoded data. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="509">
+        <label>openage::audio::OpusDynamicLoader</label>
+        <link refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader"/>
+        <childnode refid="510" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="510">
+        <label>openage::audio::DynamicLoader</label>
+        <link refid="d0/df5/classopenage_1_1audio_1_1_dynamic_loader"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="513">
+        <label>openage::util::Path</label>
+        <link refid="dd/dc1/classopenage_1_1util_1_1_path"/>
+      </node>
+      <node id="511">
+        <label>openage::audio::OpusDynamicLoader</label>
+        <link refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader"/>
+        <childnode refid="512" relation="public-inheritance">
+        </childnode>
+        <childnode refid="514" relation="usage">
+          <edgelabel>-source</edgelabel>
+        </childnode>
+      </node>
+      <node id="512">
+        <label>openage::audio::DynamicLoader</label>
+        <link refid="d0/df5/classopenage_1_1audio_1_1_dynamic_loader"/>
+        <childnode refid="513" relation="usage">
+          <edgelabel>#path</edgelabel>
+        </childnode>
+      </node>
+      <node id="514">
+        <label>openage::audio::opus_file_t</label>
+        <link refid="d0/d9f/structopenage_1_1audio_1_1opus__file__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_dynamic_loader.h" line="21" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/audio/opus_dynamic_loader.h" bodystart="21" bodyend="41"/>
+    <listofallmembers>
+      <member refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1ad32bb4bbb22deaf18966861666ed89a9" prot="private" virt="non-virtual"><scope>openage::audio::OpusDynamicLoader</scope><name>channels</name></member>
+      <member refid="d0/df5/classopenage_1_1audio_1_1_dynamic_loader_1a112547e0d5b12a174840c036b80b9aad" prot="public" virt="non-virtual"><scope>openage::audio::OpusDynamicLoader</scope><name>create</name></member>
+      <member refid="d0/df5/classopenage_1_1audio_1_1_dynamic_loader_1afdb9c0cccf9847bd0dfddf24a5f93bc4" prot="public" virt="non-virtual"><scope>openage::audio::OpusDynamicLoader</scope><name>DynamicLoader</name></member>
+      <member refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1a072f5cfe9e7514325eeb39ebfb8fd1ab" prot="private" virt="non-virtual"><scope>openage::audio::OpusDynamicLoader</scope><name>length</name></member>
+      <member refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1a4e5604664bb038018600653c7b6300fc" prot="public" virt="virtual"><scope>openage::audio::OpusDynamicLoader</scope><name>load_chunk</name></member>
+      <member refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1aaabed108ab439a182bd2aba5bbb54e64" prot="public" virt="non-virtual"><scope>openage::audio::OpusDynamicLoader</scope><name>OpusDynamicLoader</name></member>
+      <member refid="d0/df5/classopenage_1_1audio_1_1_dynamic_loader_1a527295cdc13c4a680af0ef0c022979f2" prot="protected" virt="non-virtual"><scope>openage::audio::OpusDynamicLoader</scope><name>path</name></member>
+      <member refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1ad6be7660f97f7a1861f053f17db12bb2" prot="private" virt="non-virtual"><scope>openage::audio::OpusDynamicLoader</scope><name>source</name></member>
+      <member refid="d0/df5/classopenage_1_1audio_1_1_dynamic_loader_1a1ac5107750260ef94cdbdc753c238e4c" prot="public" virt="virtual"><scope>openage::audio::OpusDynamicLoader</scope><name>~DynamicLoader</name></member>
+      <member refid="d7/d48/classopenage_1_1audio_1_1_opus_dynamic_loader_1aa5781d41cad8c893df451150ea047a16" prot="public" virt="virtual"><scope>openage::audio::OpusDynamicLoader</scope><name>~OpusDynamicLoader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="df/db1/math_8h" kind="file" language="C++">
+    <compoundname>math.h</compoundname>
+    <includes local="no">cmath</includes>
+    <includedby refid="d4/d34/phys_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.cpp</includedby>
+    <includedby refid="d2/d5b/screenshot_8cpp" local="no">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/screenshot.cpp</includedby>
+    <includedby refid="de/dd2/terrain__outline_8cpp" local="no">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/terrain/terrain_outline.cpp</includedby>
+    <includedby refid="d4/dc9/unit__texture_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_texture.cpp</includedby>
+    <includedby refid="db/d01/fps_8cpp" local="no">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.cpp</includedby>
+    <incdepgraph>
+      <node id="31287">
+        <label>cmath</label>
+      </node>
+      <node id="31286">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="31287" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="31289">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/coord/phys.cpp</label>
+        <link refid="d4/d34/phys_8cpp"/>
+      </node>
+      <node id="31288">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/math.h</label>
+        <link refid="df/db1/math_8h"/>
+        <childnode refid="31289" relation="include">
+        </childnode>
+        <childnode refid="31290" relation="include">
+        </childnode>
+        <childnode refid="31291" relation="include">
+        </childnode>
+        <childnode refid="31292" relation="include">
+        </childnode>
+        <childnode refid="31293" relation="include">
+        </childnode>
+      </node>
+      <node id="31291">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/terrain/terrain_outline.cpp</label>
+        <link refid="de/dd2/terrain__outline_8cpp"/>
+      </node>
+      <node id="31290">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/screenshot.cpp</label>
+        <link refid="d2/d5b/screenshot_8cpp"/>
+      </node>
+      <node id="31293">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.cpp</label>
+        <link refid="db/d01/fps_8cpp"/>
+      </node>
+      <node id="31292">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/unit_texture.cpp</label>
+        <link refid="d4/dc9/unit__texture_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="da/d23/namespaceopenage">openage</innernamespace>
+    <innernamespace refid="df/dc9/namespaceopenage_1_1math">openage::math</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2015-2018<sp/>the<sp/>openage<sp/>authors.<sp/>See<sp/>copying.md<sp/>for<sp/>legal<sp/>info.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="da/d23/namespaceopenage" kindref="compound">openage</ref><sp/>{</highlight></codeline>
+<codeline lineno="8" refid="df/dc9/namespaceopenage_1_1math" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">math<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="11" refid="df/dc9/namespaceopenage_1_1math_1a6a3e29669397f64ce4aaedda4d844064" refkind="member"><highlight class="normal">T<sp/><ref refid="df/dc9/namespaceopenage_1_1math_1a6a3e29669397f64ce4aaedda4d844064" kindref="member">square</ref>(T<sp/>arg)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>arg<sp/>*<sp/>arg;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="17" refid="df/dc9/namespaceopenage_1_1math_1a29c55215e73408c49f2654261fd73d8e" refkind="member"><highlight class="normal">T<sp/><ref refid="df/dc9/namespaceopenage_1_1math_1a29c55215e73408c49f2654261fd73d8e" kindref="member">hypot3</ref>(T<sp/>x,<sp/>T<sp/>y,<sp/>T<sp/>z)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d8/dcc/namespacestd_1a0fc492a11cf74e80f976b24bea2a2eb2" kindref="member">sqrt</ref>(x<sp/>*<sp/>x<sp/>+<sp/>y<sp/>*<sp/>y<sp/>+<sp/>z<sp/>*<sp/>z);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}}<sp/></highlight><highlight class="comment">//<sp/>openage::util</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/math.h"/>
+  </compounddef>
+</doxygen>

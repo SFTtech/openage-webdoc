@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d4/daf/classopenage_1_1util_1_1_external_o_string_stream" kind="class" language="C++" prot="public">
+    <compoundname>openage::util::ExternalOStringStream</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ostream</basecompoundref>
+    <includes refid="dc/dcf/externalsstream_8h" local="no">externalsstream.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d4/daf/classopenage_1_1util_1_1_external_o_string_stream_1af185ce8ba6b25166cceaca7a2e55bacc" prot="private" static="no" mutable="no">
+        <type><ref refid="d4/d32/classopenage_1_1util_1_1_external_string_buf" kindref="compound">ExternalStringBuf</ref></type>
+        <definition>ExternalStringBuf openage::util::ExternalOStringStream::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/externalsstream.h" line="59" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/externalsstream.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="d4/d99/classopenage_1_1util_1_1filelike_1_1stream_1_1_stream_seek_buffer_1a37e1fc79dc2eeffcd4d529e9607db220" compoundref="d7/d0e/stream_8py" startline="53" endline="87">openage.util.filelike.stream.StreamSeekBuffer.read</referencedby>
+        <referencedby refid="df/d79/classopenage_1_1cabextract_1_1lzxdstream_1_1_l_z_x_d_stream_1a383153d8dbaf96c6e8ad44a200b2cfce" compoundref="d2/d93/lzxdstream_8py" startline="67" endline="80">openage.cabextract.lzxdstream.LZXDStream.read</referencedby>
+        <referencedby refid="d4/d99/classopenage_1_1util_1_1filelike_1_1stream_1_1_stream_seek_buffer_1ac3ea3ea3ade1644ef5d17d0231375d4b" compoundref="d7/d0e/stream_8py" startline="49" endline="52">openage.util.filelike.stream.StreamSeekBuffer.resetwrappeed</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/daf/classopenage_1_1util_1_1_external_o_string_stream_1a8f6f16ed63c32ebe6cb3956048c157d4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>openage::util::ExternalOStringStream::ExternalOStringStream</definition>
+        <argsstring>()</argsstring>
+        <name>ExternalOStringStream</name>
+        <briefdescription>
+<para>Creates a stream without a valid accumulator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/externalsstream.h" line="46" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/externalsstream.h" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/daf/classopenage_1_1util_1_1_external_o_string_stream_1aa35d807fa9bc56758974bbe602bf1a8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::util::ExternalOStringStream::use_with</definition>
+        <argsstring>(std::string &amp;output)</argsstring>
+        <name>use_with</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para>Resets the stream&apos;s flags, and sets ptr as the internally-used accumulator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/externalsstream.h" line="54" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/externalsstream.h" bodystart="54" bodyend="56"/>
+        <references refid="d4/d32/classopenage_1_1util_1_1_external_string_buf_1a92b422e9e616bcdcb82489736983b65c" compoundref="dc/dcf/externalsstream_8h" startline="21">openage::util::ExternalStringBuf::output</references>
+        <referencedby refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a9d7710f8703f4dbba1b65d8b02e84036" compoundref="d8/d00/stringformatter_8cpp" startline="22" endline="41">openage::util::CachableOSStream::acquire</referencedby>
+        <referencedby refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1acff1e0e6a81b08fac82788f921e677b7" compoundref="d8/d00/stringformatter_8cpp" startline="14" endline="19">openage::util::CachableOSStream::CachableOSStream</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Similar to std::ostringstream, but data is written to an external string object. </para>    </briefdescription>
+    <detaileddescription>
+<para>Using this stream before calling use_with will result in undefined behavior. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5832">
+        <label>openage::util::ExternalOStringStream</label>
+        <link refid="d4/daf/classopenage_1_1util_1_1_external_o_string_stream"/>
+        <childnode refid="5833" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5833">
+        <label>std::ostream</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5834">
+        <label>openage::util::ExternalOStringStream</label>
+        <link refid="d4/daf/classopenage_1_1util_1_1_external_o_string_stream"/>
+        <childnode refid="5835" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5836" relation="usage">
+          <edgelabel>-buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="5837">
+        <label>std::streambuf</label>
+      </node>
+      <node id="5835">
+        <label>std::ostream</label>
+      </node>
+      <node id="5836">
+        <label>openage::util::ExternalStringBuf</label>
+        <link refid="d4/d32/classopenage_1_1util_1_1_external_string_buf"/>
+        <childnode refid="5837" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/externalsstream.h" line="41" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/externalsstream.h" bodystart="41" bodyend="60"/>
+    <listofallmembers>
+      <member refid="d4/daf/classopenage_1_1util_1_1_external_o_string_stream_1af185ce8ba6b25166cceaca7a2e55bacc" prot="private" virt="non-virtual"><scope>openage::util::ExternalOStringStream</scope><name>buf</name></member>
+      <member refid="d4/daf/classopenage_1_1util_1_1_external_o_string_stream_1a8f6f16ed63c32ebe6cb3956048c157d4" prot="public" virt="non-virtual"><scope>openage::util::ExternalOStringStream</scope><name>ExternalOStringStream</name></member>
+      <member refid="d4/daf/classopenage_1_1util_1_1_external_o_string_stream_1aa35d807fa9bc56758974bbe602bf1a8e" prot="public" virt="non-virtual"><scope>openage::util::ExternalOStringStream</scope><name>use_with</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

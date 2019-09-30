@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="de/d7a/classopenage_1_1_civilisation" kind="class" language="C++" prot="public">
+    <compoundname>openage::Civilisation</compoundname>
+    <includes refid="d6/db2/civilisation_8h" local="no">civilisation.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="de/d7a/classopenage_1_1_civilisation_1a2f86a0247609bab4d68b2d918b96c49a" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int openage::Civilisation::civ_id</definition>
+        <argsstring></argsstring>
+        <name>civ_id</name>
+        <briefdescription>
+<para>civ index </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" line="24" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="de/d7a/classopenage_1_1_civilisation_1abdf1eb9f96df9f35741f8f6bb763c403" compoundref="db/d4c/civilisation_8cpp" startline="47" endline="53">initialise_unit_types</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d7a/classopenage_1_1_civilisation_1abfe7c1fb0da5297fe076417bda22e711" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string openage::Civilisation::civ_name</definition>
+        <argsstring></argsstring>
+        <name>civ_name</name>
+        <briefdescription>
+<para>civ name </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" line="29" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="de/d7a/classopenage_1_1_civilisation_1ad42026f252bdf28b9d48b39a8535e2a3" compoundref="db/d4c/civilisation_8cpp" startline="11" endline="16">Civilisation</referencedby>
+        <referencedby refid="de/d7a/classopenage_1_1_civilisation_1abdf1eb9f96df9f35741f8f6bb763c403" compoundref="db/d4c/civilisation_8cpp" startline="47" endline="53">initialise_unit_types</referencedby>
+        <referencedby refid="d8/d47/classopenage_1_1_player_1a95a450855aec639900bf4b5d24e98521" compoundref="db/d80/player_8cpp" startline="138" endline="146">openage::Player::initialise_unit_types</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="de/d7a/classopenage_1_1_civilisation_1a12246fe137d4a5cccb044eb2f1c6932b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="d3/d6c/classopenage_1_1_unit_type_meta" kindref="compound">UnitTypeMeta</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;UnitTypeMeta&gt; &gt; openage::Civilisation::civ_objects</definition>
+        <argsstring></argsstring>
+        <name>civ_objects</name>
+        <briefdescription>
+<para>unit types which can be produced by this civilisation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" line="66" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="de/d7a/classopenage_1_1_civilisation_1abdf1eb9f96df9f35741f8f6bb763c403" compoundref="db/d4c/civilisation_8cpp" startline="47" endline="53">initialise_unit_types</referencedby>
+        <referencedby refid="de/d7a/classopenage_1_1_civilisation_1acc3a4d02c42d7f8eda5b9b87175f4613" compoundref="db/d4c/civilisation_8cpp" startline="19" endline="21">object_meta</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d7a/classopenage_1_1_civilisation_1ade8432645da979f0ca6cb1c53ef030d9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; openage::Civilisation::all_categories</definition>
+        <argsstring></argsstring>
+        <name>all_categories</name>
+        <briefdescription>
+<para>all available categories of units </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" line="71" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="de/d7a/classopenage_1_1_civilisation_1a7ea9f34ae76ff29cbcce2ce4cb7da55f" compoundref="db/d4c/civilisation_8cpp" startline="56" endline="62">add_to_category</referencedby>
+        <referencedby refid="de/d7a/classopenage_1_1_civilisation_1a55ec689e9aed7d40b9d0aa7e2c478d96" compoundref="db/d4c/civilisation_8cpp" startline="33" endline="35">get_type_categories</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d7a/classopenage_1_1_civilisation_1a0472503729127b8d20d0f3708491952f" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, std::vector&lt; <ref refid="da/d23/namespaceopenage_1a8f00ffffd7d8386f3c406ec373e100bf" kindref="member">index_t</ref> &gt; &gt;</type>
+        <definition>std::unordered_map&lt;std::string, std::vector&lt;index_t&gt; &gt; openage::Civilisation::categories</definition>
+        <argsstring></argsstring>
+        <name>categories</name>
+        <briefdescription>
+<para>category lists </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" line="76" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="de/d7a/classopenage_1_1_civilisation_1a7ea9f34ae76ff29cbcce2ce4cb7da55f" compoundref="db/d4c/civilisation_8cpp" startline="56" endline="62">add_to_category</referencedby>
+        <referencedby refid="de/d7a/classopenage_1_1_civilisation_1aa8c2247f2c5b183fc77ae550307ef426" compoundref="db/d4c/civilisation_8cpp" startline="24" endline="30">get_category</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="de/d7a/classopenage_1_1_civilisation_1adc0e6636a587343c1e728e4a374eaed8" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="da/d23/namespaceopenage_1a8f00ffffd7d8386f3c406ec373e100bf" kindref="member">index_t</ref>, const gamedata::building_unit * &gt;</type>
+        <definition>std::unordered_map&lt;index_t, const gamedata::building_unit *&gt; openage::Civilisation::buildings</definition>
+        <argsstring></argsstring>
+        <name>buildings</name>
+        <briefdescription>
+<para>used for annex creation </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" line="81" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" bodystart="81" bodyend="-1"/>
+        <referencedby refid="de/d7a/classopenage_1_1_civilisation_1aac6dfa467902f19637b13afcbe2c927b" compoundref="db/d4c/civilisation_8cpp" startline="38" endline="44">get_building_data</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="de/d7a/classopenage_1_1_civilisation_1ad42026f252bdf28b9d48b39a8535e2a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::Civilisation::Civilisation</definition>
+        <argsstring>(const GameSpec &amp;spec, int id)</argsstring>
+        <name>Civilisation</name>
+        <param>
+          <type>const <ref refid="de/d6a/classopenage_1_1_game_spec" kindref="compound">GameSpec</ref> &amp;</type>
+          <declname>spec</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" line="19" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.cpp" bodystart="11" bodyend="16"/>
+        <references refid="de/d7a/classopenage_1_1_civilisation_1abfe7c1fb0da5297fe076417bda22e711" compoundref="d6/db2/civilisation_8h" startline="29">civ_name</references>
+        <references refid="de/d7a/classopenage_1_1_civilisation_1abdf1eb9f96df9f35741f8f6bb763c403" compoundref="db/d4c/civilisation_8cpp" startline="47" endline="53">initialise_unit_types</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d7a/classopenage_1_1_civilisation_1acc3a4d02c42d7f8eda5b9b87175f4613" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="d3/d6c/classopenage_1_1_unit_type_meta" kindref="compound">UnitTypeMeta</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::shared_ptr&lt; UnitTypeMeta &gt; &gt; openage::Civilisation::object_meta</definition>
+        <argsstring>() const</argsstring>
+        <name>object_meta</name>
+        <briefdescription>
+<para>return all the objects available to this civ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" line="34" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.cpp" bodystart="19" bodyend="21"/>
+        <references refid="de/d7a/classopenage_1_1_civilisation_1a12246fe137d4a5cccb044eb2f1c6932b" compoundref="d6/db2/civilisation_8h" startline="66">civ_objects</references>
+        <referencedby refid="d8/d47/classopenage_1_1_player_1a95a450855aec639900bf4b5d24e98521" compoundref="db/d80/player_8cpp" startline="138" endline="146">openage::Player::initialise_unit_types</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="de/d7a/classopenage_1_1_civilisation_1aa8c2247f2c5b183fc77ae550307ef426" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="da/d23/namespaceopenage_1a8f00ffffd7d8386f3c406ec373e100bf" kindref="member">index_t</ref> &gt;</type>
+        <definition>std::vector&lt; index_t &gt; openage::Civilisation::get_category</definition>
+        <argsstring>(const std::string &amp;c) const</argsstring>
+        <name>get_category</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>return all types in a particular named category </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" line="39" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.cpp" bodystart="24" bodyend="30"/>
+        <references refid="de/d7a/classopenage_1_1_civilisation_1a0472503729127b8d20d0f3708491952f" compoundref="d6/db2/civilisation_8h" startline="76">categories</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d7a/classopenage_1_1_civilisation_1a55ec689e9aed7d40b9d0aa7e2c478d96" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; openage::Civilisation::get_type_categories</definition>
+        <argsstring>() const</argsstring>
+        <name>get_type_categories</name>
+        <briefdescription>
+<para>return all used categories, such as living, building or projectile </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" line="44" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.cpp" bodystart="33" bodyend="35"/>
+        <references refid="de/d7a/classopenage_1_1_civilisation_1ade8432645da979f0ca6cb1c53ef030d9" compoundref="d6/db2/civilisation_8h" startline="71">all_categories</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d7a/classopenage_1_1_civilisation_1aac6dfa467902f19637b13afcbe2c927b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const gamedata::building_unit *</type>
+        <definition>const gamedata::building_unit * openage::Civilisation::get_building_data</definition>
+        <argsstring>(index_t unit_id) const</argsstring>
+        <name>get_building_data</name>
+        <param>
+          <type><ref refid="da/d23/namespaceopenage_1a8f00ffffd7d8386f3c406ec373e100bf" kindref="member">index_t</ref></type>
+          <declname>unit_id</declname>
+        </param>
+        <briefdescription>
+<para>gamedata for a building </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" line="49" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.cpp" bodystart="38" bodyend="44"/>
+        <references refid="de/d7a/classopenage_1_1_civilisation_1adc0e6636a587343c1e728e4a374eaed8" compoundref="d6/db2/civilisation_8h" startline="81">buildings</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a403182e8d0c54bd49bea6934c3cb1e28" compoundref="d7/d66/log_2____init_____8py" startline="112" endline="115">openage::log.info</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+      </memberdef>
+      <memberdef kind="function" id="de/d7a/classopenage_1_1_civilisation_1abdf1eb9f96df9f35741f8f6bb763c403" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::Civilisation::initialise_unit_types</definition>
+        <argsstring>(const GameSpec &amp;spec)</argsstring>
+        <name>initialise_unit_types</name>
+        <param>
+          <type>const <ref refid="de/d6a/classopenage_1_1_game_spec" kindref="compound">GameSpec</ref> &amp;</type>
+          <declname>spec</declname>
+        </param>
+        <briefdescription>
+<para>initialise the unit meta data </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" line="54" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.cpp" bodystart="47" bodyend="53"/>
+        <references refid="de/d7a/classopenage_1_1_civilisation_1a7ea9f34ae76ff29cbcce2ce4cb7da55f" compoundref="db/d4c/civilisation_8cpp" startline="56" endline="62">add_to_category</references>
+        <references refid="de/d7a/classopenage_1_1_civilisation_1a2f86a0247609bab4d68b2d918b96c49a" compoundref="d6/db2/civilisation_8h" startline="24">civ_id</references>
+        <references refid="de/d7a/classopenage_1_1_civilisation_1abfe7c1fb0da5297fe076417bda22e711" compoundref="d6/db2/civilisation_8h" startline="29">civ_name</references>
+        <references refid="de/d7a/classopenage_1_1_civilisation_1a12246fe137d4a5cccb044eb2f1c6932b" compoundref="d6/db2/civilisation_8h" startline="66">civ_objects</references>
+        <references refid="de/d6a/classopenage_1_1_game_spec_1ab009229f56624608b53820adf2895cbc" compoundref="dd/d4a/game__spec_8cpp" startline="155" endline="184">openage::GameSpec::create_unit_types</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a5cb08687f485da2549d7eebef26368a6" compoundref="d7/d66/log_2____init_____8py" startline="107" endline="110">openage::log.dbg</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <referencedby refid="de/d7a/classopenage_1_1_civilisation_1ad42026f252bdf28b9d48b39a8535e2a3" compoundref="db/d4c/civilisation_8cpp" startline="11" endline="16">Civilisation</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="de/d7a/classopenage_1_1_civilisation_1a7ea9f34ae76ff29cbcce2ce4cb7da55f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::Civilisation::add_to_category</definition>
+        <argsstring>(const std::string &amp;c, index_t type)</argsstring>
+        <name>add_to_category</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="da/d23/namespaceopenage_1a8f00ffffd7d8386f3c406ec373e100bf" kindref="member">index_t</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>creates and adds items to categories </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" line="61" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.cpp" bodystart="56" bodyend="62"/>
+        <references refid="de/d7a/classopenage_1_1_civilisation_1ade8432645da979f0ca6cb1c53ef030d9" compoundref="d6/db2/civilisation_8h" startline="71">all_categories</references>
+        <references refid="de/d7a/classopenage_1_1_civilisation_1a0472503729127b8d20d0f3708491952f" compoundref="d6/db2/civilisation_8h" startline="76">categories</references>
+        <referencedby refid="de/d7a/classopenage_1_1_civilisation_1abdf1eb9f96df9f35741f8f6bb763c403" compoundref="db/d4c/civilisation_8cpp" startline="47" endline="53">initialise_unit_types</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>contains the initial tech structure for one civilisation </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="774">
+        <label>openage::Civilisation</label>
+        <link refid="de/d7a/classopenage_1_1_civilisation"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" line="17" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/civilisation.h" bodystart="17" bodyend="83"/>
+    <listofallmembers>
+      <member refid="de/d7a/classopenage_1_1_civilisation_1a7ea9f34ae76ff29cbcce2ce4cb7da55f" prot="private" virt="non-virtual"><scope>openage::Civilisation</scope><name>add_to_category</name></member>
+      <member refid="de/d7a/classopenage_1_1_civilisation_1ade8432645da979f0ca6cb1c53ef030d9" prot="private" virt="non-virtual"><scope>openage::Civilisation</scope><name>all_categories</name></member>
+      <member refid="de/d7a/classopenage_1_1_civilisation_1adc0e6636a587343c1e728e4a374eaed8" prot="private" virt="non-virtual"><scope>openage::Civilisation</scope><name>buildings</name></member>
+      <member refid="de/d7a/classopenage_1_1_civilisation_1a0472503729127b8d20d0f3708491952f" prot="private" virt="non-virtual"><scope>openage::Civilisation</scope><name>categories</name></member>
+      <member refid="de/d7a/classopenage_1_1_civilisation_1a2f86a0247609bab4d68b2d918b96c49a" prot="public" virt="non-virtual"><scope>openage::Civilisation</scope><name>civ_id</name></member>
+      <member refid="de/d7a/classopenage_1_1_civilisation_1abfe7c1fb0da5297fe076417bda22e711" prot="public" virt="non-virtual"><scope>openage::Civilisation</scope><name>civ_name</name></member>
+      <member refid="de/d7a/classopenage_1_1_civilisation_1a12246fe137d4a5cccb044eb2f1c6932b" prot="private" virt="non-virtual"><scope>openage::Civilisation</scope><name>civ_objects</name></member>
+      <member refid="de/d7a/classopenage_1_1_civilisation_1ad42026f252bdf28b9d48b39a8535e2a3" prot="public" virt="non-virtual"><scope>openage::Civilisation</scope><name>Civilisation</name></member>
+      <member refid="de/d7a/classopenage_1_1_civilisation_1aac6dfa467902f19637b13afcbe2c927b" prot="public" virt="non-virtual"><scope>openage::Civilisation</scope><name>get_building_data</name></member>
+      <member refid="de/d7a/classopenage_1_1_civilisation_1aa8c2247f2c5b183fc77ae550307ef426" prot="public" virt="non-virtual"><scope>openage::Civilisation</scope><name>get_category</name></member>
+      <member refid="de/d7a/classopenage_1_1_civilisation_1a55ec689e9aed7d40b9d0aa7e2c478d96" prot="public" virt="non-virtual"><scope>openage::Civilisation</scope><name>get_type_categories</name></member>
+      <member refid="de/d7a/classopenage_1_1_civilisation_1abdf1eb9f96df9f35741f8f6bb763c403" prot="public" virt="non-virtual"><scope>openage::Civilisation</scope><name>initialise_unit_types</name></member>
+      <member refid="de/d7a/classopenage_1_1_civilisation_1acc3a4d02c42d7f8eda5b9b87175f4613" prot="public" virt="non-virtual"><scope>openage::Civilisation</scope><name>object_meta</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

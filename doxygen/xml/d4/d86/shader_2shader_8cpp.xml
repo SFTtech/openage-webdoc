@@ -1,0 +1,391 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d4/d86/shader_2shader_8cpp" kind="file" language="C++">
+    <compoundname>shader.cpp</compoundname>
+    <includes refid="d2/d22/shader_2shader_8h" local="yes">shader.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes refid="d7/dce/error_2error_8h" local="yes">../error/error.h</includes>
+    <includes refid="d7/d7f/log_8h" local="yes">../log/log.h</includes>
+    <includes refid="d2/d4d/file_8h" local="yes">../util/file.h</includes>
+    <includes refid="d6/d90/strings_8h" local="yes">../util/strings.h</includes>
+    <incdepgraph>
+      <node id="21814">
+        <label>list</label>
+      </node>
+      <node id="21825">
+        <label>../util/language.h</label>
+        <link refid="d8/dce/language_8h"/>
+      </node>
+      <node id="21804">
+        <label>atomic</label>
+      </node>
+      <node id="21819">
+        <label>../log/log.h</label>
+        <link refid="d7/d7f/log_8h"/>
+        <childnode refid="21816" relation="include">
+        </childnode>
+        <childnode refid="21798" relation="include">
+        </childnode>
+      </node>
+      <node id="21810">
+        <label>iomanip</label>
+      </node>
+      <node id="21809">
+        <label>functional</label>
+      </node>
+      <node id="21799">
+        <label>cstdint</label>
+      </node>
+      <node id="21806">
+        <label>externalsstream.h</label>
+        <link refid="dc/dcf/externalsstream_8h"/>
+        <childnode refid="21791" relation="include">
+        </childnode>
+        <childnode refid="21794" relation="include">
+        </childnode>
+      </node>
+      <node id="21797">
+        <label>signal.h</label>
+        <link refid="d8/d39/signal_8h"/>
+        <childnode refid="21797" relation="include">
+        </childnode>
+      </node>
+      <node id="21788">
+        <label>stdlib.h</label>
+      </node>
+      <node id="21824">
+        <label>functional.h</label>
+        <link refid="d8/dea/functional_8h"/>
+        <childnode refid="21809" relation="include">
+        </childnode>
+        <childnode refid="21815" relation="include">
+        </childnode>
+        <childnode refid="21795" relation="include">
+        </childnode>
+        <childnode refid="21825" relation="include">
+        </childnode>
+        <childnode refid="21826" relation="include">
+        </childnode>
+        <childnode refid="21827" relation="include">
+        </childnode>
+      </node>
+      <node id="21793">
+        <label>stdexcept</label>
+      </node>
+      <node id="21826">
+        <label>exctranslate.h</label>
+        <link refid="dd/d5f/exctranslate_8h"/>
+        <childnode refid="21790" relation="include">
+        </childnode>
+      </node>
+      <node id="21808">
+        <label>cstdarg</label>
+      </node>
+      <node id="21794">
+        <label>string</label>
+      </node>
+      <node id="21813">
+        <label>logsink.h</label>
+        <link refid="d3/d4e/logsink_8h"/>
+        <childnode refid="21814" relation="include">
+        </childnode>
+        <childnode refid="21815" relation="include">
+        </childnode>
+        <childnode refid="21816" relation="include">
+        </childnode>
+      </node>
+      <node id="21798">
+        <label>../log/message.h</label>
+        <link refid="d2/d0d/message_8h"/>
+        <childnode refid="21799" relation="include">
+        </childnode>
+        <childnode refid="21794" relation="include">
+        </childnode>
+        <childnode refid="21800" relation="include">
+        </childnode>
+        <childnode refid="21801" relation="include">
+        </childnode>
+        <childnode refid="21803" relation="include">
+        </childnode>
+        <childnode refid="21813" relation="include">
+        </childnode>
+        <childnode refid="21816" relation="include">
+        </childnode>
+      </node>
+      <node id="21785">
+        <label>shader.h</label>
+        <link refid="d2/d22/shader_2shader_8h"/>
+        <childnode refid="21786" relation="include">
+        </childnode>
+        <childnode refid="21787" relation="include">
+        </childnode>
+      </node>
+      <node id="21817">
+        <label>../util/enum.h</label>
+        <link refid="d0/d9b/enum_8h"/>
+        <childnode refid="21791" relation="include">
+        </childnode>
+        <childnode refid="21818" relation="include">
+        </childnode>
+        <childnode refid="21795" relation="include">
+        </childnode>
+      </node>
+      <node id="21820">
+        <label>../util/file.h</label>
+        <link refid="d2/d4d/file_8h"/>
+        <childnode refid="21792" relation="include">
+        </childnode>
+        <childnode refid="21794" relation="include">
+        </childnode>
+        <childnode refid="21812" relation="include">
+        </childnode>
+        <childnode refid="21821" relation="include">
+        </childnode>
+        <childnode refid="21822" relation="include">
+        </childnode>
+      </node>
+      <node id="21821">
+        <label>filelike/filelike.h</label>
+        <link refid="d7/db5/filelike_8h"/>
+        <childnode refid="21791" relation="include">
+        </childnode>
+        <childnode refid="21794" relation="include">
+        </childnode>
+        <childnode refid="21795" relation="include">
+        </childnode>
+      </node>
+      <node id="21818">
+        <label>typeinfo</label>
+      </node>
+      <node id="21812">
+        <label>vector</label>
+      </node>
+      <node id="21796">
+        <label>ciso646</label>
+      </node>
+      <node id="21823">
+        <label>defs.h</label>
+        <link refid="d5/d64/defs_8h"/>
+      </node>
+      <node id="21790">
+        <label>../error/error.h</label>
+        <link refid="d7/dce/error_2error_8h"/>
+        <childnode refid="21791" relation="include">
+        </childnode>
+        <childnode refid="21792" relation="include">
+        </childnode>
+        <childnode refid="21793" relation="include">
+        </childnode>
+        <childnode refid="21794" relation="include">
+        </childnode>
+        <childnode refid="21795" relation="include">
+        </childnode>
+        <childnode refid="21798" relation="include">
+        </childnode>
+      </node>
+      <node id="21811">
+        <label>sstream</label>
+      </node>
+      <node id="21787">
+        <label>epoxy/gl.h</label>
+      </node>
+      <node id="21827">
+        <label>setup.h</label>
+        <link refid="d7/df7/setup_8h"/>
+        <childnode refid="21809" relation="include">
+        </childnode>
+        <childnode refid="21795" relation="include">
+        </childnode>
+      </node>
+      <node id="21795">
+        <label>../util/compiler.h</label>
+        <link refid="d4/dd1/compiler_8h"/>
+        <childnode refid="21796" relation="include">
+        </childnode>
+        <childnode refid="21794" relation="include">
+        </childnode>
+        <childnode refid="21797" relation="include">
+        </childnode>
+      </node>
+      <node id="21802">
+        <label>cstdlib</label>
+      </node>
+      <node id="21816">
+        <label>level.h</label>
+        <link refid="de/d09/level_8h"/>
+        <childnode refid="21817" relation="include">
+        </childnode>
+      </node>
+      <node id="21791">
+        <label>iostream</label>
+      </node>
+      <node id="21801">
+        <label>../util/constexpr.h</label>
+        <link refid="d1/d06/constexpr_8h"/>
+        <childnode refid="21802" relation="include">
+        </childnode>
+      </node>
+      <node id="21822">
+        <label>../pyinterface/pyobject.h</label>
+        <link refid="d2/d4b/pyobject_8h"/>
+        <childnode refid="21799" relation="include">
+        </childnode>
+        <childnode refid="21794" relation="include">
+        </childnode>
+        <childnode refid="21812" relation="include">
+        </childnode>
+        <childnode refid="21823" relation="include">
+        </childnode>
+        <childnode refid="21824" relation="include">
+        </childnode>
+      </node>
+      <node id="21807">
+        <label>strings.h</label>
+        <link refid="d6/d90/strings_8h"/>
+        <childnode refid="21808" relation="include">
+        </childnode>
+        <childnode refid="21809" relation="include">
+        </childnode>
+        <childnode refid="21810" relation="include">
+        </childnode>
+        <childnode refid="21792" relation="include">
+        </childnode>
+        <childnode refid="21811" relation="include">
+        </childnode>
+        <childnode refid="21794" relation="include">
+        </childnode>
+        <childnode refid="21812" relation="include">
+        </childnode>
+      </node>
+      <node id="21815">
+        <label>mutex</label>
+      </node>
+      <node id="21803">
+        <label>../util/stringformatter.h</label>
+        <link refid="de/d65/stringformatter_8h"/>
+        <childnode refid="21804" relation="include">
+        </childnode>
+        <childnode refid="21792" relation="include">
+        </childnode>
+        <childnode refid="21805" relation="include">
+        </childnode>
+        <childnode refid="21795" relation="include">
+        </childnode>
+        <childnode refid="21806" relation="include">
+        </childnode>
+        <childnode refid="21807" relation="include">
+        </childnode>
+      </node>
+      <node id="21784">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/shader/shader.cpp</label>
+        <link refid="d4/d86/shader_2shader_8cpp"/>
+        <childnode refid="21785" relation="include">
+        </childnode>
+        <childnode refid="21788" relation="include">
+        </childnode>
+        <childnode refid="21789" relation="include">
+        </childnode>
+        <childnode refid="21790" relation="include">
+        </childnode>
+        <childnode refid="21819" relation="include">
+        </childnode>
+        <childnode refid="21820" relation="include">
+        </childnode>
+        <childnode refid="21807" relation="include">
+        </childnode>
+      </node>
+      <node id="21805">
+        <label>type_traits</label>
+      </node>
+      <node id="21800">
+        <label>config.h</label>
+      </node>
+      <node id="21789">
+        <label>stdio.h</label>
+      </node>
+      <node id="21792">
+        <label>memory</label>
+      </node>
+      <node id="21786">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="da/d23/namespaceopenage">openage</innernamespace>
+    <innernamespace refid="dc/da0/namespaceopenage_1_1shader">openage::shader</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2013-2017<sp/>the<sp/>openage<sp/>authors.<sp/>See<sp/>copying.md<sp/>for<sp/>legal<sp/>info.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d2/d22/shader_2shader_8h" kindref="compound">shader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../error/error.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../log/log.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../util/file.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../util/strings.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="da/d23/namespaceopenage" kindref="compound">openage</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">shader<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="dc/da0/namespaceopenage_1_1shader_1aba992c07352be620fb7a7060d0349781" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="dc/da0/namespaceopenage_1_1shader_1aba992c07352be620fb7a7060d0349781" kindref="member">type_to_string</ref>(GLenum<sp/>type)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(type)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GL_VERTEX_SHADER:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;vertex&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GL_FRAGMENT_SHADER:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;fragment&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>GL_GEOMETRY_SHADER:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;geometry&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;unknown&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="db/d80/classopenage_1_1shader_1_1_shader_1aef255884c830332151043f545510583d" refkind="member"><highlight class="normal"><ref refid="db/d80/classopenage_1_1shader_1_1_shader_1aef255884c830332151043f545510583d" kindref="member">Shader::Shader</ref>(GLenum<sp/>type,<sp/>std::initializer_list&lt;const<sp/>char<sp/>*&gt;<sp/>sources)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>shader</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>glCreateShader(type);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//store<sp/>type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;type<sp/>=<sp/><ref refid="db/d80/classopenage_1_1shader_1_1_shader_1a6544f6bc7a470a81829568a61af2227e" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//load<sp/>shader<sp/>source</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;const<sp/>char*&gt;<sp/>x<sp/>=<sp/>std::vector&lt;const<sp/>char*&gt;(sources);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>glShaderSource(this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>x.size(),<sp/>x.data(),<sp/>NULL);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//compile<sp/>shader<sp/>source</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>glCompileShader(this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//check<sp/>compiliation<sp/>result</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>GLint<sp/>status;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>glGetShaderiv(this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>GL_COMPILE_STATUS,<sp/>&amp;status);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/>GL_TRUE)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GLint<sp/>loglen;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glGetShaderiv(this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>GL_INFO_LOG_LENGTH,<sp/>&amp;loglen);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>infolog<sp/>=<sp/>std::make_unique&lt;char[]&gt;(loglen);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glGetShaderInfoLog(this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>loglen,<sp/>NULL,<sp/>infolog.get());</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>errmsg<sp/>=<sp/><ref refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" kindref="member">MSG</ref>(<ref refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" kindref="member">err</ref>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errmsg<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>compile<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="dc/da0/namespaceopenage_1_1shader_1aba992c07352be620fb7a7060d0349781" kindref="member">type_to_string</ref>(type)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>shader\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>infolog;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glDeleteShader(this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="d0/df4/classopenage_1_1error_1_1_error" kindref="compound">Error</ref>(errmsg);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="db/d80/classopenage_1_1shader_1_1_shader_1a1cf8a9e587452d5df6e384c870ebf966" refkind="member"><highlight class="normal"><ref refid="db/d80/classopenage_1_1shader_1_1_shader_1a1cf8a9e587452d5df6e384c870ebf966" kindref="member">Shader::~Shader</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>glDeleteShader(this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}}<sp/></highlight><highlight class="comment">//<sp/>openage::shader</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/shader/shader.cpp"/>
+  </compounddef>
+</doxygen>

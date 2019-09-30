@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d1/d80/classopenage_1_1_region" kind="class" language="C++" prot="public">
+    <compoundname>openage::Region</compoundname>
+    <includes refid="d8/df4/generator_8h" local="no">generator.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d1/d80/classopenage_1_1_region_1a70375042f98dd6521e0d929a7ce71873" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int openage::Region::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+<para>player id of the owner, 0 for none </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" line="97" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="dd/d78/classopenage_1_1_generator_1ae221973cf4125fbf62af6f9626609b4a" compoundref="d8/d1b/generator_8cpp" startline="154" endline="235">openage::Generator::create_regions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d80/classopenage_1_1_region_1a9cc7b2090dc80b378d3d4dfddeb4f5b3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int openage::Region::object_id</definition>
+        <argsstring></argsstring>
+        <name>object_id</name>
+        <briefdescription>
+<para>the object to be placed on each tile of this region 0 for placing no object </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" line="103" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="dd/d78/classopenage_1_1_generator_1ae221973cf4125fbf62af6f9626609b4a" compoundref="d8/d1b/generator_8cpp" startline="154" endline="235">openage::Generator::create_regions</referencedby>
+        <referencedby refid="d1/d80/classopenage_1_1_region_1aa3666172fd3c6b2a0230f96edfc304d2" compoundref="d8/d1b/generator_8cpp" startline="29" endline="40">Region</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d80/classopenage_1_1_region_1ab7bdac93f609a1c1cba381b92fa8420b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int openage::Region::terrain_id</definition>
+        <argsstring></argsstring>
+        <name>terrain_id</name>
+        <briefdescription>
+<para>the base terrain for this region </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" line="108" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" bodystart="108" bodyend="-1"/>
+        <referencedby refid="dd/d78/classopenage_1_1_generator_1ae221973cf4125fbf62af6f9626609b4a" compoundref="d8/d1b/generator_8cpp" startline="154" endline="235">openage::Generator::create_regions</referencedby>
+        <referencedby refid="d1/d80/classopenage_1_1_region_1aa3666172fd3c6b2a0230f96edfc304d2" compoundref="d8/d1b/generator_8cpp" startline="29" endline="40">Region</referencedby>
+        <referencedby refid="d1/d80/classopenage_1_1_region_1a268c678dfa97caf1cd17b632ca74de40" compoundref="d8/d1b/generator_8cpp" startline="108" endline="120">take_tiles</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d1/d80/classopenage_1_1_region_1ac82f2be4da256ea588b1d389736fd6c3" prot="private" static="no" mutable="no">
+        <type><ref refid="d5/d10/structopenage_1_1coord_1_1tile" kindref="compound">coord::tile</ref></type>
+        <definition>coord::tile openage::Region::center</definition>
+        <argsstring></argsstring>
+        <name>center</name>
+        <briefdescription>
+<para>the center tile of this region </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" line="115" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" bodystart="115" bodyend="-1"/>
+        <referencedby refid="d1/d80/classopenage_1_1_region_1a049c7aba99df7ba3c2e6c1412eb37281" compoundref="d8/d1b/generator_8cpp" startline="55" endline="57">get_center</referencedby>
+        <referencedby refid="d1/d80/classopenage_1_1_region_1aa3666172fd3c6b2a0230f96edfc304d2" compoundref="d8/d1b/generator_8cpp" startline="29" endline="40">Region</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d1/d80/classopenage_1_1_region_1a8949b74d0c4c759db735c1b7c8bdeee2" prot="private" static="no" mutable="no">
+        <type><ref refid="da/d23/namespaceopenage_1aec1b23983a95168bf5f310c0d5ea8e08" kindref="member">tileset_t</ref></type>
+        <definition>tileset_t openage::Region::tiles</definition>
+        <argsstring></argsstring>
+        <name>tiles</name>
+        <briefdescription>
+<para>tiles in this region </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" line="120" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" bodystart="120" bodyend="-1"/>
+        <referencedby refid="d1/d80/classopenage_1_1_region_1a01b77dd370f14a109a1691702244bb15" compoundref="d8/d1b/generator_8cpp" startline="59" endline="61">get_tile</referencedby>
+        <referencedby refid="d1/d80/classopenage_1_1_region_1ab00c7ee628d3f552b6ac9419d64ea027" compoundref="d8/d1b/generator_8cpp" startline="51" endline="53">get_tiles</referencedby>
+        <referencedby refid="d1/d80/classopenage_1_1_region_1aa3666172fd3c6b2a0230f96edfc304d2" compoundref="d8/d1b/generator_8cpp" startline="29" endline="40">Region</referencedby>
+        <referencedby refid="d1/d80/classopenage_1_1_region_1aab907d7f645bc78647dd204ba136b5d4" compoundref="d8/d1b/generator_8cpp" startline="64" endline="106">subset</referencedby>
+        <referencedby refid="d1/d80/classopenage_1_1_region_1a268c678dfa97caf1cd17b632ca74de40" compoundref="d8/d1b/generator_8cpp" startline="108" endline="120">take_tiles</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/d80/classopenage_1_1_region_1aa3666172fd3c6b2a0230f96edfc304d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::Region::Region</definition>
+        <argsstring>(int size)</argsstring>
+        <name>Region</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>a square of tiles ranging from {-size, -size} to {size, size} </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" line="54" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.cpp" bodystart="29" bodyend="40"/>
+        <references refid="d1/d80/classopenage_1_1_region_1ac82f2be4da256ea588b1d389736fd6c3" compoundref="d8/df4/generator_8h" startline="115">center</references>
+        <references refid="d1/d80/classopenage_1_1_region_1a9cc7b2090dc80b378d3d4dfddeb4f5b3" compoundref="d8/df4/generator_8h" startline="103">object_id</references>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a72122ce96bfec66e2396d2e25225d70a">openage::owner</references>
+        <references refid="d1/d80/classopenage_1_1_region_1ab7bdac93f609a1c1cba381b92fa8420b" compoundref="d8/df4/generator_8h" startline="108">terrain_id</references>
+        <references refid="d1/d80/classopenage_1_1_region_1a8949b74d0c4c759db735c1b7c8bdeee2" compoundref="d8/df4/generator_8h" startline="120">tiles</references>
+      </memberdef>
+      <memberdef kind="function" id="d1/d80/classopenage_1_1_region_1ab20f27c3f36a44df325464541e48b8ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::Region::Region</definition>
+        <argsstring>(coord::tile center, tileset_t tiles)</argsstring>
+        <name>Region</name>
+        <param>
+          <type><ref refid="d5/d10/structopenage_1_1coord_1_1tile" kindref="compound">coord::tile</ref></type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type><ref refid="da/d23/namespaceopenage_1aec1b23983a95168bf5f310c0d5ea8e08" kindref="member">tileset_t</ref></type>
+          <declname>tiles</declname>
+        </param>
+        <briefdescription>
+<para>a specified set of tiles </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" line="59" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.cpp" bodystart="42" bodyend="49"/>
+        <references refid="d1/d80/classopenage_1_1_region_1ac82f2be4da256ea588b1d389736fd6c3" compoundref="d8/df4/generator_8h" startline="115">center</references>
+        <references refid="d1/d80/classopenage_1_1_region_1a9cc7b2090dc80b378d3d4dfddeb4f5b3" compoundref="d8/df4/generator_8h" startline="103">object_id</references>
+        <references refid="d1/d80/classopenage_1_1_region_1ab7bdac93f609a1c1cba381b92fa8420b" compoundref="d8/df4/generator_8h" startline="108">terrain_id</references>
+        <references refid="d1/d80/classopenage_1_1_region_1a8949b74d0c4c759db735c1b7c8bdeee2" compoundref="d8/df4/generator_8h" startline="120">tiles</references>
+      </memberdef>
+      <memberdef kind="function" id="d1/d80/classopenage_1_1_region_1ab00c7ee628d3f552b6ac9419d64ea027" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="da/d23/namespaceopenage_1aec1b23983a95168bf5f310c0d5ea8e08" kindref="member">tileset_t</ref></type>
+        <definition>tileset_t openage::Region::get_tiles</definition>
+        <argsstring>() const</argsstring>
+        <name>get_tiles</name>
+        <briefdescription>
+<para>all tiles in this region </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" line="64" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.cpp" bodystart="51" bodyend="53"/>
+        <references refid="d1/d80/classopenage_1_1_region_1a8949b74d0c4c759db735c1b7c8bdeee2" compoundref="d8/df4/generator_8h" startline="120">tiles</references>
+      </memberdef>
+      <memberdef kind="function" id="d1/d80/classopenage_1_1_region_1a049c7aba99df7ba3c2e6c1412eb37281" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/d10/structopenage_1_1coord_1_1tile" kindref="compound">coord::tile</ref></type>
+        <definition>coord::tile openage::Region::get_center</definition>
+        <argsstring>() const</argsstring>
+        <name>get_center</name>
+        <briefdescription>
+<para>the center point of the region </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" line="69" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.cpp" bodystart="55" bodyend="57"/>
+        <references refid="d1/d80/classopenage_1_1_region_1ac82f2be4da256ea588b1d389736fd6c3" compoundref="d8/df4/generator_8h" startline="115">center</references>
+        <referencedby refid="dd/d78/classopenage_1_1_generator_1ae221973cf4125fbf62af6f9626609b4a" compoundref="d8/d1b/generator_8cpp" startline="154" endline="235">openage::Generator::create_regions</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d80/classopenage_1_1_region_1a01b77dd370f14a109a1691702244bb15" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/d10/structopenage_1_1coord_1_1tile" kindref="compound">coord::tile</ref></type>
+        <definition>coord::tile openage::Region::get_tile</definition>
+        <argsstring>(rng::RNG &amp;rng) const</argsstring>
+        <name>get_tile</name>
+        <param>
+          <type><ref refid="da/daa/classopenage_1_1rng_1_1_r_n_g" kindref="compound">rng::RNG</ref> &amp;</type>
+          <declname>rng</declname>
+        </param>
+        <briefdescription>
+<para>picks a random tile from this subset </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" line="74" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.cpp" bodystart="59" bodyend="61"/>
+        <references refid="da/d23/namespaceopenage_1a3acc47409b93e64eef42ad8add16052b" compoundref="d8/d1b/generator_8cpp" startline="17" endline="26">openage::random_tile</references>
+        <references refid="d1/d80/classopenage_1_1_region_1a8949b74d0c4c759db735c1b7c8bdeee2" compoundref="d8/df4/generator_8h" startline="120">tiles</references>
+        <referencedby refid="d1/d80/classopenage_1_1_region_1a365efd8b6f0199a7cb270af90291a662" compoundref="d8/d1b/generator_8cpp" startline="122" endline="124">take_random</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d80/classopenage_1_1_region_1aab907d7f645bc78647dd204ba136b5d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="da/d23/namespaceopenage_1aec1b23983a95168bf5f310c0d5ea8e08" kindref="member">tileset_t</ref></type>
+        <definition>tileset_t openage::Region::subset</definition>
+        <argsstring>(rng::RNG &amp;rng, coord::tile start_tile, unsigned int number, double p) const</argsstring>
+        <name>subset</name>
+        <param>
+          <type><ref refid="da/daa/classopenage_1_1rng_1_1_r_n_g" kindref="compound">rng::RNG</ref> &amp;</type>
+          <declname>rng</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/d10/structopenage_1_1coord_1_1tile" kindref="compound">coord::tile</ref></type>
+          <declname>start_tile</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>find a group of tiles inside this region, number is the number of tiles to be contained in the subset, p is a probability between 0.0 and 1.0 which produces various shapes. </para>        </briefdescription>
+        <detaileddescription>
+<para>a value of 1.0 produces circular shapes, where as a low value produces more scattered shapes. a value of 0.0 should not be used, and will always return no tiles </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" line="82" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.cpp" bodystart="64" bodyend="106"/>
+        <references refid="da/d23/namespaceopenage_1ae153a7bdcb1d70441174ccfc861eee78" compoundref="d8/df4/generator_8h" startline="37">openage::neigh_tiles</references>
+        <references refid="da/daa/classopenage_1_1rng_1_1_r_n_g_1ab24ce8fabde7df2ec900e3e1883281a4" compoundref="d2/d8d/rng_8h" startline="93" endline="95">openage::rng::RNG::probability</references>
+        <references refid="da/d23/namespaceopenage_1a3acc47409b93e64eef42ad8add16052b" compoundref="d8/d1b/generator_8cpp" startline="17" endline="26">openage::random_tile</references>
+        <references refid="d1/d80/classopenage_1_1_region_1a8949b74d0c4c759db735c1b7c8bdeee2" compoundref="d8/df4/generator_8h" startline="120">tiles</references>
+        <referencedby refid="d1/d80/classopenage_1_1_region_1a268c678dfa97caf1cd17b632ca74de40" compoundref="d8/d1b/generator_8cpp" startline="108" endline="120">take_tiles</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d80/classopenage_1_1_region_1a268c678dfa97caf1cd17b632ca74de40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/d80/classopenage_1_1_region" kindref="compound">Region</ref></type>
+        <definition>Region openage::Region::take_tiles</definition>
+        <argsstring>(rng::RNG &amp;rng, coord::tile start_tile, unsigned int number, double p)</argsstring>
+        <name>take_tiles</name>
+        <param>
+          <type><ref refid="da/daa/classopenage_1_1rng_1_1_r_n_g" kindref="compound">rng::RNG</ref> &amp;</type>
+          <declname>rng</declname>
+        </param>
+        <param>
+          <type><ref refid="d5/d10/structopenage_1_1coord_1_1tile" kindref="compound">coord::tile</ref></type>
+          <declname>start_tile</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>removes the given set of tiles from this region, which get split of as a new child region </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" line="87" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.cpp" bodystart="108" bodyend="120"/>
+        <references refid="d1/d80/classopenage_1_1_region_1aab907d7f645bc78647dd204ba136b5d4" compoundref="d8/d1b/generator_8cpp" startline="64" endline="106">subset</references>
+        <references refid="d1/d80/classopenage_1_1_region_1ab7bdac93f609a1c1cba381b92fa8420b" compoundref="d8/df4/generator_8h" startline="108">terrain_id</references>
+        <references refid="d1/d80/classopenage_1_1_region_1a8949b74d0c4c759db735c1b7c8bdeee2" compoundref="d8/df4/generator_8h" startline="120">tiles</references>
+        <referencedby refid="dd/d78/classopenage_1_1_generator_1ae221973cf4125fbf62af6f9626609b4a" compoundref="d8/d1b/generator_8cpp" startline="154" endline="235">openage::Generator::create_regions</referencedby>
+        <referencedby refid="d1/d80/classopenage_1_1_region_1a365efd8b6f0199a7cb270af90291a662" compoundref="d8/d1b/generator_8cpp" startline="122" endline="124">take_random</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/d80/classopenage_1_1_region_1a365efd8b6f0199a7cb270af90291a662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/d80/classopenage_1_1_region" kindref="compound">Region</ref></type>
+        <definition>Region openage::Region::take_random</definition>
+        <argsstring>(rng::RNG &amp;rng, unsigned int number, double p)</argsstring>
+        <name>take_random</name>
+        <param>
+          <type><ref refid="da/daa/classopenage_1_1rng_1_1_r_n_g" kindref="compound">rng::RNG</ref> &amp;</type>
+          <declname>rng</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>similiar to take_tiles, but takes a random group of tiles </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" line="92" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.cpp" bodystart="122" bodyend="124"/>
+        <references refid="d1/d80/classopenage_1_1_region_1a01b77dd370f14a109a1691702244bb15" compoundref="d8/d1b/generator_8cpp" startline="59" endline="61">get_tile</references>
+        <references refid="d1/d80/classopenage_1_1_region_1a268c678dfa97caf1cd17b632ca74de40" compoundref="d8/d1b/generator_8cpp" startline="108" endline="120">take_tiles</references>
+        <referencedby refid="dd/d78/classopenage_1_1_generator_1ae221973cf4125fbf62af6f9626609b4a" compoundref="d8/d1b/generator_8cpp" startline="154" endline="235">openage::Generator::create_regions</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A region is a set of tiles around a starting point, including functions to create child regions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4748">
+        <label>CoordNeSeAbsolute&lt; tile_t, tile, tile_delta &gt;</label>
+      </node>
+      <node id="4747">
+        <label>openage::coord::tile</label>
+        <link refid="d5/d10/structopenage_1_1coord_1_1tile"/>
+        <childnode refid="4748" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4746">
+        <label>openage::Region</label>
+        <link refid="d1/d80/classopenage_1_1_region"/>
+        <childnode refid="4747" relation="usage">
+          <edgelabel>-center</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" line="48" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gamestate/generator.h" bodystart="48" bodyend="121"/>
+    <listofallmembers>
+      <member refid="d1/d80/classopenage_1_1_region_1ac82f2be4da256ea588b1d389736fd6c3" prot="private" virt="non-virtual"><scope>openage::Region</scope><name>center</name></member>
+      <member refid="d1/d80/classopenage_1_1_region_1a049c7aba99df7ba3c2e6c1412eb37281" prot="public" virt="non-virtual"><scope>openage::Region</scope><name>get_center</name></member>
+      <member refid="d1/d80/classopenage_1_1_region_1a01b77dd370f14a109a1691702244bb15" prot="public" virt="non-virtual"><scope>openage::Region</scope><name>get_tile</name></member>
+      <member refid="d1/d80/classopenage_1_1_region_1ab00c7ee628d3f552b6ac9419d64ea027" prot="public" virt="non-virtual"><scope>openage::Region</scope><name>get_tiles</name></member>
+      <member refid="d1/d80/classopenage_1_1_region_1a9cc7b2090dc80b378d3d4dfddeb4f5b3" prot="public" virt="non-virtual"><scope>openage::Region</scope><name>object_id</name></member>
+      <member refid="d1/d80/classopenage_1_1_region_1a70375042f98dd6521e0d929a7ce71873" prot="public" virt="non-virtual"><scope>openage::Region</scope><name>owner</name></member>
+      <member refid="d1/d80/classopenage_1_1_region_1aa3666172fd3c6b2a0230f96edfc304d2" prot="public" virt="non-virtual"><scope>openage::Region</scope><name>Region</name></member>
+      <member refid="d1/d80/classopenage_1_1_region_1ab20f27c3f36a44df325464541e48b8ef" prot="public" virt="non-virtual"><scope>openage::Region</scope><name>Region</name></member>
+      <member refid="d1/d80/classopenage_1_1_region_1aab907d7f645bc78647dd204ba136b5d4" prot="public" virt="non-virtual"><scope>openage::Region</scope><name>subset</name></member>
+      <member refid="d1/d80/classopenage_1_1_region_1a365efd8b6f0199a7cb270af90291a662" prot="public" virt="non-virtual"><scope>openage::Region</scope><name>take_random</name></member>
+      <member refid="d1/d80/classopenage_1_1_region_1a268c678dfa97caf1cd17b632ca74de40" prot="public" virt="non-virtual"><scope>openage::Region</scope><name>take_tiles</name></member>
+      <member refid="d1/d80/classopenage_1_1_region_1ab7bdac93f609a1c1cba381b92fa8420b" prot="public" virt="non-virtual"><scope>openage::Region</scope><name>terrain_id</name></member>
+      <member refid="d1/d80/classopenage_1_1_region_1a8949b74d0c4c759db735c1b7c8bdeee2" prot="private" virt="non-virtual"><scope>openage::Region</scope><name>tiles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

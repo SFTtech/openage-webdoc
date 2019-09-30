@@ -1,0 +1,969 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d9/de2/classopenage_1_1_unit_selection" kind="class" language="C++" prot="public">
+    <compoundname>openage::UnitSelection</compoundname>
+    <basecompoundref refid="dd/dba/classopenage_1_1_hud_handler" prot="public" virt="non-virtual">openage::HudHandler</basecompoundref>
+    <includes refid="df/d48/selection_8h" local="no">selection.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/de2/classopenage_1_1_unit_selection_1abafc015ba5af4732d6b00ddec9517c31" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="da/d23/namespaceopenage_1a45c89654e0c3113ca40c482f47aa0401" kindref="member">id_t</ref>, <ref refid="d3/d37/classopenage_1_1_unit_reference" kindref="compound">UnitReference</ref> &gt;</type>
+        <definition>std::unordered_map&lt;id_t, UnitReference&gt; openage::UnitSelection::units</definition>
+        <argsstring></argsstring>
+        <name>units</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="102" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1ac7668d88460dbf57f79a75cbe55e34f3" compoundref="df/dbb/selection_8cpp" startline="128" endline="160">add_unit</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a0ad857ab54207bdaa9719fc01410f101" compoundref="df/dbb/selection_8cpp" startline="264" endline="273">all_invoke</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1aa97b9724248f01b525488bbba21d6b59" compoundref="df/dbb/selection_8cpp" startline="110" endline="118">clear</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a641ba956ba51e5ec47130cec3ffe9085" compoundref="df/dbb/selection_8cpp" startline="198" endline="207">contains_builders</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a07df9837a02027bf139d1cecfb541b4d" compoundref="df/dbb/selection_8cpp" startline="209" endline="218">contains_military</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a2cc48ccbea18ec579f9ad27a89b1d96a" compoundref="df/dbb/selection_8cpp" startline="175" endline="196">kill_unit</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a0a21b9382975a037b94a1331628b320c" compoundref="df/dbb/selection_8cpp" startline="28" endline="83">on_drawhud</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a55faa863da0461730ad3deed70b726c2" compoundref="df/dbb/selection_8cpp" startline="162" endline="169">remove_unit</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1ae76387eeee60f994b678d79ca4a198e8" compoundref="df/dbb/selection_8cpp" startline="120" endline="126">toggle_unit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/de2/classopenage_1_1_unit_selection_1aa2054e5dfae57e3f3ca0636a2f317fbd" prot="private" static="no" mutable="no">
+        <type><ref refid="da/d23/namespaceopenage_1a7174088e5b9a132b1bccacbee82a35cd" kindref="member">selection_type_t</ref></type>
+        <definition>selection_type_t openage::UnitSelection::selection_type</definition>
+        <argsstring></argsstring>
+        <name>selection_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="103" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1ac7668d88460dbf57f79a75cbe55e34f3" compoundref="df/dbb/selection_8cpp" startline="128" endline="160">add_unit</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1aa97b9724248f01b525488bbba21d6b59" compoundref="df/dbb/selection_8cpp" startline="110" endline="118">clear</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1ab7bbbd3ae208b61e3fae02eca886e134" compoundref="df/dbb/selection_8cpp" startline="171" endline="173">get_selection_type</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a2cc48ccbea18ec579f9ad27a89b1d96a" compoundref="df/dbb/selection_8cpp" startline="175" endline="196">kill_unit</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a55faa863da0461730ad3deed70b726c2" compoundref="df/dbb/selection_8cpp" startline="162" endline="169">remove_unit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/de2/classopenage_1_1_unit_selection_1ab3a8ab0e359201269d72098c0c145d87" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool openage::UnitSelection::drag_active</definition>
+        <argsstring></argsstring>
+        <name>drag_active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="105" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" bodystart="105" bodyend="-1"/>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a100fae0b7f4993a90a984c57024ecfe2" compoundref="df/dbb/selection_8cpp" startline="85" endline="89">drag_begin</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a6b4a0b9275c8ebf623d50a7509487623" compoundref="df/dbb/selection_8cpp" startline="100" endline="108">drag_release</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a35322bea7ad954fe4fefd8e2dfbac60f" compoundref="df/dbb/selection_8cpp" startline="93" endline="98">drag_update</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a0a21b9382975a037b94a1331628b320c" compoundref="df/dbb/selection_8cpp" startline="28" endline="83">on_drawhud</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a8a9f8a205468f01d0f13a8858722e30b" compoundref="df/dbb/selection_8cpp" startline="21" endline="26">UnitSelection</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/de2/classopenage_1_1_unit_selection_1a3605e8a7e9e8c75b869556cd4b8174ac" prot="private" static="no" mutable="no">
+        <type><ref refid="d6/d80/structopenage_1_1coord_1_1camgame" kindref="compound">coord::camgame</ref></type>
+        <definition>coord::camgame openage::UnitSelection::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <initializer>= {0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="107" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" bodystart="107" bodyend="-1"/>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a100fae0b7f4993a90a984c57024ecfe2" compoundref="df/dbb/selection_8cpp" startline="85" endline="89">drag_begin</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a6b4a0b9275c8ebf623d50a7509487623" compoundref="df/dbb/selection_8cpp" startline="100" endline="108">drag_release</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a0a21b9382975a037b94a1331628b320c" compoundref="df/dbb/selection_8cpp" startline="28" endline="83">on_drawhud</referencedby>
+        <referencedby refid="d9/de8/classopenage_1_1util_1_1filelike_1_1stream_1_1_stream_fragment_1a2c451557a21c0bb2481bd4a8da2f6df5" compoundref="d7/d0e/stream_8py" startline="128" endline="146">openage.util.filelike.stream.StreamFragment.read</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/de2/classopenage_1_1_unit_selection_1a9e6b650380d7ef95ba29850854ce5321" prot="private" static="no" mutable="no">
+        <type><ref refid="d6/d80/structopenage_1_1coord_1_1camgame" kindref="compound">coord::camgame</ref></type>
+        <definition>coord::camgame openage::UnitSelection::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <initializer>= {0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="107" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" bodystart="107" bodyend="-1"/>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a100fae0b7f4993a90a984c57024ecfe2" compoundref="df/dbb/selection_8cpp" startline="85" endline="89">drag_begin</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a6b4a0b9275c8ebf623d50a7509487623" compoundref="df/dbb/selection_8cpp" startline="100" endline="108">drag_release</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a35322bea7ad954fe4fefd8e2dfbac60f" compoundref="df/dbb/selection_8cpp" startline="93" endline="98">drag_update</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a0a21b9382975a037b94a1331628b320c" compoundref="df/dbb/selection_8cpp" startline="28" endline="83">on_drawhud</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/de2/classopenage_1_1_unit_selection_1ab6d8f001c538379db6c2f56cb44859f0" prot="private" static="no" mutable="no">
+        <type><ref refid="d6/d40/classopenage_1_1_engine" kindref="compound">Engine</ref> *</type>
+        <definition>Engine* openage::UnitSelection::engine</definition>
+        <argsstring></argsstring>
+        <name>engine</name>
+        <briefdescription>
+<para><ref refid="d6/d40/classopenage_1_1_engine" kindref="compound">Engine</ref> where this selection is attached to. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="112" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" bodystart="112" bodyend="-1"/>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a0a21b9382975a037b94a1331628b320c" compoundref="df/dbb/selection_8cpp" startline="28" endline="83">on_drawhud</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a1c3efeb8415c50094d66844e69402342" compoundref="df/dbb/selection_8cpp" startline="238" endline="262">select_space</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a8a9f8a205468f01d0f13a8858722e30b" compoundref="df/dbb/selection_8cpp" startline="21" endline="26">UnitSelection</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1a8a9f8a205468f01d0f13a8858722e30b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::UnitSelection::UnitSelection</definition>
+        <argsstring>(Engine *engine)</argsstring>
+        <name>UnitSelection</name>
+        <param>
+          <type><ref refid="d6/d40/classopenage_1_1_engine" kindref="compound">Engine</ref> *</type>
+          <declname>engine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="40" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp" bodystart="21" bodyend="26"/>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1ab3a8ab0e359201269d72098c0c145d87" compoundref="df/d48/selection_8h" startline="105">drag_active</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1ab6d8f001c538379db6c2f56cb44859f0" compoundref="df/d48/selection_8h" startline="112">engine</references>
+        <references refid="da/d23/namespaceopenage_1a7174088e5b9a132b1bccacbee82a35cda3e47b75000b0924b6c9ba5759a7cf15d">openage::nothing</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1a0a21b9382975a037b94a1331628b320c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::UnitSelection::on_drawhud</definition>
+        <argsstring>() override</argsstring>
+        <name>on_drawhud</name>
+        <reimplements refid="dd/dba/classopenage_1_1_hud_handler_1a52d98b171b853a47609d924e1d1fca48">on_drawhud</reimplements>
+        <briefdescription>
+<para>execute the drawing action. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="42" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp" bodystart="28" bodyend="83"/>
+        <references refid="d6/d40/classopenage_1_1_engine_1ad5478f5f2e6dba3a8b4aab3fe828ef3c" compoundref="d1/d55/engine_8h" startline="296">openage::Engine::coord</references>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a46cc0df55d22d6eb6c37cabbc09f5193">openage::damaged</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1ab3a8ab0e359201269d72098c0c145d87" compoundref="df/d48/selection_8h" startline="105">drag_active</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1a9e6b650380d7ef95ba29850854ce5321" compoundref="df/d48/selection_8h" startline="107">end</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1ab6d8f001c538379db6c2f56cb44859f0" compoundref="df/d48/selection_8h" startline="112">engine</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a3e12324401051119f44e212dae1a87ce" compoundref="d1/da2/unit_8h" startline="199" endline="203">openage::Unit::get_attribute</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a6c56a8b7e9856a8e0535cacbe831bae7" compoundref="d7/d49/unit_8cpp" startline="258" endline="260">openage::Unit::has_attribute</references>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36ad5f6f6624aebf09a1c60464a76a96df1">openage::hitpoints</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a12811894b98383b4c3cfe6769bc3ff80" compoundref="d1/da2/unit_8h" startline="68">openage::Unit::location</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1a3605e8a7e9e8c75b869556cd4b8174ac" compoundref="df/d48/selection_8h" startline="107">start</references>
+        <references refid="d6/d80/structopenage_1_1coord_1_1camgame_1a3fc238716b4f13031e53b8cb1d8c3a44" compoundref="df/d20/pixel_8cpp" startline="45" endline="48">openage::coord::camgame::to_viewport</references>
+        <references refid="d2/da4/structopenage_1_1coord_1_1phys3_1afb7742fe4e2f67064992aed454d75ef2" compoundref="d4/d34/phys_8cpp" startline="96" endline="98">openage::coord::phys3::to_viewport</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1abafc015ba5af4732d6b00ddec9517c31" compoundref="df/d48/selection_8h" startline="102">units</references>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1aab55848d4a5495b982df54fe1d41865b" compoundref="d0/d03/game__control_8cpp" startline="448" endline="479">openage::ActionMode::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1a100fae0b7f4993a90a984c57024ecfe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::UnitSelection::drag_begin</definition>
+        <argsstring>(coord::camgame pos)</argsstring>
+        <name>drag_begin</name>
+        <param>
+          <type><ref refid="d6/d80/structopenage_1_1coord_1_1camgame" kindref="compound">coord::camgame</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="43" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp" bodystart="85" bodyend="89"/>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1ab3a8ab0e359201269d72098c0c145d87" compoundref="df/d48/selection_8h" startline="105">drag_active</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1a9e6b650380d7ef95ba29850854ce5321" compoundref="df/d48/selection_8h" startline="107">end</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1a3605e8a7e9e8c75b869556cd4b8174ac" compoundref="df/d48/selection_8h" startline="107">start</references>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a35322bea7ad954fe4fefd8e2dfbac60f" compoundref="df/dbb/selection_8cpp" startline="93" endline="98">drag_update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1a35322bea7ad954fe4fefd8e2dfbac60f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::UnitSelection::drag_update</definition>
+        <argsstring>(coord::camgame pos)</argsstring>
+        <name>drag_update</name>
+        <param>
+          <type><ref refid="d6/d80/structopenage_1_1coord_1_1camgame" kindref="compound">coord::camgame</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="44" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp" bodystart="93" bodyend="98"/>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1ab3a8ab0e359201269d72098c0c145d87" compoundref="df/d48/selection_8h" startline="105">drag_active</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1a100fae0b7f4993a90a984c57024ecfe2" compoundref="df/dbb/selection_8cpp" startline="85" endline="89">drag_begin</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1a9e6b650380d7ef95ba29850854ce5321" compoundref="df/d48/selection_8h" startline="107">end</references>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a43f98279255b857ee8fa9943117271e8" compoundref="d0/d03/game__control_8cpp" startline="103" endline="356">openage::ActionMode::on_game_control_set</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1a6b4a0b9275c8ebf623d50a7509487623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::UnitSelection::drag_release</definition>
+        <argsstring>(const Player &amp;player, Terrain *terrain, bool append=false)</argsstring>
+        <name>drag_release</name>
+        <param>
+          <type>const <ref refid="d8/d47/classopenage_1_1_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/d15/classopenage_1_1_terrain" kindref="compound">Terrain</ref> *</type>
+          <declname>terrain</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>append</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="45" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp" bodystart="100" bodyend="108"/>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1ab3a8ab0e359201269d72098c0c145d87" compoundref="df/d48/selection_8h" startline="105">drag_active</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1a9e6b650380d7ef95ba29850854ce5321" compoundref="df/d48/selection_8h" startline="107">end</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1ae351437c3a9fafc071961486f7eef075" compoundref="df/dbb/selection_8cpp" startline="220" endline="236">select_point</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1a1c3efeb8415c50094d66844e69402342" compoundref="df/dbb/selection_8cpp" startline="238" endline="262">select_space</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1a3605e8a7e9e8c75b869556cd4b8174ac" compoundref="df/d48/selection_8h" startline="107">start</references>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a43f98279255b857ee8fa9943117271e8" compoundref="d0/d03/game__control_8cpp" startline="103" endline="356">openage::ActionMode::on_game_control_set</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1aa97b9724248f01b525488bbba21d6b59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::UnitSelection::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="47" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp" bodystart="110" bodyend="118"/>
+        <references refid="da/d23/namespaceopenage_1a7174088e5b9a132b1bccacbee82a35cda3e47b75000b0924b6c9ba5759a7cf15d">openage::nothing</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1aa2054e5dfae57e3f3ca0636a2f317fbd" compoundref="df/d48/selection_8h" startline="103">selection_type</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1abafc015ba5af4732d6b00ddec9517c31" compoundref="df/d48/selection_8h" startline="102">units</references>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1ac7668d88460dbf57f79a75cbe55e34f3" compoundref="df/dbb/selection_8cpp" startline="128" endline="160">add_unit</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1ae351437c3a9fafc071961486f7eef075" compoundref="df/dbb/selection_8cpp" startline="220" endline="236">select_point</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a1c3efeb8415c50094d66844e69402342" compoundref="df/dbb/selection_8cpp" startline="238" endline="262">select_space</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1ae76387eeee60f994b678d79ca4a198e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::UnitSelection::toggle_unit</definition>
+        <argsstring>(const Player &amp;player, Unit *u, bool append=false)</argsstring>
+        <name>toggle_unit</name>
+        <param>
+          <type>const <ref refid="d8/d47/classopenage_1_1_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="df/dea/classopenage_1_1_unit" kindref="compound">Unit</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>append</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="49" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp" bodystart="120" bodyend="126"/>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1ac7668d88460dbf57f79a75cbe55e34f3" compoundref="df/dbb/selection_8cpp" startline="128" endline="160">add_unit</references>
+        <references refid="df/dea/classopenage_1_1_unit_1aa5e4275675942d5e5e6b12a83dbf577a" compoundref="d1/da2/unit_8h" startline="48">openage::Unit::id</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1a55faa863da0461730ad3deed70b726c2" compoundref="df/dbb/selection_8cpp" startline="162" endline="169">remove_unit</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1abafc015ba5af4732d6b00ddec9517c31" compoundref="df/d48/selection_8h" startline="102">units</references>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1ae351437c3a9fafc071961486f7eef075" compoundref="df/dbb/selection_8cpp" startline="220" endline="236">select_point</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1ac7668d88460dbf57f79a75cbe55e34f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::UnitSelection::add_unit</definition>
+        <argsstring>(const Player &amp;player, Unit *u, bool append=false)</argsstring>
+        <name>add_unit</name>
+        <param>
+          <type>const <ref refid="d8/d47/classopenage_1_1_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="df/dea/classopenage_1_1_unit" kindref="compound">Unit</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>append</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="50" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp" bodystart="128" bodyend="160"/>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1aa97b9724248f01b525488bbba21d6b59" compoundref="df/dbb/selection_8cpp" startline="110" endline="118">clear</references>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a46cc0df55d22d6eb6c37cabbc09f5193">openage::damaged</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a3e12324401051119f44e212dae1a87ce" compoundref="d1/da2/unit_8h" startline="199" endline="203">openage::Unit::get_attribute</references>
+        <references refid="df/dea/classopenage_1_1_unit_1adfea298b04684ab09dd8f499dabb8715" compoundref="d7/d49/unit_8cpp" startline="303" endline="305">openage::Unit::get_ref</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1a9ec8fd5cfcfa451cce1123ff87894719" compoundref="df/dbb/selection_8cpp" startline="275" endline="285">get_unit_selection_type</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a6c56a8b7e9856a8e0535cacbe831bae7" compoundref="d7/d49/unit_8cpp" startline="258" endline="260">openage::Unit::has_attribute</references>
+        <references refid="df/dea/classopenage_1_1_unit_1aa5e4275675942d5e5e6b12a83dbf577a" compoundref="d1/da2/unit_8h" startline="48">openage::Unit::id</references>
+        <references refid="da/d23/namespaceopenage_1a7174088e5b9a132b1bccacbee82a35cdacec576a55414cd51591ce1b0794dc1fa">openage::own_buildings</references>
+        <references refid="da/d23/namespaceopenage_1a7174088e5b9a132b1bccacbee82a35cda05e717c9df8ba7e69bb8f3db541fcb7c">openage::own_units</references>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a96ab4e163f4ee03aaa4d1051aa51d204">openage::resource</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a00fd6387097ed12ae6f6b6ec2ab2939e" compoundref="d1/da2/unit_8h" startline="61">openage::Unit::selected</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1aa2054e5dfae57e3f3ca0636a2f317fbd" compoundref="df/d48/selection_8h" startline="103">selection_type</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1abafc015ba5af4732d6b00ddec9517c31" compoundref="df/d48/selection_8h" startline="102">units</references>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a1c3efeb8415c50094d66844e69402342" compoundref="df/dbb/selection_8cpp" startline="238" endline="262">select_space</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1ae76387eeee60f994b678d79ca4a198e8" compoundref="df/dbb/selection_8cpp" startline="120" endline="126">toggle_unit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1a55faa863da0461730ad3deed70b726c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::UnitSelection::remove_unit</definition>
+        <argsstring>(Unit *u)</argsstring>
+        <name>remove_unit</name>
+        <param>
+          <type><ref refid="df/dea/classopenage_1_1_unit" kindref="compound">Unit</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="51" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp" bodystart="162" bodyend="169"/>
+        <references refid="df/dea/classopenage_1_1_unit_1aa5e4275675942d5e5e6b12a83dbf577a" compoundref="d1/da2/unit_8h" startline="48">openage::Unit::id</references>
+        <references refid="da/d23/namespaceopenage_1a7174088e5b9a132b1bccacbee82a35cda3e47b75000b0924b6c9ba5759a7cf15d">openage::nothing</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a00fd6387097ed12ae6f6b6ec2ab2939e" compoundref="d1/da2/unit_8h" startline="61">openage::Unit::selected</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1aa2054e5dfae57e3f3ca0636a2f317fbd" compoundref="df/d48/selection_8h" startline="103">selection_type</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1abafc015ba5af4732d6b00ddec9517c31" compoundref="df/d48/selection_8h" startline="102">units</references>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a2cc48ccbea18ec579f9ad27a89b1d96a" compoundref="df/dbb/selection_8cpp" startline="175" endline="196">kill_unit</referencedby>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1ae76387eeee60f994b678d79ca4a198e8" compoundref="df/dbb/selection_8cpp" startline="120" endline="126">toggle_unit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1ab7bbbd3ae208b61e3fae02eca886e134" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="da/d23/namespaceopenage_1a7174088e5b9a132b1bccacbee82a35cd" kindref="member">selection_type_t</ref></type>
+        <definition>selection_type_t openage::UnitSelection::get_selection_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_selection_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="53" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp" bodystart="171" bodyend="173"/>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1aa2054e5dfae57e3f3ca0636a2f317fbd" compoundref="df/d48/selection_8h" startline="103">selection_type</references>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a30654ed7b85fa4cf0a2728c447dfa652" compoundref="d0/d03/game__control_8cpp" startline="510" endline="534">openage::ActionMode::announce_buttons_type</referencedby>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a43f98279255b857ee8fa9943117271e8" compoundref="d0/d03/game__control_8cpp" startline="103" endline="356">openage::ActionMode::on_game_control_set</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1a2cc48ccbea18ec579f9ad27a89b1d96a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::UnitSelection::kill_unit</definition>
+        <argsstring>(const Player &amp;player)</argsstring>
+        <name>kill_unit</name>
+        <param>
+          <type>const <ref refid="d8/d47/classopenage_1_1_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>kill a single unit in the selection </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="58" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp" bodystart="175" bodyend="196"/>
+        <references refid="df/dea/classopenage_1_1_unit_1ad7f76de394d832d927a9e6d46bd3c93f" compoundref="d7/d49/unit_8cpp" startline="278" endline="280">openage::Unit::delete_unit</references>
+        <references refid="d3/d37/classopenage_1_1_unit_reference_1a6303ff3facc18acf10aa335ee9d318d8" compoundref="d6/dd5/unit__container_8cpp" startline="42" endline="47">openage::UnitReference::get</references>
+        <references refid="df/dea/classopenage_1_1_unit_1aba4a16068cf5a6b218a4c78f499874b0" compoundref="d7/d49/unit_8cpp" startline="49" endline="51">openage::Unit::is_own_unit</references>
+        <references refid="d3/d37/classopenage_1_1_unit_reference_1a55afff48cc1901715f3c29383969d2ac" compoundref="d6/dd5/unit__container_8cpp" startline="36" endline="39">openage::UnitReference::is_valid</references>
+        <references refid="da/d23/namespaceopenage_1a7174088e5b9a132b1bccacbee82a35cda3e47b75000b0924b6c9ba5759a7cf15d">openage::nothing</references>
+        <references refid="da/d94/constinit__vector_8cpp_1aad68795cb6d982f4dda0a4b91a8c1577" compoundref="da/d94/constinit__vector_8cpp" startline="47">ref</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1a55faa863da0461730ad3deed70b726c2" compoundref="df/dbb/selection_8cpp" startline="162" endline="169">remove_unit</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1aa2054e5dfae57e3f3ca0636a2f317fbd" compoundref="df/d48/selection_8h" startline="103">selection_type</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1abafc015ba5af4732d6b00ddec9517c31" compoundref="df/d48/selection_8h" startline="102">units</references>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a43f98279255b857ee8fa9943117271e8" compoundref="d0/d03/game__control_8cpp" startline="103" endline="356">openage::ActionMode::on_game_control_set</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1a641ba956ba51e5ec47130cec3ffe9085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::UnitSelection::contains_builders</definition>
+        <argsstring>(const Player &amp;player)</argsstring>
+        <name>contains_builders</name>
+        <param>
+          <type>const <ref refid="d8/d47/classopenage_1_1_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>checks whether there are any builders in the selection </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="63" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp" bodystart="198" bodyend="207"/>
+        <references refid="da/d23/namespaceopenage_1a7278b1c0b8d94d06da155b0b693b2828ab0da275520918e23dd615e2a747528f1">openage::build</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1abafc015ba5af4732d6b00ddec9517c31" compoundref="df/d48/selection_8h" startline="102">units</references>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a43f98279255b857ee8fa9943117271e8" compoundref="d0/d03/game__control_8cpp" startline="103" endline="356">openage::ActionMode::on_game_control_set</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1a07df9837a02027bf139d1cecfb541b4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::UnitSelection::contains_military</definition>
+        <argsstring>(const Player &amp;player)</argsstring>
+        <name>contains_military</name>
+        <param>
+          <type>const <ref refid="d8/d47/classopenage_1_1_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>checks whether there are any military units (i.e. </para>        </briefdescription>
+        <detaileddescription>
+<para>non-builders) in the selection </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="68" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp" bodystart="209" bodyend="218"/>
+        <references refid="da/d23/namespaceopenage_1a7278b1c0b8d94d06da155b0b693b2828ab0da275520918e23dd615e2a747528f1">openage::build</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1abafc015ba5af4732d6b00ddec9517c31" compoundref="df/d48/selection_8h" startline="102">units</references>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a30654ed7b85fa4cf0a2728c447dfa652" compoundref="d0/d03/game__control_8cpp" startline="510" endline="534">openage::ActionMode::announce_buttons_type</referencedby>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a43f98279255b857ee8fa9943117271e8" compoundref="d0/d03/game__control_8cpp" startline="103" endline="356">openage::ActionMode::on_game_control_set</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1ae351437c3a9fafc071961486f7eef075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::UnitSelection::select_point</definition>
+        <argsstring>(const Player &amp;player, Terrain *terrain, coord::camgame p, bool append=false)</argsstring>
+        <name>select_point</name>
+        <param>
+          <type>const <ref refid="d8/d47/classopenage_1_1_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/d15/classopenage_1_1_terrain" kindref="compound">Terrain</ref> *</type>
+          <declname>terrain</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d80/structopenage_1_1coord_1_1camgame" kindref="compound">coord::camgame</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>append</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>point unit selection </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="73" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp" bodystart="220" bodyend="236"/>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1aa97b9724248f01b525488bbba21d6b59" compoundref="df/dbb/selection_8cpp" startline="110" endline="118">clear</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <references refid="d4/d15/classopenage_1_1_terrain_1aa4d53dc392a6fd6da85ba49625d70478" compoundref="dc/dcd/terrain_8cpp" startline="146" endline="162">openage::Terrain::obj_at_point</references>
+        <references refid="d6/d80/structopenage_1_1coord_1_1camgame_1a0b8e17b9f35af0cb50dbd56e8d6ff243" compoundref="df/d20/pixel_8cpp" startline="40" endline="42">openage::coord::camgame::to_phys3</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1ae76387eeee60f994b678d79ca4a198e8" compoundref="df/dbb/selection_8cpp" startline="120" endline="126">toggle_unit</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a2a1b7ecac013c794375d21d5efd89f87" compoundref="d7/d66/log_2____init_____8py" startline="117" endline="120">openage::log.warn</references>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a6b4a0b9275c8ebf623d50a7509487623" compoundref="df/dbb/selection_8cpp" startline="100" endline="108">drag_release</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1a1c3efeb8415c50094d66844e69402342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::UnitSelection::select_space</definition>
+        <argsstring>(const Player &amp;player, Terrain *terrain, coord::camgame p1, coord::camgame p2, bool append=false)</argsstring>
+        <name>select_space</name>
+        <param>
+          <type>const <ref refid="d8/d47/classopenage_1_1_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/d15/classopenage_1_1_terrain" kindref="compound">Terrain</ref> *</type>
+          <declname>terrain</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d80/structopenage_1_1coord_1_1camgame" kindref="compound">coord::camgame</ref></type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/d80/structopenage_1_1coord_1_1camgame" kindref="compound">coord::camgame</ref></type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>append</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>boxed unit selection </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="78" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp" bodystart="238" bodyend="262"/>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1ac7668d88460dbf57f79a75cbe55e34f3" compoundref="df/dbb/selection_8cpp" startline="128" endline="160">add_unit</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1aa97b9724248f01b525488bbba21d6b59" compoundref="df/dbb/selection_8cpp" startline="110" endline="118">clear</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1ad5478f5f2e6dba3a8b4aab3fe828ef3c" compoundref="d1/d55/engine_8h" startline="296">openage::Engine::coord</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1ab6d8f001c538379db6c2f56cb44859f0" compoundref="df/d48/selection_8h" startline="112">engine</references>
+        <references refid="d4/d15/classopenage_1_1_terrain_1a437d04e21933a02a08861b50a585135e" compoundref="dc/dcd/terrain_8cpp" startline="137" endline="144">openage::Terrain::get_data</references>
+        <references refid="de/d06/namespaceopenage_1_1console_1_1tests_1a46ebd3333dc9196558ac9aced828d117" compoundref="de/d77/console_2tests_8cpp" startline="31" endline="33">openage::console::tests::max</references>
+        <references refid="d8/dcc/namespacestd_1a1c0bc145caf5f0b2af8d16d29d952180" compoundref="de/d62/fixed__point_8h" startline="483" endline="488">std::max</references>
+        <references refid="d8/dcc/namespacestd_1a34591a1d8ee5da3f16f56554590d5e16" compoundref="de/d62/fixed__point_8h" startline="475" endline="480">std::min</references>
+        <references refid="d3/dd0/classopenage_1_1_tile_content_1aaeff054a61d61cc0c65cfefcc78de233" compoundref="d8/db6/terrain_8h" startline="59">openage::TileContent::obj</references>
+        <references refid="da/d23/namespaceopenage_1ac00e0eb95e4253ba49dcc06a9f7f65be" compoundref="df/dbb/selection_8cpp" startline="287" endline="318">openage::tiles_in_range</references>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1a6b4a0b9275c8ebf623d50a7509487623" compoundref="df/dbb/selection_8cpp" startline="100" endline="108">drag_release</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1a0ad857ab54207bdaa9719fc01410f101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::UnitSelection::all_invoke</definition>
+        <argsstring>(Command &amp;cmd)</argsstring>
+        <name>all_invoke</name>
+        <param>
+          <type><ref refid="d8/dda/classopenage_1_1_command" kindref="compound">Command</ref> &amp;</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+<para>uses command on every selected unit </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="83" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp" bodystart="264" bodyend="273"/>
+        <references refid="d8/dda/classopenage_1_1_command_1a9aee3c6c48bb4f2b343dc2633389082c" compoundref="d0/d09/command_8h" startline="126">openage::Command::player</references>
+        <references refid="d9/de2/classopenage_1_1_unit_selection_1abafc015ba5af4732d6b00ddec9517c31" compoundref="df/d48/selection_8h" startline="102">units</references>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a43f98279255b857ee8fa9943117271e8" compoundref="d0/d03/game__control_8cpp" startline="103" endline="356">openage::ActionMode::on_game_control_set</referencedby>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a3865e557756044d8183a3d24cd5b8ab4" compoundref="d0/d03/game__control_8cpp" startline="414" endline="446">openage::ActionMode::place_selection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1ac2e376479c41e349e5bc05d1db739107" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int openage::UnitSelection::get_units_count</definition>
+        <argsstring>() const</argsstring>
+        <name>get_units_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="85" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" bodystart="85" bodyend="85"/>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1aab55848d4a5495b982df54fe1d41865b" compoundref="d0/d03/game__control_8cpp" startline="448" endline="479">openage::ActionMode::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1adebc67ac2ae80d7bbb777d2f6b080334" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="d3/d37/classopenage_1_1_unit_reference" kindref="compound">UnitReference</ref> &amp;</type>
+        <definition>const UnitReference&amp; openage::UnitSelection::get_first_unit</definition>
+        <argsstring>() const</argsstring>
+        <name>get_first_unit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="87" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d9/de2/classopenage_1_1_unit_selection_1a9ec8fd5cfcfa451cce1123ff87894719" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="da/d23/namespaceopenage_1a7174088e5b9a132b1bccacbee82a35cd" kindref="member">selection_type_t</ref></type>
+        <definition>selection_type_t openage::UnitSelection::get_unit_selection_type</definition>
+        <argsstring>(const Player &amp;player, Unit *)</argsstring>
+        <name>get_unit_selection_type</name>
+        <param>
+          <type>const <ref refid="d8/d47/classopenage_1_1_player" kindref="compound">Player</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="df/dea/classopenage_1_1_unit" kindref="compound">Unit</ref> *</type>
+          <defname>u</defname>
+        </param>
+        <briefdescription>
+<para>Check whether the currently selected units may be selected at the same time If not, deselect some units This is the order in which the checks occur: Own units &gt; own <ref refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a1b20e9021b3a16b059287caddc7862f6" kindref="member">building(s)</ref> &gt; enemy unit &gt; enemy building &gt; any object. </para>        </briefdescription>
+        <detaileddescription>
+<para>So you can select a group of units, or a building (or multiple if append is on) Enemy units, enemy buildings and other objects may only be selected one at a time </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="100" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.cpp" bodystart="275" bodyend="285"/>
+        <references refid="da/d23/namespaceopenage_1a38adadf644885a7fe121be11ffeb8c36a1b20e9021b3a16b059287caddc7862f6">openage::building</references>
+        <references refid="da/d23/namespaceopenage_1a7174088e5b9a132b1bccacbee82a35cda1fd8e3998f23347bbf10bfcc892df706">openage::enemy_building</references>
+        <references refid="da/d23/namespaceopenage_1a7174088e5b9a132b1bccacbee82a35cdacbd2ae7b84f0df28929ff9f16bffc43c">openage::enemy_unit</references>
+        <references refid="df/dea/classopenage_1_1_unit_1a6c56a8b7e9856a8e0535cacbe831bae7" compoundref="d7/d49/unit_8cpp" startline="258" endline="260">openage::Unit::has_attribute</references>
+        <references refid="df/dea/classopenage_1_1_unit_1aba4a16068cf5a6b218a4c78f499874b0" compoundref="d7/d49/unit_8cpp" startline="49" endline="51">openage::Unit::is_own_unit</references>
+        <references refid="da/d23/namespaceopenage_1a7174088e5b9a132b1bccacbee82a35cdacec576a55414cd51591ce1b0794dc1fa">openage::own_buildings</references>
+        <references refid="da/d23/namespaceopenage_1a7174088e5b9a132b1bccacbee82a35cda05e717c9df8ba7e69bb8f3db541fcb7c">openage::own_units</references>
+        <referencedby refid="d9/de2/classopenage_1_1_unit_selection_1ac7668d88460dbf57f79a75cbe55e34f3" compoundref="df/dbb/selection_8cpp" startline="128" endline="160">add_unit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>a user interface component allowing control of a selected group </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5628">
+        <label>openage::HudHandler</label>
+        <link refid="dd/dba/classopenage_1_1_hud_handler"/>
+      </node>
+      <node id="5627">
+        <label>openage::UnitSelection</label>
+        <link refid="d9/de2/classopenage_1_1_unit_selection"/>
+        <childnode refid="5628" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5666">
+        <label>CoordNeSeUpAbsolute&lt; phys_t, phys3, phys3_delta &gt;</label>
+      </node>
+      <node id="5641">
+        <label>openage::util::Path</label>
+        <link refid="dd/dc1/classopenage_1_1util_1_1_path"/>
+      </node>
+      <node id="5642">
+        <label>openage::EngineSignals</label>
+        <link refid="de/dbb/classopenage_1_1_engine_signals"/>
+        <childnode refid="5643" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5667">
+        <label>openage::coord::camgame_delta</label>
+        <link refid="d5/d40/structopenage_1_1coord_1_1camgame__delta"/>
+        <childnode refid="5668" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5636">
+        <label>openage::util::VariableBase</label>
+        <link refid="da/d0a/classopenage_1_1util_1_1_variable_base"/>
+      </node>
+      <node id="5645">
+        <label>openage::ScreenshotManager</label>
+        <link refid="d5/dfd/classopenage_1_1_screenshot_manager"/>
+        <childnode refid="5646" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+        <childnode refid="5647" relation="usage">
+          <edgelabel>+window_size</edgelabel>
+        </childnode>
+      </node>
+      <node id="5638">
+        <label>T</label>
+      </node>
+      <node id="5648">
+        <label>CoordXYRelative&lt; pixel_t, viewport, viewport_delta &gt;</label>
+      </node>
+      <node id="5635">
+        <label>openage::util::Variable&lt; bool &gt;</label>
+        <link refid="df/d2d/classopenage_1_1util_1_1_variable"/>
+        <childnode refid="5636" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5637" relation="template-instance">
+          <edgelabel>&lt; bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5643">
+        <label>QObject</label>
+      </node>
+      <node id="5644">
+        <label>openage::cvar::CVarManager</label>
+        <link refid="db/db2/classopenage_1_1cvar_1_1_c_var_manager"/>
+        <childnode refid="5641" relation="usage">
+          <edgelabel>-path</edgelabel>
+        </childnode>
+      </node>
+      <node id="5670">
+        <label>openage::coord::camgame</label>
+        <link refid="d6/d80/structopenage_1_1coord_1_1camgame"/>
+        <childnode refid="5671" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5665">
+        <label>openage::coord::phys3</label>
+        <link refid="d2/da4/structopenage_1_1coord_1_1phys3"/>
+        <childnode refid="5666" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5651">
+        <label>openage::util::ExternalProfiler</label>
+        <link refid="dd/d6f/classopenage_1_1util_1_1_external_profiler"/>
+      </node>
+      <node id="5633">
+        <label>openage::options::OptionNode</label>
+        <link refid="d9/d52/classopenage_1_1options_1_1_option_node"/>
+        <childnode refid="5633" relation="usage">
+          <edgelabel>-parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="5663">
+        <label>openage::coord::viewport</label>
+        <link refid="d2/dcd/structopenage_1_1coord_1_1viewport"/>
+        <childnode refid="5664" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5659">
+        <label>openage::input::ActionManager</label>
+        <link refid="d4/de2/classopenage_1_1input_1_1_action_manager"/>
+        <childnode refid="5644" relation="usage">
+          <edgelabel>-cvar_manager</edgelabel>
+        </childnode>
+        <childnode refid="5652" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="5661">
+        <label>qtsdl::GuiSingletonItemsInfo</label>
+        <link refid="d2/dbf/classqtsdl_1_1_gui_singleton_items_info"/>
+      </node>
+      <node id="5671">
+        <label>CoordXYAbsolute&lt; pixel_t, camgame, camgame_delta &gt;</label>
+      </node>
+      <node id="5647">
+        <label>openage::coord::viewport_delta</label>
+        <link refid="d5/d5e/structopenage_1_1coord_1_1viewport__delta"/>
+        <childnode refid="5648" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5630">
+        <label>openage::HudHandler</label>
+        <link refid="dd/dba/classopenage_1_1_hud_handler"/>
+      </node>
+      <node id="5658">
+        <label>CoordXYRelative&lt; pixel_t, input, input_delta &gt;</label>
+      </node>
+      <node id="5639">
+        <label>openage::options::Var&lt; T &gt;</label>
+        <link refid="d6/d6a/classopenage_1_1options_1_1_var"/>
+        <childnode refid="5637" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5654">
+        <label>openage::coord::input</label>
+        <link refid="d8/d34/structopenage_1_1coord_1_1input"/>
+        <childnode refid="5655" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5668">
+        <label>CoordXYRelative&lt; pixel_t, camgame, camgame_delta &gt;</label>
+      </node>
+      <node id="5646">
+        <label>openage::job::JobManager</label>
+        <link refid="dc/d9a/classopenage_1_1job_1_1_job_manager"/>
+      </node>
+      <node id="5655">
+        <label>CoordXYAbsolute&lt; pixel_t, input, input_delta &gt;</label>
+      </node>
+      <node id="5649">
+        <label>openage::util::FrameCounter</label>
+        <link refid="d9/d71/classopenage_1_1util_1_1_frame_counter"/>
+        <childnode refid="5650" relation="usage">
+          <edgelabel>-frame_timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="5656">
+        <label>openage::input::InputContext</label>
+        <link refid="d7/d57/classopenage_1_1input_1_1_input_context"/>
+        <childnode refid="5652" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="5629">
+        <label>openage::UnitSelection</label>
+        <link refid="d9/de2/classopenage_1_1_unit_selection"/>
+        <childnode refid="5630" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5631" relation="usage">
+          <edgelabel>-engine</edgelabel>
+        </childnode>
+        <childnode refid="5670" relation="usage">
+          <edgelabel>-start</edgelabel>
+          <edgelabel>-end</edgelabel>
+        </childnode>
+      </node>
+      <node id="5660">
+        <label>openage::gui::EngineQMLInfo</label>
+        <link refid="d4/d73/classopenage_1_1gui_1_1_engine_q_m_l_info"/>
+        <childnode refid="5661" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5641" relation="usage">
+          <edgelabel>+asset_dir</edgelabel>
+        </childnode>
+        <childnode refid="5631" relation="usage">
+          <edgelabel>+engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="5669">
+        <label>openage::audio::AudioManager</label>
+        <link refid="d0/d62/classopenage_1_1audio_1_1_audio_manager"/>
+        <childnode refid="5646" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="5640">
+        <label>openage::util::Profiler</label>
+        <link refid="db/de7/classopenage_1_1util_1_1_profiler"/>
+        <childnode refid="5631" relation="usage">
+          <edgelabel>-engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="5631">
+        <label>openage::Engine</label>
+        <link refid="d6/d40/classopenage_1_1_engine"/>
+        <childnode refid="5632" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5634" relation="usage">
+          <edgelabel>+drawing_huds</edgelabel>
+          <edgelabel>+drawing_debug_overlay</edgelabel>
+        </childnode>
+        <childnode refid="5640" relation="usage">
+          <edgelabel>-profiler</edgelabel>
+        </childnode>
+        <childnode refid="5641" relation="usage">
+          <edgelabel>-root_dir</edgelabel>
+        </childnode>
+        <childnode refid="5642" relation="usage">
+          <edgelabel>+gui_signals</edgelabel>
+        </childnode>
+        <childnode refid="5644" relation="usage">
+          <edgelabel>-cvar_manager</edgelabel>
+        </childnode>
+        <childnode refid="5645" relation="usage">
+          <edgelabel>-screenshot_manager</edgelabel>
+        </childnode>
+        <childnode refid="5649" relation="usage">
+          <edgelabel>-fps_counter</edgelabel>
+        </childnode>
+        <childnode refid="5651" relation="usage">
+          <edgelabel>+external_profiler</edgelabel>
+        </childnode>
+        <childnode refid="5652" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+        <childnode refid="5660" relation="usage">
+          <edgelabel>-qml_info</edgelabel>
+        </childnode>
+        <childnode refid="5662" relation="usage">
+          <edgelabel>+coord</edgelabel>
+        </childnode>
+        <childnode refid="5646" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+        <childnode refid="5659" relation="usage">
+          <edgelabel>-action_manager</edgelabel>
+        </childnode>
+        <childnode refid="5669" relation="usage">
+          <edgelabel>-audio_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="5664">
+        <label>CoordXYAbsolute&lt; pixel_t, viewport, viewport_delta &gt;</label>
+      </node>
+      <node id="5632">
+        <label>openage::ResizeHandler</label>
+        <link refid="db/d8a/classopenage_1_1_resize_handler"/>
+      </node>
+      <node id="5634">
+        <label>openage::options::Var&lt; bool &gt;</label>
+        <link refid="d6/d6a/classopenage_1_1options_1_1_var"/>
+        <childnode refid="5635" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5639" relation="template-instance">
+          <edgelabel>&lt; bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5657">
+        <label>openage::coord::input_delta</label>
+        <link refid="d8/db7/structopenage_1_1coord_1_1input__delta"/>
+        <childnode refid="5658" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5650">
+        <label>openage::util::Timer</label>
+        <link refid="d3/d81/classopenage_1_1util_1_1_timer"/>
+      </node>
+      <node id="5653">
+        <label>openage::InputHandler</label>
+        <link refid="da/dc5/classopenage_1_1_input_handler"/>
+      </node>
+      <node id="5637">
+        <label>openage::util::Variable&lt; T &gt;</label>
+        <link refid="df/d2d/classopenage_1_1util_1_1_variable"/>
+        <childnode refid="5636" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5638" relation="usage">
+          <edgelabel>+value</edgelabel>
+        </childnode>
+      </node>
+      <node id="5652">
+        <label>openage::input::InputManager</label>
+        <link refid="d7/df3/classopenage_1_1input_1_1_input_manager"/>
+        <childnode refid="5653" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5654" relation="usage">
+          <edgelabel>-mouse_position</edgelabel>
+        </childnode>
+        <childnode refid="5656" relation="usage">
+          <edgelabel>-global_context</edgelabel>
+        </childnode>
+        <childnode refid="5657" relation="usage">
+          <edgelabel>-mouse_motion</edgelabel>
+        </childnode>
+        <childnode refid="5659" relation="usage">
+          <edgelabel>-action_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="5662">
+        <label>openage::coord::CoordManager</label>
+        <link refid="de/db5/classopenage_1_1coord_1_1_coord_manager"/>
+        <childnode refid="5663" relation="usage">
+          <edgelabel>+camgame_viewport</edgelabel>
+          <edgelabel>+camhud_viewport</edgelabel>
+        </childnode>
+        <childnode refid="5665" relation="usage">
+          <edgelabel>+camgame_phys</edgelabel>
+        </childnode>
+        <childnode refid="5667" relation="usage">
+          <edgelabel>+tile_size</edgelabel>
+        </childnode>
+        <childnode refid="5647" relation="usage">
+          <edgelabel>+viewport_size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" line="38" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/unit/selection.h" bodystart="38" bodyend="113"/>
+    <listofallmembers>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1ac7668d88460dbf57f79a75cbe55e34f3" prot="public" virt="non-virtual"><scope>openage::UnitSelection</scope><name>add_unit</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1a0ad857ab54207bdaa9719fc01410f101" prot="public" virt="non-virtual"><scope>openage::UnitSelection</scope><name>all_invoke</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1aa97b9724248f01b525488bbba21d6b59" prot="public" virt="non-virtual"><scope>openage::UnitSelection</scope><name>clear</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1a641ba956ba51e5ec47130cec3ffe9085" prot="public" virt="non-virtual"><scope>openage::UnitSelection</scope><name>contains_builders</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1a07df9837a02027bf139d1cecfb541b4d" prot="public" virt="non-virtual"><scope>openage::UnitSelection</scope><name>contains_military</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1ab3a8ab0e359201269d72098c0c145d87" prot="private" virt="non-virtual"><scope>openage::UnitSelection</scope><name>drag_active</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1a100fae0b7f4993a90a984c57024ecfe2" prot="public" virt="non-virtual"><scope>openage::UnitSelection</scope><name>drag_begin</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1a6b4a0b9275c8ebf623d50a7509487623" prot="public" virt="non-virtual"><scope>openage::UnitSelection</scope><name>drag_release</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1a35322bea7ad954fe4fefd8e2dfbac60f" prot="public" virt="non-virtual"><scope>openage::UnitSelection</scope><name>drag_update</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1a9e6b650380d7ef95ba29850854ce5321" prot="private" virt="non-virtual"><scope>openage::UnitSelection</scope><name>end</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1ab6d8f001c538379db6c2f56cb44859f0" prot="private" virt="non-virtual"><scope>openage::UnitSelection</scope><name>engine</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1adebc67ac2ae80d7bbb777d2f6b080334" prot="public" virt="non-virtual"><scope>openage::UnitSelection</scope><name>get_first_unit</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1ab7bbbd3ae208b61e3fae02eca886e134" prot="public" virt="non-virtual"><scope>openage::UnitSelection</scope><name>get_selection_type</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1a9ec8fd5cfcfa451cce1123ff87894719" prot="private" virt="non-virtual"><scope>openage::UnitSelection</scope><name>get_unit_selection_type</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1ac2e376479c41e349e5bc05d1db739107" prot="public" virt="non-virtual"><scope>openage::UnitSelection</scope><name>get_units_count</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1a2cc48ccbea18ec579f9ad27a89b1d96a" prot="public" virt="non-virtual"><scope>openage::UnitSelection</scope><name>kill_unit</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1a0a21b9382975a037b94a1331628b320c" prot="public" virt="virtual"><scope>openage::UnitSelection</scope><name>on_drawhud</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1a55faa863da0461730ad3deed70b726c2" prot="public" virt="non-virtual"><scope>openage::UnitSelection</scope><name>remove_unit</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1ae351437c3a9fafc071961486f7eef075" prot="public" virt="non-virtual"><scope>openage::UnitSelection</scope><name>select_point</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1a1c3efeb8415c50094d66844e69402342" prot="public" virt="non-virtual"><scope>openage::UnitSelection</scope><name>select_space</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1aa2054e5dfae57e3f3ca0636a2f317fbd" prot="private" virt="non-virtual"><scope>openage::UnitSelection</scope><name>selection_type</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1a3605e8a7e9e8c75b869556cd4b8174ac" prot="private" virt="non-virtual"><scope>openage::UnitSelection</scope><name>start</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1ae76387eeee60f994b678d79ca4a198e8" prot="public" virt="non-virtual"><scope>openage::UnitSelection</scope><name>toggle_unit</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1abafc015ba5af4732d6b00ddec9517c31" prot="private" virt="non-virtual"><scope>openage::UnitSelection</scope><name>units</name></member>
+      <member refid="d9/de2/classopenage_1_1_unit_selection_1a8a9f8a205468f01d0f13a8858722e30b" prot="public" virt="non-virtual"><scope>openage::UnitSelection</scope><name>UnitSelection</name></member>
+      <member refid="dd/dba/classopenage_1_1_hud_handler_1a5b1435a782148709e7acf4a0dd94189f" prot="public" virt="virtual"><scope>openage::UnitSelection</scope><name>~HudHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

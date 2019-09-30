@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d8/deb/gui__subtree__impl_8h" kind="file" language="C++">
+    <compoundname>gui_subtree_impl.h</compoundname>
+    <includes local="no">memory</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includes local="no">QObject</includes>
+    <includes local="no">QQmlComponent</includes>
+    <includes refid="d2/dc5/gui__callback_8h" local="yes">gui_callback.h</includes>
+    <includes refid="d1/d79/gui__live__reloader_8h" local="yes">livereload/gui_live_reloader.h</includes>
+    <includedby refid="dc/d71/gui__subtree__impl_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_subtree_impl.cpp</includedby>
+    <includedby refid="d6/d65/gui__subtree_8cpp" local="yes">/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_subtree.cpp</includedby>
+    <incdepgraph>
+      <node id="13421">
+        <label>functional</label>
+      </node>
+      <node id="13418">
+        <label>QObject</label>
+      </node>
+      <node id="13428">
+        <label>QList</label>
+      </node>
+      <node id="13419">
+        <label>QQmlComponent</label>
+      </node>
+      <node id="13422">
+        <label>QMetaType</label>
+      </node>
+      <node id="13417">
+        <label>string</label>
+      </node>
+      <node id="13429">
+        <label>QtQml</label>
+      </node>
+      <node id="13425">
+        <label>tuple</label>
+      </node>
+      <node id="13416">
+        <label>vector</label>
+      </node>
+      <node id="13423">
+        <label>livereload/gui_live_reloader.h</label>
+        <link refid="d1/d79/gui__live__reloader_8h"/>
+        <childnode refid="13424" relation="include">
+        </childnode>
+        <childnode refid="13425" relation="include">
+        </childnode>
+        <childnode refid="13415" relation="include">
+        </childnode>
+        <childnode refid="13426" relation="include">
+        </childnode>
+        <childnode refid="13427" relation="include">
+        </childnode>
+        <childnode refid="13428" relation="include">
+        </childnode>
+        <childnode refid="13429" relation="include">
+        </childnode>
+      </node>
+      <node id="13424">
+        <label>unordered_map</label>
+      </node>
+      <node id="13414">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_subtree_impl.h</label>
+        <link refid="d8/deb/gui__subtree__impl_8h"/>
+        <childnode refid="13415" relation="include">
+        </childnode>
+        <childnode refid="13416" relation="include">
+        </childnode>
+        <childnode refid="13417" relation="include">
+        </childnode>
+        <childnode refid="13418" relation="include">
+        </childnode>
+        <childnode refid="13419" relation="include">
+        </childnode>
+        <childnode refid="13420" relation="include">
+        </childnode>
+        <childnode refid="13423" relation="include">
+        </childnode>
+      </node>
+      <node id="13427">
+        <label>QHash</label>
+      </node>
+      <node id="13426">
+        <label>QStringList</label>
+      </node>
+      <node id="13415">
+        <label>memory</label>
+      </node>
+      <node id="13420">
+        <label>gui_callback.h</label>
+        <link refid="d2/dc5/gui__callback_8h"/>
+        <childnode refid="13421" relation="include">
+        </childnode>
+        <childnode refid="13418" relation="include">
+        </childnode>
+        <childnode refid="13422" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="13431">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_subtree_impl.cpp</label>
+        <link refid="dc/d71/gui__subtree__impl_8cpp"/>
+      </node>
+      <node id="13432">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/public/gui_subtree.cpp</label>
+        <link refid="d6/d65/gui__subtree_8cpp"/>
+      </node>
+      <node id="13430">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_subtree_impl.h</label>
+        <link refid="d8/deb/gui__subtree__impl_8h"/>
+        <childnode refid="13431" relation="include">
+        </childnode>
+        <childnode refid="13432" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection" prot="public">qtsdl::GuiEngineImplConnection</innerclass>
+    <innerclass refid="d4/d96/classqtsdl_1_1_gui_subtree_impl" prot="public">qtsdl::GuiSubtreeImpl</innerclass>
+    <innernamespace refid="d6/dda/namespaceqtsdl">qtsdl</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2015-2017<sp/>the<sp/>openage<sp/>authors.<sp/>See<sp/>copying.md<sp/>for<sp/>legal<sp/>info.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QObject&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QQmlComponent&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d2/dc5/gui__callback_8h" kindref="compound">gui_callback.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d1/d79/gui__live__reloader_8h" kindref="compound">livereload/gui_live_reloader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">QT_FORWARD_DECLARE_CLASS(QQuickItem)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/dda/namespaceqtsdl" kindref="compound">qtsdl</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GuiRenderer;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GuiRendererImpl;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GuiEventQueue;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GuiEventQueueImpl;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GuiEngine;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GuiEngineImpl;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">GuiSubtreeImpl;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection" kindref="compound">GuiEngineImplConnection</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1af2b2a2bdaa614da0dc29dd0ec4d76b3e" kindref="member">GuiEngineImplConnection</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1af2b2a2bdaa614da0dc29dd0ec4d76b3e" kindref="member">GuiEngineImplConnection</ref>(<ref refid="d4/d96/classqtsdl_1_1_gui_subtree_impl" kindref="compound">GuiSubtreeImpl</ref><sp/>*<ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1ac87ff227188ad449ede10af2a8af1ae0" kindref="member">subtree</ref>,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d58/classqtsdl_1_1_gui_engine_impl" kindref="compound">GuiEngineImpl</ref><sp/>*<ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1a2663b1ea6f047c599811111a33b4382f" kindref="member">engine</ref>,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;<ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1a38c787b5f4a17c1adccf0e8cfebcdf13" kindref="member">root_dir</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1a838d04049e7a234096ddc630de0fee59" kindref="member">~GuiEngineImplConnection</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1af2b2a2bdaa614da0dc29dd0ec4d76b3e" kindref="member">GuiEngineImplConnection</ref>(<ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection" kindref="compound">GuiEngineImplConnection</ref><sp/>&amp;&amp;cnx)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection" kindref="compound">GuiEngineImplConnection</ref>&amp;<sp/><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1a3de39e1c4b2cc6b97f38d9c1217d5de5" kindref="member">operator=</ref>(<ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection" kindref="compound">GuiEngineImplConnection</ref><sp/>&amp;&amp;cnx)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1aeb1d2cd3646f38fa8bc7733e16c99885" kindref="member">has_subtree</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>QQmlContext*<sp/><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1a53fe06a5892eaa14cf0a9f4b8d0004a6" kindref="member">rootContext</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>QQmlEngine*<sp/><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1a679c00b61c59c7eaba774b7e4788bbbd" kindref="member">get_qml_engine</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1af2b2a2bdaa614da0dc29dd0ec4d76b3e" kindref="member">GuiEngineImplConnection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection" kindref="compound">GuiEngineImplConnection</ref><sp/>&amp;cnx)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection" kindref="compound">GuiEngineImplConnection</ref>&amp;<sp/><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1a3de39e1c4b2cc6b97f38d9c1217d5de5" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection" kindref="compound">GuiEngineImplConnection</ref><sp/>&amp;cnx)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1ac2ef61bcd0cdb991b399a29eeb5ec74c" kindref="member">disconnect</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1ac87ff227188ad449ede10af2a8af1ae0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d96/classqtsdl_1_1_gui_subtree_impl" kindref="compound">GuiSubtreeImpl</ref><sp/>*<ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1ac87ff227188ad449ede10af2a8af1ae0" kindref="member">subtree</ref>;</highlight></codeline>
+<codeline lineno="50" refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1a2663b1ea6f047c599811111a33b4382f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d58/classqtsdl_1_1_gui_engine_impl" kindref="compound">GuiEngineImpl</ref><sp/>*<ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1a2663b1ea6f047c599811111a33b4382f" kindref="member">engine</ref>;</highlight></codeline>
+<codeline lineno="51" refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1a38c787b5f4a17c1adccf0e8cfebcdf13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1a38c787b5f4a17c1adccf0e8cfebcdf13" kindref="member">root_dir</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="d4/d96/classqtsdl_1_1_gui_subtree_impl" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d4/d96/classqtsdl_1_1_gui_subtree_impl" kindref="compound">GuiSubtreeImpl</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QObject<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="d4/d96/classqtsdl_1_1_gui_subtree_impl" kindref="compound">GuiSubtreeImpl</ref>(<ref refid="d0/d58/classqtsdl_1_1_gui_renderer" kindref="compound">GuiRenderer</ref><sp/>*renderer,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/dc9/classqtsdl_1_1_gui_event_queue" kindref="compound">GuiEventQueue</ref><sp/>*game_logic_updater,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d14/classqtsdl_1_1_gui_engine" kindref="compound">GuiEngine</ref><sp/>*<ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection_1a2663b1ea6f047c599811111a33b4382f" kindref="member">engine</ref>,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;source,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;rootdir);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="d4/d96/classqtsdl_1_1_gui_subtree_impl" kindref="compound">GuiSubtreeImpl</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onEngineReloaded();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>attach_to(<ref refid="dc/dc7/classqtsdl_1_1_gui_event_queue_impl" kindref="compound">GuiEventQueueImpl</ref><sp/>*game_logic_updater);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>attach_to(<ref refid="dd/db2/classqtsdl_1_1_gui_renderer_impl" kindref="compound">GuiRendererImpl</ref><sp/>*renderer);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>attach_to(<ref refid="de/d58/classqtsdl_1_1_gui_engine_impl" kindref="compound">GuiEngineImpl</ref><sp/>*engine,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;source);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>component_status_changed(QQmlComponent::Status<sp/>status);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_resized(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QSize<sp/>&amp;size);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>on_process_game_logic_callback_blocking(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">()&gt;<sp/>&amp;f);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">signals:</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>process_game_logic_callback_blocking(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">()&gt;<sp/>&amp;f);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_persistent_items();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reparent_root();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>destroy_root();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="d4/d96/classqtsdl_1_1_gui_subtree_impl_1aced147dc0607d29dfb4a310d8f22aa41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/db2/classqtsdl_1_1_gui_renderer_impl" kindref="compound">GuiRendererImpl</ref><sp/>*<ref refid="d4/d96/classqtsdl_1_1_gui_subtree_impl_1aced147dc0607d29dfb4a310d8f22aa41" kindref="member">renderer</ref>;</highlight></codeline>
+<codeline lineno="88" refid="d4/d96/classqtsdl_1_1_gui_subtree_impl_1af620ab031a4742dae3eb216aa12c7369" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/d89/classqtsdl_1_1_gui_engine_impl_connection" kindref="compound">GuiEngineImplConnection</ref><sp/><ref refid="d4/d96/classqtsdl_1_1_gui_subtree_impl_1af620ab031a4742dae3eb216aa12c7369" kindref="member">engine</ref>;</highlight></codeline>
+<codeline lineno="89" refid="d4/d96/classqtsdl_1_1_gui_subtree_impl_1af9189c5aa2bbb662189fc9b61c67c043" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d61/classqtsdl_1_1_gui_live_reloader" kindref="compound">GuiLiveReloader</ref><sp/><ref refid="d4/d96/classqtsdl_1_1_gui_subtree_impl_1af9189c5aa2bbb662189fc9b61c67c043" kindref="member">reloader</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="d4/d96/classqtsdl_1_1_gui_subtree_impl_1a6ae6a875301fbf12e6feafa8ad76b363" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/df2/classqtsdl_1_1_gui_callback" kindref="compound">GuiCallback</ref><sp/><ref refid="d4/d96/classqtsdl_1_1_gui_subtree_impl_1a6ae6a875301fbf12e6feafa8ad76b363" kindref="member">game_logic_callback</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="d4/d96/classqtsdl_1_1_gui_subtree_impl_1ae62a5a393c31f24d41bd5314cc6b67b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;QQmlComponent&gt;<sp/><ref refid="d4/d96/classqtsdl_1_1_gui_subtree_impl_1ae62a5a393c31f24d41bd5314cc6b67b9" kindref="member">root_component</ref>;</highlight></codeline>
+<codeline lineno="94" refid="d4/d96/classqtsdl_1_1_gui_subtree_impl_1acfe92a1b1a4e0334c9d29d276949f652" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QQuickItem<sp/>*<ref refid="d4/d96/classqtsdl_1_1_gui_subtree_impl_1acfe92a1b1a4e0334c9d29d276949f652" kindref="member">root</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>qtsdl</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_subtree_impl.h"/>
+  </compounddef>
+</doxygen>

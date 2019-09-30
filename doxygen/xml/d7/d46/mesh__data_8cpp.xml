@@ -1,0 +1,486 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d7/d46/mesh__data_8cpp" kind="file" language="C++">
+    <compoundname>mesh_data.cpp</compoundname>
+    <includes refid="d8/df7/mesh__data_8h" local="yes">mesh_data.h</includes>
+    <includes local="no">array</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">utility</includes>
+    <includes refid="d7/dce/error_2error_8h" local="yes">../../error/error.h</includes>
+    <includes refid="d3/dd6/constexpr__map_8h" local="yes">../../datastructure/constexpr_map.h</includes>
+    <incdepgraph>
+      <node id="23167">
+        <label>list</label>
+      </node>
+      <node id="23149">
+        <label>../util/language.h</label>
+        <link refid="d8/dce/language_8h"/>
+      </node>
+      <node id="23159">
+        <label>atomic</label>
+      </node>
+      <node id="23164">
+        <label>iomanip</label>
+      </node>
+      <node id="23144">
+        <label>functional</label>
+      </node>
+      <node id="23174">
+        <label>fslike/native.h</label>
+        <link refid="d3/d0f/fslike_2native_8h"/>
+      </node>
+      <node id="23136">
+        <label>cstdint</label>
+      </node>
+      <node id="23161">
+        <label>externalsstream.h</label>
+        <link refid="dc/dcf/externalsstream_8h"/>
+        <childnode refid="23152" relation="include">
+        </childnode>
+        <childnode refid="23140" relation="include">
+        </childnode>
+      </node>
+      <node id="23148">
+        <label>signal.h</label>
+        <link refid="d8/d39/signal_8h"/>
+        <childnode refid="23148" relation="include">
+        </childnode>
+      </node>
+      <node id="23143">
+        <label>functional.h</label>
+        <link refid="d8/dea/functional_8h"/>
+        <childnode refid="23144" relation="include">
+        </childnode>
+        <childnode refid="23145" relation="include">
+        </childnode>
+        <childnode refid="23146" relation="include">
+        </childnode>
+        <childnode refid="23149" relation="include">
+        </childnode>
+        <childnode refid="23150" relation="include">
+        </childnode>
+        <childnode refid="23171" relation="include">
+        </childnode>
+      </node>
+      <node id="23154">
+        <label>stdexcept</label>
+      </node>
+      <node id="23150">
+        <label>exctranslate.h</label>
+        <link refid="dd/d5f/exctranslate_8h"/>
+        <childnode refid="23151" relation="include">
+        </childnode>
+      </node>
+      <node id="23163">
+        <label>cstdarg</label>
+      </node>
+      <node id="23140">
+        <label>string</label>
+      </node>
+      <node id="23166">
+        <label>logsink.h</label>
+        <link refid="d3/d4e/logsink_8h"/>
+        <childnode refid="23167" relation="include">
+        </childnode>
+        <childnode refid="23145" relation="include">
+        </childnode>
+        <childnode refid="23168" relation="include">
+        </childnode>
+      </node>
+      <node id="23155">
+        <label>../log/message.h</label>
+        <link refid="d2/d0d/message_8h"/>
+        <childnode refid="23136" relation="include">
+        </childnode>
+        <childnode refid="23140" relation="include">
+        </childnode>
+        <childnode refid="23156" relation="include">
+        </childnode>
+        <childnode refid="23157" relation="include">
+        </childnode>
+        <childnode refid="23158" relation="include">
+        </childnode>
+        <childnode refid="23166" relation="include">
+        </childnode>
+        <childnode refid="23168" relation="include">
+        </childnode>
+      </node>
+      <node id="23169">
+        <label>../util/enum.h</label>
+        <link refid="d0/d9b/enum_8h"/>
+        <childnode refid="23152" relation="include">
+        </childnode>
+        <childnode refid="23170" relation="include">
+        </childnode>
+        <childnode refid="23146" relation="include">
+        </childnode>
+      </node>
+      <node id="23178">
+        <label>../../datastructure/constexpr_map.h</label>
+        <link refid="d3/dd6/constexpr__map_8h"/>
+        <childnode refid="23175" relation="include">
+        </childnode>
+        <childnode refid="23160" relation="include">
+        </childnode>
+        <childnode refid="23177" relation="include">
+        </childnode>
+        <childnode refid="23151" relation="include">
+        </childnode>
+      </node>
+      <node id="23172">
+        <label>file.h</label>
+        <link refid="d2/d4d/file_8h"/>
+        <childnode refid="23153" relation="include">
+        </childnode>
+        <childnode refid="23140" relation="include">
+        </childnode>
+        <childnode refid="23134" relation="include">
+        </childnode>
+        <childnode refid="23173" relation="include">
+        </childnode>
+        <childnode refid="23141" relation="include">
+        </childnode>
+      </node>
+      <node id="23173">
+        <label>filelike/filelike.h</label>
+        <link refid="d7/db5/filelike_8h"/>
+        <childnode refid="23152" relation="include">
+        </childnode>
+        <childnode refid="23140" relation="include">
+        </childnode>
+        <childnode refid="23146" relation="include">
+        </childnode>
+      </node>
+      <node id="23170">
+        <label>typeinfo</label>
+      </node>
+      <node id="23133">
+        <label>mesh_data.h</label>
+        <link refid="d8/df7/mesh__data_8h"/>
+        <childnode refid="23134" relation="include">
+        </childnode>
+        <childnode refid="23135" relation="include">
+        </childnode>
+        <childnode refid="23136" relation="include">
+        </childnode>
+        <childnode refid="23137" relation="include">
+        </childnode>
+        <childnode refid="23138" relation="include">
+        </childnode>
+        <childnode refid="23139" relation="include">
+        </childnode>
+      </node>
+      <node id="23138">
+        <label>optional</label>
+      </node>
+      <node id="23134">
+        <label>vector</label>
+      </node>
+      <node id="23147">
+        <label>ciso646</label>
+      </node>
+      <node id="23142">
+        <label>defs.h</label>
+        <link refid="d5/d64/defs_8h"/>
+      </node>
+      <node id="23151">
+        <label>../error/error.h</label>
+        <link refid="d7/dce/error_2error_8h"/>
+        <childnode refid="23152" relation="include">
+        </childnode>
+        <childnode refid="23153" relation="include">
+        </childnode>
+        <childnode refid="23154" relation="include">
+        </childnode>
+        <childnode refid="23140" relation="include">
+        </childnode>
+        <childnode refid="23146" relation="include">
+        </childnode>
+        <childnode refid="23155" relation="include">
+        </childnode>
+      </node>
+      <node id="23177">
+        <label>utility</label>
+      </node>
+      <node id="23175">
+        <label>array</label>
+      </node>
+      <node id="23165">
+        <label>sstream</label>
+      </node>
+      <node id="23171">
+        <label>setup.h</label>
+        <link refid="d7/df7/setup_8h"/>
+        <childnode refid="23144" relation="include">
+        </childnode>
+        <childnode refid="23146" relation="include">
+        </childnode>
+      </node>
+      <node id="23146">
+        <label>../util/compiler.h</label>
+        <link refid="d4/dd1/compiler_8h"/>
+        <childnode refid="23147" relation="include">
+        </childnode>
+        <childnode refid="23140" relation="include">
+        </childnode>
+        <childnode refid="23148" relation="include">
+        </childnode>
+      </node>
+      <node id="23137">
+        <label>cstdlib</label>
+      </node>
+      <node id="23168">
+        <label>level.h</label>
+        <link refid="de/d09/level_8h"/>
+        <childnode refid="23169" relation="include">
+        </childnode>
+      </node>
+      <node id="23152">
+        <label>iostream</label>
+      </node>
+      <node id="23157">
+        <label>../util/constexpr.h</label>
+        <link refid="d1/d06/constexpr_8h"/>
+        <childnode refid="23137" relation="include">
+        </childnode>
+      </node>
+      <node id="23141">
+        <label>../pyinterface/pyobject.h</label>
+        <link refid="d2/d4b/pyobject_8h"/>
+        <childnode refid="23136" relation="include">
+        </childnode>
+        <childnode refid="23140" relation="include">
+        </childnode>
+        <childnode refid="23134" relation="include">
+        </childnode>
+        <childnode refid="23142" relation="include">
+        </childnode>
+        <childnode refid="23143" relation="include">
+        </childnode>
+      </node>
+      <node id="23162">
+        <label>strings.h</label>
+        <link refid="d6/d90/strings_8h"/>
+        <childnode refid="23163" relation="include">
+        </childnode>
+        <childnode refid="23144" relation="include">
+        </childnode>
+        <childnode refid="23164" relation="include">
+        </childnode>
+        <childnode refid="23153" relation="include">
+        </childnode>
+        <childnode refid="23165" relation="include">
+        </childnode>
+        <childnode refid="23140" relation="include">
+        </childnode>
+        <childnode refid="23134" relation="include">
+        </childnode>
+      </node>
+      <node id="23135">
+        <label>unordered_map</label>
+      </node>
+      <node id="23145">
+        <label>mutex</label>
+      </node>
+      <node id="23158">
+        <label>../util/stringformatter.h</label>
+        <link refid="de/d65/stringformatter_8h"/>
+        <childnode refid="23159" relation="include">
+        </childnode>
+        <childnode refid="23153" relation="include">
+        </childnode>
+        <childnode refid="23160" relation="include">
+        </childnode>
+        <childnode refid="23146" relation="include">
+        </childnode>
+        <childnode refid="23161" relation="include">
+        </childnode>
+        <childnode refid="23162" relation="include">
+        </childnode>
+      </node>
+      <node id="23160">
+        <label>type_traits</label>
+      </node>
+      <node id="23156">
+        <label>config.h</label>
+      </node>
+      <node id="23139">
+        <label>../../util/path.h</label>
+        <link refid="d1/d11/util_2path_8h"/>
+        <childnode refid="23140" relation="include">
+        </childnode>
+        <childnode refid="23134" relation="include">
+        </childnode>
+        <childnode refid="23141" relation="include">
+        </childnode>
+        <childnode refid="23172" relation="include">
+        </childnode>
+        <childnode refid="23174" relation="include">
+        </childnode>
+      </node>
+      <node id="23176">
+        <label>cstring</label>
+      </node>
+      <node id="23153">
+        <label>memory</label>
+      </node>
+      <node id="23132">
+        <label>/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/resources/mesh_data.cpp</label>
+        <link refid="d7/d46/mesh__data_8cpp"/>
+        <childnode refid="23133" relation="include">
+        </childnode>
+        <childnode refid="23175" relation="include">
+        </childnode>
+        <childnode refid="23176" relation="include">
+        </childnode>
+        <childnode refid="23177" relation="include">
+        </childnode>
+        <childnode refid="23151" relation="include">
+        </childnode>
+        <childnode refid="23178" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="da/d23/namespaceopenage">openage</innernamespace>
+    <innernamespace refid="d3/db5/namespaceopenage_1_1renderer">openage::renderer</innernamespace>
+    <innernamespace refid="d1/d65/namespaceopenage_1_1renderer_1_1resources">openage::renderer::resources</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2017-2018<sp/>the<sp/>openage<sp/>authors.<sp/>See<sp/>copying.md<sp/>for<sp/>legal<sp/>info.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d8/df7/mesh__data_8h" kindref="compound">mesh_data.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../error/error.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../datastructure/constexpr_map.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="da/d23/namespaceopenage" kindref="compound">openage</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">renderer<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">resources<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a977e4848365083e50e14907e94ceb00e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a977e4848365083e50e14907e94ceb00e" kindref="member">vin_size</ref><sp/>=<sp/>datastructure::create_const_map&lt;vertex_input_t,<sp/>size_t&gt;(</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>std::make_pair(<ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a342b8db8dc29b5bddbb3b4ae987d1ff3a44ad4ef5a76e6aa6fb3e3fa079a54fda" kindref="member">vertex_input_t::F32</ref>,<sp/>4),</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>std::make_pair(<ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a342b8db8dc29b5bddbb3b4ae987d1ff3a9caf3b2ab8218762f7e8b6fdcb0435df" kindref="member">vertex_input_t::V2F32</ref>,<sp/>8),</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>std::make_pair(<ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a342b8db8dc29b5bddbb3b4ae987d1ff3a8fd68a94a1f6849a73eb91859e615b42" kindref="member">vertex_input_t::V3F32</ref>,<sp/>12),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::make_pair(<ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a342b8db8dc29b5bddbb3b4ae987d1ff3ad4b32b9d0206bc9af315653197281946" kindref="member">vertex_input_t::M3F32</ref>,<sp/>36)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a51463bbd68af13770e97e0867de4d6d6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a51463bbd68af13770e97e0867de4d6d6" kindref="member">vin_count</ref><sp/>=<sp/>datastructure::create_const_map&lt;vertex_input_t,<sp/>size_t&gt;(</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>std::make_pair(<ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a342b8db8dc29b5bddbb3b4ae987d1ff3a44ad4ef5a76e6aa6fb3e3fa079a54fda" kindref="member">vertex_input_t::F32</ref>,<sp/>1),</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>std::make_pair(<ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a342b8db8dc29b5bddbb3b4ae987d1ff3a9caf3b2ab8218762f7e8b6fdcb0435df" kindref="member">vertex_input_t::V2F32</ref>,<sp/>2),</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>std::make_pair(<ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a342b8db8dc29b5bddbb3b4ae987d1ff3a8fd68a94a1f6849a73eb91859e615b42" kindref="member">vertex_input_t::V3F32</ref>,<sp/>3),</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>std::make_pair(<ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a342b8db8dc29b5bddbb3b4ae987d1ff3ad4b32b9d0206bc9af315653197281946" kindref="member">vertex_input_t::M3F32</ref>,<sp/>9)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a11c3247d50ab63967293c59f92c47368" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a11c3247d50ab63967293c59f92c47368" kindref="member">vertex_input_size</ref>(<ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a342b8db8dc29b5bddbb3b4ae987d1ff3" kindref="member">vertex_input_t</ref><sp/>in)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vin_size.get(in);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1ae2c96fa36c9fe77b871ff86b3fedc4b2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1ae2c96fa36c9fe77b871ff86b3fedc4b2" kindref="member">vertex_input_count</ref>(<ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a342b8db8dc29b5bddbb3b4ae987d1ff3" kindref="member">vertex_input_t</ref><sp/>in)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vin_count.get(in);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1a308ed14c9ec5b78f99e722838f6c2692" refkind="member"><highlight class="normal"><ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1a308ed14c9ec5b78f99e722838f6c2692" kindref="member">VertexInputInfo::VertexInputInfo</ref>(std::vector&lt;vertex_input_t&gt;<sp/>inputs,<sp/><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1ade052cbaea4982f40bd7b1e8305de50c" kindref="member">vertex_layout_t</ref><sp/>layout,<sp/><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a3d2603af7637716eccfdfa718f01bcb7" kindref="member">vertex_primitive_t</ref><sp/>primitive)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>inputs(<ref refid="d8/dcc/namespacestd" kindref="compound">std</ref>::<ref refid="da/d23/namespaceopenage_1a7278b1c0b8d94d06da155b0b693b2828a3734a903022249b3010be1897042568e" kindref="member">move</ref>(inputs))</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>layout(layout)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>primitive(primitive)<sp/>{}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1a4d8947d3bdc86e93912ef4befc82a8ef" refkind="member"><highlight class="normal"><ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1a308ed14c9ec5b78f99e722838f6c2692" kindref="member">VertexInputInfo::VertexInputInfo</ref>(std::vector&lt;vertex_input_t&gt;<sp/><ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1ac512843d39139e54c1d7f94c7ffff2f4" kindref="member">inputs</ref>,<sp/><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1ade052cbaea4982f40bd7b1e8305de50c" kindref="member">vertex_layout_t</ref><sp/><ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1a4341539ce916999fff622c87be27c263" kindref="member">layout</ref>,<sp/><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a3d2603af7637716eccfdfa718f01bcb7" kindref="member">vertex_primitive_t</ref><sp/><ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1abc3d84a9d1e0aec615037acd32efa4a5" kindref="member">primitive</ref>,<sp/><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a54d05175ef647265b520f9e562bb34f8" kindref="member">index_t</ref><sp/><ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1afbb070a581eb6af7094eb621d14294af" kindref="member">index_type</ref>)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>inputs(<ref refid="d8/dcc/namespacestd" kindref="compound">std</ref>::<ref refid="da/d23/namespaceopenage_1a7278b1c0b8d94d06da155b0b693b2828a3734a903022249b3010be1897042568e" kindref="member">move</ref>(inputs))</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>layout(layout)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>primitive(primitive)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>index_type(index_type)<sp/>{}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1aefd82002b1835beb566cc1d3c13ee46d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1aefd82002b1835beb566cc1d3c13ee46d" kindref="member">VertexInputInfo::add_shader_input_map</ref>(std::unordered_map&lt;size_t,<sp/>size_t&gt;&amp;&amp;<sp/>in_map)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>mapping<sp/>:<sp/>in_map)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d4/dd1/compiler_8h_1ac6c45889010c1bd68631771b64f18101" kindref="member">unlikely</ref>(mapping.first<sp/>&gt;=<sp/>this-&gt;inputs.size()))<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="d0/df4/classopenage_1_1error_1_1_error" kindref="compound">Error</ref>(<ref refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" kindref="member">MSG</ref>(<ref refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" kindref="member">err</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;A<sp/>shader<sp/>input<sp/>mapping<sp/>is<sp/>out-of-range,<sp/>exceeding<sp/>the<sp/>available<sp/>number<sp/>of<sp/>attributes.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1a25777981ba7e0b61f05057aa46d13e2e" kindref="member">shader_input_map</ref><sp/>=<sp/><ref refid="da/d23/namespaceopenage_1a7278b1c0b8d94d06da155b0b693b2828a3734a903022249b3010be1897042568e" kindref="member">std::move</ref>(in_map);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1a32cc6408584ff4eecd6d43565eed9864" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1a32cc6408584ff4eecd6d43565eed9864" kindref="member">VertexInputInfo::vert_size</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>in<sp/>:<sp/>this-&gt;<ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1ac512843d39139e54c1d7f94c7ffff2f4" kindref="member">inputs</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size<sp/>+=<sp/><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a11c3247d50ab63967293c59f92c47368" kindref="member">vertex_input_size</ref>(in);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>size;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1ae8514f8a1d3cbc486739b284e9aa6363" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;vertex_input_t&gt;<sp/>&amp;<ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1ae8514f8a1d3cbc486739b284e9aa6363" kindref="member">VertexInputInfo::get_inputs</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1ac512843d39139e54c1d7f94c7ffff2f4" kindref="member">inputs</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1aadb7fe23f4de138d41db62cf561dd30f" refkind="member"><highlight class="normal">std::optional&lt;std::unordered_map&lt;size_t,<sp/>size_t&gt;&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/><ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1aadb7fe23f4de138d41db62cf561dd30f" kindref="member">VertexInputInfo::get_shader_input_map</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1a25777981ba7e0b61f05057aa46d13e2e" kindref="member">shader_input_map</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1ab4e8c28446f4ace83ef39b2e8404213c" refkind="member"><highlight class="normal"><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1ade052cbaea4982f40bd7b1e8305de50c" kindref="member">vertex_layout_t</ref><sp/><ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1ab4e8c28446f4ace83ef39b2e8404213c" kindref="member">VertexInputInfo::get_layout</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1a4341539ce916999fff622c87be27c263" kindref="member">layout</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1a5fee3c6c1055d24831ff1d3f70f84ce6" refkind="member"><highlight class="normal"><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a3d2603af7637716eccfdfa718f01bcb7" kindref="member">vertex_primitive_t</ref><sp/><ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1a5fee3c6c1055d24831ff1d3f70f84ce6" kindref="member">VertexInputInfo::get_primitive</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1abc3d84a9d1e0aec615037acd32efa4a5" kindref="member">primitive</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1ac7d92ae6a61fdb107af66136ef469fef" refkind="member"><highlight class="normal">std::optional&lt;index_t&gt;<sp/><ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1ac7d92ae6a61fdb107af66136ef469fef" kindref="member">VertexInputInfo::get_index_type</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info_1afbb070a581eb6af7094eb621d14294af" kindref="member">index_type</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1a8d18f2be596595fed8762920ca9bd7ec" refkind="member"><highlight class="normal"><ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1a8d18f2be596595fed8762920ca9bd7ec" kindref="member">MeshData::MeshData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dd/dc1/classopenage_1_1util_1_1_path" kindref="compound">util::Path</ref><sp/>&amp;</highlight><highlight class="comment">/*path*/</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO<sp/>implement<sp/>mesh<sp/>loaders</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;unimplemented<sp/>lol&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1a72cc8859a8d458fc64d462ac13225ab6" refkind="member"><highlight class="normal"><ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1a8d18f2be596595fed8762920ca9bd7ec" kindref="member">MeshData::MeshData</ref>(std::vector&lt;uint8_t&gt;&amp;&amp;<sp/>verts,<sp/><ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info" kindref="compound">VertexInputInfo</ref><sp/><ref refid="dd/d1a/namespaceopenage_1_1log_1a403182e8d0c54bd49bea6934c3cb1e28" kindref="member">info</ref>)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>data(<ref refid="d8/dcc/namespacestd" kindref="compound">std</ref>::<ref refid="da/d23/namespaceopenage_1a7278b1c0b8d94d06da155b0b693b2828a3734a903022249b3010be1897042568e" kindref="member">move</ref>(verts))</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>info(info)<sp/>{}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1a2f2b8619ac800c3e00ca3f4018f1de1f" refkind="member"><highlight class="normal"><ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1a8d18f2be596595fed8762920ca9bd7ec" kindref="member">MeshData::MeshData</ref>(std::vector&lt;uint8_t&gt;<sp/>&amp;&amp;verts,<sp/>std::vector&lt;uint8_t&gt;<sp/>&amp;&amp;<ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1a924f3e7f0ede4d7b5536ea7dd3a2b31d" kindref="member">ids</ref>,<sp/><ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info" kindref="compound">VertexInputInfo</ref><sp/><ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1aa089b9853c9c8c81f43c5ba050bd93f1" kindref="member">info</ref>)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1a58ac4b6b4fb3e27d165e49ca1826da50" kindref="member">data</ref>(<ref refid="d8/dcc/namespacestd" kindref="compound">std</ref>::<ref refid="da/d23/namespaceopenage_1a7278b1c0b8d94d06da155b0b693b2828a3734a903022249b3010be1897042568e" kindref="member">move</ref>(verts))</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/><ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1a924f3e7f0ede4d7b5536ea7dd3a2b31d" kindref="member">ids</ref>(<ref refid="d8/dcc/namespacestd" kindref="compound">std</ref>::<ref refid="da/d23/namespaceopenage_1a7278b1c0b8d94d06da155b0b693b2828a3734a903022249b3010be1897042568e" kindref="member">move</ref>(<ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1a924f3e7f0ede4d7b5536ea7dd3a2b31d" kindref="member">ids</ref>))</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>info(info)<sp/>{}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1ad378865d7ad463f3ae1474277318c2c4" refkind="member"><highlight class="normal">std::vector&lt;uint8_t&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/><ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1ad378865d7ad463f3ae1474277318c2c4" kindref="member">MeshData::get_data</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1a58ac4b6b4fb3e27d165e49ca1826da50" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1ac24d7bb9216c3c440f0070417d36c1e5" refkind="member"><highlight class="normal">std::optional&lt;std::vector&lt;uint8_t&gt;&gt;<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;<ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1ac24d7bb9216c3c440f0070417d36c1e5" kindref="member">MeshData::get_ids</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1a924f3e7f0ede4d7b5536ea7dd3a2b31d" kindref="member">ids</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1a55dee70e28a6ea0e4d613fc00dca2bd0" refkind="member"><highlight class="normal"><ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info" kindref="compound">VertexInputInfo</ref><sp/><ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1a55dee70e28a6ea0e4d613fc00dca2bd0" kindref="member">MeshData::get_info</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*this-&gt;<ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1aa089b9853c9c8c81f43c5ba050bd93f1" kindref="member">info</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a735d6d55173355397ad37c31956361ee" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::array&lt;float,<sp/>16&gt;<sp/><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a735d6d55173355397ad37c31956361ee" kindref="member">QUAD_DATA</ref><sp/>=<sp/>{<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-1.0f,<sp/>1.0f,<sp/>0.0f,<sp/>1.0f,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-1.0f,<sp/>-1.0f,<sp/>0.0f,<sp/>0.0f,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.0f,<sp/>1.0f,<sp/>1.0f,<sp/>1.0f,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.0f,<sp/>-1.0f,<sp/>1.0f,<sp/>0.0f</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>};</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1ad8928c08c9c05b7b7f7eae1a203e462b" refkind="member"><highlight class="normal"><ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data" kindref="compound">MeshData</ref><sp/><ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1ad8928c08c9c05b7b7f7eae1a203e462b" kindref="member">MeshData::make_quad</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>data_size<sp/>=<sp/>QUAD_DATA.size()<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(decltype(QUAD_DATA)::value_type);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;uint8_t&gt;<sp/>verts(data_size);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>std::memcpy(verts.data(),<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">uint8_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(QUAD_DATA.data()),<sp/>data_size);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d84/classopenage_1_1renderer_1_1resources_1_1_vertex_input_info" kindref="compound">VertexInputInfo</ref><sp/><ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1aa089b9853c9c8c81f43c5ba050bd93f1" kindref="member">info</ref><sp/>{<sp/>{<sp/><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a342b8db8dc29b5bddbb3b4ae987d1ff3a9caf3b2ab8218762f7e8b6fdcb0435df" kindref="member">vertex_input_t::V2F32</ref>,<sp/><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a342b8db8dc29b5bddbb3b4ae987d1ff3a9caf3b2ab8218762f7e8b6fdcb0435df" kindref="member">vertex_input_t::V2F32</ref><sp/>},<sp/><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1ade052cbaea4982f40bd7b1e8305de50ca4cc854cc056515cc2befbc91f30d07b0" kindref="member">vertex_layout_t::AOS</ref>,<sp/><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a3d2603af7637716eccfdfa718f01bcb7a708de017e3b83ccba21dfc9f6367d46f" kindref="member">vertex_primitive_t::TRIANGLE_STRIP</ref><sp/>};</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1a8d18f2be596595fed8762920ca9bd7ec" kindref="member">MeshData</ref>(<ref refid="da/d23/namespaceopenage_1a7278b1c0b8d94d06da155b0b693b2828a3734a903022249b3010be1897042568e" kindref="member">std::move</ref>(verts),<sp/><ref refid="de/d7d/classopenage_1_1renderer_1_1resources_1_1_mesh_data_1aa089b9853c9c8c81f43c5ba050bd93f1" kindref="member">info</ref>);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}}}</highlight></codeline>
+    </programlisting>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/resources/mesh_data.cpp"/>
+  </compounddef>
+</doxygen>

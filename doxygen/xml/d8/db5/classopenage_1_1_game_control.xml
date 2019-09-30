@@ -1,0 +1,831 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d8/db5/classopenage_1_1_game_control" kind="class" language="C++" prot="public">
+    <compoundname>openage::GameControl</compoundname>
+    <basecompoundref refid="dd/dba/classopenage_1_1_hud_handler" prot="public" virt="non-virtual">openage::HudHandler</basecompoundref>
+    <includes refid="d5/d9d/game__control_8h" local="no">game_control.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d8/db5/classopenage_1_1_game_control_1a91ef234e4c49b19b716ebd05f7bda0a7" prot="private" static="no" mutable="no">
+        <type><ref refid="d6/d40/classopenage_1_1_engine" kindref="compound">Engine</ref> *</type>
+        <definition>Engine* openage::GameControl::engine</definition>
+        <argsstring></argsstring>
+        <name>engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="374" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" bodystart="374" bodyend="-1"/>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1aa7c61c3caafc810355005e83c8f234e2" compoundref="d0/d03/game__control_8cpp" startline="862" endline="868">get_current_player</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1aed1e983dee9b075a3343b72aed5678bd" compoundref="d0/d03/game__control_8cpp" startline="933" endline="939">get_engine</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1ad7c9d48df33f8f56ab5686c36648bfa5" compoundref="d0/d03/game__control_8cpp" startline="737" endline="780">set_engine</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a1d0f073f844955000861e4c0d08b20e0" compoundref="d0/d03/game__control_8cpp" startline="870" endline="931">set_mode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/db5/classopenage_1_1_game_control_1ac109fc6d1666c406f7f260f88053c947" prot="private" static="no" mutable="no">
+        <type><ref refid="d0/dd5/classopenage_1_1_game_main_handle" kindref="compound">GameMainHandle</ref> *</type>
+        <definition>GameMainHandle* openage::GameControl::game</definition>
+        <argsstring></argsstring>
+        <name>game</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="375" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" bodystart="375" bodyend="-1"/>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a76e43bea79237a77d0ae231df386de6a" compoundref="d0/d03/game__control_8cpp" startline="726" endline="735">GameControl</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1aa7c61c3caafc810355005e83c8f234e2" compoundref="d0/d03/game__control_8cpp" startline="862" endline="868">get_current_player</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1ad7c9d48df33f8f56ab5686c36648bfa5" compoundref="d0/d03/game__control_8cpp" startline="737" endline="780">set_engine</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1ae6ce3ec10ca18afc9cb7235c88ac7113" compoundref="d0/d03/game__control_8cpp" startline="782" endline="798">set_game</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/db5/classopenage_1_1_game_control_1a3f7a5093f8773643b39a95e5bd47a9ef" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="de/d24/classopenage_1_1_output_mode" kindref="compound">OutputMode</ref> * &gt;</type>
+        <definition>std::vector&lt;OutputMode*&gt; openage::GameControl::modes</definition>
+        <argsstring></argsstring>
+        <name>modes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="378" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" bodystart="378" bodyend="-1"/>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1ad7c9d48df33f8f56ab5686c36648bfa5" compoundref="d0/d03/game__control_8cpp" startline="737" endline="780">set_engine</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a1d0f073f844955000861e4c0d08b20e0" compoundref="d0/d03/game__control_8cpp" startline="870" endline="931">set_mode</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1af8fcfaca1f2135c0508cb706955d18d0" compoundref="d0/d03/game__control_8cpp" startline="800" endline="828">set_modes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/db5/classopenage_1_1_game_control_1ab8ab8bdeb304d66b75541b1fd1b9695c" prot="private" static="no" mutable="no">
+        <type><ref refid="de/d24/classopenage_1_1_output_mode" kindref="compound">OutputMode</ref> *</type>
+        <definition>OutputMode* openage::GameControl::active_mode</definition>
+        <argsstring></argsstring>
+        <name>active_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="380" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" bodystart="380" bodyend="-1"/>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a8c867441262580369ff7c66ba6bd0e4b" compoundref="d0/d03/game__control_8cpp" startline="830" endline="837">announce_mode</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a76e43bea79237a77d0ae231df386de6a" compoundref="d0/d03/game__control_8cpp" startline="726" endline="735">GameControl</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a56eadb260ee512fa9034f25f67308e61" compoundref="d0/d03/game__control_8cpp" startline="854" endline="860">on_drawhud</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a1d0f073f844955000861e4c0d08b20e0" compoundref="d0/d03/game__control_8cpp" startline="870" endline="931">set_mode</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1af8fcfaca1f2135c0508cb706955d18d0" compoundref="d0/d03/game__control_8cpp" startline="800" endline="828">set_modes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/db5/classopenage_1_1_game_control_1a56a4b875fe0d5b2bad9013fd112118d6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int openage::GameControl::active_mode_index</definition>
+        <argsstring></argsstring>
+        <name>active_mode_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="381" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" bodystart="381" bodyend="-1"/>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a8c867441262580369ff7c66ba6bd0e4b" compoundref="d0/d03/game__control_8cpp" startline="830" endline="837">announce_mode</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a76e43bea79237a77d0ae231df386de6a" compoundref="d0/d03/game__control_8cpp" startline="726" endline="735">GameControl</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1ad7c9d48df33f8f56ab5686c36648bfa5" compoundref="d0/d03/game__control_8cpp" startline="737" endline="780">set_engine</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a1d0f073f844955000861e4c0d08b20e0" compoundref="d0/d03/game__control_8cpp" startline="870" endline="931">set_mode</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1af8fcfaca1f2135c0508cb706955d18d0" compoundref="d0/d03/game__control_8cpp" startline="800" endline="828">set_modes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/db5/classopenage_1_1_game_control_1a42b20faac77a98d70096946a53f64bcc" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t openage::GameControl::current_player</definition>
+        <argsstring></argsstring>
+        <name>current_player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="383" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" bodystart="383" bodyend="-1"/>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a76e43bea79237a77d0ae231df386de6a" compoundref="d0/d03/game__control_8cpp" startline="726" endline="735">GameControl</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1aa7c61c3caafc810355005e83c8f234e2" compoundref="d0/d03/game__control_8cpp" startline="862" endline="868">get_current_player</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1ad7c9d48df33f8f56ab5686c36648bfa5" compoundref="d0/d03/game__control_8cpp" startline="737" endline="780">set_engine</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d8/db5/classopenage_1_1_game_control_1a8d395e91d09a84a64d370e5bac938433" prot="public" static="no" mutable="no">
+        <type><ref refid="d9/d8d/classopenage_1_1_game_control_signals" kindref="compound">GameControlSignals</ref></type>
+        <definition>GameControlSignals openage::GameControl::gui_signals</definition>
+        <argsstring></argsstring>
+        <name>gui_signals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="386" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" bodystart="386" bodyend="-1"/>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a3d4b9fbef261d19138ba87083e4083a5" compoundref="d0/d03/game__control_8cpp" startline="839" endline="846">announce_current_player_name</referencedby>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1aaf498f85b87295e38e0c6ae81e7378c5" compoundref="d0/d03/game__control_8cpp" startline="848" endline="852">openage::ActionMode::announce_current_selection</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a8c867441262580369ff7c66ba6bd0e4b" compoundref="d0/d03/game__control_8cpp" startline="830" endline="837">announce_mode</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a76e43bea79237a77d0ae231df386de6a" compoundref="d0/d03/game__control_8cpp" startline="726" endline="735">GameControl</referencedby>
+        <referencedby refid="db/d42/classopenage_1_1_editor_mode_1a4c17017408bec2740f3653123bd17660" compoundref="d0/d03/game__control_8cpp" startline="687" endline="714">openage::EditorMode::set_game_control</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1af8fcfaca1f2135c0508cb706955d18d0" compoundref="d0/d03/game__control_8cpp" startline="800" endline="828">set_modes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d8/db5/classopenage_1_1_game_control_1abacb568a46d3a35a17a210ceb6b380cf" prot="public" static="no" mutable="no">
+        <type><ref refid="da/dff/classqtsdl_1_1_gui_item_link" kindref="compound">qtsdl::GuiItemLink</ref> *</type>
+        <definition>qtsdl::GuiItemLink* openage::GameControl::gui_link</definition>
+        <argsstring></argsstring>
+        <name>gui_link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="387" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" bodystart="387" bodyend="-1"/>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a76e43bea79237a77d0ae231df386de6a" compoundref="d0/d03/game__control_8cpp" startline="726" endline="735">GameControl</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/db5/classopenage_1_1_game_control_1a76e43bea79237a77d0ae231df386de6a" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::GameControl::GameControl</definition>
+        <argsstring>(qtsdl::GuiItemLink *gui_link)</argsstring>
+        <name>GameControl</name>
+        <param>
+          <type><ref refid="da/dff/classqtsdl_1_1_gui_item_link" kindref="compound">qtsdl::GuiItemLink</ref> *</type>
+          <declname>gui_link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="357" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.cpp" bodystart="726" bodyend="735"/>
+        <references refid="d8/db5/classopenage_1_1_game_control_1ab8ab8bdeb304d66b75541b1fd1b9695c" compoundref="d5/d9d/game__control_8h" startline="380">active_mode</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a56a4b875fe0d5b2bad9013fd112118d6" compoundref="d5/d9d/game__control_8h" startline="381">active_mode_index</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a42b20faac77a98d70096946a53f64bcc" compoundref="d5/d9d/game__control_8h" startline="383">current_player</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1ac109fc6d1666c406f7f260f88053c947" compoundref="d5/d9d/game__control_8h" startline="375">game</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1abacb568a46d3a35a17a210ceb6b380cf" compoundref="d5/d9d/game__control_8h" startline="387">gui_link</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a8d395e91d09a84a64d370e5bac938433" compoundref="d5/d9d/game__control_8h" startline="386">gui_signals</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/db5/classopenage_1_1_game_control_1ad7c9d48df33f8f56ab5686c36648bfa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::GameControl::set_engine</definition>
+        <argsstring>(Engine *engine)</argsstring>
+        <name>set_engine</name>
+        <param>
+          <type><ref refid="d6/d40/classopenage_1_1_engine" kindref="compound">Engine</ref> *</type>
+          <declname>engine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="359" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.cpp" bodystart="737" bodyend="780"/>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a56a4b875fe0d5b2bad9013fd112118d6" compoundref="d5/d9d/game__control_8h" startline="381">active_mode_index</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a3d4b9fbef261d19138ba87083e4083a5" compoundref="d0/d03/game__control_8cpp" startline="839" endline="846">announce_current_player_name</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a42b20faac77a98d70096946a53f64bcc" compoundref="d5/d9d/game__control_8h" startline="383">current_player</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a91ef234e4c49b19b716ebd05f7bda0a7" compoundref="d5/d9d/game__control_8h" startline="374">engine</references>
+        <references refid="d7/dce/error_2error_8h_1ae20e8a0a86b80f8211fdf87477524f87" compoundref="d7/dce/error_2error_8h" startline="155">ENSURE</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1ac109fc6d1666c406f7f260f88053c947" compoundref="d5/d9d/game__control_8h" startline="375">game</references>
+        <references refid="d0/dd5/classopenage_1_1_game_main_handle_1a8d01ae4e890d5a889f45c06182f9bdc3" compoundref="d9/d96/game__main_8cpp" startline="107" endline="109">openage::GameMainHandle::get_game</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a3f7a5093f8773643b39a95e5bd47a9ef" compoundref="d5/d9d/game__control_8h" startline="378">modes</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1a3fd2662bc4b40777d9432af165c8b213" compoundref="da/d5c/engine_8cpp" startline="469" endline="475">openage::Engine::register_drawhud_action</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a1d0f073f844955000861e4c0d08b20e0" compoundref="d0/d03/game__control_8cpp" startline="870" endline="931">set_mode</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/db5/classopenage_1_1_game_control_1ae6ce3ec10ca18afc9cb7235c88ac7113" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::GameControl::set_game</definition>
+        <argsstring>(GameMainHandle *game)</argsstring>
+        <name>set_game</name>
+        <param>
+          <type><ref refid="d0/dd5/classopenage_1_1_game_main_handle" kindref="compound">GameMainHandle</ref> *</type>
+          <declname>game</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="360" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.cpp" bodystart="782" bodyend="798"/>
+        <references refid="d8/db5/classopenage_1_1_game_control_1ac109fc6d1666c406f7f260f88053c947" compoundref="d5/d9d/game__control_8h" startline="375">game</references>
+        <references refid="de/dfe/classopenage_1_1_game_main_signals_1a9394777bfabb0220f14b18173e32fb5e">openage::GameMainSignals::game_running</references>
+        <references refid="d0/dd5/classopenage_1_1_game_main_handle_1a655876099f3ef7ab5ee0aee5b08b9a9c" compoundref="d9/db2/game__main_8h" startline="175">openage::GameMainHandle::gui_signals</references>
+        <references refid="d9/d8d/classopenage_1_1_game_control_signals_1acd3484cc1f7feb2163be431acfc88c96" compoundref="d0/d03/game__control_8cpp" startline="721" endline="724">openage::GameControlSignals::on_game_running</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/db5/classopenage_1_1_game_control_1af8fcfaca1f2135c0508cb706955d18d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::GameControl::set_modes</definition>
+        <argsstring>(const std::vector&lt; OutputMode *&gt; &amp;modes)</argsstring>
+        <name>set_modes</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="de/d24/classopenage_1_1_output_mode" kindref="compound">OutputMode</ref> *&gt; &amp;</type>
+          <declname>modes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="362" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.cpp" bodystart="800" bodyend="828"/>
+        <references refid="d8/db5/classopenage_1_1_game_control_1ab8ab8bdeb304d66b75541b1fd1b9695c" compoundref="d5/d9d/game__control_8h" startline="380">active_mode</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a56a4b875fe0d5b2bad9013fd112118d6" compoundref="d5/d9d/game__control_8h" startline="381">active_mode_index</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a8d395e91d09a84a64d370e5bac938433" compoundref="d5/d9d/game__control_8h" startline="386">gui_signals</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d3/d8f/namespaceopenage_1_1gui_1a78b9b31c68faa4fe66303c754d8074e2" compoundref="d1/de8/game__control__link_8cpp" startline="340">openage::gui::mode</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a3f7a5093f8773643b39a95e5bd47a9ef" compoundref="d5/d9d/game__control_8h" startline="378">modes</references>
+        <references refid="d9/d8d/classopenage_1_1_game_control_signals_1a8a1d1930de8dacf259c1190f49e62b2b">openage::GameControlSignals::modes_changed</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a1d0f073f844955000861e4c0d08b20e0" compoundref="d0/d03/game__control_8cpp" startline="870" endline="931">set_mode</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a2a1b7ecac013c794375d21d5efd89f87" compoundref="d7/d66/log_2____init_____8py" startline="117" endline="120">openage::log.warn</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/db5/classopenage_1_1_game_control_1a1d0f073f844955000861e4c0d08b20e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::GameControl::set_mode</definition>
+        <argsstring>(int mode, bool signal_if_unchanged=false)</argsstring>
+        <name>set_mode</name>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>signal_if_unchanged</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="364" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.cpp" bodystart="870" bodyend="931"/>
+        <references refid="d8/db5/classopenage_1_1_game_control_1ab8ab8bdeb304d66b75541b1fd1b9695c" compoundref="d5/d9d/game__control_8h" startline="380">active_mode</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a56a4b875fe0d5b2bad9013fd112118d6" compoundref="d5/d9d/game__control_8h" startline="381">active_mode_index</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a8c867441262580369ff7c66ba6bd0e4b" compoundref="d0/d03/game__control_8cpp" startline="830" endline="837">announce_mode</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a91ef234e4c49b19b716ebd05f7bda0a7" compoundref="d5/d9d/game__control_8h" startline="374">engine</references>
+        <references refid="d7/dce/error_2error_8h_1ae20e8a0a86b80f8211fdf87477524f87" compoundref="d7/dce/error_2error_8h" startline="155">ENSURE</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1a248149eac4678d70fe55d6ba5cdc695a" compoundref="da/d5c/engine_8cpp" startline="513" endline="515">openage::Engine::get_input_manager</references>
+        <references refid="d3/d8f/namespaceopenage_1_1gui_1a66aadbbcc832782556cad4e4bcb6fdef" compoundref="d1/de8/game__control__link_8cpp" startline="342">openage::gui::mode_index</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a3f7a5093f8773643b39a95e5bd47a9ef" compoundref="d5/d9d/game__control_8h" startline="378">modes</references>
+        <references refid="de/d24/classopenage_1_1_output_mode_1a84beca51250156148fe4af178ed87c22">openage::OutputMode::on_enter</references>
+        <references refid="de/d24/classopenage_1_1_output_mode_1ac4731437d730c75e214f7fda4c218da1">openage::OutputMode::on_exit</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a2ece2b2ad4a08c15fb00a39b0f553d3c" compoundref="d5/d7f/input__manager_8cpp" startline="152" endline="157">openage::input::InputManager::push_context</references>
+        <references refid="d7/df3/classopenage_1_1input_1_1_input_manager_1a469024c2b2ac7769e0fa578c73fde160" compoundref="d5/d7f/input__manager_8cpp" startline="160" endline="172">openage::input::InputManager::remove_context</references>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1ad7c9d48df33f8f56ab5686c36648bfa5" compoundref="d0/d03/game__control_8cpp" startline="737" endline="780">set_engine</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1af8fcfaca1f2135c0508cb706955d18d0" compoundref="d0/d03/game__control_8cpp" startline="800" endline="828">set_modes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/db5/classopenage_1_1_game_control_1a8c867441262580369ff7c66ba6bd0e4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::GameControl::announce_mode</definition>
+        <argsstring>()</argsstring>
+        <name>announce_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="365" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.cpp" bodystart="830" bodyend="837"/>
+        <references refid="d8/db5/classopenage_1_1_game_control_1ab8ab8bdeb304d66b75541b1fd1b9695c" compoundref="d5/d9d/game__control_8h" startline="380">active_mode</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a56a4b875fe0d5b2bad9013fd112118d6" compoundref="d5/d9d/game__control_8h" startline="381">active_mode_index</references>
+        <references refid="de/d24/classopenage_1_1_output_mode_1aafb84951c6575c14b5517312c5cfe191" compoundref="d0/d03/game__control_8cpp" startline="31" endline="35">openage::OutputMode::announce</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a8d395e91d09a84a64d370e5bac938433" compoundref="d5/d9d/game__control_8h" startline="386">gui_signals</references>
+        <references refid="d9/d8d/classopenage_1_1_game_control_signals_1a0455b47d2bf50224596f85e397a9c6ff">openage::GameControlSignals::mode_changed</references>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a1d0f073f844955000861e4c0d08b20e0" compoundref="d0/d03/game__control_8cpp" startline="870" endline="931">set_mode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/db5/classopenage_1_1_game_control_1a3d4b9fbef261d19138ba87083e4083a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::GameControl::announce_current_player_name</definition>
+        <argsstring>()</argsstring>
+        <name>announce_current_player_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="366" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.cpp" bodystart="839" bodyend="846"/>
+        <references refid="d9/d8d/classopenage_1_1_game_control_signals_1a17501d8252313b0da13baee552034f6e">openage::GameControlSignals::current_civ_index_changed</references>
+        <references refid="d9/d8d/classopenage_1_1_game_control_signals_1a95762160cc28da841b21e75c6706d70f">openage::GameControlSignals::current_player_name_changed</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1aa7c61c3caafc810355005e83c8f234e2" compoundref="d0/d03/game__control_8cpp" startline="862" endline="868">get_current_player</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a8d395e91d09a84a64d370e5bac938433" compoundref="d5/d9d/game__control_8h" startline="386">gui_signals</references>
+        <references refid="d8/dcc/namespacestd_1a26aa0f4be3a77ac5cc3ce0cabb545042" compoundref="d8/d4f/gamestate_2resource_8cpp" startline="193" endline="206">std::to_string</references>
+        <referencedby refid="d9/d8d/classopenage_1_1_game_control_signals_1acd3484cc1f7feb2163be431acfc88c96" compoundref="d0/d03/game__control_8cpp" startline="721" endline="724">openage::GameControlSignals::on_game_running</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1ad7c9d48df33f8f56ab5686c36648bfa5" compoundref="d0/d03/game__control_8cpp" startline="737" endline="780">set_engine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/db5/classopenage_1_1_game_control_1a56eadb260ee512fa9034f25f67308e61" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool openage::GameControl::on_drawhud</definition>
+        <argsstring>() override</argsstring>
+        <name>on_drawhud</name>
+        <reimplements refid="dd/dba/classopenage_1_1_hud_handler_1a52d98b171b853a47609d924e1d1fca48">on_drawhud</reimplements>
+        <briefdescription>
+<para>execute the drawing action. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="368" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.cpp" bodystart="854" bodyend="860"/>
+        <references refid="d8/db5/classopenage_1_1_game_control_1ab8ab8bdeb304d66b75541b1fd1b9695c" compoundref="d5/d9d/game__control_8h" startline="380">active_mode</references>
+        <references refid="de/d24/classopenage_1_1_output_mode_1a3ee7e90a18de82e81b02e429fb392694">openage::OutputMode::render</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/db5/classopenage_1_1_game_control_1aa7c61c3caafc810355005e83c8f234e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d8/d47/classopenage_1_1_player" kindref="compound">Player</ref> *</type>
+        <definition>Player * openage::GameControl::get_current_player</definition>
+        <argsstring>() const</argsstring>
+        <name>get_current_player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="370" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.cpp" bodystart="862" bodyend="868"/>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a42b20faac77a98d70096946a53f64bcc" compoundref="d5/d9d/game__control_8h" startline="383">current_player</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a91ef234e4c49b19b716ebd05f7bda0a7" compoundref="d5/d9d/game__control_8h" startline="374">engine</references>
+        <references refid="d8/db5/classopenage_1_1_game_control_1ac109fc6d1666c406f7f260f88053c947" compoundref="d5/d9d/game__control_8h" startline="375">game</references>
+        <references refid="d6/d40/classopenage_1_1_engine_1a3e79c3919abbc3cab0716e4807f7c93e" compoundref="da/d5c/engine_8cpp" startline="489" endline="491">openage::Engine::get_game</references>
+        <referencedby refid="db/d42/classopenage_1_1_editor_mode_1a360404d7810def66e59134ee6ea4d0d2" compoundref="d0/d03/game__control_8cpp" startline="658" endline="664">openage::EditorMode::announce_categories</referencedby>
+        <referencedby refid="db/d42/classopenage_1_1_editor_mode_1a8bc3906c89a7ecceff2c24512c5be24b" compoundref="d0/d03/game__control_8cpp" startline="666" endline="680">openage::EditorMode::announce_category_content</referencedby>
+        <referencedby refid="d8/db5/classopenage_1_1_game_control_1a3d4b9fbef261d19138ba87083e4083a5" compoundref="d0/d03/game__control_8cpp" startline="839" endline="846">announce_current_player_name</referencedby>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a0c428b739f584f369deaa02914537814" compoundref="d0/d03/game__control_8cpp" startline="493" endline="508">openage::ActionMode::announce_resources</referencedby>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a7b0a0d95b032af2e9bf2ede80bca03c8" compoundref="d0/d03/game__control_8cpp" startline="393" endline="412">openage::ActionMode::get_action</referencedby>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a43f98279255b857ee8fa9943117271e8" compoundref="d0/d03/game__control_8cpp" startline="103" endline="356">openage::ActionMode::on_game_control_set</referencedby>
+        <referencedby refid="db/d42/classopenage_1_1_editor_mode_1a1430647b024d4c9e7021756a6fa9700d" compoundref="d0/d03/game__control_8cpp" startline="632" endline="656">openage::EditorMode::paint_entity_at</referencedby>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a3865e557756044d8183a3d24cd5b8ab4" compoundref="d0/d03/game__control_8cpp" startline="414" endline="446">openage::ActionMode::place_selection</referencedby>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1aab55848d4a5495b982df54fe1d41865b" compoundref="d0/d03/game__control_8cpp" startline="448" endline="479">openage::ActionMode::render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/db5/classopenage_1_1_game_control_1aed1e983dee9b075a3343b72aed5678bd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d6/d40/classopenage_1_1_engine" kindref="compound">Engine</ref> *</type>
+        <definition>Engine * openage::GameControl::get_engine</definition>
+        <argsstring>() const</argsstring>
+        <name>get_engine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="371" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.cpp" bodystart="933" bodyend="939"/>
+        <references refid="d8/db5/classopenage_1_1_game_control_1a91ef234e4c49b19b716ebd05f7bda0a7" compoundref="d5/d9d/game__control_8h" startline="374">engine</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" compoundref="d7/d66/log_2____init_____8py" startline="122" endline="125">openage::log.err</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a30654ed7b85fa4cf0a2728c447dfa652" compoundref="d0/d03/game__control_8cpp" startline="510" endline="534">openage::ActionMode::announce_buttons_type</referencedby>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1afeb7fd105b03e822ff4ebe205cff3265" compoundref="d0/d03/game__control_8cpp" startline="358" endline="373">openage::ActionMode::available</referencedby>
+        <referencedby refid="db/d42/classopenage_1_1_editor_mode_1a51ca65c9475aa6b8b94e217d08a03bab" compoundref="d0/d03/game__control_8cpp" startline="586" endline="598">openage::EditorMode::available</referencedby>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a7b0a0d95b032af2e9bf2ede80bca03c8" compoundref="d0/d03/game__control_8cpp" startline="393" endline="412">openage::ActionMode::get_action</referencedby>
+        <referencedby refid="d8/de3/classopenage_1_1_action_mode_signals_1a400a4674187d1ce007a206c5074390da" compoundref="d0/d03/game__control_8cpp" startline="70" endline="90">openage::ActionModeSignals::on_action</referencedby>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a9c7d1f16c862692b1172079402ac0f18" compoundref="d0/d03/game__control_8cpp" startline="377" endline="391">openage::ActionMode::on_exit</referencedby>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a43f98279255b857ee8fa9943117271e8" compoundref="d0/d03/game__control_8cpp" startline="103" endline="356">openage::ActionMode::on_game_control_set</referencedby>
+        <referencedby refid="db/d42/classopenage_1_1_editor_mode_1a29b4d3a8c32153ccdc566f60fcdacf7f" compoundref="d0/d03/game__control_8cpp" startline="554" endline="584">openage::EditorMode::on_game_control_set</referencedby>
+        <referencedby refid="db/d42/classopenage_1_1_editor_mode_1a1430647b024d4c9e7021756a6fa9700d" compoundref="d0/d03/game__control_8cpp" startline="632" endline="656">openage::EditorMode::paint_entity_at</referencedby>
+        <referencedby refid="db/d42/classopenage_1_1_editor_mode_1a1f47d053e9c09aaf9bc6ec3a85f4a49e" compoundref="d0/d03/game__control_8cpp" startline="622" endline="630">openage::EditorMode::paint_terrain_at</referencedby>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1a3865e557756044d8183a3d24cd5b8ab4" compoundref="d0/d03/game__control_8cpp" startline="414" endline="446">openage::ActionMode::place_selection</referencedby>
+        <referencedby refid="d8/d06/classopenage_1_1_action_mode_1aab55848d4a5495b982df54fe1d41865b" compoundref="d0/d03/game__control_8cpp" startline="448" endline="479">openage::ActionMode::render</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>connects the gui system with the game engine switches between contexts such as editor mode and action mode </para>    </briefdescription>
+    <detaileddescription>
+<para>hud rendering and input handling is redirected to the active mode </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2340">
+        <label>openage::GameControl</label>
+        <link refid="d8/db5/classopenage_1_1_game_control"/>
+        <childnode refid="2341" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2341">
+        <label>openage::HudHandler</label>
+        <link refid="dd/dba/classopenage_1_1_hud_handler"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2383">
+        <label>CoordNeSeUpAbsolute&lt; phys_t, phys3, phys3_delta &gt;</label>
+      </node>
+      <node id="2389">
+        <label>openage::GameMain</label>
+        <link refid="d9/d9c/classopenage_1_1_game_main"/>
+        <childnode refid="2361" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2390" relation="usage">
+          <edgelabel>+market</edgelabel>
+        </childnode>
+        <childnode refid="2392" relation="usage">
+          <edgelabel>+placed_units</edgelabel>
+        </childnode>
+      </node>
+      <node id="2354">
+        <label>openage::util::Path</label>
+        <link refid="dd/dc1/classopenage_1_1util_1_1_path"/>
+      </node>
+      <node id="2342">
+        <label>openage::GameControl</label>
+        <link refid="d8/db5/classopenage_1_1_game_control"/>
+        <childnode refid="2343" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2344" relation="usage">
+          <edgelabel>-active_mode</edgelabel>
+        </childnode>
+        <childnode refid="2358" relation="usage">
+          <edgelabel>+gui_signals</edgelabel>
+        </childnode>
+        <childnode refid="2359" relation="usage">
+          <edgelabel>-engine</edgelabel>
+        </childnode>
+        <childnode refid="2355" relation="usage">
+          <edgelabel>+gui_link</edgelabel>
+        </childnode>
+        <childnode refid="2387" relation="usage">
+          <edgelabel>-game</edgelabel>
+        </childnode>
+      </node>
+      <node id="2369">
+        <label>openage::EngineSignals</label>
+        <link refid="de/dbb/classopenage_1_1_engine_signals"/>
+        <childnode refid="2357" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2384">
+        <label>openage::coord::camgame_delta</label>
+        <link refid="d5/d40/structopenage_1_1coord_1_1camgame__delta"/>
+        <childnode refid="2385" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2364">
+        <label>openage::util::VariableBase</label>
+        <link refid="da/d0a/classopenage_1_1util_1_1_variable_base"/>
+      </node>
+      <node id="2370">
+        <label>openage::ScreenshotManager</label>
+        <link refid="d5/dfd/classopenage_1_1_screenshot_manager"/>
+        <childnode refid="2371" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+        <childnode refid="2372" relation="usage">
+          <edgelabel>+window_size</edgelabel>
+        </childnode>
+      </node>
+      <node id="2366">
+        <label>T</label>
+      </node>
+      <node id="2355">
+        <label>qtsdl::GuiItemLink</label>
+        <link refid="da/dff/classqtsdl_1_1_gui_item_link"/>
+      </node>
+      <node id="2373">
+        <label>CoordXYRelative&lt; pixel_t, viewport, viewport_delta &gt;</label>
+      </node>
+      <node id="2363">
+        <label>openage::util::Variable&lt; bool &gt;</label>
+        <link refid="df/d2d/classopenage_1_1util_1_1_variable"/>
+        <childnode refid="2364" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2365" relation="template-instance">
+          <edgelabel>&lt; bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2357">
+        <label>QObject</label>
+      </node>
+      <node id="2353">
+        <label>openage::cvar::CVarManager</label>
+        <link refid="db/db2/classopenage_1_1cvar_1_1_c_var_manager"/>
+        <childnode refid="2354" relation="usage">
+          <edgelabel>-path</edgelabel>
+        </childnode>
+      </node>
+      <node id="2382">
+        <label>openage::coord::phys3</label>
+        <link refid="d2/da4/structopenage_1_1coord_1_1phys3"/>
+        <childnode refid="2383" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2376">
+        <label>openage::util::ExternalProfiler</label>
+        <link refid="dd/d6f/classopenage_1_1util_1_1_external_profiler"/>
+      </node>
+      <node id="2387">
+        <label>openage::GameMainHandle</label>
+        <link refid="d0/dd5/classopenage_1_1_game_main_handle"/>
+        <childnode refid="2388" relation="usage">
+          <edgelabel>+gui_signals</edgelabel>
+        </childnode>
+        <childnode refid="2389" relation="usage">
+          <edgelabel>-game</edgelabel>
+        </childnode>
+        <childnode refid="2359" relation="usage">
+          <edgelabel>-engine</edgelabel>
+        </childnode>
+        <childnode refid="2355" relation="usage">
+          <edgelabel>+gui_link</edgelabel>
+        </childnode>
+      </node>
+      <node id="2361">
+        <label>openage::options::OptionNode</label>
+        <link refid="d9/d52/classopenage_1_1options_1_1_option_node"/>
+        <childnode refid="2361" relation="usage">
+          <edgelabel>-parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2380">
+        <label>openage::coord::viewport</label>
+        <link refid="d2/dcd/structopenage_1_1coord_1_1viewport"/>
+        <childnode refid="2381" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2352">
+        <label>openage::input::ActionManager</label>
+        <link refid="d4/de2/classopenage_1_1input_1_1_action_manager"/>
+        <childnode refid="2353" relation="usage">
+          <edgelabel>-cvar_manager</edgelabel>
+        </childnode>
+        <childnode refid="2346" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2378">
+        <label>qtsdl::GuiSingletonItemsInfo</label>
+        <link refid="d2/dbf/classqtsdl_1_1_gui_singleton_items_info"/>
+      </node>
+      <node id="2372">
+        <label>openage::coord::viewport_delta</label>
+        <link refid="d5/d5e/structopenage_1_1coord_1_1viewport__delta"/>
+        <childnode refid="2373" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2358">
+        <label>openage::GameControlSignals</label>
+        <link refid="d9/d8d/classopenage_1_1_game_control_signals"/>
+        <childnode refid="2357" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2342" relation="usage">
+          <edgelabel>-game_control</edgelabel>
+        </childnode>
+      </node>
+      <node id="2343">
+        <label>openage::HudHandler</label>
+        <link refid="dd/dba/classopenage_1_1_hud_handler"/>
+      </node>
+      <node id="2351">
+        <label>CoordXYRelative&lt; pixel_t, input, input_delta &gt;</label>
+      </node>
+      <node id="2367">
+        <label>openage::options::Var&lt; T &gt;</label>
+        <link refid="d6/d6a/classopenage_1_1options_1_1_var"/>
+        <childnode refid="2365" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2348">
+        <label>openage::coord::input</label>
+        <link refid="d8/d34/structopenage_1_1coord_1_1input"/>
+        <childnode refid="2349" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2385">
+        <label>CoordXYRelative&lt; pixel_t, camgame, camgame_delta &gt;</label>
+      </node>
+      <node id="2371">
+        <label>openage::job::JobManager</label>
+        <link refid="dc/d9a/classopenage_1_1job_1_1_job_manager"/>
+      </node>
+      <node id="2349">
+        <label>CoordXYAbsolute&lt; pixel_t, input, input_delta &gt;</label>
+      </node>
+      <node id="2388">
+        <label>openage::GameMainSignals</label>
+        <link refid="de/dfe/classopenage_1_1_game_main_signals"/>
+        <childnode refid="2357" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2390">
+        <label>openage::Market</label>
+        <link refid="d1/dae/classopenage_1_1_market"/>
+        <childnode refid="2391" relation="usage">
+          <edgelabel>-base_prices</edgelabel>
+        </childnode>
+      </node>
+      <node id="2374">
+        <label>openage::util::FrameCounter</label>
+        <link refid="d9/d71/classopenage_1_1util_1_1_frame_counter"/>
+        <childnode refid="2375" relation="usage">
+          <edgelabel>-frame_timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="2345">
+        <label>openage::input::InputContext</label>
+        <link refid="d7/d57/classopenage_1_1input_1_1_input_context"/>
+        <childnode refid="2346" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2391">
+        <label>openage::ResourceBundle</label>
+        <link refid="d2/de9/classopenage_1_1_resource_bundle"/>
+      </node>
+      <node id="2377">
+        <label>openage::gui::EngineQMLInfo</label>
+        <link refid="d4/d73/classopenage_1_1gui_1_1_engine_q_m_l_info"/>
+        <childnode refid="2378" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2354" relation="usage">
+          <edgelabel>+asset_dir</edgelabel>
+        </childnode>
+        <childnode refid="2359" relation="usage">
+          <edgelabel>+engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="2386">
+        <label>openage::audio::AudioManager</label>
+        <link refid="d0/d62/classopenage_1_1audio_1_1_audio_manager"/>
+        <childnode refid="2371" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2368">
+        <label>openage::util::Profiler</label>
+        <link refid="db/de7/classopenage_1_1util_1_1_profiler"/>
+        <childnode refid="2359" relation="usage">
+          <edgelabel>-engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="2359">
+        <label>openage::Engine</label>
+        <link refid="d6/d40/classopenage_1_1_engine"/>
+        <childnode refid="2360" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2361" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2362" relation="usage">
+          <edgelabel>+drawing_huds</edgelabel>
+          <edgelabel>+drawing_debug_overlay</edgelabel>
+        </childnode>
+        <childnode refid="2368" relation="usage">
+          <edgelabel>-profiler</edgelabel>
+        </childnode>
+        <childnode refid="2354" relation="usage">
+          <edgelabel>-root_dir</edgelabel>
+        </childnode>
+        <childnode refid="2369" relation="usage">
+          <edgelabel>+gui_signals</edgelabel>
+        </childnode>
+        <childnode refid="2353" relation="usage">
+          <edgelabel>-cvar_manager</edgelabel>
+        </childnode>
+        <childnode refid="2370" relation="usage">
+          <edgelabel>-screenshot_manager</edgelabel>
+        </childnode>
+        <childnode refid="2374" relation="usage">
+          <edgelabel>-fps_counter</edgelabel>
+        </childnode>
+        <childnode refid="2376" relation="usage">
+          <edgelabel>+external_profiler</edgelabel>
+        </childnode>
+        <childnode refid="2346" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+        <childnode refid="2377" relation="usage">
+          <edgelabel>-qml_info</edgelabel>
+        </childnode>
+        <childnode refid="2379" relation="usage">
+          <edgelabel>+coord</edgelabel>
+        </childnode>
+        <childnode refid="2371" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+        <childnode refid="2352" relation="usage">
+          <edgelabel>-action_manager</edgelabel>
+        </childnode>
+        <childnode refid="2386" relation="usage">
+          <edgelabel>-audio_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2381">
+        <label>CoordXYAbsolute&lt; pixel_t, viewport, viewport_delta &gt;</label>
+      </node>
+      <node id="2356">
+        <label>openage::OutputModeSignals</label>
+        <link refid="d3/d93/classopenage_1_1_output_mode_signals"/>
+        <childnode refid="2357" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2360">
+        <label>openage::ResizeHandler</label>
+        <link refid="db/d8a/classopenage_1_1_resize_handler"/>
+      </node>
+      <node id="2362">
+        <label>openage::options::Var&lt; bool &gt;</label>
+        <link refid="d6/d6a/classopenage_1_1options_1_1_var"/>
+        <childnode refid="2363" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2367" relation="template-instance">
+          <edgelabel>&lt; bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="2350">
+        <label>openage::coord::input_delta</label>
+        <link refid="d8/db7/structopenage_1_1coord_1_1input__delta"/>
+        <childnode refid="2351" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2375">
+        <label>openage::util::Timer</label>
+        <link refid="d3/d81/classopenage_1_1util_1_1_timer"/>
+      </node>
+      <node id="2347">
+        <label>openage::InputHandler</label>
+        <link refid="da/dc5/classopenage_1_1_input_handler"/>
+      </node>
+      <node id="2392">
+        <label>openage::UnitContainer</label>
+        <link refid="d2/d82/classopenage_1_1_unit_container"/>
+      </node>
+      <node id="2344">
+        <label>openage::OutputMode</label>
+        <link refid="de/d24/classopenage_1_1_output_mode"/>
+        <childnode refid="2345" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2342" relation="usage">
+          <edgelabel>#game_control</edgelabel>
+        </childnode>
+        <childnode refid="2355" relation="usage">
+          <edgelabel>+gui_link</edgelabel>
+        </childnode>
+        <childnode refid="2356" relation="usage">
+          <edgelabel>+gui_signals</edgelabel>
+        </childnode>
+      </node>
+      <node id="2365">
+        <label>openage::util::Variable&lt; T &gt;</label>
+        <link refid="df/d2d/classopenage_1_1util_1_1_variable"/>
+        <childnode refid="2364" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2366" relation="usage">
+          <edgelabel>+value</edgelabel>
+        </childnode>
+      </node>
+      <node id="2346">
+        <label>openage::input::InputManager</label>
+        <link refid="d7/df3/classopenage_1_1input_1_1_input_manager"/>
+        <childnode refid="2347" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2348" relation="usage">
+          <edgelabel>-mouse_position</edgelabel>
+        </childnode>
+        <childnode refid="2345" relation="usage">
+          <edgelabel>-global_context</edgelabel>
+        </childnode>
+        <childnode refid="2350" relation="usage">
+          <edgelabel>-mouse_motion</edgelabel>
+        </childnode>
+        <childnode refid="2352" relation="usage">
+          <edgelabel>-action_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2379">
+        <label>openage::coord::CoordManager</label>
+        <link refid="de/db5/classopenage_1_1coord_1_1_coord_manager"/>
+        <childnode refid="2380" relation="usage">
+          <edgelabel>+camgame_viewport</edgelabel>
+          <edgelabel>+camhud_viewport</edgelabel>
+        </childnode>
+        <childnode refid="2382" relation="usage">
+          <edgelabel>+camgame_phys</edgelabel>
+        </childnode>
+        <childnode refid="2384" relation="usage">
+          <edgelabel>+tile_size</edgelabel>
+        </childnode>
+        <childnode refid="2372" relation="usage">
+          <edgelabel>+viewport_size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" line="355" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/game_control.h" bodystart="355" bodyend="388"/>
+    <listofallmembers>
+      <member refid="d8/db5/classopenage_1_1_game_control_1ab8ab8bdeb304d66b75541b1fd1b9695c" prot="private" virt="non-virtual"><scope>openage::GameControl</scope><name>active_mode</name></member>
+      <member refid="d8/db5/classopenage_1_1_game_control_1a56a4b875fe0d5b2bad9013fd112118d6" prot="private" virt="non-virtual"><scope>openage::GameControl</scope><name>active_mode_index</name></member>
+      <member refid="d8/db5/classopenage_1_1_game_control_1a3d4b9fbef261d19138ba87083e4083a5" prot="public" virt="non-virtual"><scope>openage::GameControl</scope><name>announce_current_player_name</name></member>
+      <member refid="d8/db5/classopenage_1_1_game_control_1a8c867441262580369ff7c66ba6bd0e4b" prot="public" virt="non-virtual"><scope>openage::GameControl</scope><name>announce_mode</name></member>
+      <member refid="d8/db5/classopenage_1_1_game_control_1a42b20faac77a98d70096946a53f64bcc" prot="private" virt="non-virtual"><scope>openage::GameControl</scope><name>current_player</name></member>
+      <member refid="d8/db5/classopenage_1_1_game_control_1a91ef234e4c49b19b716ebd05f7bda0a7" prot="private" virt="non-virtual"><scope>openage::GameControl</scope><name>engine</name></member>
+      <member refid="d8/db5/classopenage_1_1_game_control_1ac109fc6d1666c406f7f260f88053c947" prot="private" virt="non-virtual"><scope>openage::GameControl</scope><name>game</name></member>
+      <member refid="d8/db5/classopenage_1_1_game_control_1a76e43bea79237a77d0ae231df386de6a" prot="public" virt="non-virtual"><scope>openage::GameControl</scope><name>GameControl</name></member>
+      <member refid="d8/db5/classopenage_1_1_game_control_1aa7c61c3caafc810355005e83c8f234e2" prot="public" virt="non-virtual"><scope>openage::GameControl</scope><name>get_current_player</name></member>
+      <member refid="d8/db5/classopenage_1_1_game_control_1aed1e983dee9b075a3343b72aed5678bd" prot="public" virt="non-virtual"><scope>openage::GameControl</scope><name>get_engine</name></member>
+      <member refid="d8/db5/classopenage_1_1_game_control_1abacb568a46d3a35a17a210ceb6b380cf" prot="public" virt="non-virtual"><scope>openage::GameControl</scope><name>gui_link</name></member>
+      <member refid="d8/db5/classopenage_1_1_game_control_1a8d395e91d09a84a64d370e5bac938433" prot="public" virt="non-virtual"><scope>openage::GameControl</scope><name>gui_signals</name></member>
+      <member refid="d8/db5/classopenage_1_1_game_control_1a3f7a5093f8773643b39a95e5bd47a9ef" prot="private" virt="non-virtual"><scope>openage::GameControl</scope><name>modes</name></member>
+      <member refid="d8/db5/classopenage_1_1_game_control_1a56eadb260ee512fa9034f25f67308e61" prot="public" virt="virtual"><scope>openage::GameControl</scope><name>on_drawhud</name></member>
+      <member refid="d8/db5/classopenage_1_1_game_control_1ad7c9d48df33f8f56ab5686c36648bfa5" prot="public" virt="non-virtual"><scope>openage::GameControl</scope><name>set_engine</name></member>
+      <member refid="d8/db5/classopenage_1_1_game_control_1ae6ce3ec10ca18afc9cb7235c88ac7113" prot="public" virt="non-virtual"><scope>openage::GameControl</scope><name>set_game</name></member>
+      <member refid="d8/db5/classopenage_1_1_game_control_1a1d0f073f844955000861e4c0d08b20e0" prot="public" virt="non-virtual"><scope>openage::GameControl</scope><name>set_mode</name></member>
+      <member refid="d8/db5/classopenage_1_1_game_control_1af8fcfaca1f2135c0508cb706955d18d0" prot="public" virt="non-virtual"><scope>openage::GameControl</scope><name>set_modes</name></member>
+      <member refid="dd/dba/classopenage_1_1_hud_handler_1a5b1435a782148709e7acf4a0dd94189f" prot="public" virt="virtual"><scope>openage::GameControl</scope><name>~HudHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

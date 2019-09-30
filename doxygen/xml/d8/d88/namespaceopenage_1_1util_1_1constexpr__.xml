@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d8/d88/namespaceopenage_1_1util_1_1constexpr__" kind="namespace" language="C++">
+    <compoundname>openage::util::constexpr_</compoundname>
+    <innerclass refid="da/d41/structopenage_1_1util_1_1constexpr___1_1truncated__string__literal" prot="public">openage::util::constexpr_::truncated_string_literal</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d8/d88/namespaceopenage_1_1util_1_1constexpr___1a7bc24bcb83bbac7bbf75686a8331cd21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool openage::util::constexpr_::streq</definition>
+        <argsstring>(const char *a, const char *b)</argsstring>
+        <name>streq</name>
+        <param>
+          <type>const char *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Returns true IFF the string literals have equal content. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/constexpr.h" line="17" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/constexpr.h" bodystart="17" bodyend="24"/>
+        <referencedby refid="d8/d88/namespaceopenage_1_1util_1_1constexpr___1a61c4b546903316ecf379bfe7bd9553f1" compoundref="d1/d06/constexpr_8h" startline="59" endline="69">get_prefix</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d88/namespaceopenage_1_1util_1_1constexpr___1a72a87a05e383ec62bf0b60359f314df7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t openage::util::constexpr_::strlen</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>strlen</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Returns the length of the string literal, excluding the terminating NULL byte. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/constexpr.h" line="30" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/constexpr.h" bodystart="30" bodyend="36"/>
+        <referencedby refid="de/d60/namespaceopenage_1_1util_1a854794aef09b81dbec641eca208a66d7" compoundref="d9/d15/strings_8cpp" startline="64" endline="69">openage::util::copy_string</referencedby>
+        <referencedby refid="d8/d88/namespaceopenage_1_1util_1_1constexpr___1a671299bb61bb30cecb3fa42de25333b0" compoundref="d1/d06/constexpr_8h" startline="75" endline="77">create_truncated_string_literal</referencedby>
+        <referencedby refid="d8/d88/namespaceopenage_1_1util_1_1constexpr___1a61c4b546903316ecf379bfe7bd9553f1" compoundref="d1/d06/constexpr_8h" startline="59" endline="69">get_prefix</referencedby>
+        <referencedby refid="d2/d02/classopenage_1_1util_1_1_f_d_1a5c27276c6b3cf4af0e5d13979c0e81a0" compoundref="d2/d90/fds_8cpp" startline="57" endline="59">openage::util::FD::puts</referencedby>
+        <referencedby refid="de/d60/namespaceopenage_1_1util_1abeb6a94572d93a14498661545b8332ec" compoundref="d9/d15/strings_8cpp" startline="72" endline="89">openage::util::rstrip</referencedby>
+        <referencedby refid="db/dbd/namespaceopenage_1_1error_1afafcc06f7279949f56f93e5506656528" compoundref="d5/d91/error_2handlers_8cpp" startline="107" endline="116">openage::error::sigsegv_handler</referencedby>
+        <referencedby refid="de/d60/namespaceopenage_1_1util_1a5519d25810f698275993214ce79016c7" compoundref="dd/d9c/unicode_8cpp" startline="154" endline="165">openage::util::utf8_last_char_size</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d88/namespaceopenage_1_1util_1_1constexpr___1a61c4b546903316ecf379bfe7bd9553f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr <ref refid="da/d41/structopenage_1_1util_1_1constexpr___1_1truncated__string__literal" kindref="compound">truncated_string_literal</ref></type>
+        <definition>constexpr truncated_string_literal openage::util::constexpr_::get_prefix</definition>
+        <argsstring>(const char *str, const char *suffix)</argsstring>
+        <name>get_prefix</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>suffix</declname>
+        </param>
+        <briefdescription>
+<para>Truncates a suffix from a string literal. </para>        </briefdescription>
+        <detaileddescription>
+<para>Raises &apos;false&apos; if str doesn&apos;t end in the given suffix. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/constexpr.h" line="59" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/constexpr.h" bodystart="59" bodyend="69"/>
+        <references refid="d4/dd4/namespaceopenage_1_1py_1a4d2bbe46a5d10404c658b54f3b199551" compoundref="d0/dee/pyobject_8cpp" startline="331" endline="335">openage::py::str</references>
+        <references refid="d8/d88/namespaceopenage_1_1util_1_1constexpr___1a7bc24bcb83bbac7bbf75686a8331cd21" compoundref="d1/d06/constexpr_8h" startline="17" endline="24">streq</references>
+        <references refid="d8/d88/namespaceopenage_1_1util_1_1constexpr___1a72a87a05e383ec62bf0b60359f314df7" compoundref="d1/d06/constexpr_8h" startline="30" endline="36">strlen</references>
+      </memberdef>
+      <memberdef kind="function" id="d8/d88/namespaceopenage_1_1util_1_1constexpr___1a671299bb61bb30cecb3fa42de25333b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr <ref refid="da/d41/structopenage_1_1util_1_1constexpr___1_1truncated__string__literal" kindref="compound">truncated_string_literal</ref></type>
+        <definition>constexpr truncated_string_literal openage::util::constexpr_::create_truncated_string_literal</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>create_truncated_string_literal</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Creates a <ref refid="da/d41/structopenage_1_1util_1_1constexpr___1_1truncated__string__literal" kindref="compound">truncated_string_literal</ref> from a regular string literal. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/constexpr.h" line="75" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/constexpr.h" bodystart="75" bodyend="77"/>
+        <references refid="d4/dd4/namespaceopenage_1_1py_1a4d2bbe46a5d10404c658b54f3b199551" compoundref="d0/dee/pyobject_8cpp" startline="331" endline="335">openage::py::str</references>
+        <references refid="d8/d88/namespaceopenage_1_1util_1_1constexpr___1a72a87a05e383ec62bf0b60359f314df7" compoundref="d1/d06/constexpr_8h" startline="30" endline="36">strlen</references>
+        <referencedby refid="d8/d88/namespaceopenage_1_1util_1_1constexpr___1a6a9d0df52733d9d7ae0bcc1bc561e38f" compoundref="d1/d06/constexpr_8h" startline="111" endline="113">strip_prefix</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d88/namespaceopenage_1_1util_1_1constexpr___1aa4f041b85b8ae3df628165f73397d1fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool openage::util::constexpr_::has_prefix</definition>
+        <argsstring>(const char *str, const truncated_string_literal prefix)</argsstring>
+        <name>has_prefix</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>const <ref refid="da/d41/structopenage_1_1util_1_1constexpr___1_1truncated__string__literal" kindref="compound">truncated_string_literal</ref></type>
+          <declname>prefix</declname>
+        </param>
+        <briefdescription>
+<para>Tests whether a string literal starts with the given prefix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/constexpr.h" line="82" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/constexpr.h" bodystart="82" bodyend="89"/>
+        <references refid="da/d41/structopenage_1_1util_1_1constexpr___1_1truncated__string__literal_1a8377276ec3801cd8a5bc89f72ac5c590" compoundref="d1/d06/constexpr_8h" startline="50">openage::util::constexpr_::truncated_string_literal::length</references>
+        <references refid="da/d41/structopenage_1_1util_1_1constexpr___1_1truncated__string__literal_1ac55b8849ba71aa1dd2eb6b6b0b97bf0c" compoundref="d1/d06/constexpr_8h" startline="49">openage::util::constexpr_::truncated_string_literal::literal</references>
+        <referencedby refid="d8/d88/namespaceopenage_1_1util_1_1constexpr___1ae2139acfbb2a838e378d0652e23943b8" compoundref="d1/d06/constexpr_8h" startline="97" endline="103">strip_prefix</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d88/namespaceopenage_1_1util_1_1constexpr___1ae2139acfbb2a838e378d0652e23943b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* openage::util::constexpr_::strip_prefix</definition>
+        <argsstring>(const char *str, const truncated_string_literal prefix)</argsstring>
+        <name>strip_prefix</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>const <ref refid="da/d41/structopenage_1_1util_1_1constexpr___1_1truncated__string__literal" kindref="compound">truncated_string_literal</ref></type>
+          <declname>prefix</declname>
+        </param>
+        <briefdescription>
+<para>Strips a prefix from a given string literal. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the string literal doesn&apos;t have that prefix, returns the string literal itself. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/constexpr.h" line="97" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/constexpr.h" bodystart="97" bodyend="103"/>
+        <references refid="d8/d88/namespaceopenage_1_1util_1_1constexpr___1aa4f041b85b8ae3df628165f73397d1fa" compoundref="d1/d06/constexpr_8h" startline="82" endline="89">has_prefix</references>
+        <references refid="da/d41/structopenage_1_1util_1_1constexpr___1_1truncated__string__literal_1a8377276ec3801cd8a5bc89f72ac5c590" compoundref="d1/d06/constexpr_8h" startline="50">openage::util::constexpr_::truncated_string_literal::length</references>
+        <references refid="d4/dd4/namespaceopenage_1_1py_1a4d2bbe46a5d10404c658b54f3b199551" compoundref="d0/dee/pyobject_8cpp" startline="331" endline="335">openage::py::str</references>
+        <referencedby refid="d8/d88/namespaceopenage_1_1util_1_1constexpr___1a6a9d0df52733d9d7ae0bcc1bc561e38f" compoundref="d1/d06/constexpr_8h" startline="111" endline="113">strip_prefix</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d88/namespaceopenage_1_1util_1_1constexpr___1a6a9d0df52733d9d7ae0bcc1bc561e38f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* openage::util::constexpr_::strip_prefix</definition>
+        <argsstring>(const char *str, const char *prefix)</argsstring>
+        <name>strip_prefix</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>prefix</declname>
+        </param>
+        <briefdescription>
+<para>Strips a prefix, given as const char *, from a given string literal. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the string literal doesn&apos;t have that prefix, returns the string literal itself. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/constexpr.h" line="111" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/constexpr.h" bodystart="111" bodyend="113"/>
+        <references refid="d8/d88/namespaceopenage_1_1util_1_1constexpr___1a671299bb61bb30cecb3fa42de25333b0" compoundref="d1/d06/constexpr_8h" startline="75" endline="77">create_truncated_string_literal</references>
+        <references refid="d8/d88/namespaceopenage_1_1util_1_1constexpr___1ae2139acfbb2a838e378d0652e23943b8" compoundref="d1/d06/constexpr_8h" startline="97" endline="103">strip_prefix</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This namespace contains constexpr functions, i.e. </para>    </briefdescription>
+    <detaileddescription>
+<para>C++14 functions that are designed to run at compile-time. </para>    </detaileddescription>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/constexpr.h" line="12" column="1"/>
+  </compounddef>
+</doxygen>

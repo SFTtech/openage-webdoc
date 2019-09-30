@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d9/df2/classqtsdl_1_1_gui_callback" kind="class" language="C++" prot="public">
+    <compoundname>qtsdl::GuiCallback</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="d2/dc5/gui__callback_8h" local="no">gui_callback.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/df2/classqtsdl_1_1_gui_callback_1a1069c0650f91b910170a3ece87b61a6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>qtsdl::GuiCallback::GuiCallback</definition>
+        <argsstring>()</argsstring>
+        <name>GuiCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_callback.h" line="16" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_callback.cpp" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/df2/classqtsdl_1_1_gui_callback_1a001c8164e036b5b3567f3f32098a53ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>qtsdl::GuiCallback::~GuiCallback</definition>
+        <argsstring>()</argsstring>
+        <name>~GuiCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_callback.h" line="17" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_callback.cpp" bodystart="19" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="d9/df2/classqtsdl_1_1_gui_callback_1a3cfbf34933c59c043267e2ba916dc15f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void qtsdl::GuiCallback::process_blocking</definition>
+        <argsstring>(const std::function&lt; void()&gt; &amp;f)</argsstring>
+        <name>process_blocking</name>
+        <param>
+          <type>const std::function&lt; void()&gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_callback.h" line="20" column="1"/>
+        <referencedby refid="d3/d9a/classopenage_1_1gui_1_1_gui_game_spec_image_provider_impl_1abf0126df9e8042f64226bbb1459c092c" compoundref="db/dfa/gui__game__spec__image__provider__impl_8cpp" startline="20" endline="30">openage::gui::GuiGameSpecImageProviderImpl::GuiGameSpecImageProviderImpl</referencedby>
+        <referencedby refid="d4/d96/classqtsdl_1_1_gui_subtree_impl_1a9534f49628a4fe4f157a4495e6518c3c" compoundref="dc/d71/gui__subtree__impl_8cpp" startline="25" endline="68">qtsdl::GuiSubtreeImpl::GuiSubtreeImpl</referencedby>
+        <referencedby refid="d3/d9a/classopenage_1_1gui_1_1_gui_game_spec_image_provider_impl_1ab296b31a83e17fbd14f7106ce4c2a54a" compoundref="db/dfa/gui__game__spec__image__provider__impl_8cpp" startline="49" endline="65">openage::gui::GuiGameSpecImageProviderImpl::migrate_to_new_game_spec</referencedby>
+        <referencedby refid="d3/d9a/classopenage_1_1gui_1_1_gui_game_spec_image_provider_impl_1a42ec51b02960edb6ef405251a640bd5f" compoundref="db/dfa/gui__game__spec__image__provider__impl_8cpp" startline="72" endline="84">openage::gui::GuiGameSpecImageProviderImpl::on_game_spec_invalidated</referencedby>
+        <referencedby refid="d0/d88/classqtsdl_1_1_game_logic_caller_1a0101ff39e4fc7bcc9d3f33a6c53ff571" compoundref="da/d74/game__logic__caller_8cpp" startline="14" endline="19">qtsdl::GameLogicCaller::set_game_logic_callback</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="d9/df2/classqtsdl_1_1_gui_callback_1ab84c2a4152e0ab297025079a4d15746c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void qtsdl::GuiCallback::process</definition>
+        <argsstring>(const std::function&lt; void()&gt; &amp;f)</argsstring>
+        <name>process</name>
+        <param>
+          <type>const std::function&lt; void()&gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_callback.h" line="23" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_callback.cpp" bodystart="22" bodyend="24"/>
+        <referencedby refid="d3/d9a/classopenage_1_1gui_1_1_gui_game_spec_image_provider_impl_1abf0126df9e8042f64226bbb1459c092c" compoundref="db/dfa/gui__game__spec__image__provider__impl_8cpp" startline="20" endline="30">openage::gui::GuiGameSpecImageProviderImpl::GuiGameSpecImageProviderImpl</referencedby>
+        <referencedby refid="d4/d96/classqtsdl_1_1_gui_subtree_impl_1a9534f49628a4fe4f157a4495e6518c3c" compoundref="dc/d71/gui__subtree__impl_8cpp" startline="25" endline="68">qtsdl::GuiSubtreeImpl::GuiSubtreeImpl</referencedby>
+        <referencedby refid="d0/d88/classqtsdl_1_1_game_logic_caller_1a0101ff39e4fc7bcc9d3f33a6c53ff571" compoundref="da/d74/game__logic__caller_8cpp" startline="14" endline="19">qtsdl::GameLogicCaller::set_game_logic_callback</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6309">
+        <label>QObject</label>
+      </node>
+      <node id="6308">
+        <label>qtsdl::GuiCallback</label>
+        <link refid="d9/df2/classqtsdl_1_1_gui_callback"/>
+        <childnode refid="6309" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6311">
+        <label>QObject</label>
+      </node>
+      <node id="6310">
+        <label>qtsdl::GuiCallback</label>
+        <link refid="d9/df2/classqtsdl_1_1_gui_callback"/>
+        <childnode refid="6311" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_callback.h" line="12" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/gui_callback.h" bodystart="12" bodyend="24"/>
+    <listofallmembers>
+      <member refid="d9/df2/classqtsdl_1_1_gui_callback_1a1069c0650f91b910170a3ece87b61a6f" prot="public" virt="non-virtual"><scope>qtsdl::GuiCallback</scope><name>GuiCallback</name></member>
+      <member refid="d9/df2/classqtsdl_1_1_gui_callback_1ab84c2a4152e0ab297025079a4d15746c" prot="public" virt="non-virtual"><scope>qtsdl::GuiCallback</scope><name>process</name></member>
+      <member refid="d9/df2/classqtsdl_1_1_gui_callback_1a3cfbf34933c59c043267e2ba916dc15f" prot="public" virt="non-virtual"><scope>qtsdl::GuiCallback</scope><name>process_blocking</name></member>
+      <member refid="d9/df2/classqtsdl_1_1_gui_callback_1a001c8164e036b5b3567f3f32098a53ed" prot="public" virt="virtual"><scope>qtsdl::GuiCallback</scope><name>~GuiCallback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

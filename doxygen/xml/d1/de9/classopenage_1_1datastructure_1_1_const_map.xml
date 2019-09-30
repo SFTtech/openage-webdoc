@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d1/de9/classopenage_1_1datastructure_1_1_const_map" kind="class" language="C++" prot="public">
+    <compoundname>openage::datastructure::ConstMap</compoundname>
+    <includes refid="d3/dd6/constexpr__map_8h" local="no">constexpr_map.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename K</type>
+      </param>
+      <param>
+        <type>typename V</type>
+      </param>
+      <param>
+        <type>size_t</type>
+        <declname>count</declname>
+        <defname>count</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a28579cae00ec2ccbe73454f0cd6bb301" prot="private" static="no" mutable="no">
+        <type>std::array&lt; std::pair&lt; K, V &gt;, count &gt;</type>
+        <definition>std::array&lt;std::pair&lt;K, V&gt;, count&gt; openage::datastructure::ConstMap&lt; K, V, count &gt;::values</definition>
+        <argsstring></argsstring>
+        <name>values</name>
+        <briefdescription>
+<para>The entries associated with this map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" line="99" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" bodystart="99" bodyend="-1"/>
+        <referencedby refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a32620bc8c2c12a962a5f5ec34e79b129" compoundref="d3/dd6/constexpr__map_8h" startline="46" endline="48">openage::datastructure::ConstMap&lt; K, V, count &gt;::contains</referencedby>
+        <referencedby refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a0aeb3d062ddd097ad775e2a21bb18fe4" compoundref="d3/dd6/constexpr__map_8h" startline="87" endline="94">openage::datastructure::ConstMap&lt; K, V, count &gt;::find</referencedby>
+        <referencedby refid="d1/d8c/classopenage_1_1convert_1_1dataformat_1_1members_1_1_enum_member_1a0fcf1a7012f76c251b31eb760ef911ee" compoundref="de/d1a/members_8py" startline="471" endline="478">openage.convert.dataformat.members.EnumMember.format_hash</referencedby>
+        <referencedby refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a7a631fca8646e00194fe3750db748dd4" compoundref="d3/dd6/constexpr__map_8h" startline="53" endline="60">openage::datastructure::ConstMap&lt; K, V, count &gt;::get</referencedby>
+        <referencedby refid="d1/d8c/classopenage_1_1convert_1_1dataformat_1_1members_1_1_enum_member_1a815464eef9720becdee8f954d2134989" compoundref="de/d1a/members_8py" startline="392" endline="425">openage.convert.dataformat.members.EnumMember.get_parsers</referencedby>
+        <referencedby refid="d1/d8c/classopenage_1_1convert_1_1dataformat_1_1members_1_1_enum_member_1a274e331b508216591106df9b98644854" compoundref="de/d1a/members_8py" startline="444" endline="470">openage.convert.dataformat.members.EnumMember.get_snippets</referencedby>
+        <referencedby refid="d1/d8c/classopenage_1_1convert_1_1dataformat_1_1members_1_1_enum_member_1a2bc739bc4cd27300bb2f88e78887a22f" compoundref="de/d1a/members_8py" startline="435" endline="437">openage.convert.dataformat.members.EnumMember.validate_value</referencedby>
+        <referencedby refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1aa33d02634b6305ecdca4339a8e61c1c1" compoundref="d3/dd6/constexpr__map_8h" startline="73" endline="81">openage::datastructure::ConstMap&lt; K, V, count &gt;::verify_no_duplicates</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/de9/classopenage_1_1datastructure_1_1_const_map_1ae9b9f33a7c41eac464ee3324de7b5822" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class...</type>
+            <declname>Entries</declname>
+            <defname>Entries</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr</type>
+        <definition>constexpr openage::datastructure::ConstMap&lt; K, V, count &gt;::ConstMap</definition>
+        <argsstring>(Entries &amp;&amp;... entries)</argsstring>
+        <name>ConstMap</name>
+        <param>
+          <type>Entries &amp;&amp;...</type>
+          <declname>entries</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" line="30" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" bodystart="30" bodyend="34"/>
+        <references refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1aa33d02634b6305ecdca4339a8e61c1c1" compoundref="d3/dd6/constexpr__map_8h" startline="73" endline="81">openage::datastructure::ConstMap&lt; K, V, count &gt;::verify_no_duplicates</references>
+        <referencedby refid="d2/d4a/namespaceopenage_1_1datastructure_1ab0127314c49a7c5dc7e6a794779211c8" compoundref="d3/dd6/constexpr__map_8h" startline="131" endline="133">openage::datastructure::create_const_map</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a042ea1b0eaa46518cc733b12b842c21d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr int</type>
+        <definition>constexpr int openage::datastructure::ConstMap&lt; K, V, count &gt;::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Return the number of entries in this map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" line="39" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a32620bc8c2c12a962a5f5ec34e79b129" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>constexpr bool openage::datastructure::ConstMap&lt; K, V, count &gt;::contains</definition>
+        <argsstring>(const K &amp;key) const</argsstring>
+        <name>contains</name>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Tests if the given key is in this map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" line="46" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" bodystart="46" bodyend="48"/>
+        <references refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a0aeb3d062ddd097ad775e2a21bb18fe4" compoundref="d3/dd6/constexpr__map_8h" startline="87" endline="94">openage::datastructure::ConstMap&lt; K, V, count &gt;::find</references>
+        <references refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a28579cae00ec2ccbe73454f0cd6bb301" compoundref="d3/dd6/constexpr__map_8h" startline="99">openage::datastructure::ConstMap&lt; K, V, count &gt;::values</references>
+        <referencedby refid="d3/d09/namespaceopenage_1_1datastructure_1_1tests_1ade00c39e05018597baff76d22dedff44" compoundref="df/d03/datastructure_2tests_8cpp" startline="154" endline="193">openage::datastructure::tests::constexpr_map</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a7a631fca8646e00194fe3750db748dd4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr const V &amp;</type>
+        <definition>constexpr const V&amp; openage::datastructure::ConstMap&lt; K, V, count &gt;::get</definition>
+        <argsstring>(const K &amp;key) const</argsstring>
+        <name>get</name>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Return the stored value for the given key. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" line="53" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" bodystart="53" bodyend="60"/>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" compoundref="d7/d66/log_2____init_____8py" startline="122" endline="125">openage::log.err</references>
+        <references refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a0aeb3d062ddd097ad775e2a21bb18fe4" compoundref="d3/dd6/constexpr__map_8h" startline="87" endline="94">openage::datastructure::ConstMap&lt; K, V, count &gt;::find</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <references refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a28579cae00ec2ccbe73454f0cd6bb301" compoundref="d3/dd6/constexpr__map_8h" startline="99">openage::datastructure::ConstMap&lt; K, V, count &gt;::values</references>
+      </memberdef>
+      <memberdef kind="function" id="d1/de9/classopenage_1_1datastructure_1_1_const_map_1acc41fd966dd0bb89c180d847cbc0cce0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr const V &amp;</type>
+        <definition>constexpr const V&amp; openage::datastructure::ConstMap&lt; K, V, count &gt;::operator[]</definition>
+        <argsstring>(const K &amp;key) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Access entries by map[key]. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" line="65" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" bodystart="65" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d1/de9/classopenage_1_1datastructure_1_1_const_map_1aa33d02634b6305ecdca4339a8e61c1c1" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr void</type>
+        <definition>constexpr void openage::datastructure::ConstMap&lt; K, V, count &gt;::verify_no_duplicates</definition>
+        <argsstring>() const</argsstring>
+        <name>verify_no_duplicates</name>
+        <briefdescription>
+<para>Abort when the map uses the same key more than once. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" line="73" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" bodystart="73" bodyend="81"/>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" compoundref="d7/d66/log_2____init_____8py" startline="122" endline="125">openage::log.err</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <references refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a28579cae00ec2ccbe73454f0cd6bb301" compoundref="d3/dd6/constexpr__map_8h" startline="99">openage::datastructure::ConstMap&lt; K, V, count &gt;::values</references>
+        <referencedby refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1ae9b9f33a7c41eac464ee3324de7b5822" compoundref="d3/dd6/constexpr__map_8h" startline="30" endline="34">openage::datastructure::ConstMap&lt; K, V, count &gt;::ConstMap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a0aeb3d062ddd097ad775e2a21bb18fe4" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>constexpr auto</type>
+        <definition>constexpr auto openage::datastructure::ConstMap&lt; K, V, count &gt;::find</definition>
+        <argsstring>(const K &amp;key) const</argsstring>
+        <name>find</name>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Returns the iterator matching key from the array. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para><computeroutput>values.end()</computeroutput> if the key is not found. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" line="87" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" bodystart="87" bodyend="94"/>
+        <references refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a28579cae00ec2ccbe73454f0cd6bb301" compoundref="d3/dd6/constexpr__map_8h" startline="99">openage::datastructure::ConstMap&lt; K, V, count &gt;::values</references>
+        <referencedby refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a32620bc8c2c12a962a5f5ec34e79b129" compoundref="d3/dd6/constexpr__map_8h" startline="46" endline="48">openage::datastructure::ConstMap&lt; K, V, count &gt;::contains</referencedby>
+        <referencedby refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a7a631fca8646e00194fe3750db748dd4" compoundref="d3/dd6/constexpr__map_8h" startline="53" endline="60">openage::datastructure::ConstMap&lt; K, V, count &gt;::get</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Compiletime generic lookup map. </para>    </briefdescription>
+    <detaileddescription>
+<para>Stores the map entries in an array and uses constexpr methods to search and retrieve them at compile-time.</para><para>If you experience compiler errors, make sure you request <emphasis>existing</emphasis> keys. We intentionally trigger compiler failures when a key doesn&apos;t exist.</para><para>Messages include: &quot;error: ‘*0u’ is not a constant expression&quot; -&gt; nonexistant key </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1927">
+        <label>openage::datastructure::ConstMap&lt; K, V, count &gt;</label>
+        <link refid="d1/de9/classopenage_1_1datastructure_1_1_const_map"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" line="27" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/datastructure/constexpr_map.h" bodystart="27" bodyend="100"/>
+    <listofallmembers>
+      <member refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1ae9b9f33a7c41eac464ee3324de7b5822" prot="public" virt="non-virtual"><scope>openage::datastructure::ConstMap</scope><name>ConstMap</name></member>
+      <member refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a32620bc8c2c12a962a5f5ec34e79b129" prot="public" virt="non-virtual"><scope>openage::datastructure::ConstMap</scope><name>contains</name></member>
+      <member refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a0aeb3d062ddd097ad775e2a21bb18fe4" prot="private" virt="non-virtual"><scope>openage::datastructure::ConstMap</scope><name>find</name></member>
+      <member refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a7a631fca8646e00194fe3750db748dd4" prot="public" virt="non-virtual"><scope>openage::datastructure::ConstMap</scope><name>get</name></member>
+      <member refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1acc41fd966dd0bb89c180d847cbc0cce0" prot="public" virt="non-virtual"><scope>openage::datastructure::ConstMap</scope><name>operator[]</name></member>
+      <member refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a042ea1b0eaa46518cc733b12b842c21d" prot="public" virt="non-virtual"><scope>openage::datastructure::ConstMap</scope><name>size</name></member>
+      <member refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1a28579cae00ec2ccbe73454f0cd6bb301" prot="private" virt="non-virtual"><scope>openage::datastructure::ConstMap</scope><name>values</name></member>
+      <member refid="d1/de9/classopenage_1_1datastructure_1_1_const_map_1aa33d02634b6305ecdca4339a8e61c1c1" prot="private" virt="non-virtual"><scope>openage::datastructure::ConstMap</scope><name>verify_no_duplicates</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

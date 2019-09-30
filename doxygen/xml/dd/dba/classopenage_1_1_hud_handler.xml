@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dd/dba/classopenage_1_1_hud_handler" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>openage::HudHandler</compoundname>
+    <derivedcompoundref refid="d7/d6d/classopenage_1_1console_1_1_console" prot="private" virt="non-virtual">openage::console::Console</derivedcompoundref>
+    <derivedcompoundref refid="d8/db5/classopenage_1_1_game_control" prot="public" virt="non-virtual">openage::GameControl</derivedcompoundref>
+    <derivedcompoundref refid="df/dfe/classopenage_1_1gui_1_1_g_u_i" prot="public" virt="non-virtual">openage::gui::GUI</derivedcompoundref>
+    <derivedcompoundref refid="d9/de2/classopenage_1_1_unit_selection" prot="public" virt="non-virtual">openage::UnitSelection</derivedcompoundref>
+    <includes refid="d0/dfb/handlers_8h" local="no">handlers.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/dba/classopenage_1_1_hud_handler_1a5b1435a782148709e7acf4a0dd94189f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual openage::HudHandler::~HudHandler</definition>
+        <argsstring>()=default</argsstring>
+        <name>~HudHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/handlers.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/dba/classopenage_1_1_hud_handler_1a52d98b171b853a47609d924e1d1fca48" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool openage::HudHandler::on_drawhud</definition>
+        <argsstring>()=0</argsstring>
+        <name>on_drawhud</name>
+        <reimplementedby refid="d9/de2/classopenage_1_1_unit_selection_1a0a21b9382975a037b94a1331628b320c">on_drawhud</reimplementedby>
+        <reimplementedby refid="df/dfe/classopenage_1_1gui_1_1_g_u_i_1ac8c4bc112830f466957923bde0e65a6c">on_drawhud</reimplementedby>
+        <reimplementedby refid="d7/d6d/classopenage_1_1console_1_1_console_1a1ce3c30cdc768559e11fc548cbcbddd8">on_drawhud</reimplementedby>
+        <reimplementedby refid="d8/db5/classopenage_1_1_game_control_1a56eadb260ee512fa9034f25f67308e61">on_drawhud</reimplementedby>
+        <briefdescription>
+<para>execute the drawing action. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/handlers.h" line="37" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>superclass for all possible drawing operations in the game. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3901">
+        <label>openage::GameControl</label>
+        <link refid="d8/db5/classopenage_1_1_game_control"/>
+        <childnode refid="3899" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3902">
+        <label>openage::gui::GUI</label>
+        <link refid="df/dfe/classopenage_1_1gui_1_1_g_u_i"/>
+        <childnode refid="3899" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3900">
+        <label>openage::console::Console</label>
+        <link refid="d7/d6d/classopenage_1_1console_1_1_console"/>
+        <childnode refid="3899" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="3899">
+        <label>openage::HudHandler</label>
+        <link refid="dd/dba/classopenage_1_1_hud_handler"/>
+      </node>
+      <node id="3903">
+        <label>openage::UnitSelection</label>
+        <link refid="d9/de2/classopenage_1_1_unit_selection"/>
+        <childnode refid="3899" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3904">
+        <label>openage::HudHandler</label>
+        <link refid="dd/dba/classopenage_1_1_hud_handler"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/handlers.h" line="30" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/handlers.h" bodystart="30" bodyend="38"/>
+    <listofallmembers>
+      <member refid="dd/dba/classopenage_1_1_hud_handler_1a52d98b171b853a47609d924e1d1fca48" prot="public" virt="pure-virtual"><scope>openage::HudHandler</scope><name>on_drawhud</name></member>
+      <member refid="dd/dba/classopenage_1_1_hud_handler_1a5b1435a782148709e7acf4a0dd94189f" prot="public" virt="virtual"><scope>openage::HudHandler</scope><name>~HudHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

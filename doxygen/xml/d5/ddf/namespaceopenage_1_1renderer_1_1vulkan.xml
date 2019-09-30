@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d5/ddf/namespaceopenage_1_1renderer_1_1vulkan" kind="namespace" language="C++">
+    <compoundname>openage::renderer::vulkan</compoundname>
+    <innerclass refid="dd/d1a/structopenage_1_1renderer_1_1vulkan_1_1_surface_support_details" prot="public">openage::renderer::vulkan::SurfaceSupportDetails</innerclass>
+    <innerclass refid="d8/dc1/structopenage_1_1renderer_1_1vulkan_1_1vlk__capabilities" prot="public">openage::renderer::vulkan::vlk_capabilities</innerclass>
+    <innerclass refid="de/d1a/classopenage_1_1renderer_1_1vulkan_1_1_vlk_drawable_display" prot="public">openage::renderer::vulkan::VlkDrawableDisplay</innerclass>
+    <innerclass refid="d0/db0/classopenage_1_1renderer_1_1vulkan_1_1_vlk_framebuffer" prot="public">openage::renderer::vulkan::VlkFramebuffer</innerclass>
+    <innerclass refid="d6/d0a/classopenage_1_1renderer_1_1vulkan_1_1_vlk_graphics_device" prot="public">openage::renderer::vulkan::VlkGraphicsDevice</innerclass>
+    <innerclass refid="d7/d6c/classopenage_1_1renderer_1_1vulkan_1_1_vlk_loader" prot="public">openage::renderer::vulkan::VlkLoader</innerclass>
+    <innerclass refid="da/de9/classopenage_1_1renderer_1_1vulkan_1_1_vlk_renderer" prot="public">openage::renderer::vulkan::VlkRenderer</innerclass>
+    <innerclass refid="d5/d0b/classopenage_1_1renderer_1_1vulkan_1_1_vlk_shader_program" prot="public">openage::renderer::vulkan::VlkShaderProgram</innerclass>
+    <innerclass refid="de/d5c/classopenage_1_1renderer_1_1vulkan_1_1_vlk_window" prot="public">openage::renderer::vulkan::VlkWindow</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d5/ddf/namespaceopenage_1_1renderer_1_1vulkan_1a9a6e2e6f743d06ad5c3102062cb429ce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VkShaderStageFlagBits</type>
+        <definition>static VkShaderStageFlagBits openage::renderer::vulkan::vk_shader_stage</definition>
+        <argsstring>(resources::shader_stage_t stage)</argsstring>
+        <name>vk_shader_stage</name>
+        <param>
+          <type><ref refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a2462ec4f102aa1b93c1676dbbadb0a7b" kindref="member">resources::shader_stage_t</ref></type>
+          <declname>stage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/vulkan/shader_program.h" line="16" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/vulkan/shader_program.h" bodystart="16" bodyend="25"/>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" compoundref="d7/d66/log_2____init_____8py" startline="122" endline="125">openage::log.err</references>
+        <references refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a2462ec4f102aa1b93c1676dbbadb0a7ba02e918fc72837d7c2689be88684dceb1">openage::renderer::resources::fragment</references>
+        <references refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a2462ec4f102aa1b93c1676dbbadb0a7baed7daeb157cd9b31e53896ad3c771a26">openage::renderer::resources::geometry</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <references refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a2462ec4f102aa1b93c1676dbbadb0a7ba7dd430baa39d2873520d0338acb98741">openage::renderer::resources::tesselation_control</references>
+        <references refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a2462ec4f102aa1b93c1676dbbadb0a7bad711cc63370ae664a464b9efd08f6248">openage::renderer::resources::tesselation_evaluation</references>
+        <references refid="d1/d65/namespaceopenage_1_1renderer_1_1resources_1a2462ec4f102aa1b93c1676dbbadb0a7ba2b5bc093b09bd81f51de433bde9d202a">openage::renderer::resources::vertex</references>
+        <referencedby refid="d5/d0b/classopenage_1_1renderer_1_1vulkan_1_1_vlk_shader_program_1ae0f545bd5e4a653736cd26350762497e" compoundref="dd/dd6/vulkan_2shader__program_8h" startline="32" endline="61">openage::renderer::vulkan::VlkShaderProgram::VlkShaderProgram</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d5/ddf/namespaceopenage_1_1renderer_1_1vulkan_1a4ab152b827337e3646e8fb43f4e7364d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VKAPI_ATTR VkBool32 VKAPI_CALL</type>
+        <definition>static VKAPI_ATTR VkBool32 VKAPI_CALL openage::renderer::vulkan::vlk_debug_cb</definition>
+        <argsstring>(VkDebugReportFlagsEXT, VkDebugReportObjectTypeEXT, uint64_t, size_t, int32_t, const char *layerPrefix, const char *msg, void *)</argsstring>
+        <name>vlk_debug_cb</name>
+        <param>
+          <type>VkDebugReportFlagsEXT</type>
+        </param>
+        <param>
+          <type>VkDebugReportObjectTypeEXT</type>
+        </param>
+        <param>
+          <type>uint64_t</type>
+        </param>
+        <param>
+          <type>size_t</type>
+        </param>
+        <param>
+          <type>int32_t</type>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>layerPrefix</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/vulkan/windowvk.cpp" line="22" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/vulkan/windowvk.cpp" bodystart="22" bodyend="35"/>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a5cb08687f485da2549d7eebef26368a6" compoundref="d7/d66/log_2____init_____8py" startline="107" endline="110">openage::log.dbg</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <referencedby refid="de/d5c/classopenage_1_1renderer_1_1vulkan_1_1_vlk_window_1a21953253160e4583181b0bbb21a56601" compoundref="da/d71/windowvk_8cpp" startline="80" endline="171">openage::renderer::vulkan::VlkWindow::VlkWindow</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d5/ddf/namespaceopenage_1_1renderer_1_1vulkan_1ab2538fa764e64cb8a28639cb511058ae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d8/dc1/structopenage_1_1renderer_1_1vulkan_1_1vlk__capabilities" kindref="compound">vlk_capabilities</ref></type>
+        <definition>static vlk_capabilities openage::renderer::vulkan::find_capabilities</definition>
+        <argsstring>()</argsstring>
+        <name>find_capabilities</name>
+        <briefdescription>
+<para>Queries the Vulkan implementation for available extensions and layers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/vulkan/windowvk.cpp" line="39" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/vulkan/windowvk.cpp" bodystart="39" bodyend="78"/>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a5cb08687f485da2549d7eebef26368a6" compoundref="d7/d66/log_2____init_____8py" startline="107" endline="110">openage::log.dbg</references>
+        <references refid="d8/dc1/structopenage_1_1renderer_1_1vulkan_1_1vlk__capabilities_1a9d640873c88ca19b45dc9eddea954a89" compoundref="d0/dad/windowvk_8h" startline="25">openage::renderer::vulkan::vlk_capabilities::extensions</references>
+        <references refid="d8/dc1/structopenage_1_1renderer_1_1vulkan_1_1vlk__capabilities_1afbf76debda568a1cca8deabb182cfb17" compoundref="d0/dad/windowvk_8h" startline="22">openage::renderer::vulkan::vlk_capabilities::layers</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <references refid="d8/d3c/util_8h_1a856371a624dd7d99cc9da19f0d7889f0" compoundref="d8/d3c/util_8h" startline="11" endline="18">vk_do_ritual</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/renderer/vulkan/graphics_device.cpp" line="15" column="1"/>
+  </compounddef>
+</doxygen>

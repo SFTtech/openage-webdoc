@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d3/d82/namespaceopenage_1_1testing" kind="namespace" language="C++">
+    <compoundname>openage::testing</compoundname>
+    <innerclass refid="da/d4d/classopenage_1_1testing_1_1_test_error" prot="public">openage::testing::TestError</innerclass>
+    <innernamespace refid="d3/d06/namespaceopenage_1_1testing_1_1benchmark">openage::testing::benchmark</innernamespace>
+    <innernamespace refid="d6/db3/namespaceopenage_1_1testing_1_1doctest">openage::testing::doctest</innernamespace>
+    <innernamespace refid="d2/d4c/namespaceopenage_1_1testing_1_1list__processor">openage::testing::list_processor</innernamespace>
+    <innernamespace refid="d7/d35/namespaceopenage_1_1testing_1_1main">openage::testing::main</innernamespace>
+    <innernamespace refid="d5/d0e/namespaceopenage_1_1testing_1_1testing">openage::testing::testing</innernamespace>
+    <innernamespace refid="d4/d2e/namespaceopenage_1_1testing_1_1testlist">openage::testing::testlist</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d3/d82/namespaceopenage_1_1testing_1ab47bedd0a44345aab4aadb8378800e45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool openage::testing::fail</definition>
+        <argsstring>(const log::message &amp;msg)</argsstring>
+        <name>fail</name>
+        <param>
+          <type>const <ref refid="dc/d8c/structopenage_1_1log_1_1message" kindref="compound">log::message</ref> &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Raises <ref refid="da/d4d/classopenage_1_1testing_1_1_test_error" kindref="compound">TestError</ref> with the message msg. </para>        </briefdescription>
+        <detaileddescription>
+<para>Mostly designed for usage with the TESTFAIL macro. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/testing/testing.cpp" line="9" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/testing/testing.cpp" bodystart="9" bodyend="11"/>
+        <referencedby refid="da/daa/classopenage_1_1rng_1_1_r_n_g_1ae7d9467b4f3d76c68a9a7f85a78510cd" compoundref="d4/d2c/rng_8cpp" startline="157" endline="163">openage::rng::RNG::from_stream</referencedby>
+        <referencedby refid="da/daa/classopenage_1_1rng_1_1_r_n_g_1a144e524ab2720b65d7369fdfaf6f3136" compoundref="d4/d2c/rng_8cpp" startline="148" endline="154">openage::rng::RNG::to_stream</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d82/namespaceopenage_1_1testing_1a416af96b7ec2fb61d466c63325456e2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d4/dd1/compiler_8h_1aea581b919984cda327632efe3d11f8b3" kindref="member">OAAPI</ref> void</type>
+        <definition>OAAPI void openage::testing::run_method</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>run_method</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Invokes the test or demo with the given name. </para>        </briefdescription>
+        <detaileddescription>
+<para>pxd: void run_method(string name) except + </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/testing/testlist.h" line="21" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/testing/testing.cpp" line="6" column="1"/>
+  </compounddef>
+</doxygen>

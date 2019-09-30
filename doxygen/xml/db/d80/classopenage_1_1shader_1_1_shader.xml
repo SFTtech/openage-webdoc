@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="db/d80/classopenage_1_1shader_1_1_shader" kind="class" language="C++" prot="public">
+    <compoundname>openage::shader::Shader</compoundname>
+    <includes refid="d2/d22/shader_2shader_8h" local="no">shader.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="db/d80/classopenage_1_1shader_1_1_shader_1a63d479d4533ccab5ee9df02cb515a000" prot="public" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint openage::shader::Shader::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/shader/shader.h" line="19" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/shader/shader.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="d9/de4/classopenage_1_1shader_1_1_program_1a1ce9b29209dd9627480208604b2af536" compoundref="d1/d14/program_8cpp" startline="33" endline="46">openage::shader::Program::attach_shader</referencedby>
+        <referencedby refid="d9/de4/classopenage_1_1shader_1_1_program_1aa1776f13c5e6a6de8b21ecabee9962dc" compoundref="d1/d14/program_8cpp" startline="48" endline="65">openage::shader::Program::link</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="db/d80/classopenage_1_1shader_1_1_shader_1a6544f6bc7a470a81829568a61af2227e" prot="public" static="no" mutable="no">
+        <type>GLenum</type>
+        <definition>GLenum openage::shader::Shader::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/shader/shader.h" line="20" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/shader/shader.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="d9/de4/classopenage_1_1shader_1_1_program_1a1ce9b29209dd9627480208604b2af536" compoundref="d1/d14/program_8cpp" startline="33" endline="46">openage::shader::Program::attach_shader</referencedby>
+        <referencedby refid="db/d80/classopenage_1_1shader_1_1_shader_1aef255884c830332151043f545510583d" compoundref="d4/d86/shader_2shader_8cpp" startline="29" endline="61">Shader</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/d80/classopenage_1_1shader_1_1_shader_1aef255884c830332151043f545510583d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::shader::Shader::Shader</definition>
+        <argsstring>(GLenum type, std::initializer_list&lt; const char *&gt; sources)</argsstring>
+        <name>Shader</name>
+        <param>
+          <type>GLenum</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; const char *&gt;</type>
+          <declname>sources</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/shader/shader.h" line="16" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/shader/shader.cpp" bodystart="29" bodyend="61"/>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" compoundref="d7/d66/log_2____init_____8py" startline="122" endline="125">openage::log.err</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+        <references refid="db/d80/classopenage_1_1shader_1_1_shader_1a6544f6bc7a470a81829568a61af2227e" compoundref="d2/d22/shader_2shader_8h" startline="20">type</references>
+        <references refid="dc/da0/namespaceopenage_1_1shader_1aba992c07352be620fb7a7060d0349781" compoundref="d4/d86/shader_2shader_8cpp" startline="16" endline="27">openage::shader::type_to_string</references>
+      </memberdef>
+      <memberdef kind="function" id="db/d80/classopenage_1_1shader_1_1_shader_1a1cf8a9e587452d5df6e384c870ebf966" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::shader::Shader::~Shader</definition>
+        <argsstring>()</argsstring>
+        <name>~Shader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/shader/shader.h" line="17" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/shader/shader.cpp" bodystart="63" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5176">
+        <label>openage::shader::Shader</label>
+        <link refid="db/d80/classopenage_1_1shader_1_1_shader"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/shader/shader.h" line="14" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/shader/shader.h" bodystart="14" bodyend="21"/>
+    <listofallmembers>
+      <member refid="db/d80/classopenage_1_1shader_1_1_shader_1a63d479d4533ccab5ee9df02cb515a000" prot="public" virt="non-virtual"><scope>openage::shader::Shader</scope><name>id</name></member>
+      <member refid="db/d80/classopenage_1_1shader_1_1_shader_1aef255884c830332151043f545510583d" prot="public" virt="non-virtual"><scope>openage::shader::Shader</scope><name>Shader</name></member>
+      <member refid="db/d80/classopenage_1_1shader_1_1_shader_1a6544f6bc7a470a81829568a61af2227e" prot="public" virt="non-virtual"><scope>openage::shader::Shader</scope><name>type</name></member>
+      <member refid="db/d80/classopenage_1_1shader_1_1_shader_1a1cf8a9e587452d5df6e384c870ebf966" prot="public" virt="non-virtual"><scope>openage::shader::Shader</scope><name>~Shader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

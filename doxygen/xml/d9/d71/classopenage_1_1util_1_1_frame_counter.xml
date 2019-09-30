@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d9/d71/classopenage_1_1util_1_1_frame_counter" kind="class" language="C++" prot="public">
+    <compoundname>openage::util::FrameCounter</compoundname>
+    <includes refid="d5/d3e/fps_8h" local="no">fps.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d9/d71/classopenage_1_1util_1_1_frame_counter_1acaef6b525478b3913d90616d077d9c4d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float openage::util::FrameCounter::fps</definition>
+        <argsstring></argsstring>
+        <name>fps</name>
+        <briefdescription>
+<para>auto-updated to always contain the current FPS value </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" line="19" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a9dd54183a6ebd91c10bbc51abcb57f2d" compoundref="db/d01/fps_8cpp" startline="23" endline="50">frame</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d71/classopenage_1_1util_1_1_frame_counter_1a7fddebfca224009dfbf46efd8421d254" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float openage::util::FrameCounter::display_fps</definition>
+        <argsstring></argsstring>
+        <name>display_fps</name>
+        <briefdescription>
+<para>auto-updated every 20 frames to always contain the current FPS value </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" line="22" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="d6/d40/classopenage_1_1_engine_1ae7f43b96e5e097cebfd9c102676cf2c8" compoundref="da/d5c/engine_8cpp" startline="273" endline="294">openage::Engine::draw_debug_overlay</referencedby>
+        <referencedby refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a9dd54183a6ebd91c10bbc51abcb57f2d" compoundref="db/d01/fps_8cpp" startline="23" endline="50">frame</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d71/classopenage_1_1util_1_1_frame_counter_1ace701686a6325ef36f6001a9eb40b419" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t openage::util::FrameCounter::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+<para>contains the number of completed frames </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" line="25" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a9dd54183a6ebd91c10bbc51abcb57f2d" compoundref="db/d01/fps_8cpp" startline="23" endline="50">frame</referencedby>
+        <referencedby refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a332195a939c0cec7b42048c9304cb3e9" compoundref="db/d01/fps_8cpp" startline="12" endline="20">FrameCounter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d71/classopenage_1_1util_1_1_frame_counter_1a1105a8ccfb449e4cd1cd5554ad405af5" prot="public" static="no" mutable="no">
+        <type><ref refid="da/d23/namespaceopenage_1aab633747a9b25e86119eec83106fb2ae" kindref="member">time_nsec_t</ref></type>
+        <definition>time_nsec_t openage::util::FrameCounter::nsec_lastframe</definition>
+        <argsstring></argsstring>
+        <name>nsec_lastframe</name>
+        <briefdescription>
+<para>nanoseconds used for the last frame </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" line="28" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a9dd54183a6ebd91c10bbc51abcb57f2d" compoundref="db/d01/fps_8cpp" startline="23" endline="50">frame</referencedby>
+        <referencedby refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a332195a939c0cec7b42048c9304cb3e9" compoundref="db/d01/fps_8cpp" startline="12" endline="20">FrameCounter</referencedby>
+        <referencedby refid="d6/d40/classopenage_1_1_engine_1a9315ef7e9b79a311f67421640f1b43c4" compoundref="da/d5c/engine_8cpp" startline="531" endline="533">openage::Engine::lastframe_duration_nsec</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d9/d71/classopenage_1_1util_1_1_frame_counter_1a15f9857fcbaaa1869071a9fba9731644" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float openage::util::FrameCounter::frame_count_weighted</definition>
+        <argsstring></argsstring>
+        <name>frame_count_weighted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" line="31" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a9dd54183a6ebd91c10bbc51abcb57f2d" compoundref="db/d01/fps_8cpp" startline="23" endline="50">frame</referencedby>
+        <referencedby refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a332195a939c0cec7b42048c9304cb3e9" compoundref="db/d01/fps_8cpp" startline="12" endline="20">FrameCounter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d71/classopenage_1_1util_1_1_frame_counter_1a8ede56edd7c320f7c60998dbbcc662f5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float openage::util::FrameCounter::frame_length_sum_weighted</definition>
+        <argsstring></argsstring>
+        <name>frame_length_sum_weighted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" line="32" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a9dd54183a6ebd91c10bbc51abcb57f2d" compoundref="db/d01/fps_8cpp" startline="23" endline="50">frame</referencedby>
+        <referencedby refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a332195a939c0cec7b42048c9304cb3e9" compoundref="db/d01/fps_8cpp" startline="12" endline="20">FrameCounter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d71/classopenage_1_1util_1_1_frame_counter_1a1d5d5f0a62b39530f8d975e039a5dfbe" prot="private" static="no" mutable="no">
+        <type><ref refid="d3/d81/classopenage_1_1util_1_1_timer" kindref="compound">Timer</ref></type>
+        <definition>Timer openage::util::FrameCounter::frame_timer</definition>
+        <argsstring></argsstring>
+        <name>frame_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" line="34" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a9dd54183a6ebd91c10bbc51abcb57f2d" compoundref="db/d01/fps_8cpp" startline="23" endline="50">frame</referencedby>
+        <referencedby refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a332195a939c0cec7b42048c9304cb3e9" compoundref="db/d01/fps_8cpp" startline="12" endline="20">FrameCounter</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d71/classopenage_1_1util_1_1_frame_counter_1a332195a939c0cec7b42048c9304cb3e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::util::FrameCounter::FrameCounter</definition>
+        <argsstring>()</argsstring>
+        <name>FrameCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" line="12" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.cpp" bodystart="12" bodyend="20"/>
+        <references refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1ace701686a6325ef36f6001a9eb40b419" compoundref="d5/d3e/fps_8h" startline="25">count</references>
+        <references refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a15f9857fcbaaa1869071a9fba9731644" compoundref="d5/d3e/fps_8h" startline="31">frame_count_weighted</references>
+        <references refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a8ede56edd7c320f7c60998dbbcc662f5" compoundref="d5/d3e/fps_8h" startline="32">frame_length_sum_weighted</references>
+        <references refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a1d5d5f0a62b39530f8d975e039a5dfbe" compoundref="d5/d3e/fps_8h" startline="34">frame_timer</references>
+        <references refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a1105a8ccfb449e4cd1cd5554ad405af5" compoundref="d5/d3e/fps_8h" startline="28">nsec_lastframe</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d71/classopenage_1_1util_1_1_frame_counter_1a1fe36cffea5d8120ac1606d1a2cf380b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::util::FrameCounter::~FrameCounter</definition>
+        <argsstring>()=default</argsstring>
+        <name>~FrameCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d71/classopenage_1_1util_1_1_frame_counter_1a9dd54183a6ebd91c10bbc51abcb57f2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::util::FrameCounter::frame</definition>
+        <argsstring>()</argsstring>
+        <name>frame</name>
+        <briefdescription>
+<para>to be called each time a frame has been completed </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" line="16" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.cpp" bodystart="23" bodyend="50"/>
+        <references refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1ace701686a6325ef36f6001a9eb40b419" compoundref="d5/d3e/fps_8h" startline="25">count</references>
+        <references refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a7fddebfca224009dfbf46efd8421d254" compoundref="d5/d3e/fps_8h" startline="22">display_fps</references>
+        <references refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1acaef6b525478b3913d90616d077d9c4d" compoundref="d5/d3e/fps_8h" startline="19">fps</references>
+        <references refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a15f9857fcbaaa1869071a9fba9731644" compoundref="d5/d3e/fps_8h" startline="31">frame_count_weighted</references>
+        <references refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a8ede56edd7c320f7c60998dbbcc662f5" compoundref="d5/d3e/fps_8h" startline="32">frame_length_sum_weighted</references>
+        <references refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a1d5d5f0a62b39530f8d975e039a5dfbe" compoundref="d5/d3e/fps_8h" startline="34">frame_timer</references>
+        <references refid="d3/d81/classopenage_1_1util_1_1_timer_1a0f4aca6841c138900f29816c0d7decf3" compoundref="dc/de5/timer_8cpp" startline="45" endline="59">openage::util::Timer::getandresetval</references>
+        <references refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a1105a8ccfb449e4cd1cd5554ad405af5" compoundref="d5/d3e/fps_8h" startline="28">nsec_lastframe</references>
+        <referencedby refid="d6/d40/classopenage_1_1_engine_1adc80abfebed9b4f30df3de15984431e8" compoundref="da/d5c/engine_8cpp" startline="313" endline="459">openage::Engine::loop</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5942">
+        <label>openage::util::FrameCounter</label>
+        <link refid="d9/d71/classopenage_1_1util_1_1_frame_counter"/>
+        <childnode refid="5943" relation="usage">
+          <edgelabel>-frame_timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="5943">
+        <label>openage::util::Timer</label>
+        <link refid="d3/d81/classopenage_1_1util_1_1_timer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" line="10" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/fps.h" bodystart="10" bodyend="35"/>
+    <listofallmembers>
+      <member refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1ace701686a6325ef36f6001a9eb40b419" prot="public" virt="non-virtual"><scope>openage::util::FrameCounter</scope><name>count</name></member>
+      <member refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a7fddebfca224009dfbf46efd8421d254" prot="public" virt="non-virtual"><scope>openage::util::FrameCounter</scope><name>display_fps</name></member>
+      <member refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1acaef6b525478b3913d90616d077d9c4d" prot="public" virt="non-virtual"><scope>openage::util::FrameCounter</scope><name>fps</name></member>
+      <member refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a9dd54183a6ebd91c10bbc51abcb57f2d" prot="public" virt="non-virtual"><scope>openage::util::FrameCounter</scope><name>frame</name></member>
+      <member refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a15f9857fcbaaa1869071a9fba9731644" prot="private" virt="non-virtual"><scope>openage::util::FrameCounter</scope><name>frame_count_weighted</name></member>
+      <member refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a8ede56edd7c320f7c60998dbbcc662f5" prot="private" virt="non-virtual"><scope>openage::util::FrameCounter</scope><name>frame_length_sum_weighted</name></member>
+      <member refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a1d5d5f0a62b39530f8d975e039a5dfbe" prot="private" virt="non-virtual"><scope>openage::util::FrameCounter</scope><name>frame_timer</name></member>
+      <member refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a332195a939c0cec7b42048c9304cb3e9" prot="public" virt="non-virtual"><scope>openage::util::FrameCounter</scope><name>FrameCounter</name></member>
+      <member refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a1105a8ccfb449e4cd1cd5554ad405af5" prot="public" virt="non-virtual"><scope>openage::util::FrameCounter</scope><name>nsec_lastframe</name></member>
+      <member refid="d9/d71/classopenage_1_1util_1_1_frame_counter_1a1fe36cffea5d8120ac1606d1a2cf380b" prot="public" virt="non-virtual"><scope>openage::util::FrameCounter</scope><name>~FrameCounter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

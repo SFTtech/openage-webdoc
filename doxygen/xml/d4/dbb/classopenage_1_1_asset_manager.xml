@@ -1,0 +1,654 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d4/dbb/classopenage_1_1_asset_manager" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>openage::AssetManager</compoundname>
+    <includes refid="d0/d45/assetmanager_8h" local="no">assetmanager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d4/dbb/classopenage_1_1_asset_manager_1a327aa3854302b522ccc85994c6ffb68c" prot="private" static="no" mutable="no">
+        <type><ref refid="d6/d40/classopenage_1_1_engine" kindref="compound">Engine</ref> *</type>
+        <definition>Engine* openage::AssetManager::engine</definition>
+        <argsstring></argsstring>
+        <name>engine</name>
+        <briefdescription>
+<para>The engine this asset manager is attached to. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" line="88" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="d4/dbb/classopenage_1_1_asset_manager_1a50069b4b3cd4b5fcf8fb5f4b480c721d" compoundref="d4/d03/assetmanager_8cpp" startline="53" endline="55">get_engine</referencedby>
+        <referencedby refid="d4/dbb/classopenage_1_1_asset_manager_1a7f3cae1f7234930f4a06e2f4ed69b4c2" compoundref="d4/d03/assetmanager_8cpp" startline="48" endline="50">set_engine</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dbb/classopenage_1_1_asset_manager_1afad18003a7e7c4ce22fe249269d2fe3b" prot="private" static="no" mutable="no">
+        <type><ref refid="dd/dc1/classopenage_1_1util_1_1_path" kindref="compound">util::Path</ref></type>
+        <definition>util::Path openage::AssetManager::asset_path</definition>
+        <argsstring></argsstring>
+        <name>asset_path</name>
+        <briefdescription>
+<para>The root directory for the available assets. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" line="93" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" bodystart="93" bodyend="-1"/>
+        <referencedby refid="d4/dbb/classopenage_1_1_asset_manager_1ab32bf393ec81c214585922c1a4cc9698" compoundref="d4/d03/assetmanager_8cpp" startline="35" endline="37">get_asset_dir</referencedby>
+        <referencedby refid="d4/dbb/classopenage_1_1_asset_manager_1a20f0383ea39d88917bb5a02fbb239006" compoundref="d4/d03/assetmanager_8cpp" startline="172" endline="183">get_missing_tex</referencedby>
+        <referencedby refid="d4/dbb/classopenage_1_1_asset_manager_1aae3415abc6b2ba91c70ba2f0c9343436" compoundref="d4/d03/assetmanager_8cpp" startline="58" endline="108">load_texture</referencedby>
+        <referencedby refid="d4/dbb/classopenage_1_1_asset_manager_1afe3aaab160ddd411afb365186d7deea4" compoundref="d4/d03/assetmanager_8cpp" startline="40" endline="45">set_asset_dir</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dbb/classopenage_1_1_asset_manager_1a4494591bc1dc7b6544c49b6ce593aa9d" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="d4/d5b/classopenage_1_1_texture" kindref="compound">Texture</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;Texture&gt; openage::AssetManager::missing_tex</definition>
+        <argsstring></argsstring>
+        <name>missing_tex</name>
+        <briefdescription>
+<para>The replacement texture for missing textures. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" line="98" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" bodystart="98" bodyend="-1"/>
+        <referencedby refid="d4/dbb/classopenage_1_1_asset_manager_1a20f0383ea39d88917bb5a02fbb239006" compoundref="d4/d03/assetmanager_8cpp" startline="172" endline="183">get_missing_tex</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dbb/classopenage_1_1_asset_manager_1a65a322db0279e97566b103169494b2a1" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, std::shared_ptr&lt; <ref refid="d4/d5b/classopenage_1_1_texture" kindref="compound">Texture</ref> &gt; &gt;</type>
+        <definition>std::unordered_map&lt;std::string, std::shared_ptr&lt;Texture&gt; &gt; openage::AssetManager::textures</definition>
+        <argsstring></argsstring>
+        <name>textures</name>
+        <briefdescription>
+<para>Map from texture filename to texture instance ptr. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" line="103" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="d4/dbb/classopenage_1_1_asset_manager_1afee91926bb4d9b763527a7aa28ec95d4" compoundref="d4/d03/assetmanager_8cpp" startline="185" endline="197">clear</referencedby>
+        <referencedby refid="d4/dbb/classopenage_1_1_asset_manager_1a14ab6ac2616460d50bd789bf8bdd52eb" compoundref="d4/d03/assetmanager_8cpp" startline="111" endline="130">get_texture</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d4/dbb/classopenage_1_1_asset_manager_1aedd46c306f9487e3db92e0e1fee049f9" prot="public" static="no" mutable="no">
+        <type><ref refid="da/dff/classqtsdl_1_1_gui_item_link" kindref="compound">qtsdl::GuiItemLink</ref> *</type>
+        <definition>qtsdl::GuiItemLink* openage::AssetManager::gui_link</definition>
+        <argsstring></argsstring>
+        <name>gui_link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" line="119" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" bodystart="119" bodyend="-1"/>
+        <referencedby refid="d4/dbb/classopenage_1_1_asset_manager_1ab6e5f15eeb16c36a4bb1f12613040940" compoundref="d4/d03/assetmanager_8cpp" startline="20" endline="32">AssetManager</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d4/dbb/classopenage_1_1_asset_manager_1ab6e5f15eeb16c36a4bb1f12613040940" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::AssetManager::AssetManager</definition>
+        <argsstring>(qtsdl::GuiItemLink *gui_link)</argsstring>
+        <name>AssetManager</name>
+        <param>
+          <type><ref refid="da/dff/classqtsdl_1_1_gui_item_link" kindref="compound">qtsdl::GuiItemLink</ref> *</type>
+          <declname>gui_link</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" line="29" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.cpp" bodystart="20" bodyend="32"/>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1ab6b4b10be67af93ab6c4d5a36139736e" compoundref="d7/d66/log_2____init_____8py" startline="122" endline="125">openage::log.err</references>
+        <references refid="d4/dbb/classopenage_1_1_asset_manager_1aedd46c306f9487e3db92e0e1fee049f9" compoundref="d0/d45/assetmanager_8h" startline="119">gui_link</references>
+        <references refid="d2/d0d/message_8h_1a8adfad4f54eb306fbb8aaa1b159608a5" compoundref="d2/d0d/message_8h" startline="171">MSG</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/dbb/classopenage_1_1_asset_manager_1ab32bf393ec81c214585922c1a4cc9698" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="dd/dc1/classopenage_1_1util_1_1_path" kindref="compound">util::Path</ref> &amp;</type>
+        <definition>const util::Path &amp; openage::AssetManager::get_asset_dir</definition>
+        <argsstring>()</argsstring>
+        <name>get_asset_dir</name>
+        <briefdescription>
+<para>Return the path where assets are found in. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" line="34" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.cpp" bodystart="35" bodyend="37"/>
+        <references refid="d4/dbb/classopenage_1_1_asset_manager_1afad18003a7e7c4ce22fe249269d2fe3b" compoundref="d0/d45/assetmanager_8h" startline="93">asset_path</references>
+        <referencedby refid="de/d6a/classopenage_1_1_game_spec_1a4de64c8c4a5463dc086f082659147b02" compoundref="dd/d4a/game__spec_8cpp" startline="34" endline="77">openage::GameSpec::initialize</referencedby>
+        <referencedby refid="de/d6a/classopenage_1_1_game_spec_1a6f6bbcfb3a4dd8586bbed00f62054bf1" compoundref="dd/d4a/game__spec_8cpp" startline="329" endline="401">openage::GameSpec::load_terrain</referencedby>
+        <referencedby refid="de/d6a/classopenage_1_1_game_spec_1a979c8104ad4832b1912e703f19558bc9" compoundref="dd/d4a/game__spec_8cpp" startline="192" endline="270">openage::GameSpec::on_gamedata_loaded</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dbb/classopenage_1_1_asset_manager_1afe3aaab160ddd411afb365186d7deea4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::AssetManager::set_asset_dir</definition>
+        <argsstring>(const util::Path &amp;asset_dir)</argsstring>
+        <name>set_asset_dir</name>
+        <param>
+          <type>const <ref refid="dd/dc1/classopenage_1_1util_1_1_path" kindref="compound">util::Path</ref> &amp;</type>
+          <declname>asset_dir</declname>
+        </param>
+        <briefdescription>
+<para>Set the asset search path. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" line="39" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.cpp" bodystart="40" bodyend="45"/>
+        <references refid="d4/dbb/classopenage_1_1_asset_manager_1afad18003a7e7c4ce22fe249269d2fe3b" compoundref="d0/d45/assetmanager_8h" startline="93">asset_path</references>
+        <references refid="d4/dbb/classopenage_1_1_asset_manager_1afee91926bb4d9b763527a7aa28ec95d4" compoundref="d4/d03/assetmanager_8cpp" startline="185" endline="197">clear</references>
+        <referencedby refid="db/dcc/classopenage_1_1gui_1_1_asset_manager_link_1a78cdab0ef894c100ba296a3fc56b9a96" compoundref="dc/d55/assetmanager__link_8cpp" startline="35" endline="40">openage::gui::AssetManagerLink::set_asset_dir</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dbb/classopenage_1_1_asset_manager_1a7f3cae1f7234930f4a06e2f4ed69b4c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::AssetManager::set_engine</definition>
+        <argsstring>(Engine *engine)</argsstring>
+        <name>set_engine</name>
+        <param>
+          <type><ref refid="d6/d40/classopenage_1_1_engine" kindref="compound">Engine</ref> *</type>
+          <declname>engine</declname>
+        </param>
+        <briefdescription>
+<para>Set the game engine of this asset manager. </para>        </briefdescription>
+        <detaileddescription>
+<para>Called from QML. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" line="45" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.cpp" bodystart="48" bodyend="50"/>
+        <references refid="d4/dbb/classopenage_1_1_asset_manager_1a327aa3854302b522ccc85994c6ffb68c" compoundref="d0/d45/assetmanager_8h" startline="88">engine</references>
+        <referencedby refid="db/dcc/classopenage_1_1gui_1_1_asset_manager_link_1ae86376a20e9bad6811574df8f9e70a40" compoundref="dc/d55/assetmanager__link_8cpp" startline="48" endline="53">openage::gui::AssetManagerLink::set_engine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dbb/classopenage_1_1_asset_manager_1a50069b4b3cd4b5fcf8fb5f4b480c721d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d6/d40/classopenage_1_1_engine" kindref="compound">Engine</ref> *</type>
+        <definition>Engine * openage::AssetManager::get_engine</definition>
+        <argsstring>() const</argsstring>
+        <name>get_engine</name>
+        <briefdescription>
+<para>Return the engine responsible for this asset manager. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" line="50" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.cpp" bodystart="53" bodyend="55"/>
+        <references refid="d4/dbb/classopenage_1_1_asset_manager_1a327aa3854302b522ccc85994c6ffb68c" compoundref="d0/d45/assetmanager_8h" startline="88">engine</references>
+        <referencedby refid="de/d6a/classopenage_1_1_game_spec_1a979c8104ad4832b1912e703f19558bc9" compoundref="dd/d4a/game__spec_8cpp" startline="192" endline="270">openage::GameSpec::on_gamedata_loaded</referencedby>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1afcf8867f4e0077e6a8a2a6fe6c0c98ff" compoundref="dd/d4a/game__spec_8cpp" startline="510" endline="546">openage::GameSpecHandle::start_load_job</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dbb/classopenage_1_1_asset_manager_1a14ab6ac2616460d50bd789bf8bdd52eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d4/d5b/classopenage_1_1_texture" kindref="compound">Texture</ref> *</type>
+        <definition>Texture * openage::AssetManager::get_texture</definition>
+        <argsstring>(const std::string &amp;name, bool use_metafile=true, bool null_if_missing=false)</argsstring>
+        <name>get_texture</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>use_metafile</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>null_if_missing</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Query the <ref refid="d4/d5b/classopenage_1_1_texture" kindref="compound">Texture</ref> for a given filename. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the asset file name relative to the asset root. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>use_metafile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>load subtexture information from meta file </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>null_if_missing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>instead of providing the &quot;missing texture&quot;, return nullptr. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the queried texture handle. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" line="61" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.cpp" bodystart="111" bodyend="130"/>
+        <references refid="d4/dbb/classopenage_1_1_asset_manager_1aae3415abc6b2ba91c70ba2f0c9343436" compoundref="d4/d03/assetmanager_8cpp" startline="58" endline="108">load_texture</references>
+        <references refid="d4/dbb/classopenage_1_1_asset_manager_1a65a322db0279e97566b103169494b2a1" compoundref="d0/d45/assetmanager_8h" startline="103">textures</references>
+        <referencedby refid="de/d6a/classopenage_1_1_game_spec_1a0d9bb7cf5c16889a6eab13c714b39ae1" compoundref="dd/d4a/game__spec_8cpp" startline="110" endline="113">openage::GameSpec::get_texture</referencedby>
+        <referencedby refid="de/d6a/classopenage_1_1_game_spec_1a6f6bbcfb3a4dd8586bbed00f62054bf1" compoundref="dd/d4a/game__spec_8cpp" startline="329" endline="401">openage::GameSpec::load_terrain</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dbb/classopenage_1_1_asset_manager_1add18a1e0933affe40c982f62c88f4c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::AssetManager::check_updates</definition>
+        <argsstring>()</argsstring>
+        <name>check_updates</name>
+        <briefdescription>
+<para>Ask the kernel whether there were updates to watched files. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" line="67" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.cpp" bodystart="133" bodyend="170"/>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d2/d0d/message_8h_1a271d8f7f52be750e5c744a394ec71344" compoundref="d2/d0d/message_8h" startline="178">WARN</references>
+        <referencedby refid="d7/de7/classopenage_1_1_game_spec_handle_1a019a81d88722206e82c7b5c87ddfe04f" compoundref="dd/d4a/game__spec_8cpp" startline="481" endline="488">openage::GameSpecHandle::invalidate</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="d4/dbb/classopenage_1_1_asset_manager_1aae3415abc6b2ba91c70ba2f0c9343436" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="d4/d5b/classopenage_1_1_texture" kindref="compound">Texture</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; Texture &gt; openage::AssetManager::load_texture</definition>
+        <argsstring>(const std::string &amp;name, bool use_metafile=true, bool null_if_missing=false)</argsstring>
+        <name>load_texture</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>use_metafile</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>null_if_missing</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Create an internal texture handle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" line="73" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.cpp" bodystart="58" bodyend="108"/>
+        <references refid="d4/dbb/classopenage_1_1_asset_manager_1afad18003a7e7c4ce22fe249269d2fe3b" compoundref="d0/d45/assetmanager_8h" startline="93">asset_path</references>
+        <references refid="d4/dbb/classopenage_1_1_asset_manager_1a20f0383ea39d88917bb5a02fbb239006" compoundref="d4/d03/assetmanager_8cpp" startline="172" endline="183">get_missing_tex</references>
+        <references refid="dd/dc1/classopenage_1_1util_1_1_path_1aacfbbb9dd2e0ec286b5581690f9a83aa" compoundref="db/d2b/util_2path_8cpp" startline="80" endline="82">openage::util::Path::is_file</references>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d2/d0d/message_8h_1a271d8f7f52be750e5c744a394ec71344" compoundref="d2/d0d/message_8h" startline="178">WARN</references>
+        <referencedby refid="d4/dbb/classopenage_1_1_asset_manager_1a14ab6ac2616460d50bd789bf8bdd52eb" compoundref="d4/d03/assetmanager_8cpp" startline="111" endline="130">get_texture</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dbb/classopenage_1_1_asset_manager_1a20f0383ea39d88917bb5a02fbb239006" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="d4/d5b/classopenage_1_1_texture" kindref="compound">Texture</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; Texture &gt; openage::AssetManager::get_missing_tex</definition>
+        <argsstring>()</argsstring>
+        <name>get_missing_tex</name>
+        <briefdescription>
+<para>Retrieves the texture for missing textures. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" line="80" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.cpp" bodystart="172" bodyend="183"/>
+        <references refid="d4/dbb/classopenage_1_1_asset_manager_1afad18003a7e7c4ce22fe249269d2fe3b" compoundref="d0/d45/assetmanager_8h" startline="93">asset_path</references>
+        <references refid="d4/dbb/classopenage_1_1_asset_manager_1a4494591bc1dc7b6544c49b6ce593aa9d" compoundref="d0/d45/assetmanager_8h" startline="98">missing_tex</references>
+        <references refid="d4/dd1/compiler_8h_1ac6c45889010c1bd68631771b64f18101" compoundref="d4/dd1/compiler_8h" startline="53">unlikely</references>
+        <referencedby refid="d4/dbb/classopenage_1_1_asset_manager_1aae3415abc6b2ba91c70ba2f0c9343436" compoundref="d4/d03/assetmanager_8cpp" startline="58" endline="108">load_texture</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d4/dbb/classopenage_1_1_asset_manager_1afee91926bb4d9b763527a7aa28ec95d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void openage::AssetManager::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" line="83" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.cpp" bodystart="185" bodyend="197"/>
+        <references refid="dd/d1a/namespaceopenage_1_1log_1a0eff614e7d6e818746700ed9d29e583f" compoundref="d9/db8/log_8cpp" startline="13" endline="15">openage::log::log</references>
+        <references refid="d5/d0e/namespaceopenage_1_1testing_1_1testing_1ac25bf81db406af62d08113ef7ae9fd6e" compoundref="de/dd3/testing_8py" startline="42" endline="45">openage.testing.testing.result</references>
+        <references refid="d4/dbb/classopenage_1_1_asset_manager_1a65a322db0279e97566b103169494b2a1" compoundref="d0/d45/assetmanager_8h" startline="103">textures</references>
+        <references refid="d2/d0d/message_8h_1a271d8f7f52be750e5c744a394ec71344" compoundref="d2/d0d/message_8h" startline="178">WARN</references>
+        <referencedby refid="d4/dbb/classopenage_1_1_asset_manager_1afe3aaab160ddd411afb365186d7deea4" compoundref="d4/d03/assetmanager_8cpp" startline="40" endline="45">set_asset_dir</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Container class for all available assets. </para>    </briefdescription>
+    <detaileddescription>
+<para>Responsible for loading, providing and updating requested files. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="188">
+        <label>CoordNeSeUpAbsolute&lt; phys_t, phys3, phys3_delta &gt;</label>
+      </node>
+      <node id="153">
+        <label>openage::util::Path</label>
+        <link refid="dd/dc1/classopenage_1_1util_1_1_path"/>
+      </node>
+      <node id="164">
+        <label>openage::EngineSignals</label>
+        <link refid="de/dbb/classopenage_1_1_engine_signals"/>
+        <childnode refid="165" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>openage::coord::camgame_delta</label>
+        <link refid="d5/d40/structopenage_1_1coord_1_1camgame__delta"/>
+        <childnode refid="190" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>openage::util::VariableBase</label>
+        <link refid="da/d0a/classopenage_1_1util_1_1_variable_base"/>
+      </node>
+      <node id="167">
+        <label>openage::ScreenshotManager</label>
+        <link refid="d5/dfd/classopenage_1_1_screenshot_manager"/>
+        <childnode refid="168" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+        <childnode refid="169" relation="usage">
+          <edgelabel>+window_size</edgelabel>
+        </childnode>
+      </node>
+      <node id="161">
+        <label>T</label>
+      </node>
+      <node id="192">
+        <label>qtsdl::GuiItemLink</label>
+        <link refid="da/dff/classqtsdl_1_1_gui_item_link"/>
+      </node>
+      <node id="170">
+        <label>CoordXYRelative&lt; pixel_t, viewport, viewport_delta &gt;</label>
+      </node>
+      <node id="158">
+        <label>openage::util::Variable&lt; bool &gt;</label>
+        <link refid="df/d2d/classopenage_1_1util_1_1_variable"/>
+        <childnode refid="159" relation="public-inheritance">
+        </childnode>
+        <childnode refid="160" relation="template-instance">
+          <edgelabel>&lt; bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="165">
+        <label>QObject</label>
+      </node>
+      <node id="166">
+        <label>openage::cvar::CVarManager</label>
+        <link refid="db/db2/classopenage_1_1cvar_1_1_c_var_manager"/>
+        <childnode refid="153" relation="usage">
+          <edgelabel>-path</edgelabel>
+        </childnode>
+      </node>
+      <node id="187">
+        <label>openage::coord::phys3</label>
+        <link refid="d2/da4/structopenage_1_1coord_1_1phys3"/>
+        <childnode refid="188" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>openage::util::ExternalProfiler</label>
+        <link refid="dd/d6f/classopenage_1_1util_1_1_external_profiler"/>
+      </node>
+      <node id="156">
+        <label>openage::options::OptionNode</label>
+        <link refid="d9/d52/classopenage_1_1options_1_1_option_node"/>
+        <childnode refid="156" relation="usage">
+          <edgelabel>-parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="185">
+        <label>openage::coord::viewport</label>
+        <link refid="d2/dcd/structopenage_1_1coord_1_1viewport"/>
+        <childnode refid="186" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>openage::input::ActionManager</label>
+        <link refid="d4/de2/classopenage_1_1input_1_1_action_manager"/>
+        <childnode refid="166" relation="usage">
+          <edgelabel>-cvar_manager</edgelabel>
+        </childnode>
+        <childnode refid="174" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="183">
+        <label>qtsdl::GuiSingletonItemsInfo</label>
+        <link refid="d2/dbf/classqtsdl_1_1_gui_singleton_items_info"/>
+      </node>
+      <node id="169">
+        <label>openage::coord::viewport_delta</label>
+        <link refid="d5/d5e/structopenage_1_1coord_1_1viewport__delta"/>
+        <childnode refid="170" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>CoordXYRelative&lt; pixel_t, input, input_delta &gt;</label>
+      </node>
+      <node id="162">
+        <label>openage::options::Var&lt; T &gt;</label>
+        <link refid="d6/d6a/classopenage_1_1options_1_1_var"/>
+        <childnode refid="160" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="176">
+        <label>openage::coord::input</label>
+        <link refid="d8/d34/structopenage_1_1coord_1_1input"/>
+        <childnode refid="177" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>CoordXYRelative&lt; pixel_t, camgame, camgame_delta &gt;</label>
+      </node>
+      <node id="168">
+        <label>openage::job::JobManager</label>
+        <link refid="dc/d9a/classopenage_1_1job_1_1_job_manager"/>
+      </node>
+      <node id="177">
+        <label>CoordXYAbsolute&lt; pixel_t, input, input_delta &gt;</label>
+      </node>
+      <node id="171">
+        <label>openage::util::FrameCounter</label>
+        <link refid="d9/d71/classopenage_1_1util_1_1_frame_counter"/>
+        <childnode refid="172" relation="usage">
+          <edgelabel>-frame_timer</edgelabel>
+        </childnode>
+      </node>
+      <node id="178">
+        <label>openage::input::InputContext</label>
+        <link refid="d7/d57/classopenage_1_1input_1_1_input_context"/>
+        <childnode refid="174" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="182">
+        <label>openage::gui::EngineQMLInfo</label>
+        <link refid="d4/d73/classopenage_1_1gui_1_1_engine_q_m_l_info"/>
+        <childnode refid="183" relation="public-inheritance">
+        </childnode>
+        <childnode refid="153" relation="usage">
+          <edgelabel>+asset_dir</edgelabel>
+        </childnode>
+        <childnode refid="154" relation="usage">
+          <edgelabel>+engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="191">
+        <label>openage::audio::AudioManager</label>
+        <link refid="d0/d62/classopenage_1_1audio_1_1_audio_manager"/>
+        <childnode refid="168" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="163">
+        <label>openage::util::Profiler</label>
+        <link refid="db/de7/classopenage_1_1util_1_1_profiler"/>
+        <childnode refid="154" relation="usage">
+          <edgelabel>-engine</edgelabel>
+        </childnode>
+      </node>
+      <node id="154">
+        <label>openage::Engine</label>
+        <link refid="d6/d40/classopenage_1_1_engine"/>
+        <childnode refid="155" relation="public-inheritance">
+        </childnode>
+        <childnode refid="156" relation="public-inheritance">
+        </childnode>
+        <childnode refid="157" relation="usage">
+          <edgelabel>+drawing_huds</edgelabel>
+          <edgelabel>+drawing_debug_overlay</edgelabel>
+        </childnode>
+        <childnode refid="163" relation="usage">
+          <edgelabel>-profiler</edgelabel>
+        </childnode>
+        <childnode refid="153" relation="usage">
+          <edgelabel>-root_dir</edgelabel>
+        </childnode>
+        <childnode refid="164" relation="usage">
+          <edgelabel>+gui_signals</edgelabel>
+        </childnode>
+        <childnode refid="166" relation="usage">
+          <edgelabel>-cvar_manager</edgelabel>
+        </childnode>
+        <childnode refid="167" relation="usage">
+          <edgelabel>-screenshot_manager</edgelabel>
+        </childnode>
+        <childnode refid="171" relation="usage">
+          <edgelabel>-fps_counter</edgelabel>
+        </childnode>
+        <childnode refid="173" relation="usage">
+          <edgelabel>+external_profiler</edgelabel>
+        </childnode>
+        <childnode refid="174" relation="usage">
+          <edgelabel>-input_manager</edgelabel>
+        </childnode>
+        <childnode refid="182" relation="usage">
+          <edgelabel>-qml_info</edgelabel>
+        </childnode>
+        <childnode refid="184" relation="usage">
+          <edgelabel>+coord</edgelabel>
+        </childnode>
+        <childnode refid="168" relation="usage">
+          <edgelabel>-job_manager</edgelabel>
+        </childnode>
+        <childnode refid="181" relation="usage">
+          <edgelabel>-action_manager</edgelabel>
+        </childnode>
+        <childnode refid="191" relation="usage">
+          <edgelabel>-audio_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="186">
+        <label>CoordXYAbsolute&lt; pixel_t, viewport, viewport_delta &gt;</label>
+      </node>
+      <node id="155">
+        <label>openage::ResizeHandler</label>
+        <link refid="db/d8a/classopenage_1_1_resize_handler"/>
+      </node>
+      <node id="157">
+        <label>openage::options::Var&lt; bool &gt;</label>
+        <link refid="d6/d6a/classopenage_1_1options_1_1_var"/>
+        <childnode refid="158" relation="public-inheritance">
+        </childnode>
+        <childnode refid="162" relation="template-instance">
+          <edgelabel>&lt; bool &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="179">
+        <label>openage::coord::input_delta</label>
+        <link refid="d8/db7/structopenage_1_1coord_1_1input__delta"/>
+        <childnode refid="180" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>openage::util::Timer</label>
+        <link refid="d3/d81/classopenage_1_1util_1_1_timer"/>
+      </node>
+      <node id="175">
+        <label>openage::InputHandler</label>
+        <link refid="da/dc5/classopenage_1_1_input_handler"/>
+      </node>
+      <node id="160">
+        <label>openage::util::Variable&lt; T &gt;</label>
+        <link refid="df/d2d/classopenage_1_1util_1_1_variable"/>
+        <childnode refid="159" relation="public-inheritance">
+        </childnode>
+        <childnode refid="161" relation="usage">
+          <edgelabel>+value</edgelabel>
+        </childnode>
+      </node>
+      <node id="174">
+        <label>openage::input::InputManager</label>
+        <link refid="d7/df3/classopenage_1_1input_1_1_input_manager"/>
+        <childnode refid="175" relation="public-inheritance">
+        </childnode>
+        <childnode refid="176" relation="usage">
+          <edgelabel>-mouse_position</edgelabel>
+        </childnode>
+        <childnode refid="178" relation="usage">
+          <edgelabel>-global_context</edgelabel>
+        </childnode>
+        <childnode refid="179" relation="usage">
+          <edgelabel>-mouse_motion</edgelabel>
+        </childnode>
+        <childnode refid="181" relation="usage">
+          <edgelabel>-action_manager</edgelabel>
+        </childnode>
+      </node>
+      <node id="152">
+        <label>openage::AssetManager</label>
+        <link refid="d4/dbb/classopenage_1_1_asset_manager"/>
+        <childnode refid="153" relation="usage">
+          <edgelabel>-asset_path</edgelabel>
+        </childnode>
+        <childnode refid="154" relation="usage">
+          <edgelabel>-engine</edgelabel>
+        </childnode>
+        <childnode refid="192" relation="usage">
+          <edgelabel>+gui_link</edgelabel>
+        </childnode>
+      </node>
+      <node id="184">
+        <label>openage::coord::CoordManager</label>
+        <link refid="de/db5/classopenage_1_1coord_1_1_coord_manager"/>
+        <childnode refid="185" relation="usage">
+          <edgelabel>+camgame_viewport</edgelabel>
+          <edgelabel>+camhud_viewport</edgelabel>
+        </childnode>
+        <childnode refid="187" relation="usage">
+          <edgelabel>+camgame_phys</edgelabel>
+        </childnode>
+        <childnode refid="189" relation="usage">
+          <edgelabel>+tile_size</edgelabel>
+        </childnode>
+        <childnode refid="169" relation="usage">
+          <edgelabel>+viewport_size</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" line="27" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/assetmanager.h" bodystart="27" bodyend="120"/>
+    <listofallmembers>
+      <member refid="d4/dbb/classopenage_1_1_asset_manager_1afad18003a7e7c4ce22fe249269d2fe3b" prot="private" virt="non-virtual"><scope>openage::AssetManager</scope><name>asset_path</name></member>
+      <member refid="d4/dbb/classopenage_1_1_asset_manager_1ab6e5f15eeb16c36a4bb1f12613040940" prot="public" virt="non-virtual"><scope>openage::AssetManager</scope><name>AssetManager</name></member>
+      <member refid="d4/dbb/classopenage_1_1_asset_manager_1add18a1e0933affe40c982f62c88f4c05" prot="public" virt="non-virtual"><scope>openage::AssetManager</scope><name>check_updates</name></member>
+      <member refid="d4/dbb/classopenage_1_1_asset_manager_1afee91926bb4d9b763527a7aa28ec95d4" prot="private" virt="non-virtual"><scope>openage::AssetManager</scope><name>clear</name></member>
+      <member refid="d4/dbb/classopenage_1_1_asset_manager_1a327aa3854302b522ccc85994c6ffb68c" prot="private" virt="non-virtual"><scope>openage::AssetManager</scope><name>engine</name></member>
+      <member refid="d4/dbb/classopenage_1_1_asset_manager_1ab32bf393ec81c214585922c1a4cc9698" prot="public" virt="non-virtual"><scope>openage::AssetManager</scope><name>get_asset_dir</name></member>
+      <member refid="d4/dbb/classopenage_1_1_asset_manager_1a50069b4b3cd4b5fcf8fb5f4b480c721d" prot="public" virt="non-virtual"><scope>openage::AssetManager</scope><name>get_engine</name></member>
+      <member refid="d4/dbb/classopenage_1_1_asset_manager_1a20f0383ea39d88917bb5a02fbb239006" prot="protected" virt="non-virtual"><scope>openage::AssetManager</scope><name>get_missing_tex</name></member>
+      <member refid="d4/dbb/classopenage_1_1_asset_manager_1a14ab6ac2616460d50bd789bf8bdd52eb" prot="public" virt="non-virtual"><scope>openage::AssetManager</scope><name>get_texture</name></member>
+      <member refid="d4/dbb/classopenage_1_1_asset_manager_1aedd46c306f9487e3db92e0e1fee049f9" prot="public" virt="non-virtual"><scope>openage::AssetManager</scope><name>gui_link</name></member>
+      <member refid="d4/dbb/classopenage_1_1_asset_manager_1aae3415abc6b2ba91c70ba2f0c9343436" prot="protected" virt="non-virtual"><scope>openage::AssetManager</scope><name>load_texture</name></member>
+      <member refid="d4/dbb/classopenage_1_1_asset_manager_1a4494591bc1dc7b6544c49b6ce593aa9d" prot="private" virt="non-virtual"><scope>openage::AssetManager</scope><name>missing_tex</name></member>
+      <member refid="d4/dbb/classopenage_1_1_asset_manager_1afe3aaab160ddd411afb365186d7deea4" prot="public" virt="non-virtual"><scope>openage::AssetManager</scope><name>set_asset_dir</name></member>
+      <member refid="d4/dbb/classopenage_1_1_asset_manager_1a7f3cae1f7234930f4a06e2f4ed69b4c2" prot="public" virt="non-virtual"><scope>openage::AssetManager</scope><name>set_engine</name></member>
+      <member refid="d4/dbb/classopenage_1_1_asset_manager_1a65a322db0279e97566b103169494b2a1" prot="private" virt="non-virtual"><scope>openage::AssetManager</scope><name>textures</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

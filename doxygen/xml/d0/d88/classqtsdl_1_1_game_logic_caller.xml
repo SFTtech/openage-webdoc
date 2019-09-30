@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d0/d88/classqtsdl_1_1_game_logic_caller" kind="class" language="C++" prot="public">
+    <compoundname>qtsdl::GameLogicCaller</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QObject</basecompoundref>
+    <includes refid="d4/d06/game__logic__caller_8h" local="no">game_logic_caller.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d0/d88/classqtsdl_1_1_game_logic_caller_1a950dc33e59918156220b6a2739879ca3" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>qtsdl::GameLogicCaller::GameLogicCaller</definition>
+        <argsstring>()</argsstring>
+        <name>GameLogicCaller</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/game_logic_caller.h" line="20" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/game_logic_caller.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d88/classqtsdl_1_1_game_logic_caller_1a0101ff39e4fc7bcc9d3f33a6c53ff571" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void qtsdl::GameLogicCaller::set_game_logic_callback</definition>
+        <argsstring>(GuiCallback *game_logic_callback)</argsstring>
+        <name>set_game_logic_callback</name>
+        <param>
+          <type><ref refid="d9/df2/classqtsdl_1_1_gui_callback" kindref="compound">GuiCallback</ref> *</type>
+          <declname>game_logic_callback</declname>
+        </param>
+        <briefdescription>
+<para>Set up signal to be able to run code in the game logic thread. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/game_logic_caller.h" line="25" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/game_logic_caller.cpp" bodystart="14" bodyend="19"/>
+        <references refid="d0/d88/classqtsdl_1_1_game_logic_caller_1a96a8f7f13ae01a96c456c440771624d3">in_game_logic_thread</references>
+        <references refid="d0/d88/classqtsdl_1_1_game_logic_caller_1a23d818cdeab46e8cf4c8fb345fc69405">in_game_logic_thread_blocking</references>
+        <references refid="d9/df2/classqtsdl_1_1_gui_callback_1ab84c2a4152e0ab297025079a4d15746c" compoundref="d1/d4d/gui__callback_8cpp" startline="22" endline="24">qtsdl::GuiCallback::process</references>
+        <references refid="d9/df2/classqtsdl_1_1_gui_callback_1a3cfbf34933c59c043267e2ba916dc15f">qtsdl::GuiCallback::process_blocking</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="d0/d88/classqtsdl_1_1_game_logic_caller_1a96a8f7f13ae01a96c456c440771624d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void qtsdl::GameLogicCaller::in_game_logic_thread</definition>
+        <argsstring>(const std::function&lt; void()&gt; &amp;f) const</argsstring>
+        <name>in_game_logic_thread</name>
+        <param>
+          <type>const std::function&lt; void()&gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/game_logic_caller.h" line="28" column="1"/>
+        <referencedby refid="d5/db2/classqtsdl_1_1_gui_item_methods_1a4491ae15b14efd72465173059446b173" compoundref="d1/d2b/gui__item_8h" startline="217" endline="228">qtsdl::GuiItemMethods&lt; GameSpecLink &gt;::assign_while_catching_constant_properies_inits</referencedby>
+        <referencedby refid="d5/db2/classqtsdl_1_1_gui_item_methods_1ac54e8509493e71387cc423d3b594c774" compoundref="d1/d2b/gui__item_8h" startline="182" endline="189">qtsdl::GuiItemMethods&lt; GameSpecLink &gt;::i</referencedby>
+        <referencedby refid="d0/d88/classqtsdl_1_1_game_logic_caller_1a0101ff39e4fc7bcc9d3f33a6c53ff571" compoundref="da/d74/game__logic__caller_8cpp" startline="14" endline="19">set_game_logic_callback</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="d0/d88/classqtsdl_1_1_game_logic_caller_1a23d818cdeab46e8cf4c8fb345fc69405" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void qtsdl::GameLogicCaller::in_game_logic_thread_blocking</definition>
+        <argsstring>(const std::function&lt; void()&gt; &amp;f) const</argsstring>
+        <name>in_game_logic_thread_blocking</name>
+        <param>
+          <type>const std::function&lt; void()&gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/game_logic_caller.h" line="29" column="1"/>
+        <referencedby refid="d0/d88/classqtsdl_1_1_game_logic_caller_1a0101ff39e4fc7bcc9d3f33a6c53ff571" compoundref="da/d74/game__logic__caller_8cpp" startline="14" endline="19">set_game_logic_callback</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Attaches to the GuiCallbackImpl. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6298">
+        <label>QObject</label>
+      </node>
+      <node id="6297">
+        <label>qtsdl::GameLogicCaller</label>
+        <link refid="d0/d88/classqtsdl_1_1_game_logic_caller"/>
+        <childnode refid="6298" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6300">
+        <label>QObject</label>
+      </node>
+      <node id="6299">
+        <label>qtsdl::GameLogicCaller</label>
+        <link refid="d0/d88/classqtsdl_1_1_game_logic_caller"/>
+        <childnode refid="6300" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/game_logic_caller.h" line="16" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/gui/guisys/private/game_logic_caller.h" bodystart="16" bodyend="30"/>
+    <listofallmembers>
+      <member refid="d0/d88/classqtsdl_1_1_game_logic_caller_1a950dc33e59918156220b6a2739879ca3" prot="public" virt="non-virtual"><scope>qtsdl::GameLogicCaller</scope><name>GameLogicCaller</name></member>
+      <member refid="d0/d88/classqtsdl_1_1_game_logic_caller_1a96a8f7f13ae01a96c456c440771624d3" prot="public" virt="non-virtual"><scope>qtsdl::GameLogicCaller</scope><name>in_game_logic_thread</name></member>
+      <member refid="d0/d88/classqtsdl_1_1_game_logic_caller_1a23d818cdeab46e8cf4c8fb345fc69405" prot="public" virt="non-virtual"><scope>qtsdl::GameLogicCaller</scope><name>in_game_logic_thread_blocking</name></member>
+      <member refid="d0/d88/classqtsdl_1_1_game_logic_caller_1a0101ff39e4fc7bcc9d3f33a6c53ff571" prot="public" virt="non-virtual"><scope>qtsdl::GameLogicCaller</scope><name>set_game_logic_callback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream" kind="class" language="C++" prot="public">
+    <compoundname>openage::util::CachableOSStream</compoundname>
+    <includes refid="de/d65/stringformatter_8h" local="no">stringformatter.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a286e7e1b4c5d5340c8bc35f87660f621" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/daf/classopenage_1_1util_1_1_external_o_string_stream" kindref="compound">ExternalOStringStream</ref></type>
+        <definition>ExternalOStringStream openage::util::CachableOSStream::stream</definition>
+        <argsstring></argsstring>
+        <name>stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/stringformatter.h" line="34" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/stringformatter.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a9d7710f8703f4dbba1b65d8b02e84036" compoundref="d8/d00/stringformatter_8cpp" startline="22" endline="41">acquire</referencedby>
+        <referencedby refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1acff1e0e6a81b08fac82788f921e677b7" compoundref="d8/d00/stringformatter_8cpp" startline="14" endline="19">CachableOSStream</referencedby>
+        <referencedby refid="d9/de8/classopenage_1_1util_1_1filelike_1_1stream_1_1_stream_fragment_1a2c451557a21c0bb2481bd4a8da2f6df5" compoundref="d7/d0e/stream_8py" startline="128" endline="146">openage.util.filelike.stream.StreamFragment.read</referencedby>
+        <referencedby refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1ad770ce91fe372bb8069e06ea06293f85" compoundref="d8/d00/stringformatter_8cpp" startline="44" endline="61">release</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a5b3cdc213039012cd3064b613a59ab94" prot="private" static="no" mutable="no">
+        <type>std::atomic_flag</type>
+        <definition>std::atomic_flag openage::util::CachableOSStream::flag</definition>
+        <argsstring></argsstring>
+        <name>flag</name>
+        <initializer>= ATOMIC_FLAG_INIT</initializer>
+        <briefdescription>
+<para>true if all of the following are true: </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>object is part of a larger cache</para></listitem><listitem><para>object is currently in use (-&gt; unavailable) <ulink url="http://en.cppreference.com/w/cpp/atomic/ATOMIC_FLAG_INIT">http://en.cppreference.com/w/cpp/atomic/ATOMIC_FLAG_INIT</ulink> <ulink url="https://stackoverflow.com/questions/24437396/stdatomic-flag-as-member-variable">https://stackoverflow.com/questions/24437396/stdatomic-flag-as-member-variable</ulink> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/stringformatter.h" line="74" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/stringformatter.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1ad770ce91fe372bb8069e06ea06293f85" compoundref="d8/d00/stringformatter_8cpp" startline="44" endline="61">release</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1af5a5b6f793311c523e1aee1a354e73ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::util::CachableOSStream::CachableOSStream</definition>
+        <argsstring>()</argsstring>
+        <name>CachableOSStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/stringformatter.h" line="39" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/stringformatter.cpp" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1acff1e0e6a81b08fac82788f921e677b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::util::CachableOSStream::CachableOSStream</definition>
+        <argsstring>(std::string &amp;output)</argsstring>
+        <name>CachableOSStream</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para>Calls stream.use_with(output); for use by heap objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/stringformatter.h" line="44" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/stringformatter.cpp" bodystart="14" bodyend="19"/>
+        <references refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a286e7e1b4c5d5340c8bc35f87660f621" compoundref="de/d65/stringformatter_8h" startline="34">stream</references>
+        <references refid="d4/daf/classopenage_1_1util_1_1_external_o_string_stream_1aa35d807fa9bc56758974bbe602bf1a8e" compoundref="dc/dcf/externalsstream_8h" startline="54" endline="56">openage::util::ExternalOStringStream::use_with</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a9d7710f8703f4dbba1b65d8b02e84036" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream" kindref="compound">CachableOSStream</ref> *</type>
+        <definition>CachableOSStream * openage::util::CachableOSStream::acquire</definition>
+        <argsstring>(std::string &amp;output)</argsstring>
+        <name>acquire</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para>Returns a brand-new(*) <ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream" kindref="compound">CachableOSStream</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para>Origin may vary (static internal cache, heap allocation).</para><para>After you&apos;re done, pass the pointer to <ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1ad770ce91fe372bb8069e06ea06293f85" kindref="member">release()</ref>.</para><para>(*) Disclaimer: Object might not actually be brand-new.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>output</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string object that the stream should output its data to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/stringformatter.h" line="57" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/stringformatter.cpp" bodystart="22" bodyend="41"/>
+        <references refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a286e7e1b4c5d5340c8bc35f87660f621" compoundref="de/d65/stringformatter_8h" startline="34">stream</references>
+        <references refid="d4/daf/classopenage_1_1util_1_1_external_o_string_stream_1aa35d807fa9bc56758974bbe602bf1a8e" compoundref="dc/dcf/externalsstream_8h" startline="54" endline="56">openage::util::ExternalOStringStream::use_with</references>
+        <referencedby refid="d4/d8c/classopenage_1_1util_1_1_string_formatter_1a9a56b87b8c33c7e76cb717cbf2e3dd16" compoundref="de/d65/stringformatter_8h" startline="234" endline="238">openage::util::StringFormatter&lt; Formatter &gt;::ensure_stream_obj</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1ad770ce91fe372bb8069e06ea06293f85" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d4/dd1/compiler_8h_1aea581b919984cda327632efe3d11f8b3" kindref="member">OAAPI</ref> void</type>
+        <definition>void openage::util::CachableOSStream::release</definition>
+        <argsstring>(CachableOSStream *cs)</argsstring>
+        <name>release</name>
+        <param>
+          <type><ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream" kindref="compound">CachableOSStream</ref> *</type>
+          <declname>cs</declname>
+        </param>
+        <briefdescription>
+<para>Resets the stream to a brand-new state, and clears the flag. </para>        </briefdescription>
+        <detaileddescription>
+<para>no-op if cs is nullptr. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/stringformatter.h" line="64" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/stringformatter.cpp" bodystart="44" bodyend="61"/>
+        <references refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a5b3cdc213039012cd3064b613a59ab94" compoundref="de/d65/stringformatter_8h" startline="74">flag</references>
+        <references refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a286e7e1b4c5d5340c8bc35f87660f621" compoundref="de/d65/stringformatter_8h" startline="34">stream</references>
+        <referencedby refid="d4/d8c/classopenage_1_1util_1_1_string_formatter_1aa55bdace86e9b1eda7b225b694c5a165" compoundref="de/d65/stringformatter_8h" startline="106" endline="108">openage::util::StringFormatter&lt; Formatter &gt;::~StringFormatter</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Designed for usage by <ref refid="d4/d8c/classopenage_1_1util_1_1_string_formatter" kindref="compound">StringFormatter</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>The problem with iostreams, including <ref refid="d4/daf/classopenage_1_1util_1_1_external_o_string_stream" kindref="compound">ExternalOStringStream</ref>, is that they use lots of memory, and are quite slow to construct, due to some pesky implementation details.</para><para>This class fixes this by keeping a reservoir of such objects, and providing access to them via <ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a9d7710f8703f4dbba1b65d8b02e84036" kindref="member">acquire()</ref>, in a thread-safe manner. If the cache is exhausted, new objects are constructed on the heap as needed.</para><para><ref refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1ad770ce91fe372bb8069e06ea06293f85" kindref="member">release()</ref> makes a cached object available for acquiring again (cache) or destroys it (heap). </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="5761">
+        <label>openage::util::CachableOSStream</label>
+        <link refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream"/>
+        <childnode refid="5762" relation="usage">
+          <edgelabel>+stream</edgelabel>
+        </childnode>
+      </node>
+      <node id="5762">
+        <label>openage::util::ExternalOStringStream</label>
+        <link refid="d4/daf/classopenage_1_1util_1_1_external_o_string_stream"/>
+        <childnode refid="5763" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5764" relation="usage">
+          <edgelabel>-buf</edgelabel>
+        </childnode>
+      </node>
+      <node id="5765">
+        <label>std::streambuf</label>
+      </node>
+      <node id="5763">
+        <label>std::ostream</label>
+      </node>
+      <node id="5764">
+        <label>openage::util::ExternalStringBuf</label>
+        <link refid="d4/d32/classopenage_1_1util_1_1_external_string_buf"/>
+        <childnode refid="5765" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/stringformatter.h" line="32" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/stringformatter.h" bodystart="32" bodyend="75"/>
+    <listofallmembers>
+      <member refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a9d7710f8703f4dbba1b65d8b02e84036" prot="public" virt="non-virtual"><scope>openage::util::CachableOSStream</scope><name>acquire</name></member>
+      <member refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1af5a5b6f793311c523e1aee1a354e73ff" prot="public" virt="non-virtual"><scope>openage::util::CachableOSStream</scope><name>CachableOSStream</name></member>
+      <member refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1acff1e0e6a81b08fac82788f921e677b7" prot="public" virt="non-virtual"><scope>openage::util::CachableOSStream</scope><name>CachableOSStream</name></member>
+      <member refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a5b3cdc213039012cd3064b613a59ab94" prot="private" virt="non-virtual"><scope>openage::util::CachableOSStream</scope><name>flag</name></member>
+      <member refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1ad770ce91fe372bb8069e06ea06293f85" prot="public" virt="non-virtual"><scope>openage::util::CachableOSStream</scope><name>release</name></member>
+      <member refid="d8/da7/classopenage_1_1util_1_1_cachable_o_s_stream_1a286e7e1b4c5d5340c8bc35f87660f621" prot="public" virt="non-virtual"><scope>openage::util::CachableOSStream</scope><name>stream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

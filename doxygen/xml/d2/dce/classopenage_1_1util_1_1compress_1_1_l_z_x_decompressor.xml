@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor" kind="class" language="C++" prot="public">
+    <compoundname>openage::util::compress::LZXDecompressor</compoundname>
+    <includes refid="d9/d4e/lzxd_8h" local="no">lzxd.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1a476d05993567d0c02d6ced2e6216795e" prot="private" static="no" mutable="no">
+        <type>class <ref refid="d7/da4/classopenage_1_1util_1_1compress_1_1_l_z_x_d_stream" kindref="compound">LZXDStream</ref> *</type>
+        <definition>class LZXDStream* openage::util::compress::LZXDecompressor::stream</definition>
+        <argsstring></argsstring>
+        <name>stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/compress/lzxd.h" line="80" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/compress/lzxd.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1ad03ce7fd20c3abe824f61dd382bab43c" compoundref="d6/d03/lzxd_8cpp" startline="929" endline="931">decompress_next_frame</referencedby>
+        <referencedby refid="d9/de8/classopenage_1_1util_1_1filelike_1_1stream_1_1_stream_fragment_1a2c451557a21c0bb2481bd4a8da2f6df5" compoundref="d7/d0e/stream_8py" startline="128" endline="146">openage.util.filelike.stream.StreamFragment.read</referencedby>
+        <referencedby refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1a6e8124b4f83027be7526c7fc25fd801d" compoundref="d6/d03/lzxd_8cpp" startline="924" endline="926">~LZXDecompressor</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1abfa293c286465cc46f6a84bda5a8f908" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::util::compress::LZXDecompressor::LZXDecompressor</definition>
+        <argsstring>(read_callback_t read_callback, unsigned int window_bits=21, unsigned int reset_interval=0)</argsstring>
+        <name>LZXDecompressor</name>
+        <param>
+          <type><ref refid="df/da8/namespaceopenage_1_1util_1_1compress_1a129fc036a27a40e60785ce5bb1aa5627" kindref="member">read_callback_t</ref></type>
+          <declname>read_callback</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>window_bits</declname>
+          <defval>21</defval>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>reset_interval</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/compress/lzxd.h" line="56" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/compress/lzxd.cpp" bodystart="917" bodyend="921"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1a6e8124b4f83027be7526c7fc25fd801d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::util::compress::LZXDecompressor::~LZXDecompressor</definition>
+        <argsstring>()</argsstring>
+        <name>~LZXDecompressor</name>
+        <briefdescription>
+<para>Frees the internally-allocated <ref refid="d7/da4/classopenage_1_1util_1_1compress_1_1_l_z_x_d_stream" kindref="compound">LZXDStream</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/compress/lzxd.h" line="63" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/compress/lzxd.cpp" bodystart="924" bodyend="926"/>
+        <references refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1a476d05993567d0c02d6ced2e6216795e" compoundref="d9/d4e/lzxd_8h" startline="80">stream</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1ad03ce7fd20c3abe824f61dd382bab43c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned openage::util::compress::LZXDecompressor::decompress_next_frame</definition>
+        <argsstring>(unsigned char *output_buf)</argsstring>
+        <name>decompress_next_frame</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>output_buf</declname>
+        </param>
+        <briefdescription>
+<para>Decompresses a single 32-KiB frame. </para>        </briefdescription>
+        <detaileddescription>
+<para>Data from the input stream is read as required from read_callback. The decoded frame is written to output_buf. output_buf must be at least LZX_FRAME_SIZE (32768) bytes in size.</para><para>Returns 0 in case of EOF, and the size of the frame otherwise.</para><para>On error, an exception is thrown. After that, the object shall be destroyed; every other operation on it may invoke undefined behavior. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/compress/lzxd.h" line="77" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/compress/lzxd.cpp" bodystart="929" bodyend="931"/>
+        <references refid="d7/da4/classopenage_1_1util_1_1compress_1_1_l_z_x_d_stream_1a12047565515e79d8fa7ae56c1459a724" compoundref="d6/d03/lzxd_8cpp" startline="740" endline="861">openage::util::compress::LZXDStream::decompress_next_frame</references>
+        <references refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1a476d05993567d0c02d6ced2e6216795e" compoundref="d9/d4e/lzxd_8h" startline="80">stream</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1a1ef76d71c7f7c62d5132cdda0558225e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::util::compress::LZXDecompressor::LZXDecompressor</definition>
+        <argsstring>(const LZXDecompressor &amp;other)=delete</argsstring>
+        <name>LZXDecompressor</name>
+        <param>
+          <type>const <ref refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor" kindref="compound">LZXDecompressor</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/compress/lzxd.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1a239af3864c5097b60f48063629b64c77" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>openage::util::compress::LZXDecompressor::LZXDecompressor</definition>
+        <argsstring>(LZXDecompressor &amp;&amp;other)=delete</argsstring>
+        <name>LZXDecompressor</name>
+        <param>
+          <type><ref refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor" kindref="compound">LZXDecompressor</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/compress/lzxd.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1ab21ae2c5bb35bbbb0ff8ca26b8d3650d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor" kindref="compound">LZXDecompressor</ref> &amp;</type>
+        <definition>LZXDecompressor&amp; openage::util::compress::LZXDecompressor::operator=</definition>
+        <argsstring>(const LZXDecompressor &amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor" kindref="compound">LZXDecompressor</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/compress/lzxd.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1a7229e6daef9ea4a8fcab6448e958e790" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor" kindref="compound">LZXDecompressor</ref> &amp;</type>
+        <definition>LZXDecompressor&amp; openage::util::compress::LZXDecompressor::operator=</definition>
+        <argsstring>(LZXDecompressor &amp;&amp;other)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor" kindref="compound">LZXDecompressor</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/compress/lzxd.h" line="87" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wraps a <ref refid="d7/da4/classopenage_1_1util_1_1compress_1_1_l_z_x_d_stream" kindref="compound">LZXDStream</ref> object by reference; exposing <ref refid="d7/da4/classopenage_1_1util_1_1compress_1_1_l_z_x_d_stream" kindref="compound">LZXDStream</ref> directly would cause too much header pollution due to its many member objects, and their member objects. </para>    </briefdescription>
+    <detaileddescription>
+<para>pxd:</para><para>cppclass <ref refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor" kindref="compound">LZXDecompressor</ref>: <ref refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor" kindref="compound">LZXDecompressor</ref>( Func2[size_t, unsigned char *, size_t], unsigned int window_bits, unsigned int reset_interval ) except +</para><para>unsigned <ref refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1ad03ce7fd20c3abe824f61dd382bab43c" kindref="member">decompress_next_frame(unsigned char *out_buf)</ref> except + </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="5793">
+        <label>openage::util::compress::BitStream&lt; inbuf_size &gt;</label>
+        <link refid="d3/d05/classopenage_1_1util_1_1compress_1_1_bit_stream"/>
+      </node>
+      <node id="5791">
+        <label>openage::util::compress::LZXDStream</label>
+        <link refid="d7/da4/classopenage_1_1util_1_1compress_1_1_l_z_x_d_stream"/>
+        <childnode refid="5792" relation="usage">
+          <edgelabel>+bits</edgelabel>
+        </childnode>
+        <childnode refid="5794" relation="usage">
+          <edgelabel>+htpre</edgelabel>
+        </childnode>
+        <childnode refid="5796" relation="usage">
+          <edgelabel>+htlength</edgelabel>
+        </childnode>
+        <childnode refid="5797" relation="usage">
+          <edgelabel>+htmain</edgelabel>
+        </childnode>
+        <childnode refid="5798" relation="usage">
+          <edgelabel>+htaligned</edgelabel>
+        </childnode>
+      </node>
+      <node id="5796">
+        <label>openage::util::compress::HuffmanTable&lt; LZX_LENGTH_MAXSYMBOLS, LZX_LENGTH_TABLEBITS, true &gt;</label>
+        <link refid="d2/def/classopenage_1_1util_1_1compress_1_1_huffman_table"/>
+        <childnode refid="5791" relation="usage">
+          <edgelabel>-lzx</edgelabel>
+        </childnode>
+        <childnode refid="5795" relation="template-instance">
+          <edgelabel>&lt; LZX_LENGTH_MAXSYMBOLS, LZX_LENGTH_TABLEBITS, true &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5795">
+        <label>openage::util::compress::HuffmanTable&lt; maxsymbols_p, tablebits_p, allow_empty &gt;</label>
+        <link refid="d2/def/classopenage_1_1util_1_1compress_1_1_huffman_table"/>
+        <childnode refid="5791" relation="usage">
+          <edgelabel>-lzx</edgelabel>
+        </childnode>
+      </node>
+      <node id="5792">
+        <label>openage::util::compress::BitStream&lt; 4096 &gt;</label>
+        <link refid="d3/d05/classopenage_1_1util_1_1compress_1_1_bit_stream"/>
+        <childnode refid="5793" relation="template-instance">
+          <edgelabel>&lt; 4096 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5798">
+        <label>openage::util::compress::HuffmanTable&lt; LZX_ALIGNED_MAXSYMBOLS, LZX_ALIGNED_TABLEBITS &gt;</label>
+        <link refid="d2/def/classopenage_1_1util_1_1compress_1_1_huffman_table"/>
+        <childnode refid="5791" relation="usage">
+          <edgelabel>-lzx</edgelabel>
+        </childnode>
+        <childnode refid="5795" relation="template-instance">
+          <edgelabel>&lt; LZX_ALIGNED_MAXSYMBOLS, LZX_ALIGNED_TABLEBITS &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5797">
+        <label>openage::util::compress::HuffmanTable&lt; LZX_MAINTREE_MAXSYMBOLS, LZX_MAINTREE_TABLEBITS &gt;</label>
+        <link refid="d2/def/classopenage_1_1util_1_1compress_1_1_huffman_table"/>
+        <childnode refid="5791" relation="usage">
+          <edgelabel>-lzx</edgelabel>
+        </childnode>
+        <childnode refid="5795" relation="template-instance">
+          <edgelabel>&lt; LZX_MAINTREE_MAXSYMBOLS, LZX_MAINTREE_TABLEBITS &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5790">
+        <label>openage::util::compress::LZXDecompressor</label>
+        <link refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor"/>
+        <childnode refid="5791" relation="usage">
+          <edgelabel>-stream</edgelabel>
+        </childnode>
+      </node>
+      <node id="5794">
+        <label>openage::util::compress::HuffmanTable&lt; LZX_PRETREE_MAXSYMBOLS, LZX_PRETREE_TABLEBITS &gt;</label>
+        <link refid="d2/def/classopenage_1_1util_1_1compress_1_1_huffman_table"/>
+        <childnode refid="5791" relation="usage">
+          <edgelabel>-lzx</edgelabel>
+        </childnode>
+        <childnode refid="5795" relation="template-instance">
+          <edgelabel>&lt; LZX_PRETREE_MAXSYMBOLS, LZX_PRETREE_TABLEBITS &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/compress/lzxd.h" line="35" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/libopenage/util/compress/lzxd.h" bodystart="35" bodyend="88"/>
+    <listofallmembers>
+      <member refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1ad03ce7fd20c3abe824f61dd382bab43c" prot="public" virt="non-virtual"><scope>openage::util::compress::LZXDecompressor</scope><name>decompress_next_frame</name></member>
+      <member refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1abfa293c286465cc46f6a84bda5a8f908" prot="public" virt="non-virtual"><scope>openage::util::compress::LZXDecompressor</scope><name>LZXDecompressor</name></member>
+      <member refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1a1ef76d71c7f7c62d5132cdda0558225e" prot="private" virt="non-virtual"><scope>openage::util::compress::LZXDecompressor</scope><name>LZXDecompressor</name></member>
+      <member refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1a239af3864c5097b60f48063629b64c77" prot="private" virt="non-virtual"><scope>openage::util::compress::LZXDecompressor</scope><name>LZXDecompressor</name></member>
+      <member refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1ab21ae2c5bb35bbbb0ff8ca26b8d3650d" prot="private" virt="non-virtual"><scope>openage::util::compress::LZXDecompressor</scope><name>operator=</name></member>
+      <member refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1a7229e6daef9ea4a8fcab6448e958e790" prot="private" virt="non-virtual"><scope>openage::util::compress::LZXDecompressor</scope><name>operator=</name></member>
+      <member refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1a476d05993567d0c02d6ced2e6216795e" prot="private" virt="non-virtual"><scope>openage::util::compress::LZXDecompressor</scope><name>stream</name></member>
+      <member refid="d2/dce/classopenage_1_1util_1_1compress_1_1_l_z_x_decompressor_1a6e8124b4f83027be7526c7fc25fd801d" prot="public" virt="non-virtual"><scope>openage::util::compress::LZXDecompressor</scope><name>~LZXDecompressor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,435 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object" kind="class" language="Python" prot="public">
+    <compoundname>openage::util::filelike::abstract::FileLikeObject</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ABC</basecompoundref>
+    <derivedcompoundref refid="d5/d18/classopenage_1_1util_1_1filelike_1_1fifo_1_1_f_i_f_o" prot="public" virt="non-virtual">openage.util.filelike.fifo.FIFO</derivedcompoundref>
+    <derivedcompoundref refid="da/d66/classopenage_1_1util_1_1filelike_1_1readonly_1_1_read_only_file_like_object" prot="public" virt="non-virtual">openage.util.filelike.readonly.ReadOnlyFileLikeObject</derivedcompoundref>
+    <derivedcompoundref refid="d6/dee/classopenage_1_1util_1_1fslike_1_1wrapper_1_1_guarded_file" prot="public" virt="non-virtual">openage.util.fslike.wrapper.GuardedFile</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a9c0ceaeccc3aa95e32f6c3a2e26685ae" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>openage::util::filelike.abstract.FileLikeObject::closed</definition>
+        <argsstring></argsstring>
+        <name>closed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" line="23" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" bodystart="23" bodyend="-1"/>
+        <referencedby refid="df/d8f/classopenage_1_1util_1_1threading_1_1_closable_queue_1a84e871a44b8f1af0616947b0701e54e3" compoundref="db/dcb/threading_8py" startline="73" endline="77">openage.util.threading.ClosableQueue.close</referencedby>
+        <referencedby refid="df/d8f/classopenage_1_1util_1_1threading_1_1_closable_queue_1a94efea86c7c77550eae76db99d8d5ebf" compoundref="db/dcb/threading_8py" startline="82" endline="91">openage.util.threading.ClosableQueue.raise_if_closed</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1ad1e8617a5d0fedd8596e6bb8ad5a6bb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.filelike.abstract.FileLikeObject.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" line="22" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a74f8e05ed5480518188044084cc0e902" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.filelike.abstract.FileLikeObject.read</definition>
+        <argsstring>(self, size=-1)</argsstring>
+        <name>read</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>size</type>
+          <defname>size</defname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Read at most size bytes (less if EOF has been reached). </para>        </briefdescription>
+        <detaileddescription>
+<para>Shall raise UnsupportedOperation for write-only objects. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" line="31" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" bodystart="31" bodyend="32"/>
+        <referencedby refid="df/da3/classopenage_1_1convert_1_1peresource_1_1_string_literal_1afe54133fe4a7d4cb75352a250a11a024" compoundref="db/d45/peresource_8py" startline="136" endline="141">openage.convert.peresource.StringLiteral.readall</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a921de3bfb2d8bcaae526bd93347d4764" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.filelike.abstract.FileLikeObject.readable</definition>
+        <argsstring>(self)</argsstring>
+        <name>readable</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Returns True if <ref refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a74f8e05ed5480518188044084cc0e902" kindref="member">read()</ref> is allowed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" line="37" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" bodystart="37" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a118b6ae6f4476f578a6cee666adc02cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.filelike.abstract.FileLikeObject.write</definition>
+        <argsstring>(self, data)</argsstring>
+        <name>write</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+<para>Writes all of data to the file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Shall raise UnsupportedOperation for read-only object.</para><para>There is no return value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" line="47" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" bodystart="47" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a08761f78387658db85dc2f1137cb3db6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.filelike.abstract.FileLikeObject.writable</definition>
+        <argsstring>(self)</argsstring>
+        <name>writable</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Returns True if <ref refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a118b6ae6f4476f578a6cee666adc02cb" kindref="member">write()</ref> is allowed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" line="53" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" bodystart="53" bodyend="54"/>
+        <referencedby refid="db/d90/classopenage_1_1util_1_1fslike_1_1wrapper_1_1_wrapper_1a9477182385b8db4a3b2874a9360b690f" compoundref="dc/d24/wrapper_8py" startline="69" endline="71">openage.util.fslike.wrapper.Wrapper.resolve_w</referencedby>
+        <referencedby refid="d3/d76/classopenage_1_1util_1_1fslike_1_1abstract_1_1_f_s_like_object_1a255427aef3f55eea705114af7d7c107f" compoundref="db/d7d/fslike_2abstract_8py" startline="93" endline="95">openage.util.fslike.abstract.FSLikeObject.resolve_w</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1ad255ffd40c48e6610e464d5c3c43b2fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.filelike.abstract.FileLikeObject.seek</definition>
+        <argsstring>(self, offset, whence=os.SEEK_SET)</argsstring>
+        <name>seek</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>offset</type>
+          <defname>offset</defname>
+        </param>
+        <param>
+          <type>whence</type>
+          <defname>whence</defname>
+          <defval>os.SEEK_SET</defval>
+        </param>
+        <briefdescription>
+<para>Seeks to a given position. </para>        </briefdescription>
+        <detaileddescription>
+<para>May raise UnsupportedOperation for any or all arguments, in case of unseekable streams.</para><para>For testing seek capabilities, it&apos;s recommended to call seek(0) immediately after object creation.</para><para>There is no return value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" line="67" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" bodystart="67" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a72fc53b76ba8da3a41cd61647dbaae6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.filelike.abstract.FileLikeObject.seekable</definition>
+        <argsstring>(self)</argsstring>
+        <name>seekable</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Returns True if <ref refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1ad255ffd40c48e6610e464d5c3c43b2fb" kindref="member">seek()</ref> is allowed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" line="73" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" bodystart="73" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a0ad9d642b58e227e95d4c03b49b57d0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.filelike.abstract.FileLikeObject.tell</definition>
+        <argsstring>(self)</argsstring>
+        <name>tell</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Returns the current position in the file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Must work properly for all file-like objects. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" line="81" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" bodystart="81" bodyend="82"/>
+        <referencedby refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a248471b44bfea2faad6d97d9dd07eb00" compoundref="da/d37/filelike_2abstract_8py" startline="125" endline="144">openage.util.filelike.abstract.FileLikeObject.seek_helper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a007c0eefc1bd3165112c787fb5e70f75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.filelike.abstract.FileLikeObject.close</definition>
+        <argsstring>(self)</argsstring>
+        <name>close</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" line="88" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" bodystart="88" bodyend="89"/>
+        <referencedby refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1ac1d75f370298fb63d2a57b60b334fc34" compoundref="da/d37/filelike_2abstract_8py" startline="111" endline="115">openage.util.filelike.abstract.FileLikeObject.__exit__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1af0f454daf7adab7c0dbbe38f3ec8dedb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.filelike.abstract.FileLikeObject.flush</definition>
+        <argsstring>(self)</argsstring>
+        <name>flush</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" line="95" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" bodystart="95" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a402459217e8204b8242829b019ad85a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.filelike.abstract.FileLikeObject.get_size</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_size</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" line="105" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" bodystart="105" bodyend="106"/>
+        <referencedby refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a248471b44bfea2faad6d97d9dd07eb00" compoundref="da/d37/filelike_2abstract_8py" startline="125" endline="144">openage.util.filelike.abstract.FileLikeObject.seek_helper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1aa2e2ad89db5258427a4818722cd03fb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.filelike.abstract.FileLikeObject.__enter__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__enter__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" line="108" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1ac1d75f370298fb63d2a57b60b334fc34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.filelike.abstract.FileLikeObject.__exit__</definition>
+        <argsstring>(self, exc_type, exc_val, exc_tb)</argsstring>
+        <name>__exit__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exc_type</type>
+          <defname>exc_type</defname>
+        </param>
+        <param>
+          <type>exc_val</type>
+          <defname>exc_val</defname>
+        </param>
+        <param>
+          <type>exc_tb</type>
+          <defname>exc_tb</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" line="111" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" bodystart="111" bodyend="115"/>
+        <references refid="d5/d1e/classopenage_1_1util_1_1filelike_1_1_native_1a46b22ff5117cbd09b2b1dc4fdf754019" compoundref="de/d03/filelike_2native_8cpp" startline="139" endline="141">openage::util::filelike::Native::close</references>
+        <references refid="d3/d60/classopenage_1_1codegen_1_1codegen_1_1_write_catcher_1a81a39d07ebb17dfc512f9c4f904fb692" compoundref="dd/d12/codegen_8py" startline="46" endline="48">openage.codegen.codegen.WriteCatcher.close</references>
+        <references refid="d1/d0b/classopenage_1_1util_1_1filelike_1_1_python_1a92a48e36d073209320e82a95c938b87d" compoundref="da/de4/filelike_2python_8cpp" startline="60" endline="62">openage::util::filelike::Python::close</references>
+        <references refid="db/da7/classopenage_1_1convert_1_1slp__converter__pool_1_1_s_l_p_converter_pool_1a157e465a75a721fa7b2f805ff57c4d5f" compoundref="dd/d1f/slp__converter__pool_8py" startline="78" endline="85">openage.convert.slp_converter_pool.SLPConverterPool.close</references>
+        <references refid="db/da6/classopenage_1_1util_1_1filelike_1_1_file_like_1a7ad98df2b552e013bce31d81a5e36d23">openage::util::filelike::FileLike::close</references>
+        <references refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a007c0eefc1bd3165112c787fb5e70f75" compoundref="da/d37/filelike_2abstract_8py" startline="88" endline="89">openage.util.filelike.abstract.FileLikeObject.close</references>
+        <references refid="df/d79/classopenage_1_1cabextract_1_1lzxdstream_1_1_l_z_x_d_stream_1a0a78e07f80c2a50875e3d689df488e34" compoundref="d2/d93/lzxdstream_8py" startline="96" endline="100">openage.cabextract.lzxdstream.LZXDStream.close</references>
+        <references refid="dc/d27/classopenage_1_1util_1_1_file_1a529bcc6a1c3b4b68db36e6524340cc11" compoundref="df/dd5/file_8cpp" startline="86" endline="88">openage::util::File::close</references>
+        <references refid="de/dbb/classopenage_1_1cabextract_1_1cab_1_1_c_a_b_folder_stream_1ae5a7fefaa419877c7b44e69e7451c6f8" compoundref="d9/d50/cab_8py" startline="548" endline="553">openage.cabextract.cab.CABFolderStream.close</references>
+      </memberdef>
+      <memberdef kind="function" id="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a248471b44bfea2faad6d97d9dd07eb00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def openage.util.filelike.abstract.FileLikeObject.seek_helper</definition>
+        <argsstring>(self, offset, whence)</argsstring>
+        <name>seek_helper</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>offset</type>
+          <defname>offset</defname>
+        </param>
+        <param>
+          <type>whence</type>
+          <defname>whence</defname>
+        </param>
+        <briefdescription>
+<para>Helper function for use by implementations of <ref refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1ad255ffd40c48e6610e464d5c3c43b2fb" kindref="member">seek()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Calculates the new cursor position relative to file start from offset, whence and self.tell().</para><para>If size is given, it works for whence=os.SEEK_END; otherwise, UnsupportedOperation is raised. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" line="125" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" bodystart="125" bodyend="144"/>
+        <references refid="d0/de5/classopenage_1_1renderer_1_1_window_1a1bf53e4db756c04ed522a975573b36a6" compoundref="d8/d8e/window_8cpp" startline="12" endline="14">openage::renderer::Window::get_size</references>
+        <references refid="d6/d9c/classopenage_1_1renderer_1_1opengl_1_1_gl_buffer_1a6b6867a9bcc96e5d36923ce98bd7a635" compoundref="dd/d85/buffer_8cpp" startline="34" endline="36">openage::renderer::opengl::GlBuffer::get_size</references>
+        <references refid="d5/d1e/classopenage_1_1util_1_1filelike_1_1_native_1ac4dd2bd1f87b66cc3de59abd1672d606" compoundref="de/d03/filelike_2native_8cpp" startline="149" endline="161">openage::util::filelike::Native::get_size</references>
+        <references refid="d1/d0b/classopenage_1_1util_1_1filelike_1_1_python_1aa2723a9836cd17708e0341691d5ca5dd" compoundref="da/de4/filelike_2python_8cpp" startline="70" endline="72">openage::util::filelike::Python::get_size</references>
+        <references refid="d0/dd8/classopenage_1_1renderer_1_1resources_1_1_texture2d_info_1a3bd462432c63a67c1b199c3f717bce50" compoundref="dd/dbf/texture__info_8cpp" startline="28" endline="30">openage::renderer::resources::Texture2dInfo::get_size</references>
+        <references refid="df/d79/classopenage_1_1cabextract_1_1lzxdstream_1_1_l_z_x_d_stream_1ab3cbec4d52b33409ea1569d92496b50b" compoundref="d2/d93/lzxdstream_8py" startline="81" endline="85">openage.cabextract.lzxdstream.LZXDStream.get_size</references>
+        <references refid="db/da6/classopenage_1_1util_1_1filelike_1_1_file_like_1a212820ce88cf538a4099f14f622e569b">openage::util::filelike::FileLike::get_size</references>
+        <references refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a402459217e8204b8242829b019ad85a7" compoundref="da/d37/filelike_2abstract_8py" startline="105" endline="106">openage.util.filelike.abstract.FileLikeObject.get_size</references>
+        <references refid="d9/dab/classopenage_1_1_terrain_chunk_1afd204c75d8f3ef28ad07f8ce1ba79894" compoundref="d8/d52/terrain__chunk_8cpp" startline="182" endline="184">openage::TerrainChunk::get_size</references>
+        <references refid="de/dbb/classopenage_1_1cabextract_1_1cab_1_1_c_a_b_folder_stream_1a22d3c8597d3b8ef507a98145bd623990" compoundref="d9/d50/cab_8py" startline="544" endline="547">openage.cabextract.cab.CABFolderStream.get_size</references>
+        <references refid="d5/d1e/classopenage_1_1util_1_1filelike_1_1_native_1a3cd357c014b8193cfdaaf48eec32ec1b" compoundref="de/d03/filelike_2native_8cpp" startline="134" endline="136">openage::util::filelike::Native::tell</references>
+        <references refid="d1/d0b/classopenage_1_1util_1_1filelike_1_1_python_1a116cc148489f31270f4f85c8d8ecf1f1" compoundref="da/de4/filelike_2python_8cpp" startline="55" endline="57">openage::util::filelike::Python::tell</references>
+        <references refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a0ad9d642b58e227e95d4c03b49b57d0b" compoundref="da/d37/filelike_2abstract_8py" startline="81" endline="82">openage.util.filelike.abstract.FileLikeObject.tell</references>
+        <references refid="db/da6/classopenage_1_1util_1_1filelike_1_1_file_like_1a30eeb9b647177a0aaf06ca241e347196">openage::util::filelike::FileLike::tell</references>
+        <references refid="df/d79/classopenage_1_1cabextract_1_1lzxdstream_1_1_l_z_x_d_stream_1ad60178631fe4c59543351deb02216676" compoundref="d2/d93/lzxdstream_8py" startline="93" endline="95">openage.cabextract.lzxdstream.LZXDStream.tell</references>
+        <references refid="dc/d27/classopenage_1_1util_1_1_file_1a27557ca3420295dbe0a09030ea19bd77" compoundref="df/dd5/file_8cpp" startline="81" endline="83">openage::util::File::tell</references>
+        <referencedby refid="d2/d24/classopenage_1_1util_1_1filelike_1_1readonly_1_1_pos_saving_read_only_file_like_object_1a2312775f74be5a112a1ab18f0f581173" compoundref="dd/da3/readonly_8py" startline="53" endline="55">openage.util.filelike.readonly.PosSavingReadOnlyFileLikeObject.seek</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract base class for file-like objects. </para>    </briefdescription>
+    <detaileddescription>
+<para>Note that checking isinstance(obj, FileLikeObject) is a bad idea, because that would exclude actual files, and <ref refid="d1/d0b/classopenage_1_1util_1_1filelike_1_1_python" kindref="compound">Python</ref>&apos;s built-in file-like objects.</para><para>Does not implement/force implementation of line-reading functionality. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5855">
+        <label>openage.util.filelike.readonly.PosSavingReadOnlyFileLikeObject</label>
+        <link refid="d2/d24/classopenage_1_1util_1_1filelike_1_1readonly_1_1_pos_saving_read_only_file_like_object"/>
+        <childnode refid="5853" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5857">
+        <label>openage.util.filelike.stream.StreamFragment</label>
+        <link refid="d9/de8/classopenage_1_1util_1_1filelike_1_1stream_1_1_stream_fragment"/>
+        <childnode refid="5855" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5859">
+        <label>openage.util.fslike.wrapper.GuardedFile</label>
+        <link refid="d6/dee/classopenage_1_1util_1_1fslike_1_1wrapper_1_1_guarded_file"/>
+        <childnode refid="5849" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5858">
+        <label>openage.util.filelike.stream.StreamSeekBuffer</label>
+        <link refid="d4/d99/classopenage_1_1util_1_1filelike_1_1stream_1_1_stream_seek_buffer"/>
+        <childnode refid="5855" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5856">
+        <label>openage.cabextract.cab.CABFolderStream</label>
+        <link refid="de/dbb/classopenage_1_1cabextract_1_1cab_1_1_c_a_b_folder_stream"/>
+        <childnode refid="5855" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5854">
+        <label>openage.cabextract.lzxdstream.LZXDStream</label>
+        <link refid="df/d79/classopenage_1_1cabextract_1_1lzxdstream_1_1_l_z_x_d_stream"/>
+        <childnode refid="5853" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5851">
+        <label>openage.util.filelike.fifo.FIFO</label>
+        <link refid="d5/d18/classopenage_1_1util_1_1filelike_1_1fifo_1_1_f_i_f_o"/>
+        <childnode refid="5849" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5850">
+        <label>ABC</label>
+      </node>
+      <node id="5852">
+        <label>openage.codegen.codegen.WriteCatcher</label>
+        <link refid="d3/d60/classopenage_1_1codegen_1_1codegen_1_1_write_catcher"/>
+        <childnode refid="5851" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5853">
+        <label>openage.util.filelike.readonly.ReadOnlyFileLikeObject</label>
+        <link refid="da/d66/classopenage_1_1util_1_1filelike_1_1readonly_1_1_read_only_file_like_object"/>
+        <childnode refid="5849" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5849">
+        <label>openage.util.filelike.abstract.FileLikeObject</label>
+        <link refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object"/>
+        <childnode refid="5850" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5861">
+        <label>ABC</label>
+      </node>
+      <node id="5860">
+        <label>openage.util.filelike.abstract.FileLikeObject</label>
+        <link refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object"/>
+        <childnode refid="5861" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" line="21" column="1" bodyfile="/mnt/c/Users/Jameson/Desktop/git/openage-new-doc-system/openage/util/filelike/abstract.py" bodystart="21" bodyend="144"/>
+    <listofallmembers>
+      <member refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1aa2e2ad89db5258427a4818722cd03fb4" prot="public" virt="non-virtual"><scope>openage::util::filelike::abstract::FileLikeObject</scope><name>__enter__</name></member>
+      <member refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1ac1d75f370298fb63d2a57b60b334fc34" prot="public" virt="non-virtual"><scope>openage::util::filelike::abstract::FileLikeObject</scope><name>__exit__</name></member>
+      <member refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1ad1e8617a5d0fedd8596e6bb8ad5a6bb2" prot="public" virt="non-virtual"><scope>openage::util::filelike::abstract::FileLikeObject</scope><name>__init__</name></member>
+      <member refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a007c0eefc1bd3165112c787fb5e70f75" prot="public" virt="non-virtual"><scope>openage::util::filelike::abstract::FileLikeObject</scope><name>close</name></member>
+      <member refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a9c0ceaeccc3aa95e32f6c3a2e26685ae" prot="public" virt="non-virtual"><scope>openage::util::filelike::abstract::FileLikeObject</scope><name>closed</name></member>
+      <member refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1af0f454daf7adab7c0dbbe38f3ec8dedb" prot="public" virt="non-virtual"><scope>openage::util::filelike::abstract::FileLikeObject</scope><name>flush</name></member>
+      <member refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a402459217e8204b8242829b019ad85a7" prot="public" virt="non-virtual"><scope>openage::util::filelike::abstract::FileLikeObject</scope><name>get_size</name></member>
+      <member refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a74f8e05ed5480518188044084cc0e902" prot="public" virt="non-virtual"><scope>openage::util::filelike::abstract::FileLikeObject</scope><name>read</name></member>
+      <member refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a921de3bfb2d8bcaae526bd93347d4764" prot="public" virt="non-virtual"><scope>openage::util::filelike::abstract::FileLikeObject</scope><name>readable</name></member>
+      <member refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1ad255ffd40c48e6610e464d5c3c43b2fb" prot="public" virt="non-virtual"><scope>openage::util::filelike::abstract::FileLikeObject</scope><name>seek</name></member>
+      <member refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a248471b44bfea2faad6d97d9dd07eb00" prot="public" virt="non-virtual"><scope>openage::util::filelike::abstract::FileLikeObject</scope><name>seek_helper</name></member>
+      <member refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a72fc53b76ba8da3a41cd61647dbaae6e" prot="public" virt="non-virtual"><scope>openage::util::filelike::abstract::FileLikeObject</scope><name>seekable</name></member>
+      <member refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a0ad9d642b58e227e95d4c03b49b57d0b" prot="public" virt="non-virtual"><scope>openage::util::filelike::abstract::FileLikeObject</scope><name>tell</name></member>
+      <member refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a08761f78387658db85dc2f1137cb3db6" prot="public" virt="non-virtual"><scope>openage::util::filelike::abstract::FileLikeObject</scope><name>writable</name></member>
+      <member refid="dd/df9/classopenage_1_1util_1_1filelike_1_1abstract_1_1_file_like_object_1a118b6ae6f4476f578a6cee666adc02cb" prot="public" virt="non-virtual"><scope>openage::util::filelike::abstract::FileLikeObject</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
