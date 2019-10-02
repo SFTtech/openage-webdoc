@@ -1,10 +1,10 @@
-## engine.resistance
+# engine.resistance
 
 Reference documentation of the `engine.resistance` module of the openage modding API.
 
-### resistance.Resistance
+## resistance.Resistance
 
-``` python
+```python
 Resistance(Entity):
 ```
 
@@ -15,17 +15,17 @@ Standard behavior without specializations:
 * Effects are **only applied** if the resistor has a **matching** `Resistance` object. Matching can be further defined depending on the concrete effect.
 * Resisting **costs no attribute points**.
 
-### resistance.continuous.ContinuousResistance
+## resistance.continuous.ContinuousResistance
 
-``` python
+```python
 ContinuousResistance(Resistance):
 ```
 
 Generalization object for resistances to continuous effects.
 
-### resistance.continuous.flat_attribute_change.FlatAttributeChange
+## resistance.continuous.flat_attribute_change.FlatAttributeChange
 
-``` python
+```python
 FlatAttributeChange(ContinuousResistance):
     type       : AttributeChangeType
     block_rate : set(AttributeRate)
@@ -47,26 +47,26 @@ applied\_rate = change\_rate - block\_rate
 
 The applied rate is further bound by the interval defined by `min_change_rate` and `max_change_rate` in the effect, if these members are set.
 
-### resistance.continuous.flat_attribute_change.type.FlatAttributeChangeDecrease
+## resistance.continuous.flat_attribute_change.type.FlatAttributeChangeDecrease
 
-``` python
+```python
 FlatAttributeChangeDecrease(FlatAttributeChange):
 ```
 
 Specialization of the continuous `FlatAttributeChange` resistance that blocks the effector's attribute decrease rate.
 
 
-### resistance.continuous.flat_attribute_change.type.FlatAttributeChangeIncrease
+## resistance.continuous.flat_attribute_change.type.FlatAttributeChangeIncrease
 
-``` python
+```python
 FlatAttributeChangeIncrease(FlatAttributeChange):
 ```
 
 Specialization of the continuous `FlatAttributeChange` resistance that blocks the effector's attribute increase rate.
 
-### resistance.continuous.type.Lure
+## resistance.continuous.type.Lure
 
-``` python
+```python
 Lure(ContinuousResistance):
     type : LureType
 ```
@@ -76,9 +76,9 @@ Resistance to the `Lure` effect.
 **type**
 Effects of type `Effect.ContinuousEffect.Lure` are matched to this resistance if they store the same `LureType` object in their `type` member. Otherwise, the effect will not be applied.
 
-### resistance.continuous.time_relative_attribute_change.TimeRelativeAttributeChange
+## resistance.continuous.time_relative_attribute_change.TimeRelativeAttributeChange
 
-``` python
+```python
 TimeRelativeAttributeChange(ContinuousResistance):
     type : AttributeChangeType
 ```
@@ -90,25 +90,25 @@ Note that you cannot use this resistance object directly and have to choose one 
 **type**
 Effects of type `Effect.ContinuousEffect.TimeRelativeAttributeChange` are matched to this resistance if they store the same `AttributeChangeType` object in their `type` member. Otherwise, the effect will not be applied.
 
-### resistance.continuous.time_relative_attribute_change.type.TimeRelativeAttributeDecrease
+## resistance.continuous.time_relative_attribute_change.type.TimeRelativeAttributeDecrease
 
-``` python
+```python
 TimeRelativeAttributeDecrease(TimeRelativeAttributeChange):
 ```
 
 Specialization of the continuous `TimeRelativeAttributeChange` resistance that decreases the resistor's current attribute value in a fixed amount of time relative to their attribute's `max_value`.
 
-### resistance.continuous.time_relative_attribute_change.type.TimeRelativeAttributeIncrease
+## resistance.continuous.time_relative_attribute_change.type.TimeRelativeAttributeIncrease
 
-``` python
+```python
 TimeRelativeAttributeIncrease(TimeRelativeAttributeChange):
 ```
 
 Specialization of the continuous `TimeRelativeAttributeChange` resistance that increases the resistor's current attribute value in a fixed amount of time relative to their attribute's `max_value`.
 
-### resistance.continuous.time_relative_progress.TimeRelativeProgress
+## resistance.continuous.time_relative_progress.TimeRelativeProgress
 
-``` python
+```python
 TimeRelativeProgress(ContinuousResistance):
     type : ProgressType
 ```
@@ -120,33 +120,33 @@ Note that you cannot use this resistance object directly and have to choose one 
 **type**
 Effects of type `Effect.ContinuousEffect.TimeRelativeProgress` are matched to this resistance if they store the same `ProgressType` object in their `type` member. Otherwise, the effect will not be applied.
 
-### resistance.continuous.time_relative_progress.type.TimeRelativeProgressDecrease
+## resistance.continuous.time_relative_progress.type.TimeRelativeProgressDecrease
 
-``` python
+```python
 TimeRelativeProgressDecrease(TimeRelativeProgress):
 ```
 
 Specialization of the continuous `TimeRelativeProgress` resistance that decreases the resistor's progress amount in a fixed amount of time relative to 100%.
 
-### resistance.continuous.time_relative_progress.type.TimeRelativeProgressIncrease
+## resistance.continuous.time_relative_progress.type.TimeRelativeProgressIncrease
 
-``` python
+```python
 TimeRelativeProgressIncrease(TimeRelativeProgress):
 ```
 
 Specialization of the continuous `TimeRelativeProgress` resistance that increases the resistor's progress amount in a fixed amount of time relative to 100%.
 
-### resistance.discrete.DiscreteResistance
+## resistance.discrete.DiscreteResistance
 
-``` python
+```python
 DiscreteResistance(Resistance):
 ```
 
 Generalization object for resistances to discrete effects.
 
-### resistance.discrete.convert.Convert
+## resistance.discrete.convert.Convert
 
-``` python
+```python
 Convert(DiscreteResistance):
     type          : ConvertType
     chance_resist : float
@@ -166,9 +166,9 @@ applied\_chance = chance\_success - chance\_resist
 
 Any value below *0.0* is an automatic fail, while any value above *1.0* is an automatic success. The applied chance is further bound by the interval defined by `min_chance_success` and `max_chance_success` in the effect, if these members are set.
 
-### resistance.discrete.convert.type.AoE2Convert
+## resistance.discrete.convert.type.AoE2Convert
 
-``` python
+```python
 AoE2Convert(Convert):
     guaranteed_resist_rounds       : int
     protected_rounds               : int
@@ -188,9 +188,9 @@ Time it takes until one protected round is added back to the number of protected
 
 When the effector stops applying the effect, the number of protected rounds is increased until they reach their maximum value again. Running out of the range of the effector does not count as stopping the effect application.
 
-### resistance.discrete.flat_attribute_change.FlatAttributeChange
+## resistance.discrete.flat_attribute_change.FlatAttributeChange
 
-``` python
+```python
 FlatAttributeChange(DiscreteResistance):
     type        : AttributeChangeType
     block_value : set(AttributeAmount)
@@ -212,26 +212,26 @@ applied\_value = change\_value - block\_value
 
 The applied value is further bound by the interval defined by `min_change_value` and `max_change_value` in the effect, if these members are set.
 
-### resistance.discrete.flat_attribute_change.type.FlatAttributeChangeDecrease
+## resistance.discrete.flat_attribute_change.type.FlatAttributeChangeDecrease
 
-``` python
+```python
 FlatAttributeChangeDecrease(FlatAttributeChange):
 ```
 
 Specialization of the discrete `FlatAttributeChange` resistance that blocks the effector's attribute decrease value.
 
 
-### resistance.discrete.flat_attribute_change.type.FlatAttributeChangeIncrease
+## resistance.discrete.flat_attribute_change.type.FlatAttributeChangeIncrease
 
-``` python
+```python
 FlatAttributeChangeIncrease(FlatAttributeChange):
 ```
 
 Specialization of the discrete `FlatAttributeChange` resistance that blocks the effector's attribute increase value.
 
-### resistance.discrete.type.MakeHarvestable
+## resistance.discrete.type.MakeHarvestable
 
-``` python
+```python
 MakeHarvestable(DiscreteResistance):
     resource_spot      : ResourceSpot
     harvest_conditions : set(HarvestableRequirement)
@@ -245,9 +245,9 @@ Resource spot that should be made harvestable. Effects of type `Effect.DiscreteE
 **harvest_conditions**
 The requirements under which the resource spots will be made harvestable.
 
-### resistance.discrete.type.SendToContainer
+## resistance.discrete.type.SendToContainer
 
-``` python
+```python
 SendToContainer(DiscreteResistance):
     type              : SendToContainerType
     search_range      : float
@@ -265,9 +265,9 @@ The range in which the resistor will search for a container.
 **ignore_containers**
 Excludes the containers from the set when searching for a target container.
 
-### resistance.specialization.CostResistance
+## resistance.specialization.CostResistance
 
-``` python
+```python
 AttributeCostResistance(Resistance):
     cost : Cost
 ```

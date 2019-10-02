@@ -1,10 +1,10 @@
-## engine.modifier
+# engine.modifier
 
 Reference documentation of the `engine.modifier` module of the openage modding API.
 
-### modifier.Modifier
+## modifier.Modifier
 
-``` python
+```python
 Modifier(Entity):
 ```
 
@@ -21,9 +21,9 @@ Specializations:
 
 * `ScopeModifier`: Instead of using standard behavior, the modifier is applied to a defined set of game entities.
 
-### modifier.specialization.ScopeModifier
+## modifier.specialization.ScopeModifier
 
-``` python
+```python
 ScopeModifier(Modifier):
     diplomatic_stances : set(DiplomaticStance)
     scope              : ModifierScope
@@ -37,9 +37,9 @@ Applies the modifiers to players that the owner of the game entity has these dip
 **scope**
 Defines the game entities affected by this modifier.
 
-### modifier.multiplier.MultiplierModifier
+## modifier.multiplier.MultiplierModifier
 
-``` python
+```python
 MultiplierModifier(Modifier):
     multiplier : float
 ```
@@ -49,25 +49,25 @@ A subclass of modifiers that act as multipliers for specific values of abilities
 **multiplier**
 Multiplier for a value. Which value is multiplied depends on the specific type of `MultiplierModifier`.
 
-### modifier.multiplier.effect.EffectMultiplierModifier
+## modifier.multiplier.effect.EffectMultiplierModifier
 
-``` python
+```python
 EffectMultiplierModifier(MultiplierModifier):
 ```
 
 A subclass of `MultiplierModifier` that handles multipliers for `Effect` objects.
 
-### modifier.multiplier.effect.flat_attribute_change.FlatAttributeChangeModifier
+## modifier.multiplier.effect.flat_attribute_change.FlatAttributeChangeModifier
 
-``` python
+```python
 FlatAttributeChangeModifier(EffectMultiplierModifier):
 ```
 
 A subclass of `EffectMultiplierModifier` that handles multipliers for `FlatAtttributeChange` effects.
 
-### modifier.multiplier.effect.flat_attribute_change.type.ElevationDifferenceHigh
+## modifier.multiplier.effect.flat_attribute_change.type.ElevationDifferenceHigh
 
-``` python
+```python
 ElevationDifferenceHigh(FlatAtttributeChangeModifier):
     elevation_difference : float
 ```
@@ -77,9 +77,9 @@ Applies a multiplier on the cumulated *change value* of `FlatAtttributeChange` e
 **elevation_difference**
 The minimum elevation difference between effector and resistor.
 
-### modifier.multiplier.effect.flat_attribute_change.type.Flyover
+## modifier.multiplier.effect.flat_attribute_change.type.Flyover
 
-``` python
+```python
 Flyover(FlatAtttributeChangeModifier):
     flyover_types             : set(GameEntityType)
     blacklisted_game_entities : set(GameEntity)
@@ -93,9 +93,9 @@ Whitelist of game entity types that must be under the patch of the projectile. T
 **blacklisted_game_entities**
 Blacklist for specific game entities that would be covered by `flyover_types`, but should be excplicitly excluded.
 
-### modifier.multiplier.effect.flat_attribute_change.type.Terrain
+## modifier.multiplier.effect.flat_attribute_change.type.Terrain
 
-``` python
+```python
 Terrain(FlatAtttributeChangeModifier):
     terrain : Terrain
 ```
@@ -105,49 +105,49 @@ Applies a multiplier on the cumulated *applied change value* of `FlatAtttributeC
 **terrain**
 The terrain the targeted game entity must stand on.
 
-### modifier.multiplier.effect.flat_attribute_change.type.Unconditional
+## modifier.multiplier.effect.flat_attribute_change.type.Unconditional
 
-``` python
+```python
 Unconditional(FlatAtttributeChangeModifier):
 ```
 
 Applies a multiplier on the cumulated *applied change value* of `FlatAtttributeChange` effects without any conditions.
 
-### modifier.multiplier.effect.type.TimeRelativeAttributeChangeTime
+## modifier.multiplier.effect.type.TimeRelativeAttributeChangeTime
 
-``` python
+```python
 TimeRelativeAttributeChangeTime(EffectMultiplierModifier):
 ```
 
 Applies a multiplier on the `total_change_time` member of `TimeRelativeAttributeChange` effects.
 
-### modifier.multiplier.effect.type.TimeRelativeProgressTime
+## modifier.multiplier.effect.type.TimeRelativeProgressTime
 
-``` python
+```python
 TimeRelativeProgressTime(EffectMultiplierModifier):
 ```
 
 Applies a multiplier on the `total_change_time` member of `TimeRelativeProgress` effects.
 
-### modifier.multiplier.resistance.ResistanceMultiplierModifier
+## modifier.multiplier.resistance.ResistanceMultiplierModifier
 
-``` python
+```python
 ResistanceMultiplierModifier(MultiplierModifier):
 ```
 
 A subclass of `MultiplierModifier` that handles multipliers for `Resistance` resistances.
 
-### modifier.multiplier.resistance.flat_attribute_change.FlatAttributeChangeModifier
+## modifier.multiplier.resistance.flat_attribute_change.FlatAttributeChangeModifier
 
-``` python
+```python
 FlatAttributeChangeModifier(ResistanceMultiplierModifier):
 ```
 
 A subclass of `ResistanceMultiplierModifier` that handles multipliers for `FlatAtttributeChange` resistances.
 
-### modifier.multiplier.resistance.flat_attribute_change.type.ElevationDifferenceLow
+## modifier.multiplier.resistance.flat_attribute_change.type.ElevationDifferenceLow
 
-``` python
+```python
 ElevationDifferenceLow(FlatAtttributeChangeModifier):
     elevation_difference : float
 ```
@@ -157,17 +157,17 @@ Applies a multiplier on the cumulated *change value* of `FlatAtttributeChange` r
 **elevation_difference**
 The minimum elevation difference between effector and resistor.
 
-### modifier.multiplier.resistance.flat_attribute_change.type.Stray
+## modifier.multiplier.resistance.flat_attribute_change.type.Stray
 
-``` python
+```python
 Stray(FlatAtttributeChangeModifier):
 ```
 
 Applies a multiplier on the cumulated *applied change value* of `FlatAtttributeChange` resistances for a projectile when the resistor was not the intended target.
 
-### modifier.multiplier.resistance.flat_attribute_change.type.Terrain
+## modifier.multiplier.resistance.flat_attribute_change.type.Terrain
 
-``` python
+```python
 Terrain(FlatAtttributeChangeModifier):
     terrain : Terrain
 ```
@@ -177,17 +177,17 @@ Applies a multiplier on the cumulated *applied change value* of `FlatAtttributeC
 **terrain**
 The terrain the game entity must stand on.
 
-### modifier.multiplier.resistance.flat_attribute_change.type.Unconditional
+## modifier.multiplier.resistance.flat_attribute_change.type.Unconditional
 
-``` python
+```python
 Unconditional(FlatAtttributeChangeModifier):
 ```
 
 Applies a multiplier on the cumulated *applied change value* of `FlatAtttributeChange` resistances without any conditions.
 
-### modifier.multiplier.type.AttributeSettingsValue
+## modifier.multiplier.type.AttributeSettingsValue
 
-``` python
+```python
 AttributeSettingsValue(MultiplierModifier):
     attribute : Attribute
 ```
@@ -197,9 +197,9 @@ Applies a multiplier on the `starting_value` **and** `max_value` members of an `
 **attribute**
 `AttributeSettings` objects with this attribute are considered.
 
-### modifier.multiplier.type.ContainerCapacity
+## modifier.multiplier.type.ContainerCapacity
 
-``` python
+```python
 ContainerCapacity(MultiplierModifier):
     container : Container
 ```
@@ -209,9 +209,9 @@ Applies a multiplier to the `size` member of a `Container` object in a `Storage`
 **container**
 The container which is considered.
 
-### modifier.multiplier.type.CreationAttributeCost
+## modifier.multiplier.type.CreationAttributeCost
 
-``` python
+```python
 CreationAttributeCost(MultiplierModifier):
     attributes : set(Attribute)
     creatables : set(CreatableGameEntity)
@@ -225,9 +225,9 @@ Limits the modifier to `AttributeAmount` objects referencing attributes from thi
 **creatables**
 These `CreatableGameEntity` objects are considered.
 
-### modifier.multiplier.type.CreationResourceCost
+## modifier.multiplier.type.CreationResourceCost
 
-``` python
+```python
 CreationResourceCost(MultiplierModifier):
     resources  : set(Resource)
     creatables : set(CreatableGameEntity)
@@ -241,9 +241,9 @@ Limits the modifier to `ResourceAmount` objects referencing resources from this 
 **creatables**
 These `CreatableGameEntity` objects are considered.
 
-### modifier.multiplier.type.CreationTime
+## modifier.multiplier.type.CreationTime
 
-``` python
+```python
 CreationTime(MultiplierModifier):
     creatables : set(CreatableGameEntity)
 ```
@@ -253,9 +253,9 @@ Applies a multiplier on the `creation_time` member of a `CreatableGameEntity` ob
 **creatables**
 These `CreatableGameEntity` objects are considered.
 
-### modifier.multiplier.type.GatheringEfficiency
+## modifier.multiplier.type.GatheringEfficiency
 
-``` python
+```python
 GatheringEfficiency(MultiplierModifier):
     resource_spot : ResourceSpot
 ```
@@ -267,9 +267,9 @@ Applies a multiplier to the amount of resources that are removed from a specific
 **resource_spot**
 The resource spot for which the efficiency multiplier is applied.
 
-### modifier.multiplier.type.GatheringRate
+## modifier.multiplier.type.GatheringRate
 
-``` python
+```python
 GatheringRate(MultiplierModifier):
     resource_spot : ResourceSpot
 ```
@@ -279,25 +279,25 @@ Applies a multiplier to the amount of resources that are gathered from a specifi
 **resource_spot**
 The resource spot for which the rate multiplier is applied.
 
-### modifier.multiplier.type.MoveSpeed
+## modifier.multiplier.type.MoveSpeed
 
-``` python
+```python
 MoveSpeed(MultiplierModifier):
 ```
 
 Applies a multiplier on the `move_speed` member of the `Move` ability.
 
-### modifier.multiplier.type.ReloadTime
+## modifier.multiplier.type.ReloadTime
 
-``` python
+```python
 ReloadTime(MultiplierModifier):
 ```
 
 Applies a multiplier on the `reload_time` member of `ApplyDiscreteEffect` and `ShootProjectile` abilities.
 
-### modifier.multiplier.type.ResearchAttributeCost
+## modifier.multiplier.type.ResearchAttributeCost
 
-``` python
+```python
 ResearchAttributeCost(MultiplierModifier):
     attributes    : set(Attribute)
     researchables : set(CreatableGameEntity)
@@ -311,9 +311,9 @@ Limits the modifier to `AttributeAmount` objects referencing attributes from thi
 **researchables**
 These `ResearchableTech` objects are considered.
 
-### modifier.multiplier.type.ResearchResourceCost
+## modifier.multiplier.type.ResearchResourceCost
 
-``` python
+```python
 ResearchResourceCost(MultiplierModifier):
     resources     : set(Resource)
     researchables : set(ResearchableTech)
@@ -327,9 +327,9 @@ Limits the modifier to `ResourceAmount` objects referencing resources from this 
 **researchables**
 These `ResearchableTech` objects are considered.
 
-### modifier.multiplier.type.ResearchTime
+## modifier.multiplier.type.ResearchTime
 
-``` python
+```python
 ResearchTime(MultiplierModifier):
     researchables : set(ResearchableTech)
 ```
@@ -339,9 +339,9 @@ Applies a multiplier on the `research_time` member of a `ResearchableTech` objec
 **researchables**
 These `ResearchableTech` objects are considered.
 
-### modifier.multiplier.type.StorageElementCapacity
+## modifier.multiplier.type.StorageElementCapacity
 
-``` python
+```python
 StorageElementCapacity(MultiplierModifier):
     storage_element : StorageElement
 ```
@@ -351,9 +351,9 @@ Applies a multiplier to the `elements_per_slot` member of a `StorageElement` obj
 **storage_element**
 The storage element which is considered.
 
-### modifier.relative_projectile_amount.AoE2ProjectileAmount
+## modifier.relative_projectile_amount.AoE2ProjectileAmount
 
-``` python
+```python
 AoE2ProjectileAmount(Modifier):
     provider_abilities : set(ApplyDiscreteEffect)
     receiver_abilities : set(ApplyDiscreteEffect)
@@ -375,17 +375,17 @@ The abilities of the *receiver*, i.e. the game entity that has its projectile am
 **change_types**
 The change types of the abilities that are considered as `AttributeChangeType` objects.
 
-### modifier.relative_projectile_amount.type.
+## modifier.relative_projectile_amount.type.
 
-``` python
+```python
 RelativeProjectileAmountModifier(Modifier):
 ```
 
 Generalization object for modifiers that change the projectile amount by comparing two sets of values.
 
-### modifier.type.AbsoluteProjectileAmount
+## modifier.type.AbsoluteProjectileAmount
 
-``` python
+```python
 AbsoluteProjectileAmount(Modifier):
     amount : float
 ```
@@ -395,17 +395,17 @@ Increases the projectile amount of `ShootProjectile` abilities by a fixed value.
 **amount**
 The amount of projectiles added.
 
-### modifier.type.AlwaysHerd
+## modifier.type.AlwaysHerd
 
-``` python
+```python
 AlwaysHerd(Modifier):
 ```
 
 The game entity will always herd a herdable game entity in in range, even if other game entities with `Herd` abilities are closer. If two game entities with this modifier are in range, the closest one of them will herd the herdable.
 
-### modifier.type.ContinuousResource
+## modifier.type.ContinuousResource
 
-``` python
+```python
 ContinuousResource(Modifier):
     rates : set(ResourceRate)
 ```
@@ -415,9 +415,9 @@ Provides a continuous trickle of resources while the modifier is enabled.
 **rates**
 The resource rates as `ResourceRate` objects.
 
-### modifier.type.DepositResourcesOnProgress
+## modifier.type.DepositResourcesOnProgress
 
-``` python
+```python
 DepositResourcesOnProgress(Modifier):
     progress_status      : ProgressStatus
     resources            : set(Resource)
@@ -439,9 +439,9 @@ Whitelist of game entity types that can trigger the deposit action when the prog
 **blacklisted_game_entities**
 Blacklist for specific game entities that would be covered by `affected_types`, but should be excplicitly excluded.
 
-### modifier.type.DiplomaticLineOfSight
+## modifier.type.DiplomaticLineOfSight
 
-``` python
+```python
 DiplomaticLineOfSight(Modifier):
     diplomatic_stance : DiplomaticStance
 ```
@@ -451,9 +451,9 @@ Activates line of sight for game entities of players that the owner of the game 
 **diplomatic_stance**
 Stance towards other players which should be visible.
 
-### modifier.type.InContainerContinuousEffect
+## modifier.type.InContainerContinuousEffect
 
-``` python
+```python
 InContainerContinuousEffect(Modifier):
     containers : set(Container)
     ability    : ApplyContinuousEffect
@@ -467,9 +467,9 @@ The containers where the continuous effects are applied.
 **ability**
 Ability that is used to apply the effects. It does not have to be an ability of the game entity. Other modifiers of the game entity apply while using the ability.
 
-### modifier.type.InContainerDiscreteEffect
+## modifier.type.InContainerDiscreteEffect
 
-``` python
+```python
 InContainerDiscreteEffect(Modifier):
     containers : set(Container)
     ability    : ApplyDiscreteEffect
@@ -483,9 +483,9 @@ The containers where the discrete effects are applied.
 **ability**
 Ability that is used to apply the effects. It does not have to be an ability of the game entity. Other modifiers of the game entity apply while using the ability.
 
-### modifier.type.InstantTechResearch
+## modifier.type.InstantTechResearch
 
-``` python
+```python
 InstantTechResearch(Modifier):
     tech         : Tech
     requirements : set(AvailabilityRequirement)
@@ -499,9 +499,9 @@ The technology that is researched.
 **requirements**
 Requirements that need to be fulfilled to trigger the research.
 
-### modifier.type.RefundOnDeath
+## modifier.type.RefundOnDeath
 
-``` python
+```python
 RefundOnDeath(Modifier):
     refund_amount : set(ResourceAmount)
 ```
@@ -511,9 +511,9 @@ Returns a fixed amount of resources back to the player after the game entity has
 **refund_amount**
 Amount of resources that are added to the player's resource pool.
 
-### modifier.type.Reveal
+## modifier.type.Reveal
 
-``` python
+```python
 Reveal(Modifier):
     line_of_sight        : float
     affected_types       : set(GameEntityType)
