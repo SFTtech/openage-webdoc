@@ -85,8 +85,8 @@ _Note:_ If you want to download and build Nyan automatically add `-DDOWNLOAD_NYA
  - Install [NSIS](https://sourceforge.net/projects/nsis/files/latest/download).
  - Depending on the way you installed Qt (vcpkg/pre-built) you need to edit the following line in `<openage-repo-dir>\buildsystem\templates\ForwardVariables.cmake.in`:
 ```
-	# Use windeploy for packaging qt-prebuilt, standard value '1' for windeploy, '0' for vcpkg
-	set(use_windeployqt 1)
+# Use windeploy for packaging qt-prebuilt, standard value '1' for windeploy, '0' for vcpkg
+set(use_windeployqt 1)
 ```
 
  Open a command prompt at `<openage directory>\build` (or use the one from the building step):
@@ -97,4 +97,4 @@ _Note:_ If you want to download and build Nyan automatically add `-DDOWNLOAD_NYA
 
  _Hint:_ Append `-V` to the `cpack` command for verbose output (it takes time to package all dependencies).
 
- _Hint:_ <arch> you can set with the environment variable `TARGET_PLATFORM` (e.g. amd64, x86).
+ _Hint:_ `<arch>` you can set with the environment variable `TARGET_PLATFORM` (e.g. amd64, x86).

@@ -7,23 +7,22 @@ openage uses the original game assets (such as sounds and graphics), but (for ob
 To play, you require *an original AoE II : TC installation or [AoE II: HD](http://store.steampowered.com/app/221380/)*
 (installation via [Wine](https://www.winehq.org/) or [Steam-Linux](doc/media_convert.md#how-to-use-the-original-game-assets)).
 
-[![github stars](https://img.shields.io/github/stars/SFTtech/openage.svg)](https://github.com/SFTtech/openage/stargazers)
 [![#sfttech on Freenode](https://img.shields.io/badge/chat-on%20freenode-brightgreen)](https://webchat.freenode.net/?channels=sfttech)
 [![#sfttech on matrix.org](https://img.shields.io/badge/matrix-%23sfttech-blue.svg)](https://riot.im/app/#/room/#sfttech:matrix.org)
 [![quality badge](https://img.shields.io/badge/cuteness-overload-orange.svg)](http://www.emergencykitten.com/)
 
 
-
 Contact
 -------
-Contact  | Where?
----------|-------
-Issue Tracker | [SFTtech/openage](https://github.com/SFTtech/openage/issues)
-Development Blog | [blog.openage.sft.mx](https://blog.openage.sft.mx)
-Forum | [<img src="https://www.redditstatic.com/about/assets/reddit-logo.png" alt="reddit" height="22"/> /r/openage](https://www.reddit.com/r/openage/)
-Matrix Chat | [`#sfttech:matrix.org`](https://riot.im/app/#/room/#sfttech:matrix.org)
-IRC Chat | [`irc.freenode.net #sfttech`](https://webchat.freenode.net/?channels=sfttech)
-Money Sink | [![money sink](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/SFTtech)
+
+Contact          | Where?
+-----------------|-------
+Issue Tracker    | [`SFTtech/openage`](https://github.com/SFTtech/openage/issues)
+Development Blog | [`blog.openage.sft.mx`](https://blog.openage.sft.mx)
+Forum            | [`/r/openage`](https://www.reddit.com/r/openage/)
+Matrix Chat      | [`#sfttech:matrix.org`](https://riot.im/app/#/room/#sfttech:matrix.org)
+IRC Chat         | [`irc.freenode.net #sfttech`](https://webchat.freenode.net/?channels=sfttech)
+Money Sink       | [![money sink](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/SFTtech)
 
 
 Technical foundation
@@ -119,7 +118,7 @@ or the [bug tracker](https://github.com/SFTtech/openage/issues).
 
 
 Contributing
-============
+------------
 
 * Being typical computer science students, we hate people.
 * Please don't contact us.
