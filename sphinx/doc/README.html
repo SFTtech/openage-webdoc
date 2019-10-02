@@ -736,6 +736,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#static-docs">Static Docs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#dynamic-docs">Dynamic Docs</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#doc-generation">Doc Generation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#webdoc-generation">Webdoc Generation</a></li>
 </ul>
 </li>
 </ul>
@@ -881,6 +882,32 @@ the above statements might be out-right fabrications.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>make -C bin/doc/latex/ pdf
 $PDFVIEWER bin/doc/latex/refman.pdf
 </pre></div>
+</div>
+</div>
+<div class="section" id="webdoc-generation">
+<h3>Webdoc Generation<a class="headerlink" href="#webdoc-generation" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="install-dependencies">
+<h4>Install Dependencies<a class="headerlink" href="#install-dependencies" title="Permalink to this headline">¶</a></h4>
+<p>You will need nearly all the basic dependencies as if you would build openage itself. Namely <em>cmake, make, python3, nyan, etc.</em> Make sure you have these.</p>
+<p>Furthermore you’ll need the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">doxygen</span> <span class="n">graphwiz</span>
+
+<span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pip</span>
+
+<span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">sphinx</span> <span class="n">doxypypy</span> <span class="n">recommonmark</span> <span class="n">autodoc</span> <span class="n">breathe</span> <span class="n">graphviz</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">markdown</span><span class="o">-</span><span class="n">tables</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">rtd</span><span class="o">-</span><span class="n">theme</span> <span class="n">sphinxcontrib</span><span class="o">-</span><span class="n">moderncmakedomain</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="building-documentation">
+<h4>Building Documentation<a class="headerlink" href="#building-documentation" title="Permalink to this headline">¶</a></h4>
+<p>Dynamic documentation for webhosting-purposes can be auto-generated from source documentation using <strong>doxygen</strong> in the first stage with <strong>sphinx</strong> and <strong>breathe</strong> in the second stage.</p>
+<p>after calling <code class="docutils literal notranslate"><span class="pre">./configure</span> <span class="pre">--build-webdoc</span></code>, you can invoke the complete building process with</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">webdoc</span>
+</pre></div>
+</div>
+<p>Doxygen is taking care of the documentation of the C++ parts. Although Doxypypy will take care of the Python parts and the rearrangement of the Markdown doc parts, we use Sphinx in combination with Breathe to generate a clean documentation suitable to our needs and easily hostable in the web. After that <code class="docutils literal notranslate"><span class="pre">make</span></code>-command you will find the <code class="docutils literal notranslate"><span class="pre">openage-docs</span></code> folder one directory level over your cloned repository.</p>
+<p><strong>HINT:</strong> If you need to regenerate just the second stage with Sphinx you can call <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">webdoc-sphinx</span></code>.</p>
 </div>
 </div>
 </div>
