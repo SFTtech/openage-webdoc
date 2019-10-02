@@ -1,10 +1,10 @@
-# engine.effect
+## engine.effect
 
 Reference documentation of the `engine.effect` module of the openage modding API.
 
-## effect.Effect
+### effect.Effect
 
-```python
+``` python
 Effect(Entity):
 ```
 
@@ -23,18 +23,18 @@ Specializations:
 * `CostEffect`: Makes effects cost attribute points or resources.
 * `DiplomaticEffect`: Effects only apply to specified diplomatic stances.
 
-## effect.continuous.ContinuousEffect
+### effect.continuous.ContinuousEffect
 
-```python
+``` python
 ContinuousEffect(Effect):
 ```
 
 Generalization object for effects that are applied at a per-second rate.
 
 
-## effect.continuous.flat_attribute_change.FlatAttributeChange
+### effect.continuous.flat_attribute_change.FlatAttributeChange
 
-```python
+``` python
 FlatAttributeChange(ContinuousEffect):
     type              : AttributeChangeType
     min_change_rate   : optional(AttributeRate)
@@ -68,26 +68,26 @@ The applied rate is further bound by the interval defined by `min_change_rate` a
 **ignore_protection**
 Ignores the `ProtectingAttribute`s in the set when changing the attributes of the target.
 
-## effect.continuous.flat_attribute_change.type.FlatAttributeChangeDecrease
+### effect.continuous.flat_attribute_change.type.FlatAttributeChangeDecrease
 
-```python
+``` python
 FlatAttributeChangeDecrease(FlatAttributeChange):
 ```
 
 Specialization of the continuous `FlatAttributeChange` effect that decreases the resistor's current attribute value at a per-second rate.
 
 
-## effect.continuous.flat_attribute_change.type.FlatAttributeChangeIncrease
+### effect.continuous.flat_attribute_change.type.FlatAttributeChangeIncrease
 
-```python
+``` python
 FlatAttributeChangeIncrease(FlatAttributeChange):
 ```
 
 Specialization of the continuous `FlatAttributeChange` effect that increases the resistor's current attribute value at a per-second rate.
 
-## effect.continuous.type.Lure
+### effect.continuous.type.Lure
 
-```python
+``` python
 Lure(ContinuousEffect):
     type                        : LureType
     destination                 : set(GameEntity)
@@ -105,9 +105,9 @@ The possible destinations the target can move to. Whichever game entity is close
 **min_range_to_destination**
 The minimum distance to the destination the target has to have before it will stop.
 
-## effect.continuous.time_relative_attribute_change.TimeRelativeAttributeChange
+### effect.continuous.time_relative_attribute_change.TimeRelativeAttributeChange
 
-```python
+``` python
 TimeRelativeAttributeChange(ContinuousEffect):
     type              : AttributeChangeType
     total_change_time : float
@@ -131,25 +131,25 @@ The total time needed to change the resistors attribute points from `max_value` 
 **ignore_protection**
 Ignores the `ProtectingAttribute`s in the set when changing the attributes of the target.
 
-## effect.continuous.time_relative_attribute_change.type.TimeRelativeAttributeDecrease
+### effect.continuous.time_relative_attribute_change.type.TimeRelativeAttributeDecrease
 
-```python
+``` python
 TimeRelativeAttributeDecrease(TimeRelativeAttributeChange):
 ```
 
 Specialization of the continuous `TimeRelativeAttributeChange` effect that decreases the resistor's current attribute value in a fixed amount of time relative to their attribute's `max_value`.
 
-## effect.continuous.time_relative_attribute_change.type.TimeRelativeAttributeIncrease
+### effect.continuous.time_relative_attribute_change.type.TimeRelativeAttributeIncrease
 
-```python
+``` python
 TimeRelativeAttributeIncrease(TimeRelativeAttributeChange):
 ```
 
 Specialization of the continuous `TimeRelativeAttributeChange` effect that increases the resistor's current attribute value in a fixed amount of time relative to their attribute's `max_value`.
 
-## effect.continuous.time_relative_progress.TimeRelativeProgress
+### effect.continuous.time_relative_progress.TimeRelativeProgress
 
-```python
+``` python
 TimeRelativeProgress(ContinuousEffect):
     type              : ProgressType
     total_change_time : float
@@ -169,33 +169,33 @@ The effect will be matched with a `Resistance.ContinuousResistance.TimeRelativeP
 **total_change_time**
 The total time needed to change the resistors attribute points from 100% to 0 (for `TimeRelativeProgressDecrease`) or from 0 to 100% (for `TimeRelativeProgressIncrease`).
 
-## effect.continuous.time_relative_progress.type.TimeRelativeProgressDecrease
+### effect.continuous.time_relative_progress.type.TimeRelativeProgressDecrease
 
-```python
+``` python
 TimeRelativeProgressDecrease(TimeRelativeProgress):
 ```
 
 Specialization of the continuous `TimeRelativeProgress` effect that decreases the resistor's progress amount in a fixed amount of time relative to 100%.
 
-## effect.continuous.time_relative_progress.type.TimeRelativeProgressIncrease
+### effect.continuous.time_relative_progress.type.TimeRelativeProgressIncrease
 
-```python
+``` python
 TimeRelativeProgressIncrease(TimeRelativeProgress):
 ```
 
 Specialization of the continuous `TimeRelativeProgress` effect that increases the resistor's progress amount in a fixed amount of time relative to 100%.
 ´
-## effect.discrete.DiscreteEffect
+### effect.discrete.DiscreteEffect
 
-```python
+``` python
 DiscreteEffect(Effect):
 ```
 
 Generalization object for effects that are applied immediately.
 
-## effect.discrete.convert.Convert
+### effect.discrete.convert.Convert
 
-```python
+``` python
 Convert(DiscreteEffect):
     type               : ConvertType
     min_chance_success : optional(float)
@@ -227,9 +227,9 @@ Any value below *0.0* is an automatic fail, while any value above *1.0* is an au
 **cost_fail**
 The amount of attribute points or resources removed from the effector if the conversion fails. Does not have to be set.
 
-## effect.discrete.convert.type.AoE2Convert
+### effect.discrete.convert.type.AoE2Convert
 
-```python
+``` python
 AoE2Convert(Convert):
     skip_guaranteed_rounds : int
     skip_protected_rounds  : int
@@ -245,9 +245,9 @@ Lowers the number of rounds that the resistor is guaranteed to resist every time
 **skip_protected_rounds**
 Lowers the number of rounds that are needed for the success chance to always be *1.0*.
 
-## effect.discrete.flat_attribute_change.FlatAttributeChange
+### effect.discrete.flat_attribute_change.FlatAttributeChange
 
-```python
+``` python
 FlatAttributeChange(DiscreteEffect):
     type              : AttributeChangeType
     min_change_rate   : optional(AttributeAmount)
@@ -281,26 +281,26 @@ The applied rate is further bound by the interval defined by `min_change_value` 
 **ignore_protection**
 Ignores the `ProtectingAttribute`s in the set when changing the attributes of the target.
 
-## effect.discrete.flat_attribute_change.type.FlatAttributeChangeDecrease
+### effect.discrete.flat_attribute_change.type.FlatAttributeChangeDecrease
 
-```python
+``` python
 FlatAttributeChangeDecrease(FlatAttributeChange):
 ```
 
 Specialization of the discrete `FlatAttributeChange` effect that decreases the resistor's current attribute value by a flat amount.
 
 
-## effect.discrete.flat_attribute_change.type.FlatAttributeChangeIncrease
+### effect.discrete.flat_attribute_change.type.FlatAttributeChangeIncrease
 
-```python
+``` python
 FlatAttributeChangeIncrease(FlatAttributeChange):
 ```
 
 Specialization of the discrete `FlatAttributeChange` effect that increases the resistor's current attribute value by a flat amount.
 
-## effect.discrete.type.MakeHarvestable
+### effect.discrete.type.MakeHarvestable
 
-```python
+``` python
 MakeHarvestable(DiscreteEffect):
     resource_spot : ResourceSpot
 ```
@@ -310,9 +310,9 @@ Makes a resource spot harvestable, if it is not already harbestable by default.
 **resource_spot**
 Resource spot that should be made harvestable. The effect will be matched with a `Resistance.DiscreteResistance.MakeHarvestable` object that stores the same `ResourceSpot` object in its `resource_spot` member. Additionally, the target needs to have a `Harvestable` ability that contains the resource spot.
 
-## effect.discrete.type.SendToContainer
+### effect.discrete.type.SendToContainer
 
-```python
+``` python
 SendToContainer(DiscreteEffect):
     type     : SendToStorageType
     storages : set(Container)
@@ -326,9 +326,9 @@ The effect will be matched with a `Resistance.DiscreteResistance.SendToStorage` 
 **storages**
 Set of containers the target should enter. The target will choose the nearest one for which it has an `EnterContainer` ability.
 
-## effect.specialization.AreaEffect
+### effect.specialization.AreaEffect
 
-```python
+``` python
 AreaEffect(Effect):
     range   : float
     dropoff : DropoffType
@@ -342,9 +342,9 @@ The radius of the area in which game entities are affected.
 **dropoff**
 Changes the effectiveness of the effect based on the distance to the center of the circle (see `DropoffType`).
 
-## effect.specialization.CostEffect
+### effect.specialization.CostEffect
 
-```python
+``` python
 AttributeCostEffect(Effect):
     cost : Cost
 ```
@@ -354,9 +354,9 @@ Can be inherited to make the effect cost attribute points or resources.
 **cost**
 The costs for the effect as a `Cost` object.
 
-## effect.specialization.DiplomaticEffect
+### effect.specialization.DiplomaticEffect
 
-```python
+``` python
 DiplomaticEffect(Effect):
     stances : set(DiplomaticStance)
 ```
