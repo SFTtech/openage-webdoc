@@ -1,5 +1,4 @@
-nyan
-----
+# nyan
 
 ## WTF?
 
