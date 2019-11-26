@@ -2,7 +2,7 @@
 New documentation of openage-project
 
 For sphinx output you can follow this website:
-https://simonsan.github.io/openage-webdocs/sphinx/index.html
+https://doc.openage.sft.mx/sphinx/index.html
 
 For doxygen output you can follow this website:
-https://simonsan.github.io/openage-webdocs/doxygen/html/index.xhtml
+https://doc.openage.sft.mx/doxygen/html/index.xhtml
