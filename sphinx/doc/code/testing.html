@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Test system &mdash; openage v0.4.0 documentation</title>
+  <title>Test system &mdash; openage 0.4.0 documentation</title>
   
 
   
@@ -267,6 +267,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../media/filtermaps-dat.html">FilterMaps File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../media/original-metadata.html">Original Metadata</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../media/slp-files.html">SLP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../media/smp-files.html">SMP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../media/smx-files.html">SMX files</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../media/sound.html">Sound documentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../media/stemplet-dat.html">STemplet.dat File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../media/terrain.html">terrain documentation</a></li>
@@ -848,6 +850,7 @@
 <p>As opposed to tests, demos are run manually and individually by the user.
 They usually produce lots of output on stdout or may even be interactive. Python demos even accept an <code class="docutils literal notranslate"><span class="pre">argv</span></code> parameter.</p>
 <p>All tests must be registered in <code class="docutils literal notranslate"><span class="pre">openage/testing/testlist.py</span></code> (else the game won’t know about them).</p>
+<p>Also see <code class="docutils literal notranslate"><span class="pre">./run</span> <span class="pre">test</span> <span class="pre">--help</span></code>.</p>
 </div>
 </div>
 <div class="section" id="adding-new-tests">
@@ -882,7 +885,7 @@ raises <code class="docutils literal notranslate"><span class="pre">TestError</s
 <div class="section" id="python-tests">
 <h3>Python tests<a class="headerlink" href="#python-tests" title="Permalink to this headline">¶</a></h3>
 <p>Python tests are simple argument-less functions somewhere in the <code class="docutils literal notranslate"><span class="pre">openage</span></code> package.</p>
-<p>They shall return <code class="docutils literal notranslate"><span class="pre">None</span></code> on success, and raise <code class="docutils literal notranslate"><span class="pre">openage.testing.TestError</span></code> on failure.</p>
+<p>They shall return <code class="docutils literal notranslate"><span class="pre">None</span></code> on success, and raise <code class="docutils literal notranslate"><span class="pre">openage.testing.testing.TestError</span></code> on failure.</p>
 <p>Add their names to <code class="docutils literal notranslate"><span class="pre">openage/testing/testlist.py</span></code>.</p>
 <p>The module <code class="docutils literal notranslate"><span class="pre">openage.testing.testing</span></code> provides <code class="docutils literal notranslate"><span class="pre">TestError</span></code> and some convenience functions:</p>
 <ul class="simple">

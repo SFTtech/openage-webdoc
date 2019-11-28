@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Developing handbook &mdash; openage v0.4.0 documentation</title>
+  <title>Developing handbook &mdash; openage 0.4.0 documentation</title>
   
 
   
@@ -269,6 +269,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../../../media/filtermaps-dat.html">FilterMaps File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../media/original-metadata.html">Original Metadata</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../media/slp-files.html">SLP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/smp-files.html">SMP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/smx-files.html">SMX files</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../media/sound.html">Sound documentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../media/stemplet-dat.html">STemplet.dat File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../media/terrain.html">terrain documentation</a></li>
@@ -1055,18 +1057,82 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../media/original-metadata.html">Original Metadata</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../media/slp-files.html">SLP files</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../media/slp-files.html#slp-file-format">SLP file format</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../media/slp-files.html#header">Header</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/slp-files.html#header-up-to-version-3-0">Header (up to version 3.0)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/slp-files.html#header-since-version-4-0x">Header (since version 4.0X)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../media/slp-files.html#slp-frame-info">SLP Frame info</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../media/slp-files.html#slp-frame-row-edge">SLP Frame row edge</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/slp-files.html#slp-command-table">SLP command table</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../media/slp-files.html#slp-drawing-commands">SLP drawing commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/slp-files.html#full-drawing-command-list">Full drawing command list</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../media/slp-files.html#examples">Examples</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../media/slp-files.html#lesser-draw-and-skip">Lesser draw and skip</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../media/slp-files.html#palette-files">Palette Files</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/slp-files.html#slp-shadow-commands-since-version-4-0x">SLP shadow commands (since version 4.0X)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../media/slp-files.html#palette-files">Palette Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/slp-files.html#palette-files-in-older-versions-of-aoe1-and-aoe2-up-until-aoe2-hd">Palette files in older versions of AoE1 and AoE2 (up until AoE2:HD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/slp-files.html#palette-files-in-aoe1-de">Palette files in AoE1:DE</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../../media/slp-files.html#slp-types">SLP types</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../../media/slp-files.html#slp-files-for-moving-objects">SLP files for moving objects</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../media/slp-files.html#slp-files-for-static-objects">SLP files for static objects</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../media/slp-files.html#slp-files-for-weapons">SLP files for weapons</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/slp-files.html#slp-files-for-projectiles">SLP files for projectiles</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../media/slp-files.html#slp-files-for-shadows">SLP files for shadows</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../media/smp-files.html">SMP files</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../media/smp-files.html#smp-file-format">SMP file format</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/smp-files.html#header">Header</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/smp-files.html#smp-bundle-offsets">SMP Bundle Offsets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/smp-files.html#smp-bundle-header">SMP Bundle header</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/smp-files.html#smp-frame-header">SMP Frame Header</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/smp-files.html#smp-frame-row-edge">SMP Frame row edge</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/smp-files.html#smp-command-table">SMP command table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/smp-files.html#smp-drawing-commands">SMP drawing commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/smp-files.html#full-command-list">Full command list</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../media/smp-files.html#main-graphics-type">Main graphics type</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../media/smp-files.html#shadow-type">Shadow type</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../media/smp-files.html#outline-type">Outline type</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/smp-files.html#smp-pixel">SMP Pixel</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../media/smp-files.html#examples">Examples</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../media/smp-files.html#retrieving-a-color-value-from-a-smp-pixel">Retrieving a color value from a SMP pixel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../media/smx-files.html">SMX files</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../media/smx-files.html#smx-file-format">SMX file format</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/smx-files.html#header">Header</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/smx-files.html#smx-frame">SMX Frame</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../media/smx-files.html#smx-bundle-header">SMX Bundle header</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../media/smx-files.html#smx-frame-header">SMX Frame header</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../media/smx-files.html#smx-frame-row-edge">SMX Frame row edge</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../../media/smx-files.html#smx-pixel-data">SMX Pixel data</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../../../media/smx-files.html#main-graphics-type">Main graphics type</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../media/smx-files.html#shadow-type">Shadow type</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../../../media/smx-files.html#outline-type">Outline type</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../media/smx-files.html#compression-algorithms">Compression Algorithms</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/smx-files.html#plus1-method">4plus1 method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../media/smx-files.html#to5-method">8to5 method</a></li>
 </ul>
 </li>
 </ul>

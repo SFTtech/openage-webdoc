@@ -4,9 +4,10 @@
 **openage**: a volunteer project to create a free engine clone of the *Genie Engine* used by *Age of Empires*, *Age of Empires II (HD)* and *Star Wars: Galactic Battlegrounds*, comparable to projects like [OpenMW](https://openmw.org/), [OpenRA](http://openra.net/),  [OpenSAGE](https://github.com/OpenSAGE/OpenSAGE/), [OpenTTD](https://openttd.org/) and [OpenRCT2](https://openrct2.org/). At the moment we focus our efforts on the integration of *Age of Empires II*, while being primarily aimed at POSIX platforms such as **GNU/Linux**.
 
 openage uses the original game assets (such as sounds and graphics), but (for obvious reasons) doesn't ship them.
-To play, you require *an original AoE II : TC installation or [AoE II: HD](http://store.steampowered.com/app/221380/)*
-(installation via [Wine](https://www.winehq.org/) or [Steam-Linux](doc/media_convert.md#how-to-use-the-original-game-assets)).
+To play, you require *an original AoE II: TC or [AoE II: HD](http://store.steampowered.com/app/221380/)* installation
+(via [Wine](https://www.winehq.org/) or [Steam-Linux](doc/media_convert.md#how-to-use-the-original-game-assets)).
 
+[![github stars](https://img.shields.io/github/stars/SFTtech/openage.svg)](https://github.com/SFTtech/openage/stargazers)
 [![#sfttech on Freenode](https://img.shields.io/badge/chat-on%20freenode-brightgreen)](https://webchat.freenode.net/?channels=sfttech)
 [![#sfttech on matrix.org](https://img.shields.io/badge/matrix-%23sfttech-blue.svg)](https://riot.im/app/#/room/#sfttech:matrix.org)
 [![quality badge](https://img.shields.io/badge/cuteness-overload-orange.svg)](http://www.emergencykitten.com/)
@@ -87,13 +88,18 @@ Installation Packages
 
     __NOTE:__ If you have any problems starting conversion or starting *openage* take a look into the [package instructions](doc/build_instructions/packages.md) and our [troubleshooting guide](/doc/troubleshooting.md).
 
-    __NOTE:__ For **MacOSX** we don't have packages, but here you can check the the build status [![Build](https://travis-ci.com/simonsan/openage.svg?branch=master)](https://api.travis-ci.com/simonsan/openage.svg?branch=master)
-
-    We also have building instructions in [here](/doc/build_instructions/os_x_10.14_mojave.md).
+    __NOTE:__ For **MacOSX** we currently don't have any packages.
 
 
 Dependencies, Building and Running
 ----------------------------------
+
+  Operating System    | Build status
+  :------------------:|:--------------:
+  Debian Sid          | [Todo: Kevin #11](https://github.com/SFTtech/kevin/issues/11)
+  MacOSX 10.14        | [![Build Status](https://travis-ci.org/SFTtech/openage.svg?branch=master)](https://travis-ci.org/SFTtech/openage)
+  Windows 10 - x64    | [![Build status](https://ci.appveyor.com/api/projects/status/66sx35key94u740e?svg=true)](https://ci.appveyor.com/project/simonsan/openage-sl215)
+
 
  - How do I get this to run on my box?
    - See [doc/building.md](/doc/building.md).
@@ -123,7 +129,7 @@ Contributing
 * Being typical computer science students, we hate people.
 * Please don't contact us.
 * Nobody likes Age of Empires anyway.
-* None of you is interested in making openage more awesome anyway.
+* None of you are interested in making openage more awesome anyway.
 * We don't want a community.
 * Don't even think about trying to help.
 
@@ -163,7 +169,7 @@ Can I help?
 All documentation is also in this repo:
 
 - Code documentation is embedded in the sources for Doxygen (see [doc readme](/doc/README.md)).
-- Have a look at the [doc directory](/doc/). This folder tends to outdate when code changes.
+- Have a look at the [doc directory](/doc/). This folder tends to get outdated when code changes.
 
 
 License

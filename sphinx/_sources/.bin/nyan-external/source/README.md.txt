@@ -14,7 +14,7 @@ properly represent the enormous complexity of storing the data for [openage](htt
 The main focus is *readability* and *moddability*.
 
 [![github stars](https://img.shields.io/github/stars/SFTtech/nyan.svg)](https://github.com/SFTtech/nyan/stargazers)
-[![#sfttech on Freenode](http://img.shields.io/Freenode/%23sfttech.png)](https://webchat.freenode.net/?channels=sfttech)
+[![#sfttech on Freenode](https://img.shields.io/badge/chat-on%20freenode-brightgreen)](https://webchat.freenode.net/?channels=sfttech)
 
 
 The foundation of **nyan**:
@@ -89,6 +89,7 @@ and gives the striders even more hp.
 # create a new unit:
 OverwatchElite(Unit):
     hp = 70
+    animation = "./assets/coolersoldier.ani"
 
 # change the strider:
 ChangeStrider<Strider>():
@@ -147,6 +148,11 @@ All of those observations are intended, not bugs.
 
 To get rid of them, recompile with `--dont-segfault --shut-up --new-girlfriend`.
 
+Operating System    | Build status
+--------------------|--------------
+Debian Sid          | [Todo: Kevin #11](https://github.com/SFTtech/kevin/issues/11)
+MacOSX 10.14        | [![Build Status](https://travis-ci.org/SFTtech/nyan.svg?branch=master)](https://travis-ci.org/SFTtech/nyan)
+Windows 10 - x64    | [![Build status](https://ci.appveyor.com/api/projects/status/6t1yonx5fu7dejs0/branch/master?svg=true)](https://ci.appveyor.com/project/simonsan/nyan-c53id/branch/master)
 
 If this still does not help, try the [contact section](#contact)
 or the [bug tracker](https://github.com/SFTtech/nyan/issues).

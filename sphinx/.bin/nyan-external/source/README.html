@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>nyan - yet another notation &mdash; openage v0.4.0 documentation</title>
+  <title>nyan - yet another notation &mdash; openage 0.4.0 documentation</title>
   
 
   
@@ -269,6 +269,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../../../doc/media/filtermaps-dat.html">FilterMaps File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../doc/media/original-metadata.html">Original Metadata</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../doc/media/slp-files.html">SLP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../doc/media/smp-files.html">SMP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../doc/media/smx-files.html">SMX files</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../doc/media/sound.html">Sound documentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../doc/media/stemplet-dat.html">STemplet.dat File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../doc/media/terrain.html">terrain documentation</a></li>
@@ -849,7 +851,7 @@ It is a mixture of python, json, patch, wml, yaml and some new ideas.</p>
 properly represent the enormous complexity of storing the data for <a class="reference external" href="https://github.com/SFTtech/openage">openage</a>.</p>
 <p>The main focus is <em>readability</em> and <em>moddability</em>.</p>
 <p><a class="reference external" href="https://github.com/SFTtech/nyan/stargazers"><img alt="github stars" src="https://img.shields.io/github/stars/SFTtech/nyan.svg" /></a>
-<a class="reference external" href="https://webchat.freenode.net/?channels=sfttech"><img alt="#sfttech on Freenode" src="http://img.shields.io/Freenode/%23sfttech.png" /></a></p>
+<a class="reference external" href="https://webchat.freenode.net/?channels=sfttech"><img alt="#sfttech on Freenode" src="https://img.shields.io/badge/chat-on%20freenode-brightgreen" /></a></p>
 <p>The foundation of <strong>nyan</strong>:</p>
 <table border="1" class="docutils">
 <thead>
@@ -930,6 +932,7 @@ and gives the striders even more hp.</p>
 <span class="c1"># create a new unit:</span>
 <span class="n">OverwatchElite</span><span class="p">(</span><span class="n">Unit</span><span class="p">):</span>
     <span class="n">hp</span> <span class="o">=</span> <span class="mi">70</span>
+    <span class="n">animation</span> <span class="o">=</span> <span class="s2">&quot;./assets/coolersoldier.ani&quot;</span>
 
 <span class="c1"># change the strider:</span>
 <span class="n">ChangeStrider</span><span class="o">&lt;</span><span class="n">Strider</span><span class="o">&gt;</span><span class="p">():</span>
@@ -984,7 +987,28 @@ cover special use cases:</p>
 </ul>
 <p>All of those observations are intended, not bugs.</p>
 <p>To get rid of them, recompile with <code class="docutils literal notranslate"><span class="pre">--dont-segfault</span> <span class="pre">--shut-up</span> <span class="pre">--new-girlfriend</span></code>.</p>
-<p>If this still does not help, try the <a class="reference external" href="#contact">contact section</a>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Operating System</th>
+<th>Build status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Debian Sid</td>
+<td><a href="https://github.com/SFTtech/kevin/issues/11">Todo: Kevin #11</a></td>
+</tr>
+<tr>
+<td>MacOSX 10.14</td>
+<td><a href="https://travis-ci.org/SFTtech/nyan"><img alt="Build Status" src="https://travis-ci.org/SFTtech/nyan.svg?branch=master" /></a></td>
+</tr>
+<tr>
+<td>Windows 10 - x64</td>
+<td><a href="https://ci.appveyor.com/project/simonsan/nyan-c53id/branch/master"><img alt="Build status" src="https://ci.appveyor.com/api/projects/status/6t1yonx5fu7dejs0/branch/master?svg=true" /></a></td>
+</tr>
+</tbody>
+</table><p>If this still does not help, try the <a class="reference external" href="#contact">contact section</a>
 or the <a class="reference external" href="https://github.com/SFTtech/nyan/issues">bug tracker</a>.</p>
 </div>
 <div class="section" id="development-process">

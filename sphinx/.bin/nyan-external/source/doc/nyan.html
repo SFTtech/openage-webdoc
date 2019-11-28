@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>nyan &mdash; openage v0.4.0 documentation</title>
+  <title>nyan &mdash; openage 0.4.0 documentation</title>
   
 
   
@@ -269,6 +269,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../../../../doc/media/filtermaps-dat.html">FilterMaps File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../../doc/media/original-metadata.html">Original Metadata</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../../doc/media/slp-files.html">SLP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../doc/media/smp-files.html">SMP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../doc/media/smx-files.html">SMX files</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../../doc/media/sound.html">Sound documentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../../doc/media/stemplet-dat.html">STemplet.dat File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../../../doc/media/terrain.html">terrain documentation</a></li>
@@ -1252,18 +1254,17 @@ further up the tree</p></li>
 <ul>
 <li><p>primitive type</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">text</span></code>:     <code class="docutils literal notranslate"><span class="pre">&quot;lol&quot;</span></code>          - (duh.)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">int</span></code>:      <code class="docutils literal notranslate"><span class="pre">1337</span></code>           - (some number)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">float</span></code>:    <code class="docutils literal notranslate"><span class="pre">42.235</span></code>, <code class="docutils literal notranslate"><span class="pre">inf</span></code>  - (some floating point number)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">bool</span></code>:     <code class="docutils literal notranslate"><span class="pre">true</span></code>, <code class="docutils literal notranslate"><span class="pre">false</span></code>  - (some boolean value)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">file</span></code>:     <code class="docutils literal notranslate"><span class="pre">&quot;./name&quot;</span> </code>      - (some filename, relative to the directory
-the defining nyan file is located at.
-If absolute, the path is relative to
-an engine defined root directory)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span></code>:     <code class="docutils literal notranslate"><span class="pre">&quot;lol&quot;</span></code>                  - (duh.)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">int</span></code>:      <code class="docutils literal notranslate"><span class="pre">1337</span></code>                   - (some number)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">float</span></code>:    <code class="docutils literal notranslate"><span class="pre">42.235</span></code>, <code class="docutils literal notranslate"><span class="pre">inf</span></code>, <code class="docutils literal notranslate"><span class="pre">-inf</span></code>  - (some floating point number)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bool</span></code>:     <code class="docutils literal notranslate"><span class="pre">true</span></code>, <code class="docutils literal notranslate"><span class="pre">false</span></code>          - (some boolean value)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">file</span></code>:     <code class="docutils literal notranslate"><span class="pre">&quot;./name&quot;</span> </code>              - (some filename, relative to the directory the defining nyan file is located at.
+If absolute, the path is relative to an engine defined root directory.)</p></li>
 </ul>
 </li>
 <li><p>ordered set of elements of a type: <code class="docutils literal notranslate"><span class="pre">orderedset(type)</span></code></p></li>
 <li><p>set of elements of a type: <code class="docutils literal notranslate"><span class="pre">set(type)</span></code></p></li>
+<li><p>dictionary of elements of a type to elements of another type: <code class="docutils literal notranslate"><span class="pre">dict(keyType,</span> <span class="pre">valueType)</span></code></p></li>
 <li><p>currently, there is <strong>no</strong> <code class="docutils literal notranslate"><span class="pre">list(type)</span></code> specified,
 but may be added later if needed</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">nyan::Object</span></code>, to allow arbitrary hierarchies</p></li>
@@ -1272,7 +1273,7 @@ but may be added later if needed</p></li>
 <li><p>Type hierarchy</p>
 <ul>
 <li><p>A <code class="docutils literal notranslate"><span class="pre">nyan::Object</span></code>’s type name equals its name: <code class="docutils literal notranslate"><span class="pre">A()</span></code> has type <code class="docutils literal notranslate"><span class="pre">A</span></code></p></li>
-<li><p>A <code class="docutils literal notranslate"><span class="pre">nyan::Object</span></code> <code class="docutils literal notranslate"><span class="pre">isinstance</span></code> of all the types of its parent <code class="docutils literal notranslate"><span class="pre">nyan::Object</span></code>s</p>
+<li><p>A <code class="docutils literal notranslate"><span class="pre">nyan::Object</span></code> <code class="docutils literal notranslate"><span class="pre">isinstance</span></code> of its type and all the types of its parent <code class="docutils literal notranslate"><span class="pre">nyan::Object</span></code>s</p>
 <ul>
 <li><p>Sounds complicated, but is totally easy:</p></li>
 <li><p>If an object <code class="docutils literal notranslate"><span class="pre">B</span></code> inherits from an object <code class="docutils literal notranslate"><span class="pre">A</span></code>, it also has the type <code class="docutils literal notranslate"><span class="pre">A</span></code></p></li>
@@ -1401,6 +1402,7 @@ This means there are implicit forward declarations.</p>
 <span class="n">Unit</span><span class="p">():</span>
     <span class="n">abilities</span> <span class="p">:</span> <span class="nb">set</span><span class="p">(</span><span class="n">Ability</span><span class="p">)</span>
     <span class="n">hp</span> <span class="p">:</span> <span class="nb">int</span>
+    <span class="n">graphic</span> <span class="p">:</span> <span class="nb">file</span>
 
 <span class="n">ResourceAmount</span><span class="p">():</span>
     <span class="nb">type</span> <span class="p">:</span> <span class="n">Resource</span>
@@ -1592,7 +1594,7 @@ registered to the engine with a mod description file.</p>
     <span class="n">HPBoost</span><span class="o">&lt;</span><span class="n">Villager</span><span class="o">&gt;</span><span class="p">():</span>
         <span class="n">hp</span> <span class="o">+=</span> <span class="mi">50</span>
 
-    <span class="n">patches</span> <span class="o">=</span> <span class="p">{</span><span class="n">HPBoost</span><span class="p">}</span>
+    <span class="n">patches</span> <span class="o">=</span> <span class="n">o</span><span class="p">{</span><span class="n">HPBoost</span><span class="p">}</span>
 
 <span class="n">TownCenter</span><span class="p">(</span><span class="n">engine</span><span class="o">.</span><span class="n">Unit</span><span class="p">):</span>
     <span class="n">hp</span> <span class="o">=</span> <span class="mi">1500</span>
@@ -1607,7 +1609,7 @@ registered to the engine with a mod description file.</p>
     <span class="n">Activate</span><span class="o">&lt;</span><span class="n">engine</span><span class="o">.</span><span class="n">StartConfigs</span><span class="o">&gt;</span><span class="p">():</span>
         <span class="n">available</span> <span class="o">+=</span> <span class="p">{</span><span class="n">DefaultConfig</span><span class="p">}</span>
 
-    <span class="n">patches</span> <span class="o">=</span> <span class="p">{</span><span class="n">Activate</span><span class="p">}</span>
+    <span class="n">patches</span> <span class="o">=</span> <span class="n">o</span><span class="p">{</span><span class="n">Activate</span><span class="p">}</span>
 </pre></div>
 </div>
 <p>Mod information file <code class="docutils literal notranslate"><span class="pre">pack.nfo</span></code>:</p>
@@ -1910,6 +1912,7 @@ villager instance of the current player</p></li>
 <span class="c1"># Game engine defines:</span>
 <span class="n">Tech</span><span class="p">():</span>
     <span class="n">name</span> <span class="p">:</span> <span class="n">text</span>
+    <span class="n">desc</span> <span class="p">:</span> <span class="n">text</span>
     <span class="n">updates</span> <span class="p">:</span> <span class="nb">set</span><span class="p">(</span><span class="n">Patch</span><span class="p">)</span>
 
 <span class="n">Mod</span><span class="p">():</span>
@@ -1937,8 +1940,9 @@ villager instance of the current player</p></li>
 <span class="n">LoomVillagerHP</span><span class="o">&lt;</span><span class="n">Villager</span><span class="o">&gt;</span><span class="p">():</span>
     <span class="n">hp</span> <span class="o">+=</span> <span class="mi">15</span>
 
-<span class="n">Loom</span><span class="p">(</span><span class="n">Tech</span><span class="p">):</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Research Loom to give villagers more HP&quot;</span>
+<span class="n">Loom</span><span class="p">(</span><span class="n">engine</span><span class="o">.</span><span class="n">Tech</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Loom&quot;</span>
+    <span class="n">desc</span> <span class="o">=</span> <span class="s2">&quot;Research Loom to give villagers more HP&quot;</span>
     <span class="n">updates</span> <span class="o">=</span> <span class="p">{</span><span class="n">LoomVillagerHP</span><span class="p">}</span>
 
 <span class="n">TownCenter</span><span class="p">(</span><span class="n">Building</span><span class="p">):</span>
@@ -1980,9 +1984,6 @@ activate the scripting changes, but how is up to the engine</p></li>
 <span class="n">Mod</span><span class="p">():</span>
     <span class="n">name</span> <span class="p">:</span> <span class="n">text</span>
     <span class="n">patches</span> <span class="p">:</span> <span class="nb">set</span><span class="p">(</span><span class="n">Patch</span><span class="p">)</span>
-
-<span class="n">Ability</span><span class="p">():</span>
-    <span class="n">mouse_animation</span> <span class="p">:</span> <span class="nb">file</span>
 
 <span class="n">Unit</span><span class="p">():</span>
     <span class="n">name</span> <span class="p">:</span> <span class="n">text</span>

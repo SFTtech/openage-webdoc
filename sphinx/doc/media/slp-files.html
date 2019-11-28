@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>SLP files &mdash; openage v0.4.0 documentation</title>
+  <title>SLP files &mdash; openage 0.4.0 documentation</title>
   
 
   
@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Sound documentation" href="sound.html" />
+    <link rel="next" title="SMP files" href="smp-files.html" />
     <link rel="prev" title="Original Metadata" href="original-metadata.html" /> 
 </head>
 
@@ -269,6 +269,8 @@
 <li class="toctree-l4"><a class="reference internal" href="filtermaps-dat.html">FilterMaps File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="original-metadata.html">Original Metadata</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">SLP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="smp-files.html">SMP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="smx-files.html">SMX files</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sound.html">Sound documentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="stemplet-dat.html">STemplet.dat File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="terrain.html">terrain documentation</a></li>
@@ -825,7 +827,7 @@
   
   <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
       
-        <a href="sound.html" class="btn btn-neutral float-right" title="Sound documentation" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="smp-files.html" class="btn btn-neutral float-right" title="SMP files" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="original-metadata.html" class="btn btn-neutral float-left" title="Original Metadata" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -843,8 +845,8 @@
 textures. Like the DRS format, it can also be read sequentially.</p>
 <div class="section" id="slp-file-format">
 <h2>SLP file format<a class="headerlink" href="#slp-file-format" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="header">
-<h3>Header<a class="headerlink" href="#header" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="header-up-to-version-3-0">
+<h3>Header (up to version 3.0)<a class="headerlink" href="#header-up-to-version-3-0" title="Permalink to this headline">¶</a></h3>
 <p>The SLP file starts with a header:</p>
 <table border="1" class="docutils">
 <thead>
@@ -884,11 +886,98 @@ textures. Like the DRS format, it can also be read sequentially.</p>
 </div>
 <p>Python format: <code class="docutils literal notranslate"><span class="pre">Struct(&quot;&lt;</span> <span class="pre">4s</span> <span class="pre">i</span> <span class="pre">24s&quot;)</span></code></p>
 </div>
+<div class="section" id="header-since-version-4-0x">
+<h3>Header (since version 4.0X)<a class="headerlink" href="#header-since-version-4-0x" title="Permalink to this headline">¶</a></h3>
+<p>Age of Empires 1: Definitive Edition SLPs (v4.0) use a differently structured header:</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Length</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4 bytes</td>
+<td>string</td>
+<td>Version</td>
+<td>4.0X</td>
+</tr>
+<tr>
+<td>2 bytes</td>
+<td>int16</td>
+<td>Number of frames</td>
+<td>960, 0x000003C0</td>
+</tr>
+<tr>
+<td>2 bytes</td>
+<td>int16</td>
+<td>possibly angles</td>
+<td>8, 0x08 (only for effects and v4.1 SLPs)</td>
+</tr>
+<tr>
+<td>2 bytes</td>
+<td>int16</td>
+<td>unknown</td>
+<td>always 0x0001</td>
+</tr>
+<tr>
+<td>2 bytes</td>
+<td>int16</td>
+<td>Number of frames</td>
+<td>value never differs from previous value</td>
+</tr>
+<tr>
+<td>4 bytes</td>
+<td>int32</td>
+<td>possibly checksum field</td>
+<td>always 0x00000000 (v4.1 uses it)</td>
+</tr>
+<tr>
+<td>4 bytes</td>
+<td>int32</td>
+<td>Offset for main graphic</td>
+<td>0x00000020</td>
+</tr>
+<tr>
+<td>4 bytes</td>
+<td>int32</td>
+<td>Offset for shadow</td>
+<td>0x0010C8C0, if 0x00000000 then there is no shadow stored</td>
+</tr>
+<tr>
+<td>8 bytes</td>
+<td>Padding</td>
+<td>Padding</td>
+<td>-</td>
+</tr>
+</tbody>
+</table><p>v4.1 SLPs have the same structure as the v4.0 SLPs. However, they are only used for <em>decay</em> SLPs.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="n">slp_header_v4</span> <span class="p">{</span>
+  <span class="kt">char</span>     <span class="n">version</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
+  <span class="n">int16</span>    <span class="n">num_frames</span><span class="p">;</span>
+  <span class="n">int16</span>    <span class="n">angles</span><span class="p">;</span>
+  <span class="n">int16</span>    <span class="n">unknown</span><span class="p">;</span>
+  <span class="n">int16</span>    <span class="n">num_frames_alt</span><span class="p">;</span>
+  <span class="n">int32</span>    <span class="n">checksum</span><span class="p">;</span>
+  <span class="n">int32</span>    <span class="n">offset_main</span><span class="p">;</span>
+  <span class="n">int32</span>    <span class="n">offset_shadow</span><span class="p">;</span>
+  <span class="n">pad</span> <span class="n">byte</span> <span class="n">padding</span><span class="p">[</span><span class="mi">8</span><span class="p">];</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p>Python format: <code class="docutils literal notranslate"><span class="pre">Struct(&quot;&lt;</span> <span class="pre">4s</span> <span class="pre">H</span> <span class="pre">H</span> <span class="pre">H</span> <span class="pre">H</span> <span class="pre">i</span> <span class="pre">i</span> <span class="pre">i</span> <span class="pre">8x&quot;)</span></code></p>
+</div>
 <div class="section" id="slp-frame-info">
 <h3>SLP Frame info<a class="headerlink" href="#slp-frame-info" title="Permalink to this headline">¶</a></h3>
-<p>After the header, there are <code class="docutils literal notranslate"><span class="pre">num_frames</span></code> entries of <code class="docutils literal notranslate"><span class="pre">slp_frame_info</span></code>:
+<p>After the header, there are <code class="docutils literal notranslate"><span class="pre">num_frames</span></code> entries of <code class="docutils literal notranslate"><span class="pre">slp_frame_info</span></code>.
 Every <code class="docutils literal notranslate"><span class="pre">slp_frame_info</span></code> stores meta-information about a single frame (texture)
 within the SLP.</p>
+<p>SLPs with version higher than 4.0 have <code class="docutils literal notranslate"><span class="pre">num_frames</span></code> additional entries of
+<code class="docutils literal notranslate"><span class="pre">slp_frame_info</span></code> at <code class="docutils literal notranslate"><span class="pre">offset_shadow</span></code> if the offset is a non-zero value.
+These frames store the shadows of the game entity.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -920,7 +1009,7 @@ within the SLP.</p>
 <tr>
 <td>4 bytes</td>
 <td>uint32</td>
-<td>Properties (likely unused)</td>
+<td>Properties</td>
 <td>16, 0x00000010</td>
 </tr>
 <tr>
@@ -964,15 +1053,20 @@ within the SLP.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">palette_offset</span></code> is apparently never used.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">properties</span></code> is only used to indicate which palette for the image to use.
-However, these seem to be the same, so can generally be ignored.</p>
+Up to HD, these seem to be the same, so can generally be ignored.</p>
 <ul>
 <li><p>0x10 - “default game palette”</p></li>
 <li><p>0x00 - “global color palette”</p></li>
 </ul>
 </li>
+<li><p>In AoE1:DE <code class="docutils literal notranslate"><span class="pre">properties</span></code> stores the palette number in the second last 2 bytes</p>
+<ul>
+<li><p>0x0009 - use <code class="docutils literal notranslate"><span class="pre">09_buildings_asian.pal</span></code></p></li>
+</ul>
+</li>
 <li><p><code class="docutils literal notranslate"><span class="pre">hotspot_x</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">hotspot_y</span></code> tell the engine where the centre of the unit is.</p></li>
 </ul>
-<p>One image of size <code class="docutils literal notranslate"><span class="pre">width</span></code>*<code class="docutils literal notranslate"><span class="pre">height</span></code> has <code class="docutils literal notranslate"><span class="pre">height</span></code> rows, of course.</p>
+<p>One image of size <code class="docutils literal notranslate"><span class="pre">width</span> <span class="pre">*</span> <span class="pre">height</span></code> has <code class="docutils literal notranslate"><span class="pre">height</span></code> rows, of course.</p>
 </div>
 <div class="section" id="slp-frame-row-edge">
 <h3>SLP Frame row edge<a class="headerlink" href="#slp-frame-row-edge" title="Permalink to this headline">¶</a></h3>
@@ -1017,6 +1111,9 @@ will be 27 pixels of graphical data provided through some number of commands.</p
 Note that there are no command bytes for these rows, so will have to be skipped
 “manually”.</p>
 <p><code class="docutils literal notranslate"><span class="pre">width</span> <span class="pre">-</span> <span class="pre">left_space</span> <span class="pre">-</span> <span class="pre">right_space</span></code> = number of pixels in this line.</p>
+</div>
+<div class="section" id="slp-command-table">
+<h3>SLP command table<a class="headerlink" href="#slp-command-table" title="Permalink to this headline">¶</a></h3>
 <p>After those padding frames, at <code class="docutils literal notranslate"><span class="pre">slp_frame_info.cmd_table_offset</span></code>, an array of
 uint32 (of length <code class="docutils literal notranslate"><span class="pre">height</span></code>) begins:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="n">slp_command_offset</span> <span class="p">{</span>
@@ -1036,29 +1133,35 @@ validation purposes.</p>
 <div class="section" id="slp-drawing-commands">
 <h3>SLP drawing commands<a class="headerlink" href="#slp-drawing-commands" title="Permalink to this headline">¶</a></h3>
 <p>The image is drawn line by line, a line is finished with the “End of line”
-command (0x0F), where a command is a one-byte number (stored in the
-least-significant bits of the byte, e.g. <code class="docutils literal notranslate"><span class="pre">command</span> <span class="pre">=</span> <span class="pre">data</span> <span class="pre">&amp;</span> <span class="pre">0x0F</span></code>), followed by
-command-specific data with a length varying depending on the command. The next
-command immediately follows the previous command’s data.</p>
+command (0x0F). A command is a one-byte number (<code class="docutils literal notranslate"><span class="pre">cmd_byte</span></code>), followed
+by command-specific data with a length (number of pixels) varying
+depending on the command. The next command immediately follows the
+previous command’s data.</p>
+<p>Commands can also store meta information like the number of following pixels
+in the same byte. More complex commands store the pixel count in the following
+byte.</p>
 <p>Each command triggers a drawing method for n = “Count” pixels.</p>
 <p>All the commands tell you to draw a palette_index, for n pixels.</p>
-<p>The <em>Pixel count</em> value is stored at these locations: (where <code class="docutils literal notranslate"><span class="pre">cmd_byte</span></code> is the
-value of the command byte, and <code class="docutils literal notranslate"><span class="pre">next_byte</span></code> is the value of the next byte)</p>
+<p>Commands can be identified by examining the 4 least significant bits of <code class="docutils literal notranslate"><span class="pre">cmd_byte</span></code>.</p>
+<p>For examples of drawing commands, see the <a class="reference external" href="#examples">Examples</a> section.</p>
+</div>
+<div class="section" id="full-drawing-command-list">
+<h3>Full drawing command list<a class="headerlink" href="#full-drawing-command-list" title="Permalink to this headline">¶</a></h3>
 <table border="1" class="docutils">
 <thead>
 <tr>
 <th>Value name</th>
-<th>Pixel count</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>next</td>
-<td><code>next_byte</code></td>
+<td>The byte following <code>cmd_byte</code></td>
 </tr>
 <tr>
 <td><code>&gt;&gt; 2</code></td>
-<td><code>cmd_byte &gt;&gt; 2</code> (i.e., most significant bits used as data value)</td>
+<td><code>cmd_byte &gt;&gt; 2</code> (i.e., the 6 most significant bits used as data value)</td>
 </tr>
 <tr>
 <td><code>&gt;&gt; n</code> or next</td>
@@ -1069,73 +1172,74 @@ value of the command byte, and <code class="docutils literal notranslate"><span 
 <td><code>((cmd_byte &amp; 0xf0) &lt;&lt; 4) + next_byte</code></td>
 </tr>
 </tbody>
-</table><p>Commands where <em>Count</em> is <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span> <span class="pre">i</span></code> only reuse the most significant bits of <code class="docutils literal notranslate"><span class="pre">cmd_byte</span></code>.</p>
+</table><p>An <code class="docutils literal notranslate"><span class="pre">X</span></code> signifies that the bit can have any value. These bits are often used for
+storing the length (pixel count) of the command.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
 <th>Command Name</th>
 <th>Byte value</th>
-<th>Count</th>
+<th>Pixel Count</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Lesser block copy</td>
-<td><code>0x00</code></td>
-<td><code>&gt;&gt; 2</code></td>
+<td>Lesser draw</td>
+<td><code>0bXXXXXX00</code></td>
+<td><code>cmd_byte &gt;&gt; 2</code></td>
 <td>An array of length <em>Count</em> filled with 1-byte palette indices follows, 1 index per pixel.</td>
 </tr>
 <tr>
 <td>Lesser skip</td>
-<td><code>0x01</code></td>
-<td><code>&gt;&gt; 2</code> or next</td>
+<td><code>0bXXXXXX01</code></td>
+<td><code>cmd_byte &gt;&gt; 2</code> or next</td>
 <td><em>Count</em> transparent pixels should be drawn from the current position.</td>
 </tr>
 <tr>
-<td>Greater block copy</td>
-<td><code>0x02</code></td>
-<td><code>&lt;&lt; 4 + next</code></td>
+<td>Greater draw</td>
+<td><code>0bXXXX0010</code></td>
+<td><code>cmd_byte &lt;&lt; 4 + next</code></td>
 <td>An array of length <em>Count</em> filled with 1-byte palette indices follows, 1 index per pixel.</td>
 </tr>
 <tr>
 <td>Greater skip</td>
-<td><code>0x03</code></td>
-<td><code>&lt;&lt; 4 + next</code></td>
+<td><code>0bXXXX0011</code></td>
+<td><code>cmd_byte &lt;&lt; 4 + next</code></td>
 <td><em>Count</em> transparent pixels should be drawn from the current position.</td>
 </tr>
 <tr>
-<td>Player color block copy</td>
-<td><code>0x06</code></td>
-<td><code>&gt;&gt; 4</code> or next</td>
+<td>Player color draw</td>
+<td><code>0bXXXX0110</code></td>
+<td><code>cmd_byte &gt;&gt; 4</code> or next</td>
 <td>An array of length "Count" filled with 1-byte player color palette indices follow, 1 index per pixel. The real palette index is <code>player_color_palette_index + player * 16</code>, where <code>player</code> is the player ID you're drawing for (1-8).</td>
 </tr>
 <tr>
 <td>Fill</td>
-<td><code>0x07</code></td>
-<td><code>&gt;&gt; 4</code> or next</td>
+<td><code>0bXXXX0111</code></td>
+<td><code>cmd_byte &gt;&gt; 4</code> or next</td>
 <td>One palette index byte follows. This color should be drawn <code>pixel_count</code> times from the current position.</td>
 </tr>
 <tr>
 <td>Fill player color</td>
-<td><code>0x0A</code></td>
-<td><code>&gt;&gt; 4</code> or next</td>
+<td><code>0bXXXX1010</code></td>
+<td><code>cmd_byte &gt;&gt; 4</code> or next</td>
 <td>One player palette index byte follows. This color should be drawn <code>pixel_count</code> times. See <code>player_color_list (0x06)</code></td>
 </tr>
 <tr>
-<td>Shadow</td>
-<td><code>0x0B</code></td>
-<td><code>&gt;&gt; 4</code> or next</td>
+<td>Shadow draw</td>
+<td><code>0bXXXX1011</code></td>
+<td><code>cmd_byte &gt;&gt; 4</code> or next</td>
 <td>Draw <em>Count</em> shadow pixels (The pixels to draw when a unit is behind another object).</td>
 </tr>
 <tr>
 <td>Extended command</td>
-<td><code>0x0E</code></td>
+<td><code>0bXXXX1110</code></td>
 <td>depends</td>
 <td>Get the specific extended command by looking at the most significant bits of the command. (See the table below for details)</td>
 </tr>
 <tr>
-<td>End of line</td>
+<td>End of row</td>
 <td><code>0x0F</code></td>
 <td>0</td>
 <td>End of commands for this row. If more commands follow, they are for the next row.</td>
@@ -1147,7 +1251,7 @@ value of the command byte, and <code class="docutils literal notranslate"><span 
 <tr>
 <th>Command name</th>
 <th>Byte value</th>
-<th>Count</th>
+<th>Pixel Count</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -1214,16 +1318,14 @@ value of the command byte, and <code class="docutils literal notranslate"><span 
 </tr>
 <tr>
 <td>orig_alph</td>
-<td><code>0xA0</code></td>
+<td><code>0xAE</code></td>
 <td>?</td>
 <td>Original alpha?</td>
 </tr>
 </tbody>
 </table><ul>
-<li><p>“Lesser block copy” (0x00) also takes the values <code class="docutils literal notranslate"><span class="pre">0x04,</span> <span class="pre">0x08</span> <span class="pre">&amp;</span> <span class="pre">0x0C</span></code></p></li>
-<li><p>“Lesser skip” (0x01) also takes the values <code class="docutils literal notranslate"><span class="pre">0x05,</span> <span class="pre">0x09,</span> <span class="pre">0x0D</span></code>.</p></li>
-<li><p>“Player color block copy” (0x06) is an index into the palette, in range 0-15.</p></li>
-<li><p>“Shadow” (0x0B) destination “pixels” are used as a lookup into a shadow_table.
+<li><p>“Player color block copy” (<code class="docutils literal notranslate"><span class="pre">0bXXXX0110</span></code>) is an index into the palette, in range 0-15.</p></li>
+<li><p>“Shadow” (<code class="docutils literal notranslate"><span class="pre">0bXXXX1011</span></code>) destination “pixels” are used as a lookup into a shadow_table.
 This lookup pixel is then used to draw into the buffer. The shadow table is a
 color-tinted variation of the real color table. It’s also used to draw things
 like the red-tinted checkerboard when placing buildings at forbidden places.</p></li>
@@ -1233,7 +1335,7 @@ player color.</p></li>
 outline of the corresponding part of the unit is drawn, the rest of the unit
 is transparent. So, the left outline is one pixel more to the left than the
 first color.</p>
-<p>Usually, these outline pixels should be stored to a second image, which is
+<p>Usually, these outline pixels should be stored to a second spritesheet, which is
 rendered on top of the tree/building by the fragment shader.</p>
 </li>
 </ul>
@@ -1245,60 +1347,170 @@ rendered on top of the tree/building by the fragment shader.</p>
 </ul>
 <p>Now the palette indices for all the colors of the unit are known, but a palette
 is needed for them to be drawn.</p>
+<div class="section" id="examples">
+<h4>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="lesser-draw-and-skip">
+<h5>Lesser draw and skip<a class="headerlink" href="#lesser-draw-and-skip" title="Permalink to this headline">¶</a></h5>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Row</span> <span class="n">example</span><span class="p">:</span> <span class="mh">0x08</span> <span class="mh">0x55</span> <span class="mh">0xF4</span> <span class="mh">0x19</span> <span class="mh">0x28</span> <span class="mh">0x99</span> <span class="mh">0x35</span> <span class="mh">0xF4</span> <span class="mh">0x6D</span> <span class="mh">0x67</span> <span class="mh">0x6E</span> <span class="mh">0xA5</span> <span class="mh">0x01</span> <span class="mh">0x4D</span> <span class="mh">0x8E</span> <span class="mh">0x0F</span>
+
+<span class="n">first</span> <span class="n">cmd_byte</span> <span class="o">=</span> <span class="mh">0x08</span> <span class="o">=</span> <span class="mb">0b00001000</span>
+</pre></div>
+</div>
+<p>The first <code class="docutils literal notranslate"><span class="pre">cmd_byte</span></code> value has the 2 least significant bits set to <code class="docutils literal notranslate"><span class="pre">0b00</span></code>,
+so we know it has to be a <em>lesser draw</em>. We can now calculate the pixel
+count by shifting the command byte to the right 2 times:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pixel_count</span> <span class="o">=</span> <span class="n">cmd_byte</span> <span class="o">&gt;&gt;</span> <span class="mi">2</span> <span class="o">=</span> <span class="mb">0b00000010</span> <span class="o">=</span> <span class="mh">0x02</span> <span class="o">=</span> <span class="mi">2</span>
+</pre></div>
+</div>
+<p>The pixel count is 2 which tells us that an array of 2 indices will follow
+<code class="docutils literal notranslate"><span class="pre">cmd_byte</span></code>. Therefore, the bytes <code class="docutils literal notranslate"><span class="pre">0x55</span></code> and <code class="docutils literal notranslate"><span class="pre">0xF4</span></code> belong to the drawing
+command.</p>
+<p>The next <code class="docutils literal notranslate"><span class="pre">cmd_byte</span></code> is <code class="docutils literal notranslate"><span class="pre">0xF4</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">second</span> <span class="n">cmd_byte</span> <span class="o">=</span> <span class="mh">0x19</span> <span class="o">=</span> <span class="mb">0b00011001</span>
+</pre></div>
+</div>
+<p>The 2 least significant bits of this command are <code class="docutils literal notranslate"><span class="pre">0b01</span></code>, so this can be
+identified as a <em>lesser skip</em> command. Here, we also have to calculate
+the pixel count by shifting 2 times to the right:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pixel_count</span> <span class="o">=</span> <span class="n">cmd_byte</span> <span class="o">&gt;&gt;</span> <span class="mi">2</span> <span class="o">=</span> <span class="mb">0b00000110</span> <span class="o">=</span> <span class="mh">0x06</span> <span class="o">=</span> <span class="mi">6</span>
+</pre></div>
+</div>
+<p>This tells us that 6 transparent pixels have to be drawn. <em>Lesser skips</em> do
+not reference any other bytes, so the following byte <code class="docutils literal notranslate"><span class="pre">0x28</span></code> is our next
+command byte.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">third</span> <span class="n">cmd_byte</span> <span class="o">=</span> <span class="mh">0x28</span> <span class="o">=</span> <span class="mb">0b00101000</span>
+</pre></div>
+</div>
+<p>This again is a <em>lesser draw</em> command because the 2 least significant bits
+are set to <code class="docutils literal notranslate"><span class="pre">0b00</span></code>, albeit with a different pixel count.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pixel_count</span> <span class="o">=</span> <span class="n">cmd_byte</span> <span class="o">&gt;&gt;</span> <span class="mi">2</span> <span class="o">=</span> <span class="mb">0b00001010</span> <span class="o">=</span> <span class="mh">0x0A</span> <span class="o">=</span> <span class="mi">10</span>
+</pre></div>
+</div>
+<p>This time, the next 10 bytes are palette indices that belong to the drawing
+command (<code class="docutils literal notranslate"><span class="pre">0x99</span> <span class="pre">0x35</span> <span class="pre">0xF4</span> <span class="pre">0x6D</span> <span class="pre">0x67</span> <span class="pre">0x6E</span> <span class="pre">0xA5</span> <span class="pre">0x01</span> <span class="pre">0x4D</span> <span class="pre">0x8E</span></code>).</p>
+<p>Our next command byte is <code class="docutils literal notranslate"><span class="pre">0x0F</span></code>. This is the <em>end of row</em> command which tells
+us that the row is finished.</p>
+</div>
+</div>
+</div>
+<div class="section" id="slp-shadow-commands-since-version-4-0x">
+<h3>SLP shadow commands (since version 4.0X)<a class="headerlink" href="#slp-shadow-commands-since-version-4-0x" title="Permalink to this headline">¶</a></h3>
+<p>SLPs with versions higher than 4.0 store their shadows in separate frames, but
+use the same command syntax. Shadows are drawn with the <em>lesser draw</em>,
+<em>lesser skip</em> and <em>fill</em> commands.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Command Name</th>
+<th>Byte value</th>
+<th>Pixel Count</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lesser draw</td>
+<td><code>0bXXXXXX00</code></td>
+<td><code>cmd_byte &gt;&gt; 2</code></td>
+<td>An array of length <em>Count</em> filled with 1-byte "shadow" values (see below)</td>
+</tr>
+<tr>
+<td>Lesser skip</td>
+<td><code>0bXXXXXX01</code></td>
+<td><code>cmd_byte &gt;&gt; 2</code> or next</td>
+<td><em>Count</em> transparent pixels should be drawn from the current position.</td>
+</tr>
+<tr>
+<td>Greater draw</td>
+<td><code>0bXXXX0010</code></td>
+<td><code>cmd_byte &lt;&lt; 4 + next</code></td>
+<td>An array of length <em>Count</em> filled with 1-byte "shadow" values follows, 1 value per pixel.</td>
+</tr>
+<tr>
+<td>Greater skip</td>
+<td><code>0bXXXX0011</code></td>
+<td><code>cmd_byte &lt;&lt; 4 + next</code></td>
+<td><em>Count</em> transparent pixels should be drawn from the current position.</td>
+</tr>
+<tr>
+<td>Fill</td>
+<td><code>0bXXXX0111</code></td>
+<td><code>cmd_byte &gt;&gt; 4</code> or next</td>
+<td>One palette index byte follows. This color should be drawn <code>pixel_count</code> times from the current position.</td>
+</tr>
+</tbody>
+</table><p>The “shadow” values have to be converted to an alpha mask by left shifting
+by 2 and and flipping the bits (i.e. subtracting from 255):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">shadow_alpha</span> <span class="o">=</span> <span class="mi">255</span> <span class="o">-</span> <span class="p">(</span><span class="n">shadow_value</span> <span class="o">&lt;&lt;</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="palette-files">
 <h2>Palette Files<a class="headerlink" href="#palette-files" title="Permalink to this headline">¶</a></h2>
-<p>The drawing palette is stored inside <code class="docutils literal notranslate"><span class="pre">interfac.drs</span></code>. It’s basically an array of
-<code class="docutils literal notranslate"><span class="pre">(r,</span> <span class="pre">g,</span> <span class="pre">b)</span></code> tuples.</p>
-<p>The file id is <code class="docutils literal notranslate"><span class="pre">50500+x</span></code>, the palettes (color tables) are stored the same way
-as .SLPs are. (see <a class="reference internal" href="drs-files.html"><span class="doc">.DRS Files</span></a>) Here <code class="docutils literal notranslate"><span class="pre">x</span></code> is the palette index,
-which should be 0, experiment with <code class="docutils literal notranslate"><span class="pre">[1,10]</span></code>…</p>
-<p><code class="docutils literal notranslate"><span class="pre">interfac.drs</span></code> contains many of these files, but the ingame art uses id 50500.</p>
+<p>The drawing palette is stored inside <code class="docutils literal notranslate"><span class="pre">interfac.drs</span></code> (until AoE2: HD), while
+AoE1:DE and AoE2:DE store their palettes in separate files with a <code class="docutils literal notranslate"><span class="pre">.pal</span></code> or
+<code class="docutils literal notranslate"><span class="pre">.palx</span></code> extension. It’s basically an array of <code class="docutils literal notranslate"><span class="pre">(r,</span> <span class="pre">g,</span> <span class="pre">b)</span></code> tuples.</p>
 <p>The palette is a (text-based) JASC Paint Shop Pro file, starting with
 <code class="docutils literal notranslate"><span class="pre">JASC-PAL\r\n</span></code>. Read this line at the very start of a .BIN file to see if it’s a
 palette file. The second line stores version information, should be <code class="docutils literal notranslate"><span class="pre">0100</span></code>. The
 third line stores the number of entries, as text.</p>
 <p>The rest is that many <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">g</span> <span class="pre">b\r\n</span></code> lines. Again, <code class="docutils literal notranslate"><span class="pre">r</span></code>, <code class="docutils literal notranslate"><span class="pre">g</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> are stored as
 text (range <code class="docutils literal notranslate"><span class="pre">0-255</span></code>).</p>
-<p>They are referenced in the SLP files, so should be indexed. It’s simply an
-array, so line 3=&gt;index 0, line 4=&gt;index 1 etc.</p>
+<p>Colors from the palette are referenced in the SLP files with an index.
+The index refers to a line in the palette, so line 3=&gt;index 0,
+line 4=&gt;index 1 etc.</p>
+<div class="section" id="palette-files-in-older-versions-of-aoe1-and-aoe2-up-until-aoe2-hd">
+<h3>Palette files in older versions of AoE1 and AoE2 (up until AoE2:HD)<a class="headerlink" href="#palette-files-in-older-versions-of-aoe1-and-aoe2-up-until-aoe2-hd" title="Permalink to this headline">¶</a></h3>
+<p>The file id is <code class="docutils literal notranslate"><span class="pre">50500+x</span></code>, the palettes (color tables) are stored the same way
+as SLPs are. (see <a class="reference internal" href="drs-files.html"><span class="doc">DRS Files</span></a>) Here <code class="docutils literal notranslate"><span class="pre">x</span></code> is the palette index,
+which should be 0, experiment with <code class="docutils literal notranslate"><span class="pre">[1,10]</span></code>…</p>
+<p><code class="docutils literal notranslate"><span class="pre">interfac.drs</span></code> contains many of these files, but the ingame art uses id 50500.</p>
+</div>
+<div class="section" id="palette-files-in-aoe1-de">
+<h3>Palette files in AoE1:DE<a class="headerlink" href="#palette-files-in-aoe1-de" title="Permalink to this headline">¶</a></h3>
+<p>Palettes are stored as plain human-readable palette files with the suffixes
+<code class="docutils literal notranslate"><span class="pre">.pal</span></code> or <code class="docutils literal notranslate"><span class="pre">.palx</span></code>. Palette numbers are stored in a <code class="docutils literal notranslate"><span class="pre">palettes.conf</span></code> file that
+contains a bunch of lines with assignments in the form of <code class="docutils literal notranslate"><span class="pre">palette_number,filename</span></code>.</p>
+</div>
 </div>
 <div class="section" id="slp-types">
 <h2>SLP types<a class="headerlink" href="#slp-types" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="slp-files-for-moving-objects">
 <h3>SLP files for moving objects<a class="headerlink" href="#slp-files-for-moving-objects" title="Permalink to this headline">¶</a></h3>
-<p>Unit .SLP files contain 5 states:</p>
-<ol class="simple">
-<li><p>Attacking</p></li>
-<li><p>Standing Ground</p></li>
-<li><p>Dying</p></li>
-<li><p>Rotting</p></li>
-<li><p>Moving</p></li>
-</ol>
-<p>On average, each state has roughly 50 animation frames -&gt; ~250 textures per unit</p>
-<p>For each animation, 5 directions of it are stored, the other 3 directions are
+<p>In Age of Empires 1, Age of Empires 2 and Star Wars: Galactic Battlegrounds,
+each animation has 10 keyframes and 5 directions. The other 3 directions are
 generated later by flipping the sprite on the y axis.</p>
-<p>Villagers have way more than the 5 animations (for the different resources),
-boats have 2 (boat &amp; sail).</p>
+<p>One SLP stores one animation -&gt; 50 frames per SLP.</p>
+<p>Military units have 5 states that have animations:</p>
+<ol class="simple">
+<li><p>Idle</p></li>
+<li><p>Move</p></li>
+<li><p>Attack</p></li>
+<li><p>Die</p></li>
+<li><p>Decay</p></li>
+</ol>
+<p>Villagers have way more than the 5 states (for the different resources),
+boats have 2 separate animations for boat &amp; sails.</p>
 </div>
 <div class="section" id="slp-files-for-static-objects">
 <h3>SLP files for static objects<a class="headerlink" href="#slp-files-for-static-objects" title="Permalink to this headline">¶</a></h3>
-<p>Contain the image of the building. Some static objects have multiple chunks,
+<p>Contain 1 frame for the building. Some static objects have multiple chunks,
 like the Town Center, where units can be under one arm and ‘in front of’ the
 main building.</p>
 </div>
-<div class="section" id="slp-files-for-weapons">
-<h3>SLP files for weapons<a class="headerlink" href="#slp-files-for-weapons" title="Permalink to this headline">¶</a></h3>
-<p>Dust, arrows, etc.</p>
+<div class="section" id="slp-files-for-projectiles">
+<h3>SLP files for projectiles<a class="headerlink" href="#slp-files-for-projectiles" title="Permalink to this headline">¶</a></h3>
+<p>Arrows and projectiles have 35 keyframes and 5 directions for their animation
+because they need a smoother transition between up- and downwards motion.
+-&gt; 175 frames per SLP.</p>
 </div>
 <div class="section" id="slp-files-for-shadows">
 <h3>SLP files for shadows<a class="headerlink" href="#slp-files-for-shadows" title="Permalink to this headline">¶</a></h3>
-<p>Every object in game has a shadow. Moving units have frames for their shadow in
-the same SLP file, but buildings and other objects have their shadows in
-separate SLPs.</p>
-<p>Large numbers of shadow SLPs are difficult to identify, due to the image only
-being in a single color.</p>
+<p>Every object in game has a shadow. Up until SLP v3.0, moving units store
+their shadow in the same frame as the main graphic, but buildings and
+other objects have their shadows in separate SLPs.</p>
+<p>Since version 4.0, shadows are stored in separate frames in the same SLP file.</p>
 </div>
 </div>
 </div>
@@ -1311,7 +1523,7 @@ being in a single color.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="sound.html" class="btn btn-neutral float-right" title="Sound documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="smp-files.html" class="btn btn-neutral float-right" title="SMP files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="original-metadata.html" class="btn btn-neutral float-left" title="Original Metadata" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

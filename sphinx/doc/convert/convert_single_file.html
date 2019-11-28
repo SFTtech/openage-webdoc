@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Single file conversion &mdash; openage v0.4.0 documentation</title>
+  <title>Single file conversion &mdash; openage 0.4.0 documentation</title>
   
 
   
@@ -269,6 +269,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../media/filtermaps-dat.html">FilterMaps File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../media/original-metadata.html">Original Metadata</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../media/slp-files.html">SLP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../media/smp-files.html">SMP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../media/smx-files.html">SMX files</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../media/sound.html">Sound documentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../media/stemplet-dat.html">STemplet.dat File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../media/terrain.html">terrain documentation</a></li>
@@ -842,7 +844,20 @@
 <p>You can use openage to convert a single slp image from some drs archive to a
 png image.</p>
 <p>The invocation could be:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">openage</span> <span class="n">convert</span><span class="o">-</span><span class="n">file</span> <span class="o">~/</span><span class="n">games</span><span class="o">/</span><span class="n">aoe2</span><span class="o">/</span><span class="n">aoe2</span><span class="o">/</span><span class="n">Data</span><span class="o">/</span><span class="n">graphics</span><span class="o">.</span><span class="n">drs</span> <span class="mf">326.</span><span class="n">slp</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">rofl</span><span class="o">.</span><span class="n">png</span>
+<p>SLPs in DRS archives (for older versions of Age of Empires 1, Age of Empires 2 and SWGB):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">openage</span> <span class="n">convert</span><span class="o">-</span><span class="n">file</span> <span class="o">--</span><span class="n">drs</span> <span class="o">~/</span><span class="n">games</span><span class="o">/</span><span class="n">aoe2</span><span class="o">/</span><span class="n">Data</span><span class="o">/</span><span class="n">graphics</span><span class="o">.</span><span class="n">drs</span> <span class="mf">326.</span><span class="n">slp</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">rofl</span><span class="o">.</span><span class="n">png</span>
+</pre></div>
+</div>
+<p>Standalone SLPs (Age of Empires 1: DE and Age of Empires 2: HD):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">openage</span> <span class="n">convert</span><span class="o">-</span><span class="n">file</span> <span class="o">--</span><span class="n">palette</span><span class="o">-</span><span class="n">file</span> <span class="o">~/</span><span class="n">games</span><span class="o">/</span><span class="n">aoe2hd</span><span class="o">/</span><span class="n">Data</span><span class="o">/</span><span class="mf">50500.</span><span class="n">bina</span> <span class="mf">326.</span><span class="n">slp</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">rofl</span><span class="o">.</span><span class="n">png</span>
+</pre></div>
+</div>
+<p>Standalone SMXs (Age of Empires 2: DE):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">openage</span> <span class="n">convert</span><span class="o">-</span><span class="n">file</span> <span class="o">--</span><span class="n">player</span><span class="o">-</span><span class="n">palette</span><span class="o">-</span><span class="n">file</span> <span class="o">~/</span><span class="n">games</span><span class="o">/</span><span class="n">aoe2de</span><span class="o">/</span><span class="n">Data</span><span class="o">/</span><span class="n">playercolor_blue</span><span class="o">.</span><span class="n">pal</span> <span class="o">--</span><span class="n">palette</span><span class="o">-</span><span class="n">file</span> <span class="o">~/</span><span class="n">games</span><span class="o">/</span><span class="n">aoe2de</span><span class="o">/</span><span class="n">Data</span><span class="o">/</span><span class="n">b_west</span><span class="o">.</span><span class="n">pal</span> <span class="n">u_elite_eagle</span><span class="o">.</span><span class="n">smx</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">rofl</span><span class="o">.</span><span class="n">png</span>
+</pre></div>
+</div>
+<p>Standalone SMPs (Age of Empires 2: DE):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">openage</span> <span class="n">convert</span><span class="o">-</span><span class="n">file</span> <span class="o">--</span><span class="n">player</span><span class="o">-</span><span class="n">palette</span><span class="o">-</span><span class="n">file</span> <span class="o">~/</span><span class="n">games</span><span class="o">/</span><span class="n">aoe2de</span><span class="o">/</span><span class="n">Data</span><span class="o">/</span><span class="n">playercolor_blue</span><span class="o">.</span><span class="n">pal</span> <span class="o">--</span><span class="n">palette</span><span class="o">-</span><span class="n">file</span> <span class="o">~/</span><span class="n">games</span><span class="o">/</span><span class="n">aoe2de</span><span class="o">/</span><span class="n">Data</span><span class="o">/</span><span class="n">b_west</span><span class="o">.</span><span class="n">pal</span> <span class="n">u_elite_eagle</span><span class="o">.</span><span class="n">smp</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">rofl</span><span class="o">.</span><span class="n">png</span>
 </pre></div>
 </div>
 <p>Have a look at <code class="docutils literal notranslate"><span class="pre">openage/convert/singlefile.py</span></code>, this is also a simple API demo

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title> &mdash; openage v0.4.0 documentation</title>
+  <title> &mdash; openage 0.4.0 documentation</title>
   
 
   
@@ -269,6 +269,8 @@
 <li class="toctree-l4"><a class="reference internal" href="doc/media/filtermaps-dat.html">FilterMaps File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="doc/media/original-metadata.html">Original Metadata</a></li>
 <li class="toctree-l4"><a class="reference internal" href="doc/media/slp-files.html">SLP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="doc/media/smp-files.html">SMP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="doc/media/smx-files.html">SMX files</a></li>
 <li class="toctree-l4"><a class="reference internal" href="doc/media/sound.html">Sound documentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="doc/media/stemplet-dat.html">STemplet.dat File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="doc/media/terrain.html">terrain documentation</a></li>
@@ -837,9 +839,10 @@
 <h1><a class="reference external" href="http://openage.sft.mx"><img alt="openage" src="_images/banner.png" /></a><a class="headerlink" href="#openage" title="Permalink to this headline">¶</a></h1>
 <p><strong>openage</strong>: a volunteer project to create a free engine clone of the <em>Genie Engine</em> used by <em>Age of Empires</em>, <em>Age of Empires II (HD)</em> and <em>Star Wars: Galactic Battlegrounds</em>, comparable to projects like <a class="reference external" href="https://openmw.org/">OpenMW</a>, <a class="reference external" href="http://openra.net/">OpenRA</a>,  <a class="reference external" href="https://github.com/OpenSAGE/OpenSAGE/">OpenSAGE</a>, <a class="reference external" href="https://openttd.org/">OpenTTD</a> and <a class="reference external" href="https://openrct2.org/">OpenRCT2</a>. At the moment we focus our efforts on the integration of <em>Age of Empires II</em>, while being primarily aimed at POSIX platforms such as <strong>GNU/Linux</strong>.</p>
 <p>openage uses the original game assets (such as sounds and graphics), but (for obvious reasons) doesn’t ship them.
-To play, you require <em>an original AoE II : TC installation or <a class="reference external" href="http://store.steampowered.com/app/221380/">AoE II: HD</a></em>
-(installation via <a class="reference external" href="https://www.winehq.org/">Wine</a> or <a class="reference external" href="doc/media_convert.md#how-to-use-the-original-game-assets">Steam-Linux</a>).</p>
-<p><a class="reference external" href="https://webchat.freenode.net/?channels=sfttech"><img alt="#sfttech on Freenode" src="https://img.shields.io/badge/chat-on%20freenode-brightgreen" /></a>
+To play, you require <em>an original AoE II: TC or <a class="reference external" href="http://store.steampowered.com/app/221380/">AoE II: HD</a></em> installation
+(via <a class="reference external" href="https://www.winehq.org/">Wine</a> or <a class="reference external" href="doc/media_convert.md#how-to-use-the-original-game-assets">Steam-Linux</a>).</p>
+<p><a class="reference external" href="https://github.com/SFTtech/openage/stargazers"><img alt="github stars" src="https://img.shields.io/github/stars/SFTtech/openage.svg" /></a>
+<a class="reference external" href="https://webchat.freenode.net/?channels=sfttech"><img alt="#sfttech on Freenode" src="https://img.shields.io/badge/chat-on%20freenode-brightgreen" /></a>
 <a class="reference external" href="https://riot.im/app/#/room/#sfttech:matrix.org"><img alt="#sfttech on matrix.org" src="https://img.shields.io/badge/matrix-%23sfttech-blue.svg" /></a>
 <a class="reference external" href="http://www.emergencykitten.com/"><img alt="quality badge" src="https://img.shields.io/badge/cuteness-overload-orange.svg" /></a></p>
 <div class="section" id="contact">
@@ -983,14 +986,34 @@ A one-way script to convert maps/savegames/missions to openage is planned though
 <li><p>For <strong>Linux</strong> check at <a class="reference external" href="https://repology.org/project/openage/versions">repology</a> if your distribution has any packages available or <a class="reference external" href="https://bintray.com/simonsan/openage-packages/openage-linux-releases">here</a> for any future updates on *.deb and AppImage packages.</p></li>
 <li><p>For <strong>Windows</strong> check our <a class="reference external" href="https://github.com/SFTtech/openage/releases">release page</a> for the latest installer or <a class="reference external" href="https://dl.bintray.com/simonsan/openage-packages/">here</a> for nightly builds.</p>
 <p><strong>NOTE:</strong> If you have any problems starting conversion or starting <em>openage</em> take a look into the <a class="reference internal" href="doc/build_instructions/packages.html"><span class="doc">package instructions</span></a> and our <a class="reference internal" href="doc/troubleshooting.html"><span class="doc">troubleshooting guide</span></a>.</p>
-<p><strong>NOTE:</strong> For <strong>MacOSX</strong> we don’t have packages, but here you can check the the build status <a class="reference external" href="https://api.travis-ci.com/simonsan/openage.svg?branch=master"><img alt="Build" src="https://travis-ci.com/simonsan/openage.svg?branch=master" /></a></p>
-<p>We also have building instructions in <a class="reference internal" href="doc/build_instructions/os_x_10.14_mojave.html"><span class="doc">here</span></a>.</p>
+<p><strong>NOTE:</strong> For <strong>MacOSX</strong> we currently don’t have any packages.</p>
 </li>
 </ul>
 </div>
 <div class="section" id="dependencies-building-and-running">
 <h2>Dependencies, Building and Running<a class="headerlink" href="#dependencies-building-and-running" title="Permalink to this headline">¶</a></h2>
-<ul>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center">Operating System</th>
+<th align="center">Build status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Debian Sid</td>
+<td align="center"><a href="https://github.com/SFTtech/kevin/issues/11">Todo: Kevin #11</a></td>
+</tr>
+<tr>
+<td align="center">MacOSX 10.14</td>
+<td align="center"><a href="https://travis-ci.org/SFTtech/openage"><img alt="Build Status" src="https://travis-ci.org/SFTtech/openage.svg?branch=master" /></a></td>
+</tr>
+<tr>
+<td align="center">Windows 10 - x64</td>
+<td align="center"><a href="https://ci.appveyor.com/project/simonsan/openage-sl215"><img alt="Build status" src="https://ci.appveyor.com/api/projects/status/66sx35key94u740e?svg=true" /></a></td>
+</tr>
+</tbody>
+</table><ul>
 <li><p>How do I get this to run on my box?</p>
 <ul class="simple">
 <li><p>See <a class="reference internal" href="doc/building.html"><span class="doc">doc/building.md</span></a>.</p></li>
@@ -1026,7 +1049,7 @@ or the <a class="reference external" href="https://github.com/SFTtech/openage/is
 <li><p>Being typical computer science students, we hate people.</p></li>
 <li><p>Please don’t contact us.</p></li>
 <li><p>Nobody likes Age of Empires anyway.</p></li>
-<li><p>None of you is interested in making openage more awesome anyway.</p></li>
+<li><p>None of you are interested in making openage more awesome anyway.</p></li>
 <li><p>We don’t want a community.</p></li>
 <li><p>Don’t even think about trying to help.</p></li>
 </ul>
@@ -1066,7 +1089,7 @@ or the <a class="reference external" href="https://github.com/SFTtech/openage/is
 <p>All documentation is also in this repo:</p>
 <ul class="simple">
 <li><p>Code documentation is embedded in the sources for Doxygen (see <a class="reference internal" href="doc/README.html"><span class="doc">doc readme</span></a>).</p></li>
-<li><p>Have a look at the <a class="reference external" href="/doc/">doc directory</a>. This folder tends to outdate when code changes.</p></li>
+<li><p>Have a look at the <a class="reference external" href="/doc/">doc directory</a>. This folder tends to get outdated when code changes.</p></li>
 </ul>
 </div>
 <div class="section" id="license">

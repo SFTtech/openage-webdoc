@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Concept &mdash; openage v0.4.0 documentation</title>
+  <title>Concept &mdash; openage 0.4.0 documentation</title>
   
 
   
@@ -269,6 +269,8 @@
 <li class="toctree-l4"><a class="reference internal" href="media/filtermaps-dat.html">FilterMaps File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="media/original-metadata.html">Original Metadata</a></li>
 <li class="toctree-l4"><a class="reference internal" href="media/slp-files.html">SLP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="media/smp-files.html">SMP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="media/smx-files.html">SMX files</a></li>
 <li class="toctree-l4"><a class="reference internal" href="media/sound.html">Sound documentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="media/stemplet-dat.html">STemplet.dat File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="media/terrain.html">terrain documentation</a></li>
@@ -850,7 +852,7 @@ compiler-independently.</p>
 </div>
 <div class="section" id="components">
 <h1>Components<a class="headerlink" href="#components" title="Permalink to this headline">¶</a></h1>
-<p>The buildsystem is pretty sophisticated because <em>openage</em> consists C++
+<p>The buildsystem is pretty sophisticated because <em>openage</em> consists of C++
 code, generated C++ code, generated Cython code and Python code. All C++
 parts are packed in <code class="docutils literal notranslate"><span class="pre">libopenage</span></code>, the Python stuff is in the <code class="docutils literal notranslate"><span class="pre">openage</span></code>
 python package. We generate code with the <code class="docutils literal notranslate"><span class="pre">openage.codegen</span></code> Python
@@ -923,7 +925,7 @@ makes sure you don’t need to).</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">add_cython_modules</span></code> adds Cython modules (i.e. <code class="docutils literal notranslate"><span class="pre">.pyx</span></code> or <code class="docutils literal notranslate"><span class="pre">.py</span></code> files) that will be compiled. See the code for option docs.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">pxdgen</span></code> adds C++ headers for <code class="docutils literal notranslate"><span class="pre">.pxd</span></code> file generation (see <a class="reference internal" href="code/pyinterface.html"><span class="doc">pyinterface</span></a>).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">add_pxd</span></code> adds any additional <code class="docutils literal notranslate"><span class="pre">.pxd</span></code> or <code class="docutils literal notranslate"><span class="pre">.pxi</span></code> files.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">add_pxds</span></code> adds any additional <code class="docutils literal notranslate"><span class="pre">.pxd</span></code> or <code class="docutils literal notranslate"><span class="pre">.pxi</span></code> files.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">add_py_modules</span></code> adds pure-Python modules; note that you also must declare <code class="docutils literal notranslate"><span class="pre">.py</span></code> files that were declared in <code class="docutils literal notranslate"><span class="pre">add_cython_modules</span></code>.</p></li>
 </ul>
 </div>

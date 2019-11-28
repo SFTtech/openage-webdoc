@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Instructions for Mac OS X users (OS X 10.14 Mojave) &mdash; openage v0.4.0 documentation</title>
+  <title>Instructions for Mac OS X users (OS X 10.14 Mojave) &mdash; openage 0.4.0 documentation</title>
   
 
   
@@ -269,6 +269,8 @@
 <li class="toctree-l4"><a class="reference internal" href="../media/filtermaps-dat.html">FilterMaps File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../media/original-metadata.html">Original Metadata</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../media/slp-files.html">SLP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../media/smp-files.html">SMP files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../media/smx-files.html">SMX files</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../media/sound.html">Sound documentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../media/stemplet-dat.html">STemplet.dat File Format</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../media/terrain.html">terrain documentation</a></li>
@@ -845,17 +847,15 @@
 <li><p>XCode &gt;= Xcode 10.2.1 (Build: 10E1001)</p></li>
 <li><p>Install <a class="reference external" href="http://brew.sh">Homebrew</a>. Other package managers and building from source might also work, but aren’t supported as of now. If you figure out fixes for those other options, you’re welcome to open pullrequests, as long as the Homebrew build doesn’t break.</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>brew update
-brew tap caskroom/cask
-brew tap caskroom/fonts
-brew update` (yes, again)
-brew cask install font-dejavu-sans
-brew install python3 libepoxy freetype fontconfig harfbuzz cmake sdl2 sdl2_image opus libogg opusfile libpng
-brew install qt5
-brew install -cc=clang llvm@8
-export PATH=&quot;/usr/local/opt/llvm@8/bin:$PATH:/usr/local/lib:/usr/local/opt/llvm/bin&quot;
-export PKG_CONFIG_PATH=&quot;$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/local/lib&quot;
-pip3 install pygments cython numpy pillow pyreadline jinja2
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">update</span><span class="o">-</span><span class="n">reset</span> <span class="o">&amp;&amp;</span> <span class="n">brew</span> <span class="n">update</span>
+<span class="n">brew</span> <span class="n">tap</span> <span class="n">homebrew</span><span class="o">/</span><span class="n">cask</span><span class="o">-</span><span class="n">fonts</span>
+<span class="n">brew</span> <span class="n">cask</span> <span class="n">install</span> <span class="n">font</span><span class="o">-</span><span class="n">dejavu</span><span class="o">-</span><span class="n">sans</span>
+<span class="n">brew</span> <span class="n">install</span> <span class="n">cmake</span> <span class="n">python3</span> <span class="n">libepoxy</span> <span class="n">freetype</span> <span class="n">fontconfig</span> <span class="n">harfbuzz</span> <span class="n">sdl2</span> <span class="n">sdl2_image</span> <span class="n">opus</span> <span class="n">libogg</span> <span class="n">opusfile</span> <span class="n">libpng</span>
+<span class="n">brew</span> <span class="n">install</span> <span class="n">qt5</span>
+<span class="n">brew</span> <span class="n">install</span> <span class="o">-</span><span class="n">cc</span><span class="o">=</span><span class="n">clang</span> <span class="n">llvm</span><span class="nd">@8</span>
+<span class="n">export</span> <span class="n">PATH</span><span class="o">=</span><span class="s2">&quot;/usr/local/opt/llvm@8/bin:$PATH:/usr/local/lib:/usr/local/opt/llvm/bin&quot;</span>
+<span class="n">export</span> <span class="n">PKG_CONFIG_PATH</span><span class="o">=</span><span class="s2">&quot;$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig:/usr/local/lib&quot;</span>
+<span class="n">pip3</span> <span class="n">install</span> <span class="n">pygments</span> <span class="n">cython</span> <span class="n">numpy</span> <span class="n">pillow</span> <span class="n">pyreadline</span> <span class="n">jinja2</span>
 </pre></div>
 </div>
 <p>You will also need <a class="reference external" href="https://github.com/SFTtech/nyan/blob/master/doc/building">nyan</a> and its dependencies:</p>
@@ -866,7 +866,7 @@ pip3 install pygments cython numpy pillow pyreadline jinja2
 </div>
 <div class="section" id="building">
 <h2>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">configure</span> <span class="o">--</span><span class="n">compiler</span><span class="o">=</span><span class="n">clang</span> <span class="o">--</span><span class="n">mode</span><span class="o">=</span><span class="n">release</span> <span class="o">--</span><span class="n">download</span><span class="o">-</span><span class="n">nyan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">configure</span> <span class="o">--</span><span class="n">compiler</span><span class="o">=</span><span class="n">clang</span><span class="o">++</span> <span class="o">--</span><span class="n">mode</span><span class="o">=</span><span class="n">release</span> <span class="o">--</span><span class="n">download</span><span class="o">-</span><span class="n">nyan</span>
 <span class="n">make</span>
 </pre></div>
 </div>

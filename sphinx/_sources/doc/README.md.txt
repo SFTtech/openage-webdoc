@@ -84,7 +84,7 @@ python -m pip install --upgrade pip
 
 pip install -U sphinx doxypypy recommonmark autodoc breathe graphviz sphinx-markdown-tables sphinx-rtd-theme sphinxcontrib-moderncmakedomain
 ```
-#### Building Documentation 
+#### Building Documentation
 
 Dynamic documentation for webhosting-purposes can be auto-generated from source documentation using **doxygen** in the first stage with **sphinx** and **breathe** in the second stage.
 
