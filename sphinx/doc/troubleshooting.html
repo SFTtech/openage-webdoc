@@ -37,9 +37,10 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/sphinx_custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Handbooks" href="sphinx/handbooks/index.html" />
+    <link rel="next" title="Contributing" href="sphinx/contributing.html" />
     <link rel="prev" title="Platform Support" href="sphinx/installation/platform_support.html" /> 
 </head>
 
@@ -54,7 +55,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> openage
+            <a href="../index.html">
           
 
           
@@ -141,12 +142,15 @@
 <li class="toctree-l4"><a class="reference internal" href="#conversion-fails-for-age2-x1-xml-files-wololo-kingdoms">Conversion fails for <em>age2_x1.xml</em> files / Wololo Kingdoms</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#ingame">Ingame</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#in-game">In-game</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#ui-elements-are-visible-but-the-background-stays-black">UI elements are visible but the background stays black</a></li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sphinx/contributing.html">Contributing</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="sphinx/handbooks/index.html">Handbooks</a><ul>
@@ -821,15 +825,6 @@
   </ul>
 
   
-  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
-      
-        <a href="sphinx/handbooks/index.html" class="btn btn-neutral float-right" title="Handbooks" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="sphinx/installation/platform_support.html" class="btn btn-neutral float-left" title="Platform Support" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-  </div>
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -867,8 +862,8 @@ Replace the line <code class="docutils literal notranslate"><span class="pre">py
 <p>If you have Wololo Kingdoms and various mods installed that change the base assets the converter will not work. A workaround would be to make a backup of your AGE2 directory and let the AGE2DIR environment variable point to that backup. In that backup at subfolder <code class="docutils literal notranslate"><span class="pre">AGE2/resources</span></code> delete all files <em><strong>except</strong></em> folders. Another workaround would be to backup your AGE2 folder and redownload it to have a clean install. After conversion you can replace it with the backup.</p>
 </div>
 </div>
-<div class="section" id="ingame">
-<h2>Ingame<a class="headerlink" href="#ingame" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="in-game">
+<h2>In-game<a class="headerlink" href="#in-game" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="ui-elements-are-visible-but-the-background-stays-black">
 <h3>UI elements are visible but the background stays black<a class="headerlink" href="#ui-elements-are-visible-but-the-background-stays-black" title="Permalink to this headline">¶</a></h3>
 <p>openage does not start a game by default on startup. Press the “generate game” button on the left or, if the game has not finished loading the assets, tick the checkbox marked with “create_when_ready”.</p>
@@ -884,7 +879,7 @@ Replace the line <code class="docutils literal notranslate"><span class="pre">py
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="sphinx/handbooks/index.html" class="btn btn-neutral float-right" title="Handbooks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="sphinx/contributing.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="sphinx/installation/platform_support.html" class="btn btn-neutral float-left" title="Platform Support" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
